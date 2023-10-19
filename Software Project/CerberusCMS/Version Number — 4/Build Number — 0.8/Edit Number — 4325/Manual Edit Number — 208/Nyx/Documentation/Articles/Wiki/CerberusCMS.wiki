@@ -671,10 +671,10 @@ Tinke Software was renamed from Rune Software and Rune Software, Inc. which was 
 every programming language and scripting language.
 
 Content Management Systems
-* Cerberus Content Management System :: Written In PHP-SQL
-* Cerberus Content Management System, Direct Fork: Fenrir Content Management System :: Written In PHP-SQL
-* Cerberus Content Management System, Direct Fork: Runic / Rune Content Management System :: Written In PHP-SQL
-* Cerberus Content Management System, Direct Fork: Debian Content Management System :: Written In PHP-SQL-QML
+* Cerberus Content Management System :: Written In P.H.P.-SQL
+* Cerberus Content Management System, Direct Fork: Fenrir Content Management System :: Written In P.H.P.-SQL
+* Cerberus Content Management System, Direct Fork: Runic / Rune Content Management System :: Written In P.H.P.-SQL
+* Cerberus Content Management System, Direct Fork: Debian Content Management System :: Written In P.H.P.-SQL
 * CerberusCMS, Iris :: Written In Java, C++ and PHP
 * CerberusCMS, Magysk Theme Writer :: Written In C++
 * CerberusCMS, Stokje Application Writer :: Written In C++
