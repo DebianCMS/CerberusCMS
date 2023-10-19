@@ -107,7 +107,7 @@ All programming code is organized in Pre-Ordered Logical and Pre-Oredered Mathem
 ===Project Update Cycles===
 System Updates consist of Programming Code Updates, Programming Code Security Updates, Graphics Updates and more.
 Officially released versions come with an embedded build number where the build itself takes several weeks or months of quality code implementation and updates to complete from the project developer.
-CerberusCMS - Version Number: 4, Build Number: 0.8 was hand updated by rewrite periodically from the years of ~ January of 2022 to November of 2023.
+CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325 was manually updated by hand rewrite periodically from the years of ~ January of 2022 to November, 1st of 2023 and is now approximately ~125,000 lines of Pure Pre-Hyper-Text-Post-Processor Programming Code.
 
 ===Project Compatibility and Life Cycle===
 CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325 was hand updated by manual Programming Code Rewrite periodically from the years of ~ January of 2022 to November of 2023. This specific Version Number, Build Number and Edit Number will work for ~ 10 years on Pre-Hyper-Text-Post-Processor Version Number: 8.
