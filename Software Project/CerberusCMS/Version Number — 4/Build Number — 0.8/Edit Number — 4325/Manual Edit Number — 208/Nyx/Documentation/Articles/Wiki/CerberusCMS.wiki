@@ -133,12 +133,19 @@ CerberusCMS comes with a Kernel File, Installation and Maintenance Applications,
 
 ====Services Root-Level Application Modules====
 * Accounts
+* Integrity
 * Loops
 * Services
 * Tasks
 
 * '''Accounts'''
 Options for managing accounts and account access levels.
+
+* '''Integrity'''
+Automated as well as Options for managing all of the files in the system. Integrity automatically checks the file hashes generated in Secure-Hash-Algorithm, 256-BIT of every file in the system to the hashes stored
+in the Master Database. Every file in the system is hashed in Secure-Hash-Algorithm, 256-BIT based on the file size of the file itself. These hashes are compared to the ones in the Master Database upon every execution of the kernel file.
+If 1 byte changes in any of the files in the system this means the file has been tampered with and Integrity will automatically reinstall the file back to the original one officially released by running a GIT clone command or a BITS download command of the original file hosted on the official GIT repository.
+This process makes it impossible to hack anything on the system because again if even 1 byte changes in the integrity of the file it is automatically reinstalled within a split second.
 
 * '''Loops'''
 Reorganizes all of the data in the database server.
@@ -150,7 +157,7 @@ Options for managing background services and scheduling specific tasks similar t
 Options for managing current and future tasks as well as an advanced
 Task Manager that monitors connections in real-time.
 
-4 Services-Root Level Application Modules
+5 Services-Root Level Application Modules
 
 ====Administration-Level Application Modules====
 * Accounts
