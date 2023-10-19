@@ -411,7 +411,7 @@ This establishes trust with the human interacting with it because that human can
 
 All of the data that is stored in the Database Server is encrypted using G.N.U.-Privacy Guard, Pretty-Good-Privacy, BCRYPT, Advanced Encryption Standard - 256, Advanced Encryption Standard - 512 and other algorithms, hashes and cipers deemed secure by the information security community.
 
-It also allows for custom encryption algorithms and ciphers and custom mathematics to be used system-wide so as to secure the storage and transimission of specified data.
+It also allows for custom encryption algorithms and ciphers and custom encryption mathematics to be used system-wide so as to secure the storage and transimission of specified data.
 This is made for corporate-level security, medium to small business security and academic security so as to securely store the data and information of its users.
 
 CerberusCMS features Master Security Modules where when each module is included by the Master File so named the Kernel the programming code then eliminates all possibility of:
