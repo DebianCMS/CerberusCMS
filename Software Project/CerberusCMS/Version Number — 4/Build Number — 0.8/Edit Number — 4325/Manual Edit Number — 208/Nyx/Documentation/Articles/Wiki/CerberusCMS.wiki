@@ -554,11 +554,27 @@ CerberusCMS as of Version Number: 4, Build Number: 0.8, Edit Number: 4,325 has a
 ===Quality Programming Code===
 CerberusCMS as of Version Number: 4, Build Number: 0.8, Edit Number: 4,325 features 125,000 lines of quality and thoroughly documented Pre-Hyper-Text-Post-Processor programming code.
 
-===Programming Code Documentation===
+===Programming Code Documentation and Searchability===
 All of the programming code is extremely documented and manageable with approximately 7,000 panels of programming code documentation. The documentation panels within the source code explain in detail what every line of programming code in the system does. All of the programming code documentation features searchable programming code keys such as:
-* [ @ ], meaning header.
-* [ + ], meaning ending logical statement with explanation.
+* [ ^ ], meaning header
+* [ @ ], meaning beginning of logical programming code statement with explanation of programming code functionality.
+* [ + ], meaning ending of logical programming code statement with explanation of programming code functionality.
 and more.
+
+* Example:
+
+/*
+* [ @ ] IF: 1 IS Greater Than 2, Add 1 To 2
+*/
+
+$A = 1;
+$B = 2;
+
+if ($A > $B) {
+
+$C = $A + $B;
+
+} // [ + ] IF: 1 IS Greater Than 2, Add 1 To 2
 
 Adding features to this web application as a novice programmer is very simple and straightforward.
 
