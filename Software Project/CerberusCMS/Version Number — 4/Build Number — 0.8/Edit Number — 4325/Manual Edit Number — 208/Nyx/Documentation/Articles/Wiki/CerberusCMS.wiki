@@ -667,7 +667,7 @@ CerberusCMS free and open source edition comes with a custom FOSS license.
 ==Project Development Team==
 
 ===Company Projects===
-Tinke Software was renamed from Rune Software and Rune Software, Inc. which was registered in 2001 through ICANN. Tinke Software now maintains and periodically develops 16 different software projects that use just about
+Tinke Software was renamed from Rune Software and Rune Software, Inc. which was registered in 2001 through ICANN as RuneSoftware.org after an agreement was made over the name with Rune Software, GMBH in Germany. Tinke Software now maintains and periodically develops 16 different software projects that use just about
 every programming language and scripting language.
 
 Content Management Systems
