@@ -391,7 +391,7 @@ This is makes it impossible to cache / freeze the Web Page content by a maliciou
 ====Application Module Control Features====
 * Application Module Access Level Controls.
 * Application Module Access Restriction Controls where specified Application Modules cannot execute programming code that would compromise the system.
-* Location By G.P.S., Location By GeoLocation, Location By Internet Protocol Address Controls.
+* Location By Global-Positioning-System, Location By Geographical-Localization-Objects, Location By Internet Protocol Address Controls.
 * Device Microphone Access Controls.
 * Device Camera Access Controls.
 
@@ -538,7 +538,7 @@ This makes it impossible for anyone else to login to the account on the same aut
 * Advanced Encryption Standard - 256 and Advanced Encryption Standard - 512 Encrypted Personal Files.
 
 ===Activity Monitoring and Logging Features===
-* Extensive and Detailed activity monitoring with exact G.P.S. coordinates of Registered Member Accounts and Non-Registered Visitors based on device reporting.
+* Extensive and Detailed activity monitoring with exact Global-Positioning-System coordinates of Registered Member Accounts and Non-Registered Visitors based on device reporting.
 * Unique Digital Fingerprinting.
 
 ===Notable Features===
