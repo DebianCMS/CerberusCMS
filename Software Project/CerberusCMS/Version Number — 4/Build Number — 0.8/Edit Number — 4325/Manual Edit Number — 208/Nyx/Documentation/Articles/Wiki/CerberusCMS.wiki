@@ -139,7 +139,7 @@ CerberusCMS comes with a Kernel File, Installation and Maintenance Applications,
 * Services
 
 * '''Accounts'''
-Automated as well as options for managing accounts and account access levels. Automatically deletes unverified and non-activated registered accounts.
+Automated as well as options for managing accounts and account access levels. Automatically deletes unverified and non-activated registered member accounts.
 
 * '''Commander'''
 Automated as well as options for managing command interpretations to and from the robot account by Short-Message-Service Message, Instant Messenger and by other means.
@@ -163,6 +163,8 @@ Automated as well as options for managing background services and scheduling spe
 
 * '''Tasks'''
 Options for managing current and future tasks as well as an advanced Task Manager that monitors T.C.P./I.P. connections in real-time.
+
+1 Root Administration-Level Application Module
 
 ====Administration-Level Application Modules====
 * Accounts
