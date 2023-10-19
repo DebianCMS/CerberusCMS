@@ -667,30 +667,44 @@ CerberusCMS free and open source edition comes with a custom FOSS license.
 ==Project Development Team==
 
 ===Company Projects===
-TinkeSoftware was renamed from RuneSoftware and maintains and periodically develops 15 different software projects
+Tinke Software was renamed from Rune Software and Rune Software, Inc. which was registered in 2001 through ICANN. Tinke Software now maintains and periodically develops 16 different software projects that use just about
+every programming language and scripting language.
 
-* Cerberus Content Management System
-* Cerberus Content Management System Direct Fork: Fenrir Content Management System
-* Cerberus Content Management System Direct Fork: Runic / Rune Content Management System
-* Magysk Theme Writer
-* Stokje Application Writer
-* Charon / Helvegen
-* Grutte Forces // Troll Unmasker Written in Python and C++
-* Lightning Calculate !
-* Iris
-* Runic Alphabets
-* Runic Calendars
-* Runic Keyboard Layouts
-* Runic Keyboard Stickers
-* Runic Language Packs
+Content Management Systems
+* Cerberus Content Management System :: Written In PHP-SQL
+* Cerberus Content Management System, Direct Fork: Fenrir Content Management System :: Written In PHP-SQL
+* Cerberus Content Management System, Direct Fork: Runic / Rune Content Management System :: Written In PHP-SQL
+* Cerberus Content Management System, Direct Fork: Debian Content Management System :: Written In PHP-SQL-QML
+* CerberusCMS, Iris :: Written In Java, C++ and PHP
+* CerberusCMS, Magysk Theme Writer :: Written In C++
+* CerberusCMS, Stokje Application Writer :: Written In C++
+* CerberusCMS, Charon / Helvegen :: Written In C++
+
+Discovery Applications
+* Grutte Forces // Troll Unmasker :: Written in Python and C++
+
+Mathematics Applications
+* Lightning Calculate ! :: Written In PHP and C++
+* G.C.'s Calculator :: Written In P.H.P. and C++
+
+Language Applications
+* Runic Alphabets :: For Linux, Google AOSP, Apple iOS and Microsoft Windows
+* Runic Calendars :: Written In C++ and PHP
+* Runic Keyboard Layouts :: For Linux, Google AOSP, Apple iOS and Microsoft Windows
+* Runic Keyboard Stickers :: For Linux, Google AOSP, Apple iOS and Microsoft Windows
+* Runic Language Packs :: For Linux, Google AOSP, Apple iOS and Microsoft Windows
+
+Messenger Applications
 * Runic / Rune Messenger // Encrypted Messenger Written in P.H.P. and C++
-* Runic / Rune / Sowilo Dashboard // Dashboard Based on the Original XBMC Project
-* Runic / Rune / Sowilo Operating System // Based on Gentoo-Linux
-* Grand Theft Auto - Oildale // GTA - San Andreas Expansion Pack For P.C. and Modded XBOX featuring Oildale, California
-* G.C.'s Calculator
-* Lightning Calculate
 
-20 unique and original software projects.
+Operating Systems
+* Runic / Rune / Sowilo Dashboard // Dashboard Based on the Original XBMC and XBMC4XBOX Project
+* Runic / Rune / Sowilo Operating System // Based on Gentoo-Linux and Arch-Linux
+
+Video Games
+* Grand Theft Auto - Oildale // GTA - San Andreas Expansion Pack For Personal-Computer and Modded Original XBOX featuring Oildale, California
+
+22 unique and original software projects.
 
 Each software project combined totals around ~450,000 lines of original programming code across several different programming and scripting languages.
 
