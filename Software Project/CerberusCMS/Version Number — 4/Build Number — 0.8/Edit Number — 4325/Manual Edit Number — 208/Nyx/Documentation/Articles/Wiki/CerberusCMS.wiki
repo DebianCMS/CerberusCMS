@@ -317,7 +317,7 @@ This Plug-In is a very simple WYSIWYG Text Editor that can be included into any 
 This Plug-In automatically converts Hyper-Text-Markup-Language tags to Hyper-Text-Markup-Language entities from all of the input forms throughout the system. Example of this would be converting: '''< B >''' to '''& lt ;''' before it is inserted into the Database Management System Data. This eliminates any possibility of malicious Hyper-Text-Markup-Language tag injection, JavaScript scripting code injection and Post-Hyper-Text-Pre-Processor programming code injection into the Database Management System. All of the entities are converted back to Hyper-Text-Markup-Language tags after being retrieved from the Database Management System.
 
 * Location
-This Plug-In gets the exact Global-Positioning-System X, Y and Z coordinates of the Devices connected to CerberusCMS. Location is capable of getting the Device Global-Positioning-System Coordinates and 9 - 10 Foot Radial Location from the Web Browser by using HTML5 Global-Positioning-System Built-In Functionality for Longitude, Latitude and Altitude with 98% accuracy down to  9 - 10 feet in radius and 3 feet in altitude where the altitude is reported in Y units above Sea Level every 1 to 5 seconds. Location is also capable of getting the Device Global-Positioning-System Coordinates Location from the Google Android Device or the Apple iPhone Device through the Device Applications. Location stores the exact Global-Positioning-System coordinates in X, Y and Z to an organized log file within each Registered Member Account log directory. Location can get the Global-Positioning-System coordinates of Longitude, Latitude and Altitude by Hyper-Text-Markup-Language 5 Built-In Functionality From The Web Browser, Pre-Hyper-Text-Post-Processor Built-In Functionality From The Web Browser, Java From The Web Browser, AOSP/Java From The Google Android Smart Phone, iOS/Swift from the Apple iPhone.
+This Plug-In gets the exact Global-Positioning-System X, Y and Z Coordinates of the Devices connected to CerberusCMS. Location is capable of getting the Device Global-Positioning-System Coordinates and 9 - 10 Foot Radial Location with Altitude from the Web Browser of the Device by using H.T.M.L. Version 5 Global-Positioning-System Built-In Functionality for Longitude, Latitude and Altitude with 98% accuracy every time down to  9 - 10 feet in radius and 3 feet in altitude of that radius where the altitude is reported in Y units above Sea Level every 1 to 5 seconds. Location is also capable of getting the Device Global-Positioning-System Coordinates Location from the Google Android Device or the Apple iPhone Device through the Device Applications. Location stores the exact Global-Positioning-System Coordinates in X, Y and Z to an organized log file within each Registered Member Account log directory. Location can get the Global-Positioning-System Coordinates of Longitude, Latitude and Altitude by Hyper-Text-Markup-Language Version 5 Built-In Functionality From The Web Browser, Pre-Hyper-Text-Post-Processor Built-In Functionality From The Web Browser, Java From The Web Browser, AOSP/Java From The Google Android Smart Phone, iOS/Swift from the Apple iPhone.
 
 ==Project Web Server Software Compatibility==
 
@@ -391,7 +391,7 @@ This is makes it impossible to cache / freeze the Web Page content by a maliciou
 ====Application Module Control Features====
 * Application Module Access Level Controls.
 * Application Module Access Restriction Controls where specified Application Modules cannot execute programming code that would compromise the system.
-* Location By Global-Positioning-System, Location By Geographical-Localization-Objects, Location By Internet Protocol Address Controls.
+* Location By Global-Positioning-System Coordinates With Altitude, Location By Geographical-Localization-Objects, Location By Internet Protocol Address Controls.
 * Device Microphone Access Controls.
 * Device Camera Access Controls.
 
@@ -538,7 +538,7 @@ This makes it impossible for anyone else to login to the account on the same aut
 * Advanced Encryption Standard - 256 and Advanced Encryption Standard - 512 Encrypted Personal Files.
 
 ===Activity Monitoring and Logging Features===
-* Extensive and Detailed activity monitoring with exact Global-Positioning-System coordinates of Registered Member Accounts and Non-Registered Visitors based on device reporting.
+* Extensive and Detailed activity monitoring with exact Global-Positioning-System Coordinates With Altitude of Registered Member Accounts and Non-Registered Visitors based on device reporting.
 * Unique Digital Fingerprinting.
 
 ===Notable Features===
