@@ -191,6 +191,105 @@ $_Application_Module_Extras_Diagnostics_LISTING_FILES									= "<BR><BR><B>List
  +
  +
  +
+ + [ @ ] ./Applications/Services
+ +
+ +
+ +
+ + Alphabetical Order
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Commander
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Header
+ ============================================================================================================
+*/
+
+$_Application_Module_Services_Message_Commander_Header									= "<CENTER>[ <B><A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Application_List&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Application Module :: Application List ::\">Root</A> => <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_SERVICES&#61;Commander&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Root => :: Open & Display The Services Root-Administration Application Module :: Commander ::\">Commander</A> => <A HREF=\"./Applications/Services/Commander?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code For The Services Root-Administration Application Module :: Commander ::\">Source</A></B> ]</CENTER><HR><BR>";
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Integrity
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Header
+ ============================================================================================================
+*/
+
+$_Application_Module_Services_Message_Integrity_Header									= "<CENTER>[ <B><A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Application_List&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Application Module :: Application List ::\">Root</A> => <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_SERVICES&#61;Integrity&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Root => :: Open & Display The Services Root-Administration Application Module :: Integrity ::\">Integrity</A> => <A HREF=\"./Applications/Services/Integrity?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code For The Services Root-Administration Application Module :: Integrity ::\">Source</A></B> ]</CENTER><HR><BR>";
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Loops
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Header
+ ============================================================================================================
+*/
+
+$_Application_Module_Services_Loops_Integrity_Header									= "<CENTER>[ <B><A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Application_List&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Application Module :: Application List ::\">Root</A> => <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_SERVICES&#61;Loops&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Root => :: Open & Display The Services Root-Administration Application Module :: Loops ::\">Integrity</A> => <A HREF=\"./Applications/Services/Loops?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code For The Services Root-Administration Application Module :: Loops ::\">Source</A></B> ]</CENTER><HR><BR>";
+
+ ============================================================================================================
+ +
+ +
+ +
+ +
+ + [ @ ] ./Applications/Root
+ +
+ +
+ +
+ + Alphabetical Order
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Tasks
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Header
+ ============================================================================================================
+*/
+
+$_Application_Module_Tasks_Message_Commander_Header									= "<CENTER>[ <B><A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Application_List&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Application Module :: Application List ::\">Root</A> => <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_ROOT&#61;Tasks&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Root => :: Open & Display The Root-Administration Application Module :: Tasks ::\">Tasks</A> => <A HREF=\"./Applications/Root/Tasks?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code For The Root-Administration Application Module :: Tasks ::\">Source</A></B> ]</CENTER><HR><BR>";
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ +
  + [ @ ] ./Applications/Administration/
  +
  +
