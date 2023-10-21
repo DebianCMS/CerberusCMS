@@ -574,31 +574,80 @@ $_ARCHITECT_INSTALL_FORM_GET_FILE_CONTENTS_LOG_FILE_INTERACTION_LOG						= file_
 
 /*
  ============================================================================================================
+ + Retrieve :: File Integrity :: Applications :: Background
+ ============================================================================================================
+*/
+
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_BACKGROUND_FILE_001						= hash_file('sha256', "./Applications/Background/Log_Administration");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_BACKGROUND_FILE_002						= hash_file('sha256', "./Applications/Background/Log_Background");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_BACKGROUND_FILE_003						= hash_file('sha256', "./Applications/Background/Log_Member");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_BACKGROUND_FILE_004						= hash_file('sha256', "./Applications/Background/Log_Visitor");
+
+/*
+ ============================================================================================================
+ + Retrieve :: File Integrity :: Applications :: Panel
+ ============================================================================================================
+*/
+
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_001							= hash_file('sha256', "./Applications/Panel/Administration.panel");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_002							= hash_file('sha256', "./Applications/Panel/Applications_Panel.panel");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_003							= hash_file('sha256', "./Applications/Panel/Language.panel");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_004							= hash_file('sha256', "./Applications/Panel/Latest_Articles.panel");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_005							= hash_file('sha256', "./Applications/Panel/Latest_Files.panel");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_006							= hash_file('sha256', "./Applications/Panel/Latest_Members.panel");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_007							= hash_file('sha256', "./Applications/Panel/Latest_Shouts.panel");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_008							= hash_file('sha256', "./Applications/Panel/Member_Panel.panel");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_009							= hash_file('sha256', "./Applications/Panel/Moderator.panel");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_010							= hash_file('sha256', "./Applications/Panel/Networking.panel");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_011							= hash_file('sha256', "./Applications/Panel/Project_Badges.panel");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_012							= hash_file('sha256', "./Applications/Panel/RSS_Panel.panel");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_013							= hash_file('sha256', "./Applications/Panel/Theme.panel");
+
+/*
+ ============================================================================================================
+ + Retrieve :: File Integrity :: Applications :: Services Root-Administration
+ ============================================================================================================
+*/
+
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_SERVICES_ROOT_ADMINISTRATION_FILE_001				= hash_file('sha256', "./Applications/Services/Commander");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_SERVICES_ROOT_ADMINISTRATION_FILE_002				= hash_file('sha256', "./Applications/Services/Integrity");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_SERVICES_ROOT_ADMINISTRATION_FILE_003				= hash_file('sha256', "./Applications/Services/Loops");
+
+/*
+ ============================================================================================================
+ + Retrieve :: File Integrity :: Applications :: Root-Administration
+ ============================================================================================================
+*/
+
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ROOT_ADMINISTRATION_FILE_001					= hash_file('sha256', "./Applications/Root/Tasks");
+
+/*
+ ============================================================================================================
  + Retrieve :: File Integrity :: Applications :: Administration
  ============================================================================================================
 */
 
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_001				= hash_file('sha256', "./Applications/Administration/Accounts");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_002				= hash_file('sha256', "./Applications/Administration/Applications");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_003				= hash_file('sha256', "./Applications/Administration/Archive");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_004				= hash_file('sha256', "./Applications/Administration/Control_Panel");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_005				= hash_file('sha256', "./Applications/Administration/Emulators");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_006				= hash_file('sha256', "./Applications/Administration/File_Categories");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_007				= hash_file('sha256', "./Applications/Administration/Forum");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_008				= hash_file('sha256', "./Applications/Administration/GIT");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_009				= hash_file('sha256', "./Applications/Administration/Messenger");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_010				= hash_file('sha256', "./Applications/Administration/Networking");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_011				= hash_file('sha256', "./Applications/Administration/Panels");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_012				= hash_file('sha256', "./Applications/Administration/PHP_Information.php");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_013				= hash_file('sha256', "./Applications/Administration/Publish");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_014				= hash_file('sha256', "./Applications/Administration/Ranks");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_015				= hash_file('sha256', "./Applications/Administration/Referrers");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_016				= hash_file('sha256', "./Applications/Administration/Robot_Monitor");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_017				= hash_file('sha256', "./Applications/Administration/Settings");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_018				= hash_file('sha256', "./Applications/Administration/Submissions");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_019				= hash_file('sha256', "./Applications/Administration/Terminal");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_020				= hash_file('sha256', "./Applications/Administration/Update");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_021				= hash_file('sha256', "./Applications/Administration/Web_Pages");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_001						= hash_file('sha256', "./Applications/Administration/Accounts");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_002						= hash_file('sha256', "./Applications/Administration/Applications");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_003						= hash_file('sha256', "./Applications/Administration/Archive");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_004						= hash_file('sha256', "./Applications/Administration/Control_Panel");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_005						= hash_file('sha256', "./Applications/Administration/Emulators");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_006						= hash_file('sha256', "./Applications/Administration/File_Categories");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_007						= hash_file('sha256', "./Applications/Administration/Forum");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_008						= hash_file('sha256', "./Applications/Administration/GIT");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_009						= hash_file('sha256', "./Applications/Administration/Messenger");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_010						= hash_file('sha256', "./Applications/Administration/Networking");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_011						= hash_file('sha256', "./Applications/Administration/Panels");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_012						= hash_file('sha256', "./Applications/Administration/PHP_Information.php");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_013						= hash_file('sha256', "./Applications/Administration/Publish");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_014						= hash_file('sha256', "./Applications/Administration/Ranks");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_015						= hash_file('sha256', "./Applications/Administration/Referrers");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_016						= hash_file('sha256', "./Applications/Administration/Robot_Monitor");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_017						= hash_file('sha256', "./Applications/Administration/Settings");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_018						= hash_file('sha256', "./Applications/Administration/Submissions");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_019						= hash_file('sha256', "./Applications/Administration/Terminal");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_020						= hash_file('sha256', "./Applications/Administration/Update");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_021						= hash_file('sha256', "./Applications/Administration/Web_Pages");
 
 /*
  ============================================================================================================
@@ -606,52 +655,52 @@ $_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ADMINISTRATION_FILE_021				= hash_f
  ============================================================================================================
 */
 
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_001					= hash_file('sha256', "./Applications/Member/Account_Recovery");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_002					= hash_file('sha256', "./Applications/Member/Active_Members");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_003					= hash_file('sha256', "./Applications/Member/All_News");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_004					= hash_file('sha256', "./Applications/Member/All_Shouts");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_005					= hash_file('sha256', "./Applications/Member/Application_List");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_006					= hash_file('sha256', "./Applications/Member/Articles");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_007					= hash_file('sha256', "./Applications/Member/Calculator");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_008					= hash_file('sha256', "./Applications/Member/Clock");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_009					= hash_file('sha256', "./Applications/Member/Comment");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_010					= hash_file('sha256', "./Applications/Member/Contact_Administrator");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_011					= hash_file('sha256', "./Applications/Member/Control_Panel");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_012					= hash_file('sha256', "./Applications/Member/Documentation");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_013					= hash_file('sha256', "./Applications/Member/Download");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_014					= hash_file('sha256', "./Applications/Member/Electronic_Mail");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_015					= hash_file('sha256', "./Applications/Member/Emulators");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_016					= hash_file('sha256', "./Applications/Member/Files");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_017					= hash_file('sha256', "./Applications/Member/Forum");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_018					= hash_file('sha256', "./Applications/Member/Forward");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_019					= hash_file('sha256', "./Applications/Member/Friend");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_020					= hash_file('sha256', "./Applications/Member/Language");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_021					= hash_file('sha256', "./Applications/Member/Legal");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_022					= hash_file('sha256', "./Applications/Member/Lightning_Calculate");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_023					= hash_file('sha256', "./Applications/Member/List");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_024					= hash_file('sha256', "./Applications/Member/Login");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_025					= hash_file('sha256', "./Applications/Member/Media_Player");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_026					= hash_file('sha256', "./Applications/Member/Member_Directory");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_027					= hash_file('sha256', "./Applications/Member/Messenger");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_028					= hash_file('sha256', "./Applications/Member/News");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_029					= hash_file('sha256', "./Applications/Member/Notepad");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_030					= hash_file('sha256', "./Applications/Member/Pages");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_031					= hash_file('sha256', "./Applications/Member/Private_Files");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_032					= hash_file('sha256', "./Applications/Member/Profile");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_033					= hash_file('sha256', "./Applications/Member/Recommendations");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_034					= hash_file('sha256', "./Applications/Member/Referrers");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_035					= hash_file('sha256', "./Applications/Member/Register");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_036					= hash_file('sha256', "./Applications/Member/Reset_Password");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_037					= hash_file('sha256', "./Applications/Member/Search");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_038					= hash_file('sha256', "./Applications/Member/Statistics");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_039					= hash_file('sha256', "./Applications/Member/Submit_News");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_040					= hash_file('sha256', "./Applications/Member/System_Message");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_041					= hash_file('sha256', "./Applications/Member/Theme");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_042					= hash_file('sha256', "./Applications/Member/Update_Account");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_043					= hash_file('sha256', "./Applications/Member/Update_Password");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_044					= hash_file('sha256', "./Applications/Member/Upload");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_045					= hash_file('sha256', "./Applications/Member/VoIP");
-$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_046					= hash_file('sha256', "./Applications/Member/Webspace");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_001							= hash_file('sha256', "./Applications/Member/Account_Recovery");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_002							= hash_file('sha256', "./Applications/Member/Active_Members");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_003							= hash_file('sha256', "./Applications/Member/All_News");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_004							= hash_file('sha256', "./Applications/Member/All_Shouts");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_005							= hash_file('sha256', "./Applications/Member/Application_List");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_006							= hash_file('sha256', "./Applications/Member/Articles");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_007							= hash_file('sha256', "./Applications/Member/Calculator");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_008							= hash_file('sha256', "./Applications/Member/Clock");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_009							= hash_file('sha256', "./Applications/Member/Comment");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_010							= hash_file('sha256', "./Applications/Member/Contact_Administrator");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_011							= hash_file('sha256', "./Applications/Member/Control_Panel");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_012							= hash_file('sha256', "./Applications/Member/Documentation");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_013							= hash_file('sha256', "./Applications/Member/Download");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_014							= hash_file('sha256', "./Applications/Member/Electronic_Mail");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_015							= hash_file('sha256', "./Applications/Member/Emulators");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_016							= hash_file('sha256', "./Applications/Member/Files");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_017							= hash_file('sha256', "./Applications/Member/Forum");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_018							= hash_file('sha256', "./Applications/Member/Forward");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_019							= hash_file('sha256', "./Applications/Member/Friend");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_020							= hash_file('sha256', "./Applications/Member/Language");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_021							= hash_file('sha256', "./Applications/Member/Legal");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_022							= hash_file('sha256', "./Applications/Member/Lightning_Calculate");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_023							= hash_file('sha256', "./Applications/Member/List");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_024							= hash_file('sha256', "./Applications/Member/Login");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_025							= hash_file('sha256', "./Applications/Member/Media_Player");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_026							= hash_file('sha256', "./Applications/Member/Member_Directory");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_027							= hash_file('sha256', "./Applications/Member/Messenger");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_028							= hash_file('sha256', "./Applications/Member/News");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_029							= hash_file('sha256', "./Applications/Member/Notepad");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_030							= hash_file('sha256', "./Applications/Member/Pages");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_031							= hash_file('sha256', "./Applications/Member/Private_Files");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_032							= hash_file('sha256', "./Applications/Member/Profile");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_033							= hash_file('sha256', "./Applications/Member/Recommendations");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_034							= hash_file('sha256', "./Applications/Member/Referrers");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_035							= hash_file('sha256', "./Applications/Member/Register");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_036							= hash_file('sha256', "./Applications/Member/Reset_Password");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_037							= hash_file('sha256', "./Applications/Member/Search");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_038							= hash_file('sha256', "./Applications/Member/Statistics");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_039							= hash_file('sha256', "./Applications/Member/Submit_News");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_040							= hash_file('sha256', "./Applications/Member/System_Message");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_041							= hash_file('sha256', "./Applications/Member/Theme");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_042							= hash_file('sha256', "./Applications/Member/Update_Account");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_043							= hash_file('sha256', "./Applications/Member/Update_Password");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_044							= hash_file('sha256', "./Applications/Member/Upload");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_045							= hash_file('sha256', "./Applications/Member/VoIP");
+$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_046							= hash_file('sha256', "./Applications/Member/Webspace");
 
 /*
  ============================================================================================================
@@ -2065,7 +2114,7 @@ mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applic
 
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Root Administration Application Modules Wait.<BR>");
 
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_root(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('','','Tasks','4','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_root(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ROOT_ADMINISTRATION_FILE_001','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_ROOT_ADMINISTRATION_FILE_001','Tasks','4','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
 
 	echo ("[ Done ]<BR><BR>");
 
@@ -2077,9 +2126,9 @@ mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applic
 
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Services Root Administration Application Modules Wait.<BR>");
 
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_services(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('','','Commander','5','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_services(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('','','Integrity','5','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_services(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('','','Loops','5','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_services(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_SERVICES_ROOT_ADMINISTRATION_FILE_001','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_SERVICES_ROOT_ADMINISTRATION_FILE_001','Commander','5','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_services(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_SERVICES_ROOT_ADMINISTRATION_FILE_002','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_SERVICES_ROOT_ADMINISTRATION_FILE_002','Integrity','5','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_services(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_SERVICES_ROOT_ADMINISTRATION_FILE_003','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_SERVICES_ROOT_ADMINISTRATION_FILE_003','Loops','5','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
 
 	echo ("[ Done ]<BR><BR>");
 
@@ -2091,10 +2140,10 @@ mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applic
 
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Background Application Modules Wait.<BR>");
 
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_background(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('','','Log_Administration','6','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_background(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('','','Log_Background','6','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_background(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('','','Log_Member','6','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_background(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('','','Log_Visitor','6','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_background(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_BACKGROUND_FILE_001','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_BACKGROUND_FILE_001','Log_Administration','6','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_background(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_BACKGROUND_FILE_002','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_BACKGROUND_FILE_002','Log_Background','6','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_background(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_BACKGROUND_FILE_003','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_BACKGROUND_FILE_003','Log_Member','6','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_background(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_BACKGROUND_FILE_004','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_BACKGROUND_FILE_004','Log_Visitor','6','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
 
 	echo ("[ Done ]<BR><BR>");
 
@@ -2106,17 +2155,17 @@ mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applic
 
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Packaged Panel Application Modules... Wait.<BR>");
 
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('','','Applications_Panel','0','0','1','1','<CENTER><B>Applications Panel</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('','','Networking','0','0','4','1','<CENTER><B>Networking</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('','','Project_Badges','0','1','1','1','<CENTER><B>Project Badges</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('','','Language','0','1','6','1','<CENTER><B>Language Selection</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('','','Latest_Articles','0','0','3','1','<CENTER><B>Latest Articles</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('','','Latest_Files','0','1','3','1','<CENTER><B>Latest Files</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('','','Latest_Members','0','1','6','1','<CENTER><B>Newest Members</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('','','Latest_Shouts','0','1','5','1','<CENTER><B>Latest Shout Messages</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('','','Member_Panel','0','0','2','1','<CENTER><B>Member Panel</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('','','RSS_Panel','0','1','4','1','<CENTER><B>Real-Simple-Syndication</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
-mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('','','Theme','0','1','5','1','<CENTER><B>Theme Selection</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_001','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_001','Applications_Panel','0','0','1','1','<CENTER><B>Applications Panel</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_002','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_002','Networking','0','0','4','1','<CENTER><B>Networking</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_003','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_003','Project_Badges','0','1','1','1','<CENTER><B>Project Badges</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_004','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_004','Language','0','1','6','1','<CENTER><B>Language Selection</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_005','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_005','Latest_Articles','0','0','3','1','<CENTER><B>Latest Articles</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_006','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_006','Latest_Files','0','1','3','1','<CENTER><B>Latest Files</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_007','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_007','Latest_Members','0','1','6','1','<CENTER><B>Newest Members</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_008','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_008','Latest_Shouts','0','1','5','1','<CENTER><B>Latest Shout Messages</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_009','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_009','Member_Panel','0','0','2','1','<CENTER><B>Member Panel</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_010','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_010','RSS_Panel','0','1','4','1','<CENTER><B>Real-Simple-Syndication</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
+mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_011','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_011','Theme','0','1','5','1','<CENTER><B>Theme Selection</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP')");
 
 	echo ("[ Done ]<BR><BR>");
 
