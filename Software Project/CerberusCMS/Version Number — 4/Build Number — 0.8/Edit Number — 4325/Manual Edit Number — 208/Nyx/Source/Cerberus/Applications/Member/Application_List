@@ -256,9 +256,14 @@ echo ("
 														<HR><B>File :: Application Module :: Background :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_NAME</B><HR>
 
 														<B>Application Module :: Background :: Permissions</B><HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-														* File :: Application Module :: Background :: Permissions :: Access :: File: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_PERMISSION<BR>
+														<B>Permissions :: File</B><BR>
+														* File :: Application Module :: Background :: Permissions :: Access :: File: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_PERMISSION<BR><BR>
+
+														<B>Permissions :: Device</B><BR>
 														* File :: Application Module :: Background :: Permissions :: Access :: Device :: Camera: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_PERMISSION_CAMERA<BR>
-														* File :: Application Module :: Background :: Permissions :: Access :: Device :: Microphone: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_PERMISSION_MICROPHONE<BR>
+														* File :: Application Module :: Background :: Permissions :: Access :: Device :: Microphone: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_PERMISSION_MICROPHONE<BR><BR>
+
+														<B>Permissions :: Location</B><BR>
 														* File :: Application Module :: Background :: Permissions :: Access :: Location :: Global-Positioning-System: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_PERMISSION_LOCATION_GPS<BR>
 														* File :: Application Module :: Background :: Permissions :: Access :: Location :: Geographical-Localization-Objects: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_PERMISSION_LOCATION_GLO<BR>
 														* File :: Application Module :: Background :: Permissions :: Access :: Location :: Internet Protocol Address: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_PERMISSION_LOCATION_IP<BR><BR>
@@ -267,14 +272,21 @@ echo ("
 														* File :: Application Module :: Background :: Status :: Activated: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_STATUS<BR><BR>
 
 														<B>Application Module :: Background :: File Details</B><HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+														<B>Details :: File</B><BR>
 														* File :: Application Module :: Background :: Database Entry :: ID Number: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_ID<BR>
-														* File :: Application Module :: Background :: Database Entry :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_NAME<BR>
-														* Integrity :: Application Module :: Background :: File Size :: Database Entry :: Master :: HASH, Secure-Hash-Algorithm-256 :: <BR>
-														* Integrity :: Application Module :: Background :: File Size :: Database Entry :: Local :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_INTEGRITY<BR>
-														* Integrity :: Application Module :: Background :: File Size :: Database Entry :: Local :: From Installation :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_INTEGRITY_INSTALLATION<BR>
+														* File :: Application Module :: Background :: Database Entry :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_NAME<BR><BR>
+
+														<B>Integrity :: Database Management System Server Database Entries</B><BR>
+														* Integrity :: Application Module :: Background :: File Size :: Database Entry :: HASH :: Master :: Secure-Hash-Algorithm-256 :: <BR>
+														* Integrity :: Application Module :: Background :: File Size :: Database Entry :: HASH :: Local :: Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_INTEGRITY<BR>
+														* Integrity :: Application Module :: Background :: File Size :: Database Entry :: HASH :: Local :: From Installation :: Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_INTEGRITY_INSTALLATION<BR><BR>
+
+														<B>Integrity :: Physical File</B><BR>
 														* Integrity :: Application Module :: Background :: File Size :: Physical File :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_HASH_SHA256<BR>
 														* Integrity :: Application Module :: Background :: File Size :: Physical File :: In Bytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_SIZE<BR>
 														* Integrity :: Application Module :: Background :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_SIZE_KILOBYTES<BR>
+
+														<B>Timestamp :: Installation</B><BR>
 														* Timestamp :: Application Module :: Background :: Database Entry :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_TIMESTAMP_INSTALLATION<BR>
 														<A HREF=\"./Applications/Background/$_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_NAME\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_NAME ::\">Source Code</A><HR><BR>
 ");
@@ -319,9 +331,14 @@ echo ("
 														<HR><B>File :: Application Module :: Administration :: Root :: Services :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_NAME</B><HR>
 
 														<B>Application Module :: Administration :: Root :: Services :: Permissions</B><HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-														* File :: Application Module :: Administration :: Root :: Services :: Permissions :: Access :: File: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_PERMISSION<BR>
+														<B>Permissions :: File</B><BR>
+														* File :: Application Module :: Administration :: Root :: Services :: Permissions :: Access :: File: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_PERMISSION<BR><BR>
+
+														<B>Permissions :: Device</B><BR>
 														* File :: Application Module :: Administration :: Root :: Services :: Permissions :: Access :: Device :: Camera: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_PERMISSION_CAMERA<BR>
-														* File :: Application Module :: Administration :: Root :: Services :: Permissions :: Access :: Device :: Microphone: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_PERMISSION_MICROPHONE<BR>
+														* File :: Application Module :: Administration :: Root :: Services :: Permissions :: Access :: Device :: Microphone: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_PERMISSION_MICROPHONE<BR><BR>
+
+														<B>Permissions :: Location</B><BR>
 														* File :: Application Module :: Administration :: Root :: Services :: Permissions :: Access :: Location :: Global-Positioning-System: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_PERMISSION_LOCATION_GPS<BR>
 														* File :: Application Module :: Administration :: Root :: Services :: Permissions :: Access :: Location :: Geographical-Localization-Objects: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_PERMISSION_LOCATION_GLO<BR>
 														* File :: Application Module :: Administration :: Root :: Services :: Permissions :: Access :: Location :: Internet Protocol Address: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_PERMISSION_LOCATION_IP<BR><BR>
@@ -330,14 +347,21 @@ echo ("
 														* File :: Application Module :: Administration :: Root :: Services :: Status :: Activated: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_STATUS<BR><BR>
 
 														<B>Application Module :: Administration :: Root :: Services :: File Details</B><HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+														<B>Details :: File</B><BR>
 														* File :: Application Module :: Administration :: Root :: Services :: Database Entry :: ID Number: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_ID<BR>
-														* File :: Application Module :: Administration :: Root :: Services :: Database Entry :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_NAME<BR>
-														* Integrity :: Application Module :: Administration :: Root :: Services :: File Size :: Database Entry :: Master :: HASH, Secure-Hash-Algorithm-256 :: <BR>
-														* Integrity :: Application Module :: Administration :: Root :: Services :: File Size :: Database Entry :: Local :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_INTEGRITY<BR>
-														* Integrity :: Application Module :: Administration :: Root :: Services :: File Size :: Database Entry :: Local :: From Installation :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_INTEGRITY_INSTALLATION<BR>
+														* File :: Application Module :: Administration :: Root :: Services :: Database Entry :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_NAME<BR><BR>
+
+														<B>Integrity :: Database Management System Server Database Entries</B><BR>
+														* Integrity :: Application Module :: Administration :: Root :: Services :: File Size :: Database Entry :: HASH :: Master :: Secure-Hash-Algorithm-256 :: <BR>
+														* Integrity :: Application Module :: Administration :: Root :: Services :: File Size :: Database Entry :: HASH :: Local :: Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_INTEGRITY<BR>
+														* Integrity :: Application Module :: Administration :: Root :: Services :: File Size :: Database Entry :: HASH :: Local :: From Installation :: Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_INTEGRITY_INSTALLATION<BR><BR>
+
+														<B>Integrity :: Physical File</B><BR>
 														* Integrity :: Application Module :: Administration :: Root :: Services :: File Size :: Physical File :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_HASH_SHA256<BR>
 														* Integrity :: Application Module :: Administration :: Root :: Services :: File Size :: Physical File :: In Bytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_SIZE<BR>
-														* Integrity :: Application Module :: Administration :: Root :: Services :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_SIZE_KILOBYTES<BR>
+														* Integrity :: Application Module :: Administration :: Root :: Services :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_SIZE_KILOBYTES<BR><BR>
+
+														<B>Timestamps :: Installation</B><BR>
 														* Timestamp :: Application Module :: Administration :: Root :: Services :: Database Entry :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_TIMESTAMP_INSTALLATION<BR>
 														<A HREF=\"./Applications/Services/$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_NAME\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_NAME ::\">Source Code</A><HR><BR>
 ");
@@ -383,9 +407,14 @@ echo ("
 														<HR><B>File :: Application Module :: Administration :: Root :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_NAME</B><HR>
 
 														<B>Application Module :: Administration :: Root :: Permissions</B><HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-														* File :: Application Module :: Administration :: Root :: Permissions :: Access :: File: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_PERMISSION<BR>
+														<B>Permissions :: File</B><BR>
+														* File :: Application Module :: Administration :: Root :: Permissions :: Access :: File: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_PERMISSION<BR><BR>
+
+														<B>Permissions :: Device</B><BR>
 														* File :: Application Module :: Administration :: Root :: Permissions :: Access :: Device :: Camera: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_PERMISSION_CAMERA<BR>
-														* File :: Application Module :: Administration :: Root :: Permissions :: Access :: Device :: Microphone: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_PERMISSION_MICROPHONE<BR>
+														* File :: Application Module :: Administration :: Root :: Permissions :: Access :: Device :: Microphone: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_PERMISSION_MICROPHONE<BR><BR>
+
+														<B>Permissions :: Location</B><BR>
 														* File :: Application Module :: Administration :: Root :: Permissions :: Access :: Location :: Global-Positioning-System: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_PERMISSION_LOCATION_GPS<BR>
 														* File :: Application Module :: Administration :: Root :: Permissions :: Access :: Location :: Geographical-Localization-Objects: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_PERMISSION_LOCATION_GLO<BR>
 														* File :: Application Module :: Administration :: Root :: Permissions :: Access :: Location :: Internet Protocol Address: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_PERMISSION_LOCATION_IP<BR><BR>
@@ -394,14 +423,21 @@ echo ("
 														* File :: Application Module :: Administration :: Root :: Status :: Activated: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_STATUS<BR><BR>
 
 														<B>Application Module :: Administration :: Root :: File Details</B><HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+														<B>Details :: File</B><BR>
 														* File :: Application Module :: Administration :: Root :: Database Entry :: ID Number: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_ID<BR>
-														* File :: Application Module :: Administration :: Root :: Database Entry :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_NAME<BR>
-														* Integrity :: Application Module :: Administration :: Root :: File Size :: Database Entry :: Master :: HASH, Secure-Hash-Algorithm-256 :: <BR>
-														* Integrity :: Application Module :: Administration :: Root :: File Size :: Database Entry :: Local :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_INTEGRITY<BR>
-														* Integrity :: Application Module :: Administration :: Root :: File Size :: Database Entry :: Local :: From Installation :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_INTEGRITY_INSTALLATION<BR>
+														* File :: Application Module :: Administration :: Root :: Database Entry :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_NAME<BR><BR>
+
+														<B>Integrity :: Database Management System Server Database Entries</B><BR>
+														* Integrity :: Application Module :: Administration :: Root :: File Size :: Database Entry :: HASH :: Master :: Secure-Hash-Algorithm-256 :: <BR>
+														* Integrity :: Application Module :: Administration :: Root :: File Size :: Database Entry :: HASH :: Local :: Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_INTEGRITY<BR>
+														* Integrity :: Application Module :: Administration :: Root :: File Size :: Database Entry :: HASH :: Local :: From Installation :: Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_INTEGRITY_INSTALLATION<BR><BR>
+
+														<B>Integrity :: Physical File</B><BR>
 														* Integrity :: Application Module :: Administration :: Root :: File Size :: Physical File :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_HASH_SHA256<BR>
 														* Integrity :: Application Module :: Administration :: Root :: File Size :: Physical File :: In Bytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_SIZE<BR>
-														* Integrity :: Application Module :: Administration :: Root :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_SIZE_KILOBYTES<BR>
+														* Integrity :: Application Module :: Administration :: Root :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_SIZE_KILOBYTES<BR><BR>
+
+														<B>Timestamps :: Installation</B><BR>
 														* Timestamp :: Application Module :: Administration :: Root :: Database Entry :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_TIMESTAMP_INSTALLATION<BR>
 														<A HREF=\"./Applications/Root/$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_NAME\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_NAME ::\">Source Code</A><HR><BR>
 ");
@@ -446,9 +482,14 @@ echo ("
 														<HR><B>File :: Application Module :: Administration :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_NAME</B><HR>
 
 														<B>Application Module :: Administration :: Permissions</B><HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-														* File :: Application Module :: Administration :: Permissions :: Access :: File: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_PERMISSION<BR>
+														<B>Permissions :: File</B><BR>
+														* File :: Application Module :: Administration :: Permissions :: Access :: File: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_PERMISSION<BR><BR>
+
+														<B>Permissions :: Device</B><BR>
 														* File :: Application Module :: Administration :: Permissions :: Access :: Device :: Camera: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_PERMISSION_CAMERA<BR>
-														* File :: Application Module :: Administration :: Permissions :: Access :: Device :: Microphone: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_PERMISSION_MICROPHONE<BR>
+														* File :: Application Module :: Administration :: Permissions :: Access :: Device :: Microphone: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_PERMISSION_MICROPHONE<BR><BR>
+
+														<B>Permissions :: Location</B><BR>
 														* File :: Application Module :: Administration :: Permissions :: Access :: Location :: Global-Positioning-System: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_PERMISSION_LOCATION_GPS<BR>
 														* File :: Application Module :: Administration :: Permissions :: Access :: Location :: Geographical-Localization-Objects: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_PERMISSION_LOCATION_GLO<BR>
 														* File :: Application Module :: Administration :: Permissions :: Access :: Location :: Internet Protocol Address: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_PERMISSION_LOCATION_IP<BR><BR>
@@ -457,14 +498,21 @@ echo ("
 														* File :: Application Module :: Administration :: Status :: Activated: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_STATUS<BR><BR>
 
 														<B>Application Module :: Administration :: File Details</B><HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+														<B>Details :: File</B><BR>
 														* File :: Application Module :: Administration :: Database Entry :: ID Number: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ID<BR>
-														* File :: Application Module :: Administration :: Database Entry :: File Name: <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_ADMINISTRATOR&#61;$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_NAME\" TITLE=\":: Open & Display The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_NAME ::\">$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_NAME</A><BR>
-														* Integrity :: Application Module :: Administration :: File Size :: Database Entry :: Master :: HASH, Secure-Hash-Algorithm-256 :: <BR>
-														* Integrity :: Application Module :: Administration :: File Size :: Database Entry :: Local :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_INTEGRITY<BR>
-														* Integrity :: Application Module :: Administration :: File Size :: Database Entry :: Local :: From Installation :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_INTEGRITY_INSTALLATION<BR>
+														* File :: Application Module :: Administration :: Database Entry :: File Name: <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_ADMINISTRATOR&#61;$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_NAME\" TITLE=\":: Open & Display The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_NAME ::\">$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_NAME</A><BR><BR>
+
+														<B>Integrity :: Database Management System Server Database Entries</B><BR>
+														* Integrity :: Application Module :: Administration :: File Size :: Database Entry :: HASH :: Master :: Secure-Hash-Algorithm-256 :: <BR>
+														* Integrity :: Application Module :: Administration :: File Size :: Database Entry :: HASH :: Local :: Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_INTEGRITY<BR>
+														* Integrity :: Application Module :: Administration :: File Size :: Database Entry :: HASH :: Local :: From Installation :: Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_INTEGRITY_INSTALLATION<BR><BR>
+
+														<B>Integrity :: Physical File</B><BR>
 														* Integrity :: Application Module :: Administration :: File Size :: Physical File :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_HASH_SHA256<BR>
 														* Integrity :: Application Module :: Administration :: File Size :: Physical File :: In Bytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_SIZE<BR>
-														* Integrity :: Application Module :: Administration :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_SIZE_KILOBYTES<BR>
+														* Integrity :: Application Module :: Administration :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_SIZE_KILOBYTES<BR><BR>
+
+														<B>Timestamps :: Installation</B><BR>
 														* Timestamp :: Application Module :: Administration :: Database Entry :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_TIMESTAMP_INSTALLATION<BR>
 														<A HREF=\"./Applications/Administration/$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_NAME\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_NAME ::\">Source Code</A><HR><BR>
 ");
@@ -515,9 +563,14 @@ echo ("
 														<HR><B>File :: Application Module :: Member :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_NAME</B><HR>
 
 														<B>Application Module :: Member :: Permissions</B><HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-														* File :: Application Module :: Member :: Permissions :: Access :: File: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_PERMISSION<BR>
+														<B>Permissions :: File</B><BR>
+														* File :: Application Module :: Member :: Permissions :: Access :: File: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_PERMISSION<BR><BR>
+
+														<B>Permissions :: Device</B><BR>
 														* File :: Application Module :: Member :: Permissions :: Access :: Device :: Camera: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_PERMISSION_CAMERA<BR>
-														* File :: Application Module :: Member :: Permissions :: Access :: Device :: Microphone: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_PERMISSION_MICROPHONE<BR>
+														* File :: Application Module :: Member :: Permissions :: Access :: Device :: Microphone: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_PERMISSION_MICROPHONE<BR><BR>
+
+														<B>Permissions :: Location</B><BR>
 														* File :: Application Module :: Member :: Permissions :: Access :: Location :: Global-Positioning-System: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_PERMISSION_LOCATION_GPS<BR>
 														* File :: Application Module :: Member :: Permissions :: Access :: Location :: Geographical-Localization-Objects: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_PERMISSION_LOCATION_GLO<BR>
 														* File :: Application Module :: Member :: Permissions :: Access :: Location :: Internet Protocol Address: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_PERMISSION_LOCATION_IP<BR><BR>
@@ -526,14 +579,21 @@ echo ("
 														* File :: Application Module :: Member :: Status :: Activated: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_STATUS<BR><BR>
 
 														<B>Application Module :: Member :: File Details</B><HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+														<B>Details :: File</B><BR>
 														* File :: Application Module :: Member :: Database Entry :: ID Number: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_ID<BR>
-														* File :: Application Module :: Member :: Database Entry :: File Name: <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;$_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_NAME\" TITLE=\":: Open & Display The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_NAME ::\">$_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_NAME</A><BR>
-														* Integrity :: Application Module :: Member :: File Size :: Database Entry :: Master :: HASH, Secure-Hash-Algorithm-256 :: <BR>
-														* Integrity :: Application Module :: Member :: File Size :: Database Entry :: Local :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_INTEGRITY<BR>
-														* Integrity :: Application Module :: Member :: File Size :: Database Entry :: Local :: From Installation :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_INTEGRITY_INSTALLATION<BR>
+														* File :: Application Module :: Member :: Database Entry :: File Name: <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;$_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_NAME\" TITLE=\":: Open & Display The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_NAME ::\">$_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_NAME</A><BR><BR>
+
+														<B>Integrity :: Database Management System Server Database Entries</B><BR>
+														* Integrity :: Application Module :: Member :: File Size :: Database Entry :: HASH :: Master :: Secure-Hash-Algorithm-256 :: <BR>
+														* Integrity :: Application Module :: Member :: File Size :: Database Entry :: HASH :: Local :: Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_INTEGRITY<BR>
+														* Integrity :: Application Module :: Member :: File Size :: Database Entry :: HASH :: Local :: From Installation :: Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_INTEGRITY_INSTALLATION<BR><BR>
+
+														<B>Integrity :: Physical File</B><BR>
 														* Integrity :: Application Module :: Member :: File Size :: Physical File :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_HASH_SHA256<BR>
 														* Integrity :: Application Module :: Member :: File Size :: Physical File :: In Bytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_SIZE<BR>
-														* Integrity :: Application Module :: Member :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_SIZE_KILOBYTES<BR>
+														* Integrity :: Application Module :: Member :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_SIZE_KILOBYTES<BR><BR>
+
+														<B>Timestamps :: Installation</B><BR>
 														* Timestamp :: Application Module :: Member :: Database Entry :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_TIMESTAMP_INSTALLATION<BR>
 														<A HREF=\"./Applications/Member/$_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_NAME\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_NAME ::\">Source Code</A><HR><BR>
 ");
@@ -576,9 +636,14 @@ echo ("
 														<HR><B>File :: Application Module :: Panel :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME</B><HR>
 
 														<B>Application Module :: Panel :: Permissions</B><HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-														* File :: Application Module :: Panel :: Permissions :: Access :: File: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_PERMISSION<BR>
+														<B>Permissions :: File</B><BR>
+														* File :: Application Module :: Panel :: Permissions :: Access :: File: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_PERMISSION<BR><BR>
+
+														<B>Permissions :: Device</B><BR>
 														* File :: Application Module :: Panel :: Permissions :: Access :: Device :: Camera: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_PERMISSION_CAMERA<BR>
-														* File :: Application Module :: Panel :: Permissions :: Access :: Device :: Microphone: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_PERMISSION_MICROPHONE<BR>
+														* File :: Application Module :: Panel :: Permissions :: Access :: Device :: Microphone: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_PERMISSION_MICROPHONE<BR><BR>
+
+														<B>Permissions :: Location</B><BR>
 														* File :: Application Module :: Panel :: Permissions :: Access :: Location :: Global-Positioning-System: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_PERMISSION_LOCATION_GPS<BR>
 														* File :: Application Module :: Panel :: Permissions :: Access :: Location :: Geographical-Localization-Objects: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_PERMISSION_LOCATION_GLO<BR>
 														* File :: Application Module :: Panel :: Permissions :: Access :: Location :: Internet Protocol Address: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_PERMISSION_LOCATION_IP<BR><BR>
@@ -587,14 +652,21 @@ echo ("
 														* File :: Application Module :: Panel :: Status :: Activated: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_STATUS<BR><BR>
 
 														<B>Application Module :: Panel :: File Details</B><HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+														<B>Details :: File</B><BR>
 														* File :: Application Module :: Panel :: Database Entry :: ID Number: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_ID<BR>
-														* File :: Application Module :: Panel :: Database Entry :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME<BR>
-														* Integrity :: Application Module :: Panel :: File Size :: Database Entry :: Master :: HASH, Secure-Hash-Algorithm-256 :: <BR>
-														* Integrity :: Application Module :: Panel :: File Size :: Database Entry :: Local :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY<BR>
-														* Integrity :: Application Module :: Panel :: File Size :: Database Entry :: Local :: From Installation :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION<BR>
+														* File :: Application Module :: Panel :: Database Entry :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME<BR><BR>
+
+														<B>Integrity :: Database Management System Server Database Entries</B><BR>
+														* Integrity :: Application Module :: Panel :: File Size :: Database Entry :: HASH :: Master :: Secure-Hash-Algorithm-256 :: <BR>
+														* Integrity :: Application Module :: Panel :: File Size :: Database Entry :: HASH :: Local :: Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY<BR>
+														* Integrity :: Application Module :: Panel :: File Size :: Database Entry :: HASH :: Local :: From Installation :: Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION<BR><BR>
+
+														<B>Integrity :: Physical File</B><BR>
 														* Integrity :: Application Module :: Panel :: File Size :: Physical File :: HASH, Secure-Hash-Algorithm-256 :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_HASH_SHA256<BR>
 														* Integrity :: Application Module :: Panel :: File Size :: Physical File :: In Bytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_SIZE<BR>
-														* Integrity :: Application Module :: Panel :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_SIZE_KILOBYTES<BR>
+														* Integrity :: Application Module :: Panel :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_SIZE_KILOBYTES<BR><BR>
+
+														<B>Timestamps :: Installation</B><BR>
 														* Timestamp :: Application Module :: Panel :: Database Entry :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_TIMESTAMP_INSTALLATION<BR>
 														<A HREF=\"./Applications/Panel/$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME ::\">Source Code</A><HR><BR>
 ");
