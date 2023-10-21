@@ -1009,8 +1009,8 @@ echo ("
 		<B>Tools :: Pre-Installation</B><HR>
 		<B>Database Management System Server</B><BR>
 		=>&nbsp;<A HREF=\"?InternalApplication&#61;Install_DatabaseTables\" TARGET=\"_NEW\" TITLE=\":: Open & Display ::The Internal Application :: Structured-Query-Language Database Table Installer ::\">Installer :: Automatic :: Structured-Query-Language Database Server :: Table Structure</A><BR>
-		=>&nbsp;<A HREF=\"./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/MySQL_Generator.php\" TARGET=\"_NEW\" TITLE=\":: Open & Display :: The Internal Application :: Structured-Query-Language Database Table Structure Generator ::\">Installer :: Manual :: Generate :: Structured-Query-Language Database Server :: Table Structure</A><BR>
-		=>&nbsp;<A HREF=\"?InternalApplication&#61;Install_Defaults\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Administration Account Installer & Default Database Server Data Installer ::\">Installer :: Automatic :: Administration Account and Database Server Data</A><BR><BR>
+		=>&nbsp;<A HREF=\"?InternalApplication&#61;Install_Defaults\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Administration Account Installer & Default Database Server Data Installer ::\">Installer :: Automatic :: Administration Account and Database Server Data</A><BR>
+		=>&nbsp;<A HREF=\"./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/MySQL_Generator.php\" TARGET=\"_NEW\" TITLE=\":: Open & Display :: The Internal Application :: Structured-Query-Language Database Table Structure Generator ::\">Installer :: Manual :: Generate :: Structured-Query-Language Database Server :: Table Structure</A><BR><BR>
 
 		<B>ToolKits</B><BR>
 		=>&nbsp;<A HREF=\"./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/Installation_ToolKit.php\" TARGET=\"_NEW\" TITLE=\":: Open & Display The Pre-Installation ToolKit ::\">ToolKit :: Pre-Installation</A><BR><BR>
