@@ -284,7 +284,7 @@ echo ("
 															$_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_INTEGRITY_INSTALLATION<BR><BR>
 
 														<B>Integrity :: Physical File</B><BR>
-														* Integrity :: Application Module :: Background :: File Size :: Physical File :: HASH, Secure-Hash-Algorithm-256<BR>
+														* Integrity :: Application Module :: Background :: File Size :: Physical File :: HASH :: Secure-Hash-Algorithm-256<BR>
 															$_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_HASH_SHA256<BR><BR>
 														* Integrity :: Application Module :: Background :: File Size :: Physical File :: In Bytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_SIZE<BR>
 														* Integrity :: Application Module :: Background :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_SIZE_KILOBYTES<BR>
@@ -362,7 +362,7 @@ echo ("
 															$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_INTEGRITY_INSTALLATION<BR><BR>
 
 														<B>Integrity :: Physical File</B><BR>
-														* Integrity :: Application Module :: Administration :: Root :: Services :: File Size :: Physical File :: HASH, Secure-Hash-Algorithm-256<BR>
+														* Integrity :: Application Module :: Administration :: Root :: Services :: File Size :: Physical File :: HASH :: Secure-Hash-Algorithm-256<BR>
 															$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_HASH_SHA256<BR><BR>
 														* Integrity :: Application Module :: Administration :: Root :: Services :: File Size :: Physical File :: In Bytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_SIZE<BR>
 														* Integrity :: Application Module :: Administration :: Root :: Services :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_SIZE_KILOBYTES<BR><BR>
@@ -441,7 +441,7 @@ echo ("
 															$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_INTEGRITY_INSTALLATION<BR><BR>
 
 														<B>Integrity :: Physical File</B><BR>
-														* Integrity :: Application Module :: Administration :: Root :: File Size :: Physical File :: HASH, Secure-Hash-Algorithm-256<BR>
+														* Integrity :: Application Module :: Administration :: Root :: File Size :: Physical File :: HASH :: Secure-Hash-Algorithm-256<BR>
 															$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_HASH_SHA256<BR><BR>
 														* Integrity :: Application Module :: Administration :: Root :: File Size :: Physical File :: In Bytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_SIZE<BR>
 														* Integrity :: Application Module :: Administration :: Root :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_SIZE_KILOBYTES<BR><BR>
@@ -519,7 +519,7 @@ echo ("
 															$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_INTEGRITY_INSTALLATION<BR><BR>
 
 														<B>Integrity :: Physical File</B><BR>
-														* Integrity :: Application Module :: Administration :: File Size :: Physical File :: HASH, Secure-Hash-Algorithm-256<BR>
+														* Integrity :: Application Module :: Administration :: File Size :: Physical File :: HASH :: Secure-Hash-Algorithm-256<BR>
 															$_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_HASH_SHA256<BR><BR>
 														* Integrity :: Application Module :: Administration :: File Size :: Physical File :: In Bytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_SIZE<BR>
 														* Integrity :: Application Module :: Administration :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_SIZE_KILOBYTES<BR><BR>
@@ -603,7 +603,7 @@ echo ("
 															$_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_INTEGRITY_INSTALLATION<BR><BR>
 
 														<B>Integrity :: Physical File</B><BR>
-														* Integrity :: Application Module :: Member :: File Size :: Physical File :: HASH, Secure-Hash-Algorithm-256<BR>
+														* Integrity :: Application Module :: Member :: File Size :: Physical File :: HASH :: Secure-Hash-Algorithm-256<BR>
 															$_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_HASH_SHA256<BR><BR>
 														* Integrity :: Application Module :: Member :: File Size :: Physical File :: In Bytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_SIZE<BR>
 														* Integrity :: Application Module :: Member :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_SIZE_KILOBYTES<BR><BR>
@@ -679,7 +679,7 @@ echo ("
 															$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION<BR><BR>
 
 														<B>Integrity :: Physical File</B><BR>
-														* Integrity :: Application Module :: Panel :: File Size :: Physical File :: HASH, Secure-Hash-Algorithm-256<BR>
+														* Integrity :: Application Module :: Panel :: File Size :: Physical File :: HASH :: Secure-Hash-Algorithm-256<BR>
 															$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_HASH_SHA256<BR><BR>
 														* Integrity :: Application Module :: Panel :: File Size :: Physical File :: In Bytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_SIZE<BR>
 														* Integrity :: Application Module :: Panel :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_SIZE_KILOBYTES<BR><BR>
