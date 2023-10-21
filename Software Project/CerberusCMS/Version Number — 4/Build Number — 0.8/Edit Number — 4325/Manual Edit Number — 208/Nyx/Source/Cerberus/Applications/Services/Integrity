@@ -73,6 +73,32 @@
  ============================================================================================================
  +
  +
+ + [ @ ] Integrity :: Display :: Options
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Display :: Options
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "Options") {
+
+echo ("
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_SERVICES&#61;Integrity&amp;Flash&#61;Applications&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: Integrity Check ::\">Integrity :: Flash :: Applications</A><BR>
+");
+
+} // [ + ] IF: Internal Application: Display :: Is: Options
+
+/*
+ ============================================================================================================
+ +
+ +
  + [ @ ] Integrity :: Automatically Check File Size HASH For Application Modules and Reinstall For Difference
  +
  +
@@ -98,16 +124,16 @@ $_Application_Module_Services_Integrity_List_DB_Query_List_Application_Panels			
 while ($_Application_Module_Services_Integrity_List_DB_Query_List_Application_Panels_Fetch_Array = $DB->fetch_array($_Application_Module_Services_Integrity_List_DB_Query_List_Application_Panels)) {
 
 $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_ID							= $_Application_Module_Services_Integrity_List_DB_Query_List_Applications_Panels_Fetch_Array['id'];
-$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME						= $_Application_Module_Services_Integrity_List_DB_Query_List_Applications_Panels_Fetch_Array['application_file_name'];
-$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY					= $_Application_Module_Services_Integrity_List_DB_Query_List_Applications_Panels_Fetch_Array['application_file_integrity'];
-$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION				= $_Application_Module_Services_Integrity_List_DB_Query_List_Applications_Panels_Fetch_Array['application_file_integrity_installation'];
+$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME						= $_Application_Module_Services_Integrity_List_DB_Query_List_Applications_Panels_Fetch_Array['panel_file_name'];
+$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY					= $_Application_Module_Services_Integrity_List_DB_Query_List_Applications_Panels_Fetch_Array['panel_file_integrity'];
+$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION				= $_Application_Module_Services_Integrity_List_DB_Query_List_Applications_Panels_Fetch_Array['panel_file_integrity_installation'];
 $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PHYSICAL				= hash_file('sha256', "./Applications/Panel/$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME");
 
 if ($_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PHYSICAL != "$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION") {
 
 echo ("Integrity :: Message: HASH Mismatch On Application Panel: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME -- Should This Application Panel Automatically Re-Install Now ?<BR>");
 
-}
+} // [ + ] IF: Integrity :: File :: Application Panel :: Physical File Integrity DOES NOT Match Integrity String Stored In The Database Management System Server Database
 
 $_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_001								= hash_file('sha256', "./Applications/Panel/Administration.panel");
 $_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_002								= hash_file('sha256', "./Applications/Panel/Applications_Panel.panel");
