@@ -212,8 +212,11 @@ $_INTERNAL_FILE_EXTENSION						= "cerberus";
  * For an additional layer of security you can change the values of these invokable Application Module variables
  * shown here to a completely random generated string by a random string generation variable. This will make it impossible
  * for an attacker to know the next string generated in the URL once the page executes again thereby making
- * it impossible for any Cross-Site-Request GET and POST Forgery, Data Tampering or S.Q.L. Injection.
+ * it impossible to achieve any Cross-Site-Request GET and POST Forgery, Data Tampering or S.Q.L. Injection.
  */
+
+$_INTERNAL_APPLICATION_MODULE_HTR_RANDOMIZATION_NUMBERS			= rand(10, 9999999);
+$_INTERNAL_APPLICATION_MODULE_HTR_RANDOMIZATION_HASH			= md5($_GLOBAL_REMOTE_SERVER_HTTP_USER_AGENT.$_GLOBAL_REMOTE_SERVER_ADDRESS.$_GLOBAL_REMOTE_SERVER_PORT.$_GLOBAL_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_MINUTES);
 
 $_INTERNAL_APPLICATION_MODULE_SERVICES					= "Application_Services";
 $_INTERNAL_APPLICATION_MODULE_ROOT					= "Application_Root";
