@@ -145,7 +145,12 @@ $_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PH
 
 if ($_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PHYSICAL != "$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION") {
 
-echo ("Integrity :: Message: HASH Mismatch On Application Panel: $_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_NAME -- Should This Application Panel Automatically Re-Install Now ?<BR>");
+echo ("
+* Integrity :: Message: HASH Mismatch On Application Panel: $_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_NAME<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+HASH String :: Local File: $_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PHYSICAL<BR>
+HASH String :: Database Management System Server Database Entry: $_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION<BR>
+Should This Application Panel Automatically Re-Install Itself Now ?<BR><BR>
+");
 
 } // [ + ] IF: Integrity :: File :: Application Panel :: Physical File Integrity DOES NOT Match Integrity String Stored In The Database Management System Server Database
 
