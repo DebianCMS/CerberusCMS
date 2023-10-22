@@ -507,11 +507,11 @@ CerberusCMS aims to be a secure Content Management System and is hardcoded for s
 * Denial of Service Through H.T.T.P. Code
 
 ===Integrity Features===
-* Automatic Kernel and Application Module integrity checks on every execution of the web page document.
-If even 1 byte changes in the official programming code of the Kernel and Application Modules included they are automatically reinstalled by GIT command from the Cerberus Root account which remains active at all times. This makes it impossible to hack the CerberusCMS instance by different programming code injection attacks just incase sanitization of URL and input forms fails.
+* Automatic Kernel and Application Module file size integrity checks on every execution of the web page document.
+If 1 byte changes in the official programming code of the Kernel and or the Application Modules included in the official version that specific component is automatically Re-Installed by Linux GIT Command, Microsoft Windows BITS Command or PHP File_Put_Contents Function Command from the Cerberus Services Root-Administration account which remains active at all times. This makes it impossible to hack the CerberusCMS instance by different programming code injection attacks just incase sanitization of URL and input forms fails at any point in time.
 
-There is a stand-alone integrity Application that checks the CerberusCMS instance integrity of each file and then compares the SHA-512 hashes of each file to
-the Master Server. If the SHA-512 HASHES are different it then provides options to reinstall the Kernel and Application Modules by GIT command.
+There is a stand-alone integrity Application that checks the CerberusCMS instance integrity of each file and then compares the SHA-256 hashes of each file to
+the Master Database Server Database. If the SHA-512 HASHES are different it then provides options to reinstall the Kernel and Application Modules by GIT command.
 
 ===Data Sanitization Features===
 * Automatic data sanitization of all input forms, variables and POST and GET data.
