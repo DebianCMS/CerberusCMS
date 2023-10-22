@@ -23,6 +23,7 @@ CerberusCMS comes with several additional applications:
 * Hephaestus, which is named after the Greek God of architecture. This is a Pre-Hyper-Text-Post-Processor Web Application that builds CerberusCMS from scratch by creating and making the organized directory structure and each of the Application files directly on the Web Server Data Storage Medium itself. This builds a clean and free-of-malware instance of CerberusCMS and all 2,000+ of the project directories and files within ~300 seconds.
 
 * Pre-Installation ToolKit, This is a Pre-Hyper-Text-Post-Processor Web Application that downloads pre-made archive packages of CerberusCMS by methods of GIT, FTP, CURL, BITS and GET from the Web Browser and unpacks the pre-made archive packages of CerberusCMS to the Web Server.
+
 * Charon, which is named after the Ferryman to the afterlife in Greek Mythology. This is a Personal-Computer Compilable C++ Application that builds a clean installation of CerberusCMS to the local server data storage medium.
 
 * Iris, which is named after the Goddess of Messages in Greek Mythology. This is a Google Android Open Source Software Project Application as well as an Apple iOS Swift Application that can be installed to an Android Mobile Phone and an Apple iPhone. It is used to connect to a web server that has CerberusCMS installed on it. It is much like the Twitter / X Application, FaceBook Messenger and FaceBook Application. Smart Glasses can also be connected to the AOSP/Java and iOS/Swift Applications that are installed on the Smart Phone to then send live video from the Smart Glasses to the Registered Member Account Cerberus-Streams.
@@ -33,8 +34,8 @@ CerberusCMS comes with several additional applications:
 CerberusCMS was the author's first software project started when the author was 14 years old. This Web Application was originally written and then used as a long distance communications platform through text messaging from the Internet by small groups from ~2000 to 2006. The project was later expanded upon to cater to a small V-TM:R and V-TM:B Personal Computer video game community to host expansion packs and video game mods on a web server for download to that community.
 
 ===Use In The Orignal Microsoft XBOX Media Center Community===
-Later on from the years of ~2007 - 2009 this project was used in the Original Microsoft XBOX Media Center [[XBMC]] community before the XBMC project was forked to what is now [[Kodi Media Center]]. Customized Application Modules were written for this project to give control of the XBMC install and thus the XBOX itself from any web browser remotely, including from the original smart phone lines that were available from the years of ~2006 - 2009 as well as to remotely launch video games, movies and music on the video game console from any web browser in the world remotely including from the original smart phone lines that were available from the years of ~2006 - 2009. This would
-also enable the owner to watch movies from the smart phone that were stored on the original XBOX from anywhere in the world by Internet as well as to remotely connect to chat programs installed on the Original Microsoft XBOX from the smart phone or from the remote web browser. Python Internet Relay Chat and other Voice and Video Communication Applications in the .XBOX Executable Format.
+Later on from the years of ~2007 - 2009 this project was used in the Original Microsoft XBOX Media Center [[XBMC]] community before the XBMC project was forked to what is now community maintained [[Kodi Media Center]] International and community maintained [[XMBC4XBOX]] United Kingdom. Customized Application Modules were written for this project to give control of the XBMC install and thus the XBOX itself from any web browser remotely, including from the original smart phone lines that were available from the years of ~2006 - 2009 as well as to remotely launch video games, movies and music on the video game console from any web browser in the world including from the original smart phone lines that were available from the years of ~2006 - 2009 such as the Motorola Razr Dual Screen released in 2007, Motorola Droid AOSP 2009, Motorola Razr Smart Phone 2010, Motorola XPRT AOSP 2010, BlackBerry 8890, BlackBerry 9910, BlackBerry 9930 and more. This would
+also enable the owner to watch movies and television shows in up to 720P resolution or higher directly from the smart phone from anywhere in the world by Internet by connecting it remotely to the XBOX where that data were stored on the original XBOX Hard Disk Drive. One could also remotely connect to the python chat programs that were installed on the Original Microsoft XBOX from the smart phone or from the remote web browser to communicate through Internet Relay Chat, Skype or other platforms. Python Internet Relay Chat and other Voice and Video Communication Applications in the .XBOX Executable Format were also available.
 
 XBMC made it possible to run a custom Operating System on the original XBOX where when after the owner flashed XBMC Dashboard onto it the owner could then upgrade the internal Hard Disk Drive to a 750 GB ~ 1 TB capacity Hard Disk Drive with all overclocked components. The owner could then install every video game ever made from every video game console starting from the year ~1970 all the way up to the Playstation 1 video game console including all 888 Original Microsoft XBOX video games ever made for it totaling around ~50,000 video games. The ~50,000 unique and organized video games could be downloaded by downloading an unpackable set of split up archives ranging from 900 GB to 1.4 TB and larger.
 The super organized directory structure with all of the additional applications, video game console emulators, media players and more took around 48 hours or longer to upload onto the Original Microsoft XBOX Hard Disk Drive by methods of local-area-network file-transfer-protocol or FTP.
@@ -89,11 +90,12 @@ for places and things that can be improved. Situations are sometimes rehearsed a
 Adding new features to the system consists of exactly this.
 
 ====Project Brainstorming and Rehearsals====
-Brainstorming and Rehearsals to develop secure and proven programming code are normally done in real life such as when rehearsals were done before to evaluate the possibilities of session hijacking so as to secure this project from all possibilities of that vulnerability. Examples of this vulnerability would be: if anyone else were watching someone or video record someone type in their electronic mail address, username and password combination for their registered member account from a public area such as from a library or from a university then that person could then authenticate and login to the registered member account of the person they watched type in their electronic mail, username and password combination and from that specific location because it is done from the same Internet Protocol Address as the actual account on the system. Even if the session programming code restricts authentication to that specific Internet Protocol Address or other combined factors it is still possible even today.
+Brainstorming and Rehearsals to develop secure and proven programming code are normally done in real life such as when rehearsals were done before to evaluate the possibilities of session hijacking and account hijacking so as to secure this project from all possibilities of that vulnerability. Examples of this vulnerability would be: if anyone else were watching someone or video record someone type in their electronic mail address, username and password combination for their registered member account from a public area such as from a library or from a university then that person could then authenticate and login to the registered member account of the person they watched type in their electronic mail, username and password combination and from that specific location because it is done from the same Internet Protocol Address as the actual account on the system. Even if the session, cookie authentication programming code restricts authentication to and from that specific Internet Protocol Address or other combined factors it is still possible even today unless there is extremely
+redundant programming code in the authentication system to block that possibility.
 
-Nearly every social media services provider in the world is still vulnerable to account hijacking like this where even the entire session string can be dumped from the network by using TCPDump, WireShark and other network dumping tools. These tools can be used to download and copy the session strings that the user account is currently authenticated to and then by copying those strings into an entirely different computer the attacker can get into the account and remain logged-in to the account being hacked even if the account device moves from location to location.
+Nearly every social media services provider in the world is still vulnerable to account hijacking techniques like this where even the entire session string or cookie data can be dumped from the network itself by using TCPDump, WireShark and other network data dumping tools. These tools can be used to download and copy the session strings that the user account is currently authenticated to and then by copying those strings into an entirely different computer the attacker can get into the account and remain logged-in to the account being hacked even if the account device moves from location to location. As of 2023 FaceBook, Twitter, KeyBase and several other social media platforms are vulnerable to these types of account hijacking hacking techniques.
 
-Security rehearsals of every possible situation within scenarios like these turn to evaluation of programming code so as to write secure programming code to prevent these things from being possible.
+Security rehearsals of every possible situation within scenarios like these turn to evaluation of programming code so as to write secure programming code for this software project web application to prevent these things from being possible in it.
 
 ====Project Programming Code Debugging====
 Once new features and programming code updates are added there is a debugging process where every part of the system is manually and thoroughly debugged and perfected by the development team.
@@ -105,7 +107,7 @@ All programming code is organized in Pre-Ordered Logical and Pre-Oredered Mathem
 ===Project Update Cycles===
 System Updates consist of Programming Code Updates, Programming Code Security Updates, Graphics Updates and more.
 Officially released versions come with an embedded build number where the build itself takes several weeks or months of quality code implementation and updates to complete from the project developer.
-CerberusCMS - Version Number: 4, Build Number: 0.8 was hand updated by rewrite periodically from the years of ~ January of 2022 to November of 2023.
+CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325 was manually updated by hand rewrite periodically from the years of ~ January of 2022 to November, 1st of 2023 and is now approximately ~125,000 lines of Pure Pre-Hyper-Text-Post-Processor Programming Code.
 
 ===Project Compatibility and Life Cycle===
 CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325 was hand updated by manual Programming Code Rewrite periodically from the years of ~ January of 2022 to November of 2023. This specific Version Number, Build Number and Edit Number will work for ~ 10 years on Pre-Hyper-Text-Post-Processor Version Number: 8.
@@ -129,26 +131,40 @@ CerberusCMS comes with a Kernel File, Installation and Maintenance Applications,
 
 ===Official Application Modules===
 
-====Services Root-Level Application Modules====
+====Services Root Administration-Level Application Modules====
 * Accounts
+* Commander
+* Integrity
 * Loops
 * Services
-* Tasks
 
 * '''Accounts'''
-Options for managing accounts and account access levels.
+Automated as well as options for managing accounts and account access levels. Automatically deletes unverified and non-activated registered member accounts.
+
+* '''Commander'''
+Automated as well as options for managing command interpretations to and from the robot account by Short-Message-Service Message, Instant Messenger and by other means.
+
+* '''Integrity'''
+Automated as well as options for managing all of the files in the system. Integrity automatically checks the file hashes of the file sizes of each file on the system that is generated in the Secure-Hash-Algorithm, 256-BIT to the hashes stored
+in the Master Database Server Database as well as the Local Database Server Database. Every file in the system is hashed in Secure-Hash-Algorithm, 256-BIT based on the file size of the file itself. These hashes are compared to the ones in the Master Database Server Database upon every execution of the kernel file.
+If 1 byte changes in any of the files in the system this means the file has been tampered with and Integrity will automatically Re-Install the file back to the original one officially released in that version number by running a Linux GIT Clone Command, Microsoft Windows BITS Download Command or PHP File_Put_Contents Function Command of the original file hosted on the official GIT repository whether the Global
+variables are set to GITHub, GITLab, BITBucket or another GIT-Like Repository web server. This process makes it impossible to hack anything on the system because if even 1 byte changes in the integrity of the file itself the file is automatically Re-Installed back to OEM within a split second. This leaves no time for hackers to exploit the system.
 
 * '''Loops'''
-Reorganizes all of the data in the database server.
+Automated as options for managing data. Automation constantly reorganizes all of the data in the database server.
 
 * '''Services'''
-Options for managing background services and scheduling specific tasks similar to [[ChronJobs]] commands in Linux.
+Automated as well as options for managing background services and scheduling specific tasks similar to [[ChronJobs]] commands in Linux.
+
+4 Services Root Administration-Level Application Modules
+
+====Root Administration-Level Application Modules====
+* Tasks
 
 * '''Tasks'''
-Options for managing current and future tasks as well as an advanced
-Task Manager that monitors connections in real-time.
+Options for managing current and future tasks as well as an advanced Task Manager that monitors T.C.P./I.P. connections in real-time.
 
-4 Services-Root Level Application Modules
+1 Root Administration-Level Application Module
 
 ====Administration-Level Application Modules====
 * Accounts
@@ -209,8 +225,8 @@ Task Manager that monitors connections in real-time.
 * Member_Directory
 * Messenger
 * News
+* Pages
 * Private_Files
-* Private_Message
 * Profile
 * Referrers
 * Register
@@ -271,7 +287,7 @@ Engine_Validation
 * SQL_Generator
 * Installation_ToolKit
 
-3 Pre-Configuration and Installation Applications.
+4 Pre-Configuration and Installation Applications.
 
 ====Secret Application Modules====
 With Version Number: 4, Build Number: 0.8 CerberusCMS comes with a secret Application Module named 'Lightning Calculate !' this Application Module teaches the user how to mentally calculate at lightning speed through repetitive patterns. This Application Module also teaches the user how to master
@@ -301,7 +317,7 @@ This Plug-In is a very simple WYSIWYG Text Editor that can be included into any 
 This Plug-In automatically converts Hyper-Text-Markup-Language tags to Hyper-Text-Markup-Language entities from all of the input forms throughout the system. Example of this would be converting: '''< B >''' to '''& lt ;''' before it is inserted into the Database Management System Data. This eliminates any possibility of malicious Hyper-Text-Markup-Language tag injection, JavaScript scripting code injection and Post-Hyper-Text-Pre-Processor programming code injection into the Database Management System. All of the entities are converted back to Hyper-Text-Markup-Language tags after being retrieved from the Database Management System.
 
 * Location
-This Plug-In gets the exact Global-Positioning-System X, Y and Z coordinates of the Devices connected to CerberusCMS. Location is capable of getting the Device Global-Positioning-System Coordinates and 9 - 10 Foot Radial Location from the Web Browser by using HTML5 Global-Positioning-System Built-In Functionality for Longitude, Latitude and Altitude with 98% accuracy down to  9 - 10 feet in radius and 3 feet in altitude where the altitude is reported in Y units above Sea Level every 1 to 5 seconds. Location is also capable of getting the Device Global-Positioning-System Coordinates Location from the Google Android Device or the Apple iPhone Device through the Device Applications. Location stores the exact Global-Positioning-System coordinates in X, Y and Z to an organized log file within each Registered Member Account log directory. Location can get the Global-Positioning-System coordinates of Longitude, Latitude and Altitude by Hyper-Text-Markup-Language 5 Built-In Functionality From The Web Browser, Pre-Hyper-Text-Post-Processor Built-In Functionality From The Web Browser, Java From The Web Browser, AOSP/Java From The Google Android Smart Phone, iOS/Swift from the Apple iPhone.
+This Plug-In gets the exact Global-Positioning-System X, Y and Z Coordinates of the Devices connected to CerberusCMS. Location is capable of getting the Device Global-Positioning-System Coordinates and 9 - 10 Foot Radial Location with Altitude from the Web Browser of the Device by using H.T.M.L. Version 5 Global-Positioning-System Built-In Functionality for Longitude, Latitude and Altitude with 98% accuracy every time down to  9 - 10 feet in radius and 3 feet in altitude of that radius where the altitude is reported in Y units above Sea Level every 1 to 5 seconds. Location is also capable of getting the Device Global-Positioning-System Coordinates Location from the Google Android Device or the Apple iPhone Device through the Device Applications. Location stores the exact Global-Positioning-System Coordinates in X, Y and Z to an organized log file within each Registered Member Account log directory. Location can get the Global-Positioning-System Coordinates of Longitude, Latitude and Altitude by Hyper-Text-Markup-Language Version 5 Built-In Functionality From The Web Browser, Pre-Hyper-Text-Post-Processor Built-In Functionality From The Web Browser, Java From The Web Browser, AOSP/Java From The Google Android Smart Phone, iOS/Swift from the Apple iPhone.
 
 ==Project Web Server Software Compatibility==
 
@@ -339,8 +355,8 @@ CerberusCMS packages can be downloaded and uploaded in 6 different ways
 * Through GIT Terminal Command From Included Installation ToolKit Web Application.
 * Through Mercurial Terminal Command From Included Installation ToolKit Web Application.
 * Through CURL Terminal Command.
-* Through Windows / BSD / GNU / Linux / Apple OS Package.
-* Through Windows Terminal BITS command.
+* Through Microsoft Windows / BSD / GNU / Linux / Apple OS Package.
+* Through Microsoft Windows Terminal BITS command.
 
 ===Installation===
 Once the official CerberusCMS package has been downloaded to the web server through any of the previous methods the package
@@ -351,10 +367,10 @@ can then be unpacked and CerberusCMS can then be installed through Architect whi
 ===Interaction Features===
 
 ====Entertainment and Interaction====
-* Administration and Registered Members can download data from any torrent network from the CerberusCMS Web Application itself. This includes movies and video games where the movies can then be played in the web browser for free. The Video Player Application Module automatically searches for and downloads high definition thumbnail images of box art of the movies downloaded.
-* Administration and Registered Members can download and play HTML5 3D video games directly from the Emulators Application Module.
-* Administration and Registered Members can use a feature named Cerberus-Streams which is very much like a FaceBook wall or Twitter feed and where other Registered Member Accounts can comment and post Audio, Documents, Image and Video files. Content could be anything from interaction videos, video communication streams and live videos.
-* Administration and Registered Members can watch video streams and listen to audio streams from anywhere on the Internet free of any advertisements through the included Application Modules. This includes YouTube, SoundCloud and more.
+* Administration and Registered Members can download data from any torrent network from the CerberusCMS Web Application itself. This includes music albums, movies and video games where the music albums, movies and video games can then be played in the web browser for free or downloaded to the users local computer hard drive or data storage medium. The Video Player Application Module automatically searches for and downloads high definition thumbnail images of box art of the movies downloaded.
+* Administration and Registered Members can download and play H.T.M.L. 5 3D video games directly from the Emulators Application Module.
+* Administration and Registered Members can use a feature named Cerberus-Streams which is very much like a FaceBook wall or Twitter feed and where other Registered Member Accounts can comment and post Audio, Document, Image and Video files. Content could be anything from interaction voicemail messages, music, PDF files, movies, videos, video communication streams and live videos.
+* Administration and Registered Members can watch video streams and listen to audio streams from anywhere on the Internet free of any advertisements through the included Application Modules. This includes YouTube, SoundCloud and more. The Network Filtering system is much like IPTables in Linux where entire lists of advertisement servers can be completely blocked.
 * Administration and Registered Members can communicate in different ways with PGP Signed and AES encrypted messages through the Messenger Application Module.
 * Digital Rights Management Free.
 * Encrypted text message, voice alone and voice + video communications directly from the web browser or the Google Android/Java and Apple iOS/Swift application.
@@ -369,13 +385,18 @@ can then be unpacked and CerberusCMS can then be installed through Architect whi
 * Expert Data Cache Control Programming Code.
 * Output Web-Page Cache-Free Programming Code.
 * Unique and Completely Random 512 Character Length URL Addition String.
-This is makes it impossible to cache / freeze the Web Page content by a malicious M-I-T-M server such as a malicious server block to control or freeze the web-page output.
 * Cache-Free Programming Code For Live Data Upon Every Refresh of The Web Page Document.
+
+Cache-Control and Cache Circumvention techniques make it impossible to cache or freeze the Web Page content by a malicious M-I-T-M server such as a malicious server block put in place by the government or another entity to control or freeze the web-page content output. All of the files in the system
+such as Audio, Document, Image and Video files have an added randomized 512 Alpha-Numeric string added to the end of it and each set is completely different. The string automatically changes upon every reload of the Web Page Document. This stops
+all man-in-the-middle Data Cache Hacking / Data Cache-Poisoning / Data Cache-Deception techniques.
+
+Credit For Security Technique: Payne, United Kingdom - Information Security Expert
 
 ====Application Module Control Features====
 * Application Module Access Level Controls.
 * Application Module Access Restriction Controls where specified Application Modules cannot execute programming code that would compromise the system.
-* Location By G.P.S., Location By GeoLocation, Location By Internet Protocol Address Controls.
+* Location By Global-Positioning-System Coordinates With Altitude, Location By Geographical-Localization-Objects, Location By Internet Protocol Address Controls.
 * Device Microphone Access Controls.
 * Device Camera Access Controls.
 
@@ -391,11 +412,11 @@ The language can be changed at any time to any other language through the Langua
 ===Digital Trust Features===
 CerberusCMS is very unique because it allows for anyone to view the source code of all of the Documents, Application Modules and the Master File so named the 'Kernel' directly from the Web Application itself which is loaded into the web browser from the web server that is executing the CerberusCMS Programming Code and at the same time all of the transmitting data and stored information is secure from vulnerabilities and exploitation as well as being information secure because only certain details of information are actually displayed throughout the system.
 
-This establishes trust with the human interacting with it because that human can read through all of the Programming Source Code of the CerberusCMS instance running on that specific web server directly from the web browser to ensure that everything is private and secure and that there are no deliberate backdoors or exploit code programmed into the system. This makes it to where anyone can consult an information security programming expert to look at the Web Server running CerberusCMS to guarantee the Programming Source Code is secure. Some automated vulnerability scanners will report a vulnerabiity called 'Source Code Disclosure', but this is not a vulnerability so long as the source code programming is secure. It's possible for any web server in the world to report fraudulent information even with integrity checks if the integrity checks are forged by the individual(s) in control of the Web Server. This is why the architecture designed is ingenious.
+This establishes trust with the human interacting with it because that human can read through all of the Programming Source Code of the CerberusCMS instance running on that specific web server directly from the web browser itself to ensure that everything is private and secure and that there are no deliberate backdoors or exploit code programmed into the system. This makes it to where anyone can consult an information security programming expert to look at the Web Server running CerberusCMS to guarantee the Programming Source Code is secure. Some automated vulnerability scanners will report a vulnerabiity called 'Source Code Disclosure', but this is not a vulnerability so long as the source code programming is secure. It is possible for any web server in the world to report fraudulent information even with integrity checks if the integrity checks are forged by the individual(s) in control of the Web Server. This is why the architecture design of this project is ingenious because it makes it that much more secure.
 
 All of the data that is stored in the Database Server is encrypted using G.N.U.-Privacy Guard, Pretty-Good-Privacy, BCRYPT, Advanced Encryption Standard - 256, Advanced Encryption Standard - 512 and other algorithms, hashes and cipers deemed secure by the information security community.
 
-It also allows for custom encryption algorithms and ciphers and custom mathematics to be used system-wide so as to secure the storage and transimission of specified data.
+It also allows for custom encryption algorithms and ciphers and custom encryption mathematics to be used system-wide so as to secure the storage and transimission of specified data.
 This is made for corporate-level security, medium to small business security and academic security so as to securely store the data and information of its users.
 
 CerberusCMS features Master Security Modules where when each module is included by the Master File so named the Kernel the programming code then eliminates all possibility of:
@@ -412,15 +433,15 @@ CerberusCMS features Master Security Modules where when each module is included 
 * P.H.P. Function Overflows and Underruns
 and more.
 
-The Master_Sanitization file features expert Pre-Hyper-Text-Post-Processor programming code that sanitizes all GET and POST data used throughout the forms as well as anything used in the U.R.L. bar in the web browser.
+The Master_Sanitization file features expert Pre-Hyper-Text-Post-Processor programming code that sanitizes all REQUEST, GET and POST Data used throughout the input forms system-wide as well as anything used in the Uniform-Resource-Location bar in the web browser.
 
 ===Digital Information Security Features===
-CerberusCMS aims to be a secure Content Management System and is hardcoded for security.
+CerberusCMS aims to be a secure Content Management System and Programming Framewhere and it is hardcoded for information security and data security.
 
 ====Vulnerability and Exploitation Security====
 * Automatic Directory Listing Denial
-* Automatic GET and POST Sanitization
-* Automatic Variable Sanitization
+* Automatic REQUEST, GET and POST Data Sanitization
+* Automatic Variable Data Sanitization
 
 '''Injections'''
 * Structured-Query-Language Code Injection
@@ -491,15 +512,18 @@ CerberusCMS aims to be a secure Content Management System and is hardcoded for s
 * Denial of Service Through H.T.T.P. Code
 
 ===Integrity Features===
-* Automatic Kernel and Application Module integrity checks on every execution of the web page document.
-If even 1 byte changes in the official programming code of the Kernel and Application Modules included they are automatically reinstalled by GIT command from the Cerberus Root account which remains active at all times. This makes it impossible to hack the CerberusCMS instance by different programming code injection attacks just incase sanitization of URL and input forms fails.
+* Automatic Kernel and Application Module file size integrity checks on every execution of the web page document.
+* Automatic Re-Install of the compromised Kernel File, Application Module and or Component back to OEM. 
 
-There is a stand-alone integrity Application that checks the CerberusCMS instance integrity of each file and then compares the SHA-512 hashes of each file to
-the Master Server. If the SHA-512 HASHES are different it then provides options to reinstall the Kernel and Application Modules by GIT command.
+If 1 byte changes in the official programming code of the Kernel and or the Application Modules included in the official version that specific component is automatically Re-Installed by Linux GIT Command, Microsoft Windows BITS Command or PHP File_Put_Contents Function Command from the Cerberus Services Root-Administration account which remains active at all times. This makes it impossible to hack the CerberusCMS instance by different programming code injection attacks just incase sanitization of URL and input forms fails at any point in time.
+
+There is a stand-alone integrity Application that checks the CerberusCMS instance integrity of each file and then compares the SHA-256 hashes of each file to
+the Master Database Server Database. If the SHA-256 HASHES of the Kernel, Applications Modules and or Components are different than OEM release at any point in time Integrity then provides options to Re-Install the Kernel File and Application Modules by GIT Command, Microsoft Windows BITS Command or PHP File_Put_Contents Function Command.
 
 ===Data Sanitization Features===
-* Automatic data sanitization of all input forms, variables and POST and GET data.
-This makes it impossible to hack the CerberusCMS instance by injection attacks.
+* Automatic Data Sanitization of all input forms, Uniform-Resource-Location Bar Variables, REQUEST, POST and GET Data.
+
+Automatic Data Sanitization makes it impossible to hack the CerberusCMS instance by injection attacks.
 
 ===Internal Security Loop Features===
 * Automatic Cookie Data Checks.
@@ -522,7 +546,7 @@ This makes it impossible for anyone else to login to the account on the same aut
 * Advanced Encryption Standard - 256 and Advanced Encryption Standard - 512 Encrypted Personal Files.
 
 ===Activity Monitoring and Logging Features===
-* Extensive and Detailed activity monitoring with exact G.P.S. coordinates of Registered Member Accounts and Non-Registered Visitors based on device reporting.
+* Extensive and Detailed activity monitoring with exact Global-Positioning-System Coordinates With Altitude of Registered Member Accounts and Non-Registered Visitors based on device reporting.
 * Unique Digital Fingerprinting.
 
 ===Notable Features===
@@ -538,11 +562,27 @@ CerberusCMS as of Version Number: 4, Build Number: 0.8, Edit Number: 4,325 has a
 ===Quality Programming Code===
 CerberusCMS as of Version Number: 4, Build Number: 0.8, Edit Number: 4,325 features 125,000 lines of quality and thoroughly documented Pre-Hyper-Text-Post-Processor programming code.
 
-===Programming Code Documentation===
+===Programming Code Documentation and Searchability===
 All of the programming code is extremely documented and manageable with approximately 7,000 panels of programming code documentation. The documentation panels within the source code explain in detail what every line of programming code in the system does. All of the programming code documentation features searchable programming code keys such as:
-* [ @ ], meaning header.
-* [ + ], meaning ending logical statement with explanation.
+* [ ^ ], meaning header
+* [ @ ], meaning beginning of logical programming code statement with explanation of programming code functionality.
+* [ + ], meaning ending of logical programming code statement with explanation of programming code functionality.
 and more.
+
+* Example:
+
+ /*
+ * [ @ ] IF: 1 IS Greater Than 2, Add 1 To 2
+ */
+
+$A = 1;
+$B = 2;
+
+if ($A > $B) {
+
+$C = $A + $B;
+
+} // [ + ] IF: 1 IS Greater Than 2, Add 1 To 2
 
 Adding features to this web application as a novice programmer is very simple and straightforward.
 
@@ -635,34 +675,49 @@ CerberusCMS free and open source edition comes with a custom FOSS license.
 ==Project Development Team==
 
 ===Company Projects===
-TinkeSoftware was renamed from RuneSoftware and maintains and periodically develops 15 different software projects
+Tinke Software was renamed from Rune Software and Rune Software, Inc. which was registered in 2001 through ICANN as RuneSoftware.org after an agreement was made over the name with Rune Software, GMBH in Germany. Tinke Software now maintains and periodically develops 23 unique and different software projects that use just about
+every programming language and scripting language.
 
-* Cerberus Content Management System
-* Cerberus Content Management System Direct Fork: Fenrir Content Management System
-* Cerberus Content Management System Direct Fork: Runic / Rune Content Management System
-* Magysk Theme Writer
-* Stokje Application Writer
-* Charon / Helvegen
-* Grutte Forces // Troll Unmasker Written in Python and C++
-* Lightning Calculate !
-* Iris
-* Runic Alphabets
-* Runic Calendars
-* Runic Keyboard Layouts
-* Runic Keyboard Stickers
-* Runic Language Packs
+Content Management Systems
+* Cerberus Content Management System :: Written In P.H.P.-SQL
+* Cerberus Content Management System, Direct Fork: Fenrir Content Management System :: Written In P.H.P.-SQL
+* Cerberus Content Management System, Direct Fork: Runic / Rune Content Management System :: Written In P.H.P.-SQL
+* Cerberus Content Management System, Direct Fork: Debian Content Management System :: Written In P.H.P.-SQL
+* CerberusCMS, Iris :: Written In Java, C++ and PHP
+* CerberusCMS, Magysk Theme Writer :: Written In C++
+* CerberusCMS, Stokje Application Writer :: Written In C++
+* CerberusCMS, Charon / Helvegen :: Written In C++
+
+Discovery Applications
+* Grutte Forces // Troll Unmasker :: Written in Python and C++
+
+Mathematics Applications
+* Lightning Calculate ! :: Written In PHP and C++
+* G.C.'s Calculator :: Written In P.H.P. and C++
+
+Language Applications
+* Runic Alphabets :: For Linux, Google AOSP, Apple iOS and Microsoft Windows
+* Runic Calendars :: Written In C++ and PHP
+* Runic Keyboard Layouts :: For Linux, Google AOSP, Apple iOS and Microsoft Windows
+* Runic Keyboard Stickers :: For Linux, Google AOSP, Apple iOS and Microsoft Windows
+* Runic Language Packs :: For Linux, Google AOSP, Apple iOS and Microsoft Windows
+
+Messenger Applications
 * Runic / Rune Messenger // Encrypted Messenger Written in P.H.P. and C++
-* Runic / Rune / Sowilo Dashboard // Dashboard Based on the Original XBMC Project
-* Runic / Rune / Sowilo Operating System // Based on Gentoo-Linux
-* Grand Theft Auto - Oildale // GTA - San Andreas Expansion Pack For P.C. and Modded XBOX featuring Oildale, California
-* G.C.'s Calculator
-* Lightning Calculate
 
-20 unique and original software projects.
+Operating Systems
+* Runic / Rune / Sowilo Dashboard // Dashboard Based on the Original XBMC and XBMC4XBOX Project
+* Runic / Rune / Sowilo Operating System // Based on Gentoo-Linux and Arch-Linux
 
-Each software project combined totals around ~450,000 lines of original programming code across several different programming and scripting languages.
+Video Games
+* Grand Theft Auto - Oildale :: Irrlicht and Unity 3D Video Game
+* Grand Theft Auto - Oildale :: GTA - San Andreas Expansion Pack For Personal-Computer and Modded Original XBOX featuring Oildale, California
+
+23 unique and original software projects.
+
+Each software project combined totals around ~450,000 lines of original programming code across several different programming languages and scripting languages.
 
 ==Project Copyrights==
-Every line of programming code in CerberusCMS up to CerberusCMS, Version Number: 4, Build Number: 0.8, Edit Number: 4,325 is 100% original from and was written by the computer programmer Gary Christopher Johnson of SouthGate, California and Oildale, California.
+Every line of programming code in CerberusCMS up to CerberusCMS, Version Number: 4, Build Number: 0.8, Edit Number: 4,325 is 100% original from and was written by the computer programmer Gary Christopher Johnson of SouthGate, California, West Los Angeles, California and Oildale, California.
 
-This web application was developed and written in Southern California. This project was started in 2001 when I was about 14 or maybe 15 years old... My girlfriend at the time... a nice laptop was given to me. I started learning computer programming back then. The updates for this specific project is slow because I don't have the time to work on it every day.
+This web application was developed and written in Southern California. This project was started in around the year ~2001 when I was about 14 or maybe 15 years old... My girlfriend at the time... a nice laptop was given to me. I started learning computer programming back then. The updates for this specific project is slow because I don't have the time to work on it every day.
