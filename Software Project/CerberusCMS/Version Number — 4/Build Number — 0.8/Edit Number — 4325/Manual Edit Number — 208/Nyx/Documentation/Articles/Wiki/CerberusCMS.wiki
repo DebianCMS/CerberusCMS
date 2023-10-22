@@ -433,10 +433,10 @@ CerberusCMS features Master Security Modules where when each module is included 
 * P.H.P. Function Overflows and Underruns
 and more.
 
-The Master_Sanitization file features expert Pre-Hyper-Text-Post-Processor programming code that sanitizes all GET and POST data used throughout the forms as well as anything used in the U.R.L. bar in the web browser.
+The Master_Sanitization file features expert Pre-Hyper-Text-Post-Processor programming code that sanitizes all REQUEST, GET and POST Data used throughout the input forms system-wide as well as anything used in the Uniform-Resource-Location bar in the web browser.
 
 ===Digital Information Security Features===
-CerberusCMS aims to be a secure Content Management System and is hardcoded for security.
+CerberusCMS aims to be a secure Content Management System and Programming Framewhere and it is hardcoded for information security and data security.
 
 ====Vulnerability and Exploitation Security====
 * Automatic Directory Listing Denial
