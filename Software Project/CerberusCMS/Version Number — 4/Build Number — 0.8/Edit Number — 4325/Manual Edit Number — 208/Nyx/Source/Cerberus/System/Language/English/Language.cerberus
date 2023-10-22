@@ -126,7 +126,7 @@ $_Message_Kernel_APPLICATION_ADMINISTRATION_APPLICATION_NOT_FOUND_EXPLOIT_WARNIN
 
 $_Message_Kernel_APPLICATION_ROOT_APPLICATION_DEACTIVATED								= "<CENTER>Cerberus: This Root Administration Application Module Is Deactivated.</CENTER>";
 $_Message_Kernel_APPLICATION_ROOT_APPLICATION_FILE_NOT_FOUND								= "<CENTER>Cerberus: The Specified Root Administration Application Module could not be located.</CENTER>";
-$_Message_Kernel_APPLICATION_ROOT_APPLICATION_ACCESS_RESTRICTED_ROOT							= "<CENTER>Cerberus: This Application Module is restricted to Registered Members With Root Administration Privileges.</CENTER>";
+$_Message_Kernel_APPLICATION_ROOT_APPLICATION_ACCESS_RESTRICTED_ROOT							= "<CENTER>Cerberus: This Application Module is restricted to Registered Members With Root-Administration Privileges.</CENTER>";
 $_Message_Kernel_APPLICATION_ROOT_APPLICATION_NOT_FOUND_EXPLOIT_WARNING							= "<CENTER>Cerberus: The Specified Root Application Module could not be located ( Exploit Warning :: Local or Remote File Inclusion Detected ).</CENTER>";
 
 /*
@@ -137,7 +137,7 @@ $_Message_Kernel_APPLICATION_ROOT_APPLICATION_NOT_FOUND_EXPLOIT_WARNING							= 
 
 $_Message_Kernel_APPLICATION_SERVICES_APPLICATION_DEACTIVATED								= "<CENTER>Cerberus: This Services Root Administration Application Module Is Deactivated.</CENTER>";
 $_Message_Kernel_APPLICATION_SERVICES_APPLICATION_FILE_NOT_FOUND							= "<CENTER>Cerberus: The Specified Services Root Administration Application Module could not be located.</CENTER>";
-$_Message_Kernel_APPLICATION_SERVICES_APPLICATION_ACCESS_RESTRICTED_ADMINISTRATOR					= "<CENTER>Cerberus: This Application Module is restricted to Registered Members With Services Root Administration Privileges.</CENTER>";
+$_Message_Kernel_APPLICATION_SERVICES_APPLICATION_ACCESS_RESTRICTED_SERVICES						= "<CENTER>Cerberus: This Application Module is restricted to Registered Members With Services Root-Administration Privileges.</CENTER>";
 $_Message_Kernel_APPLICATION_SERVICES_APPLICATION_NOT_FOUND_EXPLOIT_WARNING						= "<CENTER>Cerberus: The Specified Services Root Application Module could not be located ( Exploit Warning :: Local or Remote File Inclusion Detected ).</CENTER>";
 
 /*
@@ -253,6 +253,7 @@ $_Application_Module_Services_Message_Integrity_Header									= "<CENTER>[ <B><
 
 $_Application_Module_Services_Loops_Integrity_Header									= "<CENTER>[ <B><A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Application_List&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Application Module :: Application List ::\">Root</A> => <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_SERVICES&#61;Loops&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Root => :: Open & Display The Services Root-Administration Application Module :: Loops ::\">Integrity</A> => <A HREF=\"./Applications/Services/Loops?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code For The Services Root-Administration Application Module :: Loops ::\">Source</A></B> ]</CENTER><HR><BR>";
 
+/*
  ============================================================================================================
  +
  +
