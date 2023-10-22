@@ -227,7 +227,7 @@ if ($_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI == "." || $_Applicat
 **/
 } else {
 
-											echo ("<A HREF=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Animoji/$_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Image File :: $_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Animoji/$_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" ALT=\"$_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI\" CLASS=\"ListImageAnimoji\" WIDTH=\"125\" HEIGHT=\"125\"></A>&nbsp;");
+											echo ("<A HREF=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Animoji/$_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Image File :: $_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Animoji/$_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" ALT=\"$_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI\" CLASS=\"ListImageAvatar\" WIDTH=\"125\" HEIGHT=\"125\"></A>&nbsp;");
 
 } // [ + ] IF: Directory Contents :: Animoji Directory AND Files ARE NOT Animoji Directory AND Files
 
