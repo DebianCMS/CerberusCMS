@@ -842,6 +842,18 @@ img.MessengerImageMessage {
 
 /*
  ============================================================================================================
+ + Image :: Application Module :: List :: Images => Avatars
+ ============================================================================================================
+*/
+
+img.ListImageAvatar {
+
+  border-radius: 20%;
+
+} /* [ + ] Image :: Application Module :: List :: Images :: Avatars */
+
+/*
+ ============================================================================================================
  + Image :: Application Module :: Profile => Streams => Stream Image
  ============================================================================================================
 */
@@ -875,6 +887,18 @@ img.MemberDirectory {
   border-radius: 20%;
 
 } /* [ + ] Image :: Application Module :: Registered Member Accounts Directory :: Registered Member Account Profile Picture */
+
+/*
+ ============================================================================================================
+ + Image :: Application Module :: Registered Member Account => Member Panel
+ ============================================================================================================
+*/
+
+img.MemberPanel {
+
+  border-radius: 10%;
+
+} /* [ + ] Image :: Application Module :: Registered Member Account :: Member Panel */
 
 /*
  ============================================================================================================
