@@ -7,13 +7,28 @@ This CerberusCMS Theme was created by Gary Christopher Johnson<BR><BR>
 <IMG SRC="./Theme/2022_TinkeSoftware_Grey/Image/Legal/Author_G.C._Johnson.jpg" WIDTH="300" HEIGHT="400"></IMG><BR><BR>
 
 <B>Theme Credit</B><BR>
+&middot; &copy Gary Christopher Johnson: Theme Banner Images, Application Module Images, Application Panel Images, Cascading-Style-Sheet Styles, Project Badge Images<BR>
 &middot; Theme Image Fills were taken from DBZ Wallpaper by 'Unknown'<BR>
-&middot; Theme Administration and Member Control Panel Icons were taken from <A HREF="https://www.LBaumann.com">Laurent Baumann</A> ( Non-Commercial Use Only )<BR>
-&middot; This Theme was created using the G.N.U. Image Manipulation Program, ULEAD PhotoImpact and Adobe PhotoShop on the Operating Systems: Gentoo-Linux and Microsoft Windows<BR><BR>
+&middot; Theme Administration Control Panel and Registered Member Account Control Panel Icons were taken from <A HREF="https://www.LBaumann.com">Laurent Baumann</A> ( Non-Commercial Use Only )<BR><BR>
+
+&middot; Theme Avatar Images:<BR>
+<TEXTAREA ROWS="7" COLS="50">
+&copy; Gerry Martinez, Goddess Athena
+&copy; Gavin Hamilton - Glasgow, Scotland Museum, Artemis
+&copy; Mind Maestro, God Apollo
+&copy; Mistress Distress, Goddess Aphrodite
+&copy; Shanina Conway, Goddess Demeter
+&copy; Unknown, God Hades
+&copy; Unknown, Goddess Hera
+&copy Mind Meastro, God Hermes
+&copy; Unknown, God Zeus.
+</TEXTAREA><BR><BR>
+
+&middot; This Theme was created using the G.N.U. Image Manipulation Program, ULEAD PhotoImpact and Adobe PhotoShop on the Operating Systems: &reg; Gentoo-Linux and Microsoft &reg; &trade; Windows<BR><BR>
 
 <B>Theme Specifications</B><BR>
 &middot; Theme File Size ( Unpacked )<BR>
 0.00 MegaBytes<BR>
 0.00 MegaBits<BR>
 <HR>
-<CENTER>&copy; Tinke Software, Gary Christopher Johnson's Works, 2000 - 2023 — All Rights Reserved.</CENTER>
+<CENTER>&copy; Tinke Software, Gary Christopher Johnson's Works, 2000 - Present-Day — All Rights Reserved.</CENTER>
