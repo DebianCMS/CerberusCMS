@@ -254,6 +254,9 @@ echo ("
 														<OPTION VALUE=\"1\">Registered Member Account</OPTION>
 														<OPTION VALUE=\"2\">Moderator</OPTION>
 														<OPTION VALUE=\"3\">Administrator</OPTION>
+														<OPTION VALUE=\"4\">Root-Administrator</OPTION>
+														<OPTION VALUE=\"5\">Services Root-Administrator</OPTION>
+														<OPTION VALUE=\"6\">Background</OPTION>
 													</SELECT><BR><BR>
 
 												Registered Member Account :: Status<HR>
@@ -282,7 +285,7 @@ echo ("
 														<OPTION VALUE=\"1\">Locked</OPTION>
 													</SELECT><BR><BR>
 
-												Should This Member Account Foce Logout Now ?:<BR>
+												Should This Member Account Force Logout Now ?:<BR>
 												[ Current: $_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_SECURITY_SETTING_FLAG_FORCE_LOGOUT ]<BR>
 													<SELECT NAME=\"AMA_Accounts_Update_Account_Security_Setting_Flag_Force_Logout\" MAXLENGTH=\"1\">
 														<OPTION VALUE=\"0\">No</OPTION>
