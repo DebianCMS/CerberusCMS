@@ -69,12 +69,18 @@
  ============================================================================================================
 */
 
-/*
- ============================================================================================================
- + Application Module Header
- ============================================================================================================
-*/
-
+/*
+
+ ============================================================================================================
+
+ + Application Module Header
+
+ ============================================================================================================
+
+*/
+
+
+
 											echo ("$_Application_Module_Services_Message_Integrity_Header");
 
 /*
@@ -121,7 +127,7 @@ if ($_GET["Flash"] == "Applications") {
  ============================================================================================================
 */
 
-$_Application_Module_Services_Integrity_List_DB_Query_List_Application_Panels						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels");
+$_Application_Module_Services_Integrity_DB_Query_List_Application_Panels						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels");
 
 /*
  ============================================================================================================
@@ -129,17 +135,17 @@ $_Application_Module_Services_Integrity_List_DB_Query_List_Application_Panels			
  ============================================================================================================
 */
 
-while ($_Application_Module_Services_Integrity_List_DB_Query_List_Application_Panels_Fetch_Array = $DB->fetch_array($_Application_Module_Services_Integrity_List_DB_Query_List_Application_Panels)) {
+while ($_Application_Module_Services_Integrity_List_Application_Panels_Fetch_Array = $DB->fetch_array($_Application_Module_Services_Integrity_DB_Query_List_Application_Panels)) {
 
-$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_ID							= $_Application_Module_Services_Integrity_List_DB_Query_List_Applications_Panels_Fetch_Array['id'];
-$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME						= $_Application_Module_Services_Integrity_List_DB_Query_List_Applications_Panels_Fetch_Array['panel_file_name'];
-$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY					= $_Application_Module_Services_Integrity_List_DB_Query_List_Applications_Panels_Fetch_Array['panel_file_integrity'];
-$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION				= $_Application_Module_Services_Integrity_List_DB_Query_List_Applications_Panels_Fetch_Array['panel_file_integrity_installation'];
-$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PHYSICAL				= hash_file('sha256', "./Applications/Panel/$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME");
+$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_ID							= $_Application_Module_Services_Integrity_List_Application_Panels_Fetch_Array['id'];
+$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_NAME						= $_Application_Module_Services_Integrity_List_Application_Panels_Fetch_Array['panel_file_name'];
+$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY						= $_Application_Module_Services_Integrity_List_Application_Panels_Fetch_Array['panel_file_integrity'];
+$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION				= $_Application_Module_Services_Integrity_List_Application_Panels_Fetch_Array['panel_file_integrity_installation'];
+$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PHYSICAL					= hash_file('sha256', "./Applications/Panel/$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_NAME");
 
-if ($_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PHYSICAL != "$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION") {
+if ($_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PHYSICAL != "$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION") {
 
-echo ("Integrity :: Message: HASH Mismatch On Application Panel: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME -- Should This Application Panel Automatically Re-Install Now ?<BR>");
+echo ("Integrity :: Message: HASH Mismatch On Application Panel: $_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_NAME -- Should This Application Panel Automatically Re-Install Now ?<BR>");
 
 } // [ + ] IF: Integrity :: File :: Application Panel :: Physical File Integrity DOES NOT Match Integrity String Stored In The Database Management System Server Database
 
