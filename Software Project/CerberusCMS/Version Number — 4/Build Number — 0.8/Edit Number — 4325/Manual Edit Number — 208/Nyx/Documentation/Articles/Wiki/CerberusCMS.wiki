@@ -513,11 +513,12 @@ CerberusCMS aims to be a secure Content Management System and is hardcoded for s
 If 1 byte changes in the official programming code of the Kernel and or the Application Modules included in the official version that specific component is automatically Re-Installed by Linux GIT Command, Microsoft Windows BITS Command or PHP File_Put_Contents Function Command from the Cerberus Services Root-Administration account which remains active at all times. This makes it impossible to hack the CerberusCMS instance by different programming code injection attacks just incase sanitization of URL and input forms fails at any point in time.
 
 There is a stand-alone integrity Application that checks the CerberusCMS instance integrity of each file and then compares the SHA-256 hashes of each file to
-the Master Database Server Database. If the SHA-512 HASHES are different it then provides options to reinstall the Kernel and Application Modules by GIT command.
+the Master Database Server Database. If the SHA-256 HASHES of the Kernel, Applications Modules and or Components are different than OEM release at any point in time Integrity then provides options to Re-Install the Kernel File and Application Modules by GIT Command, Microsoft Windows BITS Command or PHP File_Put_Contents Function Command.
 
 ===Data Sanitization Features===
-* Automatic data sanitization of all input forms, variables and POST and GET data.
-This makes it impossible to hack the CerberusCMS instance by injection attacks.
+* Automatic Data Sanitization of all input forms, Uniform-Resource-Location Bar Variables, REQUEST, POST and GET Data.
+
+Automatic Data Sanitization makes it impossible to hack the CerberusCMS instance by injection attacks.
 
 ===Internal Security Loop Features===
 * Automatic Cookie Data Checks.
