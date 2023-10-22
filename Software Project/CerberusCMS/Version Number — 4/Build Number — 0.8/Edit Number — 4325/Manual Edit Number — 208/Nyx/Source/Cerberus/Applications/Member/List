@@ -197,12 +197,49 @@ if ($_GET["Display"] == "Animojis") {
 */
 
 											echo ($_Application_Module_Member_Message_List_Header_ANIMOJIS);
+
 /*
  ============================================================================================================
- + Include Animojis
+ + Retrieve and List :: All Animoji Images
  ============================================================================================================
 */
 
+$_Application_Module_Member_List_FIND_DIRECTORY_ANIMOJI				= "./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Animoji/";
+$_Application_Module_Member_List_OPEN_DIRECTORY_ANIMOJI				= opendir($_Application_Module_Member_List_FIND_DIRECTORY_ANIMOJI);
+
+/*
+ ============================================================================================================
+ + WHILE: Reading :: Directory :: Animoji Directory
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI = readdir($_Application_Module_Member_List_OPEN_DIRECTORY_ANIMOJI))) {
+
+/*
+ ============================================================================================================
+ + IF: STOP: Exploit :: Local-File-Inclusion AND Remote-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI == "." || $_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI == ".." || $_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+											echo ("<A HREF=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Animoji/$_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Image File :: $_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI\"><IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Animoji/$_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" ALT=\"$_Application_Module_Member_List_READ_DIRECTORY_ANIMOJI\" CLASS=\"ListImageAnimoji\" WIDTH=\"125\" HEIGHT=\"125\"></A>&nbsp;");
+
+} // [ + ] IF: Directory Contents :: Animoji Directory AND Files ARE NOT Animoji Directory AND Files
+
+} // [ + ] WHILE: Reading :: Directory :: Animoji Directory AND Files
+
+/*
+ ============================================================================================================
+ + Close :: Directory :: Animoji Image Directory
+ ============================================================================================================
+*/
+
+closedir($_Application_Module_Member_List_OPEN_DIRECTORY_ANIMOJI);
 
 } // [ + ] IF: Internal Application: Display :: All Animojis Is: Activated
 
