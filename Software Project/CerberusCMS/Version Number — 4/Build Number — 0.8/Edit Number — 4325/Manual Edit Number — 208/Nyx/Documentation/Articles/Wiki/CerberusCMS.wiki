@@ -355,8 +355,8 @@ CerberusCMS packages can be downloaded and uploaded in 6 different ways
 * Through GIT Terminal Command From Included Installation ToolKit Web Application.
 * Through Mercurial Terminal Command From Included Installation ToolKit Web Application.
 * Through CURL Terminal Command.
-* Through Windows / BSD / GNU / Linux / Apple OS Package.
-* Through Windows Terminal BITS command.
+* Through Microsoft Windows / BSD / GNU / Linux / Apple OS Package.
+* Through Microsoft Windows Terminal BITS command.
 
 ===Installation===
 Once the official CerberusCMS package has been downloaded to the web server through any of the previous methods the package
