@@ -440,8 +440,8 @@ CerberusCMS aims to be a secure Content Management System and is hardcoded for s
 
 ====Vulnerability and Exploitation Security====
 * Automatic Directory Listing Denial
-* Automatic GET and POST Sanitization
-* Automatic Variable Sanitization
+* Automatic REQUEST, GET and POST Data Sanitization
+* Automatic Variable Data Sanitization
 
 '''Injections'''
 * Structured-Query-Language Code Injection
