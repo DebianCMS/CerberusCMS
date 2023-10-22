@@ -385,8 +385,11 @@ can then be unpacked and CerberusCMS can then be installed through Architect whi
 * Expert Data Cache Control Programming Code.
 * Output Web-Page Cache-Free Programming Code.
 * Unique and Completely Random 512 Character Length URL Addition String.
-This is makes it impossible to cache / freeze the Web Page content by a malicious M-I-T-M server such as a malicious server block to control or freeze the web-page output.
 * Cache-Free Programming Code For Live Data Upon Every Refresh of The Web Page Document.
+
+Cache-Control and Cache Circumvention techniques make it impossible to cache or freeze the Web Page content by a malicious M-I-T-M server such as a malicious server block put in place by the government or another entity to control or freeze the web-page content output. All of the files in the system
+such as Audio, Document, Image and Video files have an added randomized 512 Alpha-Numeric string added to the end of it and each set is completely different. The string automatically changes upon every reload of the Web Page Document. This stops
+all man-in-the-middle Cache hacking techniques.
 
 ====Application Module Control Features====
 * Application Module Access Level Controls.
