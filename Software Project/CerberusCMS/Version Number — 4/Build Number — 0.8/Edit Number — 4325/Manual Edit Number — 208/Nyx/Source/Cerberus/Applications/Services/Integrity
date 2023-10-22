@@ -141,7 +141,7 @@ $_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_ID							= $_Appl
 $_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_NAME						= $_Application_Module_Services_Integrity_List_Application_Panels_Fetch_Array['panel_file_name'];
 $_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY						= $_Application_Module_Services_Integrity_List_Application_Panels_Fetch_Array['panel_file_integrity'];
 $_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION				= $_Application_Module_Services_Integrity_List_Application_Panels_Fetch_Array['panel_file_integrity_installation'];
-$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PHYSICAL					= hash_file('sha256', "./Applications/Panel/$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_NAME");
+$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PHYSICAL					= hash_file('sha256', "./Applications/Panel/$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_NAME.panel");
 
 if ($_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PHYSICAL != "$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION") {
 
