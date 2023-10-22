@@ -367,10 +367,10 @@ can then be unpacked and CerberusCMS can then be installed through Architect whi
 ===Interaction Features===
 
 ====Entertainment and Interaction====
-* Administration and Registered Members can download data from any torrent network from the CerberusCMS Web Application itself. This includes movies and video games where the movies can then be played in the web browser for free. The Video Player Application Module automatically searches for and downloads high definition thumbnail images of box art of the movies downloaded.
-* Administration and Registered Members can download and play HTML5 3D video games directly from the Emulators Application Module.
-* Administration and Registered Members can use a feature named Cerberus-Streams which is very much like a FaceBook wall or Twitter feed and where other Registered Member Accounts can comment and post Audio, Documents, Image and Video files. Content could be anything from interaction videos, video communication streams and live videos.
-* Administration and Registered Members can watch video streams and listen to audio streams from anywhere on the Internet free of any advertisements through the included Application Modules. This includes YouTube, SoundCloud and more.
+* Administration and Registered Members can download data from any torrent network from the CerberusCMS Web Application itself. This includes music albums, movies and video games where the music albums, movies and video games can then be played in the web browser for free or downloaded to the users local computer hard drive or data storage medium. The Video Player Application Module automatically searches for and downloads high definition thumbnail images of box art of the movies downloaded.
+* Administration and Registered Members can download and play H.T.M.L. 5 3D video games directly from the Emulators Application Module.
+* Administration and Registered Members can use a feature named Cerberus-Streams which is very much like a FaceBook wall or Twitter feed and where other Registered Member Accounts can comment and post Audio, Document, Image and Video files. Content could be anything from interaction voicemail messages, music, PDF files, movies, videos, video communication streams and live videos.
+* Administration and Registered Members can watch video streams and listen to audio streams from anywhere on the Internet free of any advertisements through the included Application Modules. This includes YouTube, SoundCloud and more. The Network Filtering system is much like IPTables in Linux where entire lists of advertisement servers can be completely blocked.
 * Administration and Registered Members can communicate in different ways with PGP Signed and AES encrypted messages through the Messenger Application Module.
 * Digital Rights Management Free.
 * Encrypted text message, voice alone and voice + video communications directly from the web browser or the Google Android/Java and Apple iOS/Swift application.
