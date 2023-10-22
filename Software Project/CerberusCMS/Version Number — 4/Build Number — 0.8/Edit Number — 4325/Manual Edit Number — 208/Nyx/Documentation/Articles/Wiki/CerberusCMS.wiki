@@ -508,6 +508,8 @@ CerberusCMS aims to be a secure Content Management System and is hardcoded for s
 
 ===Integrity Features===
 * Automatic Kernel and Application Module file size integrity checks on every execution of the web page document.
+* Automatic Re-Install of the compromised Kernel File, Application Module and or Component back to OEM. 
+
 If 1 byte changes in the official programming code of the Kernel and or the Application Modules included in the official version that specific component is automatically Re-Installed by Linux GIT Command, Microsoft Windows BITS Command or PHP File_Put_Contents Function Command from the Cerberus Services Root-Administration account which remains active at all times. This makes it impossible to hack the CerberusCMS instance by different programming code injection attacks just incase sanitization of URL and input forms fails at any point in time.
 
 There is a stand-alone integrity Application that checks the CerberusCMS instance integrity of each file and then compares the SHA-256 hashes of each file to
