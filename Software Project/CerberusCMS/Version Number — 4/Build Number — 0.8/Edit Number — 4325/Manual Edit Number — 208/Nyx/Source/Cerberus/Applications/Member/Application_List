@@ -250,7 +250,7 @@ $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_ST
 $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_TIMESTAMP_INSTALLATION		= $_Application_Module_Member_Application_List_DB_Query_List_Applications_Background_Fetch_Array['application_file_timestamp_installation'];
 $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_SIZE				= filesize("./Applications/Background/$_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_NAME");
 $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_SIZE_KILOBYTES			= $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_SIZE / 1024;
-$_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_HASH_SHA256			= hash_file('sha256', "./Applications/Administration/$_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_NAME");
+$_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_HASH_SHA256			= hash_file('sha256', "./Applications/Background/$_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_NAME");
 
 echo ("
 														<HR><B>File :: Application Module :: Background :: File Name: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_NAME</B><HR>
