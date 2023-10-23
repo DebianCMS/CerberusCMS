@@ -159,8 +159,6 @@ Automated as well as options for managing background services and scheduling spe
 4 Services Root Administration-Level Application Modules
 
 ====Root Administration-Level Application Modules====
-* Tasks
-
 * '''Tasks'''
 Options for managing current and future tasks as well as an advanced Task Manager that monitors T.C.P./I.P. connections in real-time.
 
