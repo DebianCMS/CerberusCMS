@@ -73,7 +73,7 @@
  ============================================================================================================
 */
 
-$_Application_Module_Administration_Accounts_DB_Query_Fetch_Member_UserName				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_access_level<='3' ORDER BY member_username ASC");
+$_Application_Module_Administration_Accounts_DB_Query_Fetch_Member_UserName				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members ORDER BY member_username ASC");
 
 /*
  ============================================================================================================
