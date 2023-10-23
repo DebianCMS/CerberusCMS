@@ -176,6 +176,8 @@ if ($_Application_Module_Member_Notepad_DB_Query_INSERT_NOTEPAD_NOTE) {
 
 } // [ + ] IF: Database Management System Server Query :: Insert New Notepad Note :: Variable HAS Executed
 
+} // [ + ] IF: Internal Application: Display :: Create Note :: Input Form Application Variables HAVE Executed
+
 } // [ + ] IF: Internal Application: Display :: Is: Create Note
 
 /*
