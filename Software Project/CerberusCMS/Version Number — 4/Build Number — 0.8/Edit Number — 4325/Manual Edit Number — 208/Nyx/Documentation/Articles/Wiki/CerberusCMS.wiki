@@ -111,7 +111,7 @@ CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325 was manua
 
 ===Project Compatibility and Life Cycle===
 CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325 was hand updated by manual Programming Code Rewrite periodically from the years of ~ January of 2022 to November of 2023. This specific Version Number, Build Number and Edit Number will work for ~ 10 years on Pre-Hyper-Text-Post-Processor Version Number: 8.
-Major programming code updates implemented heavy use of encryption and data sanitization. It was remade for heavy use of riced and crafted Structured-Query-Language queries and concurrent connections numbering in the 100s for shared hosting and 10s of thousands to 100s of thousands with the recommended Dedicated Server Rack Setup with Dedicated and Seperated Servers For Apache, MySQL/MariaDB/Microsoft Database, PHP/Zend, Operating System, Cloud/Data Server and other kinds of servers.
+Major programming code updates implemented heavy use of encryption and data sanitization. It was remade for heavy use of riced and crafted Structured-Query-Language queries and concurrent connections numbering in the 100s for shared hosting and 10s of thousands to 100s of thousands with the recommended Dedicated Server Rack Setup with Dedicated and Seperated Servers For Apache, MySQL/MariaDB/Microsoft Database, P.H.P./Zend, Operating System, Cloud/Data Server and other kinds of servers.
 With a Server Setup on a rack with 3 or more different dedicated, separated and security hardened S.Q.L. Server, P.H.P. / Apache Server and Data Storage Server the system can support up to ~ 5,000 unique active concurrent user-connections without any lag or latency in response time.
 
 ====End-User System Update Cycles====
@@ -147,7 +147,7 @@ Automated as well as options for managing command interpretations to and from th
 * '''Integrity'''
 Automated as well as options for managing all of the files in the system. Integrity automatically checks the file hashes of the file sizes of each file on the system that is generated in the Secure-Hash-Algorithm, 256-BIT to the hashes stored
 in the Master Database Server Database as well as the Local Database Server Database. Every file in the system is hashed in Secure-Hash-Algorithm, 256-BIT based on the file size of the file itself. These hashes are compared to the ones in the Master Database Server Database upon every execution of the kernel file.
-If 1 byte changes in any of the files in the system this means the file has been tampered with and Integrity will automatically Re-Install the file back to the original one officially released in that version number by running a Linux GIT Clone Command, Microsoft Windows BITS Download Command or PHP File_Put_Contents Function Command of the original file hosted on the official GIT repository whether the Global
+If 1 byte changes in any of the files in the system this means the file has been tampered with and Integrity will automatically Re-Install the file back to the original one officially released in that version number by running a Linux GIT Clone Command, Microsoft Windows BITS Download Command or P.H.P. File_Put_Contents Function Command of the original file hosted on the official GIT repository whether the Global
 variables are set to GITHub, GITLab, BITBucket or another GIT-Like Repository web server. This process makes it impossible to hack anything on the system because if even 1 byte changes in the integrity of the file itself the file is automatically Re-Installed back to OEM within a split second. This leaves no time for hackers to exploit the system.
 
 * '''Loops'''
@@ -633,10 +633,10 @@ is added to the physical Master List within the Electronic Mail Address reposito
 * Automatic Kernel and Application Module file size integrity checks on every execution of the web page document.
 * Automatic Re-Install of the compromised Kernel File, Application Module and or Component back to OEM. 
 
-If 1 byte changes in the official programming code of the Kernel and or the Application Modules included in the official version that specific component is automatically Re-Installed by Linux GIT Command, Microsoft Windows BITS Command or PHP File_Put_Contents Function Command from the Cerberus Services Root-Administration account which remains active at all times. This makes it impossible to hack the CerberusCMS instance by different programming code injection attacks just incase sanitization of URL and input forms fails at any point in time.
+If 1 byte changes in the official programming code of the Kernel and or the Application Modules included in the official version that specific component is automatically Re-Installed by Linux GIT Command, Microsoft Windows BITS Command, P.H.P. File_Put_Contents(); Function Command or P.H.P. Copy(); Function Command from the Cerberus Services Root-Administration account which remains active at all times. This makes it impossible to hack the CerberusCMS instance by different programming code injection attacks just incase sanitization of URL and input forms fails at any point in time.
 
 There is a stand-alone integrity Application that checks the CerberusCMS instance integrity of each file and then compares the SHA-256 hashes of each file to
-the Master Database Server Database. If the SHA-256 HASHES of the Kernel, Applications Modules and or Components are different than OEM release at any point in time Integrity then provides options to Re-Install the Kernel File and Application Modules by GIT Command, Microsoft Windows BITS Command or PHP File_Put_Contents Function Command.
+the Master Database Server Database. If the SHA-256 HASHES of the Kernel, Applications Modules and or Components are different than OEM release at any point in time Integrity then provides options to Re-Install the Kernel File and Application Modules by GIT Command, Microsoft Windows BITS Command or P.H.P. File_Put_Contents(); Function Command.
 
 ===Data Sanitization Features===
 * Automatic Data Sanitization of all input forms, Uniform-Resource-Location Bar Variables, REQUEST, POST and GET Data.
@@ -806,7 +806,7 @@ Content Management Systems
 * Cerberus Content Management System, Direct Fork: Fenrir Content Management System :: Written In P.H.P.-S.Q.L.
 * Cerberus Content Management System, Direct Fork: Runic / Rune Content Management System :: Written In P.H.P.-S.Q.L.
 * Cerberus Content Management System, Direct Fork: Debian Content Management System :: Written In P.H.P.-S.Q.L.
-* CerberusCMS, Iris :: Written In Java, C++ and PHP
+* CerberusCMS, Iris :: Written In Java, C++ and P.H.P.
 * CerberusCMS, Magysk Theme Writer :: Written In C++
 * CerberusCMS, Stokje Application Writer :: Written In C++
 * CerberusCMS, Charon / Helvegen :: Written In C++
@@ -815,12 +815,12 @@ Discovery Applications
 * Grutte Forces // Troll Unmasker :: Written in Python and C++
 
 Mathematics Applications
-* Lightning Calculate ! :: Written In PHP and C++
+* Lightning Calculate ! :: Written In P.H.P. and C++
 * G.C.'s Calculator :: Written In P.H.P. and C++
 
 Language Applications
 * Runic Alphabets :: For Linux, Google AOSP, Apple iOS and Microsoft Windows
-* Runic Calendars :: Written In C++ and PHP
+* Runic Calendars :: Written In C++ and P.H.P.
 * Runic Keyboard Layouts :: For Linux, Google AOSP, Apple iOS and Microsoft Windows
 * Runic Keyboard Stickers :: For Linux, Google AOSP, Apple iOS and Microsoft Windows
 * Runic Language Packs :: For Linux, Google AOSP, Apple iOS and Microsoft Windows
