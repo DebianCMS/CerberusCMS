@@ -878,9 +878,9 @@ if ($_GLOBAL_MEMBER_STATUS_ACCOUNT_BANNED >= 1) {
 	header("Location: ./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/HTML/Banned.html?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
 	exit;
 
-} // [ + ] IF: Registered Member Account Is Banned
+} // [ + ] IF: Registered Member Account :: Is: Banned
 
-} // [ + ] IF: Registered Member Account Member Is Logged-In
+} // [ + ] IF: Registered Member Account :: Is: Logged-In
 
 /*
  ============================================================================================================
@@ -1264,7 +1264,7 @@ if ($_GLOBAL_MEMBER_ACCOUNT_DEVICE_WEB_BROWSER_AUTHORIZED != "$_GLOBAL_REMOTE_SE
 
 } // [ + ] IF: System :: Security :: Setting :: Restrict :: Authorized :: Web Browser: Is: On
 
-} // [ + ] IF: Registered Member Account Is Logged-In And Valid Credentials Are Set
+} // [ + ] IF: Registered Member Account :: Is: Logged-In And Valid Credentials Are Set
 
 /*
  ============================================================================================================
@@ -1330,7 +1330,7 @@ if ($_GLOBAL_MEMBER_ACCOUNT_DEVICE_MAC_ADDRESS_AUTHORIZED != "$_GLOBAL_REMOTE_DE
 
 } // [ + ] IF: System :: Security :: Setting :: Restrict :: Authorized :: MAC Address: Is: On
 
-} // [ + ] IF: Registered Member Account Is Logged-In And Valid Credentials Are Set
+} // [ + ] IF: Registered Member Account :: Is: Logged-In And Valid Credentials Are Set
 
 /*
  ============================================================================================================
@@ -1410,7 +1410,7 @@ if ($_DB_Query_Kernel_Security_Update_Member_Account_Force_Logout) {
 **/
 } // [ + ] IF: Registered Member Account :: Security :: Setting :: Flag :: Force Logout Is: On
 
-} // [ + ] IF: Registered Member Account Is Logged-In And Valid Credentials Are Set
+} // [ + ] IF: Registered Member Account :: Is: Logged-In And Valid Credentials Are Set
 
 /*
  ============================================================================================================
@@ -1450,7 +1450,7 @@ if ($_GLOBAL_MEMBER_ACCOUNT_LOCK_STATUS > "0") {
 /**
  * Do Nothing
 **/
-} // [ + ] IF: Registered Member Account Locked Status Is: On, At Any Time: Destroy Credentials In Cookies and Redirect To Account Locked Message
+} // [ + ] IF: Registered Member Account :: Locked Status Is: On, At Any Time: Destroy Credentials In Cookies and Redirect To Account Locked Message
 
 /*
  ============================================================================================================
@@ -2757,7 +2757,7 @@ $_GLOBAL_SYSTEM_THEME_DIRECTORY								= $_GLOBAL_MEMBER_THEME_DIRECTORY;
 
 } // [ + ] IF: Registered Member Account :: Settings :: Theme Directory Settings Is Null
 
-} // [ + ] IF: Registered Member Account: Is Logged-In
+} // [ + ] IF: Registered Member Account :: Is: Logged-In And Valid Credentials Are Set
 
 /*
  ============================================================================================================
@@ -2809,7 +2809,7 @@ if (($_GLOBAL_MEMBER_GENDER <= "0") || ($_GLOBAL_MEMBER_GENDER == "-")) {
 
 	$_GLOBAL_MEMBER_GENDER_DISPLAY	= "Non-Specified";
 
-} // [ + ] IF: Registered Member Account Gender Is: 0 OR -, Define as Non-Specified
+} // [ + ] IF: Registered Member Account :: Gender Is: 0 OR -, Define as Non-Specified
 
 /*
  ============================================================================================================
@@ -2821,7 +2821,7 @@ if ($_GLOBAL_MEMBER_GENDER == "1") {
 
 	$_GLOBAL_MEMBER_GENDER_DISPLAY	= "Male";
 
-} // [ + ] IF: Registered Member Account Gender Is: 1, Define as Male
+} // [ + ] IF: Registered Member Account :: Gender Is: 1, Define as Male
 
 /*
  ============================================================================================================
@@ -2833,9 +2833,9 @@ if ($_GLOBAL_MEMBER_GENDER == "2") {
 
 	$_GLOBAL_MEMBER_GENDER_DISPLAY	= "Female";
 
-} // [ + ] IF: Registered Member Account Gender Is: 1, Define as Female
+} // [ + ] IF: Registered Member Account :: Gender Is: 1, Define as Female
 
-} // [ + ] IF: Registered Member Account Is: Logged-In
+} // [ + ] IF: Registered Member Account :: Is: Logged-In And Valid Credentials Are Set
 
 /*
  ============================================================================================================
@@ -3081,7 +3081,7 @@ if ($_GLOBAL_MEMBER_NUMBER_OF_POSTS >= 1500) {
 
 } // [ + ] IF: Registered Member Account :: Gender :: Is: 0, Non-Disclosed
 
-} // [ + ] IF: Registered Member Account :: Is Logged-In With Valid Credentials
+} // [ + ] IF: Registered Member Account :: Is: Logged-In And Valid Credentials Are Set
 
 /*
  ============================================================================================================
@@ -3131,7 +3131,7 @@ if ($_DB_Query_Kernel_Update_Member_Rank) {
 
 $DB->free($_DB_Query_Kernel_Update_Member_Rank);
 
-} // [ + ] IF: Registered Member Account :: Is Logged-In With Valid Credentials
+} // [ + ] IF: Registered Member Account :: Is: Logged-In And Valid Credentials Are Set
 
 /*
  ============================================================================================================
