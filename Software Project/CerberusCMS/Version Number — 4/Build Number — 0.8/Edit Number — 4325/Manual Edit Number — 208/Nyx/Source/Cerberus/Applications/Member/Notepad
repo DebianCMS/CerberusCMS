@@ -122,8 +122,6 @@ $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP						= $_Application_Modu
  ============================================================================================================
 */
 
-$_GLOBAL_MEMBER_ACCESS_LEVEL
-
 if ($_GET["DisplayNote"] == "$_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID") {
 
 /*
@@ -152,7 +150,9 @@ This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_T
 
 if ($_Application_Module_Pages_LIST_NOTEPAD_NOTE_ACCESS_LEVEL == "1") {
 
-if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null && $_GLOBAL_MEMBER_ACCESS_LEVEL >= 1) {
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) {
+
+if ($_GLOBAL_MEMBER_ACCESS_LEVEL >= 1) {
 
 echo ("
 
@@ -161,6 +161,8 @@ Notepad Note ID Number: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID :: Name:
 This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP By: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_AUTHOR<BR>
 
 ");
+
+} // [ + ] IF: Registered Member Account :: Access Level :: Is: Greater Than OR Equal To 1
 
 } // [ + ] IF: Registered Member Account :: Is: Logged-In And Valid Credentials Are Set
 
@@ -174,7 +176,9 @@ This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_T
 
 if ($_Application_Module_Pages_LIST_NOTEPAD_NOTE_ACCESS_LEVEL == "2") {
 
-if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null && $_GLOBAL_MEMBER_ACCESS_LEVEL >= 2) {
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) {
+
+if ($_GLOBAL_MEMBER_ACCESS_LEVEL >= 2) {
 
 echo ("
 
@@ -183,6 +187,8 @@ Notepad Note ID Number: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID :: Name:
 This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP By: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_AUTHOR<BR>
 
 ");
+
+} // [ + ] IF: Registered Member Account :: Access Level :: Is: Greater Than OR Equal To 2
 
 } // [ + ] IF: Registered Member Account :: Is: Logged-In And Valid Credentials Are Set
 
@@ -190,13 +196,15 @@ This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_T
 
 /*
  ============================================================================================================
- + IF: Notepad Note :: Access Level :: Is: 2, Registered Member Account - Administration Root-Level
+ + IF: Notepad Note :: Access Level :: Is: 3, Registered Member Account - Administration Root-Level
  ============================================================================================================
 */
 
 if ($_Application_Module_Pages_LIST_NOTEPAD_NOTE_ACCESS_LEVEL == "3") {
 
-if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null && $_GLOBAL_MEMBER_ACCESS_LEVEL >= 3) {
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) {
+
+if ($_GLOBAL_MEMBER_ACCESS_LEVEL >= 3) {
 
 echo ("
 
@@ -205,6 +213,8 @@ Notepad Note ID Number: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID :: Name:
 This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP By: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_AUTHOR<BR>
 
 ");
+
+} // [ + ] IF: Registered Member Account :: Access Level :: Is: Greater Than OR Equal To 3
 
 } // [ + ] IF: Registered Member Account :: Is: Logged-In And Valid Credentials Are Set
 
@@ -221,5 +231,4 @@ This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_T
 */
 
 $DB->free($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES);
-
 ?>
