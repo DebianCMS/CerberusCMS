@@ -506,9 +506,17 @@ The Master_Sanitization file features expert Pre-Hyper-Text-Post-Processor progr
 CerberusCMS aims to be a secure Content Management System and Programming Framewhere and it is hardcoded for information security and data security.
 
 ====Vulnerability and Exploitation Security====
-* Automatic Directory Listing Denial
-* Automatic REQUEST, GET and POST Data Sanitization
-* Automatic Variable Data Sanitization
+* '''Directory Security'''
+Automatic Directory Content Listing Denial
+
+* '''Expert Data Sanitization Security'''
+Automatic REQUEST, GET and POST Data Sanitization. All Data that passes through the REQUEST, GET and POST Data Variables are Sanitized through the Master_Sanitization Security Module. This includes
+any Programming Code, Harmful H.T.M.L. Characters, H.T.M.L. and JavaScript Tags and more.
+
+* '''Expert Variable Sanitization'''
+
+Automatic Variable Data Sanitization. All Variables that are initialized and executed System-Wide are killed upon the ending of the execution with kill();, die(); and exit();. This makes it impossible
+to manipulate any of the Variables in any kind of a buffer loop System-Wide.
 
 * '''Image Security'''
 All Image files uploaded are automatically HASHED in the Secure-Hash-Algorithm, 256-BIT and Integrity has an extensive Programming Code Loop that constantly checks all Registered Member Account
