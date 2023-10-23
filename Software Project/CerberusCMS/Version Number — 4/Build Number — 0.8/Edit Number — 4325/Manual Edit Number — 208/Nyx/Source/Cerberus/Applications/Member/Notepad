@@ -243,7 +243,7 @@ echo ("
 													This Notepad Note Is Encrypted<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Notepad&amp;DisplayNote&#61;$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
 													* Notepad :: Note :: Password<BR>
-														<INPUT TYPE=\"text\" NAME=\"AMM_Notepad_Post_Unlock_Notepad_Note_Password_ClearText\" MAXLENGTH=\"256\"><BR>
+														<INPUT TYPE=\"password\" NAME=\"AMM_Notepad_Post_Unlock_Notepad_Note_Password_ClearText\" MAXLENGTH=\"256\"><BR>
 													<INPUT TYPE=\"submit\" VALUE=\"Unlock Note\">
 												</FORM>
 ");
@@ -261,14 +261,15 @@ Notepad Note Entry Data:<BR>
 This Notepad Note Was Created On: $_Application_Module_Notepad_LIST_NOTEPAD_NOTE_TIMESTAMP<BR>
 This Notepad Note Was Created By: <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_AUTHOR\" TITLE=\":: Open & Display :: The Application Module :: Profile :: For :: $_Application_Module_Notepad_LIST_NOTEPAD_NOTE_AUTHOR ::\">$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_AUTHOR</A><BR>
 Is This Notepad Note Encrypted ?: $_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ENCRYPTED<BR><BR>
+");
 
 } else {
 
 												echo ("<CENTER>Cerberus: The Password You Have Provided Is Not Correct.</CENTER>");
 
-} // [ + ] IF: Internal Application :: Display :: Notepad Note ID Number :: Is Encrypted AND Input HASHED Password String MATCHES HASHED Password String In The Database Management System Server Database
+} // [ + ] IF: Internal Application :: Display :: Notepad Note Entry ID Number :: Is Encrypted AND Input HASHED Password String MATCHES HASHED Password String In The Database Management System Server Database
 
-} // [ + ] IF: Internal Application :: Display :: Notepad Note ID Number :: Is Encrypted :: Notepad Note Password Decryption Input Form Variables HAVE Executed
+} // [ + ] IF: Internal Application :: Display :: Notepad Note Entry ID Number :: Is Encrypted :: Notepad Note Password Decryption Input Form Variables HAVE Executed
 
 } else {
 
@@ -281,12 +282,13 @@ Notepad Note Entry Data:<BR>
 This Notepad Note Was Created On: $_Application_Module_Notepad_LIST_NOTEPAD_NOTE_TIMESTAMP<BR>
 This Notepad Note Was Created By: <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_AUTHOR\" TITLE=\":: Open & Display :: The Application Module :: Profile :: For :: $_Application_Module_Notepad_LIST_NOTEPAD_NOTE_AUTHOR ::\">$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_AUTHOR</A><BR>
 Is This Notepad Note Encrypted ?: $_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ENCRYPTED<BR><BR>
+");
 
 } // [ + ] IF: Notepad Note Entry :: Is: Encrypted
 
-} // [ + ] IF: Notepad Note Entry :: Access Level :: Is: 0 :: Public
+} // [ + ] IF: Notepad Note Entry :: Access Level :: Is: 0 :: Public, Non-Registered Member Account
 
-} // [ + ] IF: Internal Application: Display Note :: Is: ID Number
+} // [ + ] IF: Internal Application: Display Notepad Note Entry :: Is: ID Number :: Is: Activated
 
 } // [ + ] WHILE: Retrieving All Custom Web Application Module Entries From The Database Management System Server
 
