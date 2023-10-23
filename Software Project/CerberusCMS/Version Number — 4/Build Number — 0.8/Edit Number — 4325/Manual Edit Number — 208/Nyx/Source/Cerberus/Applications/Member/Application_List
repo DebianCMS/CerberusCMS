@@ -289,7 +289,7 @@ echo ("
 														* Integrity :: Application Module :: Background :: File Size :: Physical File :: HASH :: Secure-Hash-Algorithm-256<BR>
 															$_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_HASH_SHA256<BR><BR>
 														* Integrity :: Application Module :: Background :: File Size :: Physical File :: In Bytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_SIZE<BR>
-														* Integrity :: Application Module :: Background :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_SIZE_KILOBYTES<BR>
+														* Integrity :: Application Module :: Background :: File Size :: Physical File :: In KiloBytes :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_SIZE_KILOBYTES<BR><BR>
 
 														<B>Timestamp :: Installation</B><BR>
 														* Timestamp :: Application Module :: Background :: Database Entry :: $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_TIMESTAMP_INSTALLATION<BR>
