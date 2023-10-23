@@ -166,6 +166,7 @@ $_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NAME_FIR
 $_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NAME_LAST				= $_POST['AMA_Accounts_Update_Account_Name_Last'];
 $_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NAME_MIDDLE				= $_POST['AMA_Accounts_Update_Account_Name_Middle'];
 $_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NAME_NICKNAME				= $_POST['AMA_Accounts_Update_Account_Name_NickName'];
+$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NOTES					= $_POST['AMA_Accounts_Update_Account_Notes'];
 $_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NUMBER_OF_POSTS				= $_POST['AMA_Accounts_Update_Account_Number_Of_Posts'];
 $_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_SECURITY_SETTING_FLAG_FORCE_LOGOUT	= $_POST['AMA_Accounts_Update_Account_Security_Setting_Flag_Force_Logout'];
 $_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_STATUS_ACTIVATION			= $_POST['AMA_Accounts_Update_Account_Status_Activation'];
@@ -224,6 +225,7 @@ $_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_NAME_FIRST					
 $_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_NAME_LAST					= $_Application_Module_Administration_Accounts_DB_Query_Fetch_Member_ID_Array['member_name_last'];
 $_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_NAME_MIDDLE					= $_Application_Module_Administration_Accounts_DB_Query_Fetch_Member_ID_Array['member_name_middle'];
 $_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_NAME_NICKNAME					= $_Application_Module_Administration_Accounts_DB_Query_Fetch_Member_ID_Array['member_name_nickname'];
+$_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_NOTES						= $_Application_Module_Administration_Accounts_DB_Query_Fetch_Member_ID_Array['member_notes'];
 $_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_USERNAME					= $_Application_Module_Administration_Accounts_DB_Query_Fetch_Member_ID_Array['member_username'];
 $_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_NUMBER_OF_POSTS				= $_Application_Module_Administration_Accounts_DB_Query_Fetch_Member_ID_Array['member_number_of_posts'];
 $_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_RANK						= $_Application_Module_Administration_Accounts_DB_Query_Fetch_Member_ID_Array['member_level_rank'];
@@ -324,7 +326,10 @@ echo ("
 												Account :: Experience Amount:<BR>
 													<INPUT TYPE=\"TEXT\" NAME=\"AMA_Accounts_Update_Account_Experience_Amount\" VALUE=\"$_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_EXPERIENCE_AMOUNT\" MAXLENGTH=\"12\"><BR>
 												Account :: Registration Details:<BR>
-													<TEXTAREA ROWS=\"15\" COLS=\"75\">$_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_REGISTRATION_DETAILS</TEXTAREA><BR>
+													<TEXTAREA ROWS=\"15\" COLS=\"75\">$_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_REGISTRATION_DETAILS</TEXTAREA><BR><BR>
+
+												Account :: Notes:<BR>
+													<TEXTAREA ROWS=\"15\" COLS=\"75\" NAME=\"AMA_Accounts_Update_Account_Notes\">$_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_NOTES</TEXTAREA><BR>
 													<INPUT TYPE=\"HIDDEN\" NAME=\"AMA_Accounts_Update_Account_ID\" VALUE=\"$_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_ID\" MAXLENGTH=\"1\">
 													<INPUT TYPE=\"HIDDEN\" NAME=\"AMA_Accounts_Select_Member_ID\" VALUE=\"$_Application_Module_Administration_Accounts_LIST_MEMBER_ACCOUNT_ID\" MAXLENGTH=\"10\">
 												<INPUT TYPE=\"SUBMIT\" VALUE=\"Update Member Account\">
@@ -377,6 +382,7 @@ member_name_first='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMB
 member_name_last='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NAME_LAST',
 member_name_middle='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NAME_MIDDLE',
 member_name_nickname='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NAME_NICKNAME',
+member_notes='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NOTES',
 member_number_of_posts='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NUMBER_OF_POSTS',
 member_security_setting_flag_force_logout='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_SECURITY_SETTING_FLAG_FORCE_LOGOUT',
 member_status_account_activation='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_STATUS_ACTIVATION',
@@ -438,6 +444,7 @@ member_name_first='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMB
 member_name_last='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NAME_LAST',
 member_name_middle='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NAME_MIDDLE',
 member_name_nickname='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NAME_NICKNAME',
+member_notes='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NOTES',
 member_number_of_posts='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_NUMBER_OF_POSTS',
 member_security_setting_flag_force_logout='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_SECURITY_SETTING_FLAG_FORCE_LOGOUT',
 member_status_account_activation='$_Application_Module_Administration_Accounts_POST_UPDATE_MEMBER_ACCOUNT_STATUS_ACTIVATION',
