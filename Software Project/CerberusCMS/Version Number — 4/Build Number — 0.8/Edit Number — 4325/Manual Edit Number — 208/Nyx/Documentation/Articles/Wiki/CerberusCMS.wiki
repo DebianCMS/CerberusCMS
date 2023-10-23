@@ -518,12 +518,22 @@ any Programming Code, Harmful H.T.M.L. Characters, H.T.M.L. and JavaScript Tags 
 Automatic Variable Data Sanitization. All Variables that are initialized and executed System-Wide are killed upon the ending of the execution with kill();, die(); and exit();. This makes it impossible
 to manipulate any of the Variables in any kind of a buffer loop System-Wide. Many other Pre-Hyper-Text-Post-Processor Web Applications will employ the use of the P.H.P. Function: isset();:
 
- if (isset($VARIABLE)) {
+ if (isset($Variable)) {
  	do_something();
  }
 
 CerberusCMS expert Programming Code Framework only calls upon declared Variables with values or other functions attached to them and upon calling upon the declared Variable it is instantly killed
 after its completed task. This leaves no room for any Variable Data manipulation by a malicious hacker.
+
+ $Variable_A = copy("./File.txt", "./NewFile.txt");
+
+ if ($Variable_A) {
+
+	echo ("Message: File has been copied.");
+
+ }
+
+kill(); OR die(); OR exit();
 
 * '''Image Security'''
 All Image files uploaded are automatically HASHED in the Secure-Hash-Algorithm, 256-BIT and Integrity has an extensive Programming Code Loop that constantly checks all Registered Member Account
