@@ -57,6 +57,22 @@
 
 /*
  ============================================================================================================
+ +
+ + Internal Application :: Variables
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Internal Application :: Variables :: POST Variables
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Notepad_POST_NOTEPAD_NOTE_PASSWORD_CLEARTEXT		= $_POST['AMM_Notepad_Note_Password_ClearText'];
+
+/*
+ ============================================================================================================
  + Application Module Header
  ============================================================================================================
 */
@@ -111,6 +127,8 @@ $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID							= $_Application_Module_Not
 $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ACCESS_LEVEL					= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_access_level'];
 $_Application_Module_Pages_LIST_NOTEPAD_NOTE_AUTHOR						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_author'];
 $_Application_Module_Pages_LIST_NOTEPAD_NOTE_DATA						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_data'];
+$_Application_Module_Pages_LIST_NOTEPAD_NOTE_ENCRYPTED						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_encrypted'];
+$_Application_Module_Pages_LIST_NOTEPAD_NOTE_NAME						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_name'];
 $_Application_Module_Pages_LIST_NOTEPAD_NOTE_PASSWORD						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_password'];
 $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_timestamp'];
 
@@ -132,13 +150,26 @@ if ($_GET["DisplayNote"] == "$_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID") {
 
 if ($_Application_Module_Pages_LIST_NOTEPAD_NOTE_ACCESS_LEVEL == "0") {
 
-echo ("
+if ($_Application_Module_Pages_LIST_NOTEPAD_NOTE_PASSWORD != null) {
 
+echo ("
+												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Notepad&amp;DisplayNote&#61;$_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+													* Notepad :: Note :: Password<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Notepad_Note_Password_ClearText\" MAXLENGTH=\"100\"><BR>
+													<INPUT TYPE=\"submit\" VALUE=\"Submit Password\">
+												</FORM>
+");
+
+} else {
+
+echo ("
 Notepad Note ID Number: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID :: Name: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_NAME<BR>
 <TEXTAREA ROWS=\"20\" COLS=\"120\">$_Application_Module_Pages_LIST_NOTEPAD_NOTE_DATA</TEXTAREA><BR>
 This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP By: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_AUTHOR<BR>
-
+Is This Notepad Note Encrypted ?: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ENCRYPTED<BR><BR>
 ");
+
+} // [ + ] IF: Note Note :: Password Exists
 
 } // [ + ] IF: Notepad Note :: Access Level :: Is: 0 :: Public
 
@@ -155,11 +186,10 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 if ($_GLOBAL_MEMBER_ACCESS_LEVEL >= 1) {
 
 echo ("
-
 Notepad Note ID Number: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID :: Name: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_NAME<BR>
 <TEXTAREA ROWS=\"20\" COLS=\"120\">$_Application_Module_Pages_LIST_NOTEPAD_NOTE_DATA</TEXTAREA><BR>
 This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP By: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_AUTHOR<BR>
-
+Is This Notepad Note Encrypted ?: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ENCRYPTED<BR><BR>
 ");
 
 } // [ + ] IF: Registered Member Account :: Access Level :: Is: Greater Than OR Equal To 1
@@ -181,11 +211,10 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 if ($_GLOBAL_MEMBER_ACCESS_LEVEL >= 2) {
 
 echo ("
-
 Notepad Note ID Number: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID :: Name: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_NAME<BR>
 <TEXTAREA ROWS=\"20\" COLS=\"120\">$_Application_Module_Pages_LIST_NOTEPAD_NOTE_DATA</TEXTAREA><BR>
 This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP By: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_AUTHOR<BR>
-
+Is This Notepad Note Encrypted ?: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ENCRYPTED<BR><BR>
 ");
 
 } // [ + ] IF: Registered Member Account :: Access Level :: Is: Greater Than OR Equal To 2
@@ -207,11 +236,10 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 if ($_GLOBAL_MEMBER_ACCESS_LEVEL >= 3) {
 
 echo ("
-
 Notepad Note ID Number: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID :: Name: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_NAME<BR>
 <TEXTAREA ROWS=\"20\" COLS=\"120\">$_Application_Module_Pages_LIST_NOTEPAD_NOTE_DATA</TEXTAREA><BR>
 This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP By: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_AUTHOR<BR>
-
+Is This Notepad Note Encrypted ?: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ENCRYPTED<BR><BR>
 ");
 
 } // [ + ] IF: Registered Member Account :: Access Level :: Is: Greater Than OR Equal To 3
