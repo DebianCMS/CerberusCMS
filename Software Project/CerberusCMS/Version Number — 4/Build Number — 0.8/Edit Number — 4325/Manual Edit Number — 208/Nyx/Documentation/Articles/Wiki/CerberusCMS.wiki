@@ -425,6 +425,23 @@ can then be unpacked and CerberusCMS can then be installed through Architect whi
 * Digital Rights Management Free.
 * Encrypted text message, voice alone and voice + video communications directly from the web browser or the Google Android/Java and Apple iOS/Swift application.
 
+===Data Processing Features===
+All Data such as Audio, Document, Image and Video files that pass through the Upload Functions across the system are automatically handled and processed.
+
+* '''Audio'''
+All Audio files such as Registered Member Account Audio files that are uploaded are automatically processed and converted to 320KBPS Vorbis MP3 file format if the System Setting for this is turned on.
+
+* '''Document'''
+All Document files such as Registered Member Account Document files that are uploaded are automatically processed where Watermarks are added to the Document if the System Setting for this is turned on.
+
+* '''Image'''
+All Image files such as Registered Member Account Images being: Profile Images, Image Gallery Images and others are automatically HASHED in the Secure-Hash-Algorithm, 256-BIT and an invisible background layer is added to the base of the image. This is for Image Security so that if an Image is downloaded by another user
+and uploaded to their account or a duplicated account of that account the Image displays an embedded QR Code so that everyone knows it is a duplicated image and not the original. When displaying an Image a slightly lower resoultion copy
+of the original Image is displayed and not the original Image. No original Images are ever sourced in the Web Application.
+
+* '''Video'''
+All Video files such as Registered Member Account Video files that are uploaded are automatically processed where Watermarks are added to the Video if the System Setting for this is turned on.
+
 ===Project Control Features===
 
 ====Kernel File Control Features====
@@ -492,6 +509,17 @@ CerberusCMS aims to be a secure Content Management System and Programming Framew
 * Automatic Directory Listing Denial
 * Automatic REQUEST, GET and POST Data Sanitization
 * Automatic Variable Data Sanitization
+
+'''Image Security'''
+All Image files uploaded are automatically HASHED in the Secure-Hash-Algorithm, 256-BIT and Integrity has an extensive Programming Code Loop that constantly checks all Registered Member Account
+Images for duplicates based on File Size Integrity. Integrity will automatically delete duplicated Profile Pictures across all Registered Member Accounts when it finds them. This is to prevent
+duplicated Registered Member Accounts where a malicious user could download the Profile Pictures of a Registered Member Account and then create a duplicated Profile by uploading the downloaded
+Profile Pictures.
+
+'''Account Uniqueness Security'''
+All Registered Member Accounts are unique and have an exclusive ID Number and Randomized String that is never the same as any other Registered Member Account. Only 1 Electronic Mail Address
+can be used to Register an Account on the system and the Account requires Administration approval to change the Electronic Mail Address. Upon Registration and Activation the Electronic Mail Address
+is added to the physical Master List within the Electronic Mail Address repository in the system. Once this is added it can never be used to Register an Account again.
 
 '''Injections'''
 * Structured-Query-Language Code Injection
