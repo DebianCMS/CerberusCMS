@@ -693,14 +693,16 @@ and more.
  * [ @ ] IF: 1 IS Greater Than 2, Add 1 To 2
  */
 
-$A = 1;
-$B = 2;
+ $A = 1;
+ $B = 2;
 
-if ($A > $B) {
+ if ($A > $B) {
 
-$C = $A + $B;
+ 	$C = $A + $B;
 
-} // [ + ] IF: 1 IS Greater Than 2, Add 1 To 2
+ 	echo ($C);
+
+ } // [ + ] IF: 1 IS Greater Than 2, Add 1 To 2
 
 Adding features to this web application as a novice programmer is very simple and straightforward.
 
