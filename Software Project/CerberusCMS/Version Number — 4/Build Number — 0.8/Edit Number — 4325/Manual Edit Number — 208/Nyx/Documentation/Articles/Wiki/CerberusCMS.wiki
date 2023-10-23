@@ -510,13 +510,13 @@ CerberusCMS aims to be a secure Content Management System and Programming Framew
 * Automatic REQUEST, GET and POST Data Sanitization
 * Automatic Variable Data Sanitization
 
-'''Image Security'''
+* '''Image Security'''
 All Image files uploaded are automatically HASHED in the Secure-Hash-Algorithm, 256-BIT and Integrity has an extensive Programming Code Loop that constantly checks all Registered Member Account
 Images for duplicates based on File Size Integrity. Integrity will automatically delete duplicated Profile Pictures across all Registered Member Accounts when it finds them. This is to prevent
 duplicated Registered Member Accounts where a malicious user could download the Profile Pictures of a Registered Member Account and then create a duplicated Profile by uploading the downloaded
 Profile Pictures.
 
-'''Account Uniqueness Security'''
+* '''Account Uniqueness Security'''
 All Registered Member Accounts are unique and have an exclusive ID Number and Randomized String that is never the same as any other Registered Member Account. Only 1 Electronic Mail Address
 can be used to Register an Account on the system and the Account requires Administration approval to change the Electronic Mail Address. Upon Registration and Activation the Electronic Mail Address
 is added to the physical Master List within the Electronic Mail Address repository in the system. Once this is added it can never be used to Register an Account again.
