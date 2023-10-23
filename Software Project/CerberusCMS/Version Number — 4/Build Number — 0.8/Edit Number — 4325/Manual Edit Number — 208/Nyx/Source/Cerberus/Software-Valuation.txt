@@ -69,5 +69,8 @@
 * Architecture: 10/10
 * Ingenuity: 9/10
 * Economy: ?
+* Functional and Useful Programming Code: 10/10
+125,000 Lines; $0.50 per line: $75,000
+125,000 Lines; $1.00 per line: $125,000
 
 $250,000 United States Dollars
