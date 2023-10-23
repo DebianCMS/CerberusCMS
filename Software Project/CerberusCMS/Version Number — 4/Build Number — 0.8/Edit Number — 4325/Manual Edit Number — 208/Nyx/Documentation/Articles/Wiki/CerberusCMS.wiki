@@ -563,10 +563,10 @@ is added to the physical Master List within the Electronic Mail Address reposito
 
 * '''Structured-Query-Language Statement Security'''
 All Structured-Query-Language Statements are Objectized into Object-Oriented-Like Statements from the Structured-Query-Language Class Files. When installing CerberusCMS to the Web Server
-the Architect can choose between the different Structured-Query-Language Class File to be used. This determines what Database Management System Server will be used. For MySQL there are currently
-2 different drivers that are supported: MySQL and MySQL Improved. All Structured-Query-Language Statements are attached to a Variable and then later called upon in the Programming Code.
+the Architect can choose between the different Structured-Query-Language Class Files to be used. This determines what Database Management System Server will be used. MariaDB, MySQL, MicrosoftSQL and others
+are currently supported so long as the Class File contains the correct Object to Function Programming Code. For MySQL there are currently 2 different drivers that are supported: MySQL and MySQL Improved. All Structured-Query-Language Statements are attached to a Variable and then later called upon in the Programming Code.
 
- $Variable = $DB->Query("SELECT id FROM $_Prefix_News DESC");
+ $Variable = $DB->Query("SELECT id FROM {$_Prefix}_News DESC");
 
  if ($Variable) {
 
