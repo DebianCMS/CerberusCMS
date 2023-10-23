@@ -525,15 +525,17 @@ to manipulate any of the Variables in any kind of a buffer loop System-Wide. Man
 CerberusCMS expert Programming Code Framework only calls upon declared Variables with values or other functions attached to them and upon calling upon the declared Variable it is instantly killed
 after its completed task. This leaves no room for any Variable Data manipulation by a malicious hacker.
 
- $Variable_A = copy("./File.txt", "./NewFile.txt");
+ $Variable = copy("./File.txt", "./NewFile.txt");
 
- if ($Variable_A) {
+ if ($Variable) {
 
  	echo ("Message: File has been copied.");
 
  }
 
- kill(); OR die(); OR exit();
+ kill($Variable); OR die(); OR exit();
+
+There are approximately ~3,000 Unique Variables in Cerberus Content Management System' Source Programming Code and every Variable is Uniquely named respective of the system.
 
 Computer Programming Information Security Technique Credit: MathSaurus, Netherlands
 
@@ -745,12 +747,15 @@ CerberusCMS automatically detects the connection speed of the connection and opt
 Custom Application Modules can be written to control IoT Devices connected to the system such as Smart House Electricity Usage Monitoring, Smart House Lightning Systems to turn lights on and off, programmable logic controllers, SCADA and more. All of these things can be controlled from an Application Module with buttons and more.
 
 ==Programming Code Architecture==
-CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325 is written in a Linux Operating System Architectural Style where everything is completely modular with HASH checksums on
+CerberusCMS - Version Number: 4, Build Number: 0.8, Edit Number: 4,325, Manual Edit Number: Final is written in a Linux Operating System Architectural Style where everything is completely modular with HASH checksums on
 each file for integrity comparison. The Kernel file can be continually added to by using the consistent Programming Code Framework that has been written by the author.
 
 ===Programming Code Consistency and Uniqueness===
 The Programming Code Consistency of this Software Project ranges extremely high on all Programming Code Consistency testing. For example: all of the variables used system-wide are specially named with
 a prefix string so as to make writing new Programming Code for this Software Project extremely simple and remain extremely unique and extremely consistent.
+
+===Programming Code Features===
+The Pre-Hyper-Text-Post-Processor Build In Function: echo(); instead of print(); and print_r(); is extensively used across the system so that the output can be displayed in a Terminal as well as on a Web Page Document Output.
 
 ===Programming Code Execution===
 * The programming code is executed from top to bottom in a Pre-Order logical and Pre-Order Mathematical process.
