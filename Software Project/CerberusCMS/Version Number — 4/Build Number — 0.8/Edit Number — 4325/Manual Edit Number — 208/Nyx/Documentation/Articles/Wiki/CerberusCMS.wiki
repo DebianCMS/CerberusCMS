@@ -529,11 +529,13 @@ after its completed task. This leaves no room for any Variable Data manipulation
 
  if ($Variable_A) {
 
-	echo ("Message: File has been copied.");
+ 	echo ("Message: File has been copied.");
 
  }
 
-kill(); OR die(); OR exit();
+ kill(); OR die(); OR exit();
+
+Computer Programming Information Security Technique Credit: MathSaurus, Netherlands
 
 * '''Image Security'''
 All Image files uploaded are automatically HASHED in the Secure-Hash-Algorithm, 256-BIT and Integrity has an extensive Programming Code Loop that constantly checks all Registered Member Account
