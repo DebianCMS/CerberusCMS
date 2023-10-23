@@ -66,6 +66,23 @@
 /*
  ============================================================================================================
  +
+ + IF: Internal Application: Display :: Options
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "Options") {
+
+echo ("
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Notepad&amp;Display&#61;CreateNote&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: Create Notepad Note ::\">Notepad Note :: Create</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Notepad&amp;Display&#61;FindNote&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: Find Notepad Note ::\">Notepad Note :: Find</A>
+");
+
+} // [ + ] IF: Internal Application: Display :: Options :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
  + Find :: All Notepad Note Entries
  +
  ============================================================================================================
@@ -100,20 +117,98 @@ $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP						= $_Application_Modu
 /*
  ============================================================================================================
  +
- + IF:
+ + IF: Internal Application: Display Note :: Note ID Number
  +
  ============================================================================================================
 */
 
+$_GLOBAL_MEMBER_ACCESS_LEVEL
+
 if ($_GET["DisplayNote"] == "$_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID") {
+
+/*
+ ============================================================================================================
+ + IF: Notepad Note :: Access Level :: Is: 0, Public
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Pages_LIST_NOTEPAD_NOTE_ACCESS_LEVEL == "0") {
 
 echo ("
 
 Notepad Note ID Number: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID :: Name: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_NAME<BR>
-<TEXTAREA ROWS=\"20\" COLS=\"120\">$_Application_Module_Pages_LIST_NOTEPAD_NOTE_DATA</TEXTAREA>
+<TEXTAREA ROWS=\"20\" COLS=\"120\">$_Application_Module_Pages_LIST_NOTEPAD_NOTE_DATA</TEXTAREA><BR>
 This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP By: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_AUTHOR<BR>
 
 ");
+
+} // [ + ] IF: Notepad Note :: Access Level :: Is: 0 :: Public
+
+/*
+ ============================================================================================================
+ + IF: Notepad Note :: Access Level :: Is: 1, Registered Member Account
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Pages_LIST_NOTEPAD_NOTE_ACCESS_LEVEL == "1") {
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null && $_GLOBAL_MEMBER_ACCESS_LEVEL >= 1) {
+
+echo ("
+
+Notepad Note ID Number: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID :: Name: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_NAME<BR>
+<TEXTAREA ROWS=\"20\" COLS=\"120\">$_Application_Module_Pages_LIST_NOTEPAD_NOTE_DATA</TEXTAREA><BR>
+This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP By: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_AUTHOR<BR>
+
+");
+
+} // [ + ] IF: Registered Member Account :: Is: Logged-In And Valid Credentials Are Set
+
+} // [ + ] IF: Notepad Note :: Access Level :: Is: 1 :: Registered Member Account
+
+/*
+ ============================================================================================================
+ + IF: Notepad Note :: Access Level :: Is: 2, Registered Member Account - Administration-Level
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Pages_LIST_NOTEPAD_NOTE_ACCESS_LEVEL == "2") {
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null && $_GLOBAL_MEMBER_ACCESS_LEVEL >= 2) {
+
+echo ("
+
+Notepad Note ID Number: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID :: Name: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_NAME<BR>
+<TEXTAREA ROWS=\"20\" COLS=\"120\">$_Application_Module_Pages_LIST_NOTEPAD_NOTE_DATA</TEXTAREA><BR>
+This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP By: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_AUTHOR<BR>
+
+");
+
+} // [ + ] IF: Registered Member Account :: Is: Logged-In And Valid Credentials Are Set
+
+} // [ + ] IF: Notepad Note :: Access Level :: Is: 2 :: Registered Member Account - Administration-Level
+
+/*
+ ============================================================================================================
+ + IF: Notepad Note :: Access Level :: Is: 2, Registered Member Account - Administration Root-Level
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Pages_LIST_NOTEPAD_NOTE_ACCESS_LEVEL == "3") {
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null && $_GLOBAL_MEMBER_ACCESS_LEVEL >= 3) {
+
+echo ("
+
+Notepad Note ID Number: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID :: Name: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_NAME<BR>
+<TEXTAREA ROWS=\"20\" COLS=\"120\">$_Application_Module_Pages_LIST_NOTEPAD_NOTE_DATA</TEXTAREA><BR>
+This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP By: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_AUTHOR<BR>
+
+");
+
+} // [ + ] IF: Registered Member Account :: Is: Logged-In And Valid Credentials Are Set
+
+} // [ + ] IF: Notepad Note :: Access Level :: Is: 3 :: Registered Member Account - Administration Root-Level
 
 } // [ + ] IF: Internal Application: Display Note :: Is: ID Number
 
