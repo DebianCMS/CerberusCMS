@@ -73,6 +73,7 @@ $_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_CLEARTEXT	
 $_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ACCESS_LEVEL		= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Access_Level'];
 $_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_CLEARTEXT		= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Password_ClearText'];
 $_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_DATA			= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Data'];
+$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ENCRYPTED			= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Encrypted'];
 $_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_NAME			= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Name'];
 
 /*
@@ -129,6 +130,11 @@ echo ("
 															<OPTION VALUE=\"2\">2 :: Registered Member Account :: Moderation</OPTION>
 															<OPTION VALUE=\"3\">3 :: Registered Member Account :: Administration</OPTION>
 															<OPTION VALUE=\"4\">4 :: Registered Member Account :: Root-Administration</OPTION>
+														</SELECT><BR>
+													* Notepad :: Note :: Encrypt This Notepad Note ?<BR>
+														<SELECT NAME=\"AMM_Notepad_Post_Create_Notepad_Note_Encrypted\" MAXLENGTH=\"1\">
+															<OPTION VALUE=\"0\">0 :: No</OPTION>
+															<OPTION VALUE=\"1\">1 :: Yes</OPTION>
 														</SELECT><BR>
 													* Notepad :: Note :: Name<BR>
 														<INPUT TYPE=\"text\" NAME=\"AMM_Notepad_Post_Create_Notepad_Note_Name\" MAXLENGTH=\"100\"><BR>
