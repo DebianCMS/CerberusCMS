@@ -165,121 +165,121 @@ Options for managing current and future tasks as well as an advanced Task Manage
 1 Root Administration-Level Application Module
 
 ====Administration-Level Application Modules====
-* Accounts
+* '''Accounts'''
 Options for managing current Registered Member Accounts, Sending System Messages to current Registered Member Accounts.
 
-* Applications
+* '''Applications'''
 Options for managing all Applications, Application Modules and Application Panels.
 
-* Archive
+* '''Archive'''
 Options for managing System Archives. Create, Delete and Restore System Archives.
 
-* Control_Panel
+* '''Control_Panel'''
 Options for selection of Administration Applications.
 
-* Emulators
+* '''Emulators'''
 Options for managing the Video Games and Video Game Console Emulators on the system.
 
-* File_Categories
+* '''File_Categories'''
 Options for managing File Download Categories.
 
-* File_Manager
+* '''File_Manager'''
 Options for managing Files and Data on the system.
 
-* Forum
+* '''Forum'''
 Options for managing the Forum, Forum Topics and Forum Topic Messages.
 
-* GIT
+* '''GIT'''
 Options for Sending, Receiving and Executing GIT-Like Commands on the system.
 
-* Messenger
+* '''Messenger'''
 Options for managing the Instant Messenger, Messenger Chat Rooms and Messenger Data.
 
-* Server_Information
+* '''Server_Information'''
 Options and Information about the Web Server and the CerberusCMS Installation.
 
-* Panels
+* '''Panels'''
 Options for managing the Application Panels.
 
-* Publish
+* '''Publish'''
 Options for managing Publications on the system such as News Article Entries, Article Entries and Sending Mass Newsletters to all Registered Member Accounts.
 
-* Ranks
+* '''Ranks'''
 Options for managing the Ranking System.
 
-* Referrers
+* '''Referrers'''
 Options for managing the Referrer Log System.
 
-* Robot_Monitor
+* '''Robot_Monitor'''
 Options for managing Non-Activated and Non-Verified Registrar Member Accounts.
 
-* Settings
+* '''Settings'''
 Options for managing the System-Wide Settings.
 
-* Submissions
+* '''Submissions'''
 Options for reviewing and publishing text and News Article Entry Submissions.
 
-* Task_Manager
+* '''Task_Manager'''
 Options for managing Tasks on the System.
 
-* Terminal
+* '''Terminal'''
 Options for Sending, Receiving and Executing Terminal Commands on the System.
 
-* Update
+* '''Update'''
 Options for managing and updating all Entries on the System such as News Article Entries, Article Entries, Comments, Files and more.
 
-* Web_Pages
+* '''Web_Pages'''
 Options for managing Custom Web Page Entries, Custom Web Page Entry Data and Application Panel Links.
 
 22 Administration-Level Application Modules
 
 ====Registered Member-Level Application Modules====
-* Active_Members
-* All_News
-* All_Shouts
-* Application_List
-* Articles
-* Calendar
-* Comment
-* Contact_Administrator
-* Control_Panel
-* Clock
-* Documentation
-* Download / Torrent
-* Electronic_Mail
-* Emulators
-* File_Manager
-* Files
-* Forum
-* Forward_Friend
-* Friend
-* Language
-* Legal
-* Lightning_Calculate
-* Links
-* List
-* Login
-* Market
-* Media_Player
-* Member_Directory
-* Messenger
-* News
-* Pages
-* Private_Files
-* Profile
-* Referrers
-* Register
-* Reset_Password
-* Search
-* Statistics
-* Submit_News
-* System_Message
-* Update_Account
-* Update_Password
-* Upload
-* Video_Games
-* Webspace
-* VoIP Phone
+* '''Active_Members'''
+* '''All_News'''
+* '''All_Shouts'''
+* '''Application_List'''
+* '''Articles'''
+* '''Calendar'''
+* '''Comment'''
+* '''Contact_Administrator'''
+* '''Control_Panel'''
+* '''Clock'''
+* '''Documentation'''
+* '''Download / Torrent'''
+* '''Electronic_Mail'''
+* '''Emulators'''
+* '''File_Manager'''
+* '''Files'''
+* '''Forum'''
+* '''Forward_Friend'''
+* '''Friend'''
+* '''Language'''
+* '''Legal'''
+* '''Lightning_Calculate'''
+* '''Links'''
+* '''List'''
+* '''Login'''
+* '''Market'''
+* '''Media_Player'''
+* '''Member_Directory'''
+* '''Messenger'''
+* '''News'''
+* '''Pages'''
+* '''Private_Files'''
+* '''Profile'''
+* '''Referrers'''
+* '''Register'''
+* '''Reset_Password'''
+* '''Search'''
+* '''Statistics'''
+* '''Submit_News'''
+* '''System_Message'''
+* '''Update_Account'''
+* '''Update_Password'''
+* '''Upload'''
+* '''Video_Games'''
+* '''Webspace'''
+* '''VoIP Phone'''
 
 46 Registered Member-Level Application Modules
 
