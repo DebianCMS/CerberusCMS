@@ -82,7 +82,8 @@ $_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_NAME			= $_POST['AM
  ============================================================================================================
 */
 
-$_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_HASHED		= hash('sha256', $_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_CLEARTEXT);
+$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_HASHED		= hash('sha256', $_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_CLEARTEXT);
+$_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_HASHED		= hash('sha256', $_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_CLEARTEXT);
 
 /*
  ============================================================================================================
@@ -162,7 +163,7 @@ note_timestamp
 '$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_DATA',
 '$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ENCRYPTED',
 '$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_NAME',
-'$_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_HASHED',
+'$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_HASHED',
 '$_GLOBAL_LOCAL_SERVER_DATE_STANDARD'
 )");
 
@@ -237,10 +238,11 @@ if ($_Application_Module_Pages_LIST_NOTEPAD_NOTE_ACCESS_LEVEL == "0") {
 if ($_Application_Module_Pages_LIST_NOTEPAD_NOTE_PASSWORD != null) {
 
 echo ("
+													This Notepad Note Is Encrypted<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Notepad&amp;DisplayNote&#61;$_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
 													* Notepad :: Note :: Password<BR>
-														<INPUT TYPE=\"text\" NAME=\"AMM_Notepad_Note_Unlock_Password_ClearText\" MAXLENGTH=\"100\"><BR>
-													<INPUT TYPE=\"submit\" VALUE=\"Submit Password\">
+														<INPUT TYPE=\"text\" NAME=\"AMM_Notepad_Post_Unlock_Notepad_Note_Password_ClearText\" MAXLENGTH=\"256\"><BR>
+													<INPUT TYPE=\"submit\" VALUE=\"Unlock Note\">
 												</FORM>
 ");
 
@@ -253,9 +255,9 @@ This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_T
 Is This Notepad Note Encrypted ?: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ENCRYPTED<BR><BR>
 ");
 
-} // [ + ] IF: Note Note :: Password Exists
+} // [ + ] IF: Note Note Entry :: Password Exists
 
-} // [ + ] IF: Notepad Note :: Access Level :: Is: 0 :: Public
+} // [ + ] IF: Notepad Note Entry :: Access Level :: Is: 0 :: Public
 
 /*
  ============================================================================================================
