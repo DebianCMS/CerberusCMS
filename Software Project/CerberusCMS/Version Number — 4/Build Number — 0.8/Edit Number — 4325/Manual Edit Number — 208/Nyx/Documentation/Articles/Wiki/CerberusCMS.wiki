@@ -513,8 +513,9 @@ CerberusCMS aims to be a secure Content Management System and Programming Framew
 * '''Image Security'''
 All Image files uploaded are automatically HASHED in the Secure-Hash-Algorithm, 256-BIT and Integrity has an extensive Programming Code Loop that constantly checks all Registered Member Account
 Images for duplicates based on File Size Integrity. Integrity will automatically delete duplicated Profile Pictures across all Registered Member Accounts when it finds them. This is to prevent
-duplicated Registered Member Accounts where a malicious user could download the Profile Pictures of a Registered Member Account and then create a duplicated Profile by uploading the downloaded
-Profile Pictures.
+duplicated Registered Member Accounts where a malicious user could download the Profile Pictures of a Registered Member Account and then create a duplicated Profile by Registering an Account
+with the same name but with a different Electronic Mail Address and then by uploading the downloaded Profile Pictures. Integrity will automatically scan for this and alert the Administration Team
+on the system where an Administrator can then delete the duplicated Accounts and Network Ban the malicious user's Internet Protocol Address or Internet Protocol Address Range.
 
 * '''Account Uniqueness Security'''
 All Registered Member Accounts are unique and have an exclusive ID Number and Randomized String that is never the same as any other Registered Member Account. Only 1 Electronic Mail Address
