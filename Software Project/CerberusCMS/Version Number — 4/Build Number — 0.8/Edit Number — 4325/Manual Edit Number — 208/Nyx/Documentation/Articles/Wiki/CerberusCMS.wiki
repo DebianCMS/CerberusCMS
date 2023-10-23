@@ -400,16 +400,21 @@ A Fresh configuration and installation of CerberusCMS through Architect can be m
 * Open :: Non-Registered Visitor-Level
 
 ===Package Download and Upload===
-CerberusCMS packages can be downloaded and uploaded in 6 different ways
+CerberusCMS packages can be downloaded and uploaded in ~10 different ways
+* Through Web File-Transfer-Protocol.
 * Through File-Transfer-Protocol.
-* Through GIT Terminal Command From Included Installation ToolKit Web Application.
+* Through Secure-File-Transfer-Protocol
+* Through Web File Manager.
+* Through GIT Terminal Command From Included Installation ToolKit Web Application: ToolKit.
+* Through GIT Terminal Command.
+* Through Included ToolKit Web Application: Builder.
 * Through Mercurial Terminal Command From Included Installation ToolKit Web Application.
 * Through CURL Terminal Command.
 * Through Microsoft Windows / BSD / GNU / Linux / Apple OS Package.
 * Through Microsoft Windows Terminal BITS command.
 
 ===Installation===
-Once the official CerberusCMS package has been downloaded to the web server through any of the previous methods the package
+Once the official CerberusCMS package has been downloaded to the Web Server through any of the previous methods the package
 can then be unpacked and CerberusCMS can then be installed through Architect which is an included Web Application for pre-configuring and installing CerberusCMS.
 
 ==Project Features==
