@@ -1629,9 +1629,11 @@ $_Application_Module_Member_Message_Notepad_Header									= "<CENTER>[ <B><A HR
  ============================================================================================================
 */
 
-$_Application_Module_Member_Message_Notepad_NOTE_CREATED_SUCCESSFULLY							= "<CENTER>Cerberus: I have Created the Notepad Note Successfully.</CENTER>";
-$_Application_Module_Member_Message_Notepad_NOTE_CREATE_ERROR								= "<CENTER>Cerberus: I was not able to Create the Notepad Note. Try Again ?</CENTER>";
-$_Application_Module_Member_Message_Notepad_NOTE_DELETED_SUCCESSFULLY							= "<CENTER>Cerberus: I have Deleted the Notepad Note Successfully.</CENTER>";
+$_Application_Module_Member_Message_Notepad_NOTE_CREATED_SUCCESSFULLY							= "<CENTER>Cerberus: I have Created the Notepad Note Entry Successfully.</CENTER>";
+$_Application_Module_Member_Message_Notepad_NOTE_CREATE_ERROR								= "<CENTER>Cerberus: I was not able to Create the Notepad Note Entry. Try Again ?</CENTER>";
+$_Application_Module_Member_Message_Notepad_NOTE_DELETED_SUCCESSFULLY							= "<CENTER>Cerberus: I have Deleted the Notepad Note Entry Successfully.</CENTER>";
+$_Application_Module_Member_Message_Notepad_NOTE_DELETE_ERROR								= "<CENTER>Cerberus: I was not able to Delete the Notepad Note Entry. Try Again ?</CENTER>";
+$_Application_Module_Member_Message_Notepad_NOTE_UNLOCK_ERROR								= "<CENTER>Cerberus: The Password That You Have Provided Is Not Correct.</CENTER>";
 
 /*
  ============================================================================================================
