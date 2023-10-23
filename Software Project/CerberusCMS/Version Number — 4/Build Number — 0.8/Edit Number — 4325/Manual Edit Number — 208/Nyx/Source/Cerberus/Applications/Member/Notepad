@@ -62,4 +62,69 @@
 */
 
 											echo ($_Application_Module_Member_Message_Notepad_Header);
+
+/*
+ ============================================================================================================
+ +
+ + Find :: All Notepad Note Entries
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Database Server Query: Select All Notepad Note Entries From The Database Management System Server Database
+ ============================================================================================================
+*/
+
+$_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_notepad ORDER BY id DESC");
+
+/*
+ ============================================================================================================
+ +
+ + Retrieve :: All Notepad Note Entries
+ +
+ ============================================================================================================
+*/
+
+
+while ($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array = $DB->fetch_array($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES)) {
+
+$_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID							= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['id'];
+$_Application_Module_Pages_LIST_NOTEPAD_NOTE_ACCESS_LEVEL					= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_access_level'];
+$_Application_Module_Pages_LIST_NOTEPAD_NOTE_AUTHOR						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_author'];
+$_Application_Module_Pages_LIST_NOTEPAD_NOTE_DATA						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_data'];
+$_Application_Module_Pages_LIST_NOTEPAD_NOTE_PASSWORD						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_password'];
+$_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_timestamp'];
+
+/*
+ ============================================================================================================
+ +
+ + IF:
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["DisplayNote"] == "$_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID") {
+
+echo ("
+
+Notepad Note ID Number: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID :: Name: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_NAME<BR>
+<TEXTAREA ROWS=\"20\" COLS=\"120\">$_Application_Module_Pages_LIST_NOTEPAD_NOTE_DATA</TEXTAREA>
+This Notepad Note Was Created On: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_TIMESTAMP By: $_Application_Module_Pages_LIST_NOTEPAD_NOTE_AUTHOR<BR>
+
+");
+
+} // [ + ] IF: Internal Application: Display Note :: Is: ID Number
+
+} // [ + ] WHILE: Retrieving All Custom Web Application Module Entries From The Database Management System Server
+
+/*
+ ============================================================================================================
+ + Kill SQL Database Server Query: Select All Notepad Note Entries
+ ============================================================================================================
+*/
+
+$DB->free($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES);
+
 ?>
