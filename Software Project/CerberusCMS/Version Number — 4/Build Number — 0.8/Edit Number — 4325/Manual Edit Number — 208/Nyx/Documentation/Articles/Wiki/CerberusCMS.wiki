@@ -516,7 +516,11 @@ any Programming Code, Harmful H.T.M.L. Characters, H.T.M.L. and JavaScript Tags 
 * '''Expert Variable Sanitization'''
 
 Automatic Variable Data Sanitization. All Variables that are initialized and executed System-Wide are killed upon the ending of the execution with kill();, die(); and exit();. This makes it impossible
-to manipulate any of the Variables in any kind of a buffer loop System-Wide.
+to manipulate any of the Variables in any kind of a buffer loop System-Wide. Many other Pre-Hyper-Text-Post-Processor Web Applications will employ the use of:
+
+ if (isset()) {
+ 	do_something();
+ }
 
 * '''Image Security'''
 All Image files uploaded are automatically HASHED in the Secure-Hash-Algorithm, 256-BIT and Integrity has an extensive Programming Code Loop that constantly checks all Registered Member Account
