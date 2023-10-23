@@ -76,6 +76,10 @@ echo ("
 												<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Badges/Apache_Badge.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"50\" CLASS=\"PanelProjectBadge\" ALT=\":: Apache HTTP Lite :: Official Apache Software Project Web Server ::\">
 											</A><BR><BR>
 
+											<A HREF=\"https://www.IIS.net/\" TITLE=\":: Microsoft &reg; Windows &reg; &trade; Internet Information Services HTTP Server :: Official Microsoft &reg; Windows &reg; &trade; Project Web Server ::\" TARGET=\"_NEW\">
+												<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Badges/MicrosoftIIS_Badge.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"50\" CLASS=\"PanelProjectBadge\" ALT=\":: Microsoft &reg; Windows &reg; &trade; Internet Information Services HTTP Server :: Official Microsoft &reg; Windows &reg; &trade; Project Web Server ::\">
+											</A><BR><BR>
+
 											<A HREF=\"https://www.CoreBoot.org\" TITLE=\":: CoreBoot Firmware :: Official CoreBoot Firmware Project Web Server ::\" TARGET=\"_NEW\">
 												<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Badges/CoreBoot_Badge.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"125\" HEIGHT=\"50\" CLASS=\"PanelProjectBadge\" ALT=\":: CoreBoot Firmware :: Official CoreBoot Firmware Project Web Server ::\">
 											</A><BR><BR>
