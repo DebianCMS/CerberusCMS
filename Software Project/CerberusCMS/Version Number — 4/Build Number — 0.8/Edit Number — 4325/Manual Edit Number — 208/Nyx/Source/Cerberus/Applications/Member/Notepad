@@ -69,7 +69,19 @@
  ============================================================================================================
 */
 
-$_Application_Module_Member_Notepad_POST_NOTEPAD_NOTE_PASSWORD_CLEARTEXT		= $_POST['AMM_Notepad_Note_Password_ClearText'];
+$_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_CLEARTEXT		= $_POST['AMM_Notepad_Post_Unlock_Notepad_Note_Password_ClearText'];
+$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ACCESS_LEVEL		= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Access_Level'];
+$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_CLEARTEXT		= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Password_ClearText'];
+$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_DATA			= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Data'];
+$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_NAME			= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Name'];
+
+/*
+ ============================================================================================================
+ + Internal Application :: Variables :: HASH Variables
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_HASHED		= hash('sha256', $_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_CLEARTEXT);
 
 /*
  ============================================================================================================
@@ -95,6 +107,70 @@ echo ("
 ");
 
 } // [ + ] IF: Internal Application: Display :: Options :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Display :: Create Note
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "CreateNote") {
+
+if ($_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_NOTEPAD_DATA) {
+
+echo ("
+												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Notepad&amp;Display&#61;CreateNote&amp;&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+													* Notepad :: Note :: Access Level<BR>
+														<SELECT NAME=\"AMM_Notepad_Post_Create_Notepad_Note_Access_Level\" MAXLENGTH=\"1\">
+															<OPTION VALUE=\"0\">0 :: Public</OPTION>
+															<OPTION VALUE=\"1\">1 :: Registered Member Account</OPTION>
+															<OPTION VALUE=\"2\">2 :: Registered Member Account :: Moderation</OPTION>
+															<OPTION VALUE=\"3\">3 :: Registered Member Account :: Administration</OPTION>
+															<OPTION VALUE=\"4\">4 :: Registered Member Account :: Root-Administration</OPTION>
+														</SELECT><BR>
+													* Notepad :: Note :: Name<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Notepad_Post_Create_Notepad_Note_Name\" MAXLENGTH=\"100\"><BR>
+													* Notepad :: Note :: Password<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Notepad_Post_Create_Notepad_Note_Password_ClearText\" MAXLENGTH=\"256\"><BR>
+													* Notepad :: Note :: Data<BR>
+														<TEXTAREA ROWS=\"20\" COLS=\"120\" NAME=\"AMM_Notepad_Post_Create_Notepad_Note_Data\" MAXLENGTH=\"4096\">Write Notepad Note here...</TEXTAREA><BR>
+													<INPUT TYPE=\"submit\" VALUE=\"Create Note\">
+												</FORM>
+");
+
+} else {
+
+$_Application_Module_Member_Notepad_DB_Query_INSERT_NOTEPAD_NOTE			= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_notepad(
+note_access_level,
+note_author,
+note_data,
+note_encrypted,
+note_name,
+note_password,
+note_timestamp
+)VALUES(
+'$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ACCESS_LEVEL',
+'$_GLOBAL_COOKIE_MEMBER_USERNAME',
+'$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_DATA',
+'$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ENCRYPTED',
+'$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_NAME',
+'$_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_HASHED',
+'$_GLOBAL_LOCAL_SERVER_DATE'
+)");
+
+if ($_Application_Module_Member_Notepad_DB_Query_INSERT_NOTEPAD_NOTE) {
+
+										echo ($_Application_Module_Member_Message_Notepad_NOTE_CREATED_SUCCESSFULLY);
+
+} else {
+
+										echo ($_Application_Module_Member_Message_Notepad_NOTE_CREATE_ERROR);
+
+} // [ + ] IF: Database Management System Server Query :: Insert New Notepad Note :: Variable HAS Executed
+
+} // [ + ] IF: Internal Application: Display :: Is: Create Note
 
 /*
  ============================================================================================================
@@ -155,7 +231,7 @@ if ($_Application_Module_Pages_LIST_NOTEPAD_NOTE_PASSWORD != null) {
 echo ("
 												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Notepad&amp;DisplayNote&#61;$_Application_Module_Pages_LIST_NOTEPAD_NOTE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
 													* Notepad :: Note :: Password<BR>
-														<INPUT TYPE=\"text\" NAME=\"AMM_Notepad_Note_Password_ClearText\" MAXLENGTH=\"100\"><BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Notepad_Note_Unlock_Password_ClearText\" MAXLENGTH=\"100\"><BR>
 													<INPUT TYPE=\"submit\" VALUE=\"Submit Password\">
 												</FORM>
 ");
