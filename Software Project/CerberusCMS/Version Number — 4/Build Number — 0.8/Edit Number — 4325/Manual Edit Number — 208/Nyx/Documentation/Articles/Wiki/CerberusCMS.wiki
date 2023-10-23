@@ -523,13 +523,18 @@ to manipulate any of the Variables in any kind of a buffer loop System-Wide. Man
  }
 
 CerberusCMS expert Programming Code Framework only calls upon declared Variables with values or other functions attached to them and upon calling upon the declared Variable it is instantly killed
-after its completed task. This leaves no room for any Variable Data manipulation by a malicious hacker.
+after its completed task. This leaves no room for any Variable Data manipulation by a malicious hacker and this process instantly frees up all of the commit resources of the C.P.U. and the R.A.M. in
+the Web Server.
 
  $Variable = copy("./File.txt", "./NewFile.txt");
 
  if ($Variable) {
 
  	echo ("Message: File has been copied.");
+
+ } else {
+
+ 	echo ("Message: Error: File has not been copied. Try Again ?");
 
  }
 
