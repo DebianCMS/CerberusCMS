@@ -69,12 +69,12 @@
  ============================================================================================================
 */
 
-$_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_CLEARTEXT		= $_POST['AMM_Notepad_Post_Unlock_Notepad_Note_Password_ClearText'];
-$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ACCESS_LEVEL		= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Access_Level'];
-$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_CLEARTEXT		= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Password_ClearText'];
-$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_DATA_CLEARTEXT		= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Data_ClearText'];
-$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ENCRYPTED			= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Encrypted'];
-$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_NAME			= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Name'];
+$_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_CLEARTEXT							= $_POST['AMM_Notepad_Post_Unlock_Notepad_Note_Password_ClearText'];
+$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ACCESS_LEVEL							= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Access_Level'];
+$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_CLEARTEXT							= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Password_ClearText'];
+$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_DATA_CLEARTEXT							= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Data_ClearText'];
+$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ENCRYPTED								= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Encrypted'];
+$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_NAME								= $_POST['AMM_Notepad_Post_Create_Notepad_Note_Name'];
 
 /*
  ============================================================================================================
@@ -82,8 +82,8 @@ $_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_NAME			= $_POST['AM
  ============================================================================================================
 */
 
-$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_HASHED		= hash('sha256', $_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_CLEARTEXT);
-$_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_HASHED		= hash('sha256', $_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_CLEARTEXT);
+$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_HASHED							= hash('sha256', $_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_CLEARTEXT);
+$_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_HASHED							= hash('sha256', $_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_CLEARTEXT);
 
 /*
  ============================================================================================================
@@ -173,7 +173,6 @@ $_Application_Module_Member_Notepad_Encrypted_Data_Encryption_Type_AES_Encrypted
 
 $_Application_Module_Member_Notepad_Encrypted_Data_Decryption_Type_AES_Decrypted_Data						= openssl_decrypt("", $_Application_Module_Member_Notepad_Encrypted_Data_Encryption_Type_AES_Cipher_Ring_Type, $_Application_Module_Member_Notepad_Encrypted_Data_Encryption_Type_AES_Password, $_Application_Module_Member_Notepad_Encrypted_Data_Encryption_Type_AES_Cipher_Ring_IV_Options, $_Application_Module_Member_Notepad_Encrypted_Data_Encryption_Type_AES_Cipher_Ring_IV);
 
-
 /*
  ============================================================================================================
  + Application Module Header
@@ -238,6 +237,28 @@ echo ("
 
 } else {
 
+if ($_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ENCRYPTED == "1") {
+
+$_Application_Module_Member_Notepad_DB_Query_INSERT_NOTEPAD_NOTE			= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_notepad(
+note_access_level,
+note_author,
+note_data,
+note_encrypted,
+note_name,
+note_password,
+note_timestamp
+)VALUES(
+'$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ACCESS_LEVEL',
+'$_GLOBAL_COOKIE_MEMBER_USERNAME',
+'$_Application_Module_Member_Notepad_Encrypted_Data_Encryption_Type_AES_Encrypted_Data',
+'$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ENCRYPTED',
+'$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_NAME',
+'$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_HASHED',
+'$_GLOBAL_LOCAL_SERVER_DATE_STANDARD'
+)");
+
+} else {
+
 $_Application_Module_Member_Notepad_DB_Query_INSERT_NOTEPAD_NOTE			= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_notepad(
 note_access_level,
 note_author,
@@ -255,6 +276,8 @@ note_timestamp
 '$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_PASSWORD_HASHED',
 '$_GLOBAL_LOCAL_SERVER_DATE_STANDARD'
 )");
+
+} // [ + ] IF: Internal Application: Display :: Create Notepad Note :: Input Form Variable :: Encrypted Note :: Is: Activated
 
 if ($_Application_Module_Member_Notepad_DB_Query_INSERT_NOTEPAD_NOTE) {
 
@@ -284,7 +307,7 @@ if ($_Application_Module_Member_Notepad_DB_Query_INSERT_NOTEPAD_NOTE) {
  ============================================================================================================
 */
 
-$_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_notepad ORDER BY id DESC");
+$_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_notepad ORDER BY id DESC");
 
 /*
  ============================================================================================================
@@ -294,17 +317,16 @@ $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES				= $DB->
  ============================================================================================================
 */
 
-
 while ($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array = $DB->fetch_array($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES)) {
 
-$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ID						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['id'];
-$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ACCESS_LEVEL					= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_access_level'];
-$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_AUTHOR						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_author'];
-$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_DATA						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_data'];
-$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ENCRYPTED					= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_encrypted'];
-$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_NAME						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_name'];
-$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_PASSWORD						= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_password'];
-$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_TIMESTAMP					= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_timestamp'];
+$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ID								= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['id'];
+$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ACCESS_LEVEL							= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_access_level'];
+$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_AUTHOR								= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_author'];
+$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_DATA								= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_data'];
+$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ENCRYPTED							= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_encrypted'];
+$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_NAME								= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_name'];
+$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_PASSWORD								= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_password'];
+$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_TIMESTAMP							= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_timestamp'];
 
 /*
  ============================================================================================================
