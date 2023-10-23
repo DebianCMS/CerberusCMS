@@ -66,11 +66,15 @@
 * Ease of Installation: 10/10
 * Ease of Removal: 10/10
 * Usefulness: 10/10
+* Functionality: 8/10
 * Architecture: 10/10
 * Ingenuity: 9/10
-* Economy: ?
+* Economy: 2/10
 * Functional and Useful Programming Code: 10/10
-125,000 Lines; $0.50 per line: $75,000
-125,000 Lines; $1.00 per line: $125,000
+
+125,000 Lines @ $000.50 per line: $75,000
+125,000 Lines @ $001.00 per line: $125,000
+125,000 Lines @ $005.00 per line: $625,000
+125,000 Lines @ $010.00 per line: $1,250,000
 
 $250,000 United States Dollars
