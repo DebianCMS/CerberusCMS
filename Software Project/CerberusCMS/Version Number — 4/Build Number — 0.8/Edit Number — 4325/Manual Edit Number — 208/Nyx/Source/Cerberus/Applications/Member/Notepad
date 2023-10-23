@@ -119,7 +119,7 @@ echo ("
 
 if ($_GET["Display"] == "CreateNote") {
 
-if ($_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_NOTEPAD_DATA) {
+if (!$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_DATA) {
 
 echo ("
 												<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Notepad&amp;Display&#61;CreateNote&amp;&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
@@ -139,7 +139,7 @@ echo ("
 													* Notepad :: Note :: Name<BR>
 														<INPUT TYPE=\"text\" NAME=\"AMM_Notepad_Post_Create_Notepad_Note_Name\" MAXLENGTH=\"100\"><BR>
 													* Notepad :: Note :: Password<BR>
-														<INPUT TYPE=\"text\" NAME=\"AMM_Notepad_Post_Create_Notepad_Note_Password_ClearText\" MAXLENGTH=\"256\"><BR>
+														<INPUT TYPE=\"password\" NAME=\"AMM_Notepad_Post_Create_Notepad_Note_Password_ClearText\" MAXLENGTH=\"256\"><BR>
 													* Notepad :: Note :: Data<BR>
 														<TEXTAREA ROWS=\"20\" COLS=\"120\" NAME=\"AMM_Notepad_Post_Create_Notepad_Note_Data\" MAXLENGTH=\"4096\">Write Notepad Note here...</TEXTAREA><BR>
 													<INPUT TYPE=\"submit\" VALUE=\"Create Note\">
@@ -163,7 +163,7 @@ note_timestamp
 '$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ENCRYPTED',
 '$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_NAME',
 '$_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_HASHED',
-'$_GLOBAL_LOCAL_SERVER_DATE'
+'$_GLOBAL_LOCAL_SERVER_DATE_STANDARD'
 )");
 
 if ($_Application_Module_Member_Notepad_DB_Query_INSERT_NOTEPAD_NOTE) {
