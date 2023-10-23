@@ -197,6 +197,49 @@ echo ("
 
 } // [ + ] IF: Internal Application: Display :: Options :: Is: Activated
 
+if ($_GET["Display"] == "FindNote") {
+
+if (!$_Application_Module_Member_Notepad_POST_SEARCH_KEYWORD) {
+
+echo ("
+										<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Notepad&amp;Display&#61;FindNote&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\">
+											Find :: Notepad Note Entry :: Search Keywords:<BR>
+												<INPUT TYPE=\"TEXT\" NAME=\"AMM_Notepad_Post_Search_Keyword\"><BR>
+											<INPUT TYPE=\"SUBMIT\" VALUE=\"Search\">
+										</FORM>
+");
+
+} else {
+
+/*
+ ============================================================================================================
+ + Database Server Query: Search All Notepad Note Entries From The Database Management System Server Database
+ ============================================================================================================
+*/
+
+$_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_notepad WHERE note_data LIKE '%$_Application_Module_Member_Notepad_POST_SEARCH_KEYWORD%' ORDER BY id ASC");
+
+
+										echo ("<B>Search Results For Notepad Note Search Keywords</B>: <I>$_Application_Module_Member_Notepad_POST_SEARCH_KEYWORD</I><HR>");
+
+while ($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array = $DB->fetch_array($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES)) {
+
+$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_ID				= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['id'];
+$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_AUTHOR			= $_Application_Module_Member_Search_DB_Query_SEARCH_ARTICLES_Fetch_Array['note_author];
+$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA			= $_Application_Module_Member_Search_DB_Query_SEARCH_ARTICLES_Fetch_Array['note_data'];
+$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_NAME			= $_Application_Module_Member_Search_DB_Query_SEARCH_ARTICLES_Fetch_Array['note_name'];
+$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA_REDUCED		= substr($_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA, 0, 30);
+
+echo ("
+<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Notepad&amp;DisplayNote&#61;$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Notepad Note Entry :: $_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_NAME ::\">$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_NAME</A><BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA_REDUCED ...<BR><BR>
+");
+
+} // [ + ] WHILE: Retrieving :: Notepad Note Entries :: From The Database Management System Server Database
+
+} // [ + ] IF: Internal Application: Find Notepad Note Entry :: Is: Activated
+
 /*
  ============================================================================================================
  +
@@ -334,49 +377,6 @@ $_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ENCRYPTED							= $_Application_M
 $_Application_Module_Notepad_LIST_NOTEPAD_NOTE_NAME								= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_name'];
 $_Application_Module_Notepad_LIST_NOTEPAD_NOTE_PASSWORD								= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_password'];
 $_Application_Module_Notepad_LIST_NOTEPAD_NOTE_TIMESTAMP							= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_timestamp'];
-
-if ($_GET["Display"] == "FindNote") {
-
-if (!$_Application_Module_Member_Notepad_POST_SEARCH_KEYWORD) {
-
-echo ("
-										<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Notepad&amp;Display&#61;FindNote&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\">
-											Find :: Notepad Note Entry :: Search Keywords:<BR>
-												<INPUT TYPE=\"TEXT\" NAME=\"AMM_Notepad_Post_Search_Keyword\"><BR>
-											<INPUT TYPE=\"SUBMIT\" VALUE=\"Search\">
-										</FORM>
-");
-
-} else {
-
-/*
- ============================================================================================================
- + Database Server Query: Search All Notepad Note Entries From The Database Management System Server Database
- ============================================================================================================
-*/
-
-$_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_notepad WHERE note_data LIKE '%$_Application_Module_Member_Notepad_POST_SEARCH_KEYWORD%' ORDER BY id ASC");
-
-
-										echo ("<B>Search Results For Notepad Note Search Keywords</B>: <I>$_Application_Module_Member_Notepad_POST_SEARCH_KEYWORD</I><HR>");
-
-while ($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array = $DB->fetch_array($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES)) {
-
-$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_ID				= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['id'];
-$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_AUTHOR			= $_Application_Module_Member_Search_DB_Query_SEARCH_ARTICLES_Fetch_Array['note_author];
-$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA			= $_Application_Module_Member_Search_DB_Query_SEARCH_ARTICLES_Fetch_Array['note_data'];
-$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_NAME			= $_Application_Module_Member_Search_DB_Query_SEARCH_ARTICLES_Fetch_Array['note_name'];
-$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA_REDUCED		= substr($_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA, 0, 30);
-
-echo ("
-<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Notepad&amp;DisplayNote&#61;$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Notepad Note Entry :: $_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_NAME ::\">$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_NAME</A><BR>
-<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA_REDUCED ...<BR><BR>
-");
-
-} // [ + ] WHILE: Retrieving :: Notepad Note Entries :: From The Database Management System Server Database
-
-} // [ + ] IF: Internal Application: Find Notepad Note Entry :: Is: Activated
 
 if ($_GET["DeleteNote"] == "$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ID") {
 
