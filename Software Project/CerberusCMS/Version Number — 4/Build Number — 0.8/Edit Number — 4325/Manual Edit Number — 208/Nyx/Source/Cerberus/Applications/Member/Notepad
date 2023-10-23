@@ -265,7 +265,7 @@ Is This Notepad Note Encrypted ?: $_Application_Module_Notepad_LIST_NOTEPAD_NOTE
 
 } else {
 
-												echo ("<CENTER>Cerberus: The Password You Have Provided Is Not Correct.</CENTER>");
+												echo ("<CENTER>Cerberus: The Password That You Have Provided Is Not Correct.</CENTER>");
 
 } // [ + ] IF: Internal Application :: Display :: Notepad Note Entry ID Number :: Is Encrypted AND Input HASHED Password String MATCHES HASHED Password String In The Database Management System Server Database
 
