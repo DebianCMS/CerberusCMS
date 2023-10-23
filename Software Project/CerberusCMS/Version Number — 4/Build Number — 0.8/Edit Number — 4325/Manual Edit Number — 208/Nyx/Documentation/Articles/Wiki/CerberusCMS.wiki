@@ -578,10 +578,15 @@ are currently supported so long as the Class File contains the correct Object to
 
  }
 
- kill($Variable);
+ $DB->Kill($Variable);
 
-This process eliminates any possibility of Structured-Query-Language Tampering or Injection because all of the S.Q.L. Statements are within a Uniquely Named Variable. This is different from
-using Object-Oriented Prepared Statements with the built-in P.H.P. PDO :: Driver which is actually still vulnerable to S.Q.L. Injection Techniques as of the year 2023.
+This process eliminates any possibility of Structured-Query-Language Tampering or Injection because all of the S.Q.L. Statements are prepared that these prepared statements are within a Uniquely Named Variable. This is different from
+using Object-Oriented Prepared Statements with the built-in P.H.P. PDO Functions and Classes :: PDO Driver which is actually still vulnerable to S.Q.L. Injection Techniques as of the year 2023.
+
+'''https://www.php.net/manual/en/class.pdo.php'''
+
+CerberusCMS uses a custom written Database Management System Server Database Class File where the driver functions and statements are converted into quickly usable variables in an Object-Oriented Style.
+$DB->Query is the same as mysql_query(); or mysqli_query(); -- This is superior to PDO Statements because each S.Q.L. Statement is prepared and can never be manipulated anywhere else on the system.
 
 '''Injections'''
 * Structured-Query-Language Code Injection
