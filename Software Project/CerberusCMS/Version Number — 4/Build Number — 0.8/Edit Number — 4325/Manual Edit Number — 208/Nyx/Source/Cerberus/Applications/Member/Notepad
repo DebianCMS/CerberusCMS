@@ -197,6 +197,14 @@ echo ("
 
 } // [ + ] IF: Internal Application: Display :: Options :: Is: Activated
 
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Display :: Find Notepad Note Entry
+ +
+ ============================================================================================================
+*/
+
 if ($_GET["Display"] == "FindNote") {
 
 if (!$_Application_Module_Member_Notepad_POST_SEARCH_KEYWORD) {
@@ -217,18 +225,21 @@ echo ("
  ============================================================================================================
 */
 
-$_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_notepad WHERE note_data LIKE '%$_Application_Module_Member_Notepad_POST_SEARCH_KEYWORD%' ORDER BY id ASC");
-
-
-while ($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array = $DB->fetch_array($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES)) {
+$_Application_Module_Notepad_DB_Query_SEARCH_ALL_NOTEPAD_NOTE_ENTRIES						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_notepad WHERE note_data LIKE '%$_Application_Module_Member_Notepad_POST_SEARCH_KEYWORD%' ORDER BY id ASC");
 
 /*
-$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_ID				= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['id'];
-$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_AUTHOR			= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_author];
-$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA			= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_data'];
-$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_NAME			= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_name'];
-$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA_REDUCED		= substr($_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA, 0, 30);
+ ============================================================================================================
+ + WHILE: Retrieving :: Notepad Note Entries :: From The Database Management System Server Database
+ ============================================================================================================
 */
+
+while ($_Application_Module_Notepad_DB_Query_SEARCH_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array = $DB->fetch_array($_Application_Module_Notepad_DB_Query_SEARCH_ALL_NOTEPAD_NOTE_ENTRIES)) {
+
+$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_ID				= $_Application_Module_Notepad_DB_Query_SEARCH_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['id'];
+$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_AUTHOR			= $_Application_Module_Notepad_DB_Query_SEARCH_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_author'];
+$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA			= $_Application_Module_Notepad_DB_Query_SEARCH_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_data'];
+$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_NAME			= $_Application_Module_Notepad_DB_Query_SEARCH_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_name'];
+$_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA_REDUCED		= substr($_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA, 0, 30);
 
 echo ("
 <B>Search Results For Notepad Note Search Keywords</B>: <I>$_Application_Module_Member_Notepad_POST_SEARCH_KEYWORD</I>
@@ -240,7 +251,7 @@ $_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA_REDUCED ...<BR
 
 } // [ + ] WHILE: Retrieving :: Notepad Note Entries :: From The Database Management System Server Database
 
-}
+} // [ + ] IF: Internal Application: Find Notepad Note Entry :: Input Form Variables HAVE Executed
 
 } // [ + ] IF: Internal Application: Find Notepad Note Entry :: Is: Activated
 
@@ -253,6 +264,12 @@ $_Application_Module_Member_Notepad_SEARCH_LIST_NOTEPAD_NOTE_DATA_REDUCED ...<BR
 */
 
 if ($_GET["Display"] == "CreateNote") {
+
+/*
+ ============================================================================================================
+ + IF: Internal Application: Display :: Create Notepad Note Entry :: Input Form Variables HAVE NOT Executed, Display Input Form
+ ============================================================================================================
+*/
 
 if (!$_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_DATA_CLEARTEXT) {
 
@@ -283,6 +300,12 @@ echo ("
 
 } else {
 
+/*
+ ============================================================================================================
+ + IF: Notepad Note Entry Is Marked: Encrypted, Craft Structured-Query-Language Query Statement For Encrypted Data
+ ============================================================================================================
+*/
+
 if ($_Application_Module_Member_Notepad_POST_CREATE_NOTEPAD_NOTE_ENCRYPTED == "1") {
 
 $_Application_Module_Member_Notepad_DB_Query_INSERT_NOTEPAD_NOTE			= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_notepad(
@@ -305,6 +328,12 @@ note_timestamp
 
 } else {
 
+/*
+ ============================================================================================================
+ + IF: Notepad Note Entry Is NOT Marked: Encrypted, Craft Structured-Query-Language Query Statement For Non-Encrypted Data
+ ============================================================================================================
+*/
+
 $_Application_Module_Member_Notepad_DB_Query_INSERT_NOTEPAD_NOTE			= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_notepad(
 note_access_level,
 note_author,
@@ -324,6 +353,12 @@ note_timestamp
 )");
 
 } // [ + ] IF: Internal Application: Display :: Create Notepad Note :: Input Form Variable :: Encrypted Note :: Is: Activated
+
+/*
+ ============================================================================================================
+ + IF: Database Management System Server Database Query :: Insert Notepad Note Entry
+ ============================================================================================================
+*/
 
 if ($_Application_Module_Member_Notepad_DB_Query_INSERT_NOTEPAD_NOTE) {
 
@@ -371,6 +406,12 @@ $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES						= $DB
  ============================================================================================================
 */
 
+/*
+ ============================================================================================================
+ + WHILE: Retrieving :: Notepad Note Entry Data From The Database Management System Server Database
+ ============================================================================================================
+*/
+
 while ($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array = $DB->fetch_array($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES)) {
 
 $_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ID								= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['id'];
@@ -382,13 +423,33 @@ $_Application_Module_Notepad_LIST_NOTEPAD_NOTE_NAME								= $_Application_Modul
 $_Application_Module_Notepad_LIST_NOTEPAD_NOTE_PASSWORD								= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_password'];
 $_Application_Module_Notepad_LIST_NOTEPAD_NOTE_TIMESTAMP							= $_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES_Fetch_Array['note_timestamp'];
 
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Delete Notepad Note Entry
+ +
+ ============================================================================================================
+*/
+
 if ($_GET["DeleteNote"] == "$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ID") {
+
+/*
+ ============================================================================================================
+ + IF: Notepad Note Entry Author :: Is: Current Registered Member Account UserName
+ ============================================================================================================
+*/
 
 if ($_Application_Module_Notepad_LIST_NOTEPAD_NOTE_AUTHOR == "$_GLOBAL_COOKIE_MEMBER_USERNAME") {
 
-$_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES						= $DB->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_notepad WHERE id='$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ID' AND note_author='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
+$_Application_Module_Notepad_DB_Query_DELETE_NOTEPAD_NOTE_ENTRY						= $DB->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_notepad WHERE id='$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ID' AND note_author='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
 
-if ($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES) {
+/*
+ ============================================================================================================
+ + IF: Database Management System Server Database Query :: Delete Notepad Note Entry BY ID Number
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Notepad_DB_Query_DELETE_NOTEPAD_NOTE_ENTRY) {
 
 									echo ($_Application_Module_Member_Message_Notepad_NOTE_DELETED_SUCCESSFULLY);
 
@@ -397,6 +458,14 @@ if ($_Application_Module_Notepad_DB_Query_SELECT_ALL_NOTEPAD_NOTE_ENTRIES) {
 									echo ($_Application_Module_Member_Message_Notepad_NOTE_DELETE_ERROR);
 
 } // [ + ] IF: Database Management System Server :: Database Query :: Delete Selected Notepad Note Entry BY ID Number :: Variable HAS Executed
+
+/*
+ ============================================================================================================
+ + Kill SQL Database Server Query: Delete Notepad Note Entry By ID Number
+ ============================================================================================================
+*/
+
+$DB->free($_Application_Module_Notepad_DB_Query_DELETE_NOTEPAD_NOTE_ENTRY);
 
 } // [ + ] IF: Notepad Note Entry Author :: Is: Current Registered Member Account UserName
 
@@ -420,7 +489,19 @@ if ($_GET["DisplayNote"] == "$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ID")
 
 if ($_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ACCESS_LEVEL == "0") {
 
+/*
+ ============================================================================================================
+ + IF: Notepad Note Entry :: Is: Encrypted
+ ============================================================================================================
+*/
+
 if ($_Application_Module_Notepad_LIST_NOTEPAD_NOTE_ENCRYPTED == "1") {
+
+/*
+ ============================================================================================================
+ + IF: Notepad Note Entry :: Password Unlock Required, Display Password Input Form
+ ============================================================================================================
+*/
 
 if (!$_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_CLEARTEXT) {
 
@@ -434,6 +515,12 @@ echo ("
 ");
 
 } else {
+
+/*
+ ============================================================================================================
+ + IF: Notepad Note Entry :: Password Input MATCHES Notepad Note Entry Password String
+ ============================================================================================================
+*/
 
 if ($_Application_Module_Member_Notepad_POST_UNLOCK_NOTEPAD_NOTE_PASSWORD_HASHED == "$_Application_Module_Notepad_LIST_NOTEPAD_NOTE_PASSWORD") {
 
