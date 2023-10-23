@@ -286,49 +286,50 @@ Options for managing Custom Web Page Entries, Custom Web Page Entry Data and App
 ====Background-Level Application Modules====
 
 Activity Logging
-* Internal_Loops
-* Log_Administration
-* Log_Background
-* Log_Member
-* Log_Visitor
+* '''Internal_Loops'''
+* '''Log_Administration'''
+* '''Log_Background'''
+* '''Log_Member'''
+* '''Log_Visitor'''
 
 5 Background Application-Modules
 
 ====Panel Application Modules====
-* Administration.panel
-* Applications_Panel.panel
-* Banned_Networks.panel
-* Language.panel
-* Latest_Articles.panel
-* Latest_Files.panel
-* Latest_Members.panel
-* Latest_Shouts.panel
-* Member_Panel.panel
-* Project_Badges.panel
-* RSS_Panel.panel
+* '''Administration.panel'''
+* '''Applications_Panel.panel'''
+* '''Banned_Networks.panel'''
+* '''Language.panel'''
+* '''Latest_Articles.panel'''
+* '''Latest_Files.panel'''
+* '''Latest_Members.panel'''
+* '''Latest_Shouts.panel'''
+* '''Member_Panel.panel'''
+* '''Project_Badges.panel'''
+* '''RSS_Panel.panel'''
 
 11 Application Panels
 
 ====Open :: Public Application Modules====
-Engine_Validation
+* '''Engine_Validation'''
 
 1 Public-Level Application Module
 
 ====Maintenance Applications====
-* Asclepius, Diagnostics
-* Fides, Integrity
+* '''Asclepius, Diagnostics'''
+* '''Fides, Integrity'''
 
 2 Maintenance Applications
 
 ====Pre-Installation and Pre-Configuration Applications====
-* Hephaestus
-* Architect
-* SQL_Generator
-* Installation_ToolKit
+* '''Hephaestus'''
+* '''Architect'''
+* '''SQL_Generator'''
+* '''Installation_ToolKit'''
 
 4 Pre-Configuration and Installation Applications.
 
 ====Secret Application Modules====
+* '''Lightning_Calculate'''
 With Version Number: 4, Build Number: 0.8 CerberusCMS comes with a secret Application Module named 'Lightning Calculate !' this Application Module teaches the user how to mentally calculate at lightning speed through repetitive patterns. This Application Module also teaches the user how to master
 the Methods of Loci as well as provides a 6 month intensive training course of expert nutrition and physical and mental training to obtain a Mastery of Mathematics.
 
@@ -339,6 +340,10 @@ The Application Module teaches fundamentally how to Mentally Calculate all Mathe
 1 secret Application Module
 
 ====Other Application Modules====
+* '''Droid'''
+
+* '''Disk Operating System'''
+
 * CerberusCMS comes with Android and Disk Operating System Emulator Application Modules that successfully emulate Android Applications and Disk Operating System Application Images Directly From
 the web browser itself.
 
@@ -349,19 +354,19 @@ the web browser itself.
 3 Extra Application Modules
 
 ====Plug-In Application Modules====
-* Camera
+* '''Camera'''
 This Plug-In automatically handles and processes the video feed from the device camera.
 
-* Microphone
+* '''Microphone'''
 This Plug-In automatically handles and processes the audio feed from the device microphone.
 
-* WYSIWYG Text-Editor
+* '''WYSIWYG Text-Editor'''
 This Plug-In is a very simple WYSIWYG Text Editor that can be included into any form throughout the system by invoking a variable.
 
-* Safe-HTML
+* '''Safe-HTML'''
 This Plug-In automatically converts Hyper-Text-Markup-Language tags to Hyper-Text-Markup-Language entities from all of the input forms throughout the system. Example of this would be converting: '''< B >''' to '''& lt ;''' before it is inserted into the Database Management System Data. This eliminates any possibility of malicious Hyper-Text-Markup-Language tag injection, JavaScript scripting code injection and Post-Hyper-Text-Pre-Processor programming code injection into the Database Management System. All of the entities are converted back to Hyper-Text-Markup-Language tags after being retrieved from the Database Management System.
 
-* Location
+* '''Location'''
 This Plug-In gets the exact Global-Positioning-System X, Y and Z Coordinates of the Devices connected to CerberusCMS. Location is capable of getting the Device Global-Positioning-System Coordinates and 9 - 10 Foot Radial Location with Altitude from the Web Browser of the Device by using H.T.M.L. Version 5 Global-Positioning-System Built-In Functionality for Longitude, Latitude and Altitude with 98% accuracy every time down to  9 - 10 feet in radius and 3 feet in altitude of that radius where the altitude is reported in Y units above Sea Level every 1 to 5 seconds. Location is also capable of getting the Device Global-Positioning-System Coordinates Location from the Google Android Device or the Apple iPhone Device through the Device Applications. Location stores the exact Global-Positioning-System Coordinates in X, Y and Z to an organized log file within each Registered Member Account log directory. Location can get the Global-Positioning-System Coordinates of Longitude, Latitude and Altitude by Hyper-Text-Markup-Language Version 5 Built-In Functionality From The Web Browser, Pre-Hyper-Text-Post-Processor Built-In Functionality From The Web Browser, Java From The Web Browser, AOSP/Java From The Google Android Smart Phone, iOS/Swift from the Apple iPhone.
 
 ==Project Web Server Software Compatibility==
@@ -381,8 +386,8 @@ This Plug-In gets the exact Global-Positioning-System X, Y and Z Coordinates of 
 * Mini-Structured-Query-Language Server, Version Number: 4.4
 
 ===Web Server Software===
-* Apache, Version Number: 2.4.55
-* Microsoft, Version Number: 10.0
+* Apache Web Server, Version Number: 2.4.55
+* Microsoft Internet Information Services Web Server, Version Number: 10.0
 
 ==Project Installation==
 A Fresh configuration and installation of CerberusCMS through Architect can be made in <~ 5 minutes. CerberusCMS installs a backup Administration-Level account with the same password as the installed Administration-Level account as well as a Root Administration-Level bot account named Cerberus and a Services Root-Administration account named Services. The Cerberus bot account can be authenticated and logged into to schedule background tasks and to perform Root Administration-Level and Services Root Administration-Level tasks that an Administration-Level account would not be able to perform. This bot account automatically performs programming code tasks, database management server data organization tasks and more. The bot account can also receive commands from Administration-Level accounts as well as from Text-Message, Electronic Mail Message and from any input form on the system. Tasks could be executing loops that delete all unverified Registered Member Accounts from the database management system and all of the unverified Registered Member Account created data instantly.
