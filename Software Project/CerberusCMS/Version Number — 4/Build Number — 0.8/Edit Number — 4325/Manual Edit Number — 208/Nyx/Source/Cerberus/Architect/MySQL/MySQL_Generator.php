@@ -868,6 +868,8 @@ id MEDIUMINT NOT NULL AUTO_INCREMENT,
 note_access_level VARCHAR(50),
 note_author VARCHAR(50),
 note_data TEXT,
+note_encrypted CHAR(1),
+note_name VARCHAR(100),
 note_password VARCHAR(256),
 note_timestamp VARCHAR(50),
 PRIMARY KEY (id)
