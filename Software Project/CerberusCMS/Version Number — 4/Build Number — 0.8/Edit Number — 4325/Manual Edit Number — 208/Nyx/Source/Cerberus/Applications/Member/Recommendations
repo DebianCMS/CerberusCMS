@@ -75,13 +75,15 @@ echo ("
 
 <B>Recommended :: Military Specification :: Mobile Device :: Smart Phone :: Information Security Hardened :: Custom Firmware</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 * Personal :: Mobile Cell Device :: Component :: Firmware :: Modem :: FireModem<BR>
-* Personal :: Mobile Cell Device :: Component :: Firmware :: SoC :: <BR>
-* Personal :: Mobile Cell Device :: Component :: Firmware :: eMMC ::<BR>
-* Personal :: Mobile Cell Device :: Component :: Firmware :: Display ::<BR>
-* Personal :: Mobile Cell Device :: Component :: Firmware :: WLAN :: <BR>
-* Personal :: Mobile Cell Device :: Component :: Firmware :: BlueTooth :: <BR>
-* Personal :: Mobile Cell Device :: Component :: Firmware :: CPU :: <BR>
-* Personal :: Mobile Cell Device :: Component :: Firmware :: GPU :: <BR><BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: SoC :: <A HREF=\"https://www.ARM.com/products/custom-socs\" TITLE=\":: Open & Display :: The Official ARM Web Server ::\" TARGET=\"_NEW\">Custom ARM</A><BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: eMMC :: Dump and Flash With Security Hardened Firmware<BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: Display :: Dump and Flash With Security Hardened Firmware<BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: WLAN :: Dump and Flash With Security Hardened Firmware<BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: BlueTooth :: Dump and Flash With Security Hardened Firmware<BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: CPU :: Dump and Flash With Security Hardened Firmware<BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: GPU :: Dump and Flash With Security Hardened Firmware<BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: Bootloader :: <A HREF=\"https://Download.LineageOS.org/changes\" TITLE=\":: Open & Display :: The Official LineageOS Web Server ::\" TARGET=\"_NEW\">LineageOS Bootloader</A><BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: Recovery :: <A HREF=\"https://Download.LineageOS.org/changes\" TITLE=\":: Open & Display :: The Official LineageOS Web Server ::\" TARGET=\"_NEW\">LineageOS Recovery</A><BR><BR>
 
 <B>Recommended :: Military Specification :: Mobile Device :: Laptop / NoteBook :: Information Security Hardened :: Custom Operating System</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 * <A HREF=\"https://wiki.ArchLinux.org/title/Arch-based_distributions\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Arch-Linux Operating System ::\" TARGET=\"_NEW\">Personal :: Laptop / NoteBook :: Digital Information Security Hardened :: Operating System :: Arch-Linux</A><BR>
@@ -107,13 +109,13 @@ echo ("
 * <A HREF=\"https://www.Samsung.com/us/computing/galaxy-books/all-galaxy-books/\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Samsung GalaxyBook ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Laptop / NoteBook :: Samsung :: GalaxyBook :: Model 3</A><BR>
 * <A HREF=\"https://www.SlimBook.es/en/essential-en\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Custom Manufactured SlimBook ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Laptop / NoteBook :: Titan :: Model Custom Manufactured SlimBook</A><BR><BR>
 
-<A HREF=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Lenovo_ThinkPad_Housing_Aluminium.png\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Lenovo_ThinkPad_Housing_Aluminium.png\" TITLE=\":: Custom Fabricated Aluminium Metal Laptop / NoteBook Housing :: For :: Lenovo ThinkPad T440P Series ::\" WIDTH=\"80\" HEIGHT=\"100\" CLASS=\"MemberProfile\"></A>
+<A HREF=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Lenovo_ThinkPad_Housing_Aluminium.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Lenovo_ThinkPad_Housing_Aluminium.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Custom Fabricated Aluminium Metal Laptop / NoteBook Housing :: For :: Lenovo ThinkPad T440P Series ::\" WIDTH=\"80\" HEIGHT=\"100\" CLASS=\"MemberProfile\"></A>
 &nbsp;&nbsp;
-<A HREF=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Samsung_Galaxy_Book_Aluminium.jpg\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Samsung_Galaxy_Book_Aluminium.jpg\" TITLE=\":: Custom Fabricated Aluminium Metal Laptop / NoteBook Housing :: For :: Samsung Galaxy Book Series \" WIDTH=\"80\" HEIGHT=\"100\" CLASS=\"MemberProfile\"></A>
+<A HREF=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Samsung_Galaxy_Book_Aluminium.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Samsung_Galaxy_Book_Aluminium.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Custom Fabricated Aluminium Metal Laptop / NoteBook Housing :: For :: Samsung Galaxy Book Series \" WIDTH=\"80\" HEIGHT=\"100\" CLASS=\"MemberProfile\"></A>
 &nbsp;&nbsp;
-<A HREF=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Google_Pixel_Book_Aluminium.jpg\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Google_Pixel_Book_Aluminium.jpg\" TITLE=\":: Custom Fabricated Aluminium Metal Laptop / NoteBook Housing :: For :: Google Pixel Book Series \" WIDTH=\"80\" HEIGHT=\"100\" CLASS=\"MemberProfile\"></A>
+<A HREF=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Google_Pixel_Book_Aluminium.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Google_Pixel_Book_Aluminium.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Custom Fabricated Aluminium Metal Laptop / NoteBook Housing :: For :: Google Pixel Book Series \" WIDTH=\"80\" HEIGHT=\"100\" CLASS=\"MemberProfile\"></A>
 &nbsp;&nbsp;
-<A HREF=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/MSI_Titan_GT.png\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/MSI_Titan_GT.png\" TITLE=\":: Custom Fabricated Aluminium Metal Laptop / NoteBook Housing :: For :: MSI Titan GT Series :: \" WIDTH=\"100\" HEIGHT=\"80\" CLASS=\"MemberProfile\"></A><BR><BR>
+<A HREF=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/MSI_Titan_GT.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/MSI_Titan_GT.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Custom Fabricated Aluminium Metal Laptop / NoteBook Housing :: For :: MSI Titan GT Series :: \" WIDTH=\"100\" HEIGHT=\"80\" CLASS=\"MemberProfile\"></A><BR><BR>
 
 <B>Recommended :: Hardware :: Military Specification :: Mobile Device :: Smart Phone :: Cell Tower</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 * <A HREF=\"https://store.Google.com/us/config/pixel_6a?hl=en-US\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Google Pixel Mobile Smart Phone Devices ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Smart Phone :: Internationally Unlocked :: Google :: Pixel :: 6A</A><BR>
@@ -127,11 +129,11 @@ echo ("
 * <A HREF=\"https://blogs.windows.com/devices/2016/02/15/microsoft-lumia-650-sophisticated-metal-design-and-windows-10-under-200-usd/\" TITLE=\":: Open & Display :: The Official Web Server :: For :: The Official Microsoft Mobile Device: Nokia Lumia 640/650 XL Smart Phone ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Smart Phone :: Internationally Unlocked :: Nokia :: Lumia :: Model 640/650 XL</A><BR>
 <A HREF=\"https://www.youtube.com/watch?v=mQtGtwdZDow\" TITLE=\":: Open & Display :: The Official Web Server :: For :: The Official Microsoft Mobile Device: Nokia Lumia 640/650 Smart Phone YouTube Channel ::\" TARGET=\"_NEW\">^YouTube Video</A><BR><BR>
 
-<A HREF=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Samsung_Galaxy_S9+_Gold_24K_Housing.jpg\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Samsung_Galaxy_S9+_Gold_24K_Housing.jpg\" TITLE=\":: Custom Fabricated and Molded 24 Karat Gold Plated Housing For :: Samsung :: Galaxy :: S9+ ::\" WIDTH=\"80\" HEIGHT=\"100\" CLASS=\"MemberProfile\"></A>
+<A HREF=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Samsung_Galaxy_S9+_Gold_24K_Housing.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Samsung_Galaxy_S9+_Gold_24K_Housing.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Custom Fabricated and Molded 24 Karat Gold Plated Housing For :: Samsung :: Galaxy :: S9+ ::\" WIDTH=\"80\" HEIGHT=\"100\" CLASS=\"MemberProfile\"></A>
 &nbsp;&nbsp;
-<A HREF=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Lenovo_ThinkPhone.jpg\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Lenovo_ThinkPhone.jpg\" TITLE=\":: Lenovo ThinkPhone ::\" WIDTH=\"80\" HEIGHT=\"100\" CLASS=\"MemberProfile\"></A>
+<A HREF=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Lenovo_ThinkPhone.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Lenovo_ThinkPhone.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Lenovo ThinkPhone ::\" WIDTH=\"80\" HEIGHT=\"100\" CLASS=\"MemberProfile\"></A>
 &nbsp;&nbsp;
-<A HREF=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Mobile_Device_Case_Aluminium.png\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Mobile_Device_Case_Aluminium.png\" TITLE=\":: Custom Fabricated Aluminium Metal Case With Corning Gorilla Glass and Titanium Reversible OR Optional Titanium Non-Reversible Screws ::\" WIDTH=\"100\" HEIGHT=\"100\" CLASS=\"MemberProfile\"></A><BR><BR>
+<A HREF=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Mobile_Device_Case_Aluminium.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Recommendations/Mobile_Device_Case_Aluminium.png?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Custom Fabricated Aluminium Metal Case With Corning Gorilla Glass and Titanium Reversible OR Optional Titanium Non-Reversible Screws ::\" WIDTH=\"100\" HEIGHT=\"100\" CLASS=\"MemberProfile\"></A><BR><BR>
 
 <B>Recommended :: Hardware :: Military Specification :: Mobile Device :: Smart Phone :: Satellite</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 * <A HREF=\"https://www.Iridium.com/product-type/satellite-phones/\" TITLE=\":: Open & Display :: The Official Web Server :: For :: The Official Irridium Satellite Smart Phones ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Smart Phone :: Irridium</A><BR><BR>
@@ -171,18 +173,24 @@ echo ("
 * <A HREF=\"https://Store.Google.com/us/product/pixel_buds_pro?hl=en-US\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Google Pixel EarPhones ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Cable Wired :: Google :: Pixel :: EarPhones</A><BR><BR>
 
 <B>Samsung Galaxy</B><BR>
-* <A HREF=\"https://www.Samsung.com/us/mobile/audio/headphones/\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Samsung Galaxy EarBuds ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Wireless :: Samsung :: Galaxy :: Buds</A><BR>
+* <A HREF=\"https://www.Samsung.com/us/mobile/audio/headphones/\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Samsung Galaxy EarBuds ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Wireless :: Samsung :: Galaxy :: EarBuds</A><BR>
 * <A HREF=\"https://www.Samsung.com/us/mobile/audio/headphones/\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Samsung Galaxy EarPhones ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Cable Wired :: Samsung :: Galaxy :: EarPhones</A><BR><BR>
 
 <B>SkullCandy</B><BR>
-* <A HREF=\"https://www.Skullcandy.com/\" TITLE=\":: Open & Display :: The Official Web Server :: For :: SkullCandy :: EarPhones ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Cable Wired :: SkullCandy :: EarPhones</A><BR>
-* <A HREF=\"https://www.Skullcandy.com/\" TITLE=\":: Open & Display :: The Official Web Server :: For :: SkullCandy :: EarBuds ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Wireless :: SkullCandy :: EarBuds</A><BR><BR>
+* <A HREF=\"https://www.Skullcandy.com/\" TITLE=\":: Open & Display :: The Official Web Server :: For :: SkullCandy :: EarBuds ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Wireless :: SkullCandy :: EarBuds</A><BR>
+* <A HREF=\"https://www.Skullcandy.com/\" TITLE=\":: Open & Display :: The Official Web Server :: For :: SkullCandy :: EarPhones ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Cable Wired :: SkullCandy :: EarPhones</A><BR><BR>
 
 <B>Recommended :: Hardware :: Military Specification :: Networking :: Home Router</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 * <A HREF=\"https://www.Asus.com/us/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ac3100/\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Asus RT Routers ::\" TARGET=\"_NEW\">Personal :: Home Router :: ASUS :: RT :: Model AC3100</A><BR>
-* <A HREF=\"https://www.Lenovo.com/us/en/dc/accessories-and-software/wireless-and-networking/wireless-router\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Lenovo Routers ::\" TARGET=\"_NEW\">Personal :: Home Router :: Lenovo ::</A><BR>
+* <A HREF=\"https://www.Lenovo.com/us/en/dc/accessories-and-software/wireless-and-networking/wireless-router\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Lenovo Routers ::\" TARGET=\"_NEW\">Personal :: Home Router :: Lenovo :: Uplink</A><BR>
 * <A HREF=\"https://www.Samsung.com/us/smartthings/\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Samsung Routers ::\" TARGET=\"_NEW\">Personal :: Home Router :: Samsung :: Model AC2600</A><BR>
 * Personal :: Home Router :: Custom Built<BR><BR>
+
+<B>Recommended :: Hardware :: Military Specification :: Mobile Storage Device :: USB :: Data Stick</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
+* <A HREF=\"https://www.NewEgg.com/sandisk-model-sdddc4-1t00-g46-1tb/p/N82E16820173485\" TITLE=\":: Open & Display :: The Official Web Server :: For :: New Egg ::\" TARGET=\"_NEW\">Mobile Data Storage :: Hardware Component :: USB Flash Drive :: Aluminium Metal SanDisk 8GB USB/3.1</A><BR>
+* <A HREF=\"https://www.NewEgg.com/sandisk-model-sdddc4-1t00-g46-1tb/p/N82E16820173485\" TITLE=\":: Open & Display :: The Official Web Server :: For :: New Egg ::\" TARGET=\"_NEW\">Mobile Data Storage :: Hardware Component :: USB Flash Drive :: Aluminium Metal SanDisk 32GB USB/3.1</A><BR>
+* <A HREF=\"https://www.NewEgg.com/sandisk-model-sdddc4-1t00-g46-1tb/p/N82E16820173485\" TITLE=\":: Open & Display :: The Official Web Server :: For :: New Egg ::\" TARGET=\"_NEW\">Mobile Data Storage :: Hardware Component :: USB Flash Drive :: Aluminium Metal SanDisk 64GB USB/3.1</A><BR>
+* <A HREF=\"https://www.NewEgg.com/sandisk-model-sdddc4-1t00-g46-1tb/p/N82E16820173485\" TITLE=\":: Open & Display :: The Official Web Server :: For :: New Egg ::\" TARGET=\"_NEW\">Mobile Data Storage :: Hardware Component :: USB Flash Drive :: Aluminium Metal SanDisk 1TB USB/3.1</A><BR><BR>
 
 <B>Recommended :: Hardware :: Military Specification :: Mobile Device :: Smart Phone :: Samsung :: Galaxy :: Model S9+ :: Upgrades</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 * <A HREF=\"https://www.TrulyExquisite.co.uk/24k-gold-samsung-galaxy-s9-s9-plus\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Truly Exquisite London Gold Fabrication and Molding ::\" TARGET=\"_NEW\">Smart Phone :: Hardware Component :: Housing :: Custom 24 Karat Gold Housing</A><BR><BR>
