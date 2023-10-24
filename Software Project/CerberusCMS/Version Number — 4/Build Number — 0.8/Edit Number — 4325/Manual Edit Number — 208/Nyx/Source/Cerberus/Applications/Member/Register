@@ -477,6 +477,7 @@ member_name_first,
 member_name_last,
 member_name_middle,
 member_name_nickname,
+member_notes,
 member_number_of_posts,
 member_number_phone_area_code,
 member_number_phone_cell,
@@ -619,6 +620,7 @@ member_username
 '$_Application_Module_Member_Register_POST_REGISTRAR_LAST_NAME',
 'Empty Entry :: Middle Name',
 'Emtpy Entry :: Nick Name',
+'Administration Notes',
 '10000',
 '111',
 '111-1111',
@@ -745,6 +747,7 @@ mkdir("./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Fil
 mkdir("./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Audio/Gallery");
 mkdir("./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Audio/Live");
 mkdir("./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Audio/Music");
+mkdir("./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Audio/Push-To-Talk");
 mkdir("./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Audio/Recordings");
 mkdir("./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Audio/Streams");
 
@@ -791,6 +794,7 @@ copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_Application_Modu
 copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Audio/Gallery/index.php");
 copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Audio/Live/index.php");
 copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Audio/Music/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Audio/Push-To-Talk/index.php");
 copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Audio/Recordings/index.php");
 copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Audio/Streams/index.php");
 
