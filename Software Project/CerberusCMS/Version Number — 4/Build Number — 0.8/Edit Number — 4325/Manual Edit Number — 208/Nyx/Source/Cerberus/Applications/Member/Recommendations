@@ -1,4 +1,4 @@
-2<?php
+<?php
 /*
  ============================================================================================================
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -291,7 +291,7 @@ echo ("
 * Web Server :: Hardware Security Appliance :: Forti Web Guard<BR>
 * Web Server :: Hardware Security Appliance :: Fire Guardian<BR><BR>
 
-<B>Recommended :: Instructions :: Firmware :: Flashing</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
+<B>Recommended :: Instructions :: Firmware :: Flashing</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\"
 * <A HREF=\"https://www.Youtube.com/watch?v=pqjsM18pKCE\" TITLE=\":: Open & Display :: The Official CoreBoot Flashing Tutorial :: Hosted On YouTube ::\" TARGET=\"_NEW\">Peronsal :: Mobile Device :: Firmware :: Lenovo :: T :: 440P</A><BR><BR>
 
 <B>Recommended :: Mobile Device :: Smart Phone :: Operating System :: AOSP :: Applications :: General</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
