@@ -4756,12 +4756,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_1D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_1D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_1D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_1D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_1D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_1D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -4818,12 +4818,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_2D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_2D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_2D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_2D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_2D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_2D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -4880,12 +4880,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_3D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_3D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_3D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_3D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_3D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_3D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -4942,12 +4942,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_4D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_4D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_4D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_4D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_4D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_4D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5004,12 +5004,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_5D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_5D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_5D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_5D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_5D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_5D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5066,12 +5066,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_6D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_6D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_6D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_6D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_6D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_6D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5128,12 +5128,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_7D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_7D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_7D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_7D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_7D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_7D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5190,12 +5190,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_8D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_8D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_8D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_8D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_8D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_8D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5252,12 +5252,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_9D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_9D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_9D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_9D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_9D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_9D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5314,12 +5314,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_10D_INPUT) 
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_10D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_10D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_10D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_10D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_1D_10D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5386,12 +5386,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_2D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_2D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_2D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_2D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_2D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_2D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5448,12 +5448,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_3D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_3D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_3D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_3D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_3D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_3D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5510,12 +5510,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_4D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_4D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_4D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_4D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_4D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_4D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5572,12 +5572,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_5D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_5D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_5D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_5D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_5D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_5D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5634,12 +5634,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_6D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_6D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_6D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_6D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_6D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_6D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5696,12 +5696,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_7D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_7D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_7D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_7D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_7D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_7D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5758,12 +5758,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_8D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_8D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_8D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_8D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_8D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_8D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5820,12 +5820,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_9D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_9D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_9D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_9D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_9D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_9D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5882,12 +5882,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_10D_INPUT) 
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_10D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_10D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_10D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_10D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_2D_10D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -5954,12 +5954,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_3D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_3D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_3D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_3D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_3D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_3D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6016,12 +6016,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_4D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_4D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_4D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_4D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_4D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_4D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6078,12 +6078,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_5D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_5D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_5D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_5D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_5D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_5D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6140,12 +6140,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_6D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_6D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_6D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_6D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_6D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_6D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6202,12 +6202,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_7D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_7D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_7D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_7D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_7D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_7D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6264,12 +6264,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_8D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_8D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_8D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_8D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_8D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_8D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6326,12 +6326,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_9D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_9D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_9D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_9D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_9D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_9D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6388,12 +6388,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_10D_INPUT) 
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_10D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_10D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_10D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_10D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_3D_10D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6460,12 +6460,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_4D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_4D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_4D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_4D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_4D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_4D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6522,12 +6522,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_5D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_5D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_5D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_5D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_5D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_5D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6584,12 +6584,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_6D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_6D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_6D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_6D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_6D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_6D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6646,12 +6646,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_7D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_7D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_7D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_7D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_7D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_7D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6708,12 +6708,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_8D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_8D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_8D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_8D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_8D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_8D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6770,12 +6770,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_9D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_9D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_9D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_9D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_9D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_9D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6832,12 +6832,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_10D_INPUT) 
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_10D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_10D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_10D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_10D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_4D_10D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6904,12 +6904,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_5D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_5D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_5D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_5D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_5D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_5D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -6966,12 +6966,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_6D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_6D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_6D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_6D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_6D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_6D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7028,12 +7028,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_7D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_7D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_7D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_7D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_7D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_7D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7090,12 +7090,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_8D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_8D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_8D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_8D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_8D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_8D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7152,12 +7152,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_9D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_9D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_9D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_9D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_9D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_9D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7214,12 +7214,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_10D_INPUT) 
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_10D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_10D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_10D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_10D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_5D_10D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7286,12 +7286,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_6D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_6D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_6D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_6D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_6D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_6D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7348,12 +7348,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_7D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_7D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_7D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_7D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_7D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_7D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7410,12 +7410,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_8D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_8D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_8D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_8D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_8D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_8D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7472,12 +7472,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_9D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_9D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_9D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_9D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_9D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_9D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7534,12 +7534,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_10D_INPUT) 
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_10D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_10D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_10D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_10D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_6D_10D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7606,12 +7606,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_7D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_7D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_7D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_7D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_7D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_7D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7668,12 +7668,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_8D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_8D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_8D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_8D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_8D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_8D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7730,12 +7730,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_9D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_9D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_9D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_9D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_9D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_9D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7792,12 +7792,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_10D_INPUT) 
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_10D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_10D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_10D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_10D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_7D_10D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7864,12 +7864,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_8D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_8D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_8D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_8D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_8D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_8D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7926,12 +7926,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_9D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_9D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_9D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_9D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_9D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_9D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -7988,12 +7988,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_10D_INPUT) 
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_10D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_10D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_10D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_10D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_8D_10D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -8060,12 +8060,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_9D_9D_INPUT) {
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_9D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_9D_9D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_9D_9D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_9D_9D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_9D_9D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_9D_9D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -8122,12 +8122,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_9D_10D_INPUT) 
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_9D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_9D_10D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_9D_10D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_9D_10D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_9D_10D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_9D_10D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -8194,12 +8194,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_10D_10D_INPUT)
 if ($_Application_Module_Member_Lightning_Calculate_POST_ADDITION_10D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_ADDITION_10D_10D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_10D_10D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_10D_10D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_10D_10D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_ADDITION_10D_10D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -8282,12 +8282,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_1D_1D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_1D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_1D_1D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_1D_1D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_1D_1D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_1D_1D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_1D_1D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -8354,12 +8354,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_2D_2D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_2D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_2D_2D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_2D_2D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_2D_2D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_2D_2D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_2D_2D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -8416,12 +8416,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_2D_1D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_2D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_2D_1D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_2D_1D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_2D_1D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_2D_1D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_2D_1D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -8488,12 +8488,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_1D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_1D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_1D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_1D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_1D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_1D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -8550,12 +8550,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_2D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_2D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_2D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_2D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_2D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_2D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -8612,12 +8612,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_3D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_3D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_3D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_3D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_3D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_3D_3D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -8684,12 +8684,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_1D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_1D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_1D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_1D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_1D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_1D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -8746,12 +8746,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_2D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_2D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_2D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_2D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_2D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_2D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -8808,12 +8808,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_3D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_3D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_3D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_3D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_3D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_3D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -8870,12 +8870,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_4D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_4D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_4D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_4D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_4D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_4D_4D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -8942,12 +8942,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_1D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_1D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_1D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_1D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_1D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_1D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9004,12 +9004,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_2D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_2D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_2D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_2D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_2D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_2D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9066,12 +9066,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_3D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_3D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_3D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_3D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_3D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_3D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9128,12 +9128,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_4D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_4D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_4D_VALUE_1 + $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_4D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_4D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_4D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9190,12 +9190,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_5D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_5D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_5D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_5D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_5D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_5D_5D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9262,12 +9262,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_1D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_1D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_1D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_1D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_1D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_1D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9324,12 +9324,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_2D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_2D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_2D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_2D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_2D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_2D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9386,12 +9386,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_3D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_3D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_3D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_3D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_3D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_3D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9448,12 +9448,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_4D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_4D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_4D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_4D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_4D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_4D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9510,12 +9510,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_5D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_5D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_5D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_5D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_5D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_5D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9572,12 +9572,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_6D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_6D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_6D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_6D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_6D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_6D_6D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9644,12 +9644,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_1D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_1D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_1D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_1D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_1D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_1D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9706,12 +9706,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_2D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_2D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_2D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_2D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_2D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_2D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9768,12 +9768,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_3D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_3D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_3D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_3D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_3D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_3D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9830,12 +9830,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_4D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_4D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_4D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_4D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_4D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_4D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9892,12 +9892,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_5D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_5D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_5D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_5D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_5D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_5D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -9954,12 +9954,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_6D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_6D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_6D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_6D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_6D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_6D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10016,12 +10016,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_7D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_7D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_7D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_7D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_7D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_7D_7D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10088,12 +10088,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_1D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_1D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_1D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_1D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_1D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_1D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10150,12 +10150,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_2D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_2D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_2D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_2D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_2D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_2D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10212,12 +10212,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_3D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_3D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_3D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_3D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_3D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_3D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10274,12 +10274,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_4D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_4D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_4D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_4D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_4D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_4D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10336,12 +10336,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_5D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_5D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_5D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_5D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_5D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_5D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10398,12 +10398,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_6D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_6D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_6D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_6D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_6D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_6D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10460,12 +10460,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_7D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_7D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_7D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_7D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_7D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_7D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10522,12 +10522,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_8D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_8D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_8D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_8D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_8D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_8D_8D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10594,12 +10594,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_1D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_1D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_1D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_1D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_1D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_1D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10656,12 +10656,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_2D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_2D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_2D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_2D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_2D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_2D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10718,12 +10718,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_3D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_3D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_3D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_3D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_3D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_3D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10780,12 +10780,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_4D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_4D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_4D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_4D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_4D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_4D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10842,12 +10842,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_5D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_5D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_5D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_5D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_5D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_5D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10904,12 +10904,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_6D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_6D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_6D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_6D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_6D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_6D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -10966,12 +10966,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_7D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_7D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_7D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_7D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_7D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_7D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -11028,12 +11028,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_8D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_8D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_8D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_8D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_8D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_8D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -11090,12 +11090,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_9D_INPUT
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_9D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_9D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_9D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_9D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_9D_9D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -11162,12 +11162,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_1D_INPU
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_1D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_1D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_1D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_1D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_1D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -11224,12 +11224,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_2D_INPU
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_2D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_2D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_2D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_2D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_2D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -11286,12 +11286,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_3D_INPU
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_3D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_3D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_3D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_3D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_3D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -11348,12 +11348,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_4D_INPU
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_4D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_4D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_4D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_4D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_4D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -11410,12 +11410,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_5D_INPU
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_5D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_5D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_5D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_5D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_5D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -11472,12 +11472,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_6D_INPU
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_6D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_6D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_6D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_6D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_6D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -11534,12 +11534,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_7D_INPU
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_7D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_7D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_7D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_7D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_7D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -11596,12 +11596,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_8D_INPU
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_8D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_8D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_8D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_8D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_8D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -11658,12 +11658,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_9D_INPU
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_9D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_9D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_9D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_9D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_9D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -11720,12 +11720,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_10D_INP
 if ($_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_10D_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_10D_VALUE_1 - $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_10D_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_10D_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_10D_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -11794,12 +11794,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_1BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_1BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_1BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_1BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_1BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_1BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_1BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -11844,12 +11844,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_2BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_2BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_2BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_2BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_2BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_2BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_2BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -11894,12 +11894,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_3BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_3BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_3BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_3BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_3BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_3BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_3BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -11944,12 +11944,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_4BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_4BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_4BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_4BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_4BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_4BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_4BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -11994,12 +11994,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_5BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_5BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_5BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_5BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_5BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_5BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_5BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12044,12 +12044,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_6BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_6BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_6BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_6BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_6BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_6BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_6BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12094,12 +12094,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_7BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_7BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_7BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_7BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_7BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_7BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_7BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12144,12 +12144,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_8BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_8BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_8BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_8BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_8BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_8BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_8BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12194,12 +12194,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_9BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_9BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_9BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_9BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_9BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_9BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_9BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12244,12 +12244,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_10B
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_10BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_10BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_10BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_10BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_10BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1BNR_10BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12294,12 +12294,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_2BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_2BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_2BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_2BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_2BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_2BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_2BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12344,12 +12344,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_3BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_3BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_3BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_3BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_3BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_3BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_3BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12394,12 +12394,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_4BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_4BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_4BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_4BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_4BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_4BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_4BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12444,12 +12444,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_5BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_5BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_5BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_5BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_5BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_5BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_5BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12494,12 +12494,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_6BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_6BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_6BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_6BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_6BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_6BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_6BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12544,12 +12544,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_7BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_7BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_7BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_7BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_7BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_7BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_7BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12594,12 +12594,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_8BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_8BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_8BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_8BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_8BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_8BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_8BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12644,12 +12644,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_9BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_9BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_9BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_9BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_9BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_9BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_9BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12694,12 +12694,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_10B
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_10BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_10BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_10BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_10BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_10BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2BNR_10BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12744,12 +12744,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_3BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_3BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_3BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_3BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_3BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_3BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_3BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12794,12 +12794,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_4BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_4BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_4BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_4BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_4BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_4BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_4BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12844,12 +12844,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_5BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_5BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_5BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_5BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_5BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_5BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_5BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12894,12 +12894,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_6BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_6BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_6BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_6BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_6BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_6BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_6BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12944,12 +12944,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_7BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_7BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_7BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_7BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_7BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_7BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_7BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -12994,12 +12994,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_8BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_8BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_8BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_8BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_8BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_8BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_8BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13044,12 +13044,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_9BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_9BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_9BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_9BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_9BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_9BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_9BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13094,12 +13094,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_10B
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_10BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_10BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_10BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_10BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_10BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3BNR_10BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13144,12 +13144,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_4BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_4BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_4BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_4BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_4BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_4BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_4BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13194,12 +13194,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_5BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_5BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_5BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_5BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_5BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_5BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_5BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13244,12 +13244,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_6BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_6BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_6BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_6BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_6BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_6BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_6BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13294,12 +13294,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_7BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_7BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_7BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_7BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_7BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_7BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_7BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13344,12 +13344,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_8BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_8BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_8BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_8BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_8BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_8BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_8BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13394,12 +13394,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_9BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_9BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_9BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_9BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_9BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_9BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_9BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13444,12 +13444,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_10B
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_10BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_10BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_10BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_10BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_10BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4BNR_10BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13494,12 +13494,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_5BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_5BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_5BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_5BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_5BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_5BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_5BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13544,12 +13544,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_6BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_6BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_6BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_6BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_6BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_6BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_6BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13594,12 +13594,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_7BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_7BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_7BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_7BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_7BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_7BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_7BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13644,12 +13644,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_8BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_8BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_8BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_8BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_8BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_8BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_8BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13694,12 +13694,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_9BN
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_9BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_9BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_9BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_9BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_9BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_9BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13744,12 +13744,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_10B
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_10BNR_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_10BNR_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_10BNR_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_10BNR_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_10BNR_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5BNR_10BNR_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13804,12 +13804,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_1
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_1PLACE_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_1PLACE_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_1PLACE_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_1PLACE_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_1PLACE_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_1PLACE_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13854,12 +13854,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_2
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_2PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_2PLACES_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_2PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_2PLACES_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_2PLACES_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_2PLACES_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13904,12 +13904,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_3
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_3PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_3PLACES_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_3PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_3PLACES_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_3PLACES_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_3PLACES_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -13954,12 +13954,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_4
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_4PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_4PLACES_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_4PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_4PLACES_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_4PLACES_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_4PLACES_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -14004,12 +14004,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_5
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_5PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_5PLACES_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_5PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_5PLACES_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_5PLACES_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_1PLACE_5PLACES_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -14054,12 +14054,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_2PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_2PLACES_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_2PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_2PLACES_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_2PLACES_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_2PLACES_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -14104,12 +14104,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_3PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_3PLACES_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_3PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_3PLACES_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_3PLACES_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_3PLACES_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -14154,12 +14154,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_4PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_4PLACES_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_4PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_4PLACES_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_4PLACES_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_4PLACES_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -14204,12 +14204,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_5PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_5PLACES_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_5PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_5PLACES_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_5PLACES_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_2PLACES_5PLACES_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -14254,12 +14254,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_3PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_3PLACES_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_3PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_3PLACES_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_3PLACES_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_3PLACES_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -14304,12 +14304,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_4PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_4PLACES_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_4PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_4PLACES_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_4PLACES_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_4PLACES_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -14354,12 +14354,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_5PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_5PLACES_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_5PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_5PLACES_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_5PLACES_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_3PLACES_5PLACES_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -14404,12 +14404,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4PLACES_
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4PLACES_4PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4PLACES_4PLACES_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4PLACES_4PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4PLACES_4PLACES_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4PLACES_4PLACES_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4PLACES_4PLACES_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -14454,12 +14454,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4PLACES_
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4PLACES_5PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4PLACES_5PLACES_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4PLACES_5PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4PLACES_5PLACES_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4PLACES_5PLACES_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_4PLACES_5PLACES_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -14504,12 +14504,12 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5PLACES_
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5PLACES_5PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5PLACES_5PLACES_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5PLACES_5PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5PLACES_5PLACES_VALUE_2<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5PLACES_5PLACES_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5PLACES_5PLACES_ANSWER<BR>
 This Answer Is Correct !
 ");
@@ -14575,12 +14575,12 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2EXPONENT_
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2EXPONENT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2EXPONENT_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2EXPONENT_GENERATED ^ 2 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2EXPONENT_INPUT<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2EXPONENT_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2EXPONENT_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -14624,12 +14624,12 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_GENERATED ^ 3 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_INPUT<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -14673,12 +14673,12 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4EXPONENT_
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4EXPONENT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4EXPONENT_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4EXPONENT_GENERATED ^ 4 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4EXPONENT_INPUT<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4EXPONENT_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4EXPONENT_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -14743,12 +14743,12 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_INPU
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_COMPUTATION_HIDDEN √2 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_INPUT<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -14791,12 +14791,12 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_INPU
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_COMPUTATION_HIDDEN √3 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_INPUT<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -14839,12 +14839,12 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_INPU
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_COMPUTATION_HIDDEN √4 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER = <BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -14888,12 +14888,12 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_INPU
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_COMPUTATION_HIDDEN √5 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER = <BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -14937,12 +14937,12 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_INPU
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_COMPUTATION_HIDDEN √6 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER = <BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -14986,12 +14986,12 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_INPU
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_COMPUTATION_HIDDEN √7 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER = <BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -15035,12 +15035,12 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_INPU
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_COMPUTATION_HIDDEN √8 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER = <BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -15084,12 +15084,12 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_INPU
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_COMPUTATION_HIDDEN √9 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER = <BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -15133,12 +15133,12 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_INP
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_COMPUTATION_HIDDEN √10 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER = <BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_INPUT<BR>
 This Answer Is Correct !
 ");
@@ -15181,12 +15181,12 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_3PLACES_2ROOT_INPU
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_3PLACES_2ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_3PLACES_2ROOT_ANSWER") {
 
 echo ("
-Calculator Message<BR>
-------------------------------------------------------------------------<BR>
+Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_3PLACES_2ROOT_COMPUTATION √3 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_INPUT<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_3PLACES_2ROOT_ANSWER<BR>
-------------------------------------------------------------------------<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_3PLACES_2ROOT_INPUT<BR>
 This Answer Is Correct !
 ");
