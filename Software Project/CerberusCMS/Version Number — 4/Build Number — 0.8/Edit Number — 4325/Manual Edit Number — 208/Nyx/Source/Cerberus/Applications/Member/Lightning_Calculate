@@ -14581,13 +14581,62 @@ This Answer Is Correct !
 
 echo ("Incorrect!");
 
-} // [ + ] IF: Lightning Calculate :: Exercise :: Exponents :: 2 Places ^ 2 Root Form Variable Input Is Correct Answer
-
-} // [ + ] IF: Lightning Calculate :: Exercise :: Exponents :: 2 Places ^ 2 Root Form Variables Have Executed
+} // [ + ] IF: Lightning Calculate :: Exercise :: Exponents :: 2 Places ^ 2 Exponent Form Variable Input Is Correct Answer
 
 } // [ + ] IF: Lightning Calculate :: Exercise :: Exponents :: 2 Places ^ 2 Exponent Form Variables Have Executed
 
-} // [ + ] IF: Internal Application :: Exercise :: Exponents :: 2 Places ^ 2 Exponent
+} // [ + ] IF: Lightning Calculate :: Exercise :: Exponents :: 2 Places ^ 2 Exponent Form Variables Have Executed
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Display :: Lightning Calculate :: Exercises :: Exponents
+ + 2 Places ^ 3 Exponent
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "2Places_3Exponent") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Exponents&Type=2Places_3Exponent");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;2Places_3Exponent\" METHOD=\"post\">
+													What is $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_GENERATOR &#178; ( $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_GENERATOR ^ 3 ) ?<BR>
+													You have up to 60 Seconds...<BR>
+														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_3Exponent_Input\" MAXLENGTH=\"5\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_3Exponent_Generated\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_GENERATOR\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_3Exponent_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_ANSWER") {
+
+echo ("
+Calculator Message<BR>
+------------------------------------------------------------------------<BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_GENERATED ^ 3 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_INPUT<BR>
+------------------------------------------------------------------------<BR>
+= $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_ANSWER<BR>
+------------------------------------------------------------------------<BR>
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_INPUT<BR>
+This Answer Is Correct !
+");
+
+} else {
+
+echo ("Incorrect!");
+
+} // [ + ] IF: Lightning Calculate :: Exercise :: Exponents :: 2 Places ^ 3 Exponent Form Variable Input Is Correct Answer
+
+} // [ + ] IF: Lightning Calculate :: Exercise :: Exponents :: 2 Places ^ 3 Exponent Form Variables Have Executed
+
+} // [ + ] IF: Lightning Calculate :: Exercise :: Exponents :: 2 Places ^ 3 Exponent Form Variables Have Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Exponents :: Is: Activated
 
 /*
  ============================================================================================================
