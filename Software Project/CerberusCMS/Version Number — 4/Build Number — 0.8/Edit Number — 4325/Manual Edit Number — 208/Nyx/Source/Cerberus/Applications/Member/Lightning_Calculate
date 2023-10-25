@@ -14623,7 +14623,7 @@ header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculat
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_2Root\" METHOD=\"post\">
-													What is $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_COMPUTATION √2 ?<BR>
+													What Is The x2 Places Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_COMPUTATION √2 ?<BR>
 													You have up to 60 Seconds...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_2Root_Input\" MAXLENGTH=\"5\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_2Root_Answer\" MAXLENGTH=\"3\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_GENERATOR\">
@@ -14671,7 +14671,7 @@ header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculat
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_3Root\" METHOD=\"post\">
-													What is $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_COMPUTATION √3 ?<BR>
+													What Is The x2 Places Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_COMPUTATION √3 ?<BR>
 													You have up to 60 Seconds...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_3Root_Input\" MAXLENGTH=\"5\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_3Root_Answer\" MAXLENGTH=\"3\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_GENERATOR\">
@@ -14719,7 +14719,7 @@ header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculat
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_4Root\" METHOD=\"post\">
-													What is $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_COMPUTATION √4 ?<BR>
+													What Is The x2 Places Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_COMPUTATION √4 ?<BR>
 													You have up to 60 Seconds...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_4Root_Input\" MAXLENGTH=\"5\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_4Root_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_GENERATOR\">
@@ -14767,7 +14767,7 @@ header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculat
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_5Root\" METHOD=\"post\">
-													What is $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_COMPUTATION √5 ?<BR>
+													What Is The x2 Places Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_COMPUTATION √5 ?<BR>
 													You have up to 60 Seconds...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Root_Input\" MAXLENGTH=\"5\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Root_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_GENERATOR\">
@@ -14805,6 +14805,56 @@ echo ("Incorrect!");
 /*
  ============================================================================================================
  +
+ + IF: Internal Application: Display :: Lightning Calculate :: Exercises :: Exponent Roots :: 2 Places ^ 6 Exponent Root
+ +
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "2Places_5Root") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=ExponentRoots&Type=2Places_5Root");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_5Root\" METHOD=\"post\">
+													What Is The x2 Places Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_COMPUTATION √6 ?<BR>
+													You have up to 60 Seconds...<BR>
+														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Root_Input\" MAXLENGTH=\"5\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Root_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_GENERATOR\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Root_Computation\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER") {
+
+echo ("
+Calculator Message<BR>
+------------------------------------------------------------------------<BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_COMPUTATION_HIDDEN √6 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER = <BR>
+------------------------------------------------------------------------<BR>
+= $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER<BR>
+------------------------------------------------------------------------<BR>
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_INPUT<BR>
+This Answer Is Correct !
+");
+
+} else {
+
+echo ("Incorrect!");
+
+} // [ + ] IF: Lightning Calculate :: Exercise :: Exponent Roots :: 2 Places Root 6 Form Variable Input Is Correct Answer
+
+} // [ + ] IF: Lightning Calculate :: Exercise :: Exponent Roots :: 2 Places Root 6 Form Variables Have Executed
+
+} // [ + ] IF: Lightning Calculate :: Exercise :: Exponents :: 2 Places ^ 6 Exponent Form Variables Have Executed
+
+
+/*
+ ============================================================================================================
+ +
  + IF: Internal Application: Display :: Lightning Calculate :: Exercises :: Exponent Roots :: 3 Places ^ 2 Exponent Root
  +
  ============================================================================================================
@@ -14816,7 +14866,7 @@ header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculat
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;3Places_2Root\" METHOD=\"post\">
-													What is $_Application_Module_Member_Lightning_Calculate_EXPONENTS_3PLACES_2ROOT_COMPUTATION √2 ?<BR>
+													What ISs $_Application_Module_Member_Lightning_Calculate_EXPONENTS_3PLACES_2ROOT_COMPUTATION √2 ?<BR>
 													You have up to 60 Seconds...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_3Places_2Root_Input\" MAXLENGTH=\"5\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_3Places_2Root_Answer\" MAXLENGTH=\"3\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_3PLACES_2ROOT_GENERATOR\">
