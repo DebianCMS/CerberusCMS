@@ -14851,6 +14851,55 @@ echo ("Incorrect!");
 
 } // [ + ] IF: Lightning Calculate :: Exercise :: Exponents :: 2 Places ^ 6 Exponent Form Variables Have Executed
 
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application: Display :: Lightning Calculate :: Exercises :: Exponent Roots :: 2 Places ^ 7 Exponent Root
+ +
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "2Places_7Root") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=ExponentRoots&Type=2Places_7Root");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_7Root\" METHOD=\"post\">
+													What Is The x2 Places Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_COMPUTATION √7 ?<BR>
+													You have up to 60 Seconds...<BR>
+														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_7Root_Input\" MAXLENGTH=\"5\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_7Root_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_GENERATOR\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_7Root_Computation\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER") {
+
+echo ("
+Calculator Message<BR>
+------------------------------------------------------------------------<BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_COMPUTATION_HIDDEN √7 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER = <BR>
+------------------------------------------------------------------------<BR>
+= $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER<BR>
+------------------------------------------------------------------------<BR>
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_INPUT<BR>
+This Answer Is Correct !
+");
+
+} else {
+
+echo ("Incorrect!");
+
+} // [ + ] IF: Lightning Calculate :: Exercise :: Exponent Roots :: 2 Places Root 7 Form Variable Input Is Correct Answer
+
+} // [ + ] IF: Lightning Calculate :: Exercise :: Exponent Roots :: 2 Places Root 7 Form Variables Have Executed
+
+} // [ + ] IF: Lightning Calculate :: Exercise :: Exponents :: 2 Places ^ 7 Exponent Form Variables Have Executed
+
 
 /*
  ============================================================================================================
