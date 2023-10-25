@@ -14639,7 +14639,7 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_INPU
 echo ("
 Calculator Message<BR>
 ------------------------------------------------------------------------<BR>
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_COMPUTATION √2 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_INPUT<BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_COMPUTATION_HIDDEN √2 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_INPUT<BR>
 ------------------------------------------------------------------------<BR>
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_ANSWER<BR>
 ------------------------------------------------------------------------<BR>
@@ -14687,7 +14687,7 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_INPU
 echo ("
 Calculator Message<BR>
 ------------------------------------------------------------------------<BR>
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_COMPUTATION √3 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_INPUT<BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_COMPUTATION_HIDDEN √3 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_INPUT<BR>
 ------------------------------------------------------------------------<BR>
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_ANSWER<BR>
 ------------------------------------------------------------------------<BR>
@@ -14735,7 +14735,7 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_INPU
 echo ("
 Calculator Message<BR>
 ------------------------------------------------------------------------<BR>
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_COMPUTATION √4 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER = <BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_COMPUTATION_HIDDEN √4 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER = <BR>
 ------------------------------------------------------------------------<BR>
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER<BR>
 ------------------------------------------------------------------------<BR>
