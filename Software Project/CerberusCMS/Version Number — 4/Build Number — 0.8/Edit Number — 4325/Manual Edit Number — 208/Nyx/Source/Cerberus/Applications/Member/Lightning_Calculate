@@ -14812,10 +14812,10 @@ echo ("Incorrect!");
 
 if ($_GET['Type'] == "2Places_6Root") {
 
-header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=ExponentRoots&Type=2Places_5Root");
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=ExponentRoots&Type=2Places_6Root");
 
 echo ("
-											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_5Root\" METHOD=\"post\">
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_6Root\" METHOD=\"post\">
 													What Is The x2 Places Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_COMPUTATION √6 ?<BR>
 													You have up to 60 Seconds...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Root_Input\" MAXLENGTH=\"5\"><BR>
