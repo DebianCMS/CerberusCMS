@@ -14810,7 +14810,7 @@ echo ("Incorrect!");
  ============================================================================================================
 */
 
-if ($_GET['Type'] == "2Places_5Root") {
+if ($_GET['Type'] == "2Places_6Root") {
 
 header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=ExponentRoots&Type=2Places_5Root");
 
