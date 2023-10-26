@@ -86,7 +86,7 @@ if ($_GET["Display"] == "Options") {
 echo ("
 About<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;AboutTheAuthor\" TITLE=\":: Open & Display :: The Internal Application: About The Author ::\">About The Author</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;ApplicationDetails\" TITLE=\":: Open & Display :: This Application Module Details ::\">This Application Module Details</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;ApplicationDetails\" TITLE=\":: Open & Display :: This Application Module Details ::\">This Application Module Details</A><BR><BR>
 
 History<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;History\" TITLE=\":: Open & Display :: The Internal Application: Introduction To: The History of Location-Memory and The Arts of Memory ::\">Introduction To: The History of Location-Memory and The Arts of Memory</A><BR>
@@ -107,12 +107,12 @@ Training<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_Addition\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Percentages</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_Addition\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Modulus</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_Addition\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Exponents</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_Addition\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Exponent Roots</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_Addition\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Exponent Roots</A><BR><BR>
 
 <B>Training :: Mixed Arithmetic</B><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_MixedArithmetic3\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Mixed Arithmetic :: 3 Factors</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_MixedArithmetic4\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Mixed Arithmetic :: 4 Factors</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_MixedArithmetic5\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Mixed Arithmetic :: 5 Factors</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_MixedArithmetic5\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Mixed Arithmetic :: 5 Factors</A><BR><BR>
 
 <B>Training :: Number Theory</B><BR><BR>
 
