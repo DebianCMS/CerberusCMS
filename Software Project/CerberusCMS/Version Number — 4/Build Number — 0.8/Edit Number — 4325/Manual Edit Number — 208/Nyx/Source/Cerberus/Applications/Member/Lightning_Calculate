@@ -84,12 +84,61 @@
 if ($_GET["Display"] == "Options") {
 
 echo ("
+About<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;AboutTheAuthor\" TITLE=\":: Open & Display :: The Internal Application: About The Author ::\">About The Author</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;ApplicationDetails\" TITLE=\":: Open & Display :: This Application Module Details ::\">This Application Module Details</A><BR>
+
+History<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;History\" TITLE=\":: Open & Display :: The Internal Application: Introduction To: The History of Location-Memory and The Arts of Memory ::\">Introduction To: The History of Location-Memory and The Arts of Memory</A><BR>
- <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;MethodofLoci\" TITLE=\":: Open & Display :: The Internal Application: Introduction To: The Arts of Memory - The First Method of Loci ::\">Introduction To: The Arts of Memory: The First Method of Loci</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;TrainingCourse\" TITLE=\":: Open & Display :: The Internal Application: Physical and Mental Training Course Instructions ::\">Physical and Mental Training Course Instructions</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;MethodofLoci\" TITLE=\":: Open & Display :: The Internal Application: Introduction To: The Arts of Memory - The First Method of Loci ::\">Introduction To: The Arts of Memory: The First Method of Loci</A><BR><BR>
+
+Training<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>Training :: Instructions</B><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;TrainingCourse\" TITLE=\":: Open & Display :: The Internal Application: Physical and Mental Training Course Instructions ::\">Physical and Mental Training Course Instructions</A><BR><BR>
+
+<B>Training :: Exercises</B><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises</A><BR><BR>
+
+<B>Training :: Arithmetic</B><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_Addition\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Addition</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_Addition\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Subtraction</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_Addition\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Division</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_Addition\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Multiplication</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_Addition\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Percentages</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_Addition\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Modulus</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_Addition\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Exponents</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_Addition\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Exponent Roots</A><BR>
+
+<B>Training :: Mixed Arithmetic</B><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_MixedArithmetic3\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Mixed Arithmetic :: 3 Factors</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_MixedArithmetic4\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Mixed Arithmetic :: 4 Factors</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises_MixedArithmetic5\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises :: Mixed Arithmetic :: 5 Factors</A><BR>
+
+<B>Training :: Number Theory</B><BR><BR>
+
+<B>Training :: Geometry</B><BR><BR>
+
+<B>Training :: Extra Dimensional Geometry</B><BR><BR>
+
+<B>Training :: Algebra</B><BR><BR>
+
+<B>Training :: Linear Algebra</B><BR><BR>
+
+<B>Training :: Calculus</B><BR><BR>
+
+<B>Training :: Calendars</B><BR><BR>
+
+<B>Training :: Navigation</B><BR><BR>
+
+<B>Training :: Anthropology</B><BR><BR>
+
+<B>Training :: Dot Counting</B><BR><BR>
+
+<B>Training :: Faces, Names and Numbers</B><BR><BR>
+
+<B>Training :: Random Number Strings</B><BR><BR>
+
+<B>Training :: Playing Cards Counting</B><BR><BR>
 ");
 
 } // [ + ] IF: Internal Application: Display: Options :: Is: Activated
@@ -805,8 +854,6 @@ Total: 6 Months OR 183 Days OR 26.14285714285714 Weeks OR 4,392 Hours OR 263,520
 * Nose must touch the ground and back must be completely flat while executing each pushup.<BR>
 * Pushups must be done in different degrees and angles after 2 months in order to achieve muscle gains in chest, arms and abdomin.<BR>
 * Combine Pushups with Leg Scizzors by executing x20 Pushups and then immediately flip over to execute 60 seconds to 300 seconds of Leg Scizzors.<BR><BR>
-
-This Application Module will be under development until November 1st of 2023.<BR><BR>
 ");
 
 } // [ + ] IF: Internal Application: Display: Training Course :: Is: Activated
@@ -823,8 +870,9 @@ if ($_GET["Display"] == "Exercises") {
 
 echo ("
 <B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Addition and Summation</B><HR>
-Programming For This Section Completed: 07-22-2023<BR><BR>
 Example: 1234567891 + 1234567891<BR><BR>
+
+Section Notes: Repitition should be done in 30 minute sessions with 10 minute breaks in between the 30 minute sessions.<BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: First Addend With One Digit OR One Place</B><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Addition&amp;Type&#61;1D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Addition :: Exercise :: 1 Places + 1 Places</A><BR>
@@ -902,9 +950,9 @@ Example: 1234567891 + 1234567891<BR><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Addition&amp;Type&#61;10D_10D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Addition :: Exercise :: 10 Places + 10 Places</A><BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Subtraction and Differences</B><HR>
-Programming For This Section Completed: 08-04-2023<BR><BR>
-
 Example: 9813473376 - 934522<BR><BR>
+
+Section Notes: Repitition should be done in 30 minute sessions with 10 minute breaks in between the 30 minute sessions.<BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Minuend With One Digit OR One Place</B><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Subtraction&amp;Type&#61;1D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Differences :: Exercise :: 1 Place - 1 Place</A><BR><BR>
@@ -984,11 +1032,13 @@ Example: 9813473376 - 934522<BR><BR>
 <B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Division and Long Division</B><HR>
 Example: 9813473376 ÷ 9<BR><BR>
 
-Section Note: By mastering Mental Division of Short Division and Long Division one will also master Mental Fractions. All Fractions are simply a quick display that represent whole and decimal numbers to make the Mathematical Statements summarized or \"look clean\"<BR><BR>
+Section Note: By mastering Mental Division of Short Division and Long Division one will also master Mental Fractions. All Fractions are simply a quick display that represent whole and decimal numbers to make the Mathematical Statements summarized or \"look clean\".<BR><BR>
 
-<BIG><B>— Forward :: Short Division</B></BIG><BR><BR>
+<BIG><B>— Forward :: Short Division</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<BR><BR>
 
-<BIG><B>— Forward :: Long Division</B></BIG><BR><BR>
+<BIG><B>— Forward :: Long Division</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Divisor With One Digit OR One Place</B><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;1D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 1 Places / 1 Place</A><BR><BR>
@@ -1065,10 +1115,10 @@ Section Note: By mastering Mental Division of Short Division and Long Division o
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;10D_9D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 9 Places</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;10D_10D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 10 Places</A><BR><BR>
 
-<BIG><B>— Reverse :: Short Division</B></BIG><BR><BR>
+<BIG><B>— Reverse :: Short Division</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<BR><BR>
 
-<BIG><B>— Reverse :: Long Division</B></BIG><BR><BR>
-
+<BIG><B>— Reverse :: Long Division</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 Example: 9 ÷ 9813473376<BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Divisor With One Digit OR One Place</B><BR>
@@ -1147,7 +1197,7 @@ Example: 9 ÷ 9813473376<BR><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ReverseDivision&amp;Type&#61;10D_10D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Reverse Division :: Exercise :: 10 Places / 10 Places</A><BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Multiplication and Extraction :: Base Number Repitition</B><HR>
-Programming For This Section Completed: 08-04-2023<BR><BR>
+Section Note: Repitition should be done in 30 minute sessions with 10 minute breaks in between each 30 minute session.<BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Base Number Repitition :: Multiplicand With 1 Place</B><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Multiplication&amp;Type&#61;1BNR_1BNR&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Multiplication :: Exercise :: Base Number Repitition :: 1 Place * 1 Place</A><BR>
@@ -1200,7 +1250,7 @@ Programming For This Section Completed: 08-04-2023<BR><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Multiplication&amp;Type&#61;5BNR_10BNR&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Multiplication :: Exercise :: Base Number Repitition :: 5 Places * 10 Places</A><BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Multiplication and Extraction :: Mixed Numbers</B><HR>
-Programming For This Section Completed: 08-04-2023<BR><BR>
+Section Note: Repitition should be done in 30 minute sessions with 10 minute breaks in between each 30 minute session.<BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Multiplicand With 1 Place OR 1 Digit</B><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Multiplication&amp;Type&#61;1D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Multiplication :: Exercise :: Mixed Numbers :: 1 Place * 1 Place</A><BR>
