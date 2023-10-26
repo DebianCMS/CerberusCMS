@@ -84,6 +84,27 @@
 if ($_GET["Display"] == "Options") {
 
 echo ("
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;AboutTheAuthor\" TITLE=\":: Open & Display :: The Internal Application: About The Author ::\">About The Author</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;ApplicationDetails\" TITLE=\":: Open & Display :: This Application Module Details ::\">This Application Module Details</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;History\" TITLE=\":: Open & Display :: The Internal Application: Introduction To: The History of Location-Memory and The Arts of Memory ::\">Introduction To: The History of Location-Memory and The Arts of Memory</A><BR>
+ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;MethodofLoci\" TITLE=\":: Open & Display :: The Internal Application: Introduction To: The Arts of Memory - The First Method of Loci ::\">Introduction To: The Arts of Memory: The First Method of Loci</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;TrainingCourse\" TITLE=\":: Open & Display :: The Internal Application: Physical and Mental Training Course Instructions ::\">Physical and Mental Training Course Instructions</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Display&#61;Exercises\" TITLE=\":: Open & Display :: The Internal Application: Application Exercises ::\">Application Exercises</A><BR>
+");
+
+} // [ + ] IF: Internal Application: Display: Options :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: About The Author
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "AboutTheAuthor") {
+
+echo ("
 <BIG><B>About The Author</B></BIG><BR>
 <A HREF=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/G.C._Johnson.jpeg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Digital Picture of Lightning Mental Calculator and Mathematics Enthusiast G.C. Johnson-Edwards &copy; 2021 ::\" TARGET=\"_NEW\"><IMG SRC=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/G.C._Johnson.jpeg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Digital Picture of Lightning Mental Calculator G.C. Johnson-Edwards &copy; 2021 ::\" CLASS=\"MemberProfile\"></A></IMG>
 The Author of this Web Application, Free Mathematics Book and Training Instructions started with mental Addition Methods from Left to Right by adding the base numbers together at a young age. The author is 100% self-taught and is privately researched. The author is a proveable illegitimate Great Great Grandson of the <A HREF=\"https://en.wikipedia.org/wiki/Christian_VIII_of_Denmark#/media/File:Christianviiidenmark.jpg?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Wikipedia Article Entry :: For :: The King of Denmark and Norway, Christian VIII ::\" TARGET=\"_NEW\">King of Denmark and Norway, Christian VIII</A> - <A HREF=\"https://en.wikipedia.org/wiki/House_of_Glücksburg\" TITLE=\":: Open & Display :: The :: Wikipedia Article Entry :: For :: House of Glücksburg ::\" TARGET=\"_NEW\">Danish and Norwegian Royal House of Glücksburg</A> and <A HREF=\"https://en.wikipedia.org/wiki/House_of_Oldenburg\" TITLE=\":: Open & Display :: The :: Wikipedia Article Entry :: For :: House of Oldenburg ::\" TARGET=\"_NEW\">German Royal House of Oldenburg</A> as he shares the same Great Great Great Grandparents of <A HREF=\"https://en.wikipedia.org/wiki/Margrethe_II_of_Denmark\" TITLE=\":: Open & Display :: The :: Wikipedia Article Entry :: For :: Her Royal Highness, Her Majesty Margarethe II ::\" TARGET=\"_NEW\">Her Royal Highness, Her Majesty Margarethe II, Queen of Denmark</A>, her as well as most living European Royal Families being directly descended from <A HREF=\"https://en.wikipedia.org/wiki/Christian_IX_of_Denmark\" TITLE=\":: Open & Display :: The Wikipedia Article Entry :: For :: Christian IX, The King of Denmark ::\" TARGET=\"_NEW\">Christian IX, The King of Denmark</A>.<BR><BR>
@@ -116,7 +137,21 @@ In ~2023 I formally relinquished American Nationality and I also relinquished U.
 
 <B>My Academic Adventures</B><BR>
 Personally I have memorized ~27 Encyclopedias, The Holy Bible, Several Hundred Books, World Histories, Complete Mathematics Histories and many more things.<BR><BR>
+");
 
+} // [ + ] IF: Internal Application: Display: About The Author :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Application Details
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "ApplicationDetails") {
+
+echo ("
 <BIG><B>This Application Module</B></BIG><BR>
 This digital Application Module is meant for the <B>\"Lightning Mental Calculating\" community</B>. If you are a <B>Natural Lightning Mental Calculator</B>
 or otherwise known as a <B>Counter</B> then this Application Module can train your mind through repeating steps and procedures in a repetitive pattern. With this Application Module you
@@ -131,7 +166,21 @@ of this Application Module is good because it can be accessed freely through the
 
 <B>Digital Record Keeping</B><BR>
 If you have a Registered Member Account on this system: This Application Module will keep perfect track of your <B>Mental Computation Time</B> and your <B>Mental Computation Accuracy</B> with Statistics. This Timestampped log is viewable in the Registered Member Account logs. All of the Statistical Information is kept private.<BR><BR>
+");
 
+} // [ + ] IF: Internal Application: Display: Application Details :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: History
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "History") {
+
+echo ("
 <BIG><B>What Is: \"Lightning Calculating\" and \"Lightning Mental Calculating\" ?</B></BIG><BR>
 <A HREF=\"https://en.wikipedia.org/wiki/Mental_calculator\" TITLE=\":: Open & Display The Wikipedia Article Entry For :: Lightning Mental Calculating ::\" TARGET=\"_NEW\">Lightning Mental Calculating</A> is the art of <A HREF=\"https://en.Wikipedia.org/wiki/Mental_Computation\" TITLE=\":: Open & Display The Wikipedia Article Entry For :: Mental Computation ::\" TARGET=\"_NEW\">Mentally Computing</A> long Arithmetic and mentally computing just about
 any other kind of Mathematics at the <A HREF=\"https://en.wikipedia.org/wiki/Lightning\" TITLE=\":: Open & Display The Wikipedia Article Entry For :: Lightning\" TARGET=\"_NEW\">\"Speed of Lightning\"</A> or at least very quickly.<BR><BR>
@@ -289,7 +338,21 @@ By dissecting every part of a Mathematical Concept, Mathematical Statement, Math
 <BIG><B>Training Course</B></BIG><BR>
 The author of this digital Application Module has designed a training course for people that already possess the natural counting ability. This specific training course covers a span of 6 months of intensive mental training and internal meditation. The training course can be completed alone or with others. The author of this training system does not socially interact with anyone and the materials are completely public and completely free.
 Once after this specific training course is completed the person who has undergone the training will possess a permanent set of mental abilities and will be capable of mentally calculating and mentally computing just about anything in mathematics with perfect or near perfect accuracy. This training course is meant for 21 years and older.<BR><BR>
+");
 
+} // [ + ] IF: Internal Application: Display: History :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Introduction To: The First Method of Loci
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "MethodofLoci") {
+
+echo ("
 <BIG><B>Example of the First Method of Loci</B></BIG><BR>
 Mastering the First Methodus of Loci also known as The Method of Loci or The Method of Location-Memory would be practicing creating a mental estate or castle where inside of the castle are unlimited and endless hallways
 where each hallway is numbered from 0 to &infin; and where inside of each hallway there are 10 rooms that are numbered from 0 to 9. Inside of each room there are four solid walls where inside of each room are objects or things in 10 or more locations in a specific pattern from corner to corner in the room. Placing the
@@ -475,7 +538,21 @@ fought in the battles and wars for that U.S. State. If the information is neatly
 
 <BIG><B>Mastering The Methods of Loci</B></BIG><BR>
 The Methods of Loci are only the beginning of something called the \"Arts of Memory\". Mastering all of the Methods of Loci combined with newer modern memorization systems takes several years, but the first one is good enough to memorize an entire encyclopedia as well as the name and face of every human in a metropolis city. The First Method is full of riddled information but as it becomes mastered and automated by exercise a semi-photographic memory is achieved. The next set of Methodus' achieve a photographic memory capability.<BR><BR>
+");
 
+} // [ + ] IF: Internal Application: Display: Method of Loci :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Training Course
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "TrainingCourse") {
+
+echo ("
 <BIG><B>Recommended Diet For Physical and Mental Training</B></BIG><BR><BR>
 
 <B>Achieving Mental Clarity</B><BR>
@@ -731,6 +808,18 @@ Total: 6 Months OR 183 Days OR 26.14285714285714 Weeks OR 4,392 Hours OR 263,520
 
 This Application Module will be under development until November 1st of 2023.<BR><BR>
 ");
+
+} // [ + ] IF: Internal Application: Display: Training Course :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Exercises
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "Exercises") {
 
 echo ("
 <B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Addition and Summation</B><HR>
@@ -1520,7 +1609,7 @@ Programming For This Section Completed: 08-04-2023<BR><BR>
 * 416 Card Stacked Deck<BR>
 ");
 
-} // [ + ] IF: Internal Application :: Display: Options Is: Activated
+} // [ + ] IF: Internal Application: Display: Exercises :: Is: Activated
 
 /*
  ============================================================================================================
