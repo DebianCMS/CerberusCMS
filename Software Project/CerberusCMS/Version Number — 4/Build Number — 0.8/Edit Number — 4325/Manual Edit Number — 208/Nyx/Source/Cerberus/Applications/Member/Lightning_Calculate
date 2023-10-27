@@ -14918,7 +14918,7 @@ header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculat
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_2Root\" METHOD=\"post\">
-													What Is: The x2 Digit / x2 Places 2nd Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_COMPUTATION √2 ?<BR>
+													What Is The x2 Digits / x2 Places 2nd Root of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_COMPUTATION √2 ?<BR>
 													You Have Up To 60 Seconds To Answer...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_2Root_Input\" MAXLENGTH=\"5\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_2Root_Answer\" MAXLENGTH=\"3\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_GENERATOR\">
@@ -14935,7 +14935,7 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_INPU
 echo ("
 Lightning Calculator Message:
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_PRODUCT √2 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_ANSWER = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_PRODUCT<BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_PRODUCT √2 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_INPUT Because: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_ANSWER = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_PRODUCT<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_ANSWER<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
@@ -14967,7 +14967,7 @@ header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculat
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_3Root\" METHOD=\"post\">
-													What Is: The x2 Digit / x2 Places 3rd Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_COMPUTATION √3 ?<BR>
+													What Is The x2 Digits / x2 Places 3rd Root of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_COMPUTATION √3 ?<BR>
 													You Have Up To 60 Seconds To Answer...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_3Root_Input\" MAXLENGTH=\"5\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_3Root_Answer\" MAXLENGTH=\"3\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3ROOT_GENERATOR\">
@@ -15016,11 +15016,12 @@ header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculat
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_4Root\" METHOD=\"post\">
-													What Is: The x2 Places Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_COMPUTATION √4 ?<BR>
+													What Is The x2 Digits / x2 Places 4th Root of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_COMPUTATION √4 ?<BR>
 													You Have Up To 60 Seconds To Answer...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_4Root_Input\" MAXLENGTH=\"5\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_4Root_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_GENERATOR\">
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_4Root_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_GENERATOR\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_4Root_Product\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
 											</FORM><BR>
@@ -15031,9 +15032,9 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_INPU
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER") {
 
 echo ("
-Lightning Calculator Message
+Lightning Calculator Message:
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_COMPUTATION_HIDDEN √4 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_COMPUTATION_HIDDEN<BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_PRODUCT √4 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_INPUT Because: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_PRODUCT<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4ROOT_ANSWER<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
@@ -15065,11 +15066,12 @@ header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculat
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_5Root\" METHOD=\"post\">
-													What Is: The x2 Places Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_COMPUTATION √5 ?<BR>
+													What Is The x2 Digits / x2 Places 5th Root of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_COMPUTATION √5 ?<BR>
 													You Have Up To 60 Seconds To Answer...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Root_Input\" MAXLENGTH=\"5\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Root_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_GENERATOR\">
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Root_Computation\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_COMPUTATION\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Root_Product\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
 											</FORM><BR>
@@ -15080,9 +15082,9 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_INPU
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER") {
 
 echo ("
-Lightning Calculator Message
+Lightning Calculator Message:
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_COMPUTATION_HIDDEN √5 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER = <BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_PRODUCT √5 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_INPUT Because: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_PRODUCT<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5ROOT_ANSWER<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
@@ -15114,11 +15116,12 @@ header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculat
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_6Root\" METHOD=\"post\">
-													What Is: The x2 Places Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_COMPUTATION √6 ?<BR>
+													What Is The x2 Digits / x2 Places 6th Root of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_COMPUTATION √6 ?<BR>
 													You Have Up To 60 Seconds To Answer...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Root_Input\" MAXLENGTH=\"5\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Root_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_GENERATOR\">
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Root_Computation\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_COMPUTATION\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Root_Product\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
 											</FORM><BR>
@@ -15129,9 +15132,9 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_INPU
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER") {
 
 echo ("
-Lightning Calculator Message
+Lightning Calculator Message:
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_COMPUTATION_HIDDEN √6 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER = <BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_PRODUCT √6 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_INPUT Because: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_PRODUCT<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6ROOT_ANSWER<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
@@ -15163,7 +15166,7 @@ header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculat
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_7Root\" METHOD=\"post\">
-													What Is: The x2 Places Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_COMPUTATION √7 ?<BR>
+													What Is The x2 Digits / x2 Places 7th Root of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_COMPUTATION √7 ?<BR>
 													You Have Up To 60 Seconds To Answer...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_7Root_Input\" MAXLENGTH=\"5\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_7Root_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_GENERATOR\">
@@ -15178,9 +15181,9 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_INPU
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER") {
 
 echo ("
-Lightning Calculator Message
+Lightning Calculator Message:
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_COMPUTATION_HIDDEN √7 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER = <BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_PRODUCT √7 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_INPUT Because: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_PRODUCT<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7ROOT_ANSWER<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
@@ -15212,11 +15215,11 @@ header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculat
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_8Root\" METHOD=\"post\">
-													What Is: The x2 Places Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_COMPUTATION √8 ?<BR>
+													What Is The x2 Digits / x2 Places 8th Root of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_COMPUTATION √8 ?<BR>
 													You Have Up To 60 Seconds To Answer...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_8Root_Input\" MAXLENGTH=\"5\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_8Root_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_GENERATOR\">
-														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_8Root_Computation\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_COMPUTATION\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_8Root_Product\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
 											</FORM><BR>
@@ -15229,7 +15232,7 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_INPU
 echo ("
 Lightning Calculator Message
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_COMPUTATION_HIDDEN √8 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER = <BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_COMPUTATION_HIDDEN √8 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_INPUT Because: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER = <BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8ROOT_ANSWER<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
@@ -15261,11 +15264,12 @@ header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculat
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_9Root\" METHOD=\"post\">
-													What Is: The x2 Places Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_COMPUTATION √9 ?<BR>
+													What Is The x2 Digits / x2 Places 9th Root of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_COMPUTATION √9 ?<BR>
 													You Have Up To 60 Seconds To Answer...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_9Root_Input\" MAXLENGTH=\"5\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_9Root_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_GENERATOR\">
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_9Root_Computation\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_COMPUTATION\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_9Root_Product\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
 											</FORM><BR>
@@ -15276,9 +15280,9 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_INPU
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER") {
 
 echo ("
-Lightning Calculator Message
+Lightning Calculator Message:
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_COMPUTATION_HIDDEN √9 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER = <BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_COMPUTATION_HIDDEN √9 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_INPUT Because: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER = <BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9ROOT_ANSWER<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
@@ -15310,11 +15314,12 @@ header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculat
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_10Root\" METHOD=\"post\">
-													What Is: The x2 Places Root of $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_COMPUTATION √10 ?<BR>
+													What Is The x2 Digits / x2 Places 10th Root of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_COMPUTATION √10 ?<BR>
 													You Have Up To 60 Seconds To Answer...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_10Root_Input\" MAXLENGTH=\"5\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_10Root_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_GENERATOR\">
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_10Root_Computation\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_COMPUTATION\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_10Root_Product\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
 											</FORM><BR>
@@ -15325,9 +15330,9 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_INP
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_INPUT == "$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER") {
 
 echo ("
-Lightning Calculator Message
+Lightning Calculator Message:
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_COMPUTATION_HIDDEN √10 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_INPUT Because $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER = <BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_COMPUTATION_HIDDEN √10 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_INPUT Because: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER = <BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10ROOT_ANSWER<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
