@@ -3039,9 +3039,9 @@ $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4EXPONENT_GENE
 
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR					= rand(10, 99);
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_COMPUTATION					= $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR;
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_INPUT					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_5EXPONENT_Input'];
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_ANSWER					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_5EXPONENT_Answer'];
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATED					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_5EXPONENT_Generated'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_INPUT					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_5Exponent_Input'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_ANSWER					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_5Exponent_Answer'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATED					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_5Exponent_Generated'];
 
 /*
  ============================================================================================================
@@ -3051,9 +3051,9 @@ $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENE
 
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATOR					= rand(10, 99);
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_COMPUTATION					= $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATOR;
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_INPUT					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_6EXPONENT_Input'];
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_ANSWER					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_6EXPONENT_Answer'];
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATED					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_6EXPONENT_Generated'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_INPUT					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_6Exponent_Input'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_ANSWER					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_6Exponent_Answer'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATED					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_6Exponent_Generated'];
 
 /*
  ============================================================================================================
@@ -3063,9 +3063,9 @@ $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENE
 
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_GENERATOR					= rand(10, 99);
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_COMPUTATION					= $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_GENERATOR;
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_INPUT					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_7EXPONENT_Input'];
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_ANSWER					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_7EXPONENT_Answer'];
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_GENERATED					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_7EXPONENT_Generated'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_INPUT					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_7Exponent_Input'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_ANSWER					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_7Exponent_Answer'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_GENERATED					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_7Exponent_Generated'];
 
 /*
  ============================================================================================================
@@ -3075,9 +3075,9 @@ $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_7EXPONENT_GENE
 
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_GENERATOR					= rand(10, 99);
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_COMPUTATION					= $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_GENERATOR;
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_INPUT					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_8EXPONENT_Input'];
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_ANSWER					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_8EXPONENT_Answer'];
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_GENERATED					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_8EXPONENT_Generated'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_INPUT					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_8Exponent_Input'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_ANSWER					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_8Exponent_Answer'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_GENERATED					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_8Exponent_Generated'];
 
 /*
  ============================================================================================================
@@ -3087,9 +3087,9 @@ $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_8EXPONENT_GENE
 
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_GENERATOR					= rand(10, 99);
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_COMPUTATION					= $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_GENERATOR;
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_INPUT					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_9EXPONENT_Input'];
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_ANSWER					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_9EXPONENT_Answer'];
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_GENERATED					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_9EXPONENT_Generated'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_INPUT					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_9Exponent_Input'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_ANSWER					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_9Exponent_Answer'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_GENERATED					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_9Exponent_Generated'];
 
 /*
  ============================================================================================================
@@ -3099,9 +3099,9 @@ $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_9EXPONENT_GENE
 
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_GENERATOR					= rand(10, 99);
 $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_COMPUTATION				= $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_GENERATOR * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_GENERATOR;
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_INPUT					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_10EXPONENT_Input'];
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_ANSWER					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_10EXPONENT_Answer'];
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_GENERATED					= $_POST['AMM_Lightning_Calculate_Exponents_2PLACES_10EXPONENT_Generated'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_INPUT					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_10Exponent_Input'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_ANSWER					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_10Exponent_Answer'];
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_10EXPONENT_GENERATED					= $_POST['AMM_Lightning_Calculate_Exponents_2Places_10Exponent_Generated'];
 
 /*
  ============================================================================================================
@@ -14898,9 +14898,9 @@ echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;2Places_5Exponent\" METHOD=\"post\">
 													What Is The 5th Exponent of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR ^ 5 ( $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR ^ 5 ) ?<BR>
 													You Have Up To 480 Seconds To Answer...<BR>
-														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2PLACES_5EXPONENT_Input\" MAXLENGTH=\"15\"><BR>
-														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2PLACES_5EXPONENT_Generated\" MAXLENGTH=\"15\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR\">
-														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2PLACES_5EXPONENT_Answer\" MAXLENGTH=\"15\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_COMPUTATION\">
+														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Exponent_Input\" MAXLENGTH=\"15\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Exponent_Generated\" MAXLENGTH=\"15\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Exponent_Answer\" MAXLENGTH=\"15\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
 											</FORM><BR>
