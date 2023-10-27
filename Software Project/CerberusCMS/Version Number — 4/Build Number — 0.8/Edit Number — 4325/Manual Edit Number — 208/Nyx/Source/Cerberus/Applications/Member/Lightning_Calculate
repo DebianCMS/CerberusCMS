@@ -14805,7 +14805,9 @@ echo ("
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_3Exponent_Answer\" MAXLENGTH=\"7\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
-											</FORM><BR>
+											</FORM><BR><BR>
+
+<IMG SRC=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Shapes/Animated/Cube.gif\" TITLE=\":: Animated Image of The Unfolding of a Cube ::\" WIDTH=\"125\" HEIGHT=\"125\"></IMG><BR><BR>
 ");
 
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_3EXPONENT_INPUT) {
@@ -14854,7 +14856,9 @@ echo ("
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_4Exponent_Answer\" MAXLENGTH=\"12\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4EXPONENT_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
-											</FORM><BR>
+											</FORM><BR><BR>
+
+<IMG SRC=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Shapes/Animated/Tesseract.gif\" TITLE=\":: Animated Image of The Unfolding of a Tesseract ::\" WIDTH=\"125\" HEIGHT=\"125\"></IMG><BR><BR>
 ");
 
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4EXPONENT_INPUT) {
@@ -14903,7 +14907,9 @@ echo ("
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Exponent_Answer\" MAXLENGTH=\"15\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
-											</FORM><BR>
+											</FORM><BR><BR>
+
+<IMG SRC=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Shapes/Animated/Penteract.gif\" TITLE=\":: Animated Image of The Rotation of a Penteract ::\" WIDTH=\"125\" HEIGHT=\"125\"></IMG><BR><BR>
 ");
 
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_INPUT) {
@@ -14952,7 +14958,9 @@ echo ("
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Exponent_Answer\" MAXLENGTH=\"20\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
-											</FORM><BR>
+											</FORM><BR><BR>
+
+<IMG SRC=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Shapes/Animated/Hexeract.gif\" TITLE=\":: Animated Image of The Rotation of a Hexeract ::\" WIDTH=\"125\" HEIGHT=\"125\"></IMG><BR><BR>
 ");
 
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_INPUT) {
