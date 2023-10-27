@@ -14693,7 +14693,7 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5PLACES_
 if ($_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5PLACES_5PLACES_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5PLACES_5PLACES_ANSWER") {
 
 echo ("
-Lightning Calculator Message
+Lightning Calculator Message:
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5PLACES_5PLACES_VALUE_1 * $_Application_Module_Member_Lightning_Calculate_POST_MULTIPLICATION_5PLACES_5PLACES_VALUE_2<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
@@ -14843,12 +14843,12 @@ echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !")
 
 if ($_GET['Type'] == "2Places_4Exponent") {
 
-header("Refresh:90; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Exponents&Type=2Places_4Exponent");
+header("Refresh:420; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Exponents&Type=2Places_4Exponent");
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;2Places_4Exponent\" METHOD=\"post\">
 													What Is The 4th Exponent of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4EXPONENT_GENERATOR ^ 4 ( $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4EXPONENT_GENERATOR ^ 4 ) ?<BR>
-													You Have Up To 90 Seconds To Answer...<BR>
+													You Have Up To 420 Seconds To Answer...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_4Exponent_Input\" MAXLENGTH=\"12\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_4Exponent_Generated\" MAXLENGTH=\"12\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4EXPONENT_GENERATOR\">
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_4Exponent_Answer\" MAXLENGTH=\"12\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_4EXPONENT_COMPUTATION\">
@@ -14892,12 +14892,12 @@ echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !")
 
 if ($_GET['Type'] == "2Places_5Exponent") {
 
-header("Refresh:90; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Exponents&Type=2Places_5Exponent");
+header("Refresh:480; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Exponents&Type=2Places_5Exponent");
 
 echo ("
-											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;2Places_4Exponent\" METHOD=\"post\">
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;2Places_5Exponent\" METHOD=\"post\">
 													What Is The 5th Exponent of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR ^ 5 ( $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR ^ 5 ) ?<BR>
-													You Have Up To 90 Seconds To Answer...<BR>
+													You Have Up To 480 Seconds To Answer...<BR>
 														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Exponent_Input\" MAXLENGTH=\"15\"><BR>
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Exponent_Generated\" MAXLENGTH=\"15\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR\">
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Exponent_Answer\" MAXLENGTH=\"15\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_COMPUTATION\">
@@ -14941,15 +14941,15 @@ echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !")
 
 if ($_GET['Type'] == "2Places_6Exponent") {
 
-header("Refresh:90; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Exponents&Type=2Places_6Exponent");
+header("Refresh:600; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Exponents&Type=2Places_6Exponent");
 
 echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;2Places_6Exponent\" METHOD=\"post\">
-													What Is 6th Exponent of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATOR ^ 6 ( $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATOR ^ 6 ) ?<BR>
-													You Have Up To 90 Seconds To Answer...<BR>
-														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Exponent_Input\" MAXLENGTH=\"5\"><BR>
-														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Exponent_Generated\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATOR\">
-														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Exponent_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_COMPUTATION\">
+													What Is The 6th Exponent of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATOR ^ 6 ( $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATOR ^ 6 ) ?<BR>
+													You Have Up To 600 Seconds To Answer...<BR>
+														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Exponent_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Exponent_Generated\" MAXLENGTH=\"20\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATOR\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_6Exponent_Answer\" MAXLENGTH=\"20\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
 											</FORM><BR>
@@ -14962,7 +14962,7 @@ if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_
 echo ("
 Lightning Calculator Message:
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATED ^ 6 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_INPUT<BR>
+$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATED ^ 4 Is: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_INPUT Because: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATED * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATED * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATED * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATED * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATED * $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_GENERATED = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_INPUT<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_6EXPONENT_ANSWER<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
