@@ -14756,7 +14756,9 @@ echo ("
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_2Exponent_Answer\" MAXLENGTH=\"5\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2EXPONENT_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
-											</FORM><BR>
+											</FORM><BR><BR>
+
+<IMG SRC=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Shapes/Animated/Square.gif\" TITLE=\":: Animated Image of The Rotation of a Square: Square From Rectangle ::\" WIDTH=\"125\" HEIGHT=\"125\"></IMG><BR><BR>
 ");
 
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2EXPONENT_INPUT) {
@@ -15229,7 +15231,7 @@ echo ("
 												<HR>
 											</FORM><BR><BR>
 
-<IMG SRC=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Shapes/Animated/Square.gif\" TITLE=\":: Animated Image of The Rotation of a Square ::\" WIDTH=\"125\" HEIGHT=\"125\"></IMG><BR><BR>
+<IMG SRC=\"./Theme/2023_Lightning_Calculate/Image/Lightning_Calculate/Shapes/Animated/Square.gif\" TITLE=\":: Animated Image of The Rotation of a Square: Square From Rectangle ::\" WIDTH=\"125\" HEIGHT=\"125\"></IMG><BR><BR>
 ");
 
 if ($_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_2ROOT_INPUT) {
