@@ -14898,9 +14898,9 @@ echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;2Places_5Exponent\" METHOD=\"post\">
 													What Is The 5th Exponent of: $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR ^ 5 ( $_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR ^ 5 ) ?<BR>
 													You Have Up To 480 Seconds To Answer...<BR>
-														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Exponent_Input\" MAXLENGTH=\"15\"><BR>
-														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Exponent_Generated\" MAXLENGTH=\"15\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR\">
-														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2Places_5Exponent_Answer\" MAXLENGTH=\"15\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_COMPUTATION\">
+														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Exponents_2PLACES_5EXPONENT_Input\" MAXLENGTH=\"15\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2PLACES_5EXPONENT_Generated\" MAXLENGTH=\"15\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_GENERATOR\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Exponents_2PLACES_5EXPONENT_Answer\" MAXLENGTH=\"15\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_EXPONENTS_2PLACES_5EXPONENT_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
 											</FORM><BR>
