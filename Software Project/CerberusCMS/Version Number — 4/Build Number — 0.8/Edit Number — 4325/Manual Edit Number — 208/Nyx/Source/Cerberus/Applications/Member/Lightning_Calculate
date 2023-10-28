@@ -2101,7 +2101,7 @@ $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_10D_COMPU
 */
 
 $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_1D_1			= rand(0, 9);
-$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_1D_2			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_1D_2			= rand(10, 99);
 
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_1D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Short_2D_1D_Input'];
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_1D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Short_2D_1D_Value_1'];
@@ -2116,7 +2116,7 @@ $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_1D_COMPUT
 */
 
 $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_2D_1			= rand(10, 99);
-$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_2D_2			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_2D_2			= rand(10, 99);
 
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_2D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Short_2D_2D_Input'];
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_2D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Short_2D_2D_Value_1'];
@@ -2131,7 +2131,7 @@ $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_2D_COMPUT
 */
 
 $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_3D_1			= rand(100, 999);
-$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_3D_2			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_3D_2			= rand(10, 99);
 
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_3D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Short_2D_3D_Input'];
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_3D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Short_2D_3D_Value_1'];
@@ -2146,7 +2146,7 @@ $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_3D_COMPUT
 */
 
 $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_4D_1			= rand(1000, 9999);
-$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_4D_2			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_4D_2			= rand(10, 99);
 
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_4D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Short_2D_4D_Input'];
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_4D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Short_2D_4D_Value_1'];
@@ -2161,7 +2161,7 @@ $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_4D_COMPUT
 */
 
 $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_5D_1			= rand(10000, 99999);
-$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_5D_2			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_5D_2			= rand(10, 99);
 
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_5D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Short_2D_5D_Input'];
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_5D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Short_2D_5D_Value_1'];
@@ -2176,7 +2176,7 @@ $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_5D_COMPUT
 */
 
 $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_6D_1			= rand(100000, 999999);
-$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_6D_2			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_6D_2			= rand(10, 99);
 
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_6D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Short_2D_6D_Input'];
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_6D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Short_2D_6D_Value_1'];
@@ -2191,7 +2191,7 @@ $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_6D_COMPUT
 */
 
 $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_7D_1			= rand(1000000, 9999999);
-$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_7D_2			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_7D_2			= rand(10, 99);
 
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_7D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Short_2D_7D_Input'];
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_7D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Short_2D_7D_Value_1'];
@@ -2206,7 +2206,7 @@ $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_7D_COMPUT
 */
 
 $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_8D_1			= rand(10000000, 99999999);
-$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_8D_2			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_8D_2			= rand(10, 99);
 
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_8D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Short_2D_8D_Input'];
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_8D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Short_2D_8D_Value_1'];
@@ -2221,7 +2221,7 @@ $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_8D_COMPUT
 */
 
 $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_9D_1			= rand(100000000, 999999999);
-$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_9D_2			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_9D_2			= rand(10, 99);
 
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_9D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Short_2D_9D_Input'];
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_9D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Short_2D_9D_Value_1'];
@@ -2236,7 +2236,7 @@ $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_9D_COMPUT
 */
 
 $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_10D_1		= rand(1000000000, 9999999999);
-$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_10D_2		= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_10D_2		= rand(10, 99);
 
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_10D_INPUT			= $_POST['AMM_Lightning_Calculate_Division_Short_2D_10D_Input'];
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_10D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Short_2D_10D_Value_1'];
@@ -2255,6 +2255,1271 @@ $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_10D_COMPU
  +
  ============================================================================================================
 */
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] Lightning Calculate :: Variables :: Exercises :: Division :: Long Division :: First Divisor :: 3 Digits or 3 Places
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 3 Digits / 1 Digit
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_1D_1			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_1D_2			= rand(100, 999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_1D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_1D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_1D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_1D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_1D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_1D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_1D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_1D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_1D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_1D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 3 Digits / 2 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_2D_1			= rand(10, 99);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_2D_2			= rand(100, 999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_2D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_2D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_2D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_2D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_2D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_2D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_2D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_2D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_2D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_2D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_2D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 3 Digits / 3 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_3D_1			= rand(100, 999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_3D_2			= rand(100, 999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_3D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_3D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_3D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_3D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_3D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_3D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_3D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_3D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_3D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_3D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_3D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 3 Digits / 4 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_4D_1			= rand(1000, 9999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_4D_2			= rand(100, 999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_4D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_4D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_4D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_4D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_4D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_4D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_4D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_4D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_4D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_4D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_4D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 3 Digits / 5 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_5D_1			= rand(10000, 99999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_5D_2			= rand(100, 999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_5D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_5D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_5D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_5D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_5D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_5D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_5D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_5D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_5D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_5D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_5D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 3 Digits / 6 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_6D_1			= rand(100000, 999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_6D_2			= rand(100, 999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_6D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_6D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_6D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_6D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_6D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_6D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_6D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_6D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_6D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_6D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_6D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 3 Digits / 7 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_7D_1			= rand(1000000, 9999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_7D_2			= rand(100, 999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_7D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_7D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_7D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_7D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_7D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_7D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_7D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_7D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_7D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_7D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_7D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 3 Digits / 8 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_8D_1			= rand(10000000, 99999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_8D_2			= rand(100, 999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_8D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_8D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_8D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_8D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_8D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_8D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_8D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_8D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_8D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_8D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_8D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 3 Digits / 9 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_9D_1			= rand(100000000, 999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_9D_2			= rand(100, 999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_9D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_9D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_9D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_9D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_9D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_9D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_9D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_9D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_9D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_9D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_9D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 3 Digits / 10 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_10D_1			= rand(1000000000, 9999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_10D_2			= rand(100, 999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_10D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_3D_10D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_10D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_10D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_10D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_10D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_10D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_3D_10D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_3D_10D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_10D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_3D_10D_2;
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] Lightning Calculate :: Variables :: Exercises :: Division :: Long Division :: First Divisor :: 4 Digits or 4 Places
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 4 Digits / 1 Digit
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_1D_1			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_1D_2			= rand(1000, 9999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_1D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_1D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_1D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_1D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_1D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_1D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_1D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_1D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_1D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_1D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 4 Digits / 2 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_2D_1			= rand(10, 99);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_2D_2			= rand(1000, 9999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_2D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_2D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_2D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_2D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_2D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_2D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_2D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_2D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_2D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_2D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_2D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 4 Digits / 3 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_3D_1			= rand(100, 999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_3D_2			= rand(1000, 9999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_3D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_3D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_3D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_3D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_3D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_3D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_3D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_3D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_3D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_3D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_3D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 4 Digits / 4 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_4D_1			= rand(1000, 9999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_4D_2			= rand(1000, 9999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_4D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_4D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_4D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_4D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_4D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_4D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_4D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_4D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_4D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_4D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_4D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 4 Digits / 5 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_5D_1			= rand(10000, 99999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_5D_2			= rand(1000, 9999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_5D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_5D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_5D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_5D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_5D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_5D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_5D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_5D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_5D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_5D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_5D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 4 Digits / 6 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_6D_1			= rand(100000, 999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_6D_2			= rand(1000, 9999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_6D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_6D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_6D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_6D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_6D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_6D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_6D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_6D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_6D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_6D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_6D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 4 Digits / 7 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_7D_1			= rand(1000000, 9999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_7D_2			= rand(1000, 9999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_7D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_7D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_7D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_7D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_7D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_7D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_7D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_7D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_7D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_7D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_7D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 4 Digits / 8 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_8D_1			= rand(10000000, 99999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_8D_2			= rand(1000, 9999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_8D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_8D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_8D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_8D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_8D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_8D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_8D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_8D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_8D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_8D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_8D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 4 Digits / 9 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_9D_1			= rand(100000000, 999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_9D_2			= rand(1000, 9999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_9D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_9D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_9D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_9D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_9D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_9D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_9D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_9D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_9D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_9D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_9D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 4 Digits / 10 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_10D_1			= rand(1000000000, 9999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_10D_2			= rand(1000, 9999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_10D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_4D_10D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_10D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_10D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_10D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_10D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_10D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_4D_10D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_4D_10D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_10D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_4D_10D_2;
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] Lightning Calculate :: Variables :: Exercises :: Division :: Long Division :: First Divisor :: 5 Digits or 5 Places
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 5 Digits / 1 Digit
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_1D_1			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_1D_2			= rand(10000, 99999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_1D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_1D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_1D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_1D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_1D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_1D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_1D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_1D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_1D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_1D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 5 Digits / 2 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_2D_1			= rand(10, 99);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_2D_2			= rand(10000, 99999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_2D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_2D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_2D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_2D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_2D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_2D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_2D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_2D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_2D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_2D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_2D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 5 Digits / 3 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_3D_1			= rand(100, 999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_3D_2			= rand(10000, 99999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_3D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_3D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_3D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_3D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_3D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_3D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_3D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_3D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_3D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_3D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_3D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 5 Digits / 4 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_4D_1			= rand(1000, 9999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_4D_2			= rand(10000, 99999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_4D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_4D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_4D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_4D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_4D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_4D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_4D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_4D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_4D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_4D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_4D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 5 Digits / 5 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_5D_1			= rand(10000, 99999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_5D_2			= rand(10000, 99999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_5D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_5D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_5D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_5D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_5D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_5D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_5D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_5D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_5D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_5D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_5D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 5 Digits / 6 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_6D_1			= rand(100000, 999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_6D_2			= rand(10000, 99999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_6D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_6D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_6D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_6D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_6D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_6D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_6D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_6D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_6D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_6D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_6D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 5 Digits / 7 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_7D_1			= rand(1000000, 9999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_7D_2			= rand(10000, 99999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_7D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_7D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_7D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_7D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_7D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_7D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_7D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_7D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_7D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_7D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_7D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 5 Digits / 8 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_8D_1			= rand(10000000, 99999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_8D_2			= rand(10000, 99999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_8D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_8D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_8D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_8D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_8D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_8D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_8D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_8D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_8D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_8D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_8D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 5 Digits / 9 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_9D_1			= rand(100000000, 999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_9D_2			= rand(10000, 99999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_9D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_9D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_9D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_9D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_9D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_9D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_9D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_9D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_9D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_9D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_9D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 5 Digits / 10 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_10D_1			= rand(1000000000, 9999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_10D_2			= rand(10000, 99999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_10D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_5D_10D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_10D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_10D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_10D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_10D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_10D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_5D_10D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_5D_10D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_10D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_5D_10D_2;
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] Lightning Calculate :: Variables :: Exercises :: Division :: Long Division :: First Divisor :: 6 Digits or 6 Places
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 6 Digits / 1 Digit
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_1D_1			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_1D_2			= rand(100000, 999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_1D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_1D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_1D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_1D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_1D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_1D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_1D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_1D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_1D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_1D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 6 Digits / 2 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_2D_1			= rand(10, 99);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_2D_2			= rand(100000, 999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_2D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_2D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_2D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_2D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_2D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_2D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_2D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_2D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_2D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_2D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_2D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 6 Digits / 3 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_3D_1			= rand(100, 999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_3D_2			= rand(100000, 999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_3D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_3D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_3D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_3D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_3D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_3D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_3D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_3D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_3D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_3D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_3D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 6 Digits / 4 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_4D_1			= rand(1000, 9999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_4D_2			= rand(100000, 999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_4D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_4D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_4D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_4D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_4D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_4D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_4D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_4D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_4D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_4D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_4D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 6 Digits / 5 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_5D_1			= rand(10000, 99999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_5D_2			= rand(100000, 999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_5D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_5D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_5D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_5D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_5D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_5D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_5D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_5D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_5D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_5D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_5D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 6 Digits / 6 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_6D_1			= rand(100000, 999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_6D_2			= rand(100000, 999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_6D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_6D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_6D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_6D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_6D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_6D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_6D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_6D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_6D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_6D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_6D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 6 Digits / 7 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_7D_1			= rand(1000000, 9999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_7D_2			= rand(100000, 999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_7D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_7D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_7D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_7D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_7D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_7D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_7D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_7D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_7D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_7D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_7D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 6 Digits / 8 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_8D_1			= rand(10000000, 99999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_8D_2			= rand(100000, 999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_8D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_8D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_8D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_8D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_8D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_8D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_8D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_8D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_8D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_8D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_8D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 6 Digits / 9 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_9D_1			= rand(100000000, 999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_9D_2			= rand(100000, 999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_9D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_9D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_9D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_9D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_9D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_9D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_9D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_9D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_9D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_9D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_9D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 6 Digits / 10 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_10D_1			= rand(1000000000, 9999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_10D_2			= rand(100000, 999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_10D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_6D_10D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_10D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_10D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_10D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_10D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_10D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_6D_10D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_6D_10D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_10D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_6D_10D_2;
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] Lightning Calculate :: Variables :: Exercises :: Division :: Long Division :: First Divisor :: 7 Digits or 7 Places
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 7 Digits / 1 Digit
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_1D_1			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_1D_2			= rand(1000000, 9999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_1D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_1D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_1D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_1D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_1D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_1D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_1D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_1D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_1D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_1D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 7 Digits / 2 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_2D_1			= rand(10, 99);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_2D_2			= rand(1000000, 9999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_2D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_2D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_2D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_2D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_2D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_2D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_2D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_2D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_2D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_2D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_2D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 7 Digits / 3 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_3D_1			= rand(100, 999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_3D_2			= rand(1000000, 9999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_3D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_3D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_3D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_3D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_3D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_3D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_3D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_3D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_3D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_3D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_3D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 7 Digits / 4 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_4D_1			= rand(1000, 9999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_4D_2			= rand(1000000, 9999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_4D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_4D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_4D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_4D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_4D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_4D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_4D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_4D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_4D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_4D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_4D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 7 Digits / 5 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_5D_1			= rand(10000, 99999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_5D_2			= rand(1000000, 9999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_5D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_5D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_5D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_5D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_5D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_5D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_5D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_5D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_5D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_5D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_5D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 7 Digits / 6 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_6D_1			= rand(100000, 999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_6D_2			= rand(1000000, 9999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_6D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_6D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_6D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_6D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_6D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_6D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_6D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_6D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_6D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_6D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_6D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 7 Digits / 7 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_7D_1			= rand(1000000, 9999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_7D_2			= rand(1000000, 9999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_7D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_7D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_7D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_7D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_7D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_7D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_7D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_7D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_7D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_7D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_7D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 7 Digits / 8 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_8D_1			= rand(10000000, 99999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_8D_2			= rand(1000000, 9999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_8D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_8D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_8D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_8D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_8D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_8D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_8D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_8D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_8D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_8D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_8D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 7 Digits / 9 Digits
+
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_9D_1			= rand(100000000, 999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_9D_2			= rand(1000000, 9999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_9D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_9D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_9D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_9D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_9D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_9D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_9D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_9D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_9D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_9D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_9D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 7 Digits / 10 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_10D_1			= rand(1000000000, 9999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_10D_2			= rand(1000000, 9999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_10D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_7D_10D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_10D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_10D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_10D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_10D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_10D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_7D_10D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_7D_10D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_10D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_7D_10D_2;
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] Lightning Calculate :: Variables :: Exercises :: Division :: Long Division :: First Divisor :: 8 Digits or 8 Places
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 8 Digits / 1 Digit
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_1D_1			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_1D_2			= rand(10000000, 99999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_1D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_1D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_1D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_1D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_1D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_1D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_1D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_1D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_1D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_1D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 8 Digits / 2 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_2D_1			= rand(10, 99);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_2D_2			= rand(10000000, 99999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_2D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_2D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_2D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_2D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_2D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_2D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_2D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_2D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_2D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_2D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_2D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 8 Digits / 3 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_3D_1			= rand(100, 999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_3D_2			= rand(10000000, 99999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_3D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_3D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_3D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_3D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_3D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_3D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_3D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_3D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_3D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_3D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_3D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 8 Digits / 4 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_4D_1			= rand(1000, 9999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_4D_2			= rand(10000000, 99999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_4D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_4D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_4D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_4D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_4D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_4D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_4D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_4D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_4D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_4D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_4D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 8 Digits / 5 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_5D_1			= rand(10000, 99999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_5D_2			= rand(10000000, 99999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_5D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_5D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_5D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_5D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_5D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_5D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_5D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_5D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_5D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_5D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_5D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 8 Digits / 6 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_6D_1			= rand(100000, 999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_6D_2			= rand(10000000, 99999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_6D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_6D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_6D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_6D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_6D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_6D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_6D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_6D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_6D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_6D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_6D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 8 Digits / 7 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_7D_1			= rand(1000000, 9999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_7D_2			= rand(10000000, 99999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_7D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_7D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_7D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_7D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_7D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_7D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_7D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_7D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_7D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_7D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_7D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 8 Digits / 8 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_8D_1			= rand(10000000, 99999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_8D_2			= rand(10000000, 99999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_8D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_8D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_8D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_8D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_8D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_8D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_8D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_8D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_8D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_8D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_8D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 8 Digits / 9 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_9D_1			= rand(100000000, 999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_9D_2			= rand(10000000, 99999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_9D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_9D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_9D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_9D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_9D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_9D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_9D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_9D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_9D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_9D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_9D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 8 Digits / 10 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_10D_1			= rand(1000000000, 9999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_10D_2			= rand(10000000, 99999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_10D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_8D_10D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_10D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_10D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_10D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_10D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_10D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_8D_10D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_10D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_10D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_10D_2;
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] Lightning Calculate :: Variables :: Exercises :: Division :: Long Division :: First Divisor :: 9 Digits or 9 Places
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 9 Digits / 1 Digit
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_1D_1			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_1D_2			= rand(100000000, 999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_1D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_1D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_1D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_1D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_1D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_1D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_1D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_1D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_1D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_1D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 9 Digits / 2 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_2D_1			= rand(10, 99);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_2D_2			= rand(100000000, 999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_2D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_2D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_2D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_2D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_2D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_2D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_2D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_2D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_2D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_2D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_2D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 9 Digits / 3 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_3D_1			= rand(100, 999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_3D_2			= rand(100000000, 999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_3D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_3D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_3D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_3D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_3D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_3D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_3D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_3D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_3D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_3D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_3D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 9 Digits / 4 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_4D_1			= rand(1000, 9999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_4D_2			= rand(100000000, 999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_4D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_4D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_4D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_4D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_4D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_4D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_4D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_4D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_4D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_4D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_4D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 9 Digits / 5 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_5D_1			= rand(10000, 99999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_5D_2			= rand(100000000, 999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_5D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_5D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_5D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_5D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_5D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_5D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_5D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_5D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_5D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_5D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_5D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 9 Digits / 6 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_6D_1			= rand(100000, 999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_6D_2			= rand(100000000, 999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_6D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_6D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_6D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_6D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_6D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_6D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_6D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_6D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_6D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_6D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_6D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 9 Digits / 7 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_7D_1			= rand(1000000, 9999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_7D_2			= rand(100000000, 999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_7D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_7D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_7D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_7D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_7D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_7D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_7D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_7D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_7D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_7D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_7D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 9 Digits / 8 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_8D_1			= rand(10000000, 99999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_8D_2			= rand(100000000, 999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_8D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_8D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_8D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_8D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_8D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_8D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_8D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_8D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_8D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_8D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_8D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 9 Digits / 9 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_9D_1			= rand(100000000, 999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_9D_2			= rand(100000000, 999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_9D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_9D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_9D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_9D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_9D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_9D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_9D_ANSWER				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_9D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_9D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_9D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_9D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 9 Digits / 10 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_10D_1			= rand(1000000000, 9999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_10D_2			= rand(100000000, 999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_10D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_9D_10D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_10D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_10D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_10D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_10D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_10D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_9D_10D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_10D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_10D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_10D_2;
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] Lightning Calculate :: Variables :: Exercises :: Division :: Long Division :: First Divisor :: 10 Digits or 10 Places
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 10 Digits / 1 Digit
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_1D_1			= rand(0, 9);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_1D_2			= rand(1000000000, 9999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_1D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_10D_1D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_1D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_1D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_1D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_1D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_1D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_1D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_1D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_1D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 10 Digits / 2 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_2D_1			= rand(10, 99);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_2D_2			= rand(1000000000, 9999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_2D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_10D_2D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_2D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_2D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_2D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_2D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_2D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_2D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_2D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_2D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_2D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 10 Digits / 3 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_3D_1			= rand(100, 999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_3D_2			= rand(1000000000, 9999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_3D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_10D_3D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_3D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_3D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_3D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_3D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_3D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_3D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_3D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_3D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_3D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 10 Digits / 4 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_4D_1			= rand(1000, 9999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_4D_2			= rand(1000000000, 9999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_4D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_10D_4D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_4D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_4D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_4D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_4D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_4D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_4D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_4D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_4D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_4D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 10 Digits / 5 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_5D_1			= rand(10000, 99999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_5D_2			= rand(1000000000, 9999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_5D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_10D_5D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_5D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_5D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_5D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_5D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_5D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_5D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_5D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_5D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_5D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 10 Digits / 6 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_6D_1			= rand(100000, 999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_6D_2			= rand(1000000000, 9999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_6D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_10D_6D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_6D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_6D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_6D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_6D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_6D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_6D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_6D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_6D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_6D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 10 Digits / 7 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_7D_1			= rand(1000000, 9999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_7D_2			= rand(1000000000, 9999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_7D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_10D_7D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_7D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_7D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_7D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_7D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_7D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_7D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_7D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_7D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_7D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 10 Digits / 8 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_8D_1			= rand(10000000, 99999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_8D_2			= rand(1000000000, 9999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_8D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_10D_8D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_8D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_8D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_8D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_8D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_8D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_8D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_8D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_8D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_8D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 10 Digits / 9 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_9D_1			= rand(100000000, 999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_9D_2			= rand(1000000000, 9999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_9D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Long_10D_9D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_9D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_9D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_9D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_9D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_9D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_9D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_9D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_9D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_9D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Long Division :: First Divisor :: 10 Digits / 10 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_10D_1		= rand(1000000000, 9999999999);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_10D_2		= rand(1000000000, 9999999999);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_10D_INPUT			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_10D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_10D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_10D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_10D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_10D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_10D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Long_10D_10D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_10D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_10D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_10D_2;
 
 /*
  ============================================================================================================
@@ -12159,6 +13424,16 @@ if ($_GET['Exercise'] == "Division_Short") {
 /*
  ============================================================================================================
  +
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ +
+ + First Divisor :: 1 Digit or 1 Place
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
  + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
  + Divisor, 1 :: 1 Digit OR 1 Place
  + Divisor, 2 :: 1 Digit OR 1 Place
@@ -12665,6 +13940,527 @@ echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !")
 } // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 10 Places :: Input Form Variables HAVE Executed
 
 } // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 10 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ +
+ + First Divisor :: 2 Digits or 2 Places
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ + Divisor, 1 :: 2 Digits OR 2 Places
+ + Divisor, 2 :: 1 Digit OR 1 Place
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "2D_1D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Short&Type=2D_1D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;2D_1D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_1D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_1D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_1D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_1D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_1D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_1D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_1D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_1D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_1D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_1D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_1D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_1D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_1D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_1D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_1D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 1 Place :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 1 Place :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 1 Place :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ + Divisor, 1 :: 2 Digits OR 2 Places
+ + Divisor, 2 :: 2 Digits OR 2 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "2D_2D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Short&Type=2D_2D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;2D_2D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_2D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_2D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_2D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_2D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_2D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_2D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_2D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_2D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_2D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_2D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_2D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_2D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_2D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_2D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_2D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_2D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 2 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 2 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 2 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ + Divisor, 1 :: 2 Digits OR 2 Places
+ + Divisor, 2 :: 3 Digits OR 3 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "2D_3D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Short&Type=2D_3D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;2D_3D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_3D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_3D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_3D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_3D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_3D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_3D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_3D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_3D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_3D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_3D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_3D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_3D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_3D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_3D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_3D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_3D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 3 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 3 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 3 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ + Divisor, 1 :: 2 Digits OR 2 Places
+ + Divisor, 2 :: 4 Digits OR 4 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "2D_4D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Short&Type=2D_4D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;2D_4D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_4D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_4D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_4D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_4D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_4D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_4D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_4D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_4D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_4D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_4D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_4D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_4D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_4D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_4D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_4D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_4D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 4 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 4 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 4 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ + Divisor, 1 :: 2 Digits OR 2 Places
+ + Divisor, 2 :: 5 Digits OR 5 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "2D_5D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Short&Type=2D_5D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;2D_5D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_5D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_5D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_5D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_5D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_5D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_5D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_5D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_5D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_5D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_5D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_5D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_5D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_5D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_5D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_5D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_5D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 5 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 5 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 5 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ + Divisor, 1 :: 2 Digits OR 2 Places
+ + Divisor, 2 :: 6 Digits OR 6 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "2D_6D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Short&Type=2D_6D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;2D_6D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_6D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_6D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_6D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_6D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_6D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_6D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_6D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_6D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_6D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_6D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_6D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_6D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_6D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_6D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_6D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_6D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 6 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 6 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 6 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ + Divisor, 1 :: 2 Digits OR 2 Places
+ + Divisor, 2 :: 7 Digits OR 7 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "2D_7D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Short&Type=2D_7D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;2D_7D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_7D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_7D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_7D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_7D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_7D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_7D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_7D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_7D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_7D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_7D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_7D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_7D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_7D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_7D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_7D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_7D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 7 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 7 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 7 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ + Divisor, 1 :: 2 Digits OR 2 Places
+ + Divisor, 2 :: 8 Digits OR 8 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "2D_8D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Short&Type=2D_8D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;2D_8D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_8D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_8D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_8D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_8D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_8D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_8D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_8D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_8D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_8D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_8D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_8D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_8D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_8D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_8D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_8D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_8D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 8 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 8 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 8 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ + Divisor, 1 :: 2 Digits OR 2 Places
+ + Divisor, 2 :: 9 Digits OR 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "2D_9D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Short&Type=2D_9D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;2D_9D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_9D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_9D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_9D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_9D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_9D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_9D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_9D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_9D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_9D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_9D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_9D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_9D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_9D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_9D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_9D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_9D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 9 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 9 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 9 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ + Divisor, 1 :: 2 Digits OR 2 Places
+ + Divisor, 2 :: 10 Digits OR 10 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "2D_10D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Short&Type=2D_10D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;2D_10D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_10D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_10D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_10D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_10D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_10D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_10D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_2D_10D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_2D_10D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_10D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_10D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_10D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_10D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_10D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_10D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_10D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_2D_10D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 10 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 10 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 10 Places :: Is: Activated
+
 
 } // [ + ] IF: Internal Application: Exercise :: Division :: Short Division :: Is: Activated
 
