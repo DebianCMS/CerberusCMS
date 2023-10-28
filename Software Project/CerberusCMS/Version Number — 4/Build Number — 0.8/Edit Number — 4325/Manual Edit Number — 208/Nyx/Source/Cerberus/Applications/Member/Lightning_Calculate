@@ -5639,7 +5639,7 @@ Total: 6 Months OR 183 Days OR 26.14285714285714 Weeks OR 4,392 Hours OR 263,520
 if ($_GET["Display"] == "Exercises") {
 
 echo ("
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Addition and Summation</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Addition and Summation</BIG></B><HR>
 Example: 1234567891 + 1234567891<BR><BR>
 
 Section Notes: Repitition should be done in 30 minute sessions with 10 minute breaks in between the 30 minute sessions.<BR><BR>
@@ -5719,7 +5719,7 @@ Section Notes: Repitition should be done in 30 minute sessions with 10 minute br
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: First Addend With Ten Digits OR Ten Places</B><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Addition&amp;Type&#61;10D_10D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Addition :: Exercise :: 10 Places + 10 Places</A><BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Subtraction and Differences</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Subtraction and Differences</BIG></B><HR>
 Example: 9813473376 - 934522<BR><BR>
 
 Section Notes: Repitition should be done in 30 minute sessions with 10 minute breaks in between the 30 minute sessions.<BR><BR>
@@ -5799,12 +5799,12 @@ Section Notes: Repitition should be done in 30 minute sessions with 10 minute br
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Subtraction&amp;Type&#61;10D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Differences :: Exercise :: 10 Places - 2 Places</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Subtraction&amp;Type&#61;10D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Differences :: Exercise :: 10 Places - 1 Place</A><BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Short Division and Long Division</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Short Division and Long Division</BIG></B><HR>
 Example: 9813473376 ÷ 9<BR><BR>
 
 Section Note: By mastering Mental Division of Short Division and Long Division one will also master Mental Fractions. All Fractions are simply a quick display that represent whole and decimal numbers to make the Mathematical Statements summarized or \"look clean\".<BR><BR>
 
-<BIG><B>— Forward :: Short Division</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>— Forward :: Short Division</B><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: First Divisor With One Digit OR One Place</B><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;1D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Short Division :: Exercise :: 1 Places / 1 Place</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;1D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Short Division :: Exercise :: 2 Places / 1 Place</A><BR>
@@ -5829,7 +5829,7 @@ Section Note: By mastering Mental Division of Short Division and Long Division o
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;2D_9D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Short Division :: Exercise :: 9 Places / 2 Places</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;2D_10D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Short Division :: Exercise :: 10 Places / 2 Places</A><BR><BR>
 
-<BIG><B>— Forward :: Long Division</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>— Forward :: Long Division</B><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 Example: 987654321 ÷ 9813473376<BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: First Divisor With Three Digits OR Three Places</B><BR>
@@ -5928,7 +5928,7 @@ Example: 987654321 ÷ 9813473376<BR><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_9D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 10 Places</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_10D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 10 Places</A><BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Multiplication and Extraction :: Base Number Repitition</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Multiplication and Extraction :: Base Number Repitition</BIG></B><HR>
 Section Note: Repitition should be done in 30 minute sessions with 10 minute breaks in between each 30 minute session.<BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Base Number Repitition :: Multiplicand With 1 Place</B><BR>
@@ -5981,7 +5981,7 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Multiplication&amp;Type&#61;5BNR_9BNR&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Multiplication :: Exercise :: Base Number Repitition :: 5 Places * 9 Places</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Multiplication&amp;Type&#61;5BNR_10BNR&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Multiplication :: Exercise :: Base Number Repitition :: 5 Places * 10 Places</A><BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Multiplication and Extraction :: Mixed Numbers</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Multiplication and Extraction :: Mixed Numbers</BIG></B><HR>
 Section Note: Repitition should be done in 30 minute sessions with 10 minute breaks in between each 30 minute session.<BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Multiplicand With 1 Place OR 1 Digit</B><BR>
@@ -6009,7 +6009,7 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Multiplicand With 5 Places OR 5 Digits</B><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Multiplication&amp;Type&#61;5D_5D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Multiplication :: Exercise :: Mixed Numbers :: 5 Place * 5 Places</A><BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Percentages</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Percentages</BIG></B><HR>
 Example: 10 % of 200<BR><BR>
 
 Section Note: Repitition should be done in 30 minute sessions with 10 minute breaks in between each 30 minute session.<BR><BR>
@@ -6114,7 +6114,7 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 * 10 Places % of 9 Places<BR>
 * 10 Places % of 10 Places<BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Modulus</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Modulus</BIG></B><HR>
 Example: 5 / 9 = 1.4<BR><BR>
 
 Section Note: Repitition should be done in 30 minute sessions with 10 minute breaks in between each 30 minute session.<BR><BR>
@@ -6219,29 +6219,29 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 * 10 Places Modulus of 9 Places<BR>
 * 10 Places Modulus of 10 Places<BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Fractions</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Fractions</BIG></B><HR>
 Example: 10/5ths = 10 * .20 OR 2 Wholes<BR><BR>
 
 Section Note: Repitition should be done in 30 minute sessions with 10 minute breaks in between each 30 minute session.<BR><BR>
 
-<BR><BIG><B>— Conversions :: Decimals</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>— Conversions :: Decimals</B><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 * Conversion :: Decimal TO Fraction<BR>
 * Conversion :: Decimal TO Percentage<BR><BR>
 
-<BIG><B>— Conversions :: Fractions</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>— Conversions :: Fractions</B><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 * Conversion :: Fraction TO Decimal<BR>
 * Conversion :: Fraction TO Percentage<BR><BR>
 
-<BIG><B>— Conversions :: Percentages</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>— Conversions :: Percentages</B><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 * Conversion :: Percentages TO Decimal<BR>
 * Conversion :: Percentages TO Fraction<BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Exponents</B><HR>
-Example: What Is The Square Root of: 1,600 ?<BR><BR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Exponents</BIG></B><HR>
+Example: What Is The Perfect Square Root of: 1,600 ?<BR><BR>
 
 Section Note: Repitition should be done in 30 minute sessions with 10 minute breaks in between each 30 minute session.<BR><BR>
 
-<BIG><B>— Perfect Whole Numbers :: Exponents :: 2 Places or 2 Digits :: ^ n</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>— Perfect Whole Numbers :: Exponents :: 2 Places or 2 Digits :: ^ n</B><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;2Places_2Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 2 Places :: ^ 2 ::  From 2 :: Perfect Square</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;2Places_3Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 2 Places :: ^ 3 ::  From 2 :: Perfect Cube</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;2Places_4Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 2 Places :: ^ 4 ::  From 2 :: Perfect 4-Cube</A><BR>
@@ -6252,7 +6252,7 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;2Places_9Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 2 Places :: ^ 9 ::  From 2 :: Perfect 9-Cube</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;2Places_10Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 2 Places :: ^ 10 :: From 2 :: Perfect 10-Cube</A><BR><BR>
 
-<BIG><B>— Perfect Whole Numbers :: Random Numbers :: Exponents :: 3 Places OR 3 Digits :: ^ n</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>— Perfect Whole Numbers :: Random Numbers :: Exponents :: 3 Places OR 3 Digits :: ^ n</B><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;3Places_2Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 3 Places :: ^ 2 ::  From 3 :: Perfect Square</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;3Places_3Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 3 Places :: ^ 3 ::  From 3 :: Perfect Cube</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;3Places_4Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 3 Places :: ^ 4 ::  From 3 :: Perfect 4-Cube</A><BR>
@@ -6263,7 +6263,7 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;3Places_9Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 3 Places :: ^ 9 ::  From 3 :: Perfect 9-Cube</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;3Places_10Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 3 Places :: ^ 10 :: From 3 :: Perfect 10-Cube</A><BR><BR>
 
-<BIG><B>— Perfect Whole Numbers :: Random Numbers :: Exponents :: 4 Places OR 4 Digits :: ^ n</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>— Perfect Whole Numbers :: Random Numbers :: Exponents :: 4 Places OR 4 Digits :: ^ n</B><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;4Places_2Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 4 Places :: ^ 2 ::  From 3 :: Perfect Square</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;4Places_3Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 4 Places :: ^ 3 ::  From 3 :: Perfect Cube</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;4Places_4Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 4 Places :: ^ 4 ::  From 3 :: Perfect 4-Cube</A><BR>
@@ -6274,9 +6274,13 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;4Places_9Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 4 Places :: ^ 9 ::  From 3 :: Perfect 9-Cube</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Exponents&amp;Type&#61;4Places_10Exponent&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Exercise :: 4 Places :: ^ 10 :: From 3 :: Perfect 10-Cube</A><BR><BR>
 
-<BIG><B>— Perfect Whole Numbers :: Random Numbers :: Exponent :: Roots</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\"><BR><BR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Exponent Roots</BIG></B><HR>
+Example: What Is The Perfect Square of: 55 ?<BR>
+Example: What Is The Perfect Cube of: 73 ?<BR><BR>
 
-<BIG><B>— Exponents :: 2 Places OR 2 Digits :: √Root n</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+Section Note: Repitition should be done in 30 minute sessions with 10 minute breaks in between each 30 minute session.<BR><BR>
+
+<B>— Exponents :: 2 Places OR 2 Digits :: √Root n</B><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_2Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 2 Places :: √Root 2 :: Perfect Square</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_3Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 2 Places :: √Root 3 :: Perfect Cube</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_4Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 2 Places :: √Root 4 :: Perfect 4-Cube</A><BR>
@@ -6287,7 +6291,7 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_9Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 2 Places :: √Root 9 :: Perfect 9-Cube</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;2Places_10Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 2 Places :: √Root 10 :: Perfect 10-Cube</A><BR><BR>
 
-<BIG><B>— Exponents :: 3 Places OR 3 Digits :: √Root n</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>— Exponents :: 3 Places OR 3 Digits :: √Root n</B><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;3Places_2Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 3 Places :: √Root 2 ::</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;3Places_3Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 3 Places :: √Root 3 ::</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;3Places_4Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 3 Places :: √Root 4 ::</A><BR>
@@ -6298,7 +6302,7 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;3Places_9Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 3 Places :: √Root 9 ::</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;3Places_10Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 3 Places :: √Root 10 ::</A><BR><BR>
 
-<BIG><B>— Exponents :: 4 Places OR 4 Digits :: √Root n</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
+<B>— Exponents :: 4 Places OR 4 Digits :: √Root n</B><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;4Places_2Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 4 Places :: √Root 2 ::</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;4Places_3Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 4 Places :: √Root 3 ::</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;4Places_4Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 4 Places :: √Root 4 ::</A><BR>
@@ -6309,7 +6313,7 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;4Places_9Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 4 Places :: √Root 9 ::</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;ExponentRoots&amp;Type&#61;4Places_10Root&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Exponents :: Roots :: Exercise :: 4 Places :: √Root 10 ::</A><BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Mixed Arithmetic</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Mixed Arithmetic</BIG></B><HR>
 Example: 28 * 2 / 4 + 667 = 681<BR><BR>
 
 Section Note: Repitition should be done in 30 minute sessions with 10 minute breaks in between each 30 minute session.<BR><BR>
@@ -6318,25 +6322,25 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 * Random - 4 Factors<BR>
 * Random - 5 Factors<BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Number Theory</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Number Theory</BIG></B><HR>
 <BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Geometry</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Geometry</BIG></B><HR>
 <BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Extra Dimensional Geometry</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Extra Dimensional Geometry</BIG></B><HR>
 <BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Alegbra</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Alegbra</BIG></B><HR>
 <BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Linear Algebra</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Linear Algebra</BIG></B><HR>
 <BR><BR>
 
-<B>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Calculus</B><HR>
+<B><BIG>Perfect Whole Numbers :: Random Numbers :: Lightning Mental Calculus</BIG></B><HR>
 <BR><BR>
 
-<B>Memory and Mathematics :: Lightning Mental Calendar Calculating</B><HR>
+<B><BIG>Memory and Mathematics :: Lightning Mental Calendar Calculating</BIG></B><HR>
 Example: What Day of The Week Was: August, 1st 1925 ?<BR>
 Example: John Steinbeck Was Born On: February, 27th, 1902.. What Day of The Week Was That ?<BR>
 Example: What Moon Phase Will Be In Place Next Month On This Day ?<BR>
@@ -6354,7 +6358,7 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 * Event Prediction<BR>
 * Leap Year Calculating<BR><BR>
 
-<B>Memory and Navigation :: Lightning Mental Navigation</B><HR>
+<B><BIG>Memory and Navigation :: Lightning Mental Navigation</BIG></B><HR>
 Example: If The Sun Rises 20 Degrees More Than Yesterday: What Way Is North ?<BR><BR>
 
 Section Note: Repitition should be done in 30 minute sessions with 10 minute breaks in between each 30 minute session.<BR><BR>
@@ -6363,7 +6367,7 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 * Navigation From Sun and Moon<BR>
 * Navigation From Stars<BR><BR>
 
-<B>Intelligence :: Lightning Mental Human Anthropology</B><HR>
+<B><BIG>Intelligence :: Lightning Mental Human Anthropology</BIG></B><HR>
 * Determining Human Ethnicity From Facial and Body Structure<BR>
 * Determining Human Age In Seconds<BR>
 * Determining Human Age In Minutes<BR>
@@ -6372,7 +6376,7 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 * Determining Human Age In Months<BR>
 * Determining Human Age of Death<BR><BR>
 
-<B>Memory :: Random :: Lightning Mental Dot Counting</B><HR>
+<B><BIG>Memory :: Random :: Lightning Mental Dot Counting</BIG></B><HR>
 * Random Dots - 10s<BR>
 * Random Dots - 100s<BR>
 * Random Dots - 1,000s<BR>
@@ -6388,13 +6392,13 @@ Section Note: Repitition should be done in 30 minute sessions with 10 minute bre
 * Random Dots - 10,000,000,000,000s<BR>
 * Random Dots - 100,000,000,000,000s<BR><BR>
 
-<B>Memory :: Random :: Faces, Names and Numbers</B><HR>
+<B><BIG>Memory :: Random :: Faces, Names and Numbers</BIG></B><HR>
 * Memorizing Faces, Names and Numbers :: Numbers, 10s - Faces, 10s<BR>
 * Memorizing Faces, Names and Numbers :: Numbers, 10s - Faces, 100s<BR>
 * Memorizing Faces, Names and Numbers :: Numbers, 10s - Faces, 1,000s<BR>
 * Memorizing Faces, Names and Numbers :: Numbers, 10s - Faces, 10,000s<BR><BR>
 
-<B>Memory :: Random :: Memorize Random Number Strings</B><HR>
+<B><BIG>Memory :: Random :: Memorize Random Number Strings</BIG></B><HR>
 Memorize :: Example :: 123456789012345678901234567890 In 60 Seconds<BR><BR>
 
 * Memorizing Number Strings :: 00005 Places<BR>
@@ -6422,15 +6426,17 @@ Memorize :: Example :: 123456789012345678901234567890 In 60 Seconds<BR><BR>
 * Memorizing Number Strings :: 00115 Places<BR>
 * Memorizing Number Strings :: 00120 Places<BR><BR>
 
-<B>Playing Cards Counting</B><HR>
-* 52 Card Deck<BR>
-* 104 Card Stacked Deck<BR>
-* 156 Card Stacked Deck<BR>
-* 208 Card Stacked Deck<BR>
-* 260 Card Stacked Deck<BR>
-* 312 Card Stacked Deck<BR>
-* 364 Card Stacked Deck<BR>
-* 416 Card Stacked Deck<BR>
+<B><BIG>Playing Cards Counting</BIG></B><HR>
+* 01 Deck, 52 Card Deck<BR>
+* 02 Decks, 104 Card Stacked Deck<BR>
+* 03 Decks, 156 Card Stacked Deck<BR>
+* 04 Decks, 208 Card Stacked Deck<BR>
+* 05 Decks, 260 Card Stacked Deck<BR>
+* 06 Decks, 312 Card Stacked Deck<BR>
+* 07 Decks, 364 Card Stacked Deck<BR>
+* 08 Decks, 416 Card Stacked Deck<BR>
+* 09 Decks, 468 Card Stacked Deck<BR>
+* 10 Decks, 520 Card Stacked Deck<BR>
 ");
 
 } // [ + ] IF: Internal Application: Display: Exercises :: Is: Activated
@@ -17164,6 +17170,1566 @@ echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !")
 } // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 7 Places / 10 Places :: Input Form Variables HAVE Executed
 
 } // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 7 Places / 10 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ +
+ + First Divisor :: 8 Digits or 8 Places
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 8 Digits or 8 Places
+ + Divisor, 2 :: 1 Digit OR 1 Place
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "8D_1D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=8D_1D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_1D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_1D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_1D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_1D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_1D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_1D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_1D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_1D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_1D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_1D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_1D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_1D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_1D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_1D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_1D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_1D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 1 Place :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 1 Place :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 1 Place :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 8 Digits or 8 Places
+ + Divisor, 2 :: 2 Digits OR 2 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "8D_2D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=8D_2D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_2D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_2D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_2D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_2D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_2D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_2D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_2D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_2D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_2D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_2D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_2D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_2D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_2D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_2D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_2D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_2D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_2D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 2 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 2 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 2 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 8 Digits or 8 Places
+ + Divisor, 2 :: 8 Digits or 8 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "8D_3D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=8D_3D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_3D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_3D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_3D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_3D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_3D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_3D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_3D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_3D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_3D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_3D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_3D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_3D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_3D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_3D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_3D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_3D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_3D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 3 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 3 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 3 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 8 Digits or 8 Places
+ + Divisor, 2 :: 8 Digits or 8 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "8D_4D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=8D_4D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_4D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_4D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_4D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_4D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_4D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_4D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_4D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_4D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_4D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_4D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_4D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_4D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_4D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_4D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_4D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_4D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_4D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 4 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 4 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 4 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 8 Digits or 8 Places
+ + Divisor, 2 :: 8 Digits or 8 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "8D_5D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=8D_5D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_5D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_5D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_5D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_5D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_5D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_5D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_5D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_5D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_5D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_5D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_5D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_5D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_5D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_5D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_5D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_5D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_5D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 5 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 5 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 5 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 8 Digits or 8 Places
+ + Divisor, 2 :: 8 Digits or 8 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "8D_6D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=8D_6D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_6D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_6D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_6D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_6D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_6D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_6D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_6D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_6D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_6D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_6D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_6D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_6D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_6D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_6D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_6D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_6D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_6D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 6 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 6 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 6 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 8 Digits or 8 Places
+ + Divisor, 2 :: 8 Digits or 8 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "8D_7D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=8D_7D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_7D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_7D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_7D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_7D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_7D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_7D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_7D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_7D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_7D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_7D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_7D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_7D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_7D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_7D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_7D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_7D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_7D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 7 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 7 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 7 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 8 Digits or 8 Places
+ + Divisor, 2 :: 8 Digits OR 8 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "8D_8D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=8D_8D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_8D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_8D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_8D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_8D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_8D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_8D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_8D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_8D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_8D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_8D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_8D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_8D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_8D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_8D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_8D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_8D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_8D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 8 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 8 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 8 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 8 Digits or 8 Places
+ + Divisor, 2 :: 9 Digits OR 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "8D_9D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=8D_9D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_9D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_9D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_9D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_9D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_9D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_9D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_9D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_9D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_9D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_9D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_9D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_9D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_9D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_9D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_9D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_9D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_9D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 9 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 9 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 9 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 8 Digits or 8 Places
+ + Divisor, 2 :: 10 Digits OR 10 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "8D_10D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=8D_10D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_10D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_10D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_10D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_10D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_10D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_10D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_10D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_8D_10D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_8D_10D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_10D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_10D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_10D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_10D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_10D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_10D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_10D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_8D_10D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 10 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 10 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 8 Places / 10 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ +
+ + First Divisor :: 9 Digits or 9 Places
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 9 Digits or 9 Places
+ + Divisor, 2 :: 1 Digit OR 1 Place
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "9D_1D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=9D_1D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_1D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_1D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_1D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_1D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_1D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_1D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_1D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_1D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_1D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_1D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_1D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_1D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_1D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_1D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_1D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_1D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 1 Place :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 1 Place :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 1 Place :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 9 Digits or 9 Places
+ + Divisor, 2 :: 2 Digits OR 2 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "9D_2D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=9D_2D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_2D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_2D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_2D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_2D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_2D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_2D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_2D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_2D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_2D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_2D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_2D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_2D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_2D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_2D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_2D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_2D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_2D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 2 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 2 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 2 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 9 Digits or 9 Places
+ + Divisor, 2 :: 9 Digits or 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "9D_3D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=9D_3D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_3D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_3D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_3D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_3D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_3D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_3D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_3D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_3D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_3D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_3D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_3D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_3D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_3D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_3D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_3D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_3D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_3D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 3 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 3 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 3 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 9 Digits or 9 Places
+ + Divisor, 2 :: 9 Digits or 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "9D_4D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=9D_4D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_4D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_4D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_4D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_4D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_4D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_4D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_4D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_4D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_4D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_4D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_4D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_4D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_4D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_4D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_4D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_4D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_4D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 4 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 4 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 4 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 9 Digits or 9 Places
+ + Divisor, 2 :: 9 Digits or 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "9D_5D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=9D_5D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_5D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_5D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_5D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_5D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_5D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_5D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_5D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_5D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_5D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_5D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_5D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_5D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_5D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_5D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_5D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_5D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_5D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 5 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 5 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 5 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 9 Digits or 9 Places
+ + Divisor, 2 :: 9 Digits or 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "9D_6D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=9D_6D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_6D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_6D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_6D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_6D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_6D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_6D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_6D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_6D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_6D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_6D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_6D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_6D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_6D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_6D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_6D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_6D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_6D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 6 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 6 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 6 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 9 Digits or 9 Places
+ + Divisor, 2 :: 9 Digits or 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "9D_7D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=9D_7D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_7D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_7D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_7D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_7D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_7D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_7D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_7D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_7D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_7D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_7D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_7D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_7D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_7D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_7D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_7D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_7D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_7D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 7 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 7 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 7 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 9 Digits or 9 Places
+ + Divisor, 2 :: 9 Digits or 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "9D_8D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=9D_8D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_8D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_8D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_8D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_8D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_8D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_8D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_8D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_8D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_8D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_8D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_8D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_8D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_8D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_8D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_8D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_8D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_8D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 8 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 8 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 8 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 9 Digits or 9 Places
+ + Divisor, 2 :: 9 Digits OR 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "9D_9D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=9D_9D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_9D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_9D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_9D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_9D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_9D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_9D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_9D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_9D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_9D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_9D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_9D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_9D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_9D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_9D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_9D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_9D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_9D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 9 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 9 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 9 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 9 Digits or 9 Places
+ + Divisor, 2 :: 10 Digits OR 10 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "9D_10D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=9D_10D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_10D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_10D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_10D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_10D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_10D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_10D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_10D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_9D_10D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_9D_10D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_10D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_10D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_10D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_10D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_10D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_10D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_10D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_9D_10D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 10 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 10 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 9 Places / 10 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ +
+ + First Divisor :: 10 Digits or 10 Places
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 10 Digits or 10 Places
+ + Divisor, 2 :: 1 Digit OR 1 Place
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "10D_1D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=10D_1D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_1D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_1D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_1D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_1D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_1D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_1D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_1D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_1D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_1D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_1D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_1D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_1D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_1D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_1D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_1D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_1D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 1 Place :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 1 Place :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 1 Place :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 10 Digits or 10 Places
+ + Divisor, 2 :: 2 Digits OR 2 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "10D_2D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=10D_2D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_2D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_2D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_2D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_2D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_2D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_2D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_2D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_2D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_2D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_2D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_2D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_2D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_2D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_2D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_2D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_2D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_2D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 2 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 2 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 2 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 10 Digits or 10 Places
+ + Divisor, 2 :: 9 Digits or 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "10D_3D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=10D_3D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_3D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_3D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_3D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_3D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_3D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_3D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_3D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_3D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_3D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_3D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_3D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_3D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_3D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_3D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_3D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_3D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_3D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_3D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 3 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 3 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 3 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 10 Digits or 10 Places
+ + Divisor, 2 :: 9 Digits or 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "10D_4D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=10D_4D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_4D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_4D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_4D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_4D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_4D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_4D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_4D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_4D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_4D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_4D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_4D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_4D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_4D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_4D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_4D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_4D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_4D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_4D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 4 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 4 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 4 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 10 Digits or 10 Places
+ + Divisor, 2 :: 9 Digits or 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "10D_5D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=10D_5D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_5D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_5D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_5D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_5D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_5D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_5D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_5D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_5D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_5D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_5D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_5D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_5D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_5D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_5D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_5D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_5D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_5D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_5D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 5 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 5 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 5 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 10 Digits or 10 Places
+ + Divisor, 2 :: 9 Digits or 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "10D_6D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=10D_6D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_6D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_6D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_6D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_6D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_6D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_6D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_6D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_6D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_6D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_6D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_6D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_6D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_6D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_6D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_6D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_6D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_6D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_6D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 6 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 6 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 6 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 10 Digits or 10 Places
+ + Divisor, 2 :: 9 Digits or 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "10D_7D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=10D_7D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_7D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_7D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_7D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_7D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_7D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_7D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_7D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_7D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_7D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_7D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_7D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_7D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_7D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_7D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_7D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_7D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_7D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_7D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 7 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 7 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 7 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 10 Digits or 10 Places
+ + Divisor, 2 :: 9 Digits or 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "10D_8D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=10D_8D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_8D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_8D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_8D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_8D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_8D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_8D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_8D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_8D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_8D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_8D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_8D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_8D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_8D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_8D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_8D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_8D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_8D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_8D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 8 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 8 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 8 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 10 Digits or 10 Places
+ + Divisor, 2 :: 9 Digits OR 9 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "10D_9D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=10D_9D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_9D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_9D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_9D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_9D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_9D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_9D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_9D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_9D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_9D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_9D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_9D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_9D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_9D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_9D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_9D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_9D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_9D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_9D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 9 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 9 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 9 Places :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Long Division
+ + Divisor, 1 :: 10 Digits or 10 Places
+ + Divisor, 2 :: 10 Digits OR 10 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "10D_10D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Long&Type=10D_10D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_10D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_10D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_10D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_10D_Input\" MAXLENGTH=\"20\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_10D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_10D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_10D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_LONG_10D_10D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Long_10D_10D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_10D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_10D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_10D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_10D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_10D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_10D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_10D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_10D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_LONG_10D_10D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 10 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 10 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Long Division :: 10 Places / 10 Places :: Is: Activated
 
 
 } // [ + ] IF: Internal Application: Exercise :: Long Divison :: Is: Activated
