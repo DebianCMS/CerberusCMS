@@ -1938,11 +1938,33 @@ $_Application_Module_Member_Lightning_Calculate_POST_SUBTRACTION_10D_10D_COMPUTA
 $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_1			= rand(0, 9);
 $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_2			= rand(0, 9);
 
-$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_INPUT				= $_POST['AMM_Lightning_Calculate_DIVISION_SHORT_1D_1D_Input'];
-$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_VALUE_1			= $_POST['AMM_Lightning_Calculate_DIVISION_SHORT_1D_1D_Value_1'];
-$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_VALUE_2			= $_POST['AMM_Lightning_Calculate_DIVISION_SHORT_1D_1D_Value_2'];
-$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_ANSWER			= $_POST['AMM_Lightning_Calculate_DIVISION_SHORT_1D_1D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Short_1D_1D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Short_1D_1D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Short_1D_1D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Short_1D_1D_Answer'];
+
+while ($_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_1 < $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_2) {
+
+		$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_1++;
+
+} // [ + ] WHILE:
+
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_2;
+
+/*
+ ============================================================================================================
+ + Division :: Short Division :: First Divisor :: 1 Digit / 2 Digits
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_2D_1			= rand(10, 99);
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_2D_2			= rand(0, 9);
+
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_2D_INPUT				= $_POST['AMM_Lightning_Calculate_Division_Short_1D_2D_Input'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_2D_VALUE_1			= $_POST['AMM_Lightning_Calculate_Division_Short_1D_2D_Value_1'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_2D_VALUE_2			= $_POST['AMM_Lightning_Calculate_Division_Short_1D_2D_Value_2'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_2D_ANSWER			= $_POST['AMM_Lightning_Calculate_Division_Short_1D_2D_Answer'];
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_2D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_2D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_2D_2;
 
 /*
  ============================================================================================================
@@ -11968,7 +11990,8 @@ if ($_GET['Exercise'] == "Division_Short") {
  ============================================================================================================
  +
  + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
- + First Divisor :: 1 Digit OR 1 Place
+ + Divisor, 1 :: 1 Digit OR 1 Place
+ + Divisor, 2 :: 1 Digit OR 1 Place
  ============================================================================================================
 */
 
@@ -11980,9 +12003,9 @@ echo ("
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;1D_1D\" METHOD=\"post\">
 													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_2 ?<BR>
 													You Have Up To 60 Seconds To Answer...<BR>
-														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_1D_Input\" MAXLENGTH=\"15\"><BR>
-														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_1D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D\">
-														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_1D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D\">
+														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_1D_Input\" PLACEHOLDER=\"1.0\" STEP=\"0.01\" MINLENGTH=\"0\" MAXLENGTH=\"5\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_1D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_1D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_2\">
 														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_1D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_COMPUTATION\">
 													<INPUT TYPE=\"submit\" VALUE=\"Check\">
 												<HR>
@@ -11996,7 +12019,7 @@ if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_IN
 echo ("
 Lightning Calculator Message:
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_2<BR>
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_ANSWER<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 = $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_ANSWER<BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"25%\">
@@ -12013,6 +12036,57 @@ echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !")
 } // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 1 Place :: Input Form Variables HAVE Executed
 
 } // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 1 Place :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ + Divisor, 1 :: 1 Digit OR 1 Place
+ + Divisor, 2 :: 2 Digits OR 2 Places
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "1D_2D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Short&Type=1D_2D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;1D_2D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_2D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_2D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_2D_Input\" MAXLENGTH=\"5\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_2D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_2D_1\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_2D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_2D_2\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_2D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_2D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_2D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_2D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_2D_ANSWER") {
+
+echo ("
+Lightning Calculator Message:
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_2D_VALUE_1 / $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_2D_VALUE_2 Is: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_2D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_2D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_2D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 2 Places :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 2 Places :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 2 Places :: Is: Activated
 
 } // [ + ] IF: Internal Application: Exercise :: Division :: Short Division :: Is: Activated
 
