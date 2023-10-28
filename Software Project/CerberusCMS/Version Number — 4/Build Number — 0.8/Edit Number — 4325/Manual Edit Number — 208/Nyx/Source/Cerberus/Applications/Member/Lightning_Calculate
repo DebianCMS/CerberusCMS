@@ -1944,7 +1944,6 @@ $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_VALUE_
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_ANSWER			= $_POST['AMM_Lightning_Calculate_DIVISION_SHORT_1D_1D_Answer'];
 $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_COMPUTATION			= $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_2;
 
-
 /*
  ============================================================================================================
  +
@@ -4241,85 +4240,86 @@ Example: 9813473376 ÷ 9<BR><BR>
 Section Note: By mastering Mental Division of Short Division and Long Division one will also master Mental Fractions. All Fractions are simply a quick display that represent whole and decimal numbers to make the Mathematical Statements summarized or \"look clean\".<BR><BR>
 
 <BIG><B>— Forward :: Short Division</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
-<BR><BR>
+<B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Divisor With One Digit OR One Place</B><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;1D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Short Division :: Exercise :: 1 Places / 1 Place</A><BR><BR>
 
 <BIG><B>— Forward :: Long Division</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 <BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Divisor With One Digit OR One Place</B><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;1D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 1 Places / 1 Place</A><BR><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;1D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 1 Places / 1 Place</A><BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Divisor With Two Digits OR Two Places</B><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;2D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 2 Places / 1 Place</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;2D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 2 Places / 2 Places</A><BR><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;2D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 2 Places / 1 Place</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;2D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 2 Places / 2 Places</A><BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Divisor With Three Digits OR Three Places</B><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;3D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 3 Places / 1 Place</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;3D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 3 Places / 2 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;3D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 3 Places / 3 Places</A><BR><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;3D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 3 Places / 1 Place</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;3D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 3 Places / 2 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;3D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 3 Places / 3 Places</A><BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Divisor With Four Digits OR Four Places</B><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;4D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 4 Places / 1 Place</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;4D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 4 Places / 2 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;4D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 4 Places / 3 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;4D_4D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 4 Places / 4 Places</A><BR><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;4D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 4 Places / 1 Place</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;4D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 4 Places / 2 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;4D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 4 Places / 3 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;4D_4D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 4 Places / 4 Places</A><BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Divisor With Five Digits OR Five Places</B><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;5D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 5 Places / 1 Place</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;5D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 5 Places / 2 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;5D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 5 Places / 3 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;5D_4D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 5 Places / 4 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;5D_5D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 5 Places / 5 Places</A><BR><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;5D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 5 Places / 1 Place</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;5D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 5 Places / 2 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;5D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 5 Places / 3 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;5D_4D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 5 Places / 4 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;5D_5D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 5 Places / 5 Places</A><BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Divisor With Six Digits OR Six Places</B><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;6D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 6 Places / 1 Place</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;6D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 6 Places / 2 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;6D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 6 Places / 3 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;6D_4D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 6 Places / 4 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;6D_5D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 6 Places / 5 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;6D_6D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 6 Places / 6 Places</A><BR><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;6D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 6 Places / 1 Place</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;6D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 6 Places / 2 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;6D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 6 Places / 3 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;6D_4D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 6 Places / 4 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;6D_5D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 6 Places / 5 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;6D_6D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 6 Places / 6 Places</A><BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Divisor With Seven Digits OR Seven Places</B><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;7D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 7 Places / 1 Place</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;7D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 7 Places / 2 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;7D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 7 Places / 3 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;7D_4D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 7 Places / 4 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;7D_5D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 7 Places / 5 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;7D_6D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 7 Places / 6 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;7D_7D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 7 Places / 7 Places</A><BR><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;7D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 7 Places / 1 Place</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;7D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 7 Places / 2 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;7D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 7 Places / 3 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;7D_4D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 7 Places / 4 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;7D_5D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 7 Places / 5 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;7D_6D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 7 Places / 6 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;7D_7D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 7 Places / 7 Places</A><BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Divisor With Eight Digits OR Eight Places</B><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;8D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 1 Place</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;8D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 2 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;8D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 3 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;8D_4D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 4 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;8D_5D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 5 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;8D_6D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 6 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;8D_7D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 7 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;8D_8D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 8 Places</A><BR><BR> 
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 1 Place</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 2 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 3 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_4D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 4 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_5D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 5 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_6D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 6 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_7D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 7 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;8D_8D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 8 Places / 8 Places</A><BR><BR> 
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Divisor With Nine Digits OR Nine Places</B><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;9D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 1 Place</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;9D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 2 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;9D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 3 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;9D_4D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 4 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;9D_5D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 5 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;9D_6D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 6 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;9D_7D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 7 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;9D_8D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 8 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;9D_9D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 9 Places</A><BR><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 1 Place</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 2 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 3 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_4D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 4 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_5D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 5 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_6D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 6 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_7D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 7 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_8D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 8 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;9D_9D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 9 Places / 9 Places</A><BR><BR>
 
 <B>Perfect Whole Numbers :: Random Numbers :: Randomly Generated :: Mixed Numbers :: Divisor With Ten Digits OR Ten Places</B><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;10D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 1 Place</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;10D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 2 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;10D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 3 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;10D_4D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 4 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;10D_5D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 5 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;10D_6D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 6 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;10D_7D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 7 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;10D_8D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 8 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;10D_9D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 9 Places</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;LongDivision&amp;Type&#61;10D_10D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 10 Places</A><BR><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_1D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 1 Place</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_2D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 2 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_3D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 3 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_4D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 4 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_5D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 5 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_6D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 6 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_7D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 7 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_8D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 8 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_9D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 9 Places</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Long&amp;Type&#61;10D_10D&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\">Mental Long Division :: Exercise :: 10 Places / 10 Places</A><BR><BR>
 
 <BIG><B>— Reverse :: Short Division</B></BIG><HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 <BR><BR>
@@ -11930,6 +11930,70 @@ echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !")
 } // [ + ] IF: Internal Application: Exercise :: Subtraction :: Type :: 10 Digits - 10 Digits :: Is: Correct Answer
 
 } // [ + ] IF: Internal Application: Exercise :: Subtraction :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ +
+ +
+ ============================================================================================================
+*/
+
+if ($_GET['Exercise'] == "Division_Short") {
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Lightning Calculate :: Exercise :: Division :: Short Division
+ + First Divisor :: 1 Digit OR 1 Place
+ ============================================================================================================
+*/
+
+if ($_GET['Type'] == "1D_1D") {
+
+header("Refresh:60; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Lightning_Calculate&Exercise=Division_Short&Type=1D_1D");
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Lightning_Calculate&amp;Exercise&#61;Division_Short&amp;Type&#61;1D_1D\" METHOD=\"post\">
+													What Is: $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_2 ?<BR>
+													You Have Up To 60 Seconds To Answer...<BR>
+														<INPUT TYPE=\"number\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_1D_Input\" MAXLENGTH=\"15\"><BR>
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_1D_Value_1\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_1D_Value_2\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D\">
+														<INPUT TYPE=\"hidden\" NAME=\"AMM_Lightning_Calculate_Division_Short_1D_1D_Answer\" VALUE=\"$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_COMPUTATION\">
+													<INPUT TYPE=\"submit\" VALUE=\"Check\">
+												<HR>
+											</FORM><BR>
+");
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_INPUT) {
+
+if ($_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_INPUT == "$_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_ANSWER") {
+
+echo ("
+Lightning Calculator Message
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+$_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_1 / $_Application_Module_Member_Lightning_Calculate_RANDOM_GENERATOR_DIVISION_SHORT_1D_1D_2<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+= $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_ANSWER<BR>
+<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Your Answer Was: $_Application_Module_Member_Lightning_Calculate_POST_DIVISION_SHORT_1D_1D_ANSWER<BR>
+This Answer Is: Correct !
+");
+
+} else {
+
+echo ("Lightning Calculator Message: The Provided Answer Is: **NOT** Correct !");
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 1 Place :: Is Correct Answer
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 1 Place :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Internal Application :: Exercise :: Division :: Short Division :: First Divisor :: 1 Place / 1 Place :: Is: Activated
+
+} // [ + ] IF: Internal Application: Exercise :: Division :: Short Division :: Is: Activated
 
 /*
  ============================================================================================================
