@@ -166,7 +166,7 @@ echo ("
 											Activity Log :: For Date :: Year: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL - Month: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL - Day: $_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL<BR>
 											Integrity :: Secure-Hash-Algorithm, 256 :: Current Activity Log: $_Application_Module_Member_Referrers_CONTENTS_REFERRER_LOG_FILE_BOX_HASH_SHA_256<BR>
 											<FORM>
-												<TEXTAREA ROWS=\"20\" COLS=\"200\">$_Application_Module_Member_Referrers_CONTENTS_REFERRER_LOG_FILE_BOX</TEXTAREA>
+												<TEXTAREA ROWS=\"20\" COLS=\"100\">$_Application_Module_Member_Referrers_CONTENTS_REFERRER_LOG_FILE_BOX</TEXTAREA>
 											</FORM>
 ");
 
