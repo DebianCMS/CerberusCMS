@@ -3717,16 +3717,16 @@ mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_news(n
 
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Creating Read-Only Backup of Application Modules... Wait.<BR>");
 
-	copy ("./Applications/Administration/*.*","./System/Integrity/Applications/Administration/");
-	copy ("./Applications/Background/*.*","./System/Integrity/Applications/Background/");
-	copy ("./Applications/Custom/*.*","./System/Integrity/Applications/Custom/");
-	copy ("./Applications/Member/*.*","./System/Integrity/Applications/Member/");
-	copy ("./Applications/Moderator/*.*","./System/Integrity/Applications/Moderator/");
-	copy ("./Applications/Panel/*.*","./System/Integrity/Applications/Panel/");
-	copy ("./Applications/Public/*.*","./System/Integrity/Applications/Public/");
-	copy ("./Applications/Root/*.*","./System/Integrity/Applications/Root/");
-	copy ("./Applications/Services/*.*","./System/Integrity/Applications/Services/");
-	copy ("./Applications/Video_Games/*.*","./System/Integrity/Applications/Video_Games/");
+	copy ("./Applications/Administration/*.*","./System/Security/Integrity/Applications/Administration/");
+	copy ("./Applications/Background/*.*","./System/Security/Integrity/Applications/Background/");
+	copy ("./Applications/Custom/*.*","./System/Security/Integrity/Applications/Custom/");
+	copy ("./Applications/Member/*.*","./System/Security/Integrity/Applications/Member/");
+	copy ("./Applications/Moderator/*.*","./System/Security/Integrity/Applications/Moderator/");
+	copy ("./Applications/Panel/*.*","./System/Security/Integrity/Applications/Panel/");
+	copy ("./Applications/Public/*.*","./System/Security/Integrity/Applications/Public/");
+	copy ("./Applications/Root/*.*","./System/Security/Integrity/Applications/Root/");
+	copy ("./Applications/Services/*.*","./System/Security/Integrity/Applications/Services/");
+	copy ("./Applications/Video_Games/*.*","./System/Security/Integrity/Applications/Video_Games/");
 
 	echo ("[ Done ]<BR><BR>");
 
