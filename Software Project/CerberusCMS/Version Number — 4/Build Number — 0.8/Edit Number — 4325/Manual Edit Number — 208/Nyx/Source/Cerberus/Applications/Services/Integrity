@@ -152,7 +152,7 @@ $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_HASH_S
  ============================================================================================================
 */
 
-if (file_exists(./Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME)) {
+if (file_exists("./Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME")) {
 
 echo ("
 Integrity Message:<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
@@ -202,5 +202,4 @@ Integrity Message:<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 } // [ + ] WHILE :: Retrieving :: All :: Applcication Module Entries :: Background :: Entry Data
 
 } // [ + ] IF: Internal Application: Flash :: Is: Application
-
 ?>
