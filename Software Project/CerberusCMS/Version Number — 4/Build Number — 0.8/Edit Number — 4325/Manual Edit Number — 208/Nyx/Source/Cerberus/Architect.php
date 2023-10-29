@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
  ============================================================================================================
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -3686,6 +3686,57 @@ mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_articl
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Example News Article Entry... Wait.<BR>");
 
 mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_news(news_author,news_avatar,news_data,news_mood,news_music,news_rss_rfc,news_time,news_title)VALUES('$_PROJECT_STRING_NAME_SHORT','Default.png','This is an Example News Article Entry -- You can Delete this News Article Entry from the Administration Control Panel.','None','None','Wed, 05 Aug 2009 15:04:18 -0700','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','Example News Article Entry')");
+
+	echo ("[ Done ]<BR><BR>");
+
+/*
+ ============================================================================================================
+ + Install :: Integrity
+ ============================================================================================================
+*/
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Integrity... Wait.<BR>");
+
+	echo ("[ Done ]<BR><BR>");
+
+/*
+ ============================================================================================================
+ + Install :: Integrity :: KeyRing
+ ============================================================================================================
+*/
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Installing My KeyRing... Wait.<BR>");
+
+	echo ("[ Done ]<BR><BR>");
+
+/*
+ ============================================================================================================
+ + Install :: Integrity :: Backup Application Modules
+ ============================================================================================================
+*/
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Creating Read-Only Backup of Application Modules... Wait.<BR>");
+
+	copy ("./Applications/Administration/*.*","./System/Integrity/Applications/Administration/");
+	copy ("./Applications/Background/*.*","./System/Integrity/Applications/Background/");
+	copy ("./Applications/Custom/*.*","./System/Integrity/Applications/Custom/");
+	copy ("./Applications/Member/*.*","./System/Integrity/Applications/Member/");
+	copy ("./Applications/Moderator/*.*","./System/Integrity/Applications/Moderator/");
+	copy ("./Applications/Panel/*.*","./System/Integrity/Applications/Panel/");
+	copy ("./Applications/Public/*.*","./System/Integrity/Applications/Public/");
+	copy ("./Applications/Root/*.*","./System/Integrity/Applications/Root"/);
+	copy ("./Applications/Services/*.*","./System/Integrity/Applications/Services/");
+	copy ("./Applications/Video_Games/*.*","./System/Integrity/Applications/Video_Games/");
+
+	echo ("[ Done ]<BR><BR>");
+
+/*
+ ============================================================================================================
+ + Install :: Integrity :: Application Module Permissions
+ ============================================================================================================
+*/
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Setting Application Module Permissions... Wait.<BR>");
 
 	echo ("[ Done ]<BR><BR>");
 
