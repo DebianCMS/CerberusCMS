@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
  ============================================================================================================
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -3724,7 +3724,7 @@ mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_news(n
 	copy ("./Applications/Moderator/*.*","./System/Integrity/Applications/Moderator/");
 	copy ("./Applications/Panel/*.*","./System/Integrity/Applications/Panel/");
 	copy ("./Applications/Public/*.*","./System/Integrity/Applications/Public/");
-	copy ("./Applications/Root/*.*","./System/Integrity/Applications/Root"/);
+	copy ("./Applications/Root/*.*","./System/Integrity/Applications/Root/");
 	copy ("./Applications/Services/*.*","./System/Integrity/Applications/Services/");
 	copy ("./Applications/Video_Games/*.*","./System/Integrity/Applications/Video_Games/");
 
