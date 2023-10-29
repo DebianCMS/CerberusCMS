@@ -911,7 +911,7 @@ echo ("
 
 		<B>Overview :: Microsoft &#174; &#8482; Windows &#174; &#8482; Server Operating System</B><BR>
 		[&nbsp;*&nbsp;]&nbsp;=>&nbsp;Applications<BR>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read Directory and Read Files Only :: No Overwriting Existing Files :: Upload Permitted :: Delete / Unlink Not Permitted<BR>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read Directory and Read Files Only :: No Overwriting Existing Files :: Upload Permitted :: Delete / Unlink Permitted<BR>
 		[&nbsp;*&nbsp;]&nbsp;=>&nbsp;Architect<BR>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read Directory and Read Files Only :: No Overwriting Existing Files :: Upload Not Permitted :: Delete / Unlink Permitted<BR>
 		[&nbsp;*&nbsp;]&nbsp;=>&nbsp;Download<BR>
@@ -931,7 +931,7 @@ echo ("
 
 		<B>Overview :: Berkley Software Development, G.N.U. Not Unix, Linux and Unix Operating Systems</B><BR>
 		[&nbsp;*&nbsp;]&nbsp;=>&nbsp;Applications<BR>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read Directory and Read Files Only :: No Overwriting Existing Files :: Upload Permitted :: Delete / Unlink Not Permitted<BR>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read Directory and Read Files Only :: No Overwriting Existing Files :: Upload Permitted :: Delete / Unlink Permitted<BR>
 		[&nbsp;*&nbsp;]&nbsp;=>&nbsp;Architect<BR>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read Directory and Read Files Only :: No Overwriting Existing Files :: Upload Not Permitted :: Delete / Unlink Permitted<BR>
 		[&nbsp;*&nbsp;]&nbsp;=>&nbsp;Download<BR>
@@ -3715,18 +3715,173 @@ mysql_query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_news(n
  ============================================================================================================
 */
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Creating Read-Only Backup of Application Modules... Wait.<BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Creating Read-Only Backup of Application Module Directories... Wait.<BR><BR>");
 
-	copy ("./Applications/Administration/*.*","./System/Security/Integrity/Applications/Administration/");
-	copy ("./Applications/Background/*.*","./System/Security/Integrity/Applications/Background/");
-	copy ("./Applications/Custom/*.*","./System/Security/Integrity/Applications/Custom/");
-	copy ("./Applications/Member/*.*","./System/Security/Integrity/Applications/Member/");
-	copy ("./Applications/Moderator/*.*","./System/Security/Integrity/Applications/Moderator/");
-	copy ("./Applications/Panel/*.*","./System/Security/Integrity/Applications/Panel/");
-	copy ("./Applications/Public/*.*","./System/Security/Integrity/Applications/Public/");
-	copy ("./Applications/Root/*.*","./System/Security/Integrity/Applications/Root/");
-	copy ("./Applications/Services/*.*","./System/Security/Integrity/Applications/Services/");
-	copy ("./Applications/Video_Games/*.*","./System/Security/Integrity/Applications/Video_Games/");
+mkdir("./System/Security/Integrity/Backup");
+mkdir("./System/Security/Integrity/Backup/Applications");
+mkdir("./System/Security/Integrity/Backup/Applications/Administration");
+mkdir("./System/Security/Integrity/Backup/Applications/Background");
+mkdir("./System/Security/Integrity/Backup/Applications/Custom");
+mkdir("./System/Security/Integrity/Backup/Applications/Member");
+mkdir("./System/Security/Integrity/Backup/Applications/Moderator");
+mkdir("./System/Security/Integrity/Backup/Applications/Panel");
+mkdir("./System/Security/Integrity/Backup/Applications/Public");
+mkdir("./System/Security/Integrity/Backup/Applications/Root");
+mkdir("./System/Security/Integrity/Backup/Applications/Services");
+mkdir("./System/Security/Integrity/Backup/Applications/Video_Games/");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Creating Read-Only Backup of Application Modules... Wait.<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Copying Application Modules From: ./Applications/Administration/... Wait.<BR><BR>");
+
+copy("./Applications/Administration/Accounts","./System/Security/Integrity/Backup/Applications/Administration/Accounts");
+copy("./Applications/Administration/Applications","./System/Security/Integrity/Backup/Applications/Administration/Applications");
+copy("./Applications/Administration/Archive","./System/Security/Integrity/Backup/Applications/Administration/Archive");
+copy("./Applications/Administration/Control_Panel","./System/Security/Integrity/Backup/Applications/Administration/Control_Panel");
+copy("./Applications/Administration/Emulators","./System/Security/Integrity/Backup/Applications/Administration/Emulators");
+copy("./Applications/Administration/File_Categories","./System/Security/Integrity/Backup/Applications/Administration/File_Categories");
+copy("./Applications/Administration/File_Manager","./System/Security/Integrity/Backup/Applications/Administration/File_Manger");
+copy("./Applications/Administration/Forum","./System/Security/Integrity/Backup/Applications/Administration/Forum");
+copy("./Applications/Administration/GIT","./System/Security/Integrity/Backup/Applications/Administration/GIT");
+copy("./Applications/Administration/Messenger","./System/Security/Integrity/Backup/Applications/Administration/Messenger");
+copy("./Applications/Administration/Networking","./System/Security/Integrity/Backup/Applications/Administration/Networking");
+copy("./Applications/Administration/Panels","./System/Security/Integrity/Backup/Applications/Administration/Panels");
+copy("./Applications/Administration/PHP_Information.php","./System/Security/Integrity/Backup/Applications/Administration/PHP_Information.php");
+copy("./Applications/Administration/Publish","./System/Security/Integrity/Backup/Applications/Administration/Publish");
+copy("./Applications/Administration/Ranks","./System/Security/Integrity/Backup/Applications/Administration/Ranks");
+copy("./Applications/Administration/Referrers","./System/Security/Integrity/Backup/Applications/Administration/Referrers");
+copy("./Applications/Administration/Robot_Monitor","./System/Security/Integrity/Backup/Applications/Administration/Robot_Monitor");
+copy("./Applications/Administration/Settings","./System/Security/Integrity/Backup/Applications/Administration/Settings");
+copy("./Applications/Administration/Submissions","./System/Security/Integrity/Backup/Applications/Administration/Submissions");
+copy("./Applications/Administration/Terminal","./System/Security/Integrity/Backup/Applications/Administration/Terminal");
+copy("./Applications/Administration/Update","./System/Security/Integrity/Backup/Applications/Administration/Update");
+copy("./Applications/Administration/index.php","./System/Security/Integrity/Backup/Applications/Administration/index.php");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Copying Application Modules From: ./Applications/Background/... Wait.<BR><BR>");
+
+copy("./Applications/Background/Log_Administration","./System/Security/Integrity/Backup/Applications/Background/Log_Administration");
+copy("./Applications/Background/Log_Background","./System/Security/Integrity/Backup/Applications/Background/Log_Background");
+copy("./Applications/Background/Log_Member","./System/Security/Integrity/Backup/Applications/Background/Log_Member");
+copy("./Applications/Background/Log_Visitor","./System/Security/Integrity/Backup/Applications/Background/Log_Visitor");
+copy("./Applications/Background/index.php","./System/Security/Integrity/Backup/Applications/Background/index.php");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Copying Application Modules From: ./Applications/Custom/... Wait.<BR><BR>");
+
+copy("./Applications/Custom/index.php","./System/Security/Integrity/Backup/Applications/Custom/index.php");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Copying Application Modules From: ./Applications/Member/... Wait.<BR><BR>");
+
+copy("./Applications/Member/Account_Data","./System/Security/Integrity/Backup/Applications/Member/Account_Data");
+copy("./Applications/Member/Account_Recovery","./System/Security/Integrity/Backup/Applications/Member/Account_Recovery");
+copy("./Applications/Member/Active_Members","./System/Security/Integrity/Backup/Applications/Member/Active_Members");
+copy("./Applications/Member/All_News","./System/Security/Integrity/Backup/Applications/Member/All_News");
+copy("./Applications/Member/All_Shouts","./System/Security/Integrity/Backup/Applications/Member/All_Shouts");
+copy("./Applications/Member/Application_List","./System/Security/Integrity/Backup/Applications/Member/Application_List");
+copy("./Applications/Member/Articles","./System/Security/Integrity/Backup/Applications/Member/Articles");
+copy("./Applications/Member/Calculator","./System/Security/Integrity/Backup/Applications/Member/Calculator");
+copy("./Applications/Member/Clock","./System/Security/Integrity/Backup/Applications/Member/Clock");
+copy("./Applications/Member/Comment","./System/Security/Integrity/Backup/Applications/Member/Comment");
+copy("./Applications/Member/Contact_Administrator","./System/Security/Integrity/Backup/Applications/Member/Contact_Administrator");
+copy("./Applications/Member/Control_Panel","./System/Security/Integrity/Backup/Applications/Member/Control_Panel");
+copy("./Applications/Member/Documentation","./System/Security/Integrity/Backup/Applications/Member/Documentation");
+copy("./Applications/Member/Download","./System/Security/Integrity/Backup/Applications/Member/Download");
+copy("./Applications/Member/Electronic_Mail","./System/Security/Integrity/Backup/Applications/Member/Electronic_Mail");
+copy("./Applications/Member/Emulators","./System/Security/Integrity/Backup/Applications/Member/Emulators");
+copy("./Applications/Member/Files","./System/Security/Integrity/Backup/Applications/Member/Files");
+copy("./Applications/Member/Forum","./System/Security/Integrity/Backup/Applications/Member/Forum");
+copy("./Applications/Member/Forward","./System/Security/Integrity/Backup/Applications/Member/Forward");
+copy("./Applications/Member/Friend","./System/Security/Integrity/Backup/Applications/Member/Friend");
+copy("./Applications/Member/Language","./System/Security/Integrity/Backup/Applications/Member/Language");
+copy("./Applications/Member/Legal","./System/Security/Integrity/Backup/Applications/Member/Legal");
+copy("./Applications/Member/Lightning_Calculate","./System/Security/Integrity/Backup/Applications/Member/Lightning_Calculate");
+copy("./Applications/Member/List","./System/Security/Integrity/Backup/Applications/Member/List");
+copy("./Applications/Member/Login","./System/Security/Integrity/Backup/Applications/Member/Login");
+copy("./Applications/Member/Market","./System/Security/Integrity/Backup/Applications/Member/Market");
+copy("./Applications/Member/Media_Player","./System/Security/Integrity/Backup/Applications/Member/Media_Player");
+copy("./Applications/Member/Member_Directory","./System/Security/Integrity/Backup/Applications/Member/Member_Directory");
+copy("./Applications/Member/Messenger","./System/Security/Integrity/Backup/Applications/Member/Messenger");
+copy("./Applications/Member/News","./System/Security/Integrity/Backup/Applications/Member/News");
+copy("./Applications/Member/Notepad","./System/Security/Integrity/Backup/Applications/Member/Notepad");
+copy("./Applications/Member/Pages","./System/Security/Integrity/Backup/Applications/Member/Pages");
+copy("./Applications/Member/Profile","./System/Security/Integrity/Backup/Applications/Member/Profile");
+copy("./Applications/Member/Recommendations","./System/Security/Integrity/Backup/Applications/Member/Recommendations");
+copy("./Applications/Member/Referrers","./System/Security/Integrity/Backup/Applications/Member/Referrers");
+copy("./Applications/Member/Register","./System/Security/Integrity/Backup/Applications/Member/Register");
+copy("./Applications/Member/Reset_Password","./System/Security/Integrity/Backup/Applications/Member/Reset_Password");
+copy("./Applications/Member/Search","./System/Security/Integrity/Backup/Applications/Member/Search");
+copy("./Applications/Member/Statistics","./System/Security/Integrity/Backup/Applications/Member/Statistics");
+copy("./Applications/Member/Submit_News","./System/Security/Integrity/Backup/Applications/Member/Submit_News");
+copy("./Applications/Member/System_Message","./System/Security/Integrity/Backup/Applications/Member/System_Message");
+copy("./Applications/Member/Theme","./System/Security/Integrity/Backup/Applications/Member/Theme");
+copy("./Applications/Member/Update_Account","./System/Security/Integrity/Backup/Applications/Member/Update_Account");
+copy("./Applications/Member/Update_Password","./System/Security/Integrity/Backup/Applications/Member/Update_Password");
+copy("./Applications/Member/Upload","./System/Security/Integrity/Backup/Applications/Member/Upload");
+copy("./Applications/Member/VoIP","./System/Security/Integrity/Backup/Applications/Member/VoIP");
+copy("./Applications/Member/Webspace","./System/Security/Integrity/Backup/Applications/Member/Webspace");
+copy("./Applications/Member/index.php","./System/Security/Integrity/Backup/Applications/Member/index.php");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Copying Application Modules From: ./Applications/Moderator/... Wait.<BR><BR>");
+
+copy("./Applications/Moderator/Forum","./System/Security/Integrity/Backup/Applications/Moderator/Forum");
+copy("./Applications/Moderator/index.php","./System/Security/Integrity/Backup/Applications/Moderator/index.php");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Copying Application Modules From: ./Applications/Panel/... Wait.<BR><BR>");
+
+copy("./Applications/Panel/Administration.panel","./System/Security/Integrity/Backup/Applications/Panel/Administration.panel");
+copy("./Applications/Panel/Applications_Panel.panel","./System/Security/Integrity/Backup/Applications/Panel/Applications_Panel.panel");
+copy("./Applications/Panel/Language.panel","./System/Security/Integrity/Backup/Applications/Panel/Language.panel");
+copy("./Applications/Panel/Latest_Articles.panel","./System/Security/Integrity/Backup/Applications/Panel/Latest_Articles.panel");
+copy("./Applications/Panel/Latest_Files.panel","./System/Security/Integrity/Backup/Applications/Panel/Latest_Files.panel");
+copy("./Applications/Panel/Latest_Members.panel","./System/Security/Integrity/Backup/Applications/Panel/Latest_Members.panel");
+copy("./Applications/Panel/Latest_Shouts.panel","./System/Security/Integrity/Backup/Applications/Panel/Latest_Shouts.panel");
+copy("./Applications/Panel/Member_Panel.panel","./System/Security/Integrity/Backup/Applications/Panel/Member_Panel.panel");
+copy("./Applications/Panel/Moderator.panel","./System/Security/Integrity/Backup/Applications/Panel/Moderator.panel");
+copy("./Applications/Panel/Networking.panel","./System/Security/Integrity/Backup/Applications/Panel/Networking.panel");
+copy("./Applications/Panel/RSS_Panel.panel","./System/Security/Integrity/Backup/Applications/Panel/RSS_Panel.panel");
+copy("./Applications/Panel/Theme.panel","./System/Security/Integrity/Backup/Applications/Panel/Theme.panel");
+copy("./Applications/Panel/Administration.panel","./System/Security/Integrity/Backup/Applications/Panel/Administration.panel");
+copy("./Applications/Panel/index.php","./System/Security/Integrity/Backup/Applications/Panel/index.php");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Copying Application Modules From: ./Applications/Public/... Wait.<BR><BR>");
+
+copy("./Applications/Public/Engine_Validation","./System/Security/Integrity/Backup/Applications/Public/Engine_Validation");
+copy("./Applications/Public/index.php","./System/Security/Integrity/Backup/Applications/Public/index.php");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Copying Application Modules From: ./Applications/Root/... Wait.<BR><BR>");
+
+copy("./Applications/Root/Tasks","./System/Security/Integrity/Backup/Applications/Root/Tasks");
+copy("./Applications/Root/index.php","./System/Security/Integrity/Backup/Applications/Root/index.php");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Copying Application Modules From: ./Applications/Services/... Wait.<BR><BR>");
+
+copy("./Applications/Services/Commander","./System/Security/Integrity/Backup/Applications/Services/Commander");
+copy("./Applications/Services/Integrity","./System/Security/Integrity/Backup/Applications/Services/Integrity");
+copy("./Applications/Services/Loops","./System/Security/Integrity/Backup/Applications/Services/Loops");
+copy("./Applications/Services/index.php","./System/Security/Integrity/Backup/Applications/Services/index.php");
+
+	echo ("[ Done ]<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Integrity: Copying Application Modules From: ./Applications/Video_Games/... Wait.<BR><BR>");
+
+copy("./Applications/Video_Games/index.php","./System/Security/Integrity/Backup/Applications/Video_Games/index.php");
 
 	echo ("[ Done ]<BR><BR>");
 
