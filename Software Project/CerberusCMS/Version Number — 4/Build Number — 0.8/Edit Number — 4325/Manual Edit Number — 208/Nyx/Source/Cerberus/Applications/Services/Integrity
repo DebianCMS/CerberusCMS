@@ -104,6 +104,7 @@
 if ($_GET["Display"] == "Options") {
 
 echo ("
+Integrity :: Options<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_SERVICES&#61;Integrity&amp;Flash&#61;Applications&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: Integrity Check ::\">Integrity :: Flash :: Applications</A><BR>
 ");
 
@@ -123,52 +124,69 @@ if ($_GET["Flash"] == "Applications") {
 
 /*
  ============================================================================================================
- + Database Server Query :: Retrieve :: All :: Applcication Module Entries :: Panels
+ +
+ + Database Server Queries :: Retrieve :: All :: Application Modules
+ +
  ============================================================================================================
 */
-
-$_Application_Module_Services_Integrity_DB_Query_List_Application_Panels						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels");
 
 /*
  ============================================================================================================
- + WHILE :: Retrieving :: All :: Applcication Module Entries :: Panels :: Entry Data
+ + Database Server Query :: Retrieve :: All :: Applcication Module Entries :: Background-Level Applications
  ============================================================================================================
 */
 
-while ($_Application_Module_Services_Integrity_List_Application_Panels_Fetch_Array = $DB->fetch_array($_Application_Module_Services_Integrity_DB_Query_List_Application_Panels)) {
+$_Application_Module_Services_Integrity_DB_Query_List_Applications_Background				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_background");
 
-$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_ID							= $_Application_Module_Services_Integrity_List_Application_Panels_Fetch_Array['id'];
-$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_NAME						= $_Application_Module_Services_Integrity_List_Application_Panels_Fetch_Array['panel_file_name'];
-$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY						= $_Application_Module_Services_Integrity_List_Application_Panels_Fetch_Array['panel_file_integrity'];
-$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION				= $_Application_Module_Services_Integrity_List_Application_Panels_Fetch_Array['panel_file_integrity_installation'];
-$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PHYSICAL					= hash_file('sha256', "./Applications/Panel/$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_NAME.panel");
+while ($_Application_Module_Services_Integrity_DB_Query_List_Applications_Background_Fetch_Array = $DB->fetch_array($_Application_Module_Services_Integrity_DB_Query_List_Applications_Background)) {
 
-if ($_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PHYSICAL != "$_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION") {
+$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_ID					= $_Application_Module_Services_Integrity_DB_Query_List_Applications_Background_Fetch_Array['id'];
+$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME				= $_Application_Module_Services_Integrity_DB_Query_List_Applications_Background_Fetch_Array['application_file_name'];
+$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_INTEGRITY			= $_Application_Module_Services_Integrity_DB_Query_List_Applications_Background_Fetch_Array['application_file_integrity'];
+$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_INTEGRITY_INSTALLATION	= $_Application_Module_Services_Integrity_DB_Query_List_Applications_Background_Fetch_Array['application_file_integrity_installation'];
+$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_HASH_SHA256			= hash_file('sha256', "./Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME");
+
+/*
+ ============================================================================================================
+ + IF: Physical Application Module File Integrity String DOES NOT MATCH Master Application Module File Integrity String
+ ============================================================================================================
+*/
+
+if (file_exists(./Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME)) {
+
+echo ("Integrity Message: Checking For Physical File: $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME<BR>");
+
+} else {
+
+echo ("Integrity Message: ");
+
+} // [ + ] IF: File Exists: Application Module :: Background
+
+/*
+ ============================================================================================================
+ + IF: Physical Application Module File Integrity String DOES NOT MATCH Master Application Module File Integrity String
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_HASH_SHA256 != "$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_INTEGRITY") {
 
 echo ("
-* Integrity :: Message: HASH Mismatch On Application Panel: $_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_NAME<HR ALIGN=\"LEFT\" WIDTH=\"50%\">
-HASH String :: Local File: $_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_PHYSICAL<BR>
-HASH String :: Database Management System Server Database Entry: $_Application_Module_Services_Integrity_LIST_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION<BR>
-Should This Application Panel Automatically Re-Install Itself Now ?<BR><BR>
-");
+Integrity Message:<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+Integrity: Physical File Integrity String Mismatch For Application Module File: ./Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME<BR>
+Integrity :: File: $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_HASH_SHA256<BR>
+Integrity :: Database: $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_INTEGRITY<BR>
+-- Re-Installing Now.<BR><BR>");
 
-} // [ + ] IF: Integrity :: File :: Application Panel :: Physical File Integrity DOES NOT Match Integrity String Stored In The Database Management System Server Database
+unlink("./System/Security/Integrity/Backup/Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME");
+copy("./System/Security/Integrity/Backup/Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME","./Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME");
 
-$_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_001								= hash_file('sha256', "./Applications/Panel/Administration.panel");
-$_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_002								= hash_file('sha256', "./Applications/Panel/Applications_Panel.panel");
-$_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_003								= hash_file('sha256', "./Applications/Panel/Language.panel");
-$_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_004								= hash_file('sha256', "./Applications/Panel/Latest_Articles.panel");
-$_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_005								= hash_file('sha256', "./Applications/Panel/Latest_Files.panel");
-$_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_006								= hash_file('sha256', "./Applications/Panel/Latest_Members.panel");
-$_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_007								= hash_file('sha256', "./Applications/Panel/Latest_Shouts.panel");
-$_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_008								= hash_file('sha256', "./Applications/Panel/Member_Panel.panel");
-$_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_009								= hash_file('sha256', "./Applications/Panel/Moderator.panel");
-$_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_010								= hash_file('sha256', "./Applications/Panel/Networking.panel");
-$_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_011								= hash_file('sha256', "./Applications/Panel/Project_Badges.panel");
-$_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_012								= hash_file('sha256', "./Applications/Panel/RSS_Panel.panel");
-$_SERVICES_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_013								= hash_file('sha256', "./Applications/Panel/Theme.panel");
+} else {
 
-} // [ + ] WHILE :: Retrieving :: All :: Applcication Module Entries :: Panels :: Entry Data
+echo ("Integrity Message: All Application Module Integrity Checks Cleared For Application Module: $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME<BR>");
+
+} // [ + ] IF: Application Module :: Background :: Physical File Integrity String DOES NOT MATCH File Integrity String In The Database Management System Server Database Entry, Copy From Read-Only Backup
+
+} // [ + ] WHILE :: Retrieving :: All :: Applcication Module Entries :: Background :: Entry Data
 
 } // [ + ] IF: Internal Application: Flash :: Is: Application
 
