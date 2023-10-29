@@ -154,11 +154,21 @@ $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_HASH_S
 
 if (file_exists(./Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME)) {
 
-echo ("Integrity Message: Checking For Physical File: $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME<BR>");
+echo ("
+Integrity Message:<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+* Integrity: Checking For The Existence of Physical Application Module File: $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME<BR>
+* Integrity :: File Exists: $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME<BR>
+-- Exiting<BR><BR>
+");
 
 } else {
 
-echo ("Integrity Message: ");
+echo ("Integrity Message:<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+* Integrity: Physical Application Module File Is Missing: $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME<BR>
+-- Re-Installing Now<BR><BR>
+");
+
+copy("./System/Security/Integrity/Backup/Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME","./Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME");
 
 } // [ + ] IF: File Exists: Application Module :: Background
 
@@ -172,17 +182,20 @@ if ($_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_HA
 
 echo ("
 Integrity Message:<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
-Integrity: Physical File Integrity String Mismatch For Application Module File: ./Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME<BR>
-Integrity :: File: $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_HASH_SHA256<BR>
-Integrity :: Database: $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_INTEGRITY<BR>
--- Re-Installing Now.<BR><BR>");
+* Integrity: Physical File Integrity String Mismatch For Application Module File: ./Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME<BR>
+* Integrity :: File: $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_HASH_SHA256<BR>
+* Integrity :: Database: $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_INTEGRITY<BR>
+-- Re-Installing Now<BR><BR>");
 
 unlink("./System/Security/Integrity/Backup/Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME");
 copy("./System/Security/Integrity/Backup/Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME","./Applications/Background/$_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME");
 
 } else {
 
-echo ("Integrity Message: All Application Module Integrity Checks Cleared For Application Module: $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME<BR>");
+echo ("
+Integrity Message:<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+* Integrity: All Application Module File Integrity Checks Cleared For Application Module File: $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME<BR>
+-- Exiting<BR><BR>");
 
 } // [ + ] IF: Application Module :: Background :: Physical File Integrity String DOES NOT MATCH File Integrity String In The Database Management System Server Database Entry, Copy From Read-Only Backup
 
