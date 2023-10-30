@@ -76,6 +76,7 @@ $_Application_Module_Services_Commander_LIST_COMMAND_RECEIVE							= $_Applicati
 $_Application_Module_Services_Commander_LIST_COMMAND_SEND							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_send'];
 $_Application_Module_Services_Commander_LIST_COMMAND_TIMESTAMP							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_timestamp'];
 $_Application_Module_Services_Commander_LIST_COMMAND_TYPE							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_type'];
+$_Application_Module_Services_Commander_LIST_COMMAND_TYPE_SERVICE						= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_type_service'];
 
 /*
  ============================================================================================================
@@ -97,9 +98,27 @@ $_Application_Module_Services_Commander_LIST_COMMAND_TYPE							= $_Application_
  ============================================================================================================
 */
 
-if ($_Application_Module_Services_Commander_LIST_COMMAND_TYPE == "2") {
+if ($_Application_Module_Services_Commander_LIST_COMMAND_TYPE_SERVICE == "1") {
 
-} // [ + ] IF: Services :: Commander :: Command :: Type :: Is: 2, Integrity
+if ($_Application_Module_Services_Commander_LIST_COMMAND_TYPE == "1") {
+
+echo ("Commander Message: $_Application_Module_Services_Commander_LIST_COMMAND_RECEIVE<BR>");
+
+$_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY				= $DB->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_services_commander WHERE id='$_Application_Module_Services_Commander_LIST_COMMAND_ID'");
+
+if ($_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY) {
+/**
+ * Do Nothing
+*/
+} else {
+/**
+ * Do Nothing
+*/
+} // [ + ] IF: Database Management System Server Database :: Query :: Delete Entry From :: Services Commander
+
+} // [ + ] IF: Services :: Commander :: Command :: Type :: Is: 1, Flash
+
+} // [ + ] IF: Services :: Commander :: Command :: Type :: Is: Integrity
 
 } // [ + ] WHILE: Retrieving :: Command Entries :: From The Database Management System Server Database
 ?>
