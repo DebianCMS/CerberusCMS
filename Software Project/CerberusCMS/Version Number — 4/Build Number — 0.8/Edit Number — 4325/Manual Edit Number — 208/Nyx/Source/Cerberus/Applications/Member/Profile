@@ -969,7 +969,9 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 
 if ($_GLOBAL_MEMBER_ACCESS_LEVEL >= "3") {
 
-echo ("Services Message: Command Received: $_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE<BR><BR>");
+echo ("Services Message: Command Received: $_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE -- Inserting Command Entry Into The Database Management System Server Database... Wait.<BR><BR>");
+
+
 
 header("Refresh:10; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Profile&Name=$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
 
@@ -978,6 +980,30 @@ header("Refresh:10; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Profile&Name=$_App
 echo ("Services Message: You are not Authorized to Send this Services Root Administration-Level Terminal Command.<BR><BR>");
 
 } // [ + ] IF: Registered Member Account :: Access Level :: Is: Greater Than OR Equal To: Administration-Level
+
+/*
+ ============================================================================================================
+ + Database Management System Server Database Query :: Insert :: Commander :: Command
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_SERVICES_DB_Query_COMMAND_RECEIVE					= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_commander(command_receive)VALUES('$_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE')");
+
+/*
+ ============================================================================================================
+ + IF: Database Management System Server Database Query :: Insert :: Commander :: Command
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_SERVICES_DB_Query_COMMAND_RECEIVE) {
+
+echo ("Services Message: Command Was Received and Inserted Successfully.<BR><BR>");
+
+} else {
+
+echo ("Services Message: Command Was ***NOT*** Inserted. Try Again ?<BR><BR>");
+
+} // [ + ] IF: Registered Member Account :: Services :: Command :: Receive :: Database Management System Server Database :: Query :: Has Executed
 
 } else {
 
