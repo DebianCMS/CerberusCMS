@@ -92,7 +92,7 @@ $_Application_Module_Services_Commander_LIST_COMMAND_TYPE_SERVICE						= $_Appli
  ============================================================================================================
  +
  +
- + [ @ ] Commander :: Command :: Execute :: Type :: Integrity
+ + [ @ ] Commander :: Command :: Execute :: Service :: Type :: Integrity
  +
  +
  ============================================================================================================
@@ -100,9 +100,65 @@ $_Application_Module_Services_Commander_LIST_COMMAND_TYPE_SERVICE						= $_Appli
 
 if ($_Application_Module_Services_Commander_LIST_COMMAND_TYPE_SERVICE == "1") {
 
-if ($_Application_Module_Services_Commander_LIST_COMMAND_TYPE == "1") {
+/*
+ ============================================================================================================
+ +
+ + IF: Commander :: Command :: Execute :: Service :: Type :: Integrity :: Is: 0, Flash
+ +
+ ============================================================================================================
+*/
 
-echo ("Commander Message: $_Application_Module_Services_Commander_LIST_COMMAND_RECEIVE<BR>");
+if ($_Application_Module_Services_Commander_LIST_COMMAND_TYPE == "0") {
+
+if ($_Application_Module_Services_Commander_LIST_COMMAND_RECEIVE == "Background") {
+
+echo ("Commander Message: Flashing Application Module Directory: Background... Wait.<BR><BR>");
+
+unlink("./Applications/Background/index.php");
+unlink("./Applications/Background/Log_Administration");
+unlink("./Applications/Background/Log_Background");
+unlink("./Applications/Background/Log_Member");
+unlink("./Applications/Background/Log_Visitor");
+
+rmdir("./Applications/Background");
+
+mkdir("./Applications/Background");
+
+copy("./System/Security/Integrity/Backup/Applications/Background/index.php","./Applications/Background/index.php");
+copy("./System/Security/Integrity/Backup/Applications/Background/Log_Administration","./Applications/Background/Log_Administration");
+copy("./System/Security/Integrity/Backup/Applications/Background/Log_Background","./Applications/Background/Log_Background");
+copy("./System/Security/Integrity/Backup/Applications/Background/Log_Member","./Applications/Background/Log_Member");
+copy("./System/Security/Integrity/Backup/Applications/Background/Log_Visitor","./Applications/Background/Visitor");
+
+$_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY				= $DB->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_services_commander WHERE id='$_Application_Module_Services_Commander_LIST_COMMAND_ID'");
+
+if ($_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY) {
+/**
+ * Do Nothing
+*/
+} else {
+/**
+ * Do Nothing
+*/
+} // [ + ] IF: Database Management System Server Database :: Query :: Delete Entry From :: Services Commander
+
+echo ("Commander Message: Done. Exiting.<BR><BR>");
+
+header("Refresh:5; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=News&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
+
+} // [ + ] IF: Services :: Commander :: Command :: Flash :: Is: Background
+
+} // [ + ] IF: Services :: Commander :: Command :: Type :: Is: 0, Flash
+
+/*
+ ============================================================================================================
+ +
+ + IF: Commander :: Command :: Execute :: Service :: Type :: Integrity :: Is: 1, Message
+ +
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Services_Commander_LIST_COMMAND_TYPE == "1") {
 
 $_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY				= $DB->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_services_commander WHERE id='$_Application_Module_Services_Commander_LIST_COMMAND_ID'");
 
