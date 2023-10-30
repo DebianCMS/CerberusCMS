@@ -951,6 +951,8 @@ echo ("
 
 echo ("Services Message: Command Received: $_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE<BR><BR>");
 
+header("Refresh:30; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Profile&Name=$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
+
 } // [ + ] IF: Registered Member Account :: Services :: Command :: Receive :: Input Form Variables HAVE Executed
 
 } // [ + ] IF: Registered Member Account :: Access Level :: Is: Greater Than OR Equal To: 5 :: Display Command Terminal
