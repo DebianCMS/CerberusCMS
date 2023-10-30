@@ -479,6 +479,7 @@ $_Application_Module_Member_Profile_STREAMS_SEARCH_POST_SELECT_DATE_MONTH_DAY			
 */
 
 $_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE							= $_POST['AMM_Profile_Services_Command_Receive'];
+$_Application_Module_Member_Profile_SERVICES_COMMAND_TYPE							= $_POST['AMM_Profile_Services_Command_Type'];
 
 /*
  ============================================================================================================
@@ -946,6 +947,11 @@ if (!$_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE) {
 echo ("
 													This Registered Member Account Is Services Root-Administration Level. Send Command Now ?<BR>
 													<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\">
+														<SELECT NAME=\"AMM_Profile_Services_Command_Type\">
+															<OPTION VALUE=\"0\">Task</OPTION>
+															<OPTION VALUE=\"1\">Integrity</OPTION>
+															<OPTION VALUE=\"2\">Loops</OPTION>
+														</SELECT><BR>
 														<TEXTAREA NAME=\"AMM_Profile_Services_Command_Receive\" MAXLENGTH=\"500\" ROWS=\"7\" COLS=\"50\"></TEXTAREA><BR>
 														<INPUT TYPE=\"SUBMIT\" VALUE=\"Send Command\">
 													</FORM><BR><BR>
@@ -987,7 +993,7 @@ echo ("Services Message: You are not Authorized to Send this Services Root Admin
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_SERVICES_DB_Query_COMMAND_RECEIVE					= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_commander(command_receive)VALUES('$_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE')");
+$_Application_Module_Member_Profile_SERVICES_DB_Query_COMMAND_RECEIVE					= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_services_commander(command_receive,command_timestamp,command_type)VALUES('$_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD','$_Application_Module_Member_Profile_SERVICES_COMMAND_TYPE')");
 
 /*
  ============================================================================================================
