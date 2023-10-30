@@ -358,7 +358,11 @@ $DB->free($_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS);
 
 if ($_GET["Display"] == "Archive") {
 
-echo ("<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Archive&amp;Option&#61;CreateArchive\" TITLE=\":: Create Archive ::\">Create Archive</A><BR><BR>");
+echo ("
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Archive&amp;Option&#61;CreateArchive\" TITLE=\":: Create Archive ::\">Create Archive</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Archive&amp;Option&#61;ManageArchive\" TITLE=\":: Manage Archive ::\">Manage Archive</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Archive&amp;Option&#61;RestoreArchive\" TITLE=\":: Restore Archive ::\">Restore Archive</A><BR><BR>
+");
 
 /*
  ============================================================================================================
@@ -587,11 +591,11 @@ WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
 
 if ($_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_AUTHORIZATION_SECURITY_TOKEN) {
 
-echo ("Cerberus: I have Revoked the Security Token Successfully.");
+echo ("Kernel Message: I have Revoked the Security Token Successfully.");
 
 } else {
 
-echo ("Cerberus: I was not able to Revoke the Security Token. Try Again ?");
+echo ("Kernel Message: I was not able to Revoke the Security Token. Try Again ?");
 
 } // [ + ] IF: Database Management System Database Server :: Query :: Update :: Revoke :: Registered Member Account :: Authentication :: Authorization :: Security Token
 
@@ -626,11 +630,11 @@ WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
 
 if ($_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_DEVICE_AUTHORIZED_MULTIFACTOR_INTERNET_PROTOCOL_ADDRESS) {
 
-echo ("Cerberus: The Current Authorized :: Registered Member Account :: Multi-Factor :: Authentication :: Internet Protocol Address :: Was Revoked Successfully.<BR>");
+echo ("Kernel Message: The Current Authorized :: Registered Member Account :: Multi-Factor :: Authentication :: Internet Protocol Address :: Was Revoked Successfully.<BR>");
 
 } else {
 
-echo ("Cerberus: I Was Not Able To Revoke The Current Authorized :: Registered Member Account :: Multi-Factor :: Authentication :: Internet Protocol Address. Try Again ?<BR>");
+echo ("Kernel Message: I Was Not Able To Revoke The Current Authorized :: Registered Member Account :: Multi-Factor :: Authentication :: Internet Protocol Address. Try Again ?<BR>");
 
 } // [ + ] IF: Database Management System Database Server :: Query :: Update :: Revoke :: Registered Member Account :: Device :: Authentication :: Authorization :: Multi-Factor :: Internet Protocol Address
 
@@ -665,11 +669,11 @@ WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
 
 if ($_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_INTERNET_PROTOCOL_ADDRESS) {
 
-echo ("Cerberus: The Current Authorized :: Registered Member Account :: Device :: Internet Protocol Address Was Revoked Successfully.<BR>");
+echo ("Kernel Message: The Current Authorized :: Registered Member Account :: Device :: Internet Protocol Address Was Revoked Successfully.<BR>");
 
 } else {
 
-echo ("Cerberus: I Was Not Able To Revoke The Current Authorized :: Registered Member Account :: Device :: Internet Protocol Address. Try Again ?<BR>");
+echo ("Kernel Message: I Was Not Able To Revoke The Current Authorized :: Registered Member Account :: Device :: Internet Protocol Address. Try Again ?<BR>");
 
 } // [ + ] IF: Database Management System Database Server :: Query :: Update :: Revoke Authorization :: Internet Protocol Address
 
@@ -704,11 +708,11 @@ WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
 
 if ($_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_MAC_ADDRESS) {
 
-echo ("Cerberus: The Current Authorized Device MAC Address Was Revoked Successfully.<BR>");
+echo ("Kernel Message: The Current Authorized Device MAC Address Was Revoked Successfully.<BR>");
 
 } else {
 
-echo ("Cerberus: I Was Not Able To Revoke The Current Authorized Device MAC Address. Try Again ?<BR>");
+echo ("Kernel Message: I Was Not Able To Revoke The Current Authorized Device MAC Address. Try Again ?<BR>");
 
 } // [ + ] IF: Database Management System Database Server :: Query :: Update :: Revoke Authorization :: MAC Address
 
@@ -737,11 +741,11 @@ WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
 
 if ($_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_WEB_BROWSER) {
 
-echo ("Cerberus: The Current Authorized Web Browser User-Agent String Was Revoked Successfully.<BR>");
+echo ("Kernel Message: The Current Authorized Web Browser User-Agent String Was Revoked Successfully.<BR>");
 
 } else {
 
-echo ("Cerberus: I Was Not Able To Revoke The Current Authorized Web Browser User-Agent String. Try Again ?<BR>");
+echo ("Kernel Message: I Was Not Able To Revoke The Current Authorized Web Browser User-Agent String. Try Again ?<BR>");
 
 } // [ + ] IF: Database Management System Database Server :: Query :: Update :: Revoke Authorization :: MAC Address
 
