@@ -1204,6 +1204,102 @@ if (file_exists($_GLOBAL_SYSTEM_SECURITY_MODULE_FILE_MASTER_SANITIZATION)) {
  ============================================================================================================
  +
  +
+ +
+ + [ @ ] Internal :: Services :: Modules
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ + Internal :: Services :: Module :: Commander
+ +
+ +
+ ============================================================================================================
+*/
+
+$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_COMMANDER								= "./System/Services/Commander";
+
+/*
+ ============================================================================================================
+ + Internal :: Services :: Module :: File: Commander :: Exists, Include It
+ ============================================================================================================
+*/
+
+if (file_exists($_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_COMMANDER)) {
+
+	include_once "$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_COMMANDER";
+
+} else {
+
+	echo ("Kernel: Message: Error :: Missing :: System :: Services :: Module :: File: Commander");
+
+} // [ + ] IF: Include: Global :: System :: Services :: Module :: File: Commander :: Exists, Include It
+
+/*
+ ============================================================================================================
+ +
+ +
+ + Internal :: Services :: Module :: Integrity
+ +
+ +
+ ============================================================================================================
+*/
+
+$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_INTEGRITY								= "./System/Services/Integrity";
+
+/*
+ ============================================================================================================
+ + Internal :: Services :: Module :: File: Integrity :: Exists, Include It
+ ============================================================================================================
+*/
+
+if (file_exists($_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_INTEGRITY)) {
+
+	include_once "$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_INTEGRITY";
+
+} else {
+
+	echo ("Kernel: Message: Error :: Missing :: System :: Services :: Module :: File: Integrity");
+
+} // [ + ] IF: Include: Global :: System :: Services :: Module :: File: Integrity :: Exists, Include It
+
+/*
+ ============================================================================================================
+ +
+ +
+ + Internal :: Services :: Module :: Loops
+ +
+ +
+ ============================================================================================================
+*/
+
+$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_LOOPS								= "./System/Services/Loops";
+
+/*
+ ============================================================================================================
+ + Internal :: Services :: Module :: File: Loops :: Exists, Include It
+ ============================================================================================================
+*/
+
+if (file_exists($_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_LOOPS)) {
+
+	include_once "$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_LOOPS";
+
+} else {
+
+	echo ("Kernel: Message: Error :: Missing :: System :: Services :: Module :: File: Loops");
+
+} // [ + ] IF: Include: Global :: System :: Services :: Module :: File: Loops :: Exists, Include It
+
+/*
+ ============================================================================================================
+ +
+ +
  + Internal Security :: Registered Member Account :: Device :: Restriction :: Web Browser
  +
  +
