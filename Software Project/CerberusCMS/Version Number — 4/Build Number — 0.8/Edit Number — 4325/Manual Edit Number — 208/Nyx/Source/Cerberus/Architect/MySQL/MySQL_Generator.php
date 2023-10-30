@@ -893,16 +893,16 @@ rank_gender_none VARCHAR(25),
 PRIMARY KEY (id)
 );
 
-/* Services Commander */
-
-mysql_query("CREATE TABLE \"$_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_TABLES_CONNECT_NAME_DATABASE_TABLE_PREFIX\"_services_commander (
-id MEDIUMINT NOT NULL AUTO_INCREMENT,
-command_execute VARCHAR(500),
-command_receive VARCHAR(500),
-command_send VARCHAR(500),
-command_timestamp VARCHAR(100),
-command_type VARCHAR(100),
-PRIMARY KEY (id)
+/* Services Commander */
+
+CREATE TABLE {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_services_commander (
+id MEDIUMINT NOT NULL AUTO_INCREMENT,
+command_execute VARCHAR(500),
+command_receive VARCHAR(500),
+command_send VARCHAR(500),
+command_timestamp VARCHAR(100),
+command_type VARCHAR(100),
+PRIMARY KEY (id)
 ") or die(mysql_error());
 
 /* Settings */
