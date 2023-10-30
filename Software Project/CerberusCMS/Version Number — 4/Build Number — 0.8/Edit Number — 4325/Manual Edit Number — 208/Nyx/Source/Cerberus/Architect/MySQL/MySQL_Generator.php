@@ -901,7 +901,8 @@ command_execute VARCHAR(500),
 command_receive VARCHAR(500),
 command_send VARCHAR(500),
 command_timestamp VARCHAR(100),
-command_type VARCHAR(100),
+command_type CHAR(1),
+command_type_service CHAR(1),
 PRIMARY KEY (id)
 );
 
