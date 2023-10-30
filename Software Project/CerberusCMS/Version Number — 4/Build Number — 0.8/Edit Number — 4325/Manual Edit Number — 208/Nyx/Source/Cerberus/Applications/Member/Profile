@@ -940,6 +940,7 @@ if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCESS_LEVEL >= "5") {
 if (!$_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE) {
 
 echo ("
+													This Registered Member Account Is Services Root-Administration Level. Send Command Now ?<BR>
 													<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\">
 														<TEXTAREA NAME=\"AMM_Profile_Services_Command_Receive\" ROWS=\"7\" COLS=\"50\"></TEXTAREA><BR>
 														<INPUT TYPE=\"SUBMIT\" VALUE=\"Send Command\">
