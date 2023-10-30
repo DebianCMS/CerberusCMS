@@ -903,7 +903,7 @@ command_send VARCHAR(500),
 command_timestamp VARCHAR(100),
 command_type VARCHAR(100),
 PRIMARY KEY (id)
-") or die(mysql_error());
+);
 
 /* Settings */
 
