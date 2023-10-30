@@ -5,9 +5,9 @@
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  + Cerberus Content Management System
  + ----------------------------------------------------------------------------------------------------------
- + - Author			 : Gary Christopher Johnson of Rosedale In Southern California, U.S.A.
+ + - Author			 : Gary Christopher Johnson of Oildale and SouthGate In Southern California
  + - Company			 : Tinke Software, Free and Open Source Software
- + - Company Address		 : Rosedale In Southern California, United States of America
+ + - Company Address		 : Oildale In Southern California, United States of America
  + - Electronic Mail Address	 : CerberusCMS@Protonmail.com, TinkeSoftware@Protonmail.com
  + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
  +				 : correct display of this programming code and its indentation.
@@ -15,9 +15,10 @@
  +    ()    () - -
  +  ()  () ()()()()
  +  ------
+ +  ------------------------------
  +  Services-Level Application Module
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => System => Services => Loops
+ + - This File, Location	 : Root Directory => System => Services => Commander
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -48,12 +49,57 @@
  +
  +
  +
- + [ ^ ] Loops
+ + [ ^ ] Commander
  +
  +
  +
  ============================================================================================================
 */
 
-// Loop: Empty Member Profile Picture AND Non-Existing Picture IS Set To Default Theme No_Image.png Create Variable to call upon.
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Commander :: Command :: Receive
+ +
+ +
+ ============================================================================================================
+*/
+
+$_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members");
+
+while ($_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array	= $DB->fetch_array($_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS)) {
+
+$_Application_Module_Services_Commander_LIST_COMMAND_ID								= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['id'];
+$_Application_Module_Services_Commander_LIST_COMMAND_EXECUTE							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_execute'];
+$_Application_Module_Services_Commander_LIST_COMMAND_RECEIVE							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_receive'];
+$_Application_Module_Services_Commander_LIST_COMMAND_SEND							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_send'];
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Commander :: Command :: Send
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Commander :: Command :: Execute
+ +
+ +
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Services_Commander_LIST_COMMAND_RECEIVE == "Test") {
+
+echo ("Commander: Test..");
+
+}
+
+}
 ?>
