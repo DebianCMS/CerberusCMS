@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
  ============================================================================================================
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1386,6 +1386,16 @@ article_author VARCHAR(50),
 article_data TEXT,
 article_time VARCHAR(50),
 article_title VARCHAR(50),
+PRIMARY KEY (id)
+") or die(mysql_error());
+
+/* Commander */
+
+mysql_query("CREATE TABLE \"$_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_TABLES_CONNECT_NAME_DATABASE_TABLE_PREFIX\"_commander (
+id MEDIUMINT NOT NULL AUTO_INCREMENT,
+command_execute VARCHAR(500),
+command_receieve VARCHAR(500),
+command_send VARCHAR(500),
 PRIMARY KEY (id)
 ") or die(mysql_error());
 
