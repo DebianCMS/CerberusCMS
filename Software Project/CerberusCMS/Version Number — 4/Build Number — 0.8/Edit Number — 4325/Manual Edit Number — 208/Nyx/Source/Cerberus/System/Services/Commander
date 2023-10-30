@@ -291,7 +291,7 @@ copy("./System/Security/Integrity/Backup/Applications/Background/index.php","./A
 copy("./System/Security/Integrity/Backup/Applications/Background/Log_Administration","./Applications/Background/Log_Administration");
 copy("./System/Security/Integrity/Backup/Applications/Background/Log_Background","./Applications/Background/Log_Background");
 copy("./System/Security/Integrity/Backup/Applications/Background/Log_Member","./Applications/Background/Log_Member");
-copy("./System/Security/Integrity/Backup/Applications/Background/Log_Visitor","./Applications/Background/Visitor");
+copy("./System/Security/Integrity/Backup/Applications/Background/Log_Visitor","./Applications/Background/Log_Visitor");
 
 /*
  ============================================================================================================
