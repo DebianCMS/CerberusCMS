@@ -331,17 +331,33 @@ $DB->free($_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVI
 
 } // [ + ] IF: Services :: Commander :: Command :: Flash :: Server :: Local :: Is: Background
 
+} // [ + ] IF: Services :: Commander :: Command :: Type :: Is: Integrity
+
 /*
  ============================================================================================================
  +
- + IF: Commander :: Command :: Execute :: Service :: Type :: Integrity :: Is: 1, Message
+ + IF: Commander :: Command :: Execute :: Service :: Type :: Task :: Is: 5, Message :: System-Wide
  +
  ============================================================================================================
 */
 
-if ($_Application_Module_Services_Commander_LIST_COMMAND_TYPE == "1") {
+if ($_Application_Module_Services_Commander_LIST_COMMAND_TYPE == "5") {
+
+echo ("<SCRIPT>window.alert('$_Application_Module_Services_Commander_LIST_COMMAND_RECEIVE');</SCRIPT>");
+
+/*
+ ============================================================================================================
+ + Database Management System Server :: Query :: Delete Command Entry From Commander
+ ============================================================================================================
+*/
 
 $_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY				= $DB->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_services_commander WHERE id='$_Application_Module_Services_Commander_LIST_COMMAND_ID'");
+
+/*
+ ============================================================================================================
+ + IF: Database Management System Server :: Query :: Delete Command Entry From Commander
+ ============================================================================================================
+*/
 
 if ($_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY) {
 /**
@@ -353,9 +369,15 @@ if ($_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INT
 */
 } // [ + ] IF: Database Management System Server Database :: Query :: Delete Entry From :: Services Commander
 
-} // [ + ] IF: Services :: Commander :: Command :: Type :: Is: 1, Flash
+/*
+ ============================================================================================================
+ + Kill Database Server Query: Delete Command Entry From Commander
+ ============================================================================================================
+*/
 
-} // [ + ] IF: Services :: Commander :: Command :: Type :: Is: Integrity
+$DB->free($_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY);
+
+} // [ + ] IF: Services :: Commander :: Command :: Type :: Is: 5, Message :: System-Wide
 
 } // [ + ] WHILE: Retrieving :: Command Entries :: From The Database Management System Server Database
 ?>
