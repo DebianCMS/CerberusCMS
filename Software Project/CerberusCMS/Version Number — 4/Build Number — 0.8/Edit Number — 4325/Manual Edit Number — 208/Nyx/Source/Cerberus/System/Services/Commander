@@ -66,7 +66,19 @@
  ============================================================================================================
 */
 
+/*
+ ============================================================================================================
+ + Database Management System Server Database :: Query :: Select ALL Entries From: Services Commander
+ ============================================================================================================
+*/
+
 $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_services_commander");
+
+/*
+ ============================================================================================================
+ + WHILE: Retrieving All Services Commander Entries From The Database Management System Server Database
+ ============================================================================================================
+*/
 
 while ($_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array = $DB->fetch_array($_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS)) {
 
@@ -76,7 +88,6 @@ $_Application_Module_Services_Commander_LIST_COMMAND_RECEIVE							= $_Applicati
 $_Application_Module_Services_Commander_LIST_COMMAND_SEND							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_send'];
 $_Application_Module_Services_Commander_LIST_COMMAND_TIMESTAMP							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_timestamp'];
 $_Application_Module_Services_Commander_LIST_COMMAND_TYPE							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_type'];
-$_Application_Module_Services_Commander_LIST_COMMAND_TYPE_SERVICE						= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_type_service'];
 
 /*
  ============================================================================================================
