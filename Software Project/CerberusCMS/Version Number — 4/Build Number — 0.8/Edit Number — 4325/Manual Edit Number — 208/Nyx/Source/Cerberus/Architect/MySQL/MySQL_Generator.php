@@ -897,12 +897,11 @@ PRIMARY KEY (id)
 
 CREATE TABLE {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_services_commander (
 id MEDIUMINT NOT NULL AUTO_INCREMENT,
-command_execute VARCHAR(500),
-command_receive VARCHAR(500),
-command_send VARCHAR(500),
-command_timestamp VARCHAR(100),
+command_execute VARCHAR(500),
+command_receive VARCHAR(500),
+command_send VARCHAR(500),
+command_timestamp VARCHAR(100),
 command_type CHAR(1),
-command_type_service CHAR(1),
 PRIMARY KEY (id)
 );
 
