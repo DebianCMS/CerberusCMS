@@ -929,13 +929,17 @@ echo ("
 
 /*
  ============================================================================================================
- +
  + IF: Registered Member Account :: Access Level :: Is: Greater Than OR Equal To: 5 :: Display Command Terminal
- +
  ============================================================================================================
 */
 
 if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCESS_LEVEL >= "5") {
+
+/*
+ ============================================================================================================
+ + IF: Command Terminal :: Input Form Variables HAVE NOT Executed, Display: Input Form
+ ============================================================================================================
+*/
 
 if (!$_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE) {
 
@@ -949,9 +953,37 @@ echo ("
 
 } else {
 
+/*
+ ============================================================================================================
+ + IF: Registered Member Account :: Credentials Exists AND Are Valid
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) {
+
+/*
+ ============================================================================================================
+ + IF: Registered Member Account :: Access Level :: Is: Greater Than OR Equal To: Administration-Level
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_MEMBER_ACCESS_LEVEL >= "3") {
+
 echo ("Services Message: Command Received: $_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE<BR><BR>");
 
 header("Refresh:30; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=Profile&Name=$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
+
+} else {
+
+echo ("Services Message: You are not Authorized to Send this Services Root Administration-Level Terminal Command.<BR><BR>");
+
+} // [ + ] IF: Registered Member Account :: Access Level :: Is: Greater Than OR Equal To: Administration-Level
+
+} else {
+
+echo ("Services Message: You are not Authenticated. Authentication is required to Send this Services Root Administration-Level Terminal Command.<BR><BR>");
+
+} // [ + ] IF: Registered Member Account :: Credentials Exist AND Are Valid
 
 } // [ + ] IF: Registered Member Account :: Services :: Command :: Receive :: Input Form Variables HAVE Executed
 
