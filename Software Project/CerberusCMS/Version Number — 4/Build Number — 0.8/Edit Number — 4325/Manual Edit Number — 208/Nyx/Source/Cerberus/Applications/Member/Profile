@@ -474,6 +474,14 @@ $_Application_Module_Member_Profile_STREAMS_SEARCH_POST_SELECT_DATE_MONTH_DAY			
 
 /*
  ============================================================================================================
+ + Registered Member Account :: Services :: Command :: Receive
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE							= $_POST['AMM_Profile_Services_Command_Receive'];
+
+/*
+ ============================================================================================================
  + Registered Member Account :: Streams :: Find :: Member Account Directories :: Streams
  ============================================================================================================
 */
@@ -918,6 +926,33 @@ echo ("
 													$_Application_Module_Member_Profile_LIST_MEMBER_PROFILE_SIGNATURE
 												<HR>
 ");
+
+/*
+ ============================================================================================================
+ +
+ + IF: Registered Member Account :: Access Level :: Is: Greater Than OR Equal To: 5 :: Display Command Terminal
+ +
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCESS_LEVEL >= "5") {
+
+if (!$_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE) {
+
+echo ("
+													<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\">
+														<TEXTAREA NAME=\"AMM_Profile_Services_Command_Receive\" ROWS=\"7\" COLS=\"50\"></TEXTAREA><BR>
+														<INPUT TYPE=\"SUBMIT\" VALUE=\"Send Command\">
+													</FORM><BR><BR>
+");
+
+} else {
+
+echo ("Services Message: Command Received: $_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE<BR><BR>");
+
+} // [ + ] IF: Registered Member Account :: Services :: Command :: Receive :: Input Form Variables HAVE Executed
+
+} // [ + ] IF: Registered Member Account :: Access Level :: Is: Greater Than OR Equal To: 5 :: Display Command Terminal
 
 /*
  ============================================================================================================
