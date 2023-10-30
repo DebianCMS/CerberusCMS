@@ -12,13 +12,12 @@
  + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
  +				 : correct display of this programming code and its indentation.
  + ----------------------------------------------------------------------------------------------------------
- +    ()    () - -
- +  ()  () ()()()()
- +  ------
+ +    ()  ()()() ---
+ +  ()  () --- ()  ()()()
  +  ------------------------------
  +  Services-Level Application Module
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => System => Services => Commander
+ + - This File, Location	 : Root Directory => Applications => Services => Commander
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -49,12 +48,40 @@
  +
  +
  +
- + [ ^ ] Commander
+ + [ ^ ] Application Module :: Services :: Commander
  +
  +
  +
  ============================================================================================================
 */
+
+/*
+
+ ============================================================================================================
+
+ + Application Module Header
+
+ ============================================================================================================
+
+*/
+
+
+
+											echo ("$_Application_Module_Services_Message_Commander_Header");
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Commander :: Display :: Options
+ +
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "Options") {
+
+} // [ + ] IF: Internal Application: Display :: Options :: Is: Activated
 
 /*
  ============================================================================================================
@@ -66,28 +93,14 @@
  ============================================================================================================
 */
 
-/*
- ============================================================================================================
- + Database Management System Server Database :: Query :: Select ALL Entries From: Services Commander
- ============================================================================================================
-*/
+$_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members");
 
-$_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_services_commander");
-
-/*
- ============================================================================================================
- + WHILE: Retrieving All Services Commander Entries From The Database Management System Server Database
- ============================================================================================================
-*/
-
-while ($_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array = $DB->fetch_array($_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS)) {
+while ($_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array	= $DB->fetch_array($_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS)) {
 
 $_Application_Module_Services_Commander_LIST_COMMAND_ID								= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['id'];
 $_Application_Module_Services_Commander_LIST_COMMAND_EXECUTE							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_execute'];
 $_Application_Module_Services_Commander_LIST_COMMAND_RECEIVE							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_receive'];
 $_Application_Module_Services_Commander_LIST_COMMAND_SEND							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_send'];
-$_Application_Module_Services_Commander_LIST_COMMAND_TIMESTAMP							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_timestamp'];
-$_Application_Module_Services_Commander_LIST_COMMAND_TYPE							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_type'];
 
 /*
  ============================================================================================================
@@ -103,89 +116,17 @@ $_Application_Module_Services_Commander_LIST_COMMAND_TYPE							= $_Application_
  ============================================================================================================
  +
  +
- + [ @ ] Commander :: Command :: Execute :: Service :: Type :: Integrity
+ + [ @ ] Commander :: Command :: Execute
  +
  +
  ============================================================================================================
 */
 
-if ($_Application_Module_Services_Commander_LIST_COMMAND_TYPE_SERVICE == "1") {
+if ($_Application_Module_Services_Commander_LIST_COMMAND_RECEIVE == "Test") {
 
-/*
- ============================================================================================================
- +
- + IF: Commander :: Command :: Execute :: Service :: Type :: Integrity :: Is: 0, Flash
- +
- ============================================================================================================
-*/
+echo ("Commander: Test..");
 
-if ($_Application_Module_Services_Commander_LIST_COMMAND_TYPE == "0") {
+}
 
-if ($_Application_Module_Services_Commander_LIST_COMMAND_RECEIVE == "Background") {
-
-echo ("Commander Message: Flashing Application Module Directory: Background... Wait.<BR><BR>");
-
-unlink("./Applications/Background/index.php");
-unlink("./Applications/Background/Log_Administration");
-unlink("./Applications/Background/Log_Background");
-unlink("./Applications/Background/Log_Member");
-unlink("./Applications/Background/Log_Visitor");
-
-rmdir("./Applications/Background");
-
-mkdir("./Applications/Background");
-
-copy("./System/Security/Integrity/Backup/Applications/Background/index.php","./Applications/Background/index.php");
-copy("./System/Security/Integrity/Backup/Applications/Background/Log_Administration","./Applications/Background/Log_Administration");
-copy("./System/Security/Integrity/Backup/Applications/Background/Log_Background","./Applications/Background/Log_Background");
-copy("./System/Security/Integrity/Backup/Applications/Background/Log_Member","./Applications/Background/Log_Member");
-copy("./System/Security/Integrity/Backup/Applications/Background/Log_Visitor","./Applications/Background/Visitor");
-
-$_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY				= $DB->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_services_commander WHERE id='$_Application_Module_Services_Commander_LIST_COMMAND_ID'");
-
-if ($_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY) {
-/**
- * Do Nothing
-*/
-} else {
-/**
- * Do Nothing
-*/
-} // [ + ] IF: Database Management System Server Database :: Query :: Delete Entry From :: Services Commander
-
-echo ("Commander Message: Done. Exiting.<BR><BR>");
-
-header("Refresh:5; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=News&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
-
-} // [ + ] IF: Services :: Commander :: Command :: Flash :: Is: Background
-
-} // [ + ] IF: Services :: Commander :: Command :: Type :: Is: 0, Flash
-
-/*
- ============================================================================================================
- +
- + IF: Commander :: Command :: Execute :: Service :: Type :: Integrity :: Is: 1, Message
- +
- ============================================================================================================
-*/
-
-if ($_Application_Module_Services_Commander_LIST_COMMAND_TYPE == "1") {
-
-$_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY				= $DB->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_services_commander WHERE id='$_Application_Module_Services_Commander_LIST_COMMAND_ID'");
-
-if ($_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY) {
-/**
- * Do Nothing
-*/
-} else {
-/**
- * Do Nothing
-*/
-} // [ + ] IF: Database Management System Server Database :: Query :: Delete Entry From :: Services Commander
-
-} // [ + ] IF: Services :: Commander :: Command :: Type :: Is: 1, Flash
-
-} // [ + ] IF: Services :: Commander :: Command :: Type :: Is: Integrity
-
-} // [ + ] WHILE: Retrieving :: Command Entries :: From The Database Management System Server Database
+}
 ?>
