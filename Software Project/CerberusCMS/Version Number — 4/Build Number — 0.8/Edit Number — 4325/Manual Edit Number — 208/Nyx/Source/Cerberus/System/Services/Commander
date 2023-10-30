@@ -377,6 +377,8 @@ if ($_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INT
 
 $DB->free($_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY);
 
+header("Refresh:10; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=News&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
+
 } // [ + ] IF: Services :: Commander :: Command :: Type :: Is: 5, Message :: System-Wide
 
 } // [ + ] WHILE: Retrieving :: Command Entries :: From The Database Management System Server Database
