@@ -55,4 +55,78 @@
  ============================================================================================================
 */
 
+/*
+
+ ============================================================================================================
+
+ + Application Module Header
+
+ ============================================================================================================
+
+*/
+
+
+
+											echo ("$_Application_Module_Services_Message_Commander_Header");
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Commander :: Display :: Options
+ +
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "Options") {
+
+} // [ + ] IF: Internal Application: Display :: Options :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Commander :: Command :: Receive
+ +
+ +
+ ============================================================================================================
+*/
+
+$_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members");
+
+while ($_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array	= $DB->fetch_array($_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS)) {
+
+$_Application_Module_Services_Commander_LIST_COMMAND_ID								= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['id'];
+$_Application_Module_Services_Commander_LIST_COMMAND_EXECUTE							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_execute'];
+$_Application_Module_Services_Commander_LIST_COMMAND_RECEIVE							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_receive'];
+$_Application_Module_Services_Commander_LIST_COMMAND_SEND							= $_Application_Module_Services_Commander_RETRIEVE_COMMANDER_COMMANDS_Fetch_Array['command_send'];
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Commander :: Command :: Send
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Commander :: Command :: Execute
+ +
+ +
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Services_Commander_LIST_COMMAND_RECEIVE == "Test") {
+
+echo ("Commander: Test..");
+
+}
+
+}
 ?>
