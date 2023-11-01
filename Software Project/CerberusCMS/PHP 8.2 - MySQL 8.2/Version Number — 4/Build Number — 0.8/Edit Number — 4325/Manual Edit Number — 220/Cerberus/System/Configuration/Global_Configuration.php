@@ -72,47 +72,10 @@
 */
 
 $_GLOBAL_SERVER_CONFIGURATION_FILE					= "./System/Configuration/Global_Server_Configuration.php";
-$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE					= "./System/Configuration/Global_SQL_Server_Database_Class_MySQL_Standard.php";
-
-/*
- ============================================================================================================
- + IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 5, Include Specified Database Server Class File
- ============================================================================================================
-*/
-
-if ($_ACCESS_PHP_ENGINE_VERSION == "5") {
-
-	$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE				= "./System/Configuration/Global_SQL_Server_Database_Class_MySQL_Standard.php";
-
-} // [ + ] IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 5, Include Specified Database Server Class File
-
-/*
- ============================================================================================================
- + IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 8, Include Specified Database Server Class File
- ============================================================================================================
-*/
-
-if ($_ACCESS_PHP_ENGINE_VERSION == "8") {
-
-	$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE				= "./System/Configuration/Global_SQL_Server_Database_Class_MySQL_Improved.php";
-
-} // [ + ] IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 8, Include Specified Database Server Class File
-
-/*
- ============================================================================================================
- + IF: Global S.Q.L. Configuration Files Exist, Include Them
- ============================================================================================================
-*/
-
-if (file_exists($_GLOBAL_SERVER_CONFIGURATION_FILE)) {
-
-	include_once "$_GLOBAL_SERVER_CONFIGURATION_FILE";
-
-} else {
-
-	echo ("Kernel Message: Error, Missing File: $_GLOBAL_SERVER_CONFIGURATION_FILE");
-
-} // [ + ] IF: File Exists: Global S.Q.L. Server Configuration File
+$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_STANDARD			= "./System/Configuration/Global_SQL_Server_Database_Class_MySQL_Standard.php";
+$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_IMPROVED			= "./System/Configuration/Global_SQL_Server_Database_Class_MySQL_Improved.php";
+$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MSQL_STANDARD			= "./System/Configuration/Global_SQL_Server_Database_Class_Microsoft_Standard.php";
+$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MINISQL_STANDARD		= "./System/Configuration/Global_SQL_Server_Database_Class_MiniSQL_Standard.php";
 
 /*
  ============================================================================================================
@@ -126,19 +89,55 @@ if (file_exists($_GLOBAL_SERVER_CONFIGURATION_FILE)) {
 
 /*
  ============================================================================================================
- + IF: Global S.Q.L. Server Database Class File Exists, Include It
+ + IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 5, Include Specified Database Server Class File
  ============================================================================================================
 */
 
-if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE)) {
+if ($_ACCESS_PHP_ENGINE_VERSION == "5") {
 
-	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE";
+/*
+ ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Class File: Exists, Include It
+ ============================================================================================================
+*/
+
+if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_STANDARD)) {
+
+	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_STANDARD";
 
 } else {
 
-	echo ("Kernel Message: Error, Missing File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE $_ACCESS_PHP_ENGINE_VERSION");
+	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_STANDARD");
 
-} // [ + ] IF: File Exists: Global S.Q.L. Server Database Class File
+} // [ + ] IF: File Exists: Database Management System Server Database: Class File
+
+} // [ + ] IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 5, Include Specified Database Server Class File
+
+/*
+ ============================================================================================================
+ + IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 8, Include Specified Database Server Class File
+ ============================================================================================================
+*/
+
+if ($_ACCESS_PHP_ENGINE_VERSION == "8") {
+
+/*
+ ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Class File: Exists, Include It
+ ============================================================================================================
+*/
+
+if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_IMPROVED)) {
+
+	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_IMPROVED";
+
+} else {
+
+	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_IMPROVED");
+
+} // [ + ] IF: File Exists: Database Management System Server Database: Class File
+
+} // [ + ] IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 8, Include Specified Database Server Class File
 
 /*
  ============================================================================================================
@@ -303,7 +302,7 @@ $_PROJECT_STRING_NAME_UNIX						= "CerberusCMS";
 */
 
 //$_PROJECT_WEB_SERVER_TECHNOLOGY_VERSION_APACHE			= apache_get_version();
-$_PROJECT_WEB_SERVER_TECHNOLOGY_VERSION_MYSQL				= mysql_get_server_info();
+//$_PROJECT_WEB_SERVER_TECHNOLOGY_VERSION_MYSQL				= mysql_get_server_info();
 $_PROJECT_WEB_SERVER_TECHNOLOGY_VERSION_OPERATING_SYSTEM		= php_uname();
 $_PROJECT_WEB_SERVER_TECHNOLOGY_VERSION_PHP				= phpversion();
 $_PROJECT_WEB_SERVER_TECHNOLOGY_VERSION_PHP_ZEND			= zend_version();
