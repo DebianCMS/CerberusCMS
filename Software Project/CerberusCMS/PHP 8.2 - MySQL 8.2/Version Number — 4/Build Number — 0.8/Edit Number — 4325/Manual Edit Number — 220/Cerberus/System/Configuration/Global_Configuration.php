@@ -77,6 +77,16 @@ $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_IMPROVED			= "./System/Configurati
 $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MSQL_STANDARD			= "./System/Configuration/Global_SQL_Server_Database_Class_Microsoft_Standard.php";
 $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MINISQL_STANDARD		= "./System/Configuration/Global_SQL_Server_Database_Class_MiniSQL_Standard.php";
 
+if (file_exists($_GLOBAL_SERVER_CONFIGURATION_FILE)) {
+
+	include_once "$_GLOBAL_SERVER_CONFIGURATION_FILE";
+
+} else {
+
+	echo ("Kernel Message: Error, Missing File :: System :: Configuration :: Global Server Configuration File: $_GLOBAL_SERVER_CONFIGURATION_FILE");
+
+} // [ + ] IF: File Exists: System File :: Configuration File: Global Server Configuration
+
 /*
  ============================================================================================================
  +
