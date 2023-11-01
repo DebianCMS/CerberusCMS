@@ -1988,7 +1988,7 @@ include_once ("./System/Configuration/Global_Configuration.php");
  ============================================================================================================
 */
 
-$_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT						= mysqli_connect($_ACCESS_DATABASE_SERVER_HOSTNAME, $_ACCESS_DATABASE_SERVER_USERNAME, $_ACCESS_DATABASE_SERVER_PASSWORD, $_ACCESS_DATABASE_SERVER_DATABASE_NAME, $_ACCESS_DATABASE_SERVER_HOSTNAME_PORT);
+$_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT						= mysqli_connect($_ACCESS_DATABASE_SERVER_HOSTNAME, $_ACCESS_DATABASE_SERVER_USERNAME, $_ACCESS_DATABASE_SERVER_PASSWORD, $_ACCESS_DATABASE_SERVER_DATABASE_NAME);
 $_ARCHITECT_INSTALLATION_DATA_DATABASE_SELECT						= mysqli_select_db($_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT, $_ACCESS_DATABASE_SERVER_DATABASE_NAME);
 
 /*
@@ -4059,7 +4059,7 @@ Have a nice day !
 
 	echo ("<BIG><FONT COLOR=\"#CD0000\">***</FONT> $_INTERNAL_ARCHITECT_NAME: Error: the Pre-Hyper-Text-Post-Processor Server mail() Function is not working. Correct this before using $_PROJECT_STRING_NAME_EXTENDED.</BIG>");
 
-} // [ + ] IF: Send :: Electronic Mail Message :: To Administration Electronic Mail Message Address: System Test
+} // [ + ] IF: Electronic Mail Message :: Send :: To Administration Electronic Mail Message Address: System Test
 
 } // [ + ] IF: Delete :: All Architect Installation Files
 
