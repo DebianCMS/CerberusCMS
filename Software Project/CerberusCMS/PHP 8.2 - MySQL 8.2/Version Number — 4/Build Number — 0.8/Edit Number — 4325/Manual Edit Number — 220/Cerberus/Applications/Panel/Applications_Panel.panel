@@ -55,9 +55,9 @@
  ============================================================================================================
 */
 
-$_Application_Module_Panel_Application_Links_DB_Query_SELECT_APPLICATION_LINKS		= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_links ORDER BY application_link_row ASC");
+$_Application_Module_Panel_Application_Links_DB_Query_SELECT_APPLICATION_LINKS		= mysqli_query($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, "SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_links ORDER BY application_link_row ASC");
 
-while ($_Application_Module_Panel_Application_Links_DB_Query_SELECT_APPLICATION_LINKS_Fetch_Array = $DB->fetch_array($_Application_Module_Panel_Application_Links_DB_Query_SELECT_APPLICATION_LINKS)) {
+while ($_Application_Module_Panel_Application_Links_DB_Query_SELECT_APPLICATION_LINKS_Fetch_Array = mysqli_fetch_array($_Application_Module_Panel_Application_Links_DB_Query_SELECT_APPLICATION_LINKS, MYSQLI_BOTH)) {
 
 $_Application_Module_Panel_Application_Links_LIST_APPLICATION_LINK_NAME			= $_Application_Module_Panel_Application_Links_DB_Query_SELECT_APPLICATION_LINKS_Fetch_Array['application_link_name'];
 $_Application_Module_Panel_Application_Links_LIST_APPLICATION_LINK_URL			= $_Application_Module_Panel_Application_Links_DB_Query_SELECT_APPLICATION_LINKS_Fetch_Array['application_link_url'];
@@ -72,5 +72,5 @@ $_Application_Module_Panel_Application_Links_LIST_APPLICATION_LINK_URL			= $_App
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Panel_Application_Links_DB_Query_SELECT_APPLICATION_LINKS);
+mysqli_free_result($_Application_Module_Panel_Application_Links_DB_Query_SELECT_APPLICATION_LINKS);
 ?>
