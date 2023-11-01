@@ -1,7 +1,9 @@
 Demonstration and Development Server:
 
 Demonstration
+http://cerberustestserver.000webhostapp.com/Cerberus
 https://cerberusdemonstrationserver.000webhostapp.com/Demonstration/Cerberus
 
 Development
+http://cerberustestserver.000webhostapp.com/Cerberus
 https://cerberusdemonstrationserver.000webhostapp.com/Development/Cerberus
