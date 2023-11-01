@@ -654,7 +654,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 */
 
 $_DB_Query_Kernel_Select_Member_Credentials 						= mysqli_query($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, "SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
-$_DB_Query_Kernel_Select_Member_Credentials_Fetch_Array 				= mysqli_fetch_array($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, $_DB_Query_Kernel_Select_Member_Credentials);
+$_DB_Query_Kernel_Select_Member_Credentials_Fetch_Array 				= mysqli_fetch_array($_DB_Query_Kernel_Select_Member_Credentials, MYSQLI_BOTH);
 
 /*
  ============================================================================================================
@@ -2263,7 +2263,7 @@ if (!file_exists($_MEMBER_DIRECTORY_MASTER_LIST_ELECTRONIC_MAIL_ADDRESS_FILE)) {
 */
 
 $_DB_Query_Kernel_Networking_Status_Security_Check_Blocked_Networks				= mysqli_query($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, "SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_networking ORDER BY id ASC");
-$_DB_Query_Kernel_Networking_Status_Security_Check_Blocked_Networks_Fetch_Array			= mysqli_fetch_array($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, $_DB_Query_Kernel_Networking_Status_Security_Check_Blocked_Networks);
+$_DB_Query_Kernel_Networking_Status_Security_Check_Blocked_Networks_Fetch_Array			= mysqli_fetch_array($_DB_Query_Kernel_Networking_Status_Security_Check_Blocked_Networks, MYSQLI_BOTH);
 
 /*
  ============================================================================================================
@@ -3305,7 +3305,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 
 $_DB_Query_Kernel_Member_Rank_Select_All_Ranks						= mysqli_query($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, "SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_ranks ORDER BY id ASC");
 
-while ($_DB_Query_Kernel_Member_Rank_Select_All_Ranks_Fetch_Array = mysqli_fetch_array($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, $_DB_Query_Kernel_Member_Rank_Select_All_Ranks)) {
+while ($_DB_Query_Kernel_Member_Rank_Select_All_Ranks_Fetch_Array = mysqli_fetch_array($_DB_Query_Kernel_Member_Rank_Select_All_Ranks, MYSQLI_BOTH)) {
 
 /*
  ============================================================================================================
@@ -3782,7 +3782,7 @@ if ($DB_Query_Kernel_Authenticate_Check_Member_Account_Entry >= "1") {
  ============================================================================================================
 */
 
-$DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Fetch_Array					= mysqli_fetch_array($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials);
+$DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Fetch_Array					= mysqli_fetch_array($DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials, MYSQLI_BOTH);
 $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_UserName					= $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Fetch_Array['member_username'];
 $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_Electronic_Mail_Address			= $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Fetch_Array['member_electronic_mail_address'];
 $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_Password					= $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Fetch_Array['member_password'];
@@ -4996,7 +4996,7 @@ $_DB_Query_Kernel_Application_Panels_Aligned_Left 					= mysqli_query($_KERNEL_M
  ============================================================================================================
 */
 
-while ($_DB_Query_Kernel_Application_Panels_Aligned_Left_Fetch_Array = mysqli_fetch_array($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, $_DB_Query_Kernel_Application_Panels_Aligned_Left)) {
+while ($_DB_Query_Kernel_Application_Panels_Aligned_Left_Fetch_Array = mysqli_fetch_array($_DB_Query_Kernel_Application_Panels_Aligned_Left, MYSQLI_BOTH)) {
 
 $_KERNEL_APPLICATION_PANEL_FILE_INTEGRITY_ALIGNED_LEFT					= $_DB_Query_Kernel_Application_Panels_Aligned_Left_Fetch_Array['panel_file_integrity'];
 $_KERNEL_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION_ALIGNED_LEFT			= $_DB_Query_Kernel_Application_Panels_Aligned_Left_Fetch_Array['panel_file_integrity_installation'];
@@ -5153,7 +5153,7 @@ $_DB_Query_Kernel_Select_Applications_Services							= mysqli_query($_KERNEL_MYS
  ============================================================================================================
 */
 
-while ($_DB_Query_Kernel_Select_Applications_Services_Fetch_Array = mysqli_fetch_array($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, $_DB_Query_Kernel_Select_Applications_Services)) {
+while ($_DB_Query_Kernel_Select_Applications_Services_Fetch_Array = mysqli_fetch_array($_DB_Query_Kernel_Select_Applications_Services, MYSQLI_BOTH)) {
 
 $_KERNEL_APPLICATION_MODULE_SERVICES_FILE_INTEGRITY						= $_DB_Query_Kernel_Select_Applications_Services_Fetch_Array['application_file_integrity'];
 $_KERNEL_APPLICATION_MODULE_SERVICES_FILE_INTEGRITY_INSTALLATION				= $_DB_Query_Kernel_Select_Applications_Services_Fetch_Array['application_file_integrity_installation'];
@@ -5291,7 +5291,7 @@ $_DB_Query_Kernel_Select_Applications_Root							= mysqli_query($_KERNEL_MYSQL_I
  ============================================================================================================
 */
 
-while ($_DB_Query_Kernel_Select_Applications_Root_Fetch_Array = mysqli_fetch_array($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, $_DB_Query_Kernel_Select_Applications_Root)) {
+while ($_DB_Query_Kernel_Select_Applications_Root_Fetch_Array = mysqli_fetch_array($_DB_Query_Kernel_Select_Applications_Root, MYSQLI_BOTH)) {
 
 $_KERNEL_APPLICATION_MODULE_ROOT_FILE_INTEGRITY						= $_DB_Query_Kernel_Select_Applications_Root_Fetch_Array['application_file_integrity'];
 $_KERNEL_APPLICATION_MODULE_ROOT_FILE_INTEGRITY_INSTALLATION				= $_DB_Query_Kernel_Select_Applications_Root_Fetch_Array['application_file_integrity_installation'];
@@ -5429,7 +5429,7 @@ $_DB_Query_Kernel_Select_Applications_Administration 						= mysqli_query($_KERN
  ============================================================================================================
 */
 
-while ($_DB_Query_Kernel_Select_Applications_Administration_Fetch_Array = mysqli_fetch_array($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, $_DB_Query_Kernel_Select_Applications_Administration)) {
+while ($_DB_Query_Kernel_Select_Applications_Administration_Fetch_Array = mysqli_fetch_array($_DB_Query_Kernel_Select_Applications_Administration, MYSQLI_BOTH)) {
 
 $_KERNEL_APPLICATION_MODULE_ADMINISTRATION_FILE_INTEGRITY					= $_DB_Query_Kernel_Select_Applications_Administration_Fetch_Array['application_file_integrity'];
 $_KERNEL_APPLICATION_MODULE_ADMINISTRATION_FILE_INTEGRITY_INSTALLATION				= $_DB_Query_Kernel_Select_Applications_Administration_Fetch_Array['application_file_integrity_installation'];
@@ -5567,7 +5567,7 @@ $_DB_Query_Kernel_Select_Applications_Member 							= mysqli_query($_KERNEL_MYSQ
  ============================================================================================================
 */
 
-while ($_DB_Query_Kernel_Select_Applications_Member_Fetch_Array	= mysqli_fetch_array($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, $_DB_Query_Kernel_Select_Applications_Member)) {
+while ($_DB_Query_Kernel_Select_Applications_Member_Fetch_Array	= mysqli_fetch_array($_DB_Query_Kernel_Select_Applications_Member, MYSQLI_BOTH)) {
 
 $_KERNEL_APPLICATION_MODULE_MEMBER_FILE_INTEGRITY						= $_DB_Query_Kernel_Select_Applications_Member_Fetch_Array['application_file_integrity'];
 $_KERNEL_APPLICATION_MODULE_MEMBER_FILE_INTEGRITY_INSTALLATION					= $_DB_Query_Kernel_Select_Applications_Member_Fetch_Array['application_file_integrity_installation'];
@@ -5739,7 +5739,7 @@ $_DB_Query_Kernel_Select_Custom_Applications 						= mysqli_query($_KERNEL_MYSQL
  ============================================================================================================
 */
 
-while ($_DB_Query_Kernel_Select_Custom_Applications_Fetch_Array = mysqli_fetch_array($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, $_DB_Query_Kernel_Select_Custom_Applications)) {
+while ($_DB_Query_Kernel_Select_Custom_Applications_Fetch_Array = mysqli_fetch_array($_DB_Query_Kernel_Select_Custom_Applications, MYSQLI_BOTH)) {
 
 $_KERNEL_APPLICATION_MODULE_CUSTOM_ID							= $_DB_Query_Kernel_Select_Custom_Applications_Fetch_Array['id'];
 $_KERNEL_APPLICATION_MODULE_CUSTOM_DATA							= $_DB_Query_Kernel_Select_Custom_Applications_Fetch_Array['custom_application_data'];
@@ -5808,7 +5808,7 @@ $_DB_Query_Kernel_Application_Panels_Aligned_Right 					= mysqli_query($_KERNEL_
  ============================================================================================================
 */
 
-while ($_DB_Query_Kernel_Application_Panels_Aligned_Right_Fetch_Array = mysqli_fetch_array($_KERNEL_MYSQL_IMPROVED_DATABASE_SERVER_CONNECT, $_DB_Query_Kernel_Application_Panels_Aligned_Right)) {
+while ($_DB_Query_Kernel_Application_Panels_Aligned_Right_Fetch_Array = mysqli_fetch_array($_DB_Query_Kernel_Application_Panels_Aligned_Right, MYSQLI_BOTH)) {
 
 $_KERNEL_APPLICATION_PANEL_FILE_INTEGRITY_ALIGNED_RIGHT					= $_DB_Query_Kernel_Application_Panels_Aligned_Right_Fetch_Array['panel_file_integrity'];
 $_KERNEL_APPLICATION_PANEL_FILE_INTEGRITY_INSTALLATION_ALIGNED_RIGHT			= $_DB_Query_Kernel_Application_Panels_Aligned_Right_Fetch_Array['panel_file_integrity_installation'];
