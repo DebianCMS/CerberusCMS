@@ -75,8 +75,8 @@
  ============================================================================================================
 */
 
-$_Application_Module_Background_Log_Background_DB_Query_SELECT_STATISTICS 						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_statistics");
-$_Application_Module_Background_Log_Background_DB_Query_SELECT_STATISTICS_Fetch_Array 					= $DB->fetch_array($_Application_Module_Background_Log_Background_DB_Query_SELECT_STATISTICS);
+$_Application_Module_Background_Log_Background_DB_Query_SELECT_STATISTICS 						= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_statistics");
+$_Application_Module_Background_Log_Background_DB_Query_SELECT_STATISTICS_Fetch_Array 					= $_Application_Module_Background_Log_Background_DB_Query_SELECT_STATISTICS->fetch_array();
 
 /*
  ============================================================================================================
@@ -88,7 +88,7 @@ $_Application_Module_Background_Log_Background_DB_Query_SELECT_STATISTICS_Fetch_
 
 $_Application_Module_Background_Log_Background_LIST_STATISTICS_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_NON_UNIQUE 			= $_Application_Module_Background_Log_Background_DB_Query_SELECT_STATISTICS_Fetch_Array['statistics_total_number_of_document_executions_non_unique'];
 $_Application_Module_Background_Log_Background_LIST_STATISTICS_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_NON_UNIQUE_INCREMENT 	= $_Application_Module_Background_Log_Background_LIST_STATISTICS_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_NON_UNIQUE + 1;
-$_Application_Module_Background_Log_Background_DB_Query_UPDATE_SYSTEM_STATISTICS_NUMBER_OF_DOCUMENT_EXECUTIONS_NON_UNIQUE	= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_statistics SET statistics_total_number_of_document_executions_non_unique='$_Application_Module_Background_Log_Background_LIST_STATISTICS_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_NON_UNIQUE_INCREMENT' WHERE id='1'");
+$_Application_Module_Background_Log_Background_DB_Query_UPDATE_SYSTEM_STATISTICS_NUMBER_OF_DOCUMENT_EXECUTIONS_NON_UNIQUE	= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_statistics SET statistics_total_number_of_document_executions_non_unique='$_Application_Module_Background_Log_Background_LIST_STATISTICS_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_NON_UNIQUE_INCREMENT' WHERE id='1'");
 
 /*
  ============================================================================================================
@@ -124,7 +124,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 
 $_Application_Module_Background_Log_Background_LIST_STATISTICS_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_UNIQUE 			= $_Application_Module_Background_Log_Background_DB_Query_SELECT_STATISTICS_Fetch_Array['statistics_total_number_of_document_executions_unique'];
 $_Application_Module_Background_Log_Background_LIST_STATISTICS_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_UNIQUE_INCREMENT 		= $_Application_Module_Background_Log_Background_LIST_STATISTICS_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_UNIQUE + 1;
-$_Application_Module_Background_Log_Background_DB_Query_UPDATE_SYSTEM_STATISTICS_NUMBER_OF_DOCUMENT_EXECUTIONS_UNIQUE		= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_statistics SET statistics_total_number_of_document_executions_unique='$_Application_Module_Background_Log_Background_LIST_STATISTICS_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_UNIQUE_INCREMENT' WHERE id='1'");
+$_Application_Module_Background_Log_Background_DB_Query_UPDATE_SYSTEM_STATISTICS_NUMBER_OF_DOCUMENT_EXECUTIONS_UNIQUE		= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_statistics SET statistics_total_number_of_document_executions_unique='$_Application_Module_Background_Log_Background_LIST_STATISTICS_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_UNIQUE_INCREMENT' WHERE id='1'");
 
 /*
  ============================================================================================================
@@ -196,7 +196,7 @@ $_Application_Module_Background_Log_Background_MEMBER_ACCOUNT_LAST_ACTIVE_TIME_S
  ============================================================================================================
 */
 
-$_Application_Module_Background_Log_Background_DB_Query_UPDATE_MEMBER_ACCOUNT_STATUS_LAST_ACTIVE							= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET 
+$_Application_Module_Background_Log_Background_DB_Query_UPDATE_MEMBER_ACCOUNT_STATUS_LAST_ACTIVE							= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET 
 member_status_account_last_active_timestamp='$_Application_Module_Background_Log_Background_MEMBER_ACCOUNT_LAST_ACTIVE_DATE_TIMESTAMP',
 member_status_account_last_active_years='$_Application_Module_Background_Log_Background_MEMBER_ACCOUNT_LAST_ACTIVE_DATE_YEAR',
 member_status_account_last_active_months='$_Application_Module_Background_Log_Background_MEMBER_ACCOUNT_LAST_ACTIVE_DATE_MONTH',
@@ -233,7 +233,7 @@ if ($_Application_Module_Background_Log_Background_DB_Query_UPDATE_MEMBER_ACCOUN
  ============================================================================================================
 */
 
-$_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_CURRENT_INTERNET_PROTOCOL_ADDRESS		= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_ip_address='$_GLOBAL_REMOTE_SERVER_ADDRESS' WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME' AND member_electronic_mail_address='$_GLOBAL_COOKIE_MEMBER_ELECTRONIC_MAIL_ADDRESS'");
+$_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_CURRENT_INTERNET_PROTOCOL_ADDRESS		= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_ip_address='$_GLOBAL_REMOTE_SERVER_ADDRESS' WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME' AND member_electronic_mail_address='$_GLOBAL_COOKIE_MEMBER_ELECTRONIC_MAIL_ADDRESS'");
 
 /*
  ============================================================================================================
@@ -257,7 +257,7 @@ if ($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_CURRENT_INT
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_CURRENT_INTERNET_PROTOCOL_ADDRESS);
+$_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_CURRENT_INTERNET_PROTOCOL_ADDRESS->free_result();
 
 /*
  ============================================================================================================
@@ -275,7 +275,7 @@ $DB->free($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_CURRE
  ============================================================================================================
 */
 
-$_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_DEVICE_WEB_BROWSER 				= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_account_device_web_browser='$_GLOBAL_REMOTE_SERVER_HTTP_USER_AGENT' WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME' AND member_electronic_mail_address='$_GLOBAL_COOKIE_MEMBER_ELECTRONIC_MAIL_ADDRESS'");
+$_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_DEVICE_WEB_BROWSER 				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_account_device_web_browser='$_GLOBAL_REMOTE_SERVER_HTTP_USER_AGENT' WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME' AND member_electronic_mail_address='$_GLOBAL_COOKIE_MEMBER_ELECTRONIC_MAIL_ADDRESS'");
 
 /*
  ============================================================================================================
@@ -303,7 +303,7 @@ if ($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_DEVICE_WEB_
  ============================================================================================================
 */
 
-$_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_LAST_KNOWN_REFERRER		= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_last_referrer='$_GLOBAL_LOCAL_SERVER_HTTP_REFERRER' WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME' AND member_electronic_mail_address='$_GLOBAL_COOKIE_MEMBER_ELECTRONIC_MAIL_ADDRESS'");
+$_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_LAST_KNOWN_REFERRER		= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_last_referrer='$_GLOBAL_LOCAL_SERVER_HTTP_REFERRER' WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME' AND member_electronic_mail_address='$_GLOBAL_COOKIE_MEMBER_ELECTRONIC_MAIL_ADDRESS'");
 
 /*
  ============================================================================================================
@@ -331,7 +331,7 @@ if ($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_LAST_KNOWN_
  ============================================================================================================
 */
 
-$_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_STATUS_ACTIVE			= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_status_account_active='1' WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME' AND member_electronic_mail_address='$_GLOBAL_COOKIE_MEMBER_ELECTRONIC_MAIL_ADDRESS'");
+$_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_STATUS_ACTIVE			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_status_account_active='1' WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME' AND member_electronic_mail_address='$_GLOBAL_COOKIE_MEMBER_ELECTRONIC_MAIL_ADDRESS'");
 
 /*
  ============================================================================================================
@@ -355,7 +355,7 @@ if ($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_STATUS_ACTI
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_STATUS_ACTIVE);
+$_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_STATUS_ACTIVE->free_result();
 
 /*
  ============================================================================================================
@@ -363,7 +363,7 @@ $DB->free($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_STATU
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_LAST_KNOWN_REFERRER);
+$_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_LAST_KNOWN_REFERRER->free_result();
 
 /*
  ============================================================================================================
@@ -371,7 +371,7 @@ $DB->free($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_LAST_
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_DEVICE_WEB_BROWSER);
+$_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_DEVICE_WEB_BROWSER->free_result();
 
 } // [ + ] IF: Registered Member Account :: Is Logged-In With Valid Credentials In Set Cookies
 
@@ -381,15 +381,7 @@ $DB->free($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_DEVIC
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Background_Log_Member_UPDATE_MEMBER_ACCOUNT_DEVICE_WEB_BROWSER);
-
-/*
- ============================================================================================================
- + Kill :: SQL Database Server Query: Select :: From System Statistics
- ============================================================================================================
-*/
-
-$DB->free($_Application_Module_Background_Log_Background_DB_Query_SELECT_STATISTICS);
+$_Application_Module_Background_Log_Background_DB_Query_SELECT_STATISTICS->free_result();
 
 /*
  ============================================================================================================
@@ -397,7 +389,7 @@ $DB->free($_Application_Module_Background_Log_Background_DB_Query_SELECT_STATIST
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Background_Log_Background_DB_Query_UPDATE_SYSTEM_STATISTICS_NUMBER_OF_DOCUMENT_EXECUTIONS_NON_UNIQUE);
+//$_Application_Module_Background_Log_Background_DB_Query_UPDATE_SYSTEM_STATISTICS_NUMBER_OF_DOCUMENT_EXECUTIONS_NON_UNIQUE->free_result();
 
 /*
  ============================================================================================================
@@ -405,5 +397,5 @@ $DB->free($_Application_Module_Background_Log_Background_DB_Query_UPDATE_SYSTEM_
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Background_Log_Background_DB_Query_UPDATE_SYSTEM_STATISTICS_NUMBER_OF_DOCUMENT_EXECUTIONS_UNIQUE);
+//$_Application_Module_Background_Log_Background_DB_Query_UPDATE_SYSTEM_STATISTICS_NUMBER_OF_DOCUMENT_EXECUTIONS_UNIQUE->free_result();
 ?>
