@@ -115,7 +115,7 @@ if ((!$_Application_Module_Member_Comment_POST_APPLICATION_NAME) || (!$_Applicat
  ============================================================================================================
 */
 
-$_Application_Module_Member_Comment_DB_Query_INSERT_COMMENT				= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_comments(comment_author,comment_data,comment_application_id,comment_application_name,comment_time)VALUES('$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_Comment_POST_COMMENT_DATA','$_Application_Module_Member_Comment_POST_APPLICATION_ID','$_Application_Module_Member_Comment_POST_APPLICATION_NAME','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD')");
+$_Application_Module_Member_Comment_DB_Query_INSERT_COMMENT				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_comments(comment_author,comment_data,comment_application_id,comment_application_name,comment_time)VALUES('$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_Comment_POST_COMMENT_DATA','$_Application_Module_Member_Comment_POST_APPLICATION_ID','$_Application_Module_Member_Comment_POST_APPLICATION_NAME','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD')");
 
 /*
  ============================================================================================================
@@ -141,7 +141,7 @@ if ($_Application_Module_Member_Comment_DB_Query_INSERT_COMMENT) {
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Comment_DB_Query_INSERT_COMMENT);
+$_Application_Module_Member_Comment_DB_Query_INSERT_COMMENT->free_result();
 
 } // [ + ] IF: Comment :: Variables :: HAVE Executed
 
@@ -159,7 +159,7 @@ $DB->free($_Application_Module_Member_Comment_DB_Query_INSERT_COMMENT);
  ============================================================================================================
 */
 
-$_Application_Module_Member_Comment_DB_Query_SELECT_COMMENT 				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_comments WHERE comment_author='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
+$_Application_Module_Member_Comment_DB_Query_SELECT_COMMENT 				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_comments WHERE comment_author='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
 
 /*
  ============================================================================================================
@@ -167,7 +167,7 @@ $_Application_Module_Member_Comment_DB_Query_SELECT_COMMENT 				= $DB->query("SE
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Comment_DB_Query_SELECT_COMMENT_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Comment_DB_Query_SELECT_COMMENT)) {
+while ($_Application_Module_Member_Comment_DB_Query_SELECT_COMMENT_Fetch_Array = $_Application_Module_Member_Comment_DB_Query_SELECT_COMMENT->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Comment_LIST_COMMENT_ID					= $_Application_Module_Member_Comment_DB_Query_SELECT_COMMENT_Fetch_Array['id'];
 $_Application_Module_Member_Comment_LIST_COMMENT_APPLICATION_ID				= $_Application_Module_Member_Comment_DB_Query_SELECT_COMMENT_Fetch_Array['comment_application_id'];
@@ -246,7 +246,7 @@ echo ("
  ============================================================================================================
 */
 
-$_Application_Module_Member_Comment_DB_Query_UPDATE_COMMENT				= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_comments SET comment_data='$_Application_Module_Member_Comment_POST_UPDATE_COMMENT_DATA' WHERE id='$_Application_Module_Member_Comment_LIST_COMMENT_ID'");
+$_Application_Module_Member_Comment_DB_Query_UPDATE_COMMENT				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_comments SET comment_data='$_Application_Module_Member_Comment_POST_UPDATE_COMMENT_DATA' WHERE id='$_Application_Module_Member_Comment_LIST_COMMENT_ID'");
 
 /*
  ============================================================================================================
@@ -272,7 +272,7 @@ if ($_Application_Module_Member_Comment_DB_Query_UPDATE_COMMENT) {
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Comment_DB_Query_UPDATE_COMMENT);
+$_Application_Module_Member_Comment_DB_Query_UPDATE_COMMENT->free_result();
 
 } // [ + ] IF: Update :: Comment :: Input Form :: Variables :: HAVE Executed
 
@@ -294,7 +294,7 @@ if ($_GET["DeleteCommentID"] == "$_Application_Module_Member_Comment_LIST_COMMEN
  ============================================================================================================
 */
 
-$_Application_Module_Member_Comment_DB_Query_DELETE_COMMENT				= $DB->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_comments WHERE id='$_Application_Module_Member_Comment_LIST_COMMENT_ID' AND comment_author='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
+$_Application_Module_Member_Comment_DB_Query_DELETE_COMMENT				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_comments WHERE id='$_Application_Module_Member_Comment_LIST_COMMENT_ID' AND comment_author='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
 
 /*
  ============================================================================================================
@@ -316,7 +316,7 @@ if ($_Application_Module_Member_Comment_DB_Query_DELETE_COMMENT) {
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Comment_DB_Query_DELETE_COMMENT);
+$_Application_Module_Member_Comment_DB_Query_DELETE_COMMENT->free_result();
 
 } // [ + ] IF: Internal Application: Delete :: Comment By ID :: Is: Activated
 
@@ -328,5 +328,5 @@ $DB->free($_Application_Module_Member_Comment_DB_Query_DELETE_COMMENT);
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Comment_DB_Query_SELECT_COMMENT);
+$_Application_Module_Member_Comment_DB_Query_SELECT_COMMENT->free_result();
 ?>

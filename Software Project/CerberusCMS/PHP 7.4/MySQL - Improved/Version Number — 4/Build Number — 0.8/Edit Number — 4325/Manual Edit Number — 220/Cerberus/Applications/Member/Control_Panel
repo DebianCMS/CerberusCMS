@@ -218,9 +218,9 @@ echo ("
  ============================================================================================================
 */
 
-$_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS					= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
+$_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
 
-$_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS);
+$_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS_Fetch_Array = $_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS->fetch_array(MYSQLI_BOTH));
 
 $_Application_Module_Member_Control_Panel_LIST_MEMBER_ID						= $_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS_Fetch_Array['id'];
 $_Application_Module_Member_Control_Panel_LIST_MEMBER_STATUS_ACCOUNT_ACTIVATION				= $_Application_Module_Member_Control_Panel_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_activation'];
@@ -309,7 +309,7 @@ if ($_Application_Module_Member_Control_Panel_LIST_MEMBER_ACCOUNT_ACTIVATION_KEY
 
 } else {
 
-$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_MEMBERS					= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_status_account_activation='1' WHERE id='$_Application_Module_Member_Control_Panel_LIST_MEMBER_ID'");
+$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_MEMBERS					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_status_account_activation='1' WHERE id='$_Application_Module_Member_Control_Panel_LIST_MEMBER_ID'");
 
 /*
  ============================================================================================================
@@ -578,7 +578,7 @@ if ($_GET["Revoke"] == "SecurityToken") {
  ============================================================================================================
 */
 
-$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_AUTHORIZATION_SECURITY_TOKEN		= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
+$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_AUTHORIZATION_SECURITY_TOKEN		= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
 member_ip_address_authorization_token='0'
 WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
 ");
@@ -617,7 +617,7 @@ if ($_GET["Revoke"] == "MultiFactor_IP") {
  ============================================================================================================
 */
 
-$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_DEVICE_AUTHORIZED_MULTIFACTOR_INTERNET_PROTOCOL_ADDRESS		= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
+$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_DEVICE_AUTHORIZED_MULTIFACTOR_INTERNET_PROTOCOL_ADDRESS		= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
 member_ip_address_authorized_multifactor='000.000.000.000'
 WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
 ");
@@ -656,7 +656,7 @@ if ($_GET["Revoke"] == "IP") {
  ============================================================================================================
 */
 
-$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_INTERNET_PROTOCOL_ADDRESS			= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
+$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_INTERNET_PROTOCOL_ADDRESS			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
 member_ip_address_authorized='000.000.000.000'
 WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
 ");
@@ -695,7 +695,7 @@ if ($_GET["Revoke"] == "MAC_Address") {
  ============================================================================================================
 */
 
-$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_MAC_ADDRESS			= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
+$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_MAC_ADDRESS			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
 member_account_device_mac_address_authorized='00:00:00:00:00:00'
 WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
 ");
@@ -728,7 +728,7 @@ echo ("Kernel Message: I Was Not Able To Revoke The Current Authorized Device MA
 
 if ($_GET["Revoke"] == "Web_Browser") {
 
-$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_WEB_BROWSER			= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
+$_Application_Module_Member_Control_Panel_DB_Query_UPDATE_REVOKE_MEMBER_ACCOUNT_AUTHORIZED_WEB_BROWSER			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
 member_account_device_web_browser='00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
 WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'
 ");

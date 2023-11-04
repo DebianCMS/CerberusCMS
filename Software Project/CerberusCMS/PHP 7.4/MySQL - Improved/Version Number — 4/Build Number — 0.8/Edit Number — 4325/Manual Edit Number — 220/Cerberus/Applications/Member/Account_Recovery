@@ -103,9 +103,9 @@ Virtual Private Networks and Hidden Networks are usually filtered out automatica
 
 } else {
 
-$_Application_Module_Members_Account_Recovery_DB_Query_SELECT_MEMBERS 				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_electronic_mail_address='$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS' AND member_username='$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME'");
+$_Application_Module_Members_Account_Recovery_DB_Query_SELECT_MEMBERS 				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_electronic_mail_address='$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_ELECTRONIC_MAIL_ADDRESS' AND member_username='$_Application_Module_Member_Account_Recovery_STEP_1_MEMBER_USERNAME'");
 
-while ($_Application_Module_Members_Account_Recovery_DB_Query_SELECT_MEMBERS_Fetch_Array = $DB->fetch_array($_Application_Module_Members_Account_Recovery_DB_Query_SELECT_MEMBERS)) {
+while ($_Application_Module_Members_Account_Recovery_DB_Query_SELECT_MEMBERS_Fetch_Array = $_Application_Module_Members_Account_Recovery_DB_Query_SELECT_MEMBERS->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Members_Account_Recovery_LIST_MEMBER_ID					= $_Application_Module_Members_Account_Recovery_DB_Query_SELECT_MEMBERS_Fetch_Array['id'];
 $_Application_Module_Members_Account_Recovery_LIST_MEMBER_NUMBER_PHONE_AREA_CODE		= $_Application_Module_Members_Account_Recovery_DB_Query_SELECT_MEMBERS_Fetch_Array['member_number_phone_area_code'];

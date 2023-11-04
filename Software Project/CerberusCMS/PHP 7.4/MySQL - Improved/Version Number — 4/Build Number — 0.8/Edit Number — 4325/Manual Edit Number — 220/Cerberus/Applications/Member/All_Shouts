@@ -71,15 +71,16 @@
  ============================================================================================================
 */
 
-$_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES	= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages ORDER BY id DESC LIMIT 100");
+$_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages ORDER BY id DESC LIMIT 100");
+$_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_NUMBER_OF_ROWS	= $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES->num_rows;
 
-if ($DB->num_rows($_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES) <= 0) {
+if ($_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_NUMBER_OF_ROWS <= 0) {
 
 											echo ($_Application_Module_Member_Message_All_Shouts_NO_SHOUTS);
 
 } else {
 
-while ($_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array = $DB->fetch_array($_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES)) {
+while ($_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES_Fetch_Array = $_Application_Module_Member_All_Shouts_DB_Query_SELECT_ALL_SHOUT_MESSAGES->fetch_array(MYSQLI_BOTH)) {
 
 /*
  ============================================================================================================
@@ -142,7 +143,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME != $_Application_Module_Member_All_Shouts_LI
  ============================================================================================================
 */
 
-if ($DB->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages WHERE id='$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID'")) {
+if ($_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages WHERE id='$_Application_Module_Member_All_Shouts_LIST_SHOUT_MESSAGE_ID'")) {
 
 											echo ($_Application_Module_Member_Message_All_Shouts_DELETE_SHOUT);
 
@@ -166,7 +167,7 @@ if ($DB->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_sho
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_All_Shouts_DB_Query_SELECT_SHOUTS);
+$_Application_Module_Member_All_Shouts_DB_Query_SELECT_SHOUTS->free_result();
 
 /*
  ============================================================================================================
@@ -214,7 +215,7 @@ echo ("
 
 if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) {
 
-$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT		= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_data,message_time)VALUES('$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD')");
+$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT		= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_shout_messages(message_author,message_data,message_time)VALUES('$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD')");
 
 if (strlen($_Application_Module_Member_All_Shouts_POST_SHOUT_MESSAGE) > "250") {
 
@@ -242,11 +243,17 @@ if ($_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT) {
 
 /*
  ============================================================================================================
- + Kill SQL Database Server Query: Insert Shout Message
+ + Kill: SQL Database Server Query: Insert Shout Message
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT);
+$_Application_Module_Member_All_Shouts_DB_Query_INSERT_SHOUT->free_result();
+
+/*
+ ============================================================================================================
+ + Header: Redirect :: Application Module :: All_Shouts
+ ============================================================================================================
+*/
 
 	header("Location: $_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=All_Shouts");
 	exit;

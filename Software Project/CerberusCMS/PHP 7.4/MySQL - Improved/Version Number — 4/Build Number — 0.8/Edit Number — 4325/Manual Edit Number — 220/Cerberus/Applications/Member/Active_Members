@@ -71,7 +71,7 @@
  ============================================================================================================
 */
 
-$_Application_Module_Member_Active_Members_DB_Query_SELECT_MEMBERS						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_status_account_active='1' ORDER BY member_username");
+$_Application_Module_Member_Active_Members_DB_Query_SELECT_MEMBERS						= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_status_account_active='1' ORDER BY member_username");
 
 /*
  ============================================================================================================
@@ -79,7 +79,7 @@ $_Application_Module_Member_Active_Members_DB_Query_SELECT_MEMBERS						= $DB->q
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Active_Members_DB_Query_SELECT_MEMBERS_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Active_Members_DB_Query_SELECT_MEMBERS)) {
+while ($_Application_Module_Member_Active_Members_DB_Query_SELECT_MEMBERS_Fetch_Array = $_Application_Module_Member_Active_Members_DB_Query_SELECT_MEMBERS->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Active_Members_LIST_MEMBER_ID							= $_Application_Module_Member_Active_Members_DB_Query_SELECT_MEMBERS_Fetch_Array['id'];
 $_Application_Module_Member_Active_Members_LIST_MEMBER_ACCESS_LEVEL						= $_Application_Module_Member_Active_Members_DB_Query_SELECT_MEMBERS_Fetch_Array['member_access_level'];
@@ -214,5 +214,5 @@ echo ("
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Active_Members_DB_Query_SELECT_MEMBERS);
+$_Application_Module_Member_Active_Members_DB_Query_SELECT_MEMBERS->free_result();
 ?>

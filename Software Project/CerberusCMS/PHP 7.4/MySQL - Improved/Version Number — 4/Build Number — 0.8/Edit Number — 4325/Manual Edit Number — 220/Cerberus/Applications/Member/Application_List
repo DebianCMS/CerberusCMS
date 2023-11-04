@@ -155,7 +155,7 @@ $_Application_Module_Member_Application_List_FILE_SYSTEM_PLUGIN_LOCATION_DEFAULT
  ============================================================================================================
 */
 
-$_Application_Module_Member_Application_List_DB_Query_List_Applications_Background					= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_background");
+$_Application_Module_Member_Application_List_DB_Query_List_Applications_Background					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_background");
 
 /*
  ============================================================================================================
@@ -163,7 +163,7 @@ $_Application_Module_Member_Application_List_DB_Query_List_Applications_Backgrou
  ============================================================================================================
 */
 
-$_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root_Services			= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_services");
+$_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root_Services			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_services");
 
 /*
  ============================================================================================================
@@ -171,7 +171,7 @@ $_Application_Module_Member_Application_List_DB_Query_List_Applications_Administ
  ============================================================================================================
 */
 
-$_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_root");
+$_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_root");
 
 /*
  ============================================================================================================
@@ -179,7 +179,7 @@ $_Application_Module_Member_Application_List_DB_Query_List_Applications_Administ
  ============================================================================================================
 */
 
-$_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration					= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_administration");
+$_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_administration");
 
 /*
  ============================================================================================================
@@ -187,7 +187,7 @@ $_Application_Module_Member_Application_List_DB_Query_List_Applications_Administ
  ============================================================================================================
 */
 
-$_Application_Module_Member_Application_List_DB_Query_List_Applications_Member						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications");
+$_Application_Module_Member_Application_List_DB_Query_List_Applications_Member						= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications");
 
 /*
  ============================================================================================================
@@ -195,7 +195,7 @@ $_Application_Module_Member_Application_List_DB_Query_List_Applications_Member		
  ============================================================================================================
 */
 
-$_Application_Module_Member_Application_List_DB_Query_List_Applications_Panel						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels");
+$_Application_Module_Member_Application_List_DB_Query_List_Applications_Panel						= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels");
 
 /*
  ============================================================================================================
@@ -234,7 +234,7 @@ echo ("
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Application_List_DB_Query_List_Applications_Background_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Application_List_DB_Query_List_Applications_Background)) {
+while ($_Application_Module_Member_Application_List_DB_Query_List_Applications_Background_Fetch_Array = $_Application_Module_Member_Application_List_DB_Query_List_Applications_Background->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_ID					= $_Application_Module_Member_Application_List_DB_Query_List_Applications_Background_Fetch_Array['id'];
 $_Application_Module_Member_Application_List_LIST_APPLICATION_BACKGROUND_FILE_NAME				= $_Application_Module_Member_Application_List_DB_Query_List_Applications_Background_Fetch_Array['application_file_name'];
@@ -314,7 +314,7 @@ echo ("
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root_Services_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root_Services)) {
+while ($_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root_Services_Fetch_Array = $_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root_Services->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_ID					= $_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root_Services_Fetch_Array['id'];
 $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_SERVICES_FILE_NAME				= $_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root_Services_Fetch_Array['application_file_name'];
@@ -395,7 +395,7 @@ echo ("
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root)) {
+while ($_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root_Fetch_Array = $_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_ID					= $_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root_Fetch_Array['id'];
 $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ROOT_FILE_NAME				= $_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root_Fetch_Array['application_file_name'];
@@ -475,7 +475,7 @@ echo ("
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration)) {
+while ($_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Fetch_Array = $_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_ID						= $_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Fetch_Array['id'];
 $_Application_Module_Member_Application_List_LIST_APPLICATION_ADMINISTRATION_FILE_NAME					= $_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Fetch_Array['application_file_name'];
@@ -561,7 +561,7 @@ echo ("
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Application_List_DB_Query_List_Applications_Member_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Application_List_DB_Query_List_Applications_Member)) {
+while ($_Application_Module_Member_Application_List_DB_Query_List_Applications_Member_Fetch_Array = $_Application_Module_Member_Application_List_DB_Query_List_Applications_Member->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_ID						= $_Application_Module_Member_Application_List_DB_Query_List_Applications_Member_Fetch_Array['id'];
 $_Application_Module_Member_Application_List_LIST_APPLICATION_MEMBER_FILE_NAME					= $_Application_Module_Member_Application_List_DB_Query_List_Applications_Member_Fetch_Array['application_file_name'];
@@ -639,7 +639,7 @@ echo ("
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Application_List_DB_Query_List_Applications_Panel_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Application_List_DB_Query_List_Applications_Panel)) {
+while ($_Application_Module_Member_Application_List_DB_Query_List_Applications_Panel_Fetch_Array = $_Application_Module_Member_Application_List_DB_Query_List_Applications_Panel->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_ID						= $_Application_Module_Member_Application_List_DB_Query_List_Applications_Panel_Fetch_Array['id'];
 $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME					= $_Application_Module_Member_Application_List_DB_Query_List_Applications_Panel_Fetch_Array['panel_file_name'];
@@ -817,7 +817,7 @@ echo ("
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Application_List_DB_Query_List_Applications_Background);
+$_Application_Module_Member_Application_List_DB_Query_List_Applications_Background->free_result();
 
 /*
  ============================================================================================================
@@ -825,7 +825,7 @@ $DB->free($_Application_Module_Member_Application_List_DB_Query_List_Application
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root_Services);
+$_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root_Services->free_result();
 
 /*
  ============================================================================================================
@@ -833,7 +833,7 @@ $DB->free($_Application_Module_Member_Application_List_DB_Query_List_Application
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root);
+$_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration_Root->free_result();
 
 /*
  ============================================================================================================
@@ -841,7 +841,7 @@ $DB->free($_Application_Module_Member_Application_List_DB_Query_List_Application
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration);
+$_Application_Module_Member_Application_List_DB_Query_List_Applications_Administration->free_result();
 
 /*
  ============================================================================================================
@@ -849,7 +849,7 @@ $DB->free($_Application_Module_Member_Application_List_DB_Query_List_Application
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Application_List_DB_Query_List_Applications_Member);
+$_Application_Module_Member_Application_List_DB_Query_List_Applications_Member->free_result();
 
 /*
  ============================================================================================================
@@ -857,5 +857,5 @@ $DB->free($_Application_Module_Member_Application_List_DB_Query_List_Application
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Application_List_DB_Query_List_Applications_Panel);
+$_Application_Module_Member_Application_List_DB_Query_List_Applications_Panel->free_result();
 ?>

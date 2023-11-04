@@ -77,7 +77,8 @@
  ============================================================================================================
 */
 
-$_Application_Module_Member_Articles_DB_Query_SELECT_ARTICLES		= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_articles");
+$_Application_Module_Member_Articles_DB_Query_SELECT_ARTICLES			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_articles");
+$_Application_Module_Member_Articles_DB_Query_SELECT_ARTICLES_NUMBER_OF_ROWS	= $_Application_Module_Member_Articles_DB_Query_SELECT_ARTICLES->num_rows;
 
 /*
  ============================================================================================================
@@ -85,7 +86,7 @@ $_Application_Module_Member_Articles_DB_Query_SELECT_ARTICLES		= $DB->query("SEL
  ============================================================================================================
 */
 
-if ($DB->num_rows($_Application_Module_Member_Articles_DB_Query_SELECT_ARTICLES) <= 0) {
+if ($_Application_Module_Member_Articles_DB_Query_SELECT_ARTICLES_NUMBER_OF_ROWS <= 0) {
 
 											echo ($_Application_Module_Member_Message_Articles_NO_ARTICLES);
 
@@ -97,7 +98,7 @@ if ($DB->num_rows($_Application_Module_Member_Articles_DB_Query_SELECT_ARTICLES)
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Articles_DB_Query_SELECT_ARTICLES_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Articles_DB_Query_SELECT_ARTICLES)) {
+while ($_Application_Module_Member_Articles_DB_Query_SELECT_ARTICLES_Fetch_Array = $_Application_Module_Member_Articles_DB_Query_SELECT_ARTICLES->fetch_array(MYSQLI_BOTH)) {
 
 /*
  ============================================================================================================
@@ -183,5 +184,5 @@ echo ("
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Articles_DB_Query_SELECT_ARTICLES);
+$_Application_Module_Member_Articles_DB_Query_SELECT_ARTICLES->free_result();
 ?>

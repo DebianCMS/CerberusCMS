@@ -69,7 +69,8 @@
  ============================================================================================================
 */
 
-$_Application_Module_Member_All_News_DB_Query_SELECT_NEWS			= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_news ORDER BY id DESC");
+$_Application_Module_Member_All_News_DB_Query_SELECT_NEWS			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_news ORDER BY id DESC");
+$_Application_Module_Member_All_News_DB_Query_SELECT_NEWS_NUMBER_OF_ROWS	= $_Application_Module_Member_All_News_DB_Query_SELECT_NEWS->num_rows;
 
 /*
  ============================================================================================================
@@ -77,7 +78,7 @@ $_Application_Module_Member_All_News_DB_Query_SELECT_NEWS			= $DB->query("SELECT
  ============================================================================================================
 */
 
-if ($DB->num_rows($_Application_Module_Member_All_News_DB_Query_SELECT_NEWS) <= 0) {
+if ($_Application_Module_Member_All_News_DB_Query_SELECT_NEWS_NUMBER_OF_ROWS <= 0) {
 
 											echo ($_Application_Module_Member_Message_All_News_NO_NEWS);
 
@@ -97,7 +98,7 @@ if ($DB->num_rows($_Application_Module_Member_All_News_DB_Query_SELECT_NEWS) <= 
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_All_News_DB_Query_SELECT_NEWS_Fetch_Array = $DB->fetch_array($_Application_Module_Member_All_News_DB_Query_SELECT_NEWS)) {
+while ($_Application_Module_Member_All_News_DB_Query_SELECT_NEWS_Fetch_Array = $_Application_Module_Member_All_News_DB_Query_SELECT_NEWS->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_All_News_LIST_NEWS_ID			= $_Application_Module_Member_All_News_DB_Query_SELECT_NEWS_Fetch_Array['id'];
 $_Application_Module_Member_All_News_LIST_NEWS_AUTHOR			= $_Application_Module_Member_All_News_DB_Query_SELECT_NEWS_Fetch_Array['news_author'];
@@ -166,5 +167,5 @@ echo ("
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_All_News_DB_Query_SELECT_NEWS);
+$_Application_Module_Member_All_News_DB_Query_SELECT_NEWS->free_result();
 ?>
