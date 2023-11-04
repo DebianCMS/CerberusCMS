@@ -71,8 +71,8 @@
  ============================================================================================================
 */
 
-$_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
-$_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS_Fetch_Array					= $DB->fetch_array($_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS);
+$_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS						= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
+$_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS_Fetch_Array					= $_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS->fetch_array(MYSQLI_BOTH);
 
 /*
  ============================================================================================================
@@ -82,9 +82,9 @@ $_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS_Fetch_Array		
  ============================================================================================================
 */
 
-$_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS 						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
+$_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS 						= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
 
-while ($_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS)) {
+while ($_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS_Fetch_Array = $_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS->fetch_array(MYSQLI_BOTH)) {
 
 /*
  ============================================================================================================
@@ -1362,7 +1362,7 @@ echo ("
  ============================================================================================================
 */
 
-$_Application_Module_Member_Update_Account_DB_Query_UPDATE_MEMBER_ACCOUNT	= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
+$_Application_Module_Member_Update_Account_DB_Query_UPDATE_MEMBER_ACCOUNT	= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET
 member_birthdate='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_BIRTHDATE',
 member_address_cryptocurrency_bitcoin='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_CRYPTOCURRENCY_ADDRESS_BITCOIN',
 member_address_cryptocurrency_bitcoin_gold='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_CRYPTOCURRENCY_ADDRESS_BITCOIN_GOLD',
@@ -1499,7 +1499,7 @@ Have a nice day,
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Update_Account_DB_Query_UPDATE_MEMBER_ACCOUNT);
+$_Application_Module_Member_Update_Account_DB_Query_UPDATE_MEMBER_ACCOUNT->free_result();
 
 } // [ + ] IF: Update :: Registered Member Account Form Variables Have Executed
 
@@ -1509,7 +1509,7 @@ $DB->free($_Application_Module_Member_Update_Account_DB_Query_UPDATE_MEMBER_ACCO
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS);
+$_Application_Module_Member_Update_Account_DB_Query_SELECT_MEMBERS->free_result();
 
 } // [ + ] WHILE: Retrieving :: Registered Member Account Data From The Database Server
 ?>

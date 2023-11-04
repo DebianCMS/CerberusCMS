@@ -71,7 +71,7 @@
  ============================================================================================================
 */
 
-$_Application_Module_Member_Upload_DB_Query_SELECT_CATEGORIES			= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_file_categories ORDER BY file_category_title ASC");
+$_Application_Module_Member_Upload_DB_Query_SELECT_CATEGORIES			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_file_categories ORDER BY file_category_title ASC");
 
 /*
  ============================================================================================================
@@ -261,7 +261,7 @@ echo ("
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Upload_DB_Query_SELECT_CATEGORIES_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Upload_DB_Query_SELECT_CATEGORIES)) {
+while ($_Application_Module_Member_Upload_DB_Query_SELECT_CATEGORIES_Fetch_Array = $_Application_Module_Member_Upload_DB_Query_SELECT_CATEGORIES->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Upload_LIST_FILE_CATEGORY_ID			= $_Application_Module_Member_Upload_DB_Query_SELECT_CATEGORIES_Fetch_Array['id'];
 $_Application_Module_Member_Upload_LIST_FILE_CATEGORY_TITLE			= $_Application_Module_Member_Upload_DB_Query_SELECT_CATEGORIES_Fetch_Array['file_category_title'];
@@ -276,7 +276,7 @@ $_Application_Module_Member_Upload_LIST_FILE_CATEGORY_TITLE			= $_Application_Mo
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Upload_DB_Query_SELECT_CATEGORIES);
+$_Application_Module_Member_Upload_DB_Query_SELECT_CATEGORIES->free_result();
 
 echo ("
 													</SELECT><BR><BR>
@@ -445,7 +445,7 @@ $_Application_Module_Member_Upload_SPECIFY_UPLOAD_DIRECTORY_FILE_TYPE	= "./Uploa
 											unlink("./Temporary/$_Application_Module_Member_Upload_BASENAME_FILE");
 											unlink("./Temporary/$_Application_Module_Member_Upload_BASENAME_IMAGE");
 
-$_Application_Module_Member_Upload_DB_Query_INSERT_FILE				= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_files(file_author,file_category,file_description,file_image,file_location,file_number_of_downloads,file_time,file_title,file_uploader)VALUES('$_Application_Module_Member_Upload_POST_AUTHOR','$_Application_Module_Member_Upload_POST_CATEGORY','$_Application_Module_Member_Upload_POST_FILE_DATA','$_Application_Module_Member_Upload_BASENAME_IMAGE','$_Application_Module_Member_Upload_BASENAME_FILE','0','$_GLOBAL_DATE','$_Application_Module_Member_Upload_POST_TITLE','$_GLOBAL_COOKIE_MEMBER_USERNAME')");
+$_Application_Module_Member_Upload_DB_Query_INSERT_FILE				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_files(file_author,file_category,file_description,file_image,file_location,file_number_of_downloads,file_time,file_title,file_uploader)VALUES('$_Application_Module_Member_Upload_POST_AUTHOR','$_Application_Module_Member_Upload_POST_CATEGORY','$_Application_Module_Member_Upload_POST_FILE_DATA','$_Application_Module_Member_Upload_BASENAME_IMAGE','$_Application_Module_Member_Upload_BASENAME_FILE','0','$_GLOBAL_DATE','$_Application_Module_Member_Upload_POST_TITLE','$_GLOBAL_COOKIE_MEMBER_USERNAME')");
 
 /*
  ============================================================================================================
@@ -456,7 +456,7 @@ $_Application_Module_Member_Upload_DB_Query_INSERT_FILE				= $DB->query("INSERT 
 $_Application_Module_Member_Upload_UPDATE_MEMBER_EXPERIENCE_AMOUNT		= $_GLOBAL_MEMBER_EXPERIENCE_AMOUNT + 50;
 $_Application_Module_Member_Upload_UPDATE_MEMBER_NUMBER_OF_POSTS		= $_GLOBAL_MEMBER_NUMBER_OF_POSTS + 1;
 
-$_Application_Module_Member_Upload_DB_Query_UPDATE_MEMBER			= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_experience_amount='$_Application_Module_Member_Upload_UPDATE_MEMBER_EXPERIENCE_AMOUNT',member_number_of_posts='$_Application_Module_Member_Upload_UPDATE_MEMBER_NUMBER_OF_POSTS' WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
+$_Application_Module_Member_Upload_DB_Query_UPDATE_MEMBER			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_experience_amount='$_Application_Module_Member_Upload_UPDATE_MEMBER_EXPERIENCE_AMOUNT',member_number_of_posts='$_Application_Module_Member_Upload_UPDATE_MEMBER_NUMBER_OF_POSTS' WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
 
 if ($_Application_Module_Member_Upload_DB_Query_UPDATE_MEMBER) {
 
@@ -474,7 +474,7 @@ if ($_Application_Module_Member_Upload_DB_Query_UPDATE_MEMBER) {
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Upload_DB_Query_UPDATE_MEMBER);
+$_Application_Module_Member_Upload_DB_Query_UPDATE_MEMBER->fetch_array();
 
 /*
  ============================================================================================================

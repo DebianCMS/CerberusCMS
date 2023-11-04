@@ -369,7 +369,7 @@ closedir($_Application_Module_Member_List_OPEN_DIRECTORY_ACCOUNT_DATA);
 
 if ($_GET["Display"] == "Ranks") {
 
-$_Application_Module_Member_List_DB_Query_SELECT_RANKS				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_ranks");
+$_Application_Module_Member_List_DB_Query_SELECT_RANKS				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_ranks");
 
 /*
  ============================================================================================================
@@ -377,7 +377,7 @@ $_Application_Module_Member_List_DB_Query_SELECT_RANKS				= $DB->query("SELECT *
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_List_DB_Query_SELECT_RANKS_Fetch_Array = $DB->fetch_array($_Application_Module_Member_List_DB_Query_SELECT_RANKS)) {
+while ($_Application_Module_Member_List_DB_Query_SELECT_RANKS_Fetch_Array = $_Application_Module_Member_List_DB_Query_SELECT_RANKS->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Ranks_LIST_RANK_GENDER_MALE_0					= $_Application_Module_Member_List_DB_Query_SELECT_RANKS_Fetch_Array['rank_gender_male_0'];
 $_Application_Module_Ranks_LIST_RANK_GENDER_MALE_1					= $_Application_Module_Member_List_DB_Query_SELECT_RANKS_Fetch_Array['rank_gender_male_1'];
@@ -424,7 +424,7 @@ System Rank #10, Male: $_Application_Module_Ranks_LIST_RANK_GENDER_MALE_4<BR><BR
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_List_DB_Query_SELECT_RANKS);
+$_Application_Module_Member_List_DB_Query_SELECT_RANKS->free_result();
 
 } // [ + ] IF: Internal Application: Display :: All System Ranks Is: Activated
 

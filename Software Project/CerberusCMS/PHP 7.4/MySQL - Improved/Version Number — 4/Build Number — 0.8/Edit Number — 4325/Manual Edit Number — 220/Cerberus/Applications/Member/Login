@@ -331,7 +331,8 @@ echo ("
  ============================================================================================================
 */
 
-$_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE			= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_electronic_mail_address='$_Application_Module_Member_Login_POST_AUTHORIZATION_ELECTRONIC_MAIL_ADDRESS' AND member_username='$_Application_Module_Member_Login_POST_AUTHORIZATION_USERNAME'");
+$_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_electronic_mail_address='$_Application_Module_Member_Login_POST_AUTHORIZATION_ELECTRONIC_MAIL_ADDRESS' AND member_username='$_Application_Module_Member_Login_POST_AUTHORIZATION_USERNAME'");
+$_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE_NUMBER_OF_ROWS	= $_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE->num_rows;
 
 /*
  ============================================================================================================
@@ -339,7 +340,7 @@ $_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE			= 
  ============================================================================================================
 */
 
-if ($DB->num_rows($_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE)) {
+if ($_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE_NUMBER_OF_ROWS)) {
 
 /*
  ============================================================================================================
@@ -347,7 +348,7 @@ if ($DB->num_rows($_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORI
  ============================================================================================================
 */
 
-while ($_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE_Fetch_Array = $DB->fetch_array($_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE)) {
+while ($_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE_Fetch_Array = $_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Login_LIST_MEMBER_ID							= $_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE_Fetch_Array['id'];
 $_Application_Module_Login_LIST_MEMBER_USERNAME							= $_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE_Fetch_Array['member_username'];
@@ -355,7 +356,7 @@ $_Application_Module_Login_LIST_MEMBER_ELECTRONIC_MAIL_ADDRESS					= $_Applicati
 $_Application_Module_Login_LIST_MEMBER_INTERNET_PROTOCOL_ADDRESS_AUTHORIZED			= $_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE_Fetch_Array['member_ip_address_authorized'];
 $_Application_Module_Login_LIST_MEMBER_INTERNET_PROTOCOL_ADDRESS_AUTHORIZATION_TOKEN		= $_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE_Fetch_Array['member_ip_address_authorization_token'];
 
-$_Application_Module_Login_DB_Query_UPDATE_MEMBER_ACCOUNT_IP_ADDRESS_AUTHORIZATION_TOKEN	= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_ip_address_authorization_token='$_Application_Module_Member_Login_SECURITY_RANDOM_STRING_GENERATOR_LENGTH_NUMBER_HASH' WHERE member_username='$_Application_Module_Member_Login_POST_AUTHORIZATION_USERNAME' AND member_electronic_mail_address='$_Application_Module_Login_LIST_MEMBER_ELECTRONIC_MAIL_ADDRESS'");
+$_Application_Module_Login_DB_Query_UPDATE_MEMBER_ACCOUNT_IP_ADDRESS_AUTHORIZATION_TOKEN	= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_ip_address_authorization_token='$_Application_Module_Member_Login_SECURITY_RANDOM_STRING_GENERATOR_LENGTH_NUMBER_HASH' WHERE member_username='$_Application_Module_Member_Login_POST_AUTHORIZATION_USERNAME' AND member_electronic_mail_address='$_Application_Module_Login_LIST_MEMBER_ELECTRONIC_MAIL_ADDRESS'");
 
 if ($_Application_Module_Login_DB_Query_UPDATE_MEMBER_ACCOUNT_IP_ADDRESS_AUTHORIZATION_TOKEN) {
 /**
@@ -438,7 +439,7 @@ Have a nice day,
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE);
+$_Application_Module_Login_DB_Query_SELECT_MEMBERS_FOR_AUTHORIZATION_UPDATE->free_result();
 
 } // [ + ] IF: Authorization Form Variables Have Executed
 
@@ -475,8 +476,9 @@ echo ("
  ============================================================================================================
 */
 
-$_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHORIZATION_TOKEN				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_ip_address_authorization_token='$_Application_Module_Member_Login_POST_AUTHORIZATION_INTERNET_PROTOCOL_ADDRESS_TOKEN'");
-$_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHORIZATION_TOKEN				= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_ip_address_authorized='$_GLOBAL_REMOTE_SERVER_ADDRESS',member_ip_address_authorized_multifactor='$_GLOBAL_REMOTE_SERVER_ADDRESS',member_account_device_mac_address_authorized='$_GLOBAL_REMOTE_DEVICE_MAC_ADDRESS',member_account_device_web_browser_authorized='$_GLOBAL_REMOTE_SERVER_HTTP_USER_AGENT_DISPLAY' WHERE member_ip_address_authorization_token='$_Application_Module_Member_Login_POST_AUTHORIZATION_INTERNET_PROTOCOL_ADDRESS_TOKEN'");
+$_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHORIZATION_TOKEN				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_ip_address_authorization_token='$_Application_Module_Member_Login_POST_AUTHORIZATION_INTERNET_PROTOCOL_ADDRESS_TOKEN'");
+$_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHORIZATION_TOKEN				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_ip_address_authorized='$_GLOBAL_REMOTE_SERVER_ADDRESS',member_ip_address_authorized_multifactor='$_GLOBAL_REMOTE_SERVER_ADDRESS',member_account_device_mac_address_authorized='$_GLOBAL_REMOTE_DEVICE_MAC_ADDRESS',member_account_device_web_browser_authorized='$_GLOBAL_REMOTE_SERVER_HTTP_USER_AGENT_DISPLAY' WHERE member_ip_address_authorization_token='$_Application_Module_Member_Login_POST_AUTHORIZATION_INTERNET_PROTOCOL_ADDRESS_TOKEN'");
+$_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHORIZATION_TOKEN_NUMBER_OF_ROWS		= $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHORIZATION_TOKEN->num_rows;
 
 /*
  ============================================================================================================
@@ -484,7 +486,7 @@ $_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHORIZATION_TOKEN				= $DB->
  ============================================================================================================
 */
 
-if ($DB->num_rows($_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHORIZATION_TOKEN)) {
+if ($_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHORIZATION_TOKEN_NUMBER_OF_ROWS)) {
 
 											echo ($_Application_Module_Member_Message_Login_AUTHORIZATION_TOKEN_VALID);
 
@@ -516,7 +518,7 @@ if ($_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHORIZATION_TOKEN) {
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Login_DB_Query_SELECT_MEMBERS_AUTHORIZATION_TOKEN);
+$_Application_Module_Login_DB_Query_SELECT_MEMBERS_AUTHORIZATION_TOKEN->free_result();
 
 } // [ + ] IF: Registered Member Account :: Authorization Token :: Input Form Variables Have Executed
 

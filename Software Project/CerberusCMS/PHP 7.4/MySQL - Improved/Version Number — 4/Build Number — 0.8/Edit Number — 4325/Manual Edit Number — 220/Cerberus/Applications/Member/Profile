@@ -63,7 +63,7 @@
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS 							= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members");
+$_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES 					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members");
 
 /*
  ============================================================================================================
@@ -71,7 +71,7 @@ $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS 							= $DB->query(
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS)) {
+while ($_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array = $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES->fetch_array(MYSQLI_BOTH)) {
 
 /*
  ============================================================================================================
@@ -79,8 +79,8 @@ while ($_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array =
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_ID								= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['id'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCESS_LEVEL							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_access_level'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ID								= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['id'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCESS_LEVEL							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_access_level'];
 
 /*
  ============================================================================================================
@@ -88,20 +88,20 @@ $_Application_Module_Member_Profile_LIST_MEMBER_ACCESS_LEVEL							= $_Applicati
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_ACTIVITY			= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_visibility_profile_activity'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_AUTHENTICATION		= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_visibility_profile_authentication'];		
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_CONTACT			= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_visibility_profile_contact'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_CONTACT_EMERGENCY		= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_visibility_profile_contact_emergency'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_DETAILS			= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_visibility_profile_details'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_FRIENDS			= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_visibility_profile_friends'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_AUDIO		= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_visibility_profile_gallery_audio'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_DOCUMENT		= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_visibility_profile_gallery_document'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_IMAGE		= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_visibility_profile_gallery_image'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_VIDEO		= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_visibility_profile_gallery_video'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_LOCATION			= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_visibility_profile_location'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_PHYSICAL			= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_visibility_profile_physical'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_SECURITY			= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_visibility_profile_security'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_STREAMS			= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_visibility_profile_streams'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_ACTIVITY			= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_visibility_profile_activity'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_AUTHENTICATION		= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_visibility_profile_authentication'];		
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_CONTACT			= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_visibility_profile_contact'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_CONTACT_EMERGENCY		= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_visibility_profile_contact_emergency'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_DETAILS			= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_visibility_profile_details'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_FRIENDS			= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_visibility_profile_friends'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_AUDIO		= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_visibility_profile_gallery_audio'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_DOCUMENT		= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_visibility_profile_gallery_document'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_IMAGE		= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_visibility_profile_gallery_image'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_VIDEO		= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_visibility_profile_gallery_video'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_LOCATION			= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_visibility_profile_location'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_PHYSICAL			= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_visibility_profile_physical'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_SECURITY			= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_visibility_profile_security'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_STREAMS			= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_visibility_profile_streams'];
 
 /*
  ============================================================================================================
@@ -109,8 +109,8 @@ $_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBIL
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_AVATAR							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_image_avatar'];
-$_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_PICTURE							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_image_picture'];
+$_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_AVATAR							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_image_avatar'];
+$_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_PICTURE							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_image_picture'];
 
 /*
  ============================================================================================================
@@ -118,10 +118,10 @@ $_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_PICTURE							= $_Applicat
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_SETTINGS_LANGUAGE						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_language'];
-$_Application_Module_Member_Profile_LIST_MEMBER_SETTINGS_NEWSLETTER						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_newsletter'];
-$_Application_Module_Member_Profile_LIST_MEMBER_SETTINGS_THEME_DIRECTORY					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_theme_directory'];
-$_Application_Module_Member_Profile_LIST_MEMBER_SETTINGS_ENCRYPTION_PGP						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_settings_encryption_pgp'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SETTINGS_LANGUAGE						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_language'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SETTINGS_NEWSLETTER						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_newsletter'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SETTINGS_THEME_DIRECTORY					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_theme_directory'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SETTINGS_ENCRYPTION_PGP						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_settings_encryption_pgp'];
 
 /*
  ============================================================================================================
@@ -129,14 +129,14 @@ $_Application_Module_Member_Profile_LIST_MEMBER_SETTINGS_ENCRYPTION_PGP						= $
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_BIRTHDATE							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_birthdate'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_HOME							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_address_home'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_MAIL							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_address_mail'];
-$_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_name_first'];
-$_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_name_last'];
-$_Application_Module_Member_Profile_LIST_MEMBER_NAME_MIDDLE							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_name_middle'];
-$_Application_Module_Member_Profile_LIST_MEMBER_NAME_NICKNAME							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_name_nickname'];
-$_Application_Module_Member_Profile_LIST_MEMBER_GENDER								= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_gender'];
+$_Application_Module_Member_Profile_LIST_MEMBER_BIRTHDATE							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_birthdate'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_HOME							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_address_home'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_MAIL							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_address_mail'];
+$_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_name_first'];
+$_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_name_last'];
+$_Application_Module_Member_Profile_LIST_MEMBER_NAME_MIDDLE							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_name_middle'];
+$_Application_Module_Member_Profile_LIST_MEMBER_NAME_NICKNAME							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_name_nickname'];
+$_Application_Module_Member_Profile_LIST_MEMBER_GENDER								= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_gender'];
 
 /*
  ============================================================================================================
@@ -144,8 +144,8 @@ $_Application_Module_Member_Profile_LIST_MEMBER_GENDER								= $_Application_Mo
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIAL_PREFERENCE_MARITAL_STATUS				= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_social_preference_marital_status'];
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIAL_PREFERENCE_SEXUAL_ORIENTATION				= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_social_preference_sexual_orientation'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIAL_PREFERENCE_MARITAL_STATUS				= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_social_preference_marital_status'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIAL_PREFERENCE_SEXUAL_ORIENTATION				= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_social_preference_sexual_orientation'];
 
 /*
  ============================================================================================================
@@ -153,11 +153,11 @@ $_Application_Module_Member_Profile_LIST_MEMBER_SOCIAL_PREFERENCE_SEXUAL_ORIENTA
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_PHONE_AREA_CODE							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_number_phone_area_code'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHONE_COUNTRY_CODE						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_number_phone_country_code'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHONE_CELL							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_number_phone_cell'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHONE_HOME							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_number_phone_home'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHONE_WORK							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_number_phone_work'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHONE_AREA_CODE							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_number_phone_area_code'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHONE_COUNTRY_CODE						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_number_phone_country_code'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHONE_CELL							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_number_phone_cell'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHONE_HOME							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_number_phone_home'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHONE_WORK							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_number_phone_work'];
 
 /*
  ============================================================================================================
@@ -165,7 +165,7 @@ $_Application_Module_Member_Profile_LIST_MEMBER_PHONE_WORK							= $_Application
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_ELECTRONIC_MAIL_ADDRESS						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_electronic_mail_address'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ELECTRONIC_MAIL_ADDRESS						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_electronic_mail_address'];
 
 /*
  ============================================================================================================
@@ -173,8 +173,8 @@ $_Application_Module_Member_Profile_LIST_MEMBER_ELECTRONIC_MAIL_ADDRESS						= $
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_username'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PASSWORD							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_password'];
+$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_username'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PASSWORD							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_password'];
 
 /*
  ============================================================================================================
@@ -182,17 +182,17 @@ $_Application_Module_Member_Profile_LIST_MEMBER_PASSWORD							= $_Application_M
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_BITCOIN							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_address_cryptocurrency_bitcoin'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_BITCOIN_GOLD						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_address_cryptocurrency_bitcoin_gold'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_DOGECOIN						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_address_cryptocurrency_dogecoin'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_ETHEREUM						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_address_cryptocurrency_ethereum'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_LITECOIN						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_address_cryptocurrency_litecoin'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_MAZACOIN						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_address_cryptocurrency_mazacoin'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_NAMECOIN						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_address_cryptocurrency_namecoin'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_PEERCOIN						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_address_cryptocurrency_peercoin'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_PRIMECOIN						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_address_cryptocurrency_primecoin'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_TRONCOIN						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_address_cryptocurrency_troncoin'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_ZCASH							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_address_cryptocurrency_zcash'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_BITCOIN							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_address_cryptocurrency_bitcoin'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_BITCOIN_GOLD						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_address_cryptocurrency_bitcoin_gold'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_DOGECOIN						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_address_cryptocurrency_dogecoin'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_ETHEREUM						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_address_cryptocurrency_ethereum'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_LITECOIN						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_address_cryptocurrency_litecoin'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_MAZACOIN						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_address_cryptocurrency_mazacoin'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_NAMECOIN						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_address_cryptocurrency_namecoin'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_PEERCOIN						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_address_cryptocurrency_peercoin'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_PRIMECOIN						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_address_cryptocurrency_primecoin'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_TRONCOIN						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_address_cryptocurrency_troncoin'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_ZCASH							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_address_cryptocurrency_zcash'];
 
 /*
  ============================================================================================================
@@ -200,8 +200,8 @@ $_Application_Module_Member_Profile_LIST_MEMBER_ADDRESS_ZCASH							= $_Applicat
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_IP_ADDRESS_AUTHORIZED						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_ip_address_authorized'];
-$_Application_Module_Member_Profile_LIST_MEMBER_IP_ADDRESS_LOG							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_ip_address_log'];
+$_Application_Module_Member_Profile_LIST_MEMBER_IP_ADDRESS_AUTHORIZED						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_ip_address_authorized'];
+$_Application_Module_Member_Profile_LIST_MEMBER_IP_ADDRESS_LOG							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_ip_address_log'];
 
 /*
  ============================================================================================================
@@ -209,10 +209,10 @@ $_Application_Module_Member_Profile_LIST_MEMBER_IP_ADDRESS_LOG							= $_Applica
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_EXPERIENCE_AMOUNT						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_experience_amount'];
-$_Application_Module_Member_Profile_LIST_MEMBER_LAST_REFERRER							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_last_referrer'];
-$_Application_Module_Member_Profile_LIST_MEMBER_NUMBER_OF_POSTS							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_number_of_posts'];
-$_Application_Module_Member_Profile_LIST_MEMBER_RANK_LEVEL							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_level_rank'];
+$_Application_Module_Member_Profile_LIST_MEMBER_EXPERIENCE_AMOUNT						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_experience_amount'];
+$_Application_Module_Member_Profile_LIST_MEMBER_LAST_REFERRER							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_last_referrer'];
+$_Application_Module_Member_Profile_LIST_MEMBER_NUMBER_OF_POSTS							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_number_of_posts'];
+$_Application_Module_Member_Profile_LIST_MEMBER_RANK_LEVEL							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_level_rank'];
 
 /*
  ============================================================================================================
@@ -220,14 +220,14 @@ $_Application_Module_Member_Profile_LIST_MEMBER_RANK_LEVEL							= $_Application
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_DEVICE_GPS_X						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_location_device_gps_x'];
-$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_DEVICE_GPS_Y						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_location_device_gps_y'];
-$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_DEVICE_GLO						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_location_device_glo'];
-$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_DEVICE_REGION						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_location_device_region'];
-$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_DEVICE_TIMEZONE					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_location_device_timezone'];
-$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_GIVEN_AREA						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_location_given_area'];
-$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_GIVEN_REGION						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_location_given_region'];
-$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_GIVEN_TIMEZONE						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_location_given_timezone'];
+$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_DEVICE_GPS_X						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_location_device_gps_x'];
+$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_DEVICE_GPS_Y						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_location_device_gps_y'];
+$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_DEVICE_GLO						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_location_device_glo'];
+$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_DEVICE_REGION						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_location_device_region'];
+$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_DEVICE_TIMEZONE					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_location_device_timezone'];
+$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_GIVEN_AREA						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_location_given_area'];
+$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_GIVEN_REGION						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_location_given_region'];
+$_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_GIVEN_TIMEZONE						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_location_given_timezone'];
 
 /*
  ============================================================================================================
@@ -235,8 +235,8 @@ $_Application_Module_Member_Profile_LIST_MEMBER_LOCATION_GIVEN_TIMEZONE						= $
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_MOOD								= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_mood'];
-$_Application_Module_Member_Profile_LIST_MEMBER_MUSIC								= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_music'];
+$_Application_Module_Member_Profile_LIST_MEMBER_MOOD								= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_mood'];
+$_Application_Module_Member_Profile_LIST_MEMBER_MUSIC								= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_music'];
 
 /*
  ============================================================================================================
@@ -244,10 +244,10 @@ $_Application_Module_Member_Profile_LIST_MEMBER_MUSIC								= $_Application_Mod
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_PASSWORD							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_password'];
-$_Application_Module_Member_Profile_LIST_MEMBER_SECURITY_PGP_KEY_PANEL_PUBLIC					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_security_pgp_key_panel_public'];
-$_Application_Module_Member_Profile_LIST_MEMBER_SECURITY_PGP_KEY_PANEL_PRIVATE					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_security_pgp_key_panel_private'];
-$_Application_Module_Member_Profile_LIST_MEMBER_SECURITY_CUSTOM_PASSWORD_PANEL					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_security_custom_password_panel'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PASSWORD							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_password'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SECURITY_PGP_KEY_PANEL_PUBLIC					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_security_pgp_key_panel_public'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SECURITY_PGP_KEY_PANEL_PRIVATE					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_security_pgp_key_panel_private'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SECURITY_CUSTOM_PASSWORD_PANEL					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_security_custom_password_panel'];
 
 /*
  ============================================================================================================
@@ -255,8 +255,8 @@ $_Application_Module_Member_Profile_LIST_MEMBER_SECURITY_CUSTOM_PASSWORD_PANEL		
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_PROFILE_ABOUT							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_profile_about'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PROFILE_SIGNATURE						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_profile_signature'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PROFILE_ABOUT							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_profile_about'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PROFILE_SIGNATURE						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_profile_signature'];
 
 /*
  ============================================================================================================
@@ -264,8 +264,8 @@ $_Application_Module_Member_Profile_LIST_MEMBER_PROFILE_SIGNATURE						= $_Appli
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_REGISTRATION_DATE						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_registration_date'];
-$_Application_Module_Member_Profile_LIST_MEMBER_REGISTRATION_DETAILS						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_registration_details'];
+$_Application_Module_Member_Profile_LIST_MEMBER_REGISTRATION_DATE						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_registration_date'];
+$_Application_Module_Member_Profile_LIST_MEMBER_REGISTRATION_DETAILS						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_registration_details'];
 
 /*
  ============================================================================================================
@@ -273,12 +273,12 @@ $_Application_Module_Member_Profile_LIST_MEMBER_REGISTRATION_DETAILS						= $_Ap
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_BIOMETRICS_BLOOD_TYPE					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_biometrics_blood_type'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_BIOMETRICS_COLOR_EYE_1					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_biometrics_color_eye_1'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_BIOMETRICS_COLOR_EYE_2					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_biometrics_color_eye_2'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_BIOMETRICS_COLOR_HAIR					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_biometrics_color_hair'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_BIOMETRICS_WEIGHT					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_biometrics_weight'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_BIOMETRICS_HEIGHT					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_biometrics_height'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_BIOMETRICS_BLOOD_TYPE					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_biometrics_blood_type'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_BIOMETRICS_COLOR_EYE_1					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_biometrics_color_eye_1'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_BIOMETRICS_COLOR_EYE_2					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_biometrics_color_eye_2'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_BIOMETRICS_COLOR_HAIR					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_biometrics_color_hair'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_BIOMETRICS_WEIGHT					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_biometrics_weight'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_BIOMETRICS_HEIGHT					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_biometrics_height'];
 
 /*
  ============================================================================================================
@@ -286,19 +286,19 @@ $_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_BIOMETRICS_HEIGHT					=
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_ETHNICITY_1						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_ethnicity_1'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_ETHNICITY_2						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_ethnicity_2'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_ETHNICITY_3						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_ethnicity_3'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_ETHNICITY_4						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_ethnicity_4'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_ETHNICITY_1						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_ethnicity_1'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_ETHNICITY_2						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_ethnicity_2'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_ETHNICITY_3						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_ethnicity_3'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_ETHNICITY_4						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_ethnicity_4'];
 
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_NATIONALITY_1						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_nationality_1'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_NATIONALITY_2						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_nationality_2'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_NATIONALITY_3						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_nationality_3'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_NATIONALITY_1						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_nationality_1'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_NATIONALITY_2						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_nationality_2'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_NATIONALITY_3						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_nationality_3'];
 
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_RACE_1							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_race_1'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_RACE_2							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_race_2'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_RACE_3							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_race_3'];
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_RACE_4							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_race_4'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_RACE_1							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_race_1'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_RACE_2							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_race_2'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_RACE_3							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_race_3'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_RACE_4							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_race_4'];
 
 /*
  ============================================================================================================
@@ -306,7 +306,7 @@ $_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_RACE_4							= $_Applic
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_DIMENSIONS						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_physical_dimensions'];
+$_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_DIMENSIONS						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_physical_dimensions'];
 
 /*
  ============================================================================================================
@@ -314,12 +314,12 @@ $_Application_Module_Member_Profile_LIST_MEMBER_PHYSICAL_DIMENSIONS						= $_App
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_ACTIVATION					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_activation'];
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_ACTIVATION_KEY					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_activation_key'];
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_ACTIVE						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_active'];
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_BANNED						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_banned'];
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LOCKED						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_locked'];
-$_Application_Module_Member_Profile_LIST_MEMBER_URL_HOMEPAGE							= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_url_homepage'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_ACTIVATION					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_status_account_activation'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_ACTIVATION_KEY					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_status_account_activation_key'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_ACTIVE						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_status_account_active'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_BANNED						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_status_account_banned'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LOCKED						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_status_account_locked'];
+$_Application_Module_Member_Profile_LIST_MEMBER_URL_HOMEPAGE							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_url_homepage'];
 
 /*
  ============================================================================================================
@@ -337,8 +337,8 @@ $_Application_Module_Member_Profile_LIST_MEMBER_CUSTOM_PASSWORD_PANEL_SIGNATURE_
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_AUDIO_SOUNDCLOUD					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_audio_soundcloud'];
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_AUDIO_SPOTIFY					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_audio_spotify'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_AUDIO_SOUNDCLOUD					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_audio_soundcloud'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_AUDIO_SPOTIFY					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_audio_spotify'];
 
 /*
  ============================================================================================================
@@ -346,7 +346,7 @@ $_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_AUDIO_SPOTIFY					= 
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_BUSINESS_LINKEDIN					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_business_linkedin'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_BUSINESS_LINKEDIN					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_business_linkedin'];
 
 /*
  ============================================================================================================
@@ -354,10 +354,10 @@ $_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_BUSINESS_LINKEDIN			
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_COMMUNICATIONS_DISCORD				= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_communications_discord'];
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_COMMUNICATIONS_ICQ					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_communications_icq'];
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_COMMUNICATIONS_SKYPE				= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_communications_skype'];
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_COMMUNICATIONS_SNAPCHAT				= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_communications_snapchat'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_COMMUNICATIONS_DISCORD				= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_communications_discord'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_COMMUNICATIONS_ICQ					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_communications_icq'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_COMMUNICATIONS_SKYPE				= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_communications_skype'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_COMMUNICATIONS_SNAPCHAT				= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_communications_snapchat'];
 
 /*
  ============================================================================================================
@@ -365,7 +365,7 @@ $_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_COMMUNICATIONS_SNAPC
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_GALLERY_INSTAGRAM					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_gallery_instagram'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_GALLERY_INSTAGRAM					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_gallery_instagram'];
 
 /*
  ============================================================================================================
@@ -373,8 +373,8 @@ $_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_GALLERY_INSTAGRAM			
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_POSTING_FACEBOOK					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_posting_facebook'];
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_POSTING_TWITTER					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_posting_twitter'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_POSTING_FACEBOOK					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_posting_facebook'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_POSTING_TWITTER					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_posting_twitter'];
 
 /*
  ============================================================================================================
@@ -382,7 +382,7 @@ $_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_POSTING_TWITTER					
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_SECURITY_KEYBASE					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_security_keybase'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_SECURITY_KEYBASE					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_security_keybase'];
 
 /*
  ============================================================================================================
@@ -390,9 +390,9 @@ $_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_SECURITY_KEYBASE				
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_PROGRAMMING_BITBUCKET				= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_programming_bitbucket'];
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_PROGRAMMING_GITHUB					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_programming_github'];
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_PROGRAMMING_LAUNCHPAD				= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_programming_launchpad'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_PROGRAMMING_BITBUCKET				= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_programming_bitbucket'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_PROGRAMMING_GITHUB					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_programming_github'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_PROGRAMMING_LAUNCHPAD				= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_programming_launchpad'];
 
 /*
  ============================================================================================================
@@ -400,9 +400,9 @@ $_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_PROGRAMMING_LAUNCHPA
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_CONTACT_EMERGENCY_1						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_contact_emergency_1'];
-$_Application_Module_Member_Profile_LIST_MEMBER_CONTACT_EMERGENCY_2						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_contact_emergency_2'];
-$_Application_Module_Member_Profile_LIST_MEMBER_CONTACT_EMERGENCY_3						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_contact_emergency_3'];
+$_Application_Module_Member_Profile_LIST_MEMBER_CONTACT_EMERGENCY_1						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_contact_emergency_1'];
+$_Application_Module_Member_Profile_LIST_MEMBER_CONTACT_EMERGENCY_2						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_contact_emergency_2'];
+$_Application_Module_Member_Profile_LIST_MEMBER_CONTACT_EMERGENCY_3						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_contact_emergency_3'];
 
 /*
  ============================================================================================================
@@ -410,7 +410,7 @@ $_Application_Module_Member_Profile_LIST_MEMBER_CONTACT_EMERGENCY_3						= $_App
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_EMERGENCY_MEDICAL						= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_emergency_medical'];
+$_Application_Module_Member_Profile_LIST_MEMBER_EMERGENCY_MEDICAL						= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_emergency_medical'];
 
 /*
  ============================================================================================================
@@ -418,7 +418,7 @@ $_Application_Module_Member_Profile_LIST_MEMBER_EMERGENCY_MEDICAL						= $_Appli
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_VIDEO_YOUTUBE					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_socialmedia_video_youtube'];
+$_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_VIDEO_YOUTUBE					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_socialmedia_video_youtube'];
 
 /*
  ============================================================================================================
@@ -426,8 +426,8 @@ $_Application_Module_Member_Profile_LIST_MEMBER_SOCIALMEDIA_VIDEO_YOUTUBE					= 
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_UNIQUE_DIGITAL_FINGERPRINT_HASHED			= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_security_fingerprint_hashed'];
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_UNIQUE_DIGITAL_FINGERPRINT_CLEARTEXT			= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_security_fingerprint_cleartext'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_UNIQUE_DIGITAL_FINGERPRINT_HASHED			= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_security_fingerprint_hashed'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_UNIQUE_DIGITAL_FINGERPRINT_CLEARTEXT			= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_security_fingerprint_cleartext'];
 $_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_UNIQUE_DIGITAL_FINGERPRINT_CLEARTEXT_SIGNATURE_SHA512	= hash('sha512', $_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_UNIQUE_DIGITAL_FINGERPRINT_CLEARTEXT);
 
 /*
@@ -436,13 +436,13 @@ $_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_UNIQUE_DIGITAL_FINGERPRI
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_TIMESTAMP				= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_last_active_timestamp'];
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_YEARS				= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_last_active_years'];
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_MONTHS				= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_last_active_months'];
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_DAYS					= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_last_active_days'];
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_HOURS				= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_last_active_hours'];
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_MINUTES				= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_last_active_minutes'];
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_SECONDS				= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_status_account_last_active_seconds'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_TIMESTAMP				= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_status_account_last_active_timestamp'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_YEARS				= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_status_account_last_active_years'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_MONTHS				= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_status_account_last_active_months'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_DAYS					= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_status_account_last_active_days'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_HOURS				= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_status_account_last_active_hours'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_MINUTES				= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_status_account_last_active_minutes'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_SECONDS				= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_status_account_last_active_seconds'];
 
 /*
  ============================================================================================================
@@ -450,9 +450,9 @@ $_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_SECON
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_IP_ADDRESS_LAST_AUTHENTICATION_SERVER_DEVICE	= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_ip_address_last_authentication_server_device'];
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_IP_ADDRESS_LAST_AUTHENTICATION_SERVER_LOCAL	= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_ip_address_last_authentication_server_local'];
-$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_IP_ADDRESS_LAST_AUTHENTICATION_SERVER_REMOTE	= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_ip_address_last_authentication_server_remote'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_IP_ADDRESS_LAST_AUTHENTICATION_SERVER_DEVICE	= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_ip_address_last_authentication_server_device'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_IP_ADDRESS_LAST_AUTHENTICATION_SERVER_LOCAL	= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_ip_address_last_authentication_server_local'];
+$_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_IP_ADDRESS_LAST_AUTHENTICATION_SERVER_REMOTE	= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_ip_address_last_authentication_server_remote'];
 
 /*
  ============================================================================================================
@@ -460,7 +460,7 @@ $_Application_Module_Member_Profile_LIST_MEMBER_STATUS_ACCOUNT_IP_ADDRESS_LAST_A
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_CURRENT_INTERNET_PROTOCOL_ADDRESS			= $_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS_Fetch_Array['member_ip_address'];
+$_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_CURRENT_INTERNET_PROTOCOL_ADDRESS			= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_ip_address'];
 
 /*
  ============================================================================================================
@@ -994,7 +994,7 @@ echo ("Services Message: You are not Authorized to Send this Services Root Admin
  ============================================================================================================
 */
 
-$_Application_Module_Member_Profile_SERVICES_DB_Query_COMMAND_RECEIVE					= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_services_commander(command_receive,command_timestamp,command_type)VALUES('$_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD','$_Application_Module_Member_Profile_SERVICES_COMMAND_TYPE')");
+$_Application_Module_Member_Profile_SERVICES_DB_Query_COMMAND_RECEIVE					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_services_commander(command_receive,command_timestamp,command_type)VALUES('$_Application_Module_Member_Profile_SERVICES_COMMAND_RECEIVE','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD','$_Application_Module_Member_Profile_SERVICES_COMMAND_TYPE')");
 
 /*
  ============================================================================================================
@@ -2606,5 +2606,5 @@ echo ("Message: You are not Logged-In. Please Authenticate into your Registered 
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Profile_DB_Query_SELECT_MEMBERS);
+$_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES->free_result();
 ?>

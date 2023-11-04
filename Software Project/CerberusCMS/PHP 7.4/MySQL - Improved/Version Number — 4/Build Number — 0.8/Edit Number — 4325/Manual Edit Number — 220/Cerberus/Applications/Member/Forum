@@ -97,7 +97,8 @@
  ============================================================================================================
 */
 
-$_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_forum ORDER BY id ASC");
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_forum ORDER BY id ASC");
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS_NUMBER_OF_ROWS			= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS->num_rows;
 
 /*
  ============================================================================================================
@@ -105,7 +106,7 @@ $_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS				= $DB->query("SELECT
  ============================================================================================================
 */
 
-if ($DB->num_rows($_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS) <= 0) {
+if ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS_NUMBER_OF_ROWS <= 0) {
 
 											echo ($_Application_Module_Member_Message_Forum_FORUM_ENTRIES_EMPTY);
 
@@ -117,7 +118,7 @@ if ($DB->num_rows($_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS) <= 0
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS)) {
+while ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS_Fetch_Array = $_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Forum_LIST_FORUM_ID						= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS_Fetch_Array['id'];
 $_Application_Module_Member_Forum_LIST_FORUM_ACCESS_LEVEL				= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS_Fetch_Array['forum_access_level'];
@@ -251,7 +252,7 @@ echo ("														<IMG SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Fo
  ===============================================================================================================
 */
 
-$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPICS				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic WHERE topic_forum_id='$_Application_Module_Member_Forum_LIST_FORUM_ID' ORDER BY id ASC");
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPICS				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic WHERE topic_forum_id='$_Application_Module_Member_Forum_LIST_FORUM_ID' ORDER BY id ASC");
 
 /*
  ===============================================================================================================
@@ -259,7 +260,7 @@ $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPICS				= $DB->query("
  ===============================================================================================================
 */
 
-while ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPICS_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPICS)) {
+while ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPICS_Fetch_Array = $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPICS->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Forum_LIST_FORUM_TOPIC_ID					= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPICS_Fetch_Array['id'];
 $_Application_Module_Member_Forum_LIST_FORUM_TOPIC_ACCESS_LEVEL				= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPICS_Fetch_Array['topic_access_level'];
@@ -390,7 +391,7 @@ echo ("
  ============================================================================================================
 */
 
-$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message WHERE message_forum_topic_id='$_Application_Module_Member_Forum_LIST_FORUM_TOPIC_ID' ORDER BY id ASC");
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message WHERE message_forum_topic_id='$_Application_Module_Member_Forum_LIST_FORUM_TOPIC_ID' ORDER BY id ASC");
 
 /*
  ============================================================================================================
@@ -398,7 +399,7 @@ $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES				= $DB-
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES)) {
+while ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_Fetch_Array = $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Forum_LIST_FORUM_TOPIC_MESSAGE_ID						= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_Fetch_Array['id'];
 $_Application_Module_Member_Forum_LIST_FORUM_TOPIC_MESSAGE_ACCESS_LEVEL					= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_Fetch_Array['message_access_level'];
@@ -414,7 +415,7 @@ $_Application_Module_Member_Forum_LIST_FORUM_TOPIC_MESSAGE_TOPIC_ID					= $_Appl
  ============================================================================================================
 */
 
-$_Application_Module_Member_Forum_DB_Query_SELECT_MEMBERS				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_username='$_Application_Module_Member_Forum_LIST_FORUM_TOPIC_MESSAGE_AUTHOR'");
+$_Application_Module_Member_Forum_DB_Query_SELECT_MEMBERS				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_username='$_Application_Module_Member_Forum_LIST_FORUM_TOPIC_MESSAGE_AUTHOR'");
 
 /*
  ============================================================================================================
@@ -422,7 +423,7 @@ $_Application_Module_Member_Forum_DB_Query_SELECT_MEMBERS				= $DB->query("SELEC
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Forum_DB_Query_SELECT_MEMBERS_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Forum_DB_Query_SELECT_MEMBERS)) {
+while ($_Application_Module_Member_Forum_DB_Query_SELECT_MEMBERS_Fetch_Array = $_Application_Module_Member_Forum_DB_Query_SELECT_MEMBERS->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Forum_LIST_FORUM_TOPIC_MESSAGE_AUTHOR_AVATAR				= $_Application_Module_Member_Forum_DB_Query_SELECT_MEMBERS_Fetch_Array['member_image_avatar'];
 $_Application_Module_Member_Forum_LIST_FORUM_TOPIC_MESSAGE_AUTHOR_EXPERIENCEENCE_AMOUNT			= $_Application_Module_Member_Forum_DB_Query_SELECT_MEMBERS_Fetch_Array['member_experience_amount'];
@@ -502,11 +503,11 @@ echo ("
 
 /*
  ============================================================================================================
- + Kill SQL Database Server Query: Select :: All :: Registered Member Accounts :: Message Author
+ + Kill: SQL Database Server Query: Select :: All :: Registered Member Accounts :: Message Author
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_DB_Query_SELECT_MEMBERS);
+$_Application_Module_Member_Forum_DB_Query_SELECT_MEMBERS->free_result
 
 } // [ + ] IF: Forum :: Forum Topic :: Forum Topic Message Entries ARE Zero
 
@@ -514,11 +515,11 @@ $DB->free($_Application_Module_Member_Forum_DB_Query_SELECT_MEMBERS);
 
 /*
  ============================================================================================================
- + Kill SQL Database Server Query: Select :: Forum :: Topic :: Message Entry
+ + Kill: SQL Database Server Query: Select :: Forum :: Topic :: Message Entry
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES);
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES->free_result();
 
 } // [ + ] WHILE: Retrieving :: Forum :: Forum Topic :: Forum Topic Message Entries :: From The Database Management System Server Database
 
@@ -528,7 +529,7 @@ $DB->free($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPICS);
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPICS->free_result();
 
 //} // [ + ] WHILE: Retrieving :: Forum :: Topic Entries :: From The Database Management System Server Database
 
@@ -538,7 +539,7 @@ $DB->free($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPICS);
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS);
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUMS->free_result();
 
 /*
  =============================================================================================================
@@ -556,7 +557,7 @@ if ($_GET["Display"] == "UpdateMessage") {
  =============================================================================================================
 */
 
-$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_FOR_UPDATE			= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message WHERE id='$_Application_Module_Member_Forum_LIST_FORUM_TOPIC_MESSAGE_ID'");
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_FOR_UPDATE			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message WHERE id='$_Application_Module_Member_Forum_LIST_FORUM_TOPIC_MESSAGE_ID'");
 
 /*
  =============================================================================================================
@@ -564,7 +565,7 @@ $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_FOR_UPDAT
  =============================================================================================================
 */
 
-while ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_FOR_UPDATE_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_FOR_UPDATE)) {
+while ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_FOR_UPDATE_Fetch_Array = $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_FOR_UPDATE->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Forum_UPDATE_MESSAGE_LIST_FORUM_TOPIC_MESSAGE_ID				= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_FOR_UPDATE_Fetch_Array['id'];
 $_Application_Module_Member_Forum_UPDATE_MESSAGE_LIST_FORUM_TOPIC_MESSAGE_AUTHOR			= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_FOR_UPDATE_Fetch_Array['message_author'];
@@ -631,7 +632,7 @@ echo ("
  =============================================================================================================
 */
 
-$_Application_Module_Member_Forum_DB_Query_UPDATE_FORUM_TOPIC_MESSAGE_ENTRY				= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message SET message_data='$_Application_Module_Member_Forum_POST_UPDATE_FORUM_TOPIC_MESSAGE_DATA',message_timestamp_last_update='$_GLOBAL_LOCAL_SERVER_DATE_STANDARD' WHERE id='$_Application_Module_Member_Forum_UPDATE_MESSAGE_LIST_FORUM_TOPIC_MESSAGE_ID'");
+$_Application_Module_Member_Forum_DB_Query_UPDATE_FORUM_TOPIC_MESSAGE_ENTRY				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message SET message_data='$_Application_Module_Member_Forum_POST_UPDATE_FORUM_TOPIC_MESSAGE_DATA',message_timestamp_last_update='$_GLOBAL_LOCAL_SERVER_DATE_STANDARD' WHERE id='$_Application_Module_Member_Forum_UPDATE_MESSAGE_LIST_FORUM_TOPIC_MESSAGE_ID'");
 
 /*
  =============================================================================================================
@@ -655,7 +656,7 @@ if ($_Application_Module_Member_Forum_DB_Query_UPDATE_FORUM_TOPIC_MESSAGE_ENTRY)
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_DB_Query_UPDATE_FORUM_TOPIC_MESSAGE_ENTRY);
+$_Application_Module_Member_Forum_DB_Query_UPDATE_FORUM_TOPIC_MESSAGE_ENTRY->free_result();
 
 } // [ + ] WHILE: Retrieving :: Forum :: Forum Topic :: Forum Topic Message Entries :: From The Database Mangement System Server Database
 
@@ -669,7 +670,7 @@ $DB->free($_Application_Module_Member_Forum_DB_Query_UPDATE_FORUM_TOPIC_MESSAGE_
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_FOR_UPDATE);
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGES_FOR_UPDATE->free_result();
 
 } // [ + ] IF: Update :: Forum :: Topic :: Message Entry :: Database Management System Server Database Variable :: HAS Executed
 
@@ -701,7 +702,8 @@ if ($_GET["Display"] == "CreateForumTopic") {
  =============================================================================================================
 */
 
-$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_CREATE_TOPIC			= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_forum");
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_CREATE_TOPIC			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_forum");
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_CREATE_TOPIC_NUMBER_OF_ROWS	= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_CREATE_TOPIC->num_rows;
 
 $_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_ACCESS_LEVEL			= $_POST['AMM_Forum_Create_Forum_Topic_Access_Level'];	
 $_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_TITLE				= $_POST['AMM_Forum_Create_Forum_Topic_Title'];			
@@ -718,7 +720,7 @@ $_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_FORUM_ID			= $_POST['A
  =============================================================================================================
 */
 
-if ($DB->num_rows($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_CREATE_TOPIC) <= 0) {
+if ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_CREATE_TOPIC_NUMBER_OF_ROWS <= 0) {
 
 											echo ($_Application_Module_Member_Message_Forum_CREATE_FORUM_TOPIC_FORUM_NULL);
 
@@ -758,7 +760,7 @@ echo ("
  =============================================================================================================
 */
 
-while ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_CREATE_TOPIC_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_CREATE_TOPIC)) {
+while ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_CREATE_TOPIC_Fetch_Array = $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_CREATE_TOPIC->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Forum_LIST_FORUM_CREATE_TOPIC_FORUM_ID			= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_CREATE_TOPIC_Fetch_Array['id'];
 $_Application_Module_Member_Forum_LIST_FORUM_CREATE_TOPIC_FORUM_TITLE			= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_CREATE_TOPIC_Fetch_Array['forum_title'];
@@ -773,7 +775,7 @@ $_Application_Module_Member_Forum_LIST_FORUM_CREATE_TOPIC_FORUM_TITLE			= $_Appl
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_CREATE_TOPIC);
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_CREATE_TOPIC->free_result();
 
 echo ("
 													</SELECT>
@@ -831,7 +833,7 @@ if (strlen($_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_DESCRIPTION
  ============================================================================================================
 */
 
-$_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC				= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic(topic_access_level,topic_description,topic_forum_id,topic_last_poster,topic_timestamp,topic_timestamp_last_message,topic_title)VALUES('$_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_ACCESS_LEVEL','$_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_DESCRIPTION','$_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_FORUM_ID','$_GLOBAL_COOKIE_MEMBER_USERNAME','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD','$_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_TITLE')");
+$_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic(topic_access_level,topic_description,topic_forum_id,topic_last_poster,topic_timestamp,topic_timestamp_last_message,topic_title)VALUES('$_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_ACCESS_LEVEL','$_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_DESCRIPTION','$_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_FORUM_ID','$_GLOBAL_COOKIE_MEMBER_USERNAME','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD','$_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_TITLE')");
 
 /*
  ============================================================================================================
@@ -858,7 +860,7 @@ $_Application_Module_Member_Message_Forum_CREATE_FORUM_TOPIC_ENTRY_SUCCESSFUL<BR
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC);
+$_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC->free_result();
 
 } // [ + ] IF: Create :: Forum :: Forum Topic :: Access Level :: String Length Is: Greater Than 1
 
@@ -874,7 +876,7 @@ $DB->free($_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC);
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_FORUM);
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_FORUM->free_result();
 
 } // [ + ] IF: Forum :: Forum Topic Entries :: Number Of Rows IS: Less Than Or Equal To: Zero
 
@@ -917,7 +919,7 @@ echo ("
  =============================================================================================================
 */
 
-$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_CREATE_MESSAGE		= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic ORDER BY id ASC");
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_CREATE_MESSAGE		= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic ORDER BY id ASC");
 
 /*
  =============================================================================================================
@@ -925,7 +927,7 @@ $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_CREATE_MESSAGE		= 
  =============================================================================================================
 */
 
-while ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_CREATE_MESSAGE_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_CREATE_MESSAGE)) {
+while ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_CREATE_MESSAGE_Fetch_Array = $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_CREATE_MESSAGE->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Forum_LIST_FORUM_TOPIC_CREATE_MESSAGE_TOPIC_ID		= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_CREATE_MESSAGE_Fetch_Array['id'];
 $_Application_Module_Member_Forum_LIST_FORUM_TOPIC_CREATE_MESSAGE_TOPIC_TITLE		= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_CREATE_MESSAGE_Fetch_Array['topic_title'];
@@ -965,7 +967,7 @@ echo ("
  =============================================================================================================
 */
 
-$_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC_MESSAGE				= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message(message_access_level,message_author,message_data,message_forum_topic_id,message_timestamp,message_timestamp_last_update)VALUES('$_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_MESSAGE_ACCESS_LEVEL','$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_MESSAGE_DATA','$_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_MESSAGE_TOPIC_ID','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD')");
+$_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC_MESSAGE				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message(message_access_level,message_author,message_data,message_forum_topic_id,message_timestamp,message_timestamp_last_update)VALUES('$_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_MESSAGE_ACCESS_LEVEL','$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_MESSAGE_DATA','$_Application_Module_Member_Forum_POST_CREATE_FORUM_TOPIC_MESSAGE_TOPIC_ID','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD')");
 
 /*
  =============================================================================================================
@@ -988,7 +990,7 @@ if ($_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC_MESSAGE) {
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC_MESSAGE);
+$_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC_MESSAGE->free_result();
 
 } // [ + ] IF: Internal Application: Display :: Create Forum Topic Message Entry :: Input Form :: Variables :: HAVE NOT Executed
 
@@ -1062,7 +1064,7 @@ if ($_Application_Module_Member_Forum_POST_FORUM_TOPIC_MESSAGE_ENTRY_REPLY_ID_2 
  =============================================================================================================
 */
 
-$_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC_MESSAGE_REPLY_MESSAGE		= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message(message_access_level,message_author,message_data,message_forum_topic_id,message_timestamp,message_timestamp_last_update)VALUES('$_Application_Module_Member_Forum_POST_FORUM_TOPIC_MESSAGE_ENTRY_REPLY_ACCESS_LEVEL','$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_Forum_POST_FORUM_TOPIC_MESSAGE_ENTRY_REPLY_DATA','$_Application_Module_Member_Forum_POST_FORUM_TOPIC_MESSAGE_ENTRY_REPLY_ID_2','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD')");
+$_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC_MESSAGE_REPLY_MESSAGE		= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message(message_access_level,message_author,message_data,message_forum_topic_id,message_timestamp,message_timestamp_last_update)VALUES('$_Application_Module_Member_Forum_POST_FORUM_TOPIC_MESSAGE_ENTRY_REPLY_ACCESS_LEVEL','$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_Forum_POST_FORUM_TOPIC_MESSAGE_ENTRY_REPLY_DATA','$_Application_Module_Member_Forum_POST_FORUM_TOPIC_MESSAGE_ENTRY_REPLY_ID_2','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD')");
 
 /*
  =============================================================================================================
@@ -1086,7 +1088,7 @@ if ($_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC_MESSAGE_REPLY_
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC_MESSAGE_REPLY_MESSAGE);
+$_Application_Module_Member_Forum_DB_Query_INSERT_FORUM_TOPIC_MESSAGE_REPLY_MESSAGE->free_result();
 
 /*
  =============================================================================================================
@@ -1105,7 +1107,7 @@ $_Application_Module_Member_Forum_UPDATE_MEMBER_STATISTICS_NUMBER_OF_POSTS			= $
  =============================================================================================================
 */
 
-$_Application_Module_Member_Forum_UPDATE_MEMBER_STATISTICS					= $DB->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_experience_amount='$_Application_Module_Member_Forum_UPDATE_MEMBER_STATISTICS_EXPERIENCE_AMOUNT',member_number_of_posts='$_Application_Module_Member_Forum_UPDATE_MEMBER_STATISTICS_NUMBER_OF_POSTS' WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
+$_Application_Module_Member_Forum_UPDATE_MEMBER_STATISTICS					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_experience_amount='$_Application_Module_Member_Forum_UPDATE_MEMBER_STATISTICS_EXPERIENCE_AMOUNT',member_number_of_posts='$_Application_Module_Member_Forum_UPDATE_MEMBER_STATISTICS_NUMBER_OF_POSTS' WHERE member_username='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
 
 /*
  =============================================================================================================
@@ -1128,7 +1130,7 @@ if ($_Application_Module_Member_Forum_UPDATE_MEMBER_STATISTICS) {
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_UPDATE_MEMBER_STATISTICS);
+$_Application_Module_Member_Forum_UPDATE_MEMBER_STATISTICS->free_result();
 
 } // [ + ] IF: Internal Application: Display :: Forum Topic Message Entry Reply Message :: Input Form :: Variables ARE NOT Empty
 
@@ -1152,7 +1154,7 @@ $DB->free($_Application_Module_Member_Forum_UPDATE_MEMBER_STATISTICS);
  =============================================================================================================
 */
 
-$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGE_DELETE		= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message ORDER BY id ASC");
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGE_DELETE		= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message ORDER BY id ASC");
 
 /*
  =============================================================================================================
@@ -1160,7 +1162,7 @@ $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGE_DELETE		= 
  =============================================================================================================
 */
 
-while ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGE_DELETE_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGE_DELETE)) {
+while ($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGE_DELETE_Fetch_Array = $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGE_DELETE->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Forum_LIST_FORUM_TOPIC_MESSAGE_ENTRY_DELETE_ID		= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGE_DELETE_Fetch_Array['id'];
 $_Application_Module_Member_Forum_LIST_FORUM_TOPIC_MESSAGE_ENTRY_DELETE_AUTHOR		= $_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGE_DELETE_Fetch_Array['message_author'];
@@ -1187,7 +1189,7 @@ if ("$_Application_Module_Member_Forum_LIST_FORUM_TOPIC_MESSAGE_ENTRY_DELETE_AUT
 
 } else {
 
-$_Application_Module_Member_Forum_DB_Query_DELETE_FORUM_TOPIC_MESSAGE			= $DB->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message WHERE id='$_Application_Module_Member_Forum_LIST_FORUM_TOPIC_MESSAGE_ENTRY_DELETE_ID'");
+$_Application_Module_Member_Forum_DB_Query_DELETE_FORUM_TOPIC_MESSAGE			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_topic_message WHERE id='$_Application_Module_Member_Forum_LIST_FORUM_TOPIC_MESSAGE_ENTRY_DELETE_ID'");
 
 /*
  =============================================================================================================
@@ -1207,7 +1209,7 @@ if ($_Application_Module_Member_Forum_DB_Query_DELETE_FORUM_TOPIC_MESSAGE) {
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_DB_Query_DELETE_FORUM_TOPIC_MESSAGE);
+$_Application_Module_Member_Forum_DB_Query_DELETE_FORUM_TOPIC_MESSAGE->free_result();
 
 } // [ + ] IF: Forum :: Forum Topic :: Forum Topic Message Entry Author IS: Original Author
 
@@ -1221,7 +1223,7 @@ $DB->free($_Application_Module_Member_Forum_DB_Query_DELETE_FORUM_TOPIC_MESSAGE)
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGE_DELETE);
+$_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGE_DELETE->free_result();
 
 /*
  ============================================================================================================
@@ -1241,7 +1243,7 @@ $DB->free($_Application_Module_Member_Forum_DB_Query_SELECT_FORUM_TOPIC_MESSAGE_
  ============================================================================================================
 */
 
-$_Application_Module_Member_Forum_Quick_Options_DB_Query_SELECT_FORUM_JUMP_TO		= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_forum ORDER BY forum_title ASC");
+$_Application_Module_Member_Forum_Quick_Options_DB_Query_SELECT_FORUM_JUMP_TO		= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_forum_forum ORDER BY forum_title ASC");
 
 $_Application_Module_Member_Forum_POST_QUICK_OPTIONS_JUMP_TO				= $_POST['AMM_Forum_Quick_Options_Jump_To'];
 
@@ -1273,7 +1275,7 @@ echo ("
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Forum_Quick_Options_DB_Query_SELECT_FORUM_JUMP_TO_Fetch_Array = $DB->fetch_array($_Application_Module_Member_Forum_Quick_Options_DB_Query_SELECT_FORUM_JUMP_TO)) {
+while ($_Application_Module_Member_Forum_Quick_Options_DB_Query_SELECT_FORUM_JUMP_TO_Fetch_Array = $_Application_Module_Member_Forum_Quick_Options_DB_Query_SELECT_FORUM_JUMP_TO->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Forum_QUICK_OPTIONS_LIST_FORUM_ID				= $_Application_Module_Member_Forum_Quick_Options_DB_Query_SELECT_FORUM_JUMP_TO_Fetch_Array['id'];
 $_Application_Module_Member_Forum_QUICK_OPTIONS_LIST_FORUM_TITLE			= $_Application_Module_Member_Forum_Quick_Options_DB_Query_SELECT_FORUM_JUMP_TO_Fetch_Array['forum_title'];
@@ -1305,5 +1307,5 @@ echo ("Cerberus: Forum :: Quick Options :: Activated :: ?$_INTERNAL_APPLICATION_
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Forum_Quick_Options_DB_Query_SELECT_FORUM_JUMP_TO);
+$_Application_Module_Member_Forum_Quick_Options_DB_Query_SELECT_FORUM_JUMP_TO->free_result();
 ?>

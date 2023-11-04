@@ -55,7 +55,8 @@
  ============================================================================================================
 */
 
-$_Application_Module_News_DB_Query_SELECT_NEWS			= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_news ORDER BY id DESC LIMIT 1");
+$_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIES			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_news ORDER BY id DESC LIMIT 1");
+$_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIES_NUMBER_OF_ROWS	= $_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIES->num_rows;
 
 /*
  ============================================================================================================
@@ -63,7 +64,7 @@ $_Application_Module_News_DB_Query_SELECT_NEWS			= $DB->query("SELECT * FROM {$_
  ============================================================================================================
 */
 
-if ($DB->num_rows($_Application_Module_News_DB_Query_SELECT_NEWS) <= 0) {
+if ($_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIES_NUMBER_OF_ROWS <= 0) {
 
 											echo ($_Application_Module_Member_Message_News_NO_NEWS);
 
@@ -75,16 +76,16 @@ if ($DB->num_rows($_Application_Module_News_DB_Query_SELECT_NEWS) <= 0) {
  ============================================================================================================
 */
 
-while ($_Application_Module_News_DB_Query_SELECT_NEWSL = $DB->fetch_array($_Application_Module_News_DB_Query_SELECT_NEWS)) {
+while ($_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIESL = $DB->fetch_array($_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIES)) {
 
-$_Application_Module_News_LIST_NEWS_ID				= $_Application_Module_News_DB_Query_SELECT_NEWSL['id'];
-$_Application_Module_News_LIST_NEWS_AUTHOR			= $_Application_Module_News_DB_Query_SELECT_NEWSL['news_author'];
-$_Application_Module_News_LIST_NEWS_AVATAR			= $_Application_Module_News_DB_Query_SELECT_NEWSL['news_avatar'];
-$_Application_Module_News_LIST_NEWS_DATA			= $_Application_Module_News_DB_Query_SELECT_NEWSL['news_data'];
-$_Application_Module_News_LIST_NEWS_MOOD			= $_Application_Module_News_DB_Query_SELECT_NEWSL['news_mood'];
-$_Application_Module_News_LIST_NEWS_MUSIC			= $_Application_Module_News_DB_Query_SELECT_NEWSL['news_music'];
-$_Application_Module_News_LIST_NEWS_TIME			= $_Application_Module_News_DB_Query_SELECT_NEWSL['news_time'];
-$_Application_Module_News_LIST_NEWS_TITLE			= $_Application_Module_News_DB_Query_SELECT_NEWSL['news_title'];
+$_Application_Module_News_LIST_NEWS_ID				= $_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIESL['id'];
+$_Application_Module_News_LIST_NEWS_AUTHOR			= $_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIESL['news_author'];
+$_Application_Module_News_LIST_NEWS_AVATAR			= $_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIESL['news_avatar'];
+$_Application_Module_News_LIST_NEWS_DATA			= $_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIESL['news_data'];
+$_Application_Module_News_LIST_NEWS_MOOD			= $_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIESL['news_mood'];
+$_Application_Module_News_LIST_NEWS_MUSIC			= $_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIESL['news_music'];
+$_Application_Module_News_LIST_NEWS_TIME			= $_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIESL['news_time'];
+$_Application_Module_News_LIST_NEWS_TITLE			= $_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIESL['news_title'];
 
 /*
  ============================================================================================================
@@ -114,5 +115,5 @@ echo ("
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_News_DB_Query_SELECT_NEWS);
+$DB->free($_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIES);
 ?>

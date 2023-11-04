@@ -419,7 +419,7 @@ Have a nice day,
  ============================================================================================================
 */
 
-$_Application_Module_Member_Register_DB_Query_INSERT_REGISTRAR			= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members(
+$_Application_Module_Member_Register_DB_Query_INSERT_REGISTRAR			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members(
 member_access_level,
 member_account_device_web_browser,
 member_account_device_web_browser_authorized,
@@ -865,7 +865,7 @@ copy("./System/Default/Friend/Friend.cerberus","./Member/Master_List/Electronic_
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Register_DB_Query_INSERT_REGISTRAR);
+$_Application_Module_Member_Register_DB_Query_INSERT_REGISTRAR->free_result();
 
 } // [ + ] IF: ELECTRONIC MAIL ADDRESS EXISTS IN Electronic_Mail_Addresses DIRECTORY [ 1 ]
 

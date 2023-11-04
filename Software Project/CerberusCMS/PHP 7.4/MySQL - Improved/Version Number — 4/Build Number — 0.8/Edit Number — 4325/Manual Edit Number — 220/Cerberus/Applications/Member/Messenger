@@ -943,7 +943,7 @@ copy("./Temporary/Messenger/Setup/Files/Video/index.php","./Temporary/Messenger/
  ============================================================================================================
 */
 
-$_Application_Module_Member_Messenger_DB_Query_INSERT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME					= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_clear_text_file_room(
+$_Application_Module_Member_Messenger_DB_Query_INSERT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_clear_text_file_room(
 messenger_room_creation_author,
 messenger_room_creation_author_device_ip_address,
 messenger_room_creation_author_system_access_level,
@@ -989,7 +989,7 @@ if ($_Application_Module_Member_Messenger_DB_Query_INSERT_CLEAR_TEXT_FILE_MESSEN
  ==================================================================================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Messenger_DB_Query_INSERT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_DB_Query_INSERT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME->free_result();
 
 } else {
 
@@ -1019,7 +1019,8 @@ if ($_GET["Display"] == "VisibleTextFileMessenger") {
  ============================================================================================================
 */
 
-$_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES					= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_clear_text_file_room ORDER BY id ASC");
+$_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_clear_text_file_room ORDER BY id ASC");
+$_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES_NUMBER_OF_ROWS				= $_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES->num_rows;
 
 /*
  ============================================================================================================
@@ -1027,7 +1028,7 @@ $_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_F
  ============================================================================================================
 */
 
-if ($DB->num_rows($_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES) <= 0) {
+if ($_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES_NUMBER_OF_ROWS <= 0) {
 
 											echo ($_Application_Module_Member_Message_Messenger_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOMS_LIST_EMPTY);
 
@@ -1039,7 +1040,7 @@ if ($DB->num_rows($_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VI
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES_ARRAY = $DB->fetch_array($_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES)) {
+while ($_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES_ARRAY = $_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_ID					= $_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES_ARRAY['id'];
 $_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_CREATION_AUTHOR				= $_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES_ARRAY['messenger_room_creation_author'];
@@ -1063,7 +1064,7 @@ $_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENG
  ==================================================================================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES);
+$_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES->free_result();
 
 /*
  =============================================================================================================
@@ -1073,10 +1074,10 @@ $DB->free($_Application_Module_Member_Messenger_DB_Query_RETRIEVE_ALL_VISIBLE_CL
  =============================================================================================================
 */
 
-$_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCLUDE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_clear_text_file_room ORDER BY id ASC");
+$_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCLUDE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_clear_text_file_room ORDER BY id ASC");
+$_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCLUDE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES_NUMBER_OF_ROWS		= $_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCLUDE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES->num_rows;
 
-
-if ($DB->num_rows($_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCLUDE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES) <= 0) {
+if ($_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCLUDE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES_NUMBER_OF_ROWS <= 0) {
 
 											echo ($_Application_Module_Member_Message_Messenger_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOMS_LIST_EMPTY);
 
@@ -1088,7 +1089,7 @@ if ($DB->num_rows($_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCL
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCLUDE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES_ARRAY = $DB->fetch_array($_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCLUDE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES)) {
+while ($_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCLUDE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES_ARRAY = $_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCLUDE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_ID					= $_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCLUDE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES_ARRAY['id'];
 $_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_CREATION_AUTHOR				= $_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCLUDE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES_ARRAY['messenger_room_creation_author'];
@@ -1613,7 +1614,7 @@ echo ("
  ==================================================================================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCLUDE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES);
+$_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_INCLUDE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAMES->free_result();
 
 /*
  ============================================================================================================
@@ -2167,7 +2168,8 @@ if ($_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MES
  ============================================================================================================
 */
 
-$_Application_Module_Member_Messenger_DB_Query_SELECT_ERASE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME					= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_clear_text_file_room WHERE messenger_room_name='$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME' AND messenger_room_password_maintenance='$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_PASSWORD_HASHED' ORDER BY id ASC");
+$_Application_Module_Member_Messenger_DB_Query_SELECT_ERASE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_clear_text_file_room WHERE messenger_room_name='$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME' AND messenger_room_password_maintenance='$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_PASSWORD_HASHED' ORDER BY id ASC");
+$_Application_Module_Member_Messenger_DB_Query_SELECT_ERASE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_NUMBER_OF_ROWS			= $_Application_Module_Member_Messenger_DB_Query_SELECT_ERASE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME->num_rows;
 
 /*
  ============================================================================================================
@@ -2175,7 +2177,7 @@ $_Application_Module_Member_Messenger_DB_Query_SELECT_ERASE_CLEAR_TEXT_FILE_MESS
  ============================================================================================================
 */
 
-if ($DB->num_rows($_Application_Module_Member_Messenger_DB_Query_SELECT_ERASE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME) >= 1) {
+if ($_Application_Module_Member_Messenger_DB_Query_SELECT_ERASE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_NUMBER_OF_ROWS >= 1) {
 
 $_Application_Module_Member_Messenger_ERASE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_FILE						= fopen("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html", "a") or die("Unable To Write To The Visible Clear-Text Messenger Room: $_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html");
 
@@ -2256,7 +2258,7 @@ echo ("* Error: Incorrect Password: $_Application_Module_Member_Messenger_POST_E
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Messenger_DB_Query_SELECT_ERASE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_DB_Query_SELECT_ERASE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME->free_result();
 
 	header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&SelectedClearTextFile=$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
 

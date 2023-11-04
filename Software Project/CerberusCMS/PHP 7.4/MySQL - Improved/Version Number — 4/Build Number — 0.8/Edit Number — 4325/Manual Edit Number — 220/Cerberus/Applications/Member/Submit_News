@@ -115,7 +115,7 @@ echo ("
  ============================================================================================================
 */
 
-$_Application_Module_Member_Submit_News_DB_Query_INSERT_SUBMISSION			= $DB->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_news_submissions(news_submission_author,news_submission_data,news_submission_time)VALUES('$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_Submit_News_POST_NEWS_MESSAGE','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD')");
+$_Application_Module_Member_Submit_News_DB_Query_INSERT_SUBMISSION			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_news_submissions(news_submission_author,news_submission_data,news_submission_time)VALUES('$_GLOBAL_COOKIE_MEMBER_USERNAME','$_Application_Module_Member_Submit_News_POST_NEWS_MESSAGE','$_GLOBAL_LOCAL_SERVER_DATE_STANDARD')");
 
 if ($_Application_Module_Member_Submit_News_DB_Query_INSERT_SUBMISSION) {
 
@@ -133,7 +133,7 @@ if ($_Application_Module_Member_Submit_News_DB_Query_INSERT_SUBMISSION) {
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Submit_News_DB_Query_INSERT_SUBMISSION);
+$_Application_Module_Member_Submit_News_DB_Query_INSERT_SUBMISSION->free_result();
 
 } // [ + ] IF: News Submission Entry Form Variables Have Executed
 ?>
