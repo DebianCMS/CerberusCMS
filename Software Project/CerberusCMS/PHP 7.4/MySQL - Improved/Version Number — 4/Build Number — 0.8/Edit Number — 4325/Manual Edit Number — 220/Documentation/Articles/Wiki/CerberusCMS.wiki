@@ -1,4 +1,4 @@
-﻿Cerberus Content Management System, Officially Registered Unix-Name: CerberusCMS and Cerberus-Content-Management-System in year 2000 - 2001 on FreshMeat which became SourceForge and then SlashDot Media.
+Cerberus Content Management System, Officially Registered Unix-Name: CerberusCMS and Cerberus-Content-Management-System in year 2000 - 2001 on FreshMeat which became SourceForge and then SlashDot Media.
 
 ==Origins==
 
@@ -79,7 +79,7 @@ documentation file format and a SHA-512 HASH file size for comparison against th
 Each Application Module has a version number where newer and improved Application Modules ascend in number.
 
 ====Kernel File Versioning System====
-The Kernel File versioning system follows a logical pattern of version numbers by ascending number. Newer and improved Kernel Files ascend in number. Kernel Files can be added and removed from the Administration Control Panel and from there the Administration can install or remove that Kernel File.
+The Kernel File versioning system follows a logical pattern of version numbers by ascending number. Newer and improved Kernel Files ascend in number. The Kernel File Versioning System is in three different parts: The Version Number of the Kernel, The Build Number of the Kernel and the Edit Number of the Kernel. Kernel Files can be added and removed from the Administration Control Panel and from there the Administration can install or remove that Kernel File.
 
 ==Project Cycles==
 
