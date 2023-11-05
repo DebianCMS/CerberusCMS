@@ -3153,6 +3153,12 @@ member_username
 
 	echo ("[ Done ]<BR><BR>");
 
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Backup Kerne File... Wait.<BR>");
+
+	copy("./$_INTERNAL_FILE_KERNEL", "./System/Kernel/Backup/Kernel_Installation.kernel");
+
+	echo ("[ Done ]<BR><BR>");
+
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Specified Administrator Account Organized Directory Structure... Wait.<BR>");
 
 /*
