@@ -76,7 +76,7 @@ if ($_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIES_NUMBER_OF
  ============================================================================================================
 */
 
-while ($_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIESL = $DB->fetch_array($_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIES)) {
+while ($_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIESL = $_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIES->fetch_array(MYSQLI_BOTH)) {
 
 $_Application_Module_News_LIST_NEWS_ID				= $_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIESL['id'];
 $_Application_Module_News_LIST_NEWS_AUTHOR			= $_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIESL['news_author'];
@@ -115,5 +115,5 @@ echo ("
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIES);
+$_Application_Module_News_DB_Query_SELECT_ALL_NEWS_ARTICLE_ENTRIES->free_result();
 ?>

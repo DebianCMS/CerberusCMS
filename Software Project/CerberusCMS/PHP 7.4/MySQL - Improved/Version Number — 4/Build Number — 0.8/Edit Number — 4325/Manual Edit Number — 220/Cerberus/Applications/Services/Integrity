@@ -146,9 +146,9 @@ if ($_GET["Flash"] == "Applications") {
  ============================================================================================================
 */
 
-$_Application_Module_Services_Integrity_DB_Query_List_Applications_Background				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_background");
+$_Application_Module_Services_Integrity_DB_Query_List_Applications_Background				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_background");
 
-while ($_Application_Module_Services_Integrity_DB_Query_List_Applications_Background_Fetch_Array = $DB->fetch_array($_Application_Module_Services_Integrity_DB_Query_List_Applications_Background)) {
+while ($_Application_Module_Services_Integrity_DB_Query_List_Applications_Background_Fetch_Array = $_Application_Module_Services_Integrity_DB_Query_List_Applications_Background->fetch_array(MYSQLI_BOTH))) {
 
 $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_ID					= $_Application_Module_Services_Integrity_DB_Query_List_Applications_Background_Fetch_Array['id'];
 $_Application_Module_Services_Integrity_LIST_APPLICATIONS_BACKGROUND_FILE_NAME				= $_Application_Module_Services_Integrity_DB_Query_List_Applications_Background_Fetch_Array['application_file_name'];
