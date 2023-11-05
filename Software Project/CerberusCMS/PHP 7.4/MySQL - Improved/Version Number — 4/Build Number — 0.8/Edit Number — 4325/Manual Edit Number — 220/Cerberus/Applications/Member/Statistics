@@ -93,14 +93,14 @@ $_Application_Module_Member_Statistics_DB_Query_SELECT_FORUM_TOPIC_MESSAGES				=
  ============================================================================================================
 */
 
-$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM					= $DB->num_rows($_Application_Module_Member_Statistics_DB_Query_SELECT_FORUM);
-$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM_TOPICS				= $DB->num_rows($_Application_Module_Member_Statistics_DB_Query_SELECT_FORUM_TOPICS);
-$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM_TOPIC_MESSAGES			= $DB->num_rows($_Application_Module_Member_Statistics_DB_Query_SELECT_FORUM_TOPIC_MESSAGES);
-$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FILES					= $DB->num_rows($_Application_Module_Member_Statistics_DB_Query_SELECT_FILES);
-$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_COMMENTS					= $DB->num_rows($_Application_Module_Member_Statistics_DB_Query_SELECT_COMMENTS);
-$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_MEMBERS					= $DB->num_rows($_Application_Module_Member_Statistics_DB_Query_SELECT_MEMBERS);
-$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_MEMBERS_ACTIVE				= $DB->num_rows($_Application_Module_Member_Statistics_DB_Query_SELECT_MEMBERS_ACTIVE);
-$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_MEMBERS_INACTIVE				= $DB->num_rows($_Application_Module_Member_Statistics_DB_Query_SELECT_MEMBERS_INACTIVE);
+$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM					= $_Application_Module_Member_Statistics_DB_Query_SELECT_FORUM->num_rows;
+$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM_TOPICS				= $_Application_Module_Member_Statistics_DB_Query_SELECT_FORUM_TOPICS->num_rows;
+$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM_TOPIC_MESSAGES			= $_Application_Module_Member_Statistics_DB_Query_SELECT_FORUM_TOPIC_MESSAGES->num_rows;
+$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FILES					= $_Application_Module_Member_Statistics_DB_Query_SELECT_FILES->num_rows;
+$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_COMMENTS					= $_Application_Module_Member_Statistics_DB_Query_SELECT_COMMENTS->num_rows;
+$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_MEMBERS					= $_Application_Module_Member_Statistics_DB_Query_SELECT_MEMBERS->num_rows;
+$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_MEMBERS_ACTIVE				= $_Application_Module_Member_Statistics_DB_Query_SELECT_MEMBERS_ACTIVE->num_rows;
+$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_MEMBERS_INACTIVE				= $_Application_Module_Member_Statistics_DB_Query_SELECT_MEMBERS_INACTIVE->num_rows;
 
 /*
  ============================================================================================================
@@ -108,7 +108,7 @@ $_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_MEMBERS_INACTIVE	
  ============================================================================================================
 */
 
-$_Application_Module_Member_Statistics_DB_Query_FETCH_ARRAY_STATISTICS					= $DB->fetch_array($_Application_Module_Member_Statistics_DB_Query_SELECT_STATISTICS);
+$_Application_Module_Member_Statistics_DB_Query_FETCH_ARRAY_STATISTICS					= $_Application_Module_Member_Statistics_DB_Query_SELECT_STATISTICS->fetch_array(MYSQLI_BOTH);
 
 $_Application_Module_Member_Statistics_LIST_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_NON_UNIQUE		= $_Application_Module_Member_Statistics_DB_Query_FETCH_ARRAY_STATISTICS['statistics_total_number_of_document_executions_non_unique'];
 $_Application_Module_Member_Statistics_LIST_TOTAL_NUMBER_OF_DOCUMENT_EXECUTIONS_UNIQUE			= $_Application_Module_Member_Statistics_DB_Query_FETCH_ARRAY_STATISTICS['statistics_total_number_of_document_executions_unique'];
@@ -344,7 +344,7 @@ echo ("
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Statistics_DB_Query_SELECT_STATISTICS);
+$_Application_Module_Member_Statistics_DB_Query_SELECT_STATISTICS->free_result();
 
 /*
  ============================================================================================================
@@ -352,7 +352,7 @@ $DB->free($_Application_Module_Member_Statistics_DB_Query_SELECT_STATISTICS);
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Statistics_DB_Query_SELECT_MEMBERS);
+$_Application_Module_Member_Statistics_DB_Query_SELECT_MEMBERS->free_result();
 
 /*
  ============================================================================================================
@@ -360,7 +360,7 @@ $DB->free($_Application_Module_Member_Statistics_DB_Query_SELECT_MEMBERS);
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Statistics_DB_Query_SELECT_COMMENTS);
+$_Application_Module_Member_Statistics_DB_Query_SELECT_COMMENTS->free_result();
 
 /*
  ============================================================================================================
@@ -368,7 +368,7 @@ $DB->free($_Application_Module_Member_Statistics_DB_Query_SELECT_COMMENTS);
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Statistics_DB_Query_SELECT_FILES);
+$_Application_Module_Member_Statistics_DB_Query_SELECT_FILES->free_result();
 
 /*
  ============================================================================================================
@@ -376,7 +376,7 @@ $DB->free($_Application_Module_Member_Statistics_DB_Query_SELECT_FILES);
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM);
+$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM->free_result();
 
 /*
  ============================================================================================================
@@ -384,7 +384,7 @@ $DB->free($_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM);
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM_TOPICS);
+$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM_TOPICS->free_result();
 
 /*
  ============================================================================================================
@@ -392,5 +392,5 @@ $DB->free($_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM_T
  ============================================================================================================
 */
 
-$DB->free($_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM_TOPIC_MESSAGES);
+$_Application_Module_Member_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM_TOPIC_MESSAGES->free_result();
 ?>
