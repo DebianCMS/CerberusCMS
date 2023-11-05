@@ -552,6 +552,7 @@ $_ARCHITECT_INSTALL_FORM_POST_DATABASE_SERVER_PASSWORD								= $_POST['Architec
 $_ARCHITECT_INSTALL_FORM_POST_DATABASE_SERVER_DATABASE_NAME							= $_POST['Architect_SQL_Database_Server_Database_Name'];
 $_ARCHITECT_INSTALL_FORM_POST_DATABASE_SERVER_DATABASE_NAME_TABLE_PREFIX					= $_POST['Architect_SQL_Database_Server_Database_Name_Table_Prefix'];
 $_ARCHITECT_INSTALL_FORM_POST_PHP_ENGINE_VERSION								= $_POST['Architect_PHP_Engine_Version'];
+$_ARCHITECT_INSTALL_FORM_POST_SQL_ENGINE_VERSION								= $_POST['Architect_SQL_Engine_Version'];
 $_ARCHITECT_INSTALL_FORM_POST_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ADMINISTRATOR					= $_POST['Architect_Electronic_Mail_Address_System_Administrator'];
 $_ARCHITECT_INSTALL_FORM_POST_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ROOT						= $_POST['Architect_Electronic_Mail_Address_System_Root'];
 $_ARCHITECT_INSTALL_FORM_POST_ELECTRONIC_MAIL_ADDRESS_SYSTEM_SERVICES						= $_POST['Architect_Electronic_Mail_Address_System_Services'];
@@ -816,7 +817,23 @@ echo ("
 
 		Pre-Hyper-Text-Post-Processor Engine :: Settings<HR>
 		* <I>Pre-Hyper-Text-Post-Processor Engine Version Number</I>:<BR>
-			<INPUT TYPE=\"TEXT\" NAME=\"Architect_PHP_Engine_Version\" VALUE=\"5\" MAXLENGTH=\"1\"><BR><BR>
+			<SELECT NAME=\"Architect_PHP_Engine_Version\">
+				<OPTION VALUE=\"0\">PHP Version - 4</OPTION>
+				<OPTION VALUE=\"1\">PHP Version - 5</OPTION>
+				<OPTION VALUE=\"2\">PHP Version - 7</OPTION>
+				<OPTION VALUE=\"3\">PHP Version - 8</OPTION>
+				<OPTION VALUE=\"4\">PHP Version - 9</OPTION>
+			</SELECT><BR><BR>
+
+		Structured-Query-Language Engine :: Settings<HR>
+		* <I>Structured-Query-Language Engine Version Number</I>:<BR>
+			<SELECT NAME=\"Architect_SQL_Engine_Version\">
+				<OPTION VALUE=\"0\">MySQL - Standard</OPTION>
+				<OPTION VALUE=\"1\">MySQL - Improved</OPTION>
+				<OPTION VALUE=\"2\">MSQL - Standard</OPTION>
+				<OPTION VALUE=\"3\">MiniSQL - Standard</OPTION>
+				<OPTION VALUE=\"4\">PDO - Standard</OPTION>
+			</SELECT><BR><BR>
 
 		Encryption :: System Messages :: Settings<HR>
 		* <I>Enable or Disable System-Level Electronic Mail Message Pretty-Good-Privacy Encryption Now ? </I>:<BR>
@@ -1158,6 +1175,7 @@ $_SYSTEM_CONFIGURATION_ACCESS_FILE_DATA								= "<?php
 \$_ACCESS_DATABASE_SERVER_DATABASE_NAME 						= \"$_ARCHITECT_INSTALL_FORM_POST_DATABASE_SERVER_DATABASE_NAME\";
 \$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX 					= \"$_ARCHITECT_INSTALL_FORM_POST_DATABASE_SERVER_DATABASE_NAME_TABLE_PREFIX\";
 \$_ACCESS_PHP_ENGINE_VERSION								= \"$_ARCHITECT_INSTALL_FORM_POST_PHP_ENGINE_VERSION\";
+\$_ACCESS_SQL_ENGINE_VERSION								= \"$_ARCHITECT_INSTALL_FORM_POST_SQL_ENGINE_VERSION\";
 \$_ACCESS_URL_CLEARTEXT 								= \"$_ARCHITECT_INSTALL_FORM_POST_URL_CLEARTEXT\";
 \$_ACCESS_URL_SECURE									= \"$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE\";
 \$_ACCESS_URL_SECURE_SSL								= \"$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_SSL\";
@@ -3961,7 +3979,17 @@ if ($_GET["InternalApplication"] == "Unlink_Installation") {
 
 	echo ("<HR><CENTER>Unlinking Installation Files</CENTER><HR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Removing Default Architect Log Files and index Files... Wait.<BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Removing Default Architect Log Files and index Files... Wait.<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Space With File In Zeros... Wait.<BR><BR>");
+
+unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/index.php");
+unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/Log.txt");
+unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/index.php");
+
+copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/index.php");
+copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/Log.txt");
+copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/index.php");
 
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/Log.txt");
@@ -3969,14 +3997,32 @@ unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/index.php");
 
 	echo ("[ Done ]<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Removing Default MySQL Generator Applications and index Files... Wait.<BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Removing Default MySQL Generator Applications and index Files... Wait.<BR><BR>);
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Space With File In Zeros... Wait.<BR><BR>");
+
+unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/index.php");
+unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/MySQL_Generator.php");
+
+copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/index.php");
+copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/MySQL_Generator.php");
 
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/MySQL_Generator.php");
 
 	echo ("[ Done ]<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Removing Default Installation ToolKit Application and index Files... Wait.<BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Removing Default Installation ToolKit Application and index Files... Wait.<BR><BR>");
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Space With File In Zeros... Wait.<BR><BR>");
+
+unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/index.php");
+unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/Installation_ToolKit.php");
+unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/index.php");
+
+copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/index.php");
+copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/Installation_ToolKit.php");
+copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/index.php");
 
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/Installation_ToolKit.php");
