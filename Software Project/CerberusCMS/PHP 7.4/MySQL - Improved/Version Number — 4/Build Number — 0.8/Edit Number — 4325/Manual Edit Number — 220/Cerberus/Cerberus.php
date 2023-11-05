@@ -2136,7 +2136,7 @@ $_DB_Query_Kernel_Security_Check_Cookie_Member_Electronic_Mail_Address_Number_Of
  ============================================================================================================
 */
 
-if ($_DB_Query_Kernel_Security_Check_Cookie_Member_Electronic_Mail_Address_Number_Of_Rows) {
+if ($_DB_Query_Kernel_Security_Check_Cookie_Member_Electronic_Mail_Address_Number_Of_Rows == "1") {
 /**
  * Do Nothing
 **/
@@ -3787,7 +3787,7 @@ $DB_Query_Kernel_Authenticate_Check_Member_Account_Entry_Number_Of_Rows				= $DB
  ============================================================================================================
 */
 
-if ($DB_Query_Kernel_Authenticate_Check_Member_Account_Entry_Number_Of_Rows >= "1") {
+if ($DB_Query_Kernel_Authenticate_Check_Member_Account_Entry_Number_Of_Rows == "1") {
 
 /*
  ============================================================================================================
@@ -4081,7 +4081,7 @@ if ($_DB_Query_Kernel_Login_Set_Member_Status_Account_IP_Address_Last_Authentica
 */
 	
 	header("Location: ?$_INTERNAL_APPLICATION_MODULE_MEMBER=Control_Panel&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
-	exit;
+	exit();
 	
 } else { // Registered Member Account UserName, Electronic Mail Address AND Password Failed Authentication -> Write To Authentication Log
 
