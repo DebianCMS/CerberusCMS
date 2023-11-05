@@ -725,6 +725,14 @@ $_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_048							= hash_file('
 
 /*
  ============================================================================================================
+ + Retrieve :: File Integrity :: Kernel :: File
+ ============================================================================================================
+*/
+
+$_ARCHITECT_INTEGRITY_FILES_FIND_KERNEL_FILE									= hash_file('sha256', "./$_INTERNAL_FILE_KERNEL");
+
+/*
+ ============================================================================================================
  +
  +
  +
@@ -1152,6 +1160,8 @@ echo ("
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Secure-Deleting Original System Configuration File...<BR>");
 
 		unlink("./System/Configuration/Global_Server_Configuration.php");
+		copy("./System/Plug-Ins/Secure-Delete/Default/Zero_5MB", "./System/Configuration/Global_Server_Configuration.php");
+		unlink("./System/Configuration/Global_Server_Configuration.php");
 
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Creating New System Configuration File With Installer Specifications...<BR>");
 
@@ -1299,7 +1309,7 @@ application_file_status CHAR(1),
 application_file_timestamp_installation VARCHAR(100),
 application_version VARCHAR(10),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Applications :: Root */
 
@@ -1318,7 +1328,7 @@ application_file_status CHAR(1),
 application_file_timestamp_installation VARCHAR(100),
 application_version VARCHAR(10),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Applications :: Background */
 
@@ -1337,7 +1347,7 @@ application_file_status CHAR(1),
 application_file_timestamp_installation VARCHAR(100),
 application_version VARCHAR(10),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Custom Applications */
 
@@ -1347,7 +1357,7 @@ custom_application_data TEXT,
 custom_application_name VARCHAR(250),
 custom_application_timestamp_installation VARCHAR(100),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Applications :: Root */
 
@@ -1366,7 +1376,7 @@ application_file_status CHAR(1),
 application_file_timestamp_installation VARCHAR(100),
 application_version VARCHAR(10),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Applications :: Services */
 
@@ -1385,7 +1395,7 @@ application_file_status CHAR(1),
 application_file_timestamp_installation VARCHAR(100),
 application_version VARCHAR(10),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Application Links */
 
@@ -1396,7 +1406,7 @@ application_link_row CHAR(3),
 application_link_url VARCHAR(250),
 application_link_timestamp_installation VARCHAR(100),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Application Panels */
 
@@ -1413,7 +1423,7 @@ panel_title VARCHAR(250),
 panel_timestamp_installation VARCHAR(100),
 panel_version VARCHAR(10),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Articles */
 
@@ -1424,7 +1434,7 @@ article_data TEXT,
 article_time VARCHAR(50),
 article_title VARCHAR(50),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Comments */
 
@@ -1436,7 +1446,7 @@ comment_application_id CHAR(20),
 comment_application_name VARCHAR(100),
 comment_time VARCHAR(50),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* File Categories */
 
@@ -1446,7 +1456,7 @@ file_category_description VARCHAR(250),
 file_category_time VARCHAR(50),
 file_category_title VARCHAR(50),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Files */
 
@@ -1462,7 +1472,7 @@ file_time VARCHAR(50),
 file_title VARCHAR(50),
 file_uploader VARCHAR(50),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Forum */
 
@@ -1473,7 +1483,7 @@ forum_description TEXT,
 forum_timestamp VARCHAR(50),
 forum_title VARCHAR(200),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Forum Topics */
 
@@ -1487,7 +1497,7 @@ topic_timestamp VARCHAR(50),
 topic_timestamp_last_message VARCHAR(50),
 topic_title VARCHAR(200),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Forum Topic Messages */
 
@@ -1500,7 +1510,18 @@ message_forum_topic_id CHAR(20),
 message_timestamp VARCHAR(50),
 message_timestamp_last_update VARCHAR(50),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
+
+/* Kernel */
+
+$_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT_INITIALIZE->query("CREATE TABLE \"$_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_TABLES_CONNECT_NAME_DATABASE_TABLE_PREFIX\"_kernel (
+id MEDIUMINT NOT NULL AUTO_INCREMENT,
+kernel_file_date_installation VARCHAR(100),
+kernel_file_integrity VARCHAR(512),
+kernel_file_name VARCHAR(100),
+kernel_file_version VARCHAR(10),
+PRIMARY KEY (id)
+");
 
 /* Links */
 
@@ -1512,7 +1533,7 @@ link_time VARCHAR(50),
 link_title VARCHAR(50),
 link_url VARCHAR(250),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Registered Member Accounts */
 
@@ -1661,7 +1682,7 @@ member_status_account_locked CHAR(1),
 member_url_homepage VARCHAR(250),
 member_username VARCHAR(50),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Messenger :: Plain-Text-File Room */
 
@@ -1676,7 +1697,7 @@ messenger_room_password_entry VARCHAR(100),
 messenger_room_password_maintenance VARCHAR(100),
 messenger_room_status_visibility CHAR(1),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Messenger :: Plain-Text S.Q.L. Messages */
 
@@ -1695,7 +1716,7 @@ messenger_room_message_timestamp VARCHAR(100),
 messenger_room_message_id TEXT,
 messenger_room_name VARCHAR(100),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Messenger :: Encrypted-Text-File Room */
 
@@ -1710,7 +1731,7 @@ messenger_room_password_entry VARCHAR(100),
 messenger_room_password_maintenance VARCHAR(100),
 messenger_room_status_visibility CHAR(1),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Messenger :: Encrypted-Text S.Q.L. Messages */
 
@@ -1729,7 +1750,7 @@ messenger_room_name VARCHAR(100),
 messenger_room_timestamp_message VARCHAR(100),
 messenger_room_timestamp_creation VARCHAR(100),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Networking */
 
@@ -1741,7 +1762,7 @@ blocked_ip_address_string VARCHAR(250),
 blocked_ip_address_text TEXT,
 blocked_redirect_url VARCHAR(250),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* News Articles */
 
@@ -1756,7 +1777,7 @@ news_rss_rfc TEXT,
 news_time VARCHAR(50),
 news_title VARCHAR(50),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* News Submissions */
 
@@ -1766,7 +1787,7 @@ news_submission_author VARCHAR(50),
 news_submission_data TEXT,
 news_submission_time VARCHAR(50),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Notepad */
 
@@ -1780,7 +1801,7 @@ note_name VARCHAR(100),
 note_password VARCHAR(256),
 note_timestamp VARCHAR(50),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Ranks */
 
@@ -1798,7 +1819,7 @@ rank_gender_male_3 VARCHAR(25),
 rank_gender_male_4 VARCHAR(25),
 rank_gender_none VARCHAR(25),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Services Commander */
 
@@ -1810,7 +1831,7 @@ command_send VARCHAR(500),
 command_timestamp VARCHAR(100),
 command_type CHAR(1),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Settings */
 
@@ -1852,7 +1873,7 @@ settings_system_security_cache_server CHAR(1),
 settings_system_security_module_directory_sanitization VARCHAR(50),
 settings_system_security_module_status_sanitization VARCHAR(50),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Shout Messages */
 
@@ -1862,7 +1883,7 @@ message_author VARCHAR(50),
 message_data VARCHAR(250),
 message_time VARCHAR(50),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Statistics */
 
@@ -1872,7 +1893,7 @@ statistics_total_number_of_document_executions_non_unique CHAR(15),
 statistics_total_number_of_document_executions_unique CHAR(15),
 statistics_installation_date VARCHAR(50),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* System Messages */
 
@@ -1883,7 +1904,7 @@ system_message_data TEXT,
 system_message_member VARCHAR(50),
 system_message_timestamp VARCHAR(100),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 /* Tasks */
 
@@ -1898,7 +1919,7 @@ tasks_time_hour VARCHAR(2),
 tasks_time_minute VARCHAR(2),
 tasks_time_second VARCHAR(2),
 PRIMARY KEY (id)
-") or die(mysql_error());
+");
 
 		echo ("[ Done ]<BR>");
 
@@ -2227,6 +2248,19 @@ $_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT_INITIALIZE->query("INSERT INTO {$
 $_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT_INITIALIZE->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_application_panels(panel_file_integrity,panel_file_integrity_installation,panel_file_name,panel_file_permission,panel_alignment,panel_row,panel_file_status,panel_title,panel_timestamp_installation,panel_version)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_011','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_PANEL_FILE_011','Theme','0','1','5','1','<CENTER><B>Theme Selection</B></CENTER><HR>','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','0.7.1')");
 
 	echo ("[ Done ]<BR><BR>");
+
+/*
+ ============================================================================================================
+ + Install :: Kernel :: File :: Details
+ ============================================================================================================
+*/
+
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Kernel File Details... Wait.<BR>");
+
+$_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT_INITIALIZE->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_kernel('kernel_file_date_installation','kernel_file_integrity','kernel_file_name','kernel_file_version')VALUES('$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','$_ARCHITECT_INTEGRITY_FILES_FIND_KERNEL_FILE','$_INTERNAL_FILE_KERNEL','4.08.250')");
+
+	echo ("[ Done ]<BR><BR>");
+
 
 	echo ("-----------------------------------<BR>");
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Specified Administrator Account Details and Root Administrator Account ( $_PROJECT_STRING_NAME_SHORT )... Wait.<BR>");
@@ -3982,9 +4016,9 @@ if ($_GET["InternalApplication"] == "Unlink_Installation") {
 
 	echo ("<HR><CENTER>Unlinking Installation Files</CENTER><HR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Removing Default Architect Log Files and index Files... Wait.<BR><BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Secure-Delete :: Default Architect Log Files and index Files... Wait.<BR><BR>");
 
-	//echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Data Storage Medium Space With File Zeros... Wait.<BR><BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Data Storage Medium Space With Zero Files... Wait.<BR><BR>");
 
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/Log.txt");
@@ -4000,9 +4034,9 @@ unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/index.php");
 
 	echo ("[ Done ]<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Removing Default MySQL Generator Applications and index Files... Wait.<BR><BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Secure-Delete :: Default MySQL Generator Applications and index Files... Wait.<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Data Storage Medium Space With File Zeros... Wait.<BR><BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Data Storage Medium Space With Zero Files... Wait.<BR><BR>");
 
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/MySQL_Generator.php");
@@ -4015,9 +4049,9 @@ unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/MySQL_Generator.php");
 
 	echo ("[ Done ]<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Removing Default Installation ToolKit Application and index Files... Wait.<BR><BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Secure-Delete :: Default Installation ToolKit Application and index Files... Wait.<BR><BR>");
 
-	//echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Data Storage Medium Space With File Zeros... Wait.<BR><BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Data Storage Medium Space With Zero Files... Wait.<BR><BR>");
 
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/Installation_ToolKit.php");

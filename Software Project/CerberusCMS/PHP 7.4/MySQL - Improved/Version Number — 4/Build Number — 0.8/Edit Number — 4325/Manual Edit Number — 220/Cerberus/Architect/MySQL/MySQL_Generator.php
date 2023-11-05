@@ -595,6 +595,17 @@ message_timestamp_last_update VARCHAR(50),
 PRIMARY KEY (id)
 );
 
+/* Kernel */
+
+CREATE TABLE {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_kernel (
+id MEDIUMINT NOT NULL AUTO_INCREMENT,
+kernel_file_date_installation VARCHAR(100),
+kernel_file_integrity VARCHAR(512),
+kernel_file_name VARCHAR(100),
+kernel_file_version VARCHAR(10),
+PRIMARY KEY (id)
+);
+
 /* Links */
 
 CREATE TABLE {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_links (
