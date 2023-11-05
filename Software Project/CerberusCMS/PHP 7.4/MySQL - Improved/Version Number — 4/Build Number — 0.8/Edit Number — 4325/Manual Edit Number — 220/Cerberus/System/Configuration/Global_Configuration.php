@@ -72,10 +72,11 @@
 */
 
 $_GLOBAL_SERVER_CONFIGURATION_FILE					= "./System/Configuration/Global_Server_Configuration.php";
-$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_STANDARD			= "./System/Configuration/Global_SQL_Server_Database_Class_MySQL_Standard.php";
-$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_IMPROVED			= "./System/Configuration/Global_SQL_Server_Database_Class_MySQL_Improved.php";
-$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MSQL_STANDARD			= "./System/Configuration/Global_SQL_Server_Database_Class_Microsoft_Standard.php";
-$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MINISQL_STANDARD		= "./System/Configuration/Global_SQL_Server_Database_Class_MiniSQL_Standard.php";
+$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MYSQL			= "./System/Configuration/Global_SQL_Server_Database_Class_MySQL_Standard.php";
+$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_IMPROVED_MYSQL			= "./System/Configuration/Global_SQL_Server_Database_Class_MySQL_Improved.php";
+$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MSQL			= "./System/Configuration/Global_SQL_Server_Database_Class_Microsoft_Standard.php";
+$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MINISQL		= "./System/Configuration/Global_SQL_Server_Database_Class_MiniSQL_Standard.php";
+$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_PDO			= "./System/Configuration/Global_SQL_Server_Database_Class_PDO.php";
 
 if (file_exists($_GLOBAL_SERVER_CONFIGURATION_FILE)) {
 
@@ -99,7 +100,9 @@ if (file_exists($_GLOBAL_SERVER_CONFIGURATION_FILE)) {
 
 /*
  ============================================================================================================
+ +
  + IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 4, Include Specified Database Server Class File
+ +
  ============================================================================================================
 */
 
@@ -111,13 +114,13 @@ if ($_ACCESS_PHP_ENGINE_VERSION == "4") {
  ============================================================================================================
 */
 
-if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_STANDARD)) {
+if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MYSQL)) {
 
-	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_STANDARD";
+	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MYSQL";
 
 } else {
 
-	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_STANDARD");
+	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MYSQL");
 
 } // [ + ] IF: File Exists: Database Management System Server Database: Class File
 
@@ -125,7 +128,9 @@ if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_STANDARD)) {
 
 /*
  ============================================================================================================
+ +
  + IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 5, Include Specified Database Server Class File
+ +
  ============================================================================================================
 */
 
@@ -137,13 +142,13 @@ if ($_ACCESS_PHP_ENGINE_VERSION == "5") {
  ============================================================================================================
 */
 
-if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_STANDARD)) {
+if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MYSQL)) {
 
-	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_STANDARD";
+	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MYSQL";
 
 } else {
 
-	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_STANDARD");
+	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MYSQL");
 
 } // [ + ] IF: File Exists: Database Management System Server Database: Class File
 
@@ -151,7 +156,9 @@ if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_STANDARD)) {
 
 /*
  ============================================================================================================
- + IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 8, Include Specified Database Server Class File
+ +
+ + IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 7, Include Specified Database Server Class File
+ +
  ============================================================================================================
 */
 
@@ -159,25 +166,115 @@ if ($_ACCESS_PHP_ENGINE_VERSION == "7") {
 
 /*
  ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Settings :: Is: MySQL - Improved
+ ============================================================================================================
+*/
+
+if ($_ACCESS_SQL_ENGINE_VERSION == "1") {
+
+/*
+ ============================================================================================================
  + IF: Global S.Q.L. Database Management System Server Database :: Class File: Exists, Include It
  ============================================================================================================
 */
 
-if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_IMPROVED)) {
+if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_IMPROVED_MYSQL)) {
 
-	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_IMPROVED";
+	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_IMPROVED_MYSQL";
 
 } else {
 
-	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_IMPROVED");
+	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_IMPROVED_MYSQL");
 
 } // [ + ] IF: File Exists: Database Management System Server Database: Class File
+
+} // [ + ] IF: Structured-Database-Server-Query Database Management System Server Engine :: Settings :: Is: MySQL - Improved
+
+/*
+ ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Settings :: Is: Microsoft SQL Server
+ ============================================================================================================
+*/
+
+if ($_ACCESS_SQL_ENGINE_VERSION == "2") {
+
+/*
+ ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Class File: Exists, Include It
+ ============================================================================================================
+*/
+
+if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MSQL)) {
+
+	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MSQL";
+
+} else {
+
+	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MSQL");
+
+} // [ + ] IF: File Exists: Database Management System Server Database: Class File
+
+} // [ + ] IF: Structured-Database-Server-Query Database Management System Server Engine :: Settings :: Is: Microsoft SQL Server
+
+/*
+ ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Settings :: Is: MiniSQL Server
+ ============================================================================================================
+*/
+
+if ($_ACCESS_SQL_ENGINE_VERSION == "3") {
+
+/*
+ ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Class File: Exists, Include It
+ ============================================================================================================
+*/
+
+if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MINISQL)) {
+
+	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MSQL";
+
+} else {
+
+	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MINISQL");
+
+} // [ + ] IF: File Exists: Database Management System Server Database: Class File
+
+} // [ + ] IF: Structured-Database-Server-Query Database Management System Server Engine :: Settings :: Is: MiniSQL Server
+
+/*
+ ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Settings :: Is: PDO
+ ============================================================================================================
+*/
+
+if ($_ACCESS_SQL_ENGINE_VERSION == "4") {
+
+/*
+ ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Class File: Exists, Include It
+ ============================================================================================================
+*/
+
+if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_PDO)) {
+
+	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_PDO";
+
+} else {
+
+	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_PDO");
+
+} // [ + ] IF: File Exists: Database Management System Server Database: Class File
+
+} // [ + ] IF: Structured-Database-Server-Query Database Management System Server Engine :: Settings :: Is: PDO
 
 } // [ + ] IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 7, Include Specified Database Server Class File
 
 /*
  ============================================================================================================
+ +
  + IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 8, Include Specified Database Server Class File
+ +
  ============================================================================================================
 */
 
@@ -185,19 +282,107 @@ if ($_ACCESS_PHP_ENGINE_VERSION == "8") {
 
 /*
  ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Settings :: Is: MySQL - Improved
+ ============================================================================================================
+*/
+
+if ($_ACCESS_SQL_ENGINE_VERSION == "1") {
+
+/*
+ ============================================================================================================
  + IF: Global S.Q.L. Database Management System Server Database :: Class File: Exists, Include It
  ============================================================================================================
 */
 
-if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_IMPROVED)) {
+if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_IMPROVED_MYSQL)) {
 
-	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_IMPROVED";
+	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_IMPROVED_MYSQL";
 
 } else {
 
-	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_MYSQL_IMPROVED");
+	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_IMPROVED_MYSQL");
 
 } // [ + ] IF: File Exists: Database Management System Server Database: Class File
+
+} // [ + ] IF: Structured-Database-Server-Query Database Management System Server Engine :: Settings :: Is: MySQL - Improved
+
+/*
+ ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Settings :: Is: Microsoft SQL Server
+ ============================================================================================================
+*/
+
+if ($_ACCESS_SQL_ENGINE_VERSION == "2") {
+
+/*
+ ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Class File: Exists, Include It
+ ============================================================================================================
+*/
+
+if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MSQL)) {
+
+	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MSQL";
+
+} else {
+
+	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MSQL");
+
+} // [ + ] IF: File Exists: Database Management System Server Database: Class File
+
+} // [ + ] IF: Structured-Database-Server-Query Database Management System Server Engine :: Settings :: Is: Microsoft SQL Server
+
+/*
+ ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Settings :: Is: MiniSQL Server
+ ============================================================================================================
+*/
+
+if ($_ACCESS_SQL_ENGINE_VERSION == "3") {
+
+/*
+ ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Class File: Exists, Include It
+ ============================================================================================================
+*/
+
+if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MINISQL)) {
+
+	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MSQL";
+
+} else {
+
+	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_MINISQL");
+
+} // [ + ] IF: File Exists: Database Management System Server Database: Class File
+
+} // [ + ] IF: Structured-Database-Server-Query Database Management System Server Engine :: Settings :: Is: MiniSQL Server
+
+/*
+ ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Settings :: Is: PDO
+ ============================================================================================================
+*/
+
+if ($_ACCESS_SQL_ENGINE_VERSION == "4") {
+
+/*
+ ============================================================================================================
+ + IF: Global S.Q.L. Database Management System Server Database :: Class File: Exists, Include It
+ ============================================================================================================
+*/
+
+if (file_exists($_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_PDO)) {
+
+	include_once "$_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_PDO";
+
+} else {
+
+	echo ("Kernel Message: Error, Missing File :: Database Management System Server Database :: Class File: $_GLOBAL_SQL_SERVER_DATABASE_CLASS_FILE_STANDARD_PDO");
+
+} // [ + ] IF: File Exists: Database Management System Server Database: Class File
+
+} // [ + ] IF: Structured-Database-Server-Query Database Management System Server Engine :: Settings :: Is: PDO
 
 } // [ + ] IF: Pre-Hyper-Text-Post-Processor Engine Version Is: 8, Include Specified Database Server Class File
 

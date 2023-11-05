@@ -12,12 +12,12 @@
  + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
  +				 : correct display of this programming code and its indentation.
  + ----------------------------------------------------------------------------------------------------------
- +    ()  ()  () () --
- +  () ()  () --- ()
- +  ------------------------------
- +  System File
+ +    ()    () - -
+ +  ()  () ()()()()
+ +  ------
+ + Index Application
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => System => Configuration => Global_Server_Configuration.php
+ + - This File, Location	 : Root Directory => System => index.php
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -47,7 +47,19 @@
  ============================================================================================================
  +
  +
- + System :: Configuration :: Global Server Configuration
+ +
+ + [ ^ ] Directory Master Index
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Directory Master Index :: Variables
  +
  +
  ============================================================================================================
@@ -55,69 +67,25 @@
 
 /*
  ============================================================================================================
- +
- + Database Server :: Configuration :: Variables :: Strings
- +
+ + Directory Master Index :: Variables :: Directory Listing Denial File
  ============================================================================================================
 */
 
-$_ACCESS_DATABASE_SERVER_HOSTNAME 						= "";
-$_ACCESS_DATABASE_SERVER_HOSTNAME_PORT	 					= "";
-$_ACCESS_DATABASE_SERVER_USERNAME 						= "";
-$_ACCESS_DATABASE_SERVER_PASSWORD 						= "";
-$_ACCESS_DATABASE_SERVER_DATABASE_NAME 						= "";
-$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX 					= "";
+$_DIRECTORY_FILE_DENIAL					= "../System/Default/Messages/Directory_Denial.php";
 
 /*
  ============================================================================================================
- +
- + Pre-Hyper-Text-Post-Processor :: Engine :: Configuration
- +
+ + Directory Listing Denial: IF Directory Denial File Exists, Include It
  ============================================================================================================
 */
 
-$_ACCESS_PHP_ENGINE_VERSION							= "5";
-$_ACCESS_SQL_ENGINE_VERSION							= "1";
+if (file_exists("$_DIRECTORY_FILE_DENIAL")) {
 
-/*
- ============================================================================================================
- +
- + Web Server :: Configuration :: Connection
- +
- ============================================================================================================
-*/
+	include_once "$_DIRECTORY_FILE_DENIAL";
 
-$_ACCESS_URL_CLEARTEXT 								= "";
-$_ACCESS_URL_SECURE								= "";
-$_ACCESS_URL_SECURE_SSL								= "";
-$_ACCESS_URL_SECURE_OPENSSL							= "";
-$_ACCESS_URL_SECURE_TLS								= "";
+} else {
 
-/*
- ============================================================================================================
- +
- + System :: Configuration :: Electronic Mail Addresses and Electronic Mail Message Encryption
- +
- ============================================================================================================
-*/
+	echo ("Kernel Message: Missing Path: $_DIRECTORY_FILE_DENIAL");
 
-/*
- ============================================================================================================
- + System :: Configuration :: Electronic Mail Addresses
- ============================================================================================================
-*/
-
-$_ACCESS_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ADMINISTRATOR				= "";
-$_ACCESS_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ROOT					= "";
-$_ACCESS_ELECTRONIC_MAIL_ADDRESS_SYSTEM_SERVICES				= "";
-
-/*
- ============================================================================================================
- + System :: Configuration :: Electronic Mail Message Encryption
- ============================================================================================================
-*/
-
-$_SYSTEM_SETTINGS_STATUS_ENCRYPTION_PGP_ELECTRONIC_MAIL_MESSAGE			= "1";
-$_SYSTEM_SETTINGS_ENCRYPTION_ELECTRONIC_MAIL_MESSAGE_PGP_KEY_PANEL_PUBLIC	= "
-";
+} // [ + ] IF: File Exists: Directory Denial Index File: Redirect To Master Directory Index Listing Denial File
 ?>
