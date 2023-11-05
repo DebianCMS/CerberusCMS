@@ -828,11 +828,11 @@ echo ("
 		Structured-Query-Language Engine :: Settings<HR>
 		* <I>Structured-Query-Language Engine Version Number</I>:<BR>
 			<SELECT NAME=\"Architect_SQL_Engine_Version\">
-				<OPTION VALUE=\"0\">MySQL - Standard</OPTION>
-				<OPTION VALUE=\"1\">MySQL - Improved</OPTION>
-				<OPTION VALUE=\"2\">MSQL - Standard</OPTION>
-				<OPTION VALUE=\"3\">MiniSQL - Standard</OPTION>
-				<OPTION VALUE=\"4\">PDO - Standard</OPTION>
+				<OPTION VALUE=\"0\">Standard - MySQL</OPTION>
+				<OPTION VALUE=\"1\">Improved - MySQL</OPTION>
+				<OPTION VALUE=\"2\">Standard - MSQL</OPTION>
+				<OPTION VALUE=\"3\">Standard - MiniSQL</OPTION>
+				<OPTION VALUE=\"4\">Standard - PDO</OPTION>
 			</SELECT><BR><BR>
 
 		Encryption :: System Messages :: Settings<HR>
