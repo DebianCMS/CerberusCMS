@@ -3981,7 +3981,7 @@ if ($_GET["InternalApplication"] == "Unlink_Installation") {
 
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Removing Default Architect Log Files and index Files... Wait.<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Space With File In Zeros... Wait.<BR><BR>");
+	//echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Data Storage Medium Space With File Zeros... Wait.<BR><BR>");
 
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/Log.txt");
@@ -3997,9 +3997,9 @@ unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/index.php");
 
 	echo ("[ Done ]<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Removing Default MySQL Generator Applications and index Files... Wait.<BR><BR>);
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Removing Default MySQL Generator Applications and index Files... Wait.<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Space With File In Zeros... Wait.<BR><BR>");
+	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Data Storage Medium Space With File Zeros... Wait.<BR><BR>");
 
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/MySQL_Generator.php");
@@ -4014,7 +4014,7 @@ unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/MySQL_Generator.php");
 
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Removing Default Installation ToolKit Application and index Files... Wait.<BR><BR>");
 
-	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Space With File In Zeros... Wait.<BR><BR>");
+	//echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Filling Data Storage Medium Space With File Zeros... Wait.<BR><BR>");
 
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/Installation_ToolKit.php");
