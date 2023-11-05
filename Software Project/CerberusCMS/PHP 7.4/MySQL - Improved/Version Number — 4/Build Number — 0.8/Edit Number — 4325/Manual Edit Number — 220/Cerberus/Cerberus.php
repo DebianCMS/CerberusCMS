@@ -2084,7 +2084,7 @@ $_DB_Query_Kernel_Security_Check_Cookie_Member_UserName_AND_Password_Number_Of_R
  ============================================================================================================
 */
 
-if ($_DB_Query_Kernel_Security_Check_Cookie_Member_UserName_AND_Password_Number_Of_Rows) {
+if ($_DB_Query_Kernel_Security_Check_Cookie_Member_UserName_AND_Password_Number_Of_Rows == "1") {
 /**
  * Do Nothing
 **/
@@ -2101,7 +2101,7 @@ if ($_DB_Query_Kernel_Security_Check_Cookie_Member_UserName_AND_Password_Number_
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Security_Check_Cookie_Member_UserName_AND_Password->free_result();
+// [ C ] $_DB_Query_Kernel_Security_Check_Cookie_Member_UserName_AND_Password->free_result();
 
 } // [ + ] IF: Check :: Registered Member Account :: Credentials :: UserName AND Password
 
@@ -2153,7 +2153,7 @@ if ($_DB_Query_Kernel_Security_Check_Cookie_Member_Electronic_Mail_Address_Numbe
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Security_Check_Cookie_Member_Electronic_Mail_Address->free_result();
+// [ C ] $_DB_Query_Kernel_Security_Check_Cookie_Member_Electronic_Mail_Address->free_result();
 
 } // [ + ] IF: Check :: Registered Member Account :: Credentials :: UserName AND Electronic Mail Address
 
@@ -2308,7 +2308,7 @@ if ($_DB_Query_Kernel_Networking_Status_Security_Check_Blocked_Networks_IPA_Stri
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Networking_Status_Security_Check_Blocked_Networks->free_result();
+// [ C ] $_DB_Query_Kernel_Networking_Status_Security_Check_Blocked_Networks->free_result();
 
 /*
  ============================================================================================================
@@ -3290,7 +3290,7 @@ if ($_DB_Query_Kernel_Update_Member_Rank) {
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Update_Member_Rank->free_result();
+// [ C ] $_DB_Query_Kernel_Update_Member_Rank->free_result();
 
 } // [ + ] IF: Registered Member Account :: Is: Logged-In And Valid Credentials Are Set
 
@@ -3504,7 +3504,7 @@ if ($_GLOBAL_MEMBER_LEVEL_RANK == "0") {
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Member_Rank_Select_All_Ranks->free_result();
+// [ C ] $_DB_Query_Kernel_Member_Rank_Select_All_Ranks->free_result();
 
 } // [ + ] IF: Registered Member Account :: Is Logged-In With Valid Credentials
 
@@ -4207,7 +4207,7 @@ if ($DB_Query_Kernel_Member_Account_Update_Attempt_Authentication) {
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Login_Set_Member_Status_Account_IP_Address_Last_Authentication_Server_Local->free_result();
+// [ C ] $_DB_Query_Kernel_Login_Set_Member_Status_Account_IP_Address_Last_Authentication_Server_Local->free_result();
 
 /*
  ============================================================================================================
@@ -4215,7 +4215,7 @@ $_DB_Query_Kernel_Login_Set_Member_Status_Account_IP_Address_Last_Authentication
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Login_Set_Member_Status_Account_IP_Address_Last_Authentication_Server_Remote->free_result();
+// [ C ] $_DB_Query_Kernel_Login_Set_Member_Status_Account_IP_Address_Last_Authentication_Server_Remote->free_result();
 
 /*
  ============================================================================================================
@@ -4223,7 +4223,7 @@ $_DB_Query_Kernel_Login_Set_Member_Status_Account_IP_Address_Last_Authentication
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Login_Set_Member_Status_Account_IP_Address_Last_Authentication_Server_Device->free_result();
+// [ C ] $_DB_Query_Kernel_Login_Set_Member_Status_Account_IP_Address_Last_Authentication_Server_Device->free_result();
 
 /*
  ============================================================================================================
@@ -4231,7 +4231,7 @@ $_DB_Query_Kernel_Login_Set_Member_Status_Account_IP_Address_Last_Authentication
  ============================================================================================================
 */
 
-$DB_Query_Kernel_Member_Account_Update_Attempt_Authentication->free_result();
+// [ C ] $DB_Query_Kernel_Member_Account_Update_Attempt_Authentication->free_result();
 
 /*
  ============================================================================================================
@@ -4256,7 +4256,7 @@ $DB_Query_Kernel_Member_Account_Update_Attempt_Authentication->free_result();
  ============================================================================================================
 */
 
-$DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials->free_result();
+// [ C ] $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials->free_result();
 
 /*
  ============================================================================================================
@@ -4264,7 +4264,7 @@ $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials->free_result();
  ============================================================================================================
 */
 
-$DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Array->free_result();
+// [ C ] $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Array->free_result();
 
 } else { // Database Server Query :: Check :: Number of Rows :: Registered Member Account Based On Provided Credentials
 
@@ -4285,7 +4285,7 @@ $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Array->free_resul
  ============================================================================================================
 */
 
-$DB_Query_Kernel_Authenticate_Check_Member_Account_Entry->free_result();
+// [ C ] $DB_Query_Kernel_Authenticate_Check_Member_Account_Entry->free_result();
 
 } // [ + ] IF: Internal Application: Login Is: Activated
 
@@ -4515,7 +4515,7 @@ fclose($_Kernel_Member_Account_Logout_Log_Public_OPEN_FILE_NAME);
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Logout_Remove_Member_Account_Authorized_IP_Address->free_result();
+// [ C ] $_DB_Query_Kernel_Logout_Remove_Member_Account_Authorized_IP_Address->free_result();
 
 /*
  ============================================================================================================
@@ -5032,7 +5032,7 @@ echo ($_THIS_THEME_APPLICATION_PANEL_2);
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Application_Panels_Aligned_Left->free_result();
+// [ C ] $_DB_Query_Kernel_Application_Panels_Aligned_Left->free_result();
 
 /*
  ============================================================================================================
@@ -5270,7 +5270,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null &
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Select_Applications_Services->free_result();
+// [ C ] $_DB_Query_Kernel_Select_Applications_Services->free_result();
 
 /*
  ============================================================================================================
@@ -5408,7 +5408,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null &
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Select_Applications_Root->free_result();
+// [ C ] $_DB_Query_Kernel_Select_Applications_Root->free_result();
 
 /*
  ============================================================================================================
@@ -5546,7 +5546,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null &
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Select_Applications_Administration->free_result();
+// [ C ] $_DB_Query_Kernel_Select_Applications_Administration->free_result();
 
 /*
  ============================================================================================================
@@ -5781,7 +5781,7 @@ if ($_GET[$_INTERNAL_APPLICATION_MODULE_CUSTOM] == "$_KERNEL_APPLICATION_MODULE_
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Select_Custom_Applications->free_result();
+// [ C ] $_DB_Query_Kernel_Select_Custom_Applications->free_result();
 
 /*
  ============================================================================================================
@@ -5845,7 +5845,7 @@ echo ($_THIS_THEME_APPLICATION_PANEL_2);
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Application_Panels_Aligned_Right->free_result();
+// [ C ] $_DB_Query_Kernel_Application_Panels_Aligned_Right->free_result();
 
 /*
  ============================================================================================================
@@ -5956,7 +5956,7 @@ echo ("
  ============================================================================================================
 */
 
-$_DB_Query_Kernel_Select_System_Settings->free_result();
+// [ C ] $_DB_Query_Kernel_Select_System_Settings->free_result();
 
 /*
  ============================================================================================================
@@ -5972,7 +5972,7 @@ $_DB_Query_Kernel_Select_System_Settings->free_result();
 
 if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) {
 
-	$_DB_Query_Kernel_Select_Member_Credentials->free_result();
+	// [ C ] $_DB_Query_Kernel_Select_Member_Credentials->free_result();
 
 } // [ + ] IF: Check For Valid Member Account Credential Data In Browser Cookies
 
