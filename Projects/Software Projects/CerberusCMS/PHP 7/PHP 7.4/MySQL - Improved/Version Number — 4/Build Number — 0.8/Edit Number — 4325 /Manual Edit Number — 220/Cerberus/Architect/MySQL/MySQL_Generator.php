@@ -1309,6 +1309,10 @@ INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_files(fil
 
 INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_articles(article_author,article_data,article_time,article_title)VALUES('$_PROJECT_STRING_NAME_SHORT','This is an Example Article Entry -- You can Delete this Article Entry from the Administration Control Panel.','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','Example Article');
 
+/* Install :: Default Kernel File Data */
+
+INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_kernel(kernel_file_date_installation,kernel_file_integrity,kernel_file_name,kernel_file_version)VALUES('$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','','$_INTERNAL_FILE_KERNEL','4.08.250');
+
 /* Install :: Default News Entry Data */
 
 INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_news(news_author,news_avatar,news_data,news_mood,news_music,news_rss_rfc,news_time,news_title)VALUES('$_PROJECT_STRING_NAME_SHORT','Default.png','This is an Example News Article Entry -- You can Delete this News Article Entry from the Administration Control Panel.','None','None','Wed, 05 Aug 2009 15:04:18 -0700','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','Example News Article Entry');
