@@ -454,7 +454,7 @@ $_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRI
 /*
  ============================================================================================================
  +
- + IF: Commander :: Command :: Execute :: Services :: Type :: Integrity :: Is: 0, Flash :: Server :: Local :: Administration
+ + IF: Commander :: Command :: Execute :: Services :: Type :: Integrity :: Is: 0, Flash :: Server :: Local :: Member
  +
  ============================================================================================================
 */
@@ -524,7 +524,7 @@ echo ("[ Done ]<BR><BR>");
 
 /*
  ============================================================================================================
- + Copy :: Zero File :: All :: Application Modules :: Administration
+ + Copy :: Zero File :: All :: Application Modules :: Member
  ============================================================================================================
 */
 
