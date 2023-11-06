@@ -199,6 +199,14 @@ $_Application_Module_Member_Application_List_DB_Query_List_Applications_Panel			
 
 /*
  ============================================================================================================
+ + Database Server Query :: Retrieve :: All :: Kernel Module Entries
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Application_List_DB_Query_List_Kernel							= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_kernel");
+
+/*
+ ============================================================================================================
  + Display :: Permissions Key :: Application Module Entries
  ============================================================================================================
 */
@@ -705,6 +713,20 @@ echo ("
 
 /*
  ============================================================================================================
+ + WHILE: Retrieiving :: All Services Root Administration-Level Application Entries From The Database Management System Server Database
+ ============================================================================================================
+*/
+
+while ($_Application_Module_Member_Application_List_DB_Query_List_Kernel_Fetch_Array = $_Application_Module_Member_Application_List_DB_Query_List_Kernel->fetch_array(MYSQLI_BOTH)) {
+
+$_Application_Module_Member_Application_List_LIST_KERNEL_ENTRY_ID					= $_Application_Module_Member_Application_List_DB_Query_List_Kernel_Fetch_Array['id'];
+$_Application_Module_Member_Application_List_LIST_KERNEL_ENTRY_FILE_DATE_INSTALLATION			= $_Application_Module_Member_Application_List_DB_Query_List_Kernel_Fetch_Array['kernel_file_date_installation'];
+$_Application_Module_Member_Application_List_LIST_KERNEL_ENTRY_FILE_INTEGRITY				= $_Application_Module_Member_Application_List_DB_Query_List_Kernel_Fetch_Array['kernel_file_integrity'];
+$_Application_Module_Member_Application_List_LIST_KERNEL_ENTRY_FILE_NAME				= $_Application_Module_Member_Application_List_DB_Query_List_Kernel_Fetch_Array['kernel_file_name'];
+$_Application_Module_Member_Application_List_LIST_KERNEL_ENTRY_FILE_VERSION				= $_Application_Module_Member_Application_List_DB_Query_List_Kernel_Fetch_Array['kernel_file_version'];
+
+/*
+ ============================================================================================================
  + Display :: Contents :: File :: Kernel :: Kernel File
  ============================================================================================================
 */
@@ -712,14 +734,17 @@ echo ("
 echo ("
 		<B>File :: Kernel :: File Name: $_INTERNAL_FILE_KERNEL</B><HR>
 		* Integrity :: File :: System :: Kernel File :: HASH, Secure-Hash-Algorithm-256 :: Master Database Server:<BR>
-		* Integrity :: File :: System :: Kernel File :: HASH, Secure-Hash-Algorithm-256 :: Local Database Server:<BR>
+		* Integrity :: File :: System :: Kernel File :: HASH, Secure-Hash-Algorithm-256 :: Local Database Server: $_Application_Module_Member_Application_List_LIST_KERNEL_ENTRY_FILE_INTEGRITY<BR>
 		* Integrity :: File :: System :: Kernel File :: HASH, Secure-Hash-Algorithm-256 :: Local File: $_Application_Module_Member_Application_List_FILE_KERNEL_FILE_HASH_SHA256<BR>
 		* Integrity :: File :: System :: Kernel File :: File Size :: In Bytes :: $_Application_Module_Member_Application_List_FILE_KERNEL_FILE_SIZE<BR>
 		* Integrity :: File :: System :: Kernel File :: File Size :: In KiloBytes :: $_Application_Module_Member_Application_List_FILE_KERNEL_FILE_SIZE_KILOBYTES<BR>
+		* Integrity :: File :: System :: Kernel File :: Version :: $_Application_Module_Member_Application_List_LIST_KERNEL_ENTRY_FILE_VERSION<BR>
 		<FORM>
 			<TEXTAREA ROWS=\"20\" COLS=\"120\">$_Application_Module_Member_Application_List_FILE_KERNEL_FILE_CONTENTS</TEXTAREA>
 		</FORM><BR><BR>
 ");
+
+} // [ + ] WHILE: Retrieving :: Kernel File Entries :: From The Database Management System Server Database
 
 /*
  ============================================================================================================
