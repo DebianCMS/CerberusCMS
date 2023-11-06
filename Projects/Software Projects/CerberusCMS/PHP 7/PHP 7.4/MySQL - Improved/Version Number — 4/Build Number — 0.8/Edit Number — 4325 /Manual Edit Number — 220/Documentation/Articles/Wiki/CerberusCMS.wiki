@@ -1,4 +1,4 @@
-﻿Cerberus Content Management System, Officially Registered Unix-Name: CerberusCMS and Cerberus-Content-Management-System in year 2000 - 2001 on FreshMeat which became SourceForge and then SlashDot Media.
+Cerberus Content Management System, Officially Registered Unix-Name: CerberusCMS and Cerberus-Content-Management-System in year 2000 - 2001 on FreshMeat which became SourceForge and then SlashDot Media.
 
 ==Origins==
 
@@ -147,7 +147,7 @@ Automated as well as options for managing command interpretations to and from th
 * '''Integrity'''
 Automated as well as options for managing all of the files in the system. Integrity automatically checks the file hashes of the file sizes of each file on the system that is generated in the Secure-Hash-Algorithm, 256-BIT to the hashes stored
 in the Master Database Server Database as well as the Local Database Server Database. Every file in the system is hashed in Secure-Hash-Algorithm, 256-BIT based on the file size of the file itself. These hashes are compared to the ones in the Master Database Server Database upon every execution of the kernel file.
-If 1 byte changes in any of the files in the system this means the file has been tampered with and Integrity will automatically Re-Install the file back to the original one officially released in that version number by running a Linux GIT Clone Command, Microsoft Windows BITS Download Command or P.H.P. File_Put_Contents Function Command of the original file hosted on the official GIT repository whether the Global
+If 1 byte changes in any of the files in the system this means the file has been tampered with and Integrity will automatically Re-Install the file back to the original one officially released in that version number by executing the programming code block within the Commander Application Module and this process involves unlinking each file and replacing it with a 1M, 5MB, 10MB and 20MB File with Zero Blocks after this the file is flashed back from either the Read-Only Backup Directory or from the Official GIT Repository itself. Re-Installation is also possible through Linux GIT Clone Command, Microsoft Windows BITS Download Command, P.H.P. Copy(); Function Command, P.H.P. File_Put_Contents(); Function Command of the original file hosted on the official GIT repository whether the Global
 variables are set to GITHub, GITLab, BITBucket or another GIT-Like Repository web server. This process makes it impossible to hack anything on the system because if even 1 byte changes in the integrity of the file itself the file is automatically Re-Installed back to OEM within a split second. This leaves no time for hackers to exploit the system.
 
 * '''Loops'''
