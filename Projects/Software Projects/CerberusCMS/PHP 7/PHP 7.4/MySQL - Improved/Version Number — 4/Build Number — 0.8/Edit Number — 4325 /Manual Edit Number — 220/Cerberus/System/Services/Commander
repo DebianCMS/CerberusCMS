@@ -737,6 +737,106 @@ header("Refresh:5; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=News&$_GLOBAL_SYSTE
 
 } // [ + ] IF: Services :: Commander :: Command :: Flash :: Server :: Local :: Is: Member
 
+/*
+ ============================================================================================================
+ +
+ + IF: Commander :: Command :: Execute :: Services :: Type :: Integrity :: Is: 0, Flash :: Server :: Local :: Kernel
+ +
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Services_Commander_LIST_COMMAND_RECEIVE == "Kernel") {
+
+echo ("Commander Message: Secure-Deleting :: Kernel :: Current<BR><BR>");
+
+/*
+ ============================================================================================================
+ + Delete :: File :: Kernel :: Current
+ ============================================================================================================
+*/
+
+echo ("Commander Message: Unlinking :: File :: Kernel :: Current<BR><BR>");
+
+unlink("./$_INTERNAL_FILE_KERNEL");
+
+echo ("[ Done ]<BR><BR>");
+
+/*
+ ============================================================================================================
+ + Copy :: Zero File :: File :: Kernel :: Current
+ ============================================================================================================
+*/
+
+echo ("Commander Message: Filling Existing Data Storage Medium Space With Zero Files... Wait.<BR><BR>");
+
+copy("./System/Plug-Ins/Secure-Delete/Default/Zero_MB", "./$_INTERNAL_FILE_KERNEL");
+
+echo ("[ Done ]<BR><BR>");
+
+/*
+ ============================================================================================================
+ + Copy :: Zero File :: File :: Kernel :: Current
+ ============================================================================================================
+*/
+
+echo ("Commander Message: Unlinking :: File :: Kernel :: Current :: Zero Files... Wait.<BR><BR>");
+
+unlink("./$_INTERNAL_FILE_KERNEL");
+
+echo ("[ Done ]<BR><BR>");
+
+/*
+ ============================================================================================================
+ + Flash :: File :: Kernel :: Current
+ ============================================================================================================
+*/
+
+echo ("Commander Message: Flashing :: File :: Kernel :: Current... Wait.<BR><BR>");
+
+copy("./System/Kernel/Backup/Kernel_Installation.kernel","./$_INTERNAL_FILE_KERNEL");
+
+echo ("[ Done ]<BR><BR>");
+
+/*
+ ============================================================================================================
+ + Database Management System Server :: Query :: Delete Command Entry From Commander
+ ============================================================================================================
+*/
+
+echo ("Commander Message: Executing Command: Integrity :: Delete Stored Command... Wait.<BR><BR>");
+
+$_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_services_commander WHERE id='$_Application_Module_Services_Commander_LIST_COMMAND_ID'");
+
+/*
+ ============================================================================================================
+ + IF: Database Management System Server :: Query :: Delete Command Entry From Commander
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY) {
+/**
+ * Do Nothing
+*/
+} else {
+/**
+ * Do Nothing
+*/
+} // [ + ] IF: Database Management System Server Database :: Query :: Delete Entry From :: Services Commander
+
+echo ("Commander Message: Done. Exiting.<BR><BR>");
+
+header("Refresh:5; URL=?$_INTERNAL_APPLICATION_MODULE_MEMBER=News&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
+
+/*
+ ============================================================================================================
+ + Kill: Database Server Query: Delete Command Entry From Commander
+ ============================================================================================================
+*/
+
+// [ C ] $_Application_Module_Services_Commander_DELETE_COMMANDER_COMMAND_SERVICE_INTEGRITY->free_result();
+
+} // [ + ] IF: Services :: Commander :: Command :: Flash :: Server :: Local :: Is: Kernel
+
 } // [ + ] IF: Services :: Commander :: Command :: Type :: Is: Integrity
 
 /*
