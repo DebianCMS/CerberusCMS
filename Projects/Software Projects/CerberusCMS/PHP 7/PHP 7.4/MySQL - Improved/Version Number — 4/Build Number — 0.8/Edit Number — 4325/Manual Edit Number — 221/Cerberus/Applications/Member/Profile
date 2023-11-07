@@ -2457,7 +2457,7 @@ echo ("<B>Gallery :: Audio :: Albums</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">");
 
 /*
  ============================================================================================================
- + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Audio :: Is: On
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Audio :: Is: Public
  ============================================================================================================
 */
 
@@ -2500,9 +2500,139 @@ echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USER
 
 } else {
 
-echo ("<B>This Registered Member Account Gallery Section Is Marked: Private</B>");
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Audio :: Is: Friends-Only
+ ============================================================================================================
+*/
 
-} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Audio :: Is: Off OR On
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_AUDIO == "1") {
+
+/*
+ ============================================================================================================
+ + IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
+ ============================================================================================================
+*/
+
+if (file_exists("./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Friends/$_GLOBAL_COOKIE_MEMBER_USERNAME")) {
+
+/*
+ ============================================================================================================
+ + Retrieve and List :: Gallery :: Audio :: Gallery Directories
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_AUDIO				= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Audio/Gallery";
+$_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_AUDIO				= opendir($_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_AUDIO);
+
+/*
+ ============================================================================================================
+ + While :: Reading Directory :: Registered Member Account :: Gallery :: Audio
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_AUDIO = readdir($_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_AUDIO))) {
+
+/*
+ ============================================================================================================
+ + IF: STOP :: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_AUDIO == "." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_AUDIO == ".." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_AUDIO == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Audio/Gallery/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_AUDIO?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Audio :: For :: This Registered Member Account :: \">$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_AUDIO</A><BR>");
+
+} // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+
+} // [ + ] WHILE: Reading Directory: Registered Member Account :: Gallery :: Audio
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS);
+
+} // [ + ] IF: File Exists: Registered Member Account UserName :: This Registered Member Account Profile :: Friend List File
+
+} else { // [ + ] 
+
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Audio :: Is: Hidden
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_AUDIO == "2") {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_PRIVATE);
+
+} else { // [ + ] 
+
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Audio :: Is: Only-Me
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_AUDIO == "3") {
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME == "$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME") {
+
+/*
+ ============================================================================================================
+ + Retrieve and List :: Gallery :: Audio :: Gallery Directories
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_AUDIO				= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Audio/Gallery";
+$_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_AUDIO				= opendir($_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_AUDIO);
+
+/*
+ ============================================================================================================
+ + While :: Reading Directory :: Registered Member Account :: Gallery :: Audio
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_AUDIO = readdir($_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_AUDIO))) {
+
+/*
+ ============================================================================================================
+ + IF: STOP :: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_AUDIO == "." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_AUDIO == ".." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_AUDIO == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Audio/Gallery/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_AUDIO?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Audio :: For :: This Registered Member Account :: \">$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_AUDIO</A><BR>");
+
+} // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+
+} // [ + ] WHILE: Reading Directory: Registered Member Account :: Gallery :: Audio
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME);
+
+} // [ + ] IF: Registered Member Account: UserName :: MATCHES :: Registered Member Account: Profile UserName
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME);
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Audio :: Is: Only-Me
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Audio :: Is: Hidden
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Audio :: Is: Friends-Only
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Audio :: Is: Public
 
 } // [ + ] IF: Internal Application: Display :: Media Galleries :: Gallery :: Type :: Audio :: Is: Activated
 
@@ -2528,7 +2658,7 @@ echo ("<B>Gallery :: Document :: Albums</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">");
 
 /*
  ============================================================================================================
- + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Document :: Is: On
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Document :: Is: Public
  ============================================================================================================
 */
 
@@ -2557,7 +2687,7 @@ while (($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUM
  ============================================================================================================
 */
 
-if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == "." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == ".." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == "Activity_Logging" || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == "Electronic_Mail" || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == "Friends" || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == "GPS" || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == "Streams" || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == "index.php") {
+if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == "." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == ".." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == "index.php") {
 /**
  * Do Nothing
 **/
@@ -2571,9 +2701,139 @@ echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USER
 
 } else {
 
-echo ("<B>This Registered Member Account Gallery Section Is Marked: Private</B>");
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Document :: Is: Friends-Only
+ ============================================================================================================
+*/
 
-} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Document :: Is: Off OR On
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_DOCUMENT == "1") {
+
+/*
+ ============================================================================================================
+ + IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
+ ============================================================================================================
+*/
+
+if (file_exists("./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Friends/$_GLOBAL_COOKIE_MEMBER_USERNAME")) {
+
+/*
+ ============================================================================================================
+ + Retrieve and List :: Gallery :: Document :: Gallery Directories
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_DOCUMENT				= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Gallery";
+$_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_DOCUMENT				= opendir($_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_DOCUMENT);
+
+/*
+ ============================================================================================================
+ + While :: Reading Directory :: Registered Member Account :: Gallery :: Document ::
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT = readdir($_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_DOCUMENT))) {
+
+/*
+ ============================================================================================================
+ + IF: STOP :: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == "." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == ".." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Gallery/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Document :: For :: This Registered Member Account :: \">$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT</A><BR>");
+
+} // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+
+} // [ + ] WHILE: Reading Directory: Registered Member Account :: Gallery :: Document
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS);
+
+} // [ + ] IF: File Exists: Registered Member Account UserName :: This Registered Member Account Profile :: Friend List File
+
+} else { // [ + ] 
+
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Document :: Is: Hidden
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_DOCUMENT == "2") {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_PRIVATE);
+
+} else { // [ + ] 
+
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Document :: Is: Only-Me
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_DOCUMENT == "3") {
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME == "$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME") {
+
+/*
+ ============================================================================================================
+ + Retrieve and List :: Gallery :: Document :: Gallery Directories
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_DOCUMENT				= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Gallery";
+$_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_DOCUMENT				= opendir($_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_DOCUMENT);
+
+/*
+ ============================================================================================================
+ + While :: Reading Directory :: Registered Member Account :: Gallery :: Document ::
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT = readdir($_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_DOCUMENT))) {
+
+/*
+ ============================================================================================================
+ + IF: STOP :: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == "." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == ".." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Gallery/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Document :: For :: This Registered Member Account :: \">$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_DOCUMENT</A><BR>");
+
+} // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+
+} // [ + ] WHILE: Reading Directory: Registered Member Account :: Gallery :: Document
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME);
+
+} // [ + ] IF: Registered Member Account: UserName :: MATCHES :: Registered Member Account: Profile UserName
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME);
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Document :: Is: Only-Me
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Document :: Is: Hidden
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Document :: Is: Friends-Only
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Document :: Is: Public
 
 } // [ + ] IF: Internal Application: Display :: Media Galleries :: Gallery :: Type :: Document :: Is: Activated
 
@@ -2659,7 +2919,7 @@ echo ("
 
 /*
  ============================================================================================================
- + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Image :: Is: On
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Image: Is: Public
  ============================================================================================================
 */
 
@@ -2702,9 +2962,139 @@ echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USER
 
 } else {
 
-echo ("<B>This Registered Member Account Gallery Section Is Marked: Private</B>");
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Image: Is: Friends-Only
+ ============================================================================================================
+*/
 
-} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Image :: Is: Off OR On
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_IMAGE == "1") {
+
+/*
+ ============================================================================================================
+ + IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
+ ============================================================================================================
+*/
+
+if (file_exists("./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Friends/$_GLOBAL_COOKIE_MEMBER_USERNAME")) {
+
+/*
+ ============================================================================================================
+ + Retrieve and List :: Gallery :: Image :: Gallery Directories
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_IMAGE				= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Image/Gallery";
+$_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_IMAGE				= opendir($_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_IMAGE);
+
+/*
+ ============================================================================================================
+ + While :: Reading Directory :: Registered Member Account :: Gallery :: Image
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE = readdir($_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_IMAGE))) {
+
+/*
+ ============================================================================================================
+ + IF: STOP :: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE == "." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE == ".." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Image/Gallery/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Image :: For :: Registered Member Account :: \">$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE</A><BR>");
+
+} // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+
+} // [ + ] WHILE: Reading Directory: Registered Member Account :: Gallery :: Image
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS);
+
+} // [ + ] IF: File Exists: Registered Member Account UserName :: This Registered Member Account Profile :: Friend List File
+
+} else { // [ + ] 
+
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Image: Is: Hidden
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_IMAGE == "2") {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_PRIVATE);
+
+} else { // [ + ] 
+
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Image: Is: Only-Me
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_IMAGE == "3") {
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME == "$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME") {
+
+/*
+ ============================================================================================================
+ + Retrieve and List :: Gallery :: Image :: Gallery Directories
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_IMAGE				= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Image/Gallery";
+$_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_IMAGE				= opendir($_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_IMAGE);
+
+/*
+ ============================================================================================================
+ + While :: Reading Directory :: Registered Member Account :: Gallery :: Image
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE = readdir($_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_IMAGE))) {
+
+/*
+ ============================================================================================================
+ + IF: STOP :: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE == "." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE == ".." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Image/Gallery/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Image :: For :: Registered Member Account :: \">$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_IMAGE</A><BR>");
+
+} // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+
+} // [ + ] WHILE: Reading Directory: Registered Member Account :: Gallery :: Image
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME);
+
+} // [ + ] IF: Registered Member Account: UserName :: MATCHES :: Registered Member Account: Profile UserName
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME);
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Image :: Is: Only-Me
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Image :: Is: Hidden
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Image :: Is: Friends-Only
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Image :: Is: Public
 
 } // [ + ] IF: Internal Application: Display :: Media Galleries :: Gallery :: Type :: Image :: Is: Activated
 
@@ -2734,7 +3124,7 @@ echo ("
 
 /*
  ============================================================================================================
- + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Video :: Is: On
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Video: Is: Public
  ============================================================================================================
 */
 
@@ -2777,21 +3167,167 @@ echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USER
 
 } else {
 
-echo ("<B>This Registered Member Account Gallery Section Is Marked: Private</B>");
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Video: Is: Friends-Only
+ ============================================================================================================
+*/
 
-} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Video :: Is: Off OR On
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_VIDEO == "1") {
+
+/*
+ ============================================================================================================
+ + IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
+ ============================================================================================================
+*/
+
+if (file_exists("./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Friends/$_GLOBAL_COOKIE_MEMBER_USERNAME")) {
+
+/*
+ ============================================================================================================
+ + Retrieve and List :: Gallery :: Video :: Gallery Directories
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_VIDEO				= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Gallery";
+$_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_VIDEO				= opendir($_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_VIDEO);
+
+/*
+ ============================================================================================================
+ + While :: Reading Directory :: Registered Member Account :: Gallery :: Video
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO = readdir($_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_VIDEO))) {
+
+/*
+ ============================================================================================================
+ + IF: STOP :: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO == "." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO == ".." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Gallery/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Video :: For :: This Registered Member Account :: \">$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO</A><BR>");
+
+} // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+
+} // [ + ] WHILE: Reading Directory: Registered Member Account :: Gallery :: Video
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS);
+
+} // [ + ] IF: File Exists: Registered Member Account UserName :: This Registered Member Account Profile :: Friend List File
+
+} else { // [ + ] 
+
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Video: Is: Hidden
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_VIDEO == "2") {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_PRIVATE);
+
+} else { // [ + ] 
+
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Video: Is: Only-Me
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_VIDEO == "3") {
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME == "$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME") {
+
+/*
+ ============================================================================================================
+ + Retrieve and List :: Gallery :: Video :: Gallery Directories
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_VIDEO				= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Gallery";
+$_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_VIDEO				= opendir($_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_VIDEO);
+
+/*
+ ============================================================================================================
+ + While :: Reading Directory :: Registered Member Account :: Gallery :: Video
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO = readdir($_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_VIDEO))) {
+
+/*
+ ============================================================================================================
+ + IF: STOP :: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO == "." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO == ".." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Gallery/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Video :: For :: This Registered Member Account :: \">$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO</A><BR>");
+
+} // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+
+} // [ + ] WHILE: Reading Directory: Registered Member Account :: Gallery :: Video
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME);
+
+} // [ + ] IF: Registered Member Account: UserName :: MATCHES :: Registered Member Account: Profile UserName
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME);
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Video :: Is: Only-Me
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Video :: Is: Hidden
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Video :: Is: Friends-Only
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Video :: Is: Public
 
 } // [ + ] IF: Internal Application: Display :: Media Galleries :: Gallery :: Type :: Video :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Internal Application :: Display :: Profile :: Name :: Gallery :: Video :: Profile Image
+ +
+ +
+ ============================================================================================================
+*/
 
 if ($_GET["Type"] == "VideoProfileImage") {
 
 echo ("<BR><B>Gallery :: Image :: Album :: Profile Images</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">");
 
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Video Profile Image: Is: Public
+ ============================================================================================================
+*/
+
 if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_VIDEO == "0") {
 
 /*
  ============================================================================================================
- + Retrieve and List :: Gallery :: Video :: Video Profile Image
+ + Retrieve and List :: Gallery :: Video Profile Image :: Video Profile Image
  ============================================================================================================
 */
 
@@ -2800,7 +3336,7 @@ $_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_VIDEO_PROFILE
 
 /*
  ============================================================================================================
- + While :: Reading Directory :: Registered Member Account :: Gallery :: Video :: Video Profile Image
+ + While :: Reading Directory :: Registered Member Account :: Gallery :: Video Profile Image :: Video Profile Image
  ============================================================================================================
 */
 
@@ -2818,17 +3354,147 @@ if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PRO
 **/
 } else {
 
-echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Profile/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Video :: Video Profile Image :: For :: This Registered Member Account :: \">$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE</A><BR>");
+echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Profile/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Video Profile Image :: Video Profile Image :: For :: This Registered Member Account :: \">$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE</A><BR>");
 
 } // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
 
-} // [ + ] WHILE: Reading Directory: Registered Member Account :: Gallery :: Video :: Video Profile Image
+} // [ + ] WHILE: Reading Directory: Registered Member Account :: Gallery :: Video Profile Image :: Video Profile Image
 
 } else {
 
-echo ("<B>This Registered Member Account Gallery Section Is Marked: Private</B>");
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Video Profile Image: Is: Friends-Only
+ ============================================================================================================
+*/
 
-} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Video :: Video Gallery :: Is: Off OR On
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_VIDEO == "1") {
+
+/*
+ ============================================================================================================
+ + IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
+ ============================================================================================================
+*/
+
+if (file_exists("./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Friends/$_GLOBAL_COOKIE_MEMBER_USERNAME")) {
+
+/*
+ ============================================================================================================
+ + Retrieve and List :: Gallery :: Video Profile Image :: Video Profile Image
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE			= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Profile";
+$_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE			= opendir($_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE);
+
+/*
+ ============================================================================================================
+ + While :: Reading Directory :: Registered Member Account :: Gallery :: Video Profile Image :: Video Profile Image
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE = readdir($_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE))) {
+
+/*
+ ============================================================================================================
+ + IF: STOP :: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE == "." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE == ".." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Profile/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Video Profile Image :: Video Profile Image :: For :: This Registered Member Account :: \">$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE</A><BR>");
+
+} // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+
+} // [ + ] WHILE: Reading Directory: Registered Member Account :: Gallery :: Video Profile Image :: Video Profile Image
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS);
+
+} // [ + ] IF: File Exists: Registered Member Account UserName :: This Registered Member Account Profile :: Friend List File
+
+} else { // [ + ] 
+
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Video Profile Image: Is: Hidden
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_VIDEO == "2") {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_PRIVATE);
+
+} else { // [ + ] 
+
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Gallery :: Video Profile Image: Is: Only-Me
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_GALLERY_VIDEO == "3") {
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME == "$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME") {
+
+/*
+ ============================================================================================================
+ + Retrieve and List :: Gallery :: Video Profile Image :: Video Profile Image
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE			= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Profile";
+$_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE			= opendir($_Application_Module_Member_Profile_Gallery_FIND_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE);
+
+/*
+ ============================================================================================================
+ + While :: Reading Directory :: Registered Member Account :: Gallery :: Video Profile Image :: Video Profile Image
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE = readdir($_Application_Module_Member_Profile_Gallery_OPEN_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE))) {
+
+/*
+ ============================================================================================================
+ + IF: STOP :: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE == "." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE == ".." || $_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+echo ("* <A HREF=\"./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Profile/$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery :: Video Profile Image :: Video Profile Image :: For :: This Registered Member Account :: \">$_Application_Module_Member_Profile_Gallery_READ_DIRECTORY_GALLERY_VIDEO_PROFILE_IMAGE</A><BR>");
+
+} // [ + ] IF: STOP: Exploit :: Remote-File-Inclusion AND Local-File-Inclusion
+
+} // [ + ] WHILE: Reading Directory: Registered Member Account :: Gallery :: Video Profile Image :: Video Profile Image
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME);
+
+} // [ + ] IF: Registered Member Account: UserName :: MATCHES :: Registered Member Account: Profile UserName
+
+} else {
+
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME);
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Video Profile Image :: Is: Only-Me
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Video Profile Image :: Is: Hidden
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Video Profile Image :: Is: Friends-Only
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Gallery :: Video Profile Image :: Is: Public
 
 } // [ + ] IF: Internal Application: Display :: Media Galleries :: Gallery :: Type :: Video Profile Image :: Is: Activated
 
