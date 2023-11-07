@@ -1081,7 +1081,7 @@ if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VIS
  ============================================================================================================
 */
 
-if (file_exists("./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Document/Friends/$_GLOBAL_COOKIE_MEMBER_USERNAME")) {
+if (file_exists("./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Document/Friends/$_GLOBAL_COOKIE_MEMBER_USERNAME")) {
 
 echo ("
 												&nbsp;*&nbsp;Name, First: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST<BR>
@@ -1101,7 +1101,7 @@ echo ("
 
 } else {
 
-echo ("Message: You are not on this Profile Friend List.<BR><BR>");
+echo ("Message: You are not on this Profile Friend List. $_Application_Module_Member_Profile_LIST_MEMBER_USERNAME != $_GLOBAL_COOKIE_MEMBER_USERNAME ./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Document/Friends/$_GLOBAL_COOKIE_MEMBER_USERNAME<BR><BR>");
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
 
