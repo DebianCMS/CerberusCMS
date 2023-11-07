@@ -86,7 +86,7 @@ echo ("
 
 } // [ + ] IF: Internal Application: Display :: Options :: Is: Activated
 
-if ($_GET["Kernel" == "Manage") {
+if ($_GET["Kernel"] == "Manage") {
 
 /*
  ============================================================================================================
