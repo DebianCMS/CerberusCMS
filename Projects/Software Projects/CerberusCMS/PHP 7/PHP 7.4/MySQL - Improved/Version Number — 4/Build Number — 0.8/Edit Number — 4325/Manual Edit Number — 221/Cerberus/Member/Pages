@@ -12,12 +12,12 @@
  + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
  +				 : correct display of this programming code and its indentation.
  + ----------------------------------------------------------------------------------------------------------
- +    ()    () - -
- +  ()  () ()()()()
- +  ------
- +
+ +    ()  ()  ()
+ +  ()  ()  ()
+ +  ------------------------------
+ +  Application Module
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => Applications => Member => index.php
+ + - This File, Location	 : Root Directory => Applications => Member => Pages
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -48,7 +48,7 @@
  +
  +
  +
- + [ ^ ] Directory Master Index
+ + [ ^ ] Application Module :: Member :: Pages
  +
  +
  +
@@ -57,35 +57,78 @@
 
 /*
  ============================================================================================================
+ + Application Module Header
+ ============================================================================================================
+*/
+											echo ($_Application_Module_Member_Message_Pages_Header);
+
+if ($_GET["Display"] == "All") {
+
+/*
+ ============================================================================================================
  +
- +
- + [ @ ] Directory Master Index :: Variables
- +
+ + Find :: All Custom Web Application Module Entries
  +
  ============================================================================================================
 */
 
 /*
  ============================================================================================================
- + Directory Master Index :: Variables :: Directory Listing Denial File
+ + Database Server Query: Select All Custom Web Page Entries From The Database Management System Server Database
  ============================================================================================================
 */
 
-$_DIRECTORY_FILE_DENIAL					= "../../System/Default/Messages/Directory_Denial.php";
+$_Application_Module_Pages_DB_Query_SELECT_ALL_CUSTOM_WEB_PAGE_ENTRIES			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_custom ORDER BY id DESC");
+$_Application_Module_Pages_DB_Query_SELECT_ALL_CUSTOM_WEB_PAGE_ENTRIES_NUMBER_OF_ROWS	= $_Application_Module_Pages_DB_Query_SELECT_ALL_CUSTOM_WEB_PAGE_ENTRIES->num_rows;
 
 /*
  ============================================================================================================
- + Directory Listing Denial: IF Directory Denial File Exists, Include It
+ + IF: There Are No Custom Web Page Entries In The Database Server
  ============================================================================================================
 */
 
-if (file_exists("$_DIRECTORY_FILE_DENIAL")) {
+if ($_Application_Module_Pages_DB_Query_SELECT_ALL_CUSTOM_WEB_PAGE_ENTRIES_NUMBER_OF_ROWS <= 0) {
 
-	include_once "$_DIRECTORY_FILE_DENIAL";
+									echo ($_Application_Module_Member_Message_CUSTOM_WEB_PAGE_ENTRIES_EMPTY);
 
-} else {
+} // [ + ] IF: Custom Web Page Entries Are Less Than OR Equal To: Zero
 
-	echo ("Kernel Message: Missing Path: $_DIRECTORY_FILE_DENIAL");
+/*
+ ============================================================================================================
 
-} // [ + ] IF: File Exists: Directory Denial Index File: Redirect To Master Directory Index Listing Denial File
+ + Retrieve :: All Custom Web Application Module Entries
+ +
+ ============================================================================================================
+*/
+
+									echo ("Custom Web Page Entries<HR ALIGN=\"LEFT\" WIDTH=\"25%\">");
+
+while ($_Application_Module_Pages_DB_Query_SELECT_ALL_CUSTOM_WEB_PAGE_ENTRIES_Fetch_Array = $_Application_Module_Pages_DB_Query_SELECT_ALL_CUSTOM_WEB_PAGE_ENTRIES->fetch_array(MYSQLI_BOTH)) {
+
+$_Application_Module_Pages_LIST_CUSTOM_WEB_PAGE_ID						= $_Application_Module_Pages_DB_Query_SELECT_ALL_CUSTOM_WEB_PAGE_ENTRIES_Fetch_Array['id'];
+$_Application_Module_Pages_LIST_CUSTOM_WEB_PAGE_DATA						= $_Application_Module_Pages_DB_Query_SELECT_ALL_CUSTOM_WEB_PAGE_ENTRIES_Fetch_Array['custom_application_data'];
+$_Application_Module_Pages_LIST_CUSTOM_WEB_PAGE_NAME						= $_Application_Module_Pages_DB_Query_SELECT_ALL_CUSTOM_WEB_PAGE_ENTRIES_Fetch_Array['custom_application_name'];
+$_Application_Module_Pages_LIST_CUSTOM_WEB_PAGE_TIMESTAMP					= $_Application_Module_Pages_DB_Query_SELECT_ALL_CUSTOM_WEB_PAGE_ENTRIES_Fetch_Array['custom_application_timestamp_installation'];
+
+/*
+ ============================================================================================================
+ + Display :: All Custom Web Application Module Entries
+ ============================================================================================================
+*/
+
+echo ("
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_CUSTOM&#61;$_Application_Module_Pages_LIST_CUSTOM_WEB_PAGE_ID&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Custom Web Page Entry :: $_Application_Module_Pages_LIST_CUSTOM_WEB_PAGE_NAME ::\">$_Application_Module_Pages_LIST_CUSTOM_WEB_PAGE_NAME</A><BR>
+");
+
+} // [ + ] WHILE: Retrieving All Custom Web Application Module Entries From The Database Management System Server
+
+/*
+ ============================================================================================================
+ + Kill SQL Database Server Query: Select All Custom Web Application Module Entries
+ ============================================================================================================
+*/
+
+// [ C ] $_Application_Module_Pages_DB_Query_SELECT_ALL_CUSTOM_WEB_PAGE_ENTRIES->free_result();
+
+} // [ + ] IF: Internal Application: Display :: Entries :: Is: Activated
 ?>

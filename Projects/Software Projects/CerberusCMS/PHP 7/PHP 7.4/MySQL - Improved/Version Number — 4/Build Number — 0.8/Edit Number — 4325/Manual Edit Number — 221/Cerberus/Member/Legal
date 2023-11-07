@@ -12,12 +12,12 @@
  + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
  +				 : correct display of this programming code and its indentation.
  + ----------------------------------------------------------------------------------------------------------
- +    ()    () - -
- +  ()  () ()()()()
- +  ------
- +
+ +    ()  ()  ()
+ +  ()  ()  ()
+ +  ------------------------------
+ +  Application Module
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => Applications => Member => index.php
+ + - This File, Location	 : Root Directory => Applications => Member => Legal
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -48,7 +48,7 @@
  +
  +
  +
- + [ ^ ] Directory Master Index
+ + [ ^ ] Application Module :: Member :: Legal
  +
  +
  +
@@ -57,35 +57,31 @@
 
 /*
  ============================================================================================================
- +
- +
- + [ @ ] Directory Master Index :: Variables
- +
- +
+ + Application Module Header
  ============================================================================================================
 */
 
 /*
  ============================================================================================================
- + Directory Master Index :: Variables :: Directory Listing Denial File
+ + Find :: Software Project :: File :: Legal Document File
  ============================================================================================================
 */
 
-$_DIRECTORY_FILE_DENIAL					= "../../System/Default/Messages/Directory_Denial.php";
+$_FIND_FILE_LEGAL_DOCUMENT							= "./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Text/Legal.txt";
 
 /*
  ============================================================================================================
- + Directory Listing Denial: IF Directory Denial File Exists, Include It
+ + IF: File Exists: Software Project :: File :: Legal Document File
  ============================================================================================================
 */
 
-if (file_exists("$_DIRECTORY_FILE_DENIAL")) {
+if (file_exists($_FIND_FILE_LEGAL_DOCUMENT)) {
 
-	include_once "$_DIRECTORY_FILE_DENIAL";
+											include_once "$_FIND_FILE_LEGAL_DOCUMENT";
 
 } else {
 
-	echo ("Kernel Message: Missing Path: $_DIRECTORY_FILE_DENIAL");
+											echo ("Missing: $_FIND_FILE_LEGAL_DOCUMENT");
 
-} // [ + ] IF: File Exists: Directory Denial Index File: Redirect To Master Directory Index Listing Denial File
+} // [ + ] IF: File Exists: Software Project :: File :: Legal Document File
 ?>

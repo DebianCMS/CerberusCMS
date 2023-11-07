@@ -12,12 +12,12 @@
  + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
  +				 : correct display of this programming code and its indentation.
  + ----------------------------------------------------------------------------------------------------------
- +    ()    () - -
- +  ()  () ()()()()
- +  ------
- +
+ +    ()  ()  ()
+ +  ()  ()  ()
+ +  ------------------------------
+ +  Application Module
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => Applications => Member => index.php
+ + - This File, Location	 : Root Directory => Applications => Member => VoIP
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -48,7 +48,7 @@
  +
  +
  +
- + [ ^ ] Directory Master Index
+ + [ ^ ] Application Module :: Member :: Voice Over Internet Protocol
  +
  +
  +
@@ -57,35 +57,10 @@
 
 /*
  ============================================================================================================
- +
- +
- + [ @ ] Directory Master Index :: Variables
- +
- +
+ + Application Module Header
  ============================================================================================================
 */
 
-/*
- ============================================================================================================
- + Directory Master Index :: Variables :: Directory Listing Denial File
- ============================================================================================================
-*/
+											echo ($_Application_Module_Member_Message_VoIP_Header);
 
-$_DIRECTORY_FILE_DENIAL					= "../../System/Default/Messages/Directory_Denial.php";
-
-/*
- ============================================================================================================
- + Directory Listing Denial: IF Directory Denial File Exists, Include It
- ============================================================================================================
-*/
-
-if (file_exists("$_DIRECTORY_FILE_DENIAL")) {
-
-	include_once "$_DIRECTORY_FILE_DENIAL";
-
-} else {
-
-	echo ("Kernel Message: Missing Path: $_DIRECTORY_FILE_DENIAL");
-
-} // [ + ] IF: File Exists: Directory Denial Index File: Redirect To Master Directory Index Listing Denial File
 ?>

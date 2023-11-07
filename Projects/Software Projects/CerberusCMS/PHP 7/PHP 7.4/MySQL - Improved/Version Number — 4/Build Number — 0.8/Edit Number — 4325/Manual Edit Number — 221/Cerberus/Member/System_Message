@@ -12,12 +12,12 @@
  + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
  +				 : correct display of this programming code and its indentation.
  + ----------------------------------------------------------------------------------------------------------
- +    ()    () - -
- +  ()  () ()()()()
- +  ------
- +
+ +    ()  ()  ()
+ +  ()  ()  ()
+ +  ------------------------------
+ +  Application Module
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => Applications => Member => index.php
+ + - This File, Location	 : Root Directory => Applications => Member => System_Message
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -48,7 +48,7 @@
  +
  +
  +
- + [ ^ ] Directory Master Index
+ + [ ^ ] Application Module :: Member :: System Message
  +
  +
  +
@@ -57,35 +57,61 @@
 
 /*
  ============================================================================================================
- +
- +
- + [ @ ] Directory Master Index :: Variables
- +
- +
+ + Application Module Header
  ============================================================================================================
 */
+
+											echo ($_Application_Module_Member_Message_System_Message_Header);
 
 /*
  ============================================================================================================
- + Directory Master Index :: Variables :: Directory Listing Denial File
+ +
+ + Get Variables
+ +
  ============================================================================================================
 */
 
-$_DIRECTORY_FILE_DENIAL					= "../../System/Default/Messages/Directory_Denial.php";
+$_Application_Module_Member_System_Message_ADMINISTRATOR_NOTIFICATION			= $_GET['MessageContents'];
 
 /*
  ============================================================================================================
- + Directory Listing Denial: IF Directory Denial File Exists, Include It
+ +
+ + Change Language Notification
+ +
  ============================================================================================================
 */
 
-if (file_exists("$_DIRECTORY_FILE_DENIAL")) {
+if ($_GET["Message"] == "Language") {
 
-	include_once "$_DIRECTORY_FILE_DENIAL";
+											echo ("<CENTER>Kernel: I Have Changed The Language To: <I>$_GLOBAL_COOKIE_MEMBER_LANGUAGE</I></CENTER>");
 
-} else {
+} // [ + ] IF: Internal Application: Message IS Language Is Activated
 
-	echo ("Kernel Message: Missing Path: $_DIRECTORY_FILE_DENIAL");
+/*
+ ============================================================================================================
+ +
+ + System Message Notification
+ +
+ ============================================================================================================
+*/
 
-} // [ + ] IF: File Exists: Directory Denial Index File: Redirect To Master Directory Index Listing Denial File
+if ($_GET["Message"] == "AdministratorNotification") {
+
+											echo ("<CENTER>$_Application_Module_Member_System_Message_ADMINISTRATOR_NOTIFICATION</CENTER>");
+
+} // [ + ] IF: Internal Application: Message IS Administrator Notifications Is Activated
+
+/*
+ ============================================================================================================
+ +
+ + System Message Default
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Message"] == "Default") {
+
+											echo ("<CENTER>$_Application_Module_Member_Message_System_Message_DEFAULT_MESSAGE</CENTER>");
+
+} // [ + ] IF: Internal Application: Message IS Default Notifications Is Activated
 ?>
