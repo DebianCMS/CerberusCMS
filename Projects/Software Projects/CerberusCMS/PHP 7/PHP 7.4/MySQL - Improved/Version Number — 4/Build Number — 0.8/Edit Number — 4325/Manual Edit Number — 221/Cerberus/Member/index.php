@@ -5,9 +5,9 @@
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  + Cerberus Content Management System
  + ----------------------------------------------------------------------------------------------------------
- + - Author			 : Gary Christopher Johnson of Oildale and SouthGate In Southern California
+ + - Author			 : Gary Christopher Johnson of Rosedale In Southern California, U.S.A.
  + - Company			 : Tinke Software, Free and Open Source Software
- + - Company Address		 : Oildale In Southern California, United States of America
+ + - Company Address		 : Rosedale In Southern California, United States of America
  + - Electronic Mail Address	 : CerberusCMS@Protonmail.com, TinkeSoftware@Protonmail.com
  + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
  +				 : correct display of this programming code and its indentation.
@@ -15,9 +15,9 @@
  +    ()    () - -
  +  ()  () ()()()()
  +  ------
- +
+ + Index Application
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => Applications => Member => index.php
+ + - This File, Location	 : Root Directory => Member => index.php
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -71,7 +71,7 @@
  ============================================================================================================
 */
 
-$_DIRECTORY_FILE_DENIAL					= "../../System/Default/Messages/Directory_Denial.php";
+$_DIRECTORY_FILE_DENIAL					= "../System/Default/Messages/Directory_Denial.php";
 
 /*
  ============================================================================================================
