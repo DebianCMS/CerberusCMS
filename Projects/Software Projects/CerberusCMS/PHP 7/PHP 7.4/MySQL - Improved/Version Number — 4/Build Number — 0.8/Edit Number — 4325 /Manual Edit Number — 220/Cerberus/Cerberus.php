@@ -2784,7 +2784,7 @@ if ($_GLOBAL_SYSTEM_PLUGIN_LOCATION_STATUS >= 1) {
 
 } else {
 
-	$_GLOBAL_SYSTEM_PLUGIN_LOCATION_MESSAGE_De-Activated				= "<CENTER>Kernel Message: The Location Plug-In Application Module Is: De-Activated</CENTER>";
+	$_GLOBAL_SYSTEM_PLUGIN_LOCATION_MESSAGE_DEACTIVATED				= "<CENTER>Kernel Message: The Location Plug-In Application Module Is: De-Activated</CENTER>";
 
 } // [ + ] IF: System :: Plug-In :: Location :: Is: On or Off
 
@@ -5244,7 +5244,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null &
 
 } else {
 
-	echo ($_Message_Kernel_APPLICATION_SERVICES_APPLICATION_De-Activated);
+	echo ($_Message_Kernel_APPLICATION_SERVICES_APPLICATION_DEACTIVATED);
 
 } // [ + ] IF: Internal Application :: Services :: Is Application Module :: Services :: Is: Activated OR De-Activated
 
@@ -5382,7 +5382,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null &
 
 } else {
 
-	echo ($_Message_Kernel_APPLICATION_ROOT_APPLICATION_De-Activated);
+	echo ($_Message_Kernel_APPLICATION_ROOT_APPLICATION_DEACTIVATED);
 
 } // [ + ] IF: Application Module :: Root :: File Status :: Is: Activated OR De-Activated
 
@@ -5520,7 +5520,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null &
 
 } else {
 
-	echo ($_Message_Kernel_APPLICATION_ADMINISTRATION_APPLICATION_De-Activated);
+	echo ($_Message_Kernel_APPLICATION_ADMINISTRATION_APPLICATION_DEACTIVATED);
 
 } // [ + ] IF: Application Module :: Administrator :: Physical File :: DOES OR DOES NOT Exist
 
@@ -5718,7 +5718,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null &
 
 } else {
 
-	echo ($_Message_Kernel_APPLICATION_MEMBER_APPLICATION_De-Activated); 
+	echo ($_Message_Kernel_APPLICATION_MEMBER_APPLICATION_DEACTIVATED); 
 
 } // [ + ] IF: Application Module :: Non-Registered Visitor :: File Status :: Is: On OR Off
 
