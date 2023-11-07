@@ -917,7 +917,6 @@ echo ("
 												&#8212; <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;MediaGalleries&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Media Gallery Options :: For The Registered Member Account :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST ::\">Media Galleries</A>
 												&#8212; <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;Streams&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Streams Opstions :: For The Registered Member Account :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST ::\">Streams</A>
 												&#8212; <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;Friends&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Friends List :: For The Registered Member Account :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST ::\">Friends</A>
-												&#8212; <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;More&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: More Options :: For The Registered Member Account :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST ::\">More</A>
 												&nbsp;]</CENTER>
 												<HR>
 													<A HREF=\"$_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display This Registered Member Account Image ::\"><IMG SRC=\"$_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST :: $_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY ::\" ALT=\":: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST :: $_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY ::\" CLASS=\"MemberProfile\" WIDTH=\"120\" HEIGHT=\"120\"></A><BR><BR>
@@ -1068,9 +1067,67 @@ echo ("
 
 } else {
 
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Profile :: Details IS: Friends-Only
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_DETAILS == "1") {
+
+/*
+ ============================================================================================================
+ + IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
+ ============================================================================================================
+*/
+
+if (file_exists("./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Document/Friends/$_GLOBAL_COOKIE_MEMBER_USERNAME")) {
+
+echo ("
+												&nbsp;*&nbsp;Name, First: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST<BR>
+												&nbsp;*&nbsp;Name, Last: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST<BR>
+												&nbsp;*&nbsp;Name, Middle: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_MIDDLE<BR>
+												&nbsp;*&nbsp;Name, Nickname: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_NICKNAME<BR>
+												&nbsp;*&nbsp;Birthdate: $_Application_Module_Member_Profile_LIST_MEMBER_BIRTHDATE<BR>
+												&nbsp;*&nbsp;Gender: $_Application_Module_Member_Profile_LIST_MEMBER_GENDER_DISPLAY<BR>
+												&nbsp;*&nbsp;Member Preferred Language: $_Application_Module_Member_Profile_LIST_MEMBER_SETTINGS_LANGUAGE<BR>
+												&nbsp;*&nbsp;Member Account Profile Image: <A TITLE=\":: Registered Member Account Profile Image :: $_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY ::\">$_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY</A><BR>
+												&nbsp;*&nbsp;Member Account Avatar Image: <A HREF=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon_Avatar/$_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_AVATAR?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display This Avatar Image ::\">$_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_AVATAR</A><BR><BR>
+
+												<I>Member' Account Details :: Social :: Preferences</I><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
+												&nbsp;*&nbsp;Member Marital Status: $_Application_Module_Member_Profile_LIST_MEMBER_SOCIAL_PREFERENCE_MARITAL_STATUS_DISPLAY<BR>
+												&nbsp;*&nbsp;Member Sexual Orientation: $_Application_Module_Member_Profile_LIST_MEMBER_SOCIAL_PREFERENCE_SEXUAL_ORIENTATION_DISPLAY<BR><BR>
+");
+
+} else {
+
+echo ("Message: You are not on this Profile Friend List.<BR><BR>");
+
+} // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
+
+} // [ + ] IF: Registered Member Account :: Profile :: Visibility :: Is: Friends-Only
+
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Profile :: Details IS: Hidden
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_DETAILS == "2") {
+
 echo ("<B>This Registered Member Account Details Section Is Marked: Private</B><BR><BR>");
 
-} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Detailed Information IS: Off OR On
+} else {
+
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Display :: Profile :: Settings :: Visibility :: Profile :: Details IS: Only-Me
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_DETAILS == "3") {
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME == "$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME") {
 
 echo ("
 												<I>Member' Account Details :: Account Registration Information</I><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
@@ -1084,6 +1141,18 @@ echo ("
 												&nbsp;*&nbsp;Is This Account a System Newsletter Recipient ?: $_Application_Module_Member_Profile_LIST_MEMBER_SETTINGS_NEWSLETTER_DISPLAY<BR>
 												&nbsp;*&nbsp;Account Access Level: $_Application_Module_Member_Profile_LIST_MEMBER_ACCESS_LEVEL_DISPLAY<BR><BR>
 ");
+
+} else {
+
+echo ("You are not this Account.<BR><BR>");
+
+} // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Current Profile UserName
+
+} // [ + ] IF: Registered Member Account :: Credentials Exist AND ARE Valid AND :: Registered Member Account UserName MATCHES Friend List UserName
+
+}
+
+} // [ + ] IF: The Registered Member Account :: Settings :: Privacy :: Detailed Information IS: Public
 
 												echo ("<I>Member' Account Details :: Location Information</I><HR WIDTH=\"50%\" ALIGN=\"LEFT\">");
 
