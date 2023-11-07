@@ -1111,7 +1111,7 @@ echo ("
 
 } else {
 
-echo ("Message: You are not on this Profile Friend List. $_Application_Module_Member_Profile_LIST_MEMBER_USERNAME != $_GLOBAL_COOKIE_MEMBER_USERNAME ./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Document/Friends/$_GLOBAL_COOKIE_MEMBER_USERNAME<BR><BR>");
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS);
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
 
@@ -1125,7 +1125,7 @@ echo ("Message: You are not on this Profile Friend List. $_Application_Module_Me
 
 if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_DETAILS == "2") {
 
-echo ("<B>This Registered Member Account Details Section Is Marked: Private</B><BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS");
 
 } else {
 
@@ -1154,7 +1154,7 @@ echo ("
 
 } else {
 
-echo ("You are not this Account.<BR><BR>");
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME);
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Current Profile UserName
 
@@ -1256,7 +1256,7 @@ echo ("
 
 } else {
 
-echo ("Message: You are not on this Profile Friend List.<BR><BR>");
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS);
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
 
@@ -1270,7 +1270,7 @@ echo ("Message: You are not on this Profile Friend List.<BR><BR>");
 
 if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_DETAILS == "2") {
 
-echo ("<B>This Registered Member Account Details Section Is Marked: Private</B><BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS");
 
 } else {
 
@@ -1313,7 +1313,7 @@ echo ("
 
 } else {
 
-echo ("You are not this Account.<BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME");
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Current Profile UserName
 
@@ -1377,7 +1377,7 @@ echo ("
 
 } else {
 
-echo ("Message: You are not on this Profile Friend List.<BR><BR>");
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS);
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
 
@@ -1391,7 +1391,7 @@ echo ("Message: You are not on this Profile Friend List.<BR><BR>");
 
 if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_DETAILS == "2") {
 
-echo ("<B>This Registered Member Account Details Section Is Marked: Private</B><BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS");
 
 } else {
 
@@ -1415,7 +1415,7 @@ echo ("
 
 } else {
 
-echo ("You are not this Account.<BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME");
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Current Profile UserName
 
@@ -1492,7 +1492,7 @@ echo ("
 
 } else {
 
-echo ("Message: You are not on this Profile Friend List.<BR><BR>");
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS);
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
 
@@ -1506,7 +1506,7 @@ echo ("Message: You are not on this Profile Friend List.<BR><BR>");
 
 if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_DETAILS == "2") {
 
-echo ("<B>This Registered Member Account Details Section Is Marked: Private</B><BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS");
 
 } else {
 
@@ -1536,7 +1536,7 @@ echo ("
 
 } else {
 
-echo ("You are not this Account.<BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME");
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Current Profile UserName
 
@@ -1615,7 +1615,7 @@ echo ("
 
 } else {
 
-echo ("Message: You are not on this Profile Friend List.<BR><BR>");
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS);
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
 
@@ -1629,7 +1629,7 @@ echo ("Message: You are not on this Profile Friend List.<BR><BR>");
 
 if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_DETAILS == "2") {
 
-echo ("<B>This Registered Member Account Details Section Is Marked: Private</B><BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS");
 
 } else {
 
@@ -1657,7 +1657,7 @@ echo ("
 
 } else {
 
-echo ("You are not this Account.<BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME");
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Current Profile UserName
 
@@ -1863,7 +1863,7 @@ echo ("
 
 } else {
 
-echo ("Message: You are not on this Profile Friend List.<BR><BR>");
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS);
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
 
@@ -1877,7 +1877,7 @@ echo ("Message: You are not on this Profile Friend List.<BR><BR>");
 
 if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_DETAILS == "2") {
 
-echo ("<B>This Registered Member Account Details Section Is Marked: Private</B><BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS");
 
 } else {
 
@@ -1935,7 +1935,7 @@ echo ("
 
 } else {
 
-echo ("You are not this Account.<BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME");
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Current Profile UserName
 
@@ -2068,7 +2068,7 @@ echo ("
 
 } else {
 
-echo ("Message: You are not on this Profile Friend List.<BR><BR>");
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS);
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
 
@@ -2082,7 +2082,7 @@ echo ("Message: You are not on this Profile Friend List.<BR><BR>");
 
 if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_DETAILS == "2") {
 
-echo ("<B>This Registered Member Account Details Section Is Marked: Private</B><BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS");
 
 } else {
 
@@ -2126,7 +2126,7 @@ echo ("
 
 } else {
 
-echo ("You are not this Account.<BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME");
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Current Profile UserName
 
@@ -2206,7 +2206,7 @@ echo ("
 
 } else {
 
-echo ("Message: You are not on this Profile Friend List.<BR><BR>");
+echo ($_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS);
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Friend List UserName, Display Profile Details
 
@@ -2220,7 +2220,7 @@ echo ("Message: You are not on this Profile Friend List.<BR><BR>");
 
 if ($_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBILITY_DETAILS == "2") {
 
-echo ("<B>This Registered Member Account Details Section Is Marked: Private</B><BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_FRIENDS");
 
 } else {
 
@@ -2252,7 +2252,7 @@ echo ("
 
 } else {
 
-echo ("You are not this Account.<BR><BR>");
+echo ("$_Application_Module_Member_Message_Profile_SECTION_MARKED_ONLYME");
 
 } // [ + ] IF: Registered Member Account :: UserName :: MATCHES :: Current Profile UserName
 
