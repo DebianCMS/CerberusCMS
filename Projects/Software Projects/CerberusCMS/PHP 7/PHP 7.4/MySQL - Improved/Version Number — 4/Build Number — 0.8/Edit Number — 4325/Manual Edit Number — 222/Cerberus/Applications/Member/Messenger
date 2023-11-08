@@ -318,6 +318,16 @@ $_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGE
 /*
  ============================================================================================================
  +
+ + Internal Application :: Variables :: P2P :: Clear-Text File :: Messenger Room
+ +
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE							= $_POST['AMM_Messenger_P2P_Clear_Text_File_Messenger_Room_Message'];
+
+/*
+ ============================================================================================================
+ +
  + Internal Application :: Variables :: Allowed File Extensions
  +
  ============================================================================================================
@@ -2508,7 +2518,7 @@ echo ("[ Done ]<BR><BR>");
 
 echo ("* Messenger: Creating P2P Clear-Text Messenger File For: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME ... Wait.<BR>");
 
-$_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME 	= fopen("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "a");
+$_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME 	= fopen("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "a");
 
 /*
  ============================================================================================================
@@ -2516,7 +2526,7 @@ $_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER
  ============================================================================================================
 */
 
-if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME, "Initializing Clear-Text Messenger File..")) {
+if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME, "<LINK REL=\"stylesheet\" HREF=\"../../../../../../../Theme/Global/Style_Sheet/Style.css\" TYPE=\"text/css\"><BODY ONLOAD=\"window.scrollTo(0,document.body.scrollHeight);\">")) {
 
 echo ("[ Done ]<BR><BR>");
 
@@ -2545,7 +2555,7 @@ echo ("[ Done ]<BR><BR>");
 
 echo ("* Messenger: Creating Clear-Text Messenger File For: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME ... Wait.<BR>");
 
-$_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME	= fopen("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html", "a");
+$_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME	= fopen("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html", "a");
 
 /*
  ============================================================================================================
@@ -2553,7 +2563,7 @@ $_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER
  ============================================================================================================
 */
 
-if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME, "Initializing Clear-Text Messenger File..")) {
+if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME, "<LINK REL=\"stylesheet\" HREF=\"../../../../../../../Theme/Global/Style_Sheet/Style.css\" TYPE=\"text/css\"><BODY ONLOAD=\"window.scrollTo(0,document.body.scrollHeight);\">")) {
 
 echo ("[ Done ]<BR><BR>");
 
@@ -2567,9 +2577,11 @@ echo ("* Messenger: Cannot Create Clear-Text Messenger File: ./Member/$_GLOBAL_C
 
 /*
  =============================================================================================================
- + Display :: The :: Specified :: P2P :: Clear-Text File :: Messenger Room
+ + IF: Display :: The :: Specified :: P2P :: Clear-Text File :: Messenger Room
  =============================================================================================================
 */
+
+if (!$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE) {
 
 echo ("
 
@@ -2580,7 +2592,7 @@ echo ("
 														* <I>Short or Extensive Message</I>:<BR>
 														[ Maximum Length: 5,000 Alpha-Numeric Characters ]<BR>
 															$_GLOBAL_PLUGIN_SYSTEM_TEXTEDITOR_BUTTONS<BR>
-															<TEXTAREA ROWS=\"10%\" COLS=\"80%\" MAXLENGTH=\"5000\" NAME=\"\" ID=\"WYSIWYG\">Write Messages Here...</TEXTAREA><BR>
+															<TEXTAREA ROWS=\"10%\" COLS=\"80%\" MAXLENGTH=\"5000\" NAME=\"AMM_Messenger_P2P_Clear_Text_File_Messenger_Room_Message\" ID=\"WYSIWYG\">Write Messages Here...</TEXTAREA><BR>
 															<INPUT TYPE=\"hidden\" NAME=\"\" VALUE=\"\">
 														<INPUT TYPE=\"submit\" VALUE=\"Send Message\">
 													</FORM>
@@ -2603,6 +2615,14 @@ echo ("
 														* This P2P :: Clear-Text File :: Messenger Room Was Created By: <I></I><BR>
 														* This P2P :: Clear-Text File :: Messenger Room Was Created On: <I></I>
 ");
+
+} else {
+
+$_Application_Module_Member_Messenger_FIND_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME	= fopen("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html", "a");
+
+fwrite($_Application_Module_Member_Messenger_FIND_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME, "$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE")
+
+} // [ + ] IF: Internal Application: P2P :: Clear-Text File :: Messenger :: Input Form Variables HAVE NOT Executed
 	
 } // [ + ] IF: File DOES NOT Exist: This Registered Member Account :: Document :: Messenger :: Non-Encrypted :: Current Registered Member Account UserName :: Messenger File
 
