@@ -3319,8 +3319,8 @@ copy("./Member/Setup/Indexes/Files/Document/GPS/Region/Region.php","./Member/$_A
 copy("./Member/Setup/Indexes/Files/Document/Friends/Friends.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Friends/index.php");
 
 copy("./Member/Setup/Indexes/Files/Document/Messenger/Messenger.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Messenger/Messenger.php");
-copy("./Member/Setup/Indexes/Files/Document/Messenger/Clear-Text/Messenger.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Messenger/Clear-Text/Clear-Text.php");
-copy("./Member/Setup/Indexes/Files/Document/Messenger/Encrypted/Messenger.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Messenger/Encrypted/Encrypted.php");
+copy("./Member/Setup/Indexes/Files/Document/Messenger/Clear-Text/Clear-Text.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Messenger/Clear-Text/index.php");
+copy("./Member/Setup/Indexes/Files/Document/Messenger/Encrypted/Encrypted.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Messenger/Encrypted/index.php");
 
 copy("./Member/Setup/Indexes/Files/Document/Streams/Streams.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Streams/index.php");
 copy("./Member/Setup/Indexes/Files/Document/Streams/Wall/Wall.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Streams/Wall/index.php");
