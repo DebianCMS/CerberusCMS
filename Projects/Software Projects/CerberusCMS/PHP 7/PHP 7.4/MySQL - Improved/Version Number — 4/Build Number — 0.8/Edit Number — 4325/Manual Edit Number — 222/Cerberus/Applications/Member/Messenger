@@ -2519,7 +2519,7 @@ echo ("* Messenger: Cannot Create Non-Encrypted Messenger File: ./Member/$_Appli
 echo ("
 
 												<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;\" TITLE=\":: Instantly Reload This P2P :: Clear-Text File :: Messenger Room ::\">P2P :: Clear-Text File :: Messenger Room</A>: <I><A HREF=\"./\" TITLE=\":: Open & Display :: This :: P2P :: Clear-Text File :: Messenger Room Log File ::\" TARGET=\"_NEW\"></A></I><BR>
-												<OBJECT DATA=\"\" WIDTH=\"100%\" HEIGHT=\"300\"></OBJECT><BR><BR>
+												<OBJECT DATA=\"./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html\" WIDTH=\"100%\" HEIGHT=\"300\"></OBJECT><BR><BR>
 
 													<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;\" METHOD=\"POST\">
 														* <I>Short or Extensive Message</I>:<BR>
