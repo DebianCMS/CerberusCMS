@@ -2462,6 +2462,8 @@ $_GLOBAL_REMOTE_SERVER_ADDRESS
 
 if ($_GET["P2P"] == "Clear_Text") {
 
+echo ("TEST..<BR><BR>");
+
 /*
  ============================================================================================================
  + Database Management System Server :: Query :: Select :: ALL :: Registered Member Account Entries
@@ -2489,11 +2491,13 @@ $_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME						= $_Application_
  ============================================================================================================
 */
 
-if ($_GET["MemberAccountID"] == "$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME") {
+if ($_GET["MemberAccountID"] == "$_Application_Module_Member_Messenger_LIST_MEMBER_ID") {
+
+echo ("Test 2...<BR><BR>");
 
 /*
  ============================================================================================================
- + IF: File DOES NOT Exist: This Registered Member Account :: Current Registered Member Account UserName :: Clear-Text File :: Messenger File
+ + IF: File DOES NOT Exist: Remote :: Registered Member Account :: Current Registered Member Account UserName :: Clear-Text File :: Messenger File
  ============================================================================================================
 */
 
@@ -2512,7 +2516,7 @@ $_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER
 
 /*
  ============================================================================================================
- + IF: FWRITE: This Registered Member Account :: Clear-Text File :: Messenger File
+ + IF: FWRITE: Remote :: Registered Member Account :: Clear-Text File :: Messenger File
  ============================================================================================================
 */
 
@@ -2530,22 +2534,22 @@ echo ("* Messenger: Cannot Create Clear-Text Messenger File In P2P Directory: ./
 
 /*
  ============================================================================================================
- + IF: File DOES NOT Exist: Current Registered Member Account :: Clear-Text File :: Messenger File
+ + IF: File DOES NOT Exist: Local Registered Member Account :: Remote Registered Member Account UserName :: Clear-Text File :: Messenger File
  ============================================================================================================
 */
 
-if (!file_exists("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html")) {
+if (!file_exists("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html")) {
 
-echo ("* Messenger: Clear-Text Messenger File Cannot Be Found: ./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messsenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html -- Automatically Creating Directory... Wait.<BR>");
+echo ("* Messenger: Clear-Text Messenger File Cannot Be Found: ./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messsenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html -- Automatically Creating Directory... Wait.<BR>");
 
 mkdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text");
-mkdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME");
+mkdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME");
 
 echo ("[ Done ]<BR><BR>");
 
-echo ("* Messenger: Creating Clear-Text Messenger File For: ./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME ... Wait.<BR>");
+echo ("* Messenger: Creating Clear-Text Messenger File For: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME ... Wait.<BR>");
 
-$_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME	= fopen("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "a");
+$_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME	= fopen("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html", "a");
 
 /*
  ============================================================================================================
