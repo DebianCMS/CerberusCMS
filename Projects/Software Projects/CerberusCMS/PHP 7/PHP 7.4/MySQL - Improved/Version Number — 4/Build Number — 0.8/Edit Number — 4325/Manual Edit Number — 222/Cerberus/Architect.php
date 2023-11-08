@@ -3227,6 +3227,7 @@ member_username
 	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/GPS/Coordinates<BR>");
 	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/GPS/GLO<BR>");
 	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/GPS/Region<BR>");
+	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Messenger<BR>");
 	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Streams<BR>");
 	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Streams/Wall<BR>");
 
@@ -3241,6 +3242,8 @@ member_username
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/GPS/Coordinates");
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/GPS/GLO");
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/GPS/Region");
+
+	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Messenger");
 
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Streams");
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Streams/Wall");
@@ -3310,6 +3313,8 @@ copy("./Member/Setup/Indexes/Files/Document/GPS/GLO/GLO.php","./Member/$_ARCHITE
 copy("./Member/Setup/Indexes/Files/Document/GPS/Region/Region.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/GPS/Region/index.php");
 
 copy("./Member/Setup/Indexes/Files/Document/Friends/Friends.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Friends/index.php");
+
+copy("./Member/Setup/Indexes/Files/Document/Messenger/Messenger.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Messenger/Messenger.php");
 
 copy("./Member/Setup/Indexes/Files/Document/Streams/Streams.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Streams/index.php");
 copy("./Member/Setup/Indexes/Files/Document/Streams/Wall/Wall.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Streams/Wall/index.php");
@@ -3428,6 +3433,8 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/GPS/GLO");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/GPS/Region");
 
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Messenger<BR>");
+
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Streams");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Streams/Wall");
 
@@ -3505,6 +3512,8 @@ copy("./Member/Setup/Indexes/Files/Document/GPS/GLO/GLO.php","./Member/$_PROJECT
 copy("./Member/Setup/Indexes/Files/Document/GPS/Region/Region.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/GPS/Region/index.php");
 
 copy("./Member/Setup/Indexes/Files/Document/Friends/Friends.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Friends/index.php");
+
+copy("./Member/Setup/Indexes/Files/Document/Messenger/Messenger.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Messenger/index.php");
 
 copy("./Member/Setup/Indexes/Files/Document/Streams/Streams.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Streams/index.php");
 copy("./Member/Setup/Indexes/Files/Document/Streams/Wall/Wall.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Streams/Wall/index.php");
