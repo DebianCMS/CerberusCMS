@@ -2069,10 +2069,59 @@ $_Application_Module_Administration_Networking_POST_BLOCK_INTERNET_PROTOCOL_ADDR
  +
  + [ @ ] Application :: Administration :: Messenger
  +
+ + Number of Variables :: GET ::
+ + Number of Variables :: POST ::
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
  +
+ + Variables :: POST Variables
  +
  ============================================================================================================
 */
+
+/*
+ ============================================================================================================
+ +
+ + Variables :: POST Variables :: Character and String Replacement
+ +
+ ============================================================================================================
+*/
+
+
+
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("`", "", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("@", "&commat;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("<", "&lt;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace(">", "&gt;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("\"", "&quot;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("&", "&amp;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("'", "&apos;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("~", "&#126;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("$", "&#36;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("=", "&#61;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("{", "&lcub;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("}", "&rcub;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("(", "&lpar;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace(")", "&rpar;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("#", "&num;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("%", "&percnt;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("*", "&ast;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("+", "&plus;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace(",", "&comma;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("-", "&minus;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace(".", "&period;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("/", "&sol;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace(":", "&colon;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("\;", "&semi;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("?", "&quest;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("[", "&lsqb;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("]", "&rsqb;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("^", "&hat;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("_", "&lowbar;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE			= str_replace("|", "&verbar;", $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE);
 
 /*
  ============================================================================================================
@@ -2085,6 +2134,19 @@ $_Application_Module_Administration_Networking_POST_BLOCK_INTERNET_PROTOCOL_ADDR
  + Number of Variables :: POST :: 01
  ============================================================================================================
 */
+
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME							= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Select_Room_Name'];
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN						= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Select_Room_Name_Hidden'];
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE							= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Message'];
+$_Application_Module_Member_Messenger_POST_GENERATE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Name_Generate'];
+$_Application_Module_Member_Messenger_POST_ARCHIVE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Visible_Archive_Clear_Text_File_Messenger_Room_Name_Hidden'];
+$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Visible_Erase_Clear_Text_File_Messenger_Room_Name_Hidden'];
+$_Application_Module_Member_Messenger_POST_DELETE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME							= $_POST['AMM_Messenger_Delete_Clear_Text_File_Messenger_Room_Name_Hidden'];
+$_Application_Module_Member_Messenger_UPLOAD_FILE_AUDIO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Name_File_Upload_Audio'];
+$_Application_Module_Member_Messenger_UPLOAD_FILE_DOCUMENT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Name_File_Upload_Document'];
+$_Application_Module_Member_Messenger_UPLOAD_FILE_IMAGE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Name_File_Upload_Image'];
+$_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME						= $_POST['AMM_Messenger_Visible_Clear_Text_File_Messenger_Room_Name_File_Upload_Video'];
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE							= $_POST['AMM_Messenger_P2P_Clear_Text_File_Messenger_Room_Message'];
 
 /*
  ============================================================================================================
@@ -2103,6 +2165,99 @@ $_Application_Module_Administration_Networking_POST_BLOCK_INTERNET_PROTOCOL_ADDR
  +
  ============================================================================================================
 */
+
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("`", "", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("@", "&commat;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("<", "&lt;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace(">", "&gt;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("\"", "&quot;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("&", "&amp;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("'", "&apos;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("~", "&#126;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("$", "&#36;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("=", "&#61;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("{", "&lcub;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("}", "&rcub;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("(", "&lpar;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace(")", "&rpar;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("#", "&num;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("%", "&percnt;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("*", "&ast;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("+", "&plus;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace(",", "&comma;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("-", "&minus;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace(".", "&period;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("/", "&sol;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace(":", "&colon;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("\;", "&semi;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("?", "&quest;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("[", "&lsqb;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("]", "&rsqb;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("^", "&hat;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("_", "&lowbar;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE			= str_replace("|", "&verbar;", $_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE);
+
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("`", "", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("@", "&commat;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("<", "&lt;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace(">", "&gt;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("\"", "&quot;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("&", "&amp;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("'", "&apos;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("~", "&#126;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("$", "&#36;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("=", "&#61;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("{", "&lcub;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("}", "&rcub;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("(", "&lpar;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace(")", "&rpar;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("#", "&num;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("%", "&percnt;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("*", "&ast;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("+", "&plus;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace(",", "&comma;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("-", "&minus;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace(".", "&period;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("/", "&sol;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace(":", "&colon;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("\;", "&semi;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("?", "&quest;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("[", "&lsqb;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("]", "&rsqb;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("^", "&hat;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("_", "&lowbar;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME			= str_replace("|", "&verbar;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME);
+
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("`", "", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("@", "&commat;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("<", "&lt;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace(">", "&gt;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("\"", "&quot;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("&", "&amp;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("'", "&apos;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("~", "&#126;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("$", "&#36;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("=", "&#61;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("{", "&lcub;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("}", "&rcub;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("(", "&lpar;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace(")", "&rpar;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("#", "&num;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("%", "&percnt;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("*", "&ast;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("+", "&plus;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace(",", "&comma;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("-", "&minus;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace(".", "&period;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("/", "&sol;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace(":", "&colon;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("\;", "&semi;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("?", "&quest;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("[", "&lsqb;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("]", "&rsqb;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("^", "&hat;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("_", "&lowbar;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
+$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN			= str_replace("|", "&verbar;", $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN);
 
 $_Application_Module_Administration_Networking_POST_BLOCK_INTERNET_PROTOCOL_ADDRESS_STRING			= str_replace("`", "", $_Application_Module_Administration_Networking_POST_BLOCK_INTERNET_PROTOCOL_ADDRESS_STRING);
 $_Application_Module_Administration_Networking_POST_BLOCK_INTERNET_PROTOCOL_ADDRESS_STRING			= str_replace("@", "&commat;", $_Application_Module_Administration_Networking_POST_BLOCK_INTERNET_PROTOCOL_ADDRESS_STRING);
