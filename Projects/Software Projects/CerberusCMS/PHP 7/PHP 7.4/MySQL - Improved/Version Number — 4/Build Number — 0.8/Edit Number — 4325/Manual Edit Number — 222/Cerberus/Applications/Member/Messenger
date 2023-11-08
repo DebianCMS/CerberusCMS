@@ -2451,4 +2451,109 @@ $_GLOBAL_REMOTE_SERVER_ADDRESS
 } // [ + ] IF: Internal Application: Multimedia Messaging Service Application Form Variables Have Executed
 
 } // [ + ] IF: Option: Multimedia Messaging Service
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application :: P2P :: Is: Clear-Text
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["P2P"] == "Clear_Text") {
+
+$_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_MEMBERS					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members ORDER BY id ASC");
+
+while ($_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_MEMBERS_Fetch_Array = $_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_MEMBERS->fetch_array(MYSQLI_BOTH)) {
+
+$_Application_Module_Member_Messenger_LIST_MEMBER_ID							= $_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_MEMBERS_Fetch_Array['id'];
+$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME						= $_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_MEMBERS_Fetch_Array['member_username'];
+
+/*
+ ============================================================================================================
+ +
+ + IF: Internal Application :: Member :: Registered Member Account :: Is: ID Number
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["MemberAccountID"] == "$_Application_Module_Member_Messenger_LIST_MEMBER_ID") {
+
+/*
+ ============================================================================================================
+ + IF: File DOES NOT Exist: This Registered Member Account :: Current Registered Member Account UserName :: Messenger File
+ ============================================================================================================
+*/
+
+if (!file_exists("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/$_GLOBAL_COOKIE_MEMBER_USERNAME/Non-Encrypted/Messenger.html")) {
+
+echo ("* Messenger: Non-Encrypted Messenger File Cannot Be Found: ./Member/Christopher/Files/Document/Messsenger/Non-Encrypted/Christopher/Messenger.html -- Automatically Creating Directory... Wait.<BR>");
+
+mkdir("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Non-Encrypted");
+mkdir("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Non-Encrypted/$_GLOBAL_COOKIE_MEMBER_USERNAME");
+
+echo ("[ Done ]<BR><BR>");
+
+echo ("* Messenger: Creating Non-Encrypted Messenger File For: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME ... Wait.<BR>");
+
+$_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_FILE_NAME	= fopen("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Non-Encrypted/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "a");
+
+if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_FILE_NAME, "Initializing Non-Encrypted Messenger File..")) {
+
+echo ("[ Done ]<BR><BR>");
+
+} else {
+
+echo ("* Messenger: Cannot Create Non-Encrypted Messenger File: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Non-Encrypted/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html<BR>");
+
+} // [ + ] IF: FWRITE: This Registered Member Account :: Files :: Document :: Messenger :: Non-Encrypted :: Current Registered Member Account UserName :: Messenger File
+
+} else {
+
+/*
+ =============================================================================================================
+ + Display :: The :: Specified :: P2P :: Clear-Text File :: Messenger Room
+ =============================================================================================================
+*/
+
+echo ("
+
+												<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;\" TITLE=\":: Instantly Reload This P2P :: Clear-Text File :: Messenger Room ::\">P2P :: Clear-Text File :: Messenger Room</A>: <I><A HREF=\"./\" TITLE=\":: Open & Display :: This :: P2P :: Clear-Text File :: Messenger Room Log File ::\" TARGET=\"_NEW\"></A></I><BR>
+												<OBJECT DATA=\"\" WIDTH=\"100%\" HEIGHT=\"300\"></OBJECT><BR><BR>
+
+													<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;\" METHOD=\"POST\">
+														* <I>Short or Extensive Message</I>:<BR>
+														[ Maximum Length: 5,000 Alpha-Numeric Characters ]<BR>
+															$_GLOBAL_PLUGIN_SYSTEM_TEXTEDITOR_BUTTONS<BR>
+															<TEXTAREA ROWS=\"10%\" COLS=\"80%\" MAXLENGTH=\"5000\" NAME=\"\" ID=\"WYSIWYG\">Write Messages Here...</TEXTAREA><BR>
+															<INPUT TYPE=\"hidden\" NAME=\"\" VALUE=\"\">
+														<INPUT TYPE=\"submit\" VALUE=\"Send Message\">
+													</FORM>
+													<BR><BR>
+
+												Available Files :: <A HREF=\"\" TITLE=\":: Open & Display :: The File List For This P2P :: Clear-Text File :: Messenger Room \" TARGET=\"_NEW\">Audio</A><BR>
+												<OBJECT DATA=\"\" WIDTH=\"90%\" HEIGHT=\"150\"></OBJECT><BR><BR>
+
+													<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;\" METHOD=\"POST\" ENCTYPE=\"multipart/form-data\">
+														* <I>Upload Unique File To This P2P :: Clear-Text File :: Messenger Room</I>:<BR>
+														[ Permitted Files ]<BR>
+														* WAV, MP3, WMA, AAC, FLAC, OGG<BR>
+														<INPUT TYPE=\"file\" NAME=\"\" MAXLENGTH=\"100\"><BR>
+															<INPUT TYPE=\"hidden\" NAME=\"\" VALUE=\"\">
+														<INPUT TYPE=\"submit\" VALUE=\"Upload File\">
+													</FORM><BR><BR>
+
+														* This P2P :: Clear-Text File :: Messenger Room Refreshes Upon Reload<BR>
+														* This P2P :: Clear-Text File :: Messenger Room Name Is: <I></I><BR>
+														* This P2P :: Clear-Text File :: Messenger Room Was Created By: <I></I><BR>
+														* This P2P :: Clear-Text File :: Messenger Room Was Created On: <I></I>
+");
+	
+} // [ + ] IF: File DOES NOT Exist: This Registered Member Account :: Document :: Messenger :: Non-Encrypted :: Current Registered Member Account UserName :: Messenger File
+
+} // [ + ] WHILE: Retrieving :: All :: Registered Member Account :: Entries :: From The Database Management System Server Database
+
+} // [ + ] IF: Internal Application :: Member :: Is: Registered Member Account :: ID Number
+
+} // [ + ] IF: Internal Application :: P2P :: Is: Clear_Text
 ?>
