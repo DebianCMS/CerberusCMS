@@ -2573,7 +2573,7 @@ echo ("* Messenger: Cannot Create Clear-Text Messenger File: ./Member/$_GLOBAL_C
 
 echo ("
 
-												<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;\" TITLE=\":: Instantly Reload This P2P :: Clear-Text File :: Messenger Room ::\">P2P :: Clear-Text File :: Messenger Room</A>: <I><A HREF=\"./\" TITLE=\":: Open & Display :: This :: P2P :: Clear-Text File :: Messenger Room Log File ::\" TARGET=\"_NEW\"></A></I><BR>
+												<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;\" TITLE=\":: Instantly Reload This P2P :: Clear-Text File :: Messenger Room ::\">P2P :: Clear-Text :: Instant Messenger Conversation With</A>: <I><A HREF=\"./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html\" TITLE=\":: Open & Display :: This :: P2P :: Clear-Text File :: Messenger Room Log File ::\" TARGET=\"_NEW\">$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME</A></I><BR>
 												<OBJECT DATA=\"./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html\" WIDTH=\"100%\" HEIGHT=\"300\"></OBJECT><BR><BR>
 
 													<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;\" METHOD=\"POST\">
