@@ -2618,13 +2618,20 @@ echo ("
 
 } else {
 
-$_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME	= fopen("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html", "w");
+$_Application_Module_Member_Messenger_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE				= "
+<IMG SRC=\"../../../../../../../Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Image/Profile/$_GLOBAL_MEMBER_IMAGE_PROFILE\" CLASS=\"MemberProfile\" ALT=\":: $_GLOBAL_COOKIE_MEMBER_USERNAME ::\"></IMG>&nbsp;&nbsp;$_GLOBAL_COOKIE_MEMBER_USERNAME Wrote:<BR><BR>
+<BIG><B>&quot;</B> $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE <BIG><B>&quot;</B></BIG><BR><BR>
 
-fwrite($_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME, "$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE");
+This Clear-Text Message Was Sent: $_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL<BR><BR>
+";
 
-$_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME	= fopen("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "w");
+$_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME	= fopen("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html", "a");
 
-fwrite($_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME, "$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE");
+fwrite($_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME, "$_Application_Module_Member_Messenger_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE");
+
+$_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME	= fopen("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "a");
+
+fwrite($_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME, "$_Application_Module_Member_Messenger_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE");
 
 	header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&P2P=Clear_Text&MemberAccountID=$_Application_Module_Member_Messenger_LIST_MEMBER_ID&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
 
