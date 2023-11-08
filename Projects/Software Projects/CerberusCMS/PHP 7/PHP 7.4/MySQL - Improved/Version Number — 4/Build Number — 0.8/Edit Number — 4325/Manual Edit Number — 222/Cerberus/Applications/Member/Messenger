@@ -2489,7 +2489,7 @@ $_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME						= $_Application_
  ============================================================================================================
 */
 
-if ($_GET["MemberAccountID"] == "$_Application_Module_Member_Messenger_LIST_MEMBER_ID") {
+if ($_GET["MemberAccountID"] == "$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME") {
 
 /*
  ============================================================================================================
@@ -2499,32 +2499,69 @@ if ($_GET["MemberAccountID"] == "$_Application_Module_Member_Messenger_LIST_MEMB
 
 if (!file_exists("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html")) {
 
-echo ("* Messenger: Non-Encrypted Messenger File Cannot Be Found: ./Member/Christopher/Files/Document/Messsenger/Clear-Text/Christopher/Messenger.html -- Automatically Creating Directory... Wait.<BR>");
+echo ("* Messenger: Clear-Text Messenger File Cannot Be Found In P2P Directory: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messsenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html -- Automatically Creating Directory... Wait.<BR>");
 
 mkdir("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text");
 mkdir("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME");
 
 echo ("[ Done ]<BR><BR>");
 
-echo ("* Messenger: Creating Non-Encrypted Messenger File For: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME ... Wait.<BR>");
+echo ("* Messenger: Creating P2P Clear-Text Messenger File For: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME ... Wait.<BR>");
 
-$_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_FILE_NAME	= fopen("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "a");
+$_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME 	= fopen("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "a");
 
 /*
  ============================================================================================================
- + IF: FWRITE: This Registered Member Account :: Current Registered Member Account UserName :: Clear-Text File :: Messenger File
+ + IF: FWRITE: This Registered Member Account :: Clear-Text File :: Messenger File
  ============================================================================================================
 */
 
-if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_FILE_NAME, "Initializing Non-Encrypted Messenger File..")) {
+if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME, "Initializing Clear-Text Messenger File..")) {
 
 echo ("[ Done ]<BR><BR>");
 
 } else {
 
-echo ("* Messenger: Cannot Create Non-Encrypted Messenger File: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html<BR>");
+echo ("* Messenger: Cannot Create Clear-Text Messenger File In P2P Directory: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html<BR>");
 
-} // [ + ] IF: FWRITE: This Registered Member Account :: Files :: Document :: Messenger :: Non-Encrypted :: Current Registered Member Account UserName :: Messenger File
+} // [ + ] IF: FWRITE: This Registered Member Account :: Files :: Document :: Messenger :: Clear-Text :: Current Registered Member Account UserName :: Messenger File
+
+} // [ + ] IF: File DOES NOT Exist: This Registered Member Account :: Document :: Messenger :: Clear-Text :: Current Registered Member Account UserName :: Messenger File
+
+/*
+ ============================================================================================================
+ + IF: File DOES NOT Exist: Current Registered Member Account :: Clear-Text File :: Messenger File
+ ============================================================================================================
+*/
+
+if (!file_exists("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html")) {
+
+echo ("* Messenger: Clear-Text Messenger File Cannot Be Found: ./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messsenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html -- Automatically Creating Directory... Wait.<BR>");
+
+mkdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text");
+mkdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME");
+
+echo ("[ Done ]<BR><BR>");
+
+echo ("* Messenger: Creating Clear-Text Messenger File For: ./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME ... Wait.<BR>");
+
+$_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME	= fopen("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "a");
+
+/*
+ ============================================================================================================
+ + IF: FWRITE: Current Registered Member Account UserName :: Clear-Text File :: Messenger File
+ ============================================================================================================
+*/
+
+if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME, "Initializing Clear-Text Messenger File..")) {
+
+echo ("[ Done ]<BR><BR>");
+
+} else {
+
+echo ("* Messenger: Cannot Create Clear-Text Messenger File: ./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html<BR>");
+
+} // [ + ] IF: FWRITE: Current Registered Member Account :: Files :: Document :: Messenger :: Clear-Text :: Messenger File
 
 } else {
 
@@ -2537,7 +2574,7 @@ echo ("* Messenger: Cannot Create Non-Encrypted Messenger File: ./Member/$_Appli
 echo ("
 
 												<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;\" TITLE=\":: Instantly Reload This P2P :: Clear-Text File :: Messenger Room ::\">P2P :: Clear-Text File :: Messenger Room</A>: <I><A HREF=\"./\" TITLE=\":: Open & Display :: This :: P2P :: Clear-Text File :: Messenger Room Log File ::\" TARGET=\"_NEW\"></A></I><BR>
-												<OBJECT DATA=\"./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html\" WIDTH=\"100%\" HEIGHT=\"300\"></OBJECT><BR><BR>
+												<OBJECT DATA=\"./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html\" WIDTH=\"100%\" HEIGHT=\"300\"></OBJECT><BR><BR>
 
 													<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;\" METHOD=\"POST\">
 														* <I>Short or Extensive Message</I>:<BR>
