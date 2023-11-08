@@ -2485,18 +2485,18 @@ if ($_GET["MemberAccountID"] == "$_Application_Module_Member_Messenger_LIST_MEMB
  ============================================================================================================
 */
 
-if (!file_exists("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/$_GLOBAL_COOKIE_MEMBER_USERNAME/Non-Encrypted/Messenger.html")) {
+if (!file_exists("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html")) {
 
-echo ("* Messenger: Non-Encrypted Messenger File Cannot Be Found: ./Member/Christopher/Files/Document/Messsenger/Non-Encrypted/Christopher/Messenger.html -- Automatically Creating Directory... Wait.<BR>");
+echo ("* Messenger: Non-Encrypted Messenger File Cannot Be Found: ./Member/Christopher/Files/Document/Messsenger/Clear-Text/Christopher/Messenger.html -- Automatically Creating Directory... Wait.<BR>");
 
-mkdir("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Non-Encrypted");
-mkdir("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Non-Encrypted/$_GLOBAL_COOKIE_MEMBER_USERNAME");
+mkdir("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text");
+mkdir("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME");
 
 echo ("[ Done ]<BR><BR>");
 
 echo ("* Messenger: Creating Non-Encrypted Messenger File For: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME ... Wait.<BR>");
 
-$_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_FILE_NAME	= fopen("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Non-Encrypted/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "a");
+$_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_FILE_NAME	= fopen("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "a");
 
 if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_MEMBER_FILE_NAME, "Initializing Non-Encrypted Messenger File..")) {
 
@@ -2504,7 +2504,7 @@ echo ("[ Done ]<BR><BR>");
 
 } else {
 
-echo ("* Messenger: Cannot Create Non-Encrypted Messenger File: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Non-Encrypted/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html<BR>");
+echo ("* Messenger: Cannot Create Non-Encrypted Messenger File: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html<BR>");
 
 } // [ + ] IF: FWRITE: This Registered Member Account :: Files :: Document :: Messenger :: Non-Encrypted :: Current Registered Member Account UserName :: Messenger File
 
