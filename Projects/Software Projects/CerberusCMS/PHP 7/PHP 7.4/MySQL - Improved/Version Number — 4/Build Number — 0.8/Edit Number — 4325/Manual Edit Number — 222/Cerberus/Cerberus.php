@@ -5179,6 +5179,7 @@ $_KERNEL_APPLICATION_MODULE_SERVICES_FILE_PERMISSION_LOCATION_GLO				= $_DB_Quer
 $_KERNEL_APPLICATION_MODULE_SERVICES_FILE_PERMISSION_LOCATION_INTERNET_PROTOCOL_ADDRESS		= $_DB_Query_Kernel_Select_Applications_Services_Fetch_Array['application_file_permission_location_internet_protocol_address'];
 $_KERNEL_APPLICATION_MODULE_SERVICES_FILE_STATUS						= $_DB_Query_Kernel_Select_Applications_Services_Fetch_Array['application_file_status'];
 $_KERNEL_APPLICATION_MODULE_SERVICES_FILE_TIMESTAMP_INSTALLATION				= $_DB_Query_Kernel_Select_Applications_Services_Fetch_Array['application_file_timestamp_installation'];
+$_KERNEL_APPLICATION_MODULE_SERVICES_FILE_VERSION						= $_DB_Query_Kernel_Select_Applications_Services_Fetch_Array['application_file_version'];
 
 /*
  ============================================================================================================
@@ -5317,6 +5318,7 @@ $_KERNEL_APPLICATION_MODULE_ROOT_FILE_PERMISSION_LOCATION_GLO				= $_DB_Query_Ke
 $_KERNEL_APPLICATION_MODULE_ROOT_FILE_PERMISSION_LOCATION_INTERNET_PROTOCOL_ADDRESS	= $_DB_Query_Kernel_Select_Applications_Root_Fetch_Array['application_file_permission_location_internet_protocol_address'];
 $_KERNEL_APPLICATION_MODULE_ROOT_FILE_STATUS						= $_DB_Query_Kernel_Select_Applications_Root_Fetch_Array['application_file_status'];
 $_KERNEL_APPLICATION_MODULE_ROOT_FILE_TIMESTAMP_INSTALLATION				= $_DB_Query_Kernel_Select_Applications_Root_Fetch_Array['application_file_timestamp_installation'];
+$_KERNEL_APPLICATION_MODULE_ROOT_FILE_VERSION						= $_DB_Query_Kernel_Select_Applications_Root_Fetch_Array['application_file_version'];
 
 /*
  ============================================================================================================
@@ -5455,6 +5457,7 @@ $_KERNEL_APPLICATION_MODULE_ADMINISTRATION_FILE_PERMISSION_LOCATION_GLO				= $_D
 $_KERNEL_APPLICATION_MODULE_ADMINISTRATION_FILE_PERMISSION_LOCATION_INTERNET_PROTOCOL_ADDRESS	= $_DB_Query_Kernel_Select_Applications_Administration_Fetch_Array['application_file_permission_location_internet_protocol_address'];
 $_KERNEL_APPLICATION_MODULE_ADMINISTRATION_FILE_STATUS						= $_DB_Query_Kernel_Select_Applications_Administration_Fetch_Array['application_file_status'];
 $_KERNEL_APPLICATION_MODULE_ADMINISTRATION_FILE_TIMESTAMP_INSTALLATION				= $_DB_Query_Kernel_Select_Applications_Administration_Fetch_Array['application_file_timestamp_installation'];
+$_KERNEL_APPLICATION_MODULE_ADMINISTRATION_FILE_VERSION						= $_DB_Query_Kernel_Select_Applications_Administration_Fetch_Array['application_file_version'];
 
 /*
  ============================================================================================================
@@ -5593,6 +5596,7 @@ $_KERNEL_APPLICATION_MODULE_MEMBER_FILE_PERMISSION_LOCATION_GLO					= $_DB_Query
 $_KERNEL_APPLICATION_MODULE_MEMBER_FILE_PERMISSION_LOCATION_INTERNET_PROTOCOL_ADDRESS		= $_DB_Query_Kernel_Select_Applications_Member_Fetch_Array['application_file_permission_location_internet_protocol_address'];
 $_KERNEL_APPLICATION_MODULE_MEMBER_FILE_STATUS							= $_DB_Query_Kernel_Select_Applications_Member_Fetch_Array['application_file_status'];
 $_KERNEL_APPLICATION_MODULE_MEMBER_FILE_TIMESTAMP_INSTALLATION					= $_DB_Query_Kernel_Select_Applications_Member_Fetch_Array['application_file_timestamp_installation'];
+$_KERNEL_APPLICATION_MODULE_MEMBER_FILE_VERSION							= $_DB_Query_Kernel_Select_Applications_Member_Fetch_Array['application_file_version'];
 
 /*
  ============================================================================================================
