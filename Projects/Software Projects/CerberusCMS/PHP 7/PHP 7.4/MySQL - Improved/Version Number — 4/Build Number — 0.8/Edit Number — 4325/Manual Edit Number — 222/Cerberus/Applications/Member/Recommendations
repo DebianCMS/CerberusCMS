@@ -138,7 +138,7 @@ echo ("
 <B>Recommended :: Hardware :: Military Specification :: Mobile Device :: Smart Phone :: Satellite</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 * <A HREF=\"https://www.Iridium.com/product-type/satellite-phones/\" TITLE=\":: Open & Display :: The Official Web Server :: For :: The Official Irridium Satellite Smart Phones ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Smart Phone :: Irridium</A><BR><BR>
 
-<B>Recommended :: Hardware :: Military Specification :: Mobile Device :: Smart Phone :: Cell Tower :: Pre-Paid Service Carrier</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
+<B>Recommended :: Communications :: Military Specification :: Mobile Device :: Smart Phone :: Cell Tower :: Pre-Paid Service Carrier</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 <B>Americas :: United States</B><BR>
 * <A HREF=\"https://www.ATT.com/prepaid/plans/\" TITLE=\":: Open & Display :: The Official Web Server :: For :: American Telegraph and Telephone :: Pre-Paid ::\" TARGET=\"_NEW\">American Telegraph and Telephone</A><BR>
 * <A HREF=\"https://FI.Google.com/about/plans\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Google Fi :: Pre-Paid ::\" TARGET=\"_NEW\">Google Fi</A><BR>
@@ -154,12 +154,16 @@ echo ("
 <B>Pacific Islands :: Micronesia</B><BR>
 * <A TITLE=\":: Open & Display :: The Official Web Server :: For :: Federated States of Micronesia Telecom :: Pre-Paid ::\" TARGET=\"_NEW\">Federated States of Micronesia Telecom</A><BR><BR>
 
-<B>Recommended :: Communications :: Internet Service Provider :: Web Server :: Satellite</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
-<B>Americas :: United States</B><BR>
-* <A HREF=\"https://Internet.HughesNet.com\" TITLE=\":: Open & Display :: The Official Web Server :: For :: HughesNet\" TARGET=\"_NEW\">HughesNet</A><BR><BR>
-
-<B>Recommended :: Hardware :: Military Specification :: Mobile Device :: Smart Phone :: Satellite :: Pre-Paid Service Carrier</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
+<B>Recommended :: Communications :: Military Specification :: Mobile Device :: Smart Phone :: Satellite :: Pre-Paid Service Carrier</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 * <A HREF=\"https://www.bluecosmo.com/iridium-global-prepaid-sim-cards.html\" TITLE=\":: Open & Display :: The Official Web Server :: For :: BlueCosmo :: Pre-Paid ::\" TARGET=\"_NEW\">BlueCosmo</A><BR><BR>
+
+<B>Recommended :: Communications :: Military Specification :: Internet Service Provider :: Web Server :: Satellite</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
+<B>Americas :: United States</B><BR>
+* <A HREF=\"https://Internet.HughesNet.com\" TITLE=\":: Open & Display :: The Official Web Server :: For :: HughesNet ::\" TARGET=\"_NEW\">HughesNet</A><BR><BR>
+
+<B>Recommended :: Communications :: Internet Service Provider :: Web Server :: Hardline</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
+<B>Americas :: United States</B><BR>
+* <A HREF=\"https://Internet.Frontier.com\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Frontier Communications ::\" TARGET=\"_NEW\">Frontier Communications</A><BR><BR>
 
 <B>Recommended :: Hardware :: Military Specification :: Mobile Device :: Smart Watch</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 * <A HREF=\"https://store.Google.com/product/google_pixel_watch?hl=en-US\" TITLE=\":: Open & Display :: The Official Web Server :: For :: Google Pixel Smart Watch ::\" TARGET=\"_NEW\">Personal :: Mobile Device :: Smart Watch :: Google :: Pixel :: Model 2022</A><BR>
