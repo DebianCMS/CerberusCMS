@@ -76,12 +76,12 @@ echo ("
 <B>Recommended :: Military Specification :: Mobile Device :: Smart Phone :: Information Security Hardened :: Custom Firmware</B><HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 * Personal :: Mobile Cell Device :: Component :: Firmware :: Modem :: FireModem<BR>
 * Personal :: Mobile Cell Device :: Component :: Firmware :: SoC :: <A HREF=\"https://www.ARM.com/products/custom-socs\" TITLE=\":: Open & Display :: The Official ARM Web Server ::\" TARGET=\"_NEW\">Custom ARM</A><BR>
-* Personal :: Mobile Cell Device :: Component :: Firmware :: eMMC :: Dump and Flash With Security Hardened Firmware<BR>
-* Personal :: Mobile Cell Device :: Component :: Firmware :: Display :: Dump and Flash With Security Hardened Firmware<BR>
-* Personal :: Mobile Cell Device :: Component :: Firmware :: WLAN :: Dump and Flash With Security Hardened Firmware<BR>
-* Personal :: Mobile Cell Device :: Component :: Firmware :: BlueTooth :: Dump and Flash With Security Hardened Firmware<BR>
-* Personal :: Mobile Cell Device :: Component :: Firmware :: CPU :: Dump and Flash With Security Hardened Firmware<BR>
-* Personal :: Mobile Cell Device :: Component :: Firmware :: GPU :: Dump and Flash With Security Hardened Firmware<BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: eMMC :: Extract and Flash With Security Hardened Firmware<BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: Display :: Extract and Flash With Security Hardened Firmware<BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: WLAN :: Extract and Flash With Security Hardened Firmware<BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: BlueTooth :: Extract and Flash With Security Hardened Firmware<BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: CPU :: Extract and Flash With Security Hardened Firmware<BR>
+* Personal :: Mobile Cell Device :: Component :: Firmware :: GPU :: Extract and Flash With Security Hardened Firmware<BR>
 * Personal :: Mobile Cell Device :: Component :: Firmware :: Bootloader :: <A HREF=\"https://Download.LineageOS.org/changes\" TITLE=\":: Open & Display :: The Official LineageOS Web Server ::\" TARGET=\"_NEW\">LineageOS Bootloader</A><BR>
 * Personal :: Mobile Cell Device :: Component :: Firmware :: Recovery :: <A HREF=\"https://Download.LineageOS.org/changes\" TITLE=\":: Open & Display :: The Official LineageOS Web Server ::\" TARGET=\"_NEW\">LineageOS Recovery</A><BR><BR>
 

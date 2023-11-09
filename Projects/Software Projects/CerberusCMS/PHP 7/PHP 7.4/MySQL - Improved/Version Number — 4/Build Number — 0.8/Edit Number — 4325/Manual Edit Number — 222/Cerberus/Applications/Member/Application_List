@@ -706,7 +706,7 @@ echo ("
 
 														<B>Timestamps :: Installation</B><BR>
 														* Timestamp :: Application Module :: Panel :: Database Entry :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_TIMESTAMP_INSTALLATION<BR>
-														<A HREF=\"./Applications/Panel/$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME ::\">Source Code</A><HR><BR>
+														<A HREF=\"./Applications/Panel/$_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME.panel?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code :: For The Application Module :: $_Application_Module_Member_Application_List_LIST_APPLICATION_PANEL_FILE_NAME ::\">Source Code</A><HR><BR>
 ");
 
 } // [ + ] WHILE: Retrieving :: All Panel-Level Application Module Entries From Database Management System Server Database
