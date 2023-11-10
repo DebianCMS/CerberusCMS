@@ -2712,7 +2712,7 @@ $filesize		= filesize("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/M
 
 $_Application_Module_Member_Messenger_DB_Query_INSERT_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_p2p_clear_text_file_room(
 messenger_room_creation_author,
-messenger_room_creation_internet_protocol_address,
+messenger_room_creation_author_device_ip_address,
 messenger_room_creation_timestamp,
 messenger_room_file_size,
 messenger_room_username_local,
