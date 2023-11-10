@@ -2673,8 +2673,6 @@ $_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_S
 
 if ($_GET["MemberName"] == "$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME") {
 
-if ($_GET["Erase"]) {
-
 if ($_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_ERASE == "Erase") {
 
 unlink("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Messenger.html");
@@ -2683,9 +2681,7 @@ unlink("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-
 /**
  * Do Nothing
 **/
-} // [ + ] IF: Delete :: Registered Member Account :: P2P :: Messenger :: Clear-Text File :: Messenger Room
-
-} // [ + ] IF: Internal Application: Messenger :: P2P :: Clear-Text :: File :: Erase :: Is: Activated
+} // [ + ] IF: Erase :: Registered Member Account :: P2P :: Messenger :: Clear-Text File :: Messenger Room
 
 /*
  ============================================================================================================
