@@ -66,11 +66,11 @@
 */
 
 echo ("
-<B>Server :: Local</B><BR>
+<B>Server :: This Server</B><BR>
 $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR><BR>
 
-<B>Server :: Remote</B><BR>
-Unix Epoch: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The :: Unix-Epoch Time Reader ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_TIME_UNIX</A>
+<B>Server :: Your Device</B><BR>
+Unix-Epoch: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The :: Unix-Epoch Time Reader ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_TIME_UNIX</A>
 <HR>
 ");
 ?>
