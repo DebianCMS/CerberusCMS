@@ -75,8 +75,8 @@ echo ("
 <B>G.P.S. :: Server :: Your Device</B><BR>
 * Latitude: <A ID=\"getLocationOutputLatitude\" TITLE=\":: Global-Positioning-System :: Coordinates :: Latitude ::\"></A><BR>
 * Longitude: <A ID=\"getLocationOutputLongitude\" TITLE=\":: Global-Positioning-System :: Coordinates ::: Longitude ::\"></A><BR>
-* Altitude Above Sea-Level <A ID=\"getLocationOutputAltitude\" TITLE=\":: Global-Positioning-System :: Coordinates :: Altitude ::\"></A><BR>
-<SPAN ID=\"OutputLocation\"></SPAN>
+* Altitude Above Sea-Level: <A ID=\"getLocationOutputAltitude\" TITLE=\":: Global-Positioning-System :: Coordinates :: Altitude ::\"></A><BR>
+* Maps Interface: <SPAN ID=\"OutputLocation\"></SPAN>
 <HR>
 ");
 ?>
