@@ -17,7 +17,8 @@
  +  ------
  + Index Application
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => Member => index.php
+ + - This File, Location	 : Root Directory => Member => Setup => Indexes => Files => Video =>
+ +				 : Live => index.php
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -71,7 +72,7 @@
  ============================================================================================================
 */
 
-$_DIRECTORY_FILE_DENIAL					= "../System/Default/Messages/Directory_Denial.php";
+$_DIRECTORY_FILE_DENIAL					= "../../../../../../System/Default/Messages/Directory_Denial.php";
 
 /*
  ============================================================================================================
