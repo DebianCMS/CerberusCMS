@@ -1707,7 +1707,7 @@ messenger_room_creation_author VARCHAR(100),
 messenger_room_creation_author_device_ip_address VARCHAR(100),
 messenger_room_creation_author_system_access_level VARCHAR(100),
 messenger_room_creation_date VARCHAR(100),
-messenger_room_file_size VARCHAR(10),
+messenger_room_file_size VARCHAR(256),
 messenger_room_name VARCHAR(100),
 messenger_room_password_entry VARCHAR(100),
 messenger_room_password_maintenance VARCHAR(100),
@@ -1742,7 +1742,7 @@ messenger_room_creation_author VARCHAR(100),
 messenger_room_creation_author_device_ip_address VARCHAR(100),
 messenger_room_creation_author_system_access_level VARCHAR(100),
 messenger_room_creation_date VARCHAR(100),
-messenger_room_file_size VARCHAR(10),
+messenger_room_file_size VARCHAR(256),
 messenger_room_name VARCHAR(100),
 messenger_room_password_entry VARCHAR(100),
 messenger_room_password_maintenance VARCHAR(100),
@@ -1769,12 +1769,14 @@ messenger_room_timestamp_creation VARCHAR(100),
 PRIMARY KEY (id)
 ");
 
+/* Messenger :: P2P :: Clear-Text File */
+
 $_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT_INITIALIZE->query("CREATE TABLE \"$_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_TABLES_CONNECT_NAME_DATABASE_TABLE_PREFIX\"_messenger_p2p_clear_text_file_room (
 id MEDIUMINT NOT NULL AUTO_INCREMENT,
 messenger_room_creation_author VARCHAR(100),
 messenger_room_creation_author_device_ip_address VARCHAR(100),
 messenger_room_creation_timestamp VARCHAR(100),
-messenger_room_file_size VARCHAR(10),
+messenger_room_file_size VARCHAR(256),
 messenger_room_username_local VARCHAR(100),
 messenger_room_username_remote VARCHAR(100),
 PRIMARY KEY (id)
