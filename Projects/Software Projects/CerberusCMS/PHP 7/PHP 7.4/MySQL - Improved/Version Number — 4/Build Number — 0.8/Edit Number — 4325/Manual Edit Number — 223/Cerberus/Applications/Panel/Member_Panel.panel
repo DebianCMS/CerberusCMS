@@ -79,13 +79,13 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
  ============================================================================================================
 */
 
-$_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_system_message WHERE system_message_member='$_GLOBAL_COOKIE_MEMBER_USERNAME' ORDER BY id DESC LIMIT 1");
-$_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Fetch_Array			= $_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE->fetch_array(MYSQLI_BOTH);
-$_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Number_Of_Rows			= $_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE->num_rows;
+$_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE							= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_system_message WHERE system_message_member='$_GLOBAL_COOKIE_MEMBER_USERNAME' ORDER BY id DESC LIMIT 1");
+$_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Fetch_Array					= $_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE->fetch_array(MYSQLI_BOTH);
+$_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Number_Of_Rows					= $_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE->num_rows;
 
-$_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_AUTHOR					= $_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Fetch_Array['system_message_author'];
-$_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_DATA					= $_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Fetch_Array['system_message_data'];
-$_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_TIMESTAMP					= $_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Fetch_Array['system_message_timestamp'];
+$_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_AUTHOR							= $_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Fetch_Array['system_message_author'];
+$_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_DATA							= $_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Fetch_Array['system_message_data'];
+$_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_TIMESTAMP							= $_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Fetch_Array['system_message_timestamp'];
 
 /*
  ============================================================================================================
@@ -95,7 +95,7 @@ $_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_TIMESTAMP					= $_Ap
 
 if ($_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Number_Of_Rows <= 0) {
 
-$_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Number_Of_Rows			= "0";
+$_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Number_Of_Rows					= "0";
 
 } // [ + ] IF: Registered Member Account :: System Message :: Number of Rows :: Is Less Than OR Equal To Zero, Set To Zero
 
@@ -107,7 +107,7 @@ $_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Number_Of
 
 if ($_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_DATA == "") {
 
-$_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_DATA 					= "This Is The Default System Message: This Panel receives System Messages from the Administration for you - Right now you do not have any messages from any Administrator, but if you do receieve a message you will be notified here.";
+$_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_DATA 							= "This Is The Default System Message: This Panel receives System Messages from the Administration for you - Right now you do not have any messages from any Administrator, but if you do receieve a message you will be notified here.";
 
 } // [ + ] IF: Registered Member Account :: System Message :: System Message Data :: IS Empty, Set Default Message
 
@@ -125,8 +125,8 @@ $_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_DATA 					= "This Is
  ============================================================================================================
 */
 
-$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_p2p_clear_text_file_room WHERE messenger_room_username_local='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
-$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Number_Of_Rows	= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File->num_rows;
+$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_p2p_clear_text_file_room WHERE messenger_room_username_local='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
+$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Number_Of_Rows			= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File->num_rows;
 
 /*
  ============================================================================================================
@@ -134,8 +134,8 @@ $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_Fi
  ============================================================================================================
 */
 
-$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_Encrypted_File			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_p2p_clear_text_file_room WHERE messenger_room_username_local='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
-$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_Encrypted_File_Number_Of_Rows	= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File->num_rows;
+$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_Encrypted_File					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_p2p_clear_text_file_room WHERE messenger_room_username_local='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
+$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_Encrypted_File_Number_Of_Rows			= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File->num_rows;
 
 /*
  ============================================================================================================
@@ -143,7 +143,15 @@ $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_Encrypted_Fi
  ============================================================================================================
 */
 
-$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_File_Conversations_Total		= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Number_Of_Rows + $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_Encrypted_File_Number_Of_Rows;
+$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_File_Conversations_Total				= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Number_Of_Rows + $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_Encrypted_File_Number_Of_Rows;
+
+/*
+ ============================================================================================================
+ + Detect: File Size :: Registered Member Account :: Messenger :: P2P :: Clear-Text :: Messenger Room File
+ ============================================================================================================
+*/
+
+$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE_PHYSICAL			= hash_file('sha256', "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_USERNAME_REMOTE/Messenger.html");
 
 /*
  ============================================================================================================
@@ -171,27 +179,17 @@ if ($_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearTex
 
 /*
  ============================================================================================================
- + Detect: File Size :: Registered Member Account :: Messenger :: P2P :: Clear-Text :: Messenger Room File
- ============================================================================================================
-*/
-
-$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE_PHYSICAL			= hash_file('sha256', "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_USERNAME_REMOTE/Messenger.html");
-
-/*
- ============================================================================================================
  + IF: Registered Member Account :: Messenger :: P2P :: Clear-Text :: Messenger File Size :: Is: Greater Than: Stored File Size
  ============================================================================================================
 */
 
-
-if ($_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE_PHYSICAL != "$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE") {
-
-echo ("<AUDIO CONTROLS AUTOPLAY HIDDEN=\"TRUE\" SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Audio/Notifications/Messenger/Notification_Messenger_Message_New.$_GLOBAL_SYSTEM_SOUND_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_AUDIO_RANDOM_STRING_GENERATION\" TYPE=\"audio/mp3\"></AUDIO>");
-
-} else {
+if ($_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE_PHYSICAL == "$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE") {
 /**
  * Do Nothing
 */
+} else {
+
+echo ("<AUDIO CONTROLS AUTOPLAY HIDDEN=\"TRUE\" SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Audio/Notifications/Messenger/Notification_Messenger_Message_New.$_GLOBAL_SYSTEM_SOUND_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_AUDIO_RANDOM_STRING_GENERATION\" TYPE=\"audio/mp3\"></AUDIO>");
 
 } // [ + ] IF: Registered Member Account :: Messenger :: P2P :: Clear-Text :: Messenger File :: File Size: Is: Greater Than: Messenger File Size Stored In The Database Management System Server Database
 
@@ -245,6 +243,7 @@ echo ("
 												<B>&middot;</B>&nbsp;<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Control_Panel&amp;Display&#61;Location_Log&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Location Log For :: $_GLOBAL_COOKIE_MEMBER_USERNAME ::\">Location Log</A>
 		
 											<BR><BR>
+$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE_PHYSICAL
 											<I><A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER=System_Message&amp;Message&#61;Default&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Application Module :: System Messages ::\">Latest System Messages</A></I><HR>
 												<TEXTAREA ROWS=\"7\" COLS=\"25\">$_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_AUTHOR Wrote This System Message: $_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_DATA @On: $_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_TIMESTAMP</TEXTAREA>
 ");
