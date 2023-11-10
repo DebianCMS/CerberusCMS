@@ -2691,6 +2691,18 @@ unlink("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-
 
 rmdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME");
 
+$_Application_Module_Member_Messenger_P2P_ClearText_Messenger_File_DB_Query_DELETE_ENTRY			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("DELETE FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_p2p_clear_text_file_room WHERE messenger_room_username_local='$_GLOBAL_COOKIE_MEMBER_USERNAME' AND messenger_room_username_remote='$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME'");
+
+if ($_Application_Module_Member_Messenger_P2P_ClearText_Messenger_File_DB_Query_DELETE_ENTRY) {
+/**
+ * Do Nothing
+**/
+} else {
+/**
+ * Do Nothing
+**/
+} // [ + ] IF:
+
 	header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&Display=MessengerOptions&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
 	exit();
 
