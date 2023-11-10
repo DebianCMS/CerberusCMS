@@ -2691,14 +2691,14 @@ unlink("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-
 
 rmdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME");
 
-	header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&Display=Options&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
-
+	header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&Display=MessengerOptions&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
+	exit();
 
 } else {
 /**
  * Do Nothing
 **/
-} // [ + ] IF: Erase :: Registered Member Account :: P2P :: Messenger :: Clear-Text File :: Messenger Room
+} // [ + ] IF: Delete :: Registered Member Account :: P2P :: Messenger :: Clear-Text File :: Messenger Room
 
 /*
  ============================================================================================================
