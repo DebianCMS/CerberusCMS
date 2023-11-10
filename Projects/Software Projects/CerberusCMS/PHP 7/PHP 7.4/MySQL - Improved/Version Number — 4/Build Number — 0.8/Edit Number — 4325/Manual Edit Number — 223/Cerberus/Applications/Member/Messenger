@@ -325,6 +325,7 @@ $_Application_Module_Member_Messenger_UPLOAD_FILE_VIDEO_CLEAR_TEXT_FILE_MESSENGE
 
 $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE							= $_POST['AMM_Messenger_P2P_Clear_Text_File_Messenger_Room_Message'];
 $_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_DELETE							= $_POST['AMM_Messenger_P2P_Clear_Text_File_Messenger_Room_Delete'];
+$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_ERASE							= $_POST['AMM_Messenger_P2P_Clear_Text_File_Messenger_Room_Erase'];
 
 /*
  ============================================================================================================
@@ -2672,12 +2673,19 @@ $_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_S
 
 if ($_GET["MemberName"] == "$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME") {
 
-if ($_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_DELETE) {
+if ($_GET["Erase"]) {
+
+if ($_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_ERASE == "Erase") {
 
 unlink("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Messenger.html");
-rmdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME");
 
+} else {
+/**
+ * Do Nothing
+**/
 } // [ + ] IF: Delete :: Registered Member Account :: P2P :: Messenger :: Clear-Text File :: Messenger Room
+
+} // [ + ] IF: Internal Application: Messenger :: P2P :: Clear-Text :: File :: Erase :: Is: Activated
 
 /*
  ============================================================================================================
@@ -2828,7 +2836,14 @@ echo ("
 														<INPUT TYPE=\"submit\" VALUE=\"Upload File\">
 													</FORM><BR><BR>
 
-													<FORM ACTION=\"./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;P2P&#61;Clear_Text&amp;MemberName&#61;$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME&amp;Delete$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\" ENCTYPE=\"multipart/form-data\">
+													<FORM ACTION=\"./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;P2P&#61;Clear_Text&amp;MemberName&#61;$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME&amp;Erase&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\" ENCTYPE=\"multipart/form-data\">
+														* <I>Erase This P2P :: Clear-Text File :: Messenger Room</I>:<BR>
+														Type \"Erase\" In Order To Delete This Messenger Room<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Messenger_P2P_Clear_Text_File_Messenger_Room_Erase\" MAXLENGTH=\"6\"><BR>
+														<INPUT TYPE=\"submit\" VALUE=\"Erase\">
+													</FORM><BR><BR>
+
+													<FORM ACTION=\"./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;P2P&#61;Clear_Text&amp;MemberName&#61;$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME&amp;Delete&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\" ENCTYPE=\"multipart/form-data\">
 														* <I>Delete This P2P :: Clear-Text File :: Messenger Room</I>:<BR>
 														Type \"Delete\" In Order To Delete This Messenger Room<BR>
 														<INPUT TYPE=\"text\" NAME=\"AMM_Messenger_P2P_Clear_Text_File_Messenger_Room_Delete\" MAXLENGTH=\"6\"><BR>
