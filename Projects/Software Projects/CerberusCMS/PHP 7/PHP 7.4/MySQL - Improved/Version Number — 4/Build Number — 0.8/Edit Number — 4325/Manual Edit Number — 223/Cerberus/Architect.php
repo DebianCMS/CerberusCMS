@@ -561,7 +561,8 @@ $_ARCHITECT_INSTALL_FORM_POST_SYSTEM_SERVICES_ENCRYPTION_STATUS_PGP_ELECTRONIC_M
 $_ARCHITECT_INSTALL_FORM_POST_SYSTEM_SERVICES_ENCRYPTION_ELECTRONIC_MAIL_MESSAGE_PGP_KEY_PANEL_PUBLIC		= $_POST['Architect_System_Services_Encryption_Electronic_Mail_Message_PGP_Key_Panel_Public'];
 $_ARCHITECT_INSTALL_FORM_POST_URL_SECURE									= $_POST['Architect_URL_Secure'];
 $_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_SSL									= $_POST['Architect_URL_Secure_SSL'];
-$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_OPENSSL								= $_POST['Architect_URL_Secure_OpenSSL'];
+$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_SSL_CUSTOM								= $_POST['Architect_URL_Secure_SSL_Custom'];
+$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_SSL_OPENSSL								= $_POST['Architect_URL_Secure_SSL_OpenSSL'];
 $_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_TLS									= $_POST['Architect_URL_Secure_TLS'];
 $_ARCHITECT_INSTALL_FORM_POST_URL_CLEARTEXT									= $_POST['Architect_URL_ClearText'];
 
@@ -874,13 +875,17 @@ echo ("
 		Example: SECURE.WEBSERVERURL.COM<BR>
 			<INPUT TYPE=\"TEXT\" NAME=\"Architect_URL_Secure\"><BR><BR>
 
-		* <I>Encrypted :: Secure Socket Layer :: SSL :: Uniform Resource Location With Path-To-Kernel Directory</I>:<BR>
+		* <I>Encrypted :: Secure Socket Layer :: SSL :: Standard :: Uniform Resource Location With Path-To-Kernel Directory</I>:<BR>
 		Example: SSL.WEBSERVERURL.COM<BR>
 			<INPUT TYPE=\"TEXT\" NAME=\"Architect_URL_Secure_SSL\"><BR><BR>
 
-		* <I>Encrypted :: Secure Socket Layer :: OpenSSL :: Uniform Resource Location With Path-To-Kernel Directory</I>:<BR>
+		* <I>Encrypted :: Secure Socket Layer :: SSL :: CustomSSL :: Uniform Resource Location With Path-To-Kernel Directory</I>:<BR>
+		Example: SSL.WEBSERVERURL.COM<BR>
+			<INPUT TYPE=\"TEXT\" NAME=\"Architect_URL_Secure_SSL_Custom\"><BR><BR>
+
+		* <I>Encrypted :: Secure Socket Layer :: SSL :: OpenSSL :: Uniform Resource Location With Path-To-Kernel Directory</I>:<BR>
 		Example: OPENSSL.WEBSERVERURL.COM<BR>
-			<INPUT TYPE=\"TEXT\" NAME=\"Architect_URL_Secure_OpenSSL\"><BR><BR>
+			<INPUT TYPE=\"TEXT\" NAME=\"Architect_URL_Secure_SSL_OpenSSL\"><BR><BR>
 
 		* <I>Encrypted :: Transport Layer Security :: TLS :: Uniform Resource Location With Path-To-Kernel Directory</I>:<BR>
 		Example: TLS.WEBSERVERURL.COM<BR>
@@ -1193,7 +1198,8 @@ $_SYSTEM_CONFIGURATION_ACCESS_FILE_DATA								= "<?php
 \$_ACCESS_URL_CLEARTEXT 								= \"$_ARCHITECT_INSTALL_FORM_POST_URL_CLEARTEXT\";
 \$_ACCESS_URL_SECURE									= \"$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE\";
 \$_ACCESS_URL_SECURE_SSL								= \"$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_SSL\";
-\$_ACCESS_URL_SECURE_OPENSSL								= \"$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_OPENSSL\";
+\$_ACCESS_URL_SECURE_SSL_CUSTOM								= \"$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_SSL_CUSTOM\";
+\$_ACCESS_URL_SECURE_SSL_OPENSSL							= \"$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_SSL_OPENSSL\";
 \$_ACCESS_URL_SECURE_TLS								= \"$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_TLS\";
 \$_ACCESS_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ADMINISTRATOR					= \"$_ARCHITECT_INSTALL_FORM_POST_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ADMINISTRATOR\";
 \$_ACCESS_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ROOT						= \"$_ARCHITECT_INSTALL_FORM_POST_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ROOT\";
@@ -1971,10 +1977,11 @@ if ( $_GET["InternalApplication"] == "Install_Defaults" ) {
  ============================================================================================================
 */
 
-$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_ELECTRONIC_MAIL_ADDRESS				= $_POST['Architect_Administrator_Account_Electronic_Mail_Address'];
-$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME						= $_POST['Architect_Administrator_Account_UserName'];
-$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_PASSWORD_1					= $_POST['Architect_Administrator_Account_Password_1'];
-$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_PASSWORD_2					= $_POST['Architect_Administrator_Account_Password_2'];
+$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_ELECTRONIC_MAIL_ADDRESS				= $_POST['Architect_Administration_Account_Electronic_Mail_Address'];
+$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME						= $_POST['Architect_Administration_Account_UserName'];
+$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_PASSWORD_1					= $_POST['Architect_Administration_Account_Password_1'];
+$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_PASSWORD_2					= $_POST['Architect_Administration_Account_Password_2'];
+$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_BIRTHDATE					= $_POST['Architect_Administration_Account_BirthDate'];
 
 /*
  ============================================================================================================
@@ -2015,15 +2022,17 @@ echo ("
 	Create Your Administration Account:<BR>
 	It Is Recommended That You Use a Random Password Generator and Password Storage Application Such as KeePass Password Safe<BR>
 	Press or Click [&nbsp;<A HREF=\"https://KeePass.info/\" TITLE=\":: Open & Display The Official KeePass Password Safe Website ::\" TARGET=\"_NEW\">Here</A>&nbsp;] To Download and Install The KeePass Software Package ]<BR>
-	* <I>Administrator Electronic Mail Address</I>:<BR>
-	<INPUT TYPE=\"text\" NAME=\"Architect_Administrator_Account_Electronic_Mail_Address\" MAXLENGTH=\"100\"><BR>	
-	* <I>Administrator UserName</I>:<BR>
-	<INPUT TYPE=\"text\" NAME=\"Architect_Administrator_Account_UserName\" MAXLENGTH=\"50\"><BR><BR>
-	* <I>Administrator Password</I>:<BR>
+	* <I>Administration Account :: Electronic Mail Address</I>:<BR>
+	<INPUT TYPE=\"text\" NAME=\"Architect_Administration_Account_Electronic_Mail_Address\" MAXLENGTH=\"100\"><BR>	
+	* <I>Administration Account :: UserName</I>:<BR>
+	<INPUT TYPE=\"text\" NAME=\"Architect_Administration_Account_UserName\" MAXLENGTH=\"50\"><BR><BR>
+	* <I>Administration Account :: Password</I>:<BR>
 	[ Maximum Password Length: 50 Characters, Alpha-Numeric-Symbol ]<BR>
-	<INPUT TYPE=\"password\" NAME=\"Architect_Administrator_Account_Password_1\" MAXLENGTH=\"50\"><BR>
-	* <I>Administrator Password, Again</I>:<BR>
-	<INPUT TYPE=\"password\" NAME=\"Architect_Administrator_Account_Password_2\" MAXLENGTH=\"50\"><BR>
+	<INPUT TYPE=\"password\" NAME=\"Architect_Administration_Account_Password_1\" MAXLENGTH=\"50\"><BR>
+	* <I>Administration Account :: Password, Again</I>:<BR>
+	<INPUT TYPE=\"password\" NAME=\"Architect_Administration_Account_Password_2\" MAXLENGTH=\"50\"><BR>
+	* <I>Administration Account :: Birth Date</I>:<BR>
+	<INPUT TYPE=\"date\" NAME=\"Architect_Administration_Account_BirthDate\" MAXLENGTH=\"50\"><BR>
 	<INPUT TYPE=\"submit\" VALUE=\"Install Administrator\">
 	</FORM><BR>
 ");
@@ -2450,7 +2459,7 @@ member_username
 '00:00:00:00:00:00',
 '00:00:00:00:00:00',
 '0',
-'00-00-0000',
+'$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_BIRTHDATE',
 'Empty Entry :: CryptoCurrency :: BitCoin Address',
 'Empty Entry :: CryptoCurrency :: BitCoin Gold Address',
 'Empty Entry :: CryptoCurrency :: DodgeCoin Address',
@@ -2746,7 +2755,7 @@ member_username
 '00:00:00:00:00:00',
 '00:00:00:00:00:00',
 '0',
-'00-00-0000',
+'$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_BIRTHDATE',
 'Empty Entry :: CryptoCurrency :: BitCoin Address',
 'Empty Entry :: CryptoCurrency :: BitCoin Gold Address',
 'Empty Entry :: CryptoCurrency :: DodgeCoin Address',
