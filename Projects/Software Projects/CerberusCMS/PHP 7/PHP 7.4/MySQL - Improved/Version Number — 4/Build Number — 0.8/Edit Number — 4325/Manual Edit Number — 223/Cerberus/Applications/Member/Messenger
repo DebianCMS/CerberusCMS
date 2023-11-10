@@ -2805,7 +2805,6 @@ echo ("
 														[ Maximum Length: 5,000 Alpha-Numeric Characters ]<BR>
 															$_GLOBAL_PLUGIN_SYSTEM_TEXTEDITOR_BUTTONS<BR>
 															<TEXTAREA ROWS=\"10%\" COLS=\"80%\" MAXLENGTH=\"5000\" NAME=\"AMM_Messenger_P2P_Clear_Text_File_Messenger_Room_Message\" ID=\"WYSIWYG\">Write Messages Here...</TEXTAREA><BR>
-															<INPUT TYPE=\"hidden\" NAME=\"\" VALUE=\"\">
 														<INPUT TYPE=\"submit\" VALUE=\"Send Message\">
 													</FORM>
 													<BR><BR>
@@ -2813,13 +2812,19 @@ echo ("
 												Available Files :: <A HREF=\"\" TITLE=\":: Open & Display :: The File List For This P2P :: Clear-Text File :: Messenger Room \" TARGET=\"_NEW\">All</A><BR>
 												<OBJECT DATA=\"\" WIDTH=\"90%\" HEIGHT=\"150\"></OBJECT><BR><BR>
 
-													<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;\" METHOD=\"POST\" ENCTYPE=\"multipart/form-data\">
+													<FORM ACTION=\"./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;P2P&#61;Clear_Text&amp;MemberName&#61;$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME&amp;UploadFileSelection$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\" ENCTYPE=\"multipart/form-data\">
 														* <I>Upload Unique File To This P2P :: Clear-Text File :: Messenger Room</I>:<BR>
 														[ Permitted Files ]<BR>
 														* WAV, MP3, WMA, AAC, FLAC, OGG<BR>
 														<INPUT TYPE=\"file\" NAME=\"\" MAXLENGTH=\"100\"><BR>
-															<INPUT TYPE=\"hidden\" NAME=\"\" VALUE=\"\">
 														<INPUT TYPE=\"submit\" VALUE=\"Upload File\">
+													</FORM><BR><BR>
+
+													<FORM ACTION=\"./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;P2P&#61;Clear_Text&amp;MemberName&#61;$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME&amp;Delete$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\" ENCTYPE=\"multipart/form-data\">
+														* <I>Delete This P2P :: Clear-Text File :: Messenger Room</I>:<BR>
+														Type \"Delete\" In Order To Delete This Messenger Room<BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Messenger_P2P_Clear_Text_File_Messenger_Room_Delete\" MAXLENGTH=\"6\"><BR>
+														<INPUT TYPE=\"submit\" VALUE=\"Delete\">
 													</FORM><BR><BR>
 
 														* This P2P :: Clear-Text File :: Messenger Room :: Options :: Refreshes Upon Reload<BR>
