@@ -153,13 +153,13 @@ $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_File_Convers
 
 while ($_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array = $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File->fetch_array(MYSQLI_BOTH)) {
 
-$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_MESSAGE_ID					= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array['id'];
-$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_ROOM_CREATION_AUTHOR				= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array['messenger_room_creation_author'];
-$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_ROOM_CREATION_IP_ADDRESS			= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array['messenger_room_creation_internet_protocol_address'];
-$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_ROOM_CREATION_TIMESTAMP			= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array['messenger_room_creation_timestamp'];
-$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_ROOM_FILE_SIZE				= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array['messenger_room_file_size'];
-$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_ROOM_USERNAME_LOCAL				= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array['messenger_room_username_local'];
-$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_ROOM_USERNAME_REMOTE				= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array['messenger_room_username_remote'];
+$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_MESSAGE_ID				= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array['id'];
+$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_CREATION_AUTHOR				= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array['messenger_room_creation_author'];
+$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_CREATION_AUTHOR_DEVICE_IP_ADDRESS	= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array['messenger_room_creation_author_device_ip_address'];
+$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_CREATION_TIMESTAMP			= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array['messenger_room_creation_timestamp'];
+$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE				= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array['messenger_room_file_size'];
+$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_USERNAME_LOCAL				= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array['messenger_room_username_local'];
+$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_USERNAME_REMOTE				= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Fetch_Array['messenger_room_username_remote'];
 
 /*
  ============================================================================================================
@@ -175,7 +175,7 @@ if ($_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearTex
  ============================================================================================================
 */
 
-$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_ROOM_FILE_SIZE_PHYSICAL			= filesize("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_ROOM_USERNAME_REMOTE/Messenger.html");
+$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE_PHYSICAL			= hash_file('sha256', "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_USERNAME_REMOTE/Messenger.html");
 
 /*
  ============================================================================================================
@@ -184,7 +184,7 @@ $_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_ROOM_FILE_SIZE_PHYSIC
 */
 
 
-if ($_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_ROOM_FILE_SIZE_PHYSICAL > "$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_ROOM_FILE_SIZE") {
+if ($_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE_PHYSICAL != "$_Application_Module_Panel_Member_Panel_LIST_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE") {
 
 echo ("<AUDIO CONTROLS AUTOPLAY HIDDEN=\"TRUE\" SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Audio/Notifications/Messenger/Notification_Messenger_Message_New.$_GLOBAL_SYSTEM_SOUND_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_AUDIO_RANDOM_STRING_GENERATION\" TYPE=\"audio/mp3\"></AUDIO>");
 
