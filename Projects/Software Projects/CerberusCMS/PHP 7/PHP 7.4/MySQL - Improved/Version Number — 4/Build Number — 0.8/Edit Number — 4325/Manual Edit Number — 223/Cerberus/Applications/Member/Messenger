@@ -1500,7 +1500,7 @@ if (file_exists("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Applicatio
 */
 
 echo ("
-												<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;SelectedClearTextFile&#61;$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Instantly Reload This Visible Clear-Text File Messenger Room ::\">Visible Clear-Text File Messenger Room</A>: <I><A HREF=\"./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html?&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display This Visible Clear-Text Messenger Log ::\" TARGET=\"_NEW\">$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME</A></I><BR>
+												<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;SelectedClearTextFile&#61;$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Instantly Reload This Visible Clear-Text File Messenger Room ::\">Visible Clear-Text File Messenger Room</A>: <I><A HREF=\"./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display This Visible Clear-Text Messenger Log ::\" TARGET=\"_NEW\">$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME</A></I><BR>
 												<OBJECT DATA=\"./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_FILEINCLUSION_RANDOM_STRING_GENERATION\" WIDTH=\"100%\" HEIGHT=\"300\"></OBJECT><BR><BR>
 ");
 
@@ -2684,6 +2684,22 @@ unlink("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-
 **/
 } // [ + ] IF: Erase :: Registered Member Account :: P2P :: Messenger :: Clear-Text File :: Messenger Room
 
+if ($_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_DELETE == "Delete") {
+
+unlink("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Messenger.html");
+unlink("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Files.html");
+
+rmdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME");
+
+	header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&Display&#61;Options&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
+
+
+} else {
+/**
+ * Do Nothing
+**/
+} // [ + ] IF: Erase :: Registered Member Account :: P2P :: Messenger :: Clear-Text File :: Messenger Room
+
 /*
  ============================================================================================================
  + IF: File DOES NOT Exist: Remote :: Registered Member Account :: Current Registered Member Account UserName :: Clear-Text File :: Messenger File
@@ -2825,7 +2841,7 @@ echo ("
 												Available Files :: <A HREF=\"\" TITLE=\":: Open & Display :: The File List For This P2P :: Clear-Text File :: Messenger Room \" TARGET=\"_NEW\">All</A><BR>
 												<OBJECT DATA=\"\" WIDTH=\"90%\" HEIGHT=\"150\"></OBJECT><BR><BR>
 
-													<FORM ACTION=\"./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;P2P&#61;Clear_Text&amp;MemberName&#61;$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME&amp;UploadFileSelection$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\" ENCTYPE=\"multipart/form-data\">
+													<FORM ACTION=\"./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;P2P&#61;Clear_Text&amp;MemberName&#61;$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME&amp;UploadFileSelection&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\" ENCTYPE=\"multipart/form-data\">
 														* <I>Upload Unique File To This P2P :: Clear-Text File :: Messenger Room</I>:<BR>
 														[ Permitted Files ]<BR>
 														* WAV, MP3, WMA, AAC, FLAC, OGG<BR>
