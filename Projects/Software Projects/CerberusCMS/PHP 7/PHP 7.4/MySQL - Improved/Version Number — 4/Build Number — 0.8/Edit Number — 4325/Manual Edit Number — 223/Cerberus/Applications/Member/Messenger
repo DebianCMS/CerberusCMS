@@ -2647,7 +2647,7 @@ if ($_GET["P2P"] == "Clear_Text") {
  ============================================================================================================
 */
 
-$_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_MEMBERS					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members ORDER BY id ASC");
+$_Application_Module_Member_Messenger_P2P_ClearText_Messenger_File_DB_Query_SELECT_ALL_MEMBERS					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members ORDER BY id ASC");
 
 /*
  ============================================================================================================
@@ -2655,11 +2655,11 @@ $_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_MEMBERS					= $_GLOBAL
  ============================================================================================================
 */
 
-while ($_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_MEMBERS_Fetch_Array = $_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_MEMBERS->fetch_array(MYSQLI_BOTH)) {
+while ($_Application_Module_Member_Messenger_P2P_ClearText_Messenger_File_DB_Query_SELECT_ALL_MEMBERS_Fetch_Array = $_Application_Module_Member_Messenger_P2P_ClearText_Messenger_File_DB_Query_SELECT_ALL_MEMBERS->fetch_array(MYSQLI_BOTH)) {
 
-$_Application_Module_Member_Messenger_LIST_MEMBER_ID							= $_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_MEMBERS_Fetch_Array['id'];
-$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME						= $_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_MEMBERS_Fetch_Array['member_username'];
-$_Application_Module_Member_Messenger_LIST_MEMBER_SETTINGS_THEME_DIRECTORY				= $_Application_Module_Member_Messenger_DB_Query_SELECT_ALL_MEMBERS_Fetch_Array['member_settings_theme_directory'];
+$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_ID						= $_Application_Module_Member_Messenger_P2P_ClearText_Messenger_File_DB_Query_SELECT_ALL_MEMBERS_Fetch_Array['id'];
+$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME						= $_Application_Module_Member_Messenger_P2P_ClearText_Messenger_File_DB_Query_SELECT_ALL_MEMBERS_Fetch_Array['member_username'];
+$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_SETTINGS_THEME_DIRECTORY				= $_Application_Module_Member_Messenger_P2P_ClearText_Messenger_File_DB_Query_SELECT_ALL_MEMBERS_Fetch_Array['member_settings_theme_directory'];
 
 /*
  ============================================================================================================
@@ -2669,7 +2669,7 @@ $_Application_Module_Member_Messenger_LIST_MEMBER_SETTINGS_THEME_DIRECTORY				= 
  ============================================================================================================
 */
 
-if ($_GET["MemberName"] == "$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME") {
+if ($_GET["MemberName"] == "$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME") {
 
 /*
  ============================================================================================================
@@ -2677,18 +2677,18 @@ if ($_GET["MemberName"] == "$_Application_Module_Member_Messenger_LIST_MEMBER_US
  ============================================================================================================
 */
 
-if (!file_exists("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html")) {
+if (!file_exists("./Member/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html")) {
 
-echo ("* Messenger: Clear-Text Messenger File Cannot Be Found In P2P Directory: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messsenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html -- Automatically Creating Directory... Wait.<BR>");
+echo ("* Messenger: Clear-Text Messenger File Cannot Be Found In P2P Directory: ./Member/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Files/Document/Messsenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html -- Automatically Creating Directory... Wait.<BR>");
 
-mkdir("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text");
-mkdir("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME");
+mkdir("./Member/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text");
+mkdir("./Member/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME");
 
 echo ("[ Done ]<BR><BR>");
 
-echo ("* Messenger: Creating P2P Clear-Text Messenger File For: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME ... Wait.<BR>");
+echo ("* Messenger: Creating P2P Clear-Text Messenger File For: ./Member/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME ... Wait.<BR>");
 
-$_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME 	= fopen("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "a");
+$_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME				= fopen("./Member/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "a");
 
 /*
  ============================================================================================================
@@ -2696,11 +2696,11 @@ $_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_
  ============================================================================================================
 */
 
-if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME, "<LINK REL=\"stylesheet\" HREF=\"../../../../../../../Theme/$_Application_Module_Member_Messenger_LIST_MEMBER_SETTINGS_THEME_DIRECTORY/Style_Sheet/Style.css\" TYPE=\"text/css\"><BODY ONLOAD=\"window.scrollTo(0,document.body.scrollHeight);\">")) {
+if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME, "<LINK REL=\"stylesheet\" HREF=\"../../../../../../../Theme/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_SETTINGS_THEME_DIRECTORY/Style_Sheet/Style.css\" TYPE=\"text/css\"><BODY ONLOAD=\"window.scrollTo(0,document.body.scrollHeight);\">")) {
 
 echo ("[ Done ]<BR><BR>");
 
-echo ("* Messenger: Creating P2P Clear-Text Messenger Database Entry: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME ... Wait.<BR>");
+echo ("* Messenger: Creating P2P Clear-Text Messenger Database Entry: ./Member/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME ... Wait.<BR>");
 
 /*
  ============================================================================================================
@@ -2708,7 +2708,7 @@ echo ("* Messenger: Creating P2P Clear-Text Messenger Database Entry: ./Member/$
  ============================================================================================================
 */
 
-$filesize		= filesize("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html");
+$_Application_Module_Member_Messenger_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE						= hash_file('sha256', "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Messenger.html");
 
 $_Application_Module_Member_Messenger_DB_Query_INSERT_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_p2p_clear_text_file_room(
 messenger_room_creation_author,
@@ -2721,26 +2721,26 @@ messenger_room_username_remote
 '$_GLOBAL_COOKIE_MEMBER_USERNAME',
 '$_GLOBAL_REMOTE_SERVER_ADDRESS',
 '$_GLOBAL_LOCAL_SERVER_DATE_STANDARD',
-'$filesize',
+'$_Application_Module_Member_Messenger_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE',
 '$_GLOBAL_COOKIE_MEMBER_USERNAME',
-'$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME'
+'$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME'
 )");
 
 if ($_Application_Module_Member_Messenger_DB_Query_INSERT_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME) {
+/**
+ * Do Nothing
+*/
+} else {
+/**
+ * Do Nothing
+*/
+} // [ + ] IF:
 
-echo ("Inserted..");
+	header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&P2P=Clear_Text&MemberName=$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
 
 } else {
 
-echo ("Error..");
-
-}
-
-	header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&P2P=Clear_Text&MemberName=$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
-
-} else {
-
-echo ("* Messenger: Cannot Create Clear-Text Messenger File In P2P Directory: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html<BR>");
+echo ("* Messenger: Cannot Create Clear-Text Messenger File In P2P Directory: ./Member/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html<BR>");
 
 } // [ + ] IF: FWRITE: This Registered Member Account :: Files :: Document :: Messenger :: Clear-Text :: Current Registered Member Account UserName :: Messenger File
 
@@ -2752,18 +2752,18 @@ echo ("* Messenger: Cannot Create Clear-Text Messenger File In P2P Directory: ./
  ============================================================================================================
 */
 
-if (!file_exists("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html")) {
+if (!file_exists("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Messenger.html")) {
 
-echo ("* Messenger: Clear-Text Messenger File Cannot Be Found: ./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messsenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html -- Automatically Creating Directory... Wait.<BR>");
+echo ("* Messenger: Clear-Text Messenger File Cannot Be Found: ./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messsenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Messenger.html -- Automatically Creating Directory... Wait.<BR>");
 
 mkdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text");
-mkdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME");
+mkdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME");
 
 echo ("[ Done ]<BR><BR>");
 
-echo ("* Messenger: Creating Clear-Text Messenger File For: ./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME ... Wait.<BR>");
+echo ("* Messenger: Creating Clear-Text Messenger File For: ./Member/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME ... Wait.<BR>");
 
-$_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME	= fopen("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html", "a");
+$_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME	= fopen("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Messenger.html", "a");
 
 /*
  ============================================================================================================
@@ -2775,7 +2775,7 @@ if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSEN
 
 echo ("[ Done ]<BR><BR>");
 
-	header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&P2P=Clear_Text&MemberName=$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
+	header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&P2P=Clear_Text&MemberName=$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
 
 } else {
 
@@ -2791,14 +2791,16 @@ echo ("* Messenger: Cannot Create Clear-Text Messenger File: ./Member/$_GLOBAL_C
  =============================================================================================================
 */
 
+$_Application_Module_Member_Messenger_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE			= hash_file('sha256', "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Messenger.html");
+
 if (!$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE) {
 
 echo ("
 
-												<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;\" TITLE=\":: Instantly Reload This P2P :: Clear-Text File :: Messenger Room ::\">P2P :: Clear-Text :: Instant Messenger Conversation With</A>: <I><A HREF=\"./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html\" TITLE=\":: Open & Display :: This :: P2P :: Clear-Text File :: Messenger Room Log File ::\" TARGET=\"_NEW\">$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME</A></I><BR>
-												<OBJECT DATA=\"./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html\" WIDTH=\"100%\" HEIGHT=\"300\"></OBJECT><BR><BR>
+												<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;\" TITLE=\":: Instantly Reload This P2P :: Clear-Text File :: Messenger Room ::\">P2P :: Clear-Text :: Instant Messenger Conversation With</A>: <I><A HREF=\"./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Messenger.html\" TITLE=\":: Open & Display :: This :: P2P :: Clear-Text File :: Messenger Room Log File ::\" TARGET=\"_NEW\">$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME</A></I><BR>
+												<OBJECT DATA=\"./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Messenger.html\" WIDTH=\"100%\" HEIGHT=\"300\"></OBJECT><BR><BR>
 
-													<FORM ACTION=\"./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;P2P&#61;Clear_Text&amp;MemberName&#61;$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\">
+													<FORM ACTION=\"./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;P2P&#61;Clear_Text&amp;MemberName&#61;$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\">
 														* <I>Short or Extensive Message</I>:<BR>
 														[ Maximum Length: 5,000 Alpha-Numeric Characters ]<BR>
 															$_GLOBAL_PLUGIN_SYSTEM_TEXTEDITOR_BUTTONS<BR>
@@ -2820,23 +2822,25 @@ echo ("
 														<INPUT TYPE=\"submit\" VALUE=\"Upload File\">
 													</FORM><BR><BR>
 
-														* This P2P :: Clear-Text File :: Messenger Room Refreshes Upon Reload<BR>
-														* This P2P :: Clear-Text File :: Messenger Room Name Is: <I></I><BR>
-														* This P2P :: Clear-Text File :: Messenger Room Was Created By: <I></I><BR>
-														* This P2P :: Clear-Text File :: Messenger Room Was Created On: <I></I>
-
-<audio controls autoplay hidden=\"true\" src=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Audio/Notifications/Messenger/Notification_Messenger_Message_Send.$_GLOBAL_SYSTEM_SOUND_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_AUDIO_RANDOM_STRING_GENERATION\" type =\"audio/mp3\"></audio>
+														* This P2P :: Clear-Text File :: Messenger Room :: Options :: Refreshes Upon Reload<BR>
+														* This P2P :: Clear-Text File :: Messenger Room :: Secure-Hash-Algorithm, 256: $_Application_Module_Member_Messenger_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE<BR>
+														<AUDIO CONTROLS AUTOPLAY HIDDEN=\"TRUE\" SRC=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Audio/Notifications/Messenger/Notification_Messenger_Message_Send.$_GLOBAL_SYSTEM_SOUND_EXTENSION?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_AUDIO_RANDOM_STRING_GENERATION\" TYPE=\"audio/mp3\"></AUDIO>
 ");
 
-$filesize		= filesize("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html");
-
-$_Application_Module_Messenger_DB_Query_UPDATE_MESSENGER_P2P_CLEAR_TEXT					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_p2p_clear_text_file_room SET messenger_room_file_size='$filesize' WHERE id='$_Application_Module_Member_Messenger_LIST_MEMBER_ID'");
+$_Application_Module_Messenger_DB_Query_UPDATE_MESSENGER_P2P_CLEAR_TEXT					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_p2p_clear_text_file_room SET 
+messenger_room_file_size='$_Application_Module_Member_Messenger_MESSENGER_P2P_CLEARTEXT_FILE_ROOM_FILE_SIZE' 
+WHERE messenger_room_username_local='$_GLOBAL_COOKIE_MEMBER_USERNAME' AND messenger_room_username_remote='$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME'
+");
 
 if ($_Application_Module_Messenger_DB_Query_UPDATE_MESSENGER_P2P_CLEAR_TEXT) {
-
+/**
+ * Do Nothing
+*/
 } else {
-
-}
+/**
+ * Do Nothing
+*/
+} // [ + ] IF:
 
 } else {
 
@@ -2849,19 +2853,19 @@ This Clear-Text Message Was Sent :: Date :: Standard :: Server :: Local: $_GLOBA
 This Clear-Text Message Was Sent :: Date :: Epoch :: Server :: Local: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
 ";
 
-$_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME	= fopen("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Messenger.html", "a");
+$_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME	= fopen("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Messenger.html", "a");
 
 fwrite($_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME, "$_Application_Module_Member_Messenger_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE");
 
-$_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME	= fopen("./Member/$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "a");
+$_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME	= fopen("./Member/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_GLOBAL_COOKIE_MEMBER_USERNAME/Messenger.html", "a");
 
 fwrite($_Application_Module_Member_Messenger_FIND_WRITE_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME, "$_Application_Module_Member_Messenger_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE");
 
-	header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&P2P=Clear_Text&MemberName=$_Application_Module_Member_Messenger_LIST_MEMBER_USERNAME&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
+	header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&P2P=Clear_Text&MemberName=$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_USERNAME&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
 
 } // [ + ] IF: Internal Application: P2P :: Clear-Text File :: Messenger :: Input Form Variables HAVE NOT Executed
 	
-} // [ + ] IF: File DOES NOT Exist: This Registered Member Account :: Document :: Messenger :: Non-Encrypted :: Current Registered Member Account UserName :: Messenger File
+} // [ + ] IF: File DOES NOT Exist: This Registered Member Account :: Document :: Messenger :: Clear-Text :: Current Registered Member Account UserName :: Messenger File
 
 } // [ + ] WHILE: Retrieving :: All :: Registered Member Account :: Entries :: From The Database Management System Server Database
 
