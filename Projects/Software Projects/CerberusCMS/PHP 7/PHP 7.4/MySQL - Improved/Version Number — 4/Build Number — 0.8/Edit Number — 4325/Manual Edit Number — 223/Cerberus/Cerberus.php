@@ -1323,7 +1323,7 @@ $_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_INTEGRITY								= "./System/Services/Integ
 
 if (file_exists($_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_INTEGRITY)) {
 
-	include_once "$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_INTEGRITY";
+	//include_once "$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_INTEGRITY";
 
 } else {
 
@@ -4732,6 +4732,22 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 */
 
 	include_once "./System/Plug-Ins/Text-Editor/$_GLOBAL_SYSTEM_PLUGIN_TEXT_EDITOR_DIRECTORY/Text-Editor.$_INTERNAL_FILE_EXTENSION";
+
+/*
+ ============================================================================================================
+ +
+ + Plug-In :: Notifications
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Plug-In :: Notifications :: Application Module Plug-In
+ ============================================================================================================
+*/
+
+	include_once "./System/Plug-Ins/Notifications/Default/Notifications.$_INTERNAL_FILE_EXTENSION";
 
 /*
  ============================================================================================================
