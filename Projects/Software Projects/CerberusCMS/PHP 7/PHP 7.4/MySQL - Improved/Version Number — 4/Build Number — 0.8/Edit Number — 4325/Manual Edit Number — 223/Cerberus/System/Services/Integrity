@@ -90,7 +90,7 @@ $_System_Application_Integrity_Check_File_Kernel_Integrity					= hash_file('sha2
 
 /*
  ============================================================================================================
- + Database Server Query :: Retrieve :: All :: Applcication Module Entries :: Background-Level Applications
+ + Database Server Query :: Retrieve :: All :: Applcication Entries :: Kernel
  ============================================================================================================
 */
 
@@ -149,7 +149,93 @@ unlink($_INTERNAL_FILE_KERNEL);
  ============================================================================================================
 */
 
-copy("./System/Kernel/Backup/Kernel_Installation.kernel","$_INTERNAL_FILE_KERNEL");
+copy("./System/Kernel/Backup/Kernel_Installation.kernel","./$_INTERNAL_FILE_KERNEL");
 
 } // [ + ] IF: Integrity :: Kernel :: File :: Integrity DOES NOT MATCH File Integrity In The Database Management System Server Database
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Integrity :: Kernel :: Check Current Kernel For File Size Integrity
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Database Server Query :: Retrieve :: All :: Applcication Module Entries :: Administration Applications
+ ============================================================================================================
+*/
+
+$_System_Application_Integrity_DB_Query_List_Applications_Administration			= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications_administration");
+
+
+while ($_System_Application_Integrity_DB_Query_List_Applications_Administration_Fetch_Array = $_System_Application_Integrity_DB_Query_List_Applications_Administration->fetch_array(MYSQLI_BOTH)) {
+
+/*
+ ============================================================================================================
+ + Retrieve :: Database Management System Server Database Entries :: Applications :: Administration
+ ============================================================================================================
+*/
+
+$_System_Application_Integrity_LIST_APPLICATIONS_ADMINISTRATION_ENTRY_ID			= $_System_Application_Integrity_DB_Query_List_Applications_Administration_Fetch_Array['id'];
+$_System_Application_Integrity_LIST_APPLICATIONS_ADMINISTRATION_FILE_DATE_INSTALLATION		= $_System_Application_Integrity_DB_Query_List_Applications_Administration_Fetch_Array['application_file_date_installation'];
+$_System_Application_Integrity_LIST_APPLICATIONS_ADMINISTRATION_FILE_INTEGRITY			= $_System_Application_Integrity_DB_Query_List_Applications_Administration_Fetch_Array['application_file_integrity'];
+$_System_Application_Integrity_LIST_APPLICATIONS_ADMINISTRATION_FILE_NAME			= $_System_Application_Integrity_DB_Query_List_Applications_Administration_Fetch_Array['application_file_name'];
+$_System_Application_Integrity_LIST_APPLICATIONS_ADMINISTRATION_FILE_VERSION			= $_System_Application_Integrity_DB_Query_List_Applications_Administration_Fetch_Array['application_file_version'];
+
+/*
+ ============================================================================================================
+ + Retrieve :: Physical :: Files :: Application :: Administration :: Integrity
+ ============================================================================================================
+*/
+
+$_System_Application_Integrity_Find_File_Application_Administration				= "./Applications/Administration/$_System_Application_Integrity_LIST_APPLICATIONS_ADMINISTRATION_FILE_NAME";
+$_System_Application_Integrity_Check_File_Application_Administration				= hash_file('sha256', "./Applications/Administration/$_System_Application_Integrity_LIST_APPLICATIONS_ADMINISTRATION_FILE_NAME");
+
+/*
+ ============================================================================================================
+ + IF: Integrity :: Application :: Administration :: File Integrity DOES NOT MATCH File Integrity In The Database Entry
+ ============================================================================================================
+*/
+
+if ("$_System_Application_Integrity_LIST_APPLICATIONS_ADMINISTRATION_FILE_INTEGRITY" != "$_System_Application_Integrity_LIST_APPLICATIONS_ADMINISTRATION_FILE_INTEGRITY") {
+
+/*
+ ============================================================================================================
+ + Unlink :: Physical :: File :: Application :: Administration
+ ============================================================================================================
+*/
+
+unlink($_System_Application_Integrity_Find_File_Application_Administration);
+
+/*
+ ============================================================================================================
+ + Copy :: Zero File :: To :: Data Storage Medium Space
+ ============================================================================================================
+*/
+
+copy("./System/Plug-Ins/Secure-Delete/Default/Zero_5MB","$_System_Application_Integrity_Find_File_Application_Administration");
+
+/*
+ ============================================================================================================
+ + Unlink :: Physical :: File :: Zero File
+ ============================================================================================================
+*/
+
+unlink($_System_Application_Integrity_Find_File_Application_Administration);
+
+/*
+ ============================================================================================================
+ + Copy AND Flash :: File :: Kernel :: Installation Kernel File
+ ============================================================================================================
+*/
+
+copy("./System/Security/Integrity/Backup/Applications/Administration/$_System_Application_Integrity_LIST_APPLICATIONS_ADMINISTRATION_FILE_NAME","./Applications/Administration/$_System_Application_Integrity_LIST_APPLICATIONS_ADMINISTRATION_FILE_NAME");
+
+} // [ + ] WHILE:
+
+} // [ + ] IF: Integrity :: Application :: Administration :: Integrity DOES NOT MATCH File Integrity In The Database Management System Server Database
 ?>

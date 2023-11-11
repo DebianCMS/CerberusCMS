@@ -56,29 +56,4 @@
  ============================================================================================================
 */
 
-$_Application_Module_PlugIn_Notifications_DB_Query_List_Messenger_P2P					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_p2p_clear_text_file_room WHERE messenger_room_username_local='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
-$_Application_Module_PlugIn_Notifications_DB_Query_List_Messenger_P2P_Number_Of_Rows			= $_Application_Module_PlugIn_Notifications_DB_Query_List_Messenger_P2P->num_rows;
-
-while ($_Application_Module_PlugIn_Notifications_DB_Query_List_Messenger_P2P_Fetch_Array = $_Application_Module_PlugIn_Notifications_DB_Query_List_Messenger_P2P->fetch_array(MYSQLI_BOTH)) {
-
-$_Application_Module_PlugIn_Notifications_LIST_MESSENGER_P2P_MESSAGE_ID					= $_Application_Module_PlugIn_Notifications_DB_Query_List_Messenger_P2P_Fetch_Array['id'];
-$_Application_Module_PlugIn_Notifications_LIST_MESSENGER_P2P_MESSAGE_MESSENGER_ROOM_CREATION_AUTHOR	= $_Application_Module_PlugIn_Notifications_DB_Query_List_Messenger_P2P_Fetch_Array['messenger_room_creation_author'];
-$_Application_Module_PlugIn_Notifications_LIST_MESSENGER_P2P_MESSAGE_MESSENGER_ROOM_CREATION_IP_ADDRESS	= $_Application_Module_PlugIn_Notifications_DB_Query_List_Messenger_P2P_Fetch_Array['messenger_room_creation_internet_protocol_address'];
-$_Application_Module_PlugIn_Notifications_LIST_MESSENGER_P2P_MESSAGE_MESSENGER_ROOM_CREATION_TIMESTAMP	= $_Application_Module_PlugIn_Notifications_DB_Query_List_Messenger_P2P_Fetch_Array['messenger_room_creation_timestamp'];
-$_Application_Module_PlugIn_Notifications_LIST_MESSENGER_P2P_MESSAGE_MESSENGER_ROOM_FILE_SIZE		= $_Application_Module_PlugIn_Notifications_DB_Query_List_Messenger_P2P_Fetch_Array['messenger_room_file_size'];
-$_Application_Module_PlugIn_Notifications_LIST_MESSENGER_P2P_MESSAGE_MESSENGER_ROOM_USERNAME_LOCAL	= $_Application_Module_PlugIn_Notifications_DB_Query_List_Messenger_P2P_Fetch_Array['messenger_room_username_local'];
-$_Application_Module_PlugIn_Notifications_LIST_MESSENGER_P2P_MESSAGE_MESSENGER_ROOM_USERNAME_REMOTE	= $_Application_Module_PlugIn_Notifications_DB_Query_List_Messenger_P2P_Fetch_Array['messenger_room_username_remote'];
-
-if ($_Application_Module_PlugIn_Notifications_DB_Query_List_Messenger_P2P_Number_Of_Rows >= 1) {
-
-if (file_size("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Document/Messenger/Clear-Text/$_Application_Module_PlugIn_Notifications_LIST_MESSENGER_P2P_MESSAGE_MESSENGER_ROOM_USERNAME_REMOTE/Messenger.html") > "$_Application_Module_PlugIn_Notifications_LIST_MESSENGER_P2P_MESSAGE_MESSENGER_ROOM_FILE_SIZE") {
-
-echo ("<audio controls autoplay hidden=\"true\" src=\"./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Audio/Notifications/Messenger/Notification_Messenger_Message_New.$_GLOBAL_SYSTEM_SOUND_EXTENSION\" type =\"audio/mp3\"></audio>");
-
-}
-
-}
-
-}
-
 ?>
