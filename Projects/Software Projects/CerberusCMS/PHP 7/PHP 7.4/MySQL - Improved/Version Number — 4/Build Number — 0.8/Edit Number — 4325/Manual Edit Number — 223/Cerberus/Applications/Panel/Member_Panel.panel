@@ -134,17 +134,8 @@ $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_Fi
  ============================================================================================================
 */
 
-$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_Encrypted_File					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_p2p_clear_text_file_room WHERE messenger_room_username_local='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
-$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_Encrypted_File_Number_Of_Rows			= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File->num_rows;
-
-/*
- ============================================================================================================
- + Calculate :: Total Number of Conversations :: Messenger File
- ============================================================================================================
-*/
-
-$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_File_Conversations_Total				= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Number_Of_Rows + $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_Encrypted_File_Number_Of_Rows;
-
+$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_Encrypted_File					= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_messenger_p2p_encrypted_text_file_room WHERE messenger_room_username_local='$_GLOBAL_COOKIE_MEMBER_USERNAME'");
+$_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_Encrypted_File_Number_Of_Rows			= $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_Encrypted_File->num_rows;
 /*
  ============================================================================================================
  + Detect: File Size :: Registered Member Account :: Messenger :: P2P :: Clear-Text :: Messenger Room File
@@ -179,7 +170,7 @@ if ($_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearTex
 
 /*
  ============================================================================================================
- + IF: Registered Member Account :: Messenger :: P2P :: Clear-Text :: Messenger File Size :: Is: Greater Than: Stored File Size
+ + IF: Registered Member Account :: Messenger :: P2P :: Clear-Text :: Messenger File Size :: Is: Equal To: Stored File Size
  ============================================================================================================
 */
 
@@ -224,7 +215,8 @@ echo ("
 
 											<B><A TITLE=\":: Quick :: Messaging :: Application Modules ::\">Quick :: Messages</B><HR>
 												<B>&middot;</B>&nbsp;<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;Display&#61;MessengerOptions&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Application Module :: Instant Messenger ::\">Instant Messenger</A><BR>
-												<B>&middot;</B>&nbsp;[ $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_File_Conversations_Total ] <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;Display&#61;Conversations&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION ::\" TITLE=\":: Open & Display :: The Application Module :: Instant Messenger :: Conversations ::\">Conversations</A><BR>
+												<B>&middot;</B>&nbsp;[ $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_ClearText_File_Number_Of_Rows ] <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;Display&#61;Conversations&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION ::\" TITLE=\":: Open & Display :: The Application Module :: Instant Messenger :: Conversations ::\">Conversations :: Clear-Text</A><BR>
+												<B>&middot;</B>&nbsp;[ $_Application_Module_Panel_Member_Panel_DB_Query_List_Messenger_P2P_Encrypted_File_Number_Of_Rows ] <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;Display&#61;Conversations&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION ::\" TITLE=\":: Open & Display :: The Application Module :: Instant Messenger :: Conversations ::\">Conversations :: Encrypted</A><BR>
 												<B>&middot;</B>&nbsp;[ $_Application_Module_Panel_Member_Panel_DB_Query_SELECT_SYSTEM_MESSAGE_Number_Of_Rows ] <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;System_Message&amp;Message&#61;AdministratorNotification&amp;MessageContents&#61;$_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_DATA\" TITLE=\":: Open & Display :: The Application Module :: System Messages :: $_Application_Module_Panel_Member_Panel_LIST_SYSTEM_MESSAGE_DATA ::\">System Messages</A>
 											<BR><BR>
 
