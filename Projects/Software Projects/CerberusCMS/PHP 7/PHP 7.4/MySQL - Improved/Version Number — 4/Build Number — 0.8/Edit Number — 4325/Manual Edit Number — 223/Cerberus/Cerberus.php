@@ -17,7 +17,7 @@
  +  ------
  + Kernel File
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Master Root Directory => Root Directory => Cerberus.php
+ + - This File, Location	 : Master Root Directory => Root Directory => Kernel
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -41,6 +41,20 @@
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Build Number: 0.8 - Final
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Edit Number : 4,325
  ============================================================================================================
+*/
+
+/*
+-============================================================================================================
+-+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~()~~~~~~~~~~~~~~~~~~~~
+-+---()-----()-()--()()()--()()()--()()()--()()()--()--------------------------------()--()------------------
+-+-()--()---()()---()------()--()--()--()--()------()----------------------------------()--------------------
+-+---()-----()-----()()----()()()--()--()--()()----()--------------------------------------------------------
+-+----------()()---()------()()----()--()--()------()-----------------------/-\------------------------------
+-+----------()-()--()()()--()--()--()--()--()()()--()()()-------------------|4|------------------------------
+-+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Version~Number~\~/~~~~~~~~Build~Number:~4.08.250
+-+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Edit~Number~:~250~~~~
+-============================================================================================================
 */
 
 /*
@@ -86,7 +100,7 @@
  +
  +
  +
- + [ ^ ] Cerberus Content Management System :: Kernel and Index File
+ + [ ^ ] Root :: Kernel and Index File
  +
  +
  +
@@ -3903,11 +3917,17 @@ Registered Member Account
 ---------------------------------------------------------------------------------------
 Timestamps
 ---------------------------------------------------------------------------------------
+Server :: Local
+* Timestamp :: Authentication :: Server :: Local :: MicroTime: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
 * Timestamp :: Authentication :: Server :: Local :: Standard Time: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
+* Timestamp :: Authentication :: Server :: Local :: Unix-Epoch Time :: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+
+Server :: Remote
+* Timestamp :: Authentication :: Server :: Remote :: MicroTime: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
 * Timestamp :: Authentication :: Server :: Remote :: Standard Time: $_GLOBAL_REMOTE_SERVER_DATE_STANDARD
-* Timestamp :: Authentication :: Server :: Local :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
-* Timestamp :: Authentication :: Server :: Remote :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
-* Timestamp :: Authentication :: Server :: Local :: Unix :: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+* Timestamp :: Authentication :: Server :: Local :: Unix-Epoch Time :: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+
+Server :: Security :: Digital Fingerprint
 * Timestamp :: Digital Fingerprint :: Timestamp HASH: $_Kernel_Member_Account_Authentication_Log_Private_TIMESTAMP_HASH
 ---------------------------------------------------------------------------------------
 
@@ -3928,10 +3948,13 @@ $_GLOBAL_MEMBER_SECURITY_FINGERPRINT_HASHED
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Device :: Details :: Internet Protocol Addresses
+Device :: Details :: Connection Information
 ---------------------------------------------------------------------------------------
+Server :: Local :: Internet Protocol Addresses
 * Internet Protocol Address :: Server :: Remote: $_GLOBAL_REMOTE_SERVER_ADDRESS
 * Internet Protocol Address :: Server :: Remote :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT
+
+Server :: Remote :: Internet Protocol Addresses
 * Internet Protocol Address :: Server :: Local: $_GLOBAL_LOCAL_SERVER_ADDRESS
 * Internet Protocol Address :: Server :: Local :: Connecting Port Number: $_GLOBAL_LOCAL_SERVER_PORT
 ---------------------------------------------------------------------------------------
@@ -3939,11 +3962,18 @@ Device :: Details :: Internet Protocol Addresses
 ---------------------------------------------------------------------------------------
 Device :: Details :: Location
 ---------------------------------------------------------------------------------------
-* Device :: Location :: From H.T.M.L. :: Global-Positioning-Coordinates In: X, Y, Z ::
-* Device :: Location :: From P.H.P. :: Global-Positioning-Coordinates In: X, Y, Z ::
+Global Positioning System Coordinates
+* Device :: Location :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Device :: Location :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+
+Geographical Localization of Objects
 * Device :: Location :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+
+Timezone
 * Device :: Location :: Timezone :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_LOCAL
 * Device :: Location :: Timezone :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
+
+Region
 * Device :: Location :: Region :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
 * Device :: Location :: Region :: Server :: Remote :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
 ---------------------------------------------------------------------------------------
@@ -3978,11 +4008,17 @@ Registered Member Account
 ---------------------------------------------------------------------------------------
 Timestamps
 ---------------------------------------------------------------------------------------
+Server :: Local :: Timestamp
+* Timestamp :: Authentication :: Server :: Local :: MicroTime: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
 * Timestamp :: Authentication :: Server :: Local :: Standard Time: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
+* Timestamp :: Authentication :: Server :: Local :: Unix-Epoch Time :: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+
+Server :: Remote :: Timestamp
+* Timestamp :: Authentication :: Server :: Remote :: MicroTime: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
 * Timestamp :: Authentication :: Server :: Remote :: Standard Time: $_GLOBAL_REMOTE_SERVER_DATE_STANDARD
-* Timestamp :: Authentication :: Server :: Local :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
-* Timestamp :: Authentication :: Server :: Remote :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
-* Timestamp :: Authentication :: Server :: Local :: Unix :: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+* Timestamp :: Authentication :: Server :: Local :: Unix-Epoch Time :: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+
+Server :: Security :: Digital Fingerprint
 * Timestamp :: Digital Fingerprint :: Timestamp HASH: $_Kernel_Member_Account_Authentication_Log_Private_TIMESTAMP_HASH
 ---------------------------------------------------------------------------------------
 
@@ -4003,10 +4039,13 @@ $_GLOBAL_MEMBER_SECURITY_FINGERPRINT_HASHED
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Device :: Details :: Internet Protocol Addresses
+Device :: Details :: Connection Information
 ---------------------------------------------------------------------------------------
+Server :: Local :: Internet Protocol Addresses
 * Internet Protocol Address :: Server :: Remote: $_GLOBAL_REMOTE_SERVER_ADDRESS
 * Internet Protocol Address :: Server :: Remote :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT
+
+Server :: Remote :: Internet Protocol Addresses
 * Internet Protocol Address :: Server :: Local: $_GLOBAL_LOCAL_SERVER_ADDRESS
 * Internet Protocol Address :: Server :: Local :: Connecting Port Number: $_GLOBAL_LOCAL_SERVER_PORT
 ---------------------------------------------------------------------------------------
@@ -4014,11 +4053,18 @@ Device :: Details :: Internet Protocol Addresses
 ---------------------------------------------------------------------------------------
 Device :: Details :: Location
 ---------------------------------------------------------------------------------------
-* Device :: Location :: From H.T.M.L. :: Global-Positioning-Coordinates In: X, Y, Z ::
-* Device :: Location :: From P.H.P. :: Global-Positioning-Coordinates In: X, Y, Z ::
+Global Positioning System Coordinates
+* Device :: Location :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Device :: Location :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+
+Geographical Localization of Objects
 * Device :: Location :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+
+Timezone
 * Device :: Location :: Timezone :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_LOCAL
 * Device :: Location :: Timezone :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
+
+Region
 * Device :: Location :: Region :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
 * Device :: Location :: Region :: Server :: Remote :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
 ---------------------------------------------------------------------------------------
@@ -4125,11 +4171,17 @@ Input :: Credentials
 ---------------------------------------------------------------------------------------
 Timestamps
 ---------------------------------------------------------------------------------------
+Server :: Local
+* Timestamp :: Authentication :: Server :: Local :: MicroTime: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
 * Timestamp :: Authentication :: Server :: Local :: Standard Time: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
+* Timestamp :: Authentication :: Server :: Local :: Unix-Epoch Time :: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+
+Server :: Remote
+* Timestamp :: Authentication :: Server :: Remote :: MicroTime: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
 * Timestamp :: Authentication :: Server :: Remote :: Standard Time: $_GLOBAL_REMOTE_SERVER_DATE_STANDARD
-* Timestamp :: Authentication :: Server :: Local :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
-* Timestamp :: Authentication :: Server :: Remote :: Micro Time: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
-* Timestamp :: Authentication :: Server :: Local :: Unix :: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+* Timestamp :: Authentication :: Server :: Local :: Unix-Epoch Time :: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+
+Server :: Security :: Digital Fingerprint
 * Timestamp :: Digital Fingerprint :: Timestamp HASH: $_Kernel_Member_Account_Authentication_Log_Private_TIMESTAMP_HASH
 ---------------------------------------------------------------------------------------
 
@@ -4150,10 +4202,13 @@ $_GLOBAL_MEMBER_SECURITY_FINGERPRINT_HASHED
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Device :: Details :: Internet Protocol Addresses
+Device :: Details :: Connection Information
 ---------------------------------------------------------------------------------------
+Server :: Local :: Internet Protocol Addresses
 * Internet Protocol Address :: Server :: Remote: $_GLOBAL_REMOTE_SERVER_ADDRESS
 * Internet Protocol Address :: Server :: Remote :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT
+
+Server :: Remote :: Internet Protocol Addresses
 * Internet Protocol Address :: Server :: Local: $_GLOBAL_LOCAL_SERVER_ADDRESS
 * Internet Protocol Address :: Server :: Local :: Connecting Port Number: $_GLOBAL_LOCAL_SERVER_PORT
 ---------------------------------------------------------------------------------------
@@ -4161,10 +4216,18 @@ Device :: Details :: Internet Protocol Addresses
 ---------------------------------------------------------------------------------------
 Device :: Details :: Location
 ---------------------------------------------------------------------------------------
-* Device :: Location :: Global-Positioning-Coordinates In: X, Y, Z :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GPS
+Global Positioning System Coordinates
+* Device :: Location :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Device :: Location :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+
+Geographical Localization of Objects
 * Device :: Location :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+
+Timezone
 * Device :: Location :: Timezone :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_LOCAL
 * Device :: Location :: Timezone :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
+
+Region
 * Device :: Location :: Region :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
 * Device :: Location :: Region :: Server :: Remote :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
 ---------------------------------------------------------------------------------------
@@ -4366,11 +4429,20 @@ Registered Member Account
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Timestamp
+Timestamps
 ---------------------------------------------------------------------------------------
+Server :: Local
+* Timestamp :: De-Authentication :: Server :: Local :: MicroTime: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
+* Timestamp :: De-Authentication :: Server :: Local :: Standard Time: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
+* Timestamp :: De-Authentication :: Server :: Local :: Unix-Epoch Time :: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+
+Server :: Remote
+* Timestamp :: De-Authentication :: Server :: Remote :: MicroTime: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
+* Timestamp :: De-Authentication :: Server :: Remote :: Standard Time: $_GLOBAL_REMOTE_SERVER_DATE_STANDARD
+* Timestamp :: De-Authentication :: Server :: Local :: Unix-Epoch Time :: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+
+Server :: Security :: Digital Fingerprint
 * Timestamp :: Digital Fingerprint :: Timestamp HASH: $_Kernel_Member_Account_Authentication_Log_Private_TIMESTAMP_HASH
-* Timestamp :: Authentication From The Local Server: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
-* Timestamp :: Authentication From The Remote Server: $_GLOBAL_REMOTE_SERVER_DATE_STANDARD
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -4390,10 +4462,13 @@ $_GLOBAL_MEMBER_SECURITY_FINGERPRINT_HASHED
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Device :: Details :: Internet Protocol Address
+Device :: Details :: Connection Information
 ---------------------------------------------------------------------------------------
+Server :: Local :: Internet Protocol Addresses
 * Internet Protocol Address :: Server :: Remote: $_GLOBAL_REMOTE_SERVER_ADDRESS
 * Internet Protocol Address :: Server :: Remote :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT
+
+Server :: Remote :: Internet Protocol Addresses
 * Internet Protocol Address :: Server :: Local: $_GLOBAL_LOCAL_SERVER_ADDRESS
 * Internet Protocol Address :: Server :: Local :: Connecting Port Number: $_GLOBAL_LOCAL_SERVER_PORT
 ---------------------------------------------------------------------------------------
@@ -4401,10 +4476,18 @@ Device :: Details :: Internet Protocol Address
 ---------------------------------------------------------------------------------------
 Device :: Details :: Location
 ---------------------------------------------------------------------------------------
-* Device :: Location :: Global-Positioning-Coordinates In: X, Y, Z :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GPS
+Global Positioning System Coordinates
+* Device :: Location :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Device :: Location :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+
+Geographical Localization of Objects
 * Device :: Location :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+
+Timezone
 * Device :: Location :: Timezone :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_LOCAL
 * Device :: Location :: Timezone :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
+
+Region
 * Device :: Location :: Region :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
 * Device :: Location :: Region :: Server :: Remote :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
 ---------------------------------------------------------------------------------------
@@ -4437,11 +4520,20 @@ Registered Member Account
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Timestamp
+Timestamps
 ---------------------------------------------------------------------------------------
+Server :: Local
+* Timestamp :: De-Authentication :: Server :: Local :: MicroTime: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
+* Timestamp :: De-Authentication :: Server :: Local :: Standard Time: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
+* Timestamp :: De-Authentication :: Server :: Local :: Unix-Epoch Time :: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+
+Server :: Remote
+* Timestamp :: De-Authentication :: Server :: Remote :: MicroTime: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME
+* Timestamp :: De-Authentication :: Server :: Remote :: Standard Time: $_GLOBAL_REMOTE_SERVER_DATE_STANDARD
+* Timestamp :: De-Authentication :: Server :: Local :: Unix-Epoch Time :: $_GLOBAL_LOCAL_SERVER_TIME_UNIX
+
+Server :: Security :: Digital Fingerprint
 * Timestamp :: Digital Fingerprint :: Timestamp HASH: $_Kernel_Member_Account_Authentication_Log_Private_TIMESTAMP_HASH
-* Timestamp :: Authentication From The Local Server: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD
-* Timestamp :: Authentication From The Remote Server: $_GLOBAL_REMOTE_SERVER_DATE_STANDARD
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -4461,10 +4553,13 @@ $_GLOBAL_MEMBER_SECURITY_FINGERPRINT_HASHED
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Device :: Details :: Internet Protocol Address
+Device :: Details :: Connection Information
 ---------------------------------------------------------------------------------------
+Server :: Local :: Internet Protocol Addresses
 * Internet Protocol Address :: Server :: Remote: $_GLOBAL_REMOTE_SERVER_ADDRESS
 * Internet Protocol Address :: Server :: Remote :: Connecting Port Number: $_GLOBAL_REMOTE_SERVER_PORT
+
+Server :: Remote :: Internet Protocol Addresses
 * Internet Protocol Address :: Server :: Local: $_GLOBAL_LOCAL_SERVER_ADDRESS
 * Internet Protocol Address :: Server :: Local :: Connecting Port Number: $_GLOBAL_LOCAL_SERVER_PORT
 ---------------------------------------------------------------------------------------
@@ -4472,10 +4567,18 @@ Device :: Details :: Internet Protocol Address
 ---------------------------------------------------------------------------------------
 Device :: Details :: Location
 ---------------------------------------------------------------------------------------
-* Device :: Location :: Global-Positioning-Coordinates In: X, Y, Z :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GPS
+Global Positioning System Coordinates
+* Device :: Location :: Global-Positioning-Coordinates In: X, Y, Z :: From H.T.M.L. ::
+* Device :: Location :: Global-Positioning-Coordinates In: X, Y, Z :: From P.H.P. ::
+
+Geographical Localization of Objects
 * Device :: Location :: Geographical-Localization-Objects :: $_GLOBAL_MEMBER_LOCATION_CURRENT_GLO
+
+Timezone
 * Device :: Location :: Timezone :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_LOCAL
 * Device :: Location :: Timezone :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_TIMEZONE_SERVER_REMOTE
+
+Region
 * Device :: Location :: Region :: Server :: Local :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_LOCAL
 * Device :: Location :: Region :: Server :: Remote :: $_GLOBAL_MEMBER_LOCATION_CURRENT_REGION_SERVER_REMOTE
 ---------------------------------------------------------------------------------------
@@ -5044,12 +5147,29 @@ $_KERNEL_APPLICATION_PANEL_ALIGNED_LEFT_FILE_VERSION						= $_DB_Query_Kernel_Ap
 $_KERNEL_APPLICATION_PANEL_ALIGNED_LEFT_ROW							= $_DB_Query_Kernel_Applications_Panel_Aligned_Left_Fetch_Array['application_panel_row'];
 $_KERNEL_APPLICATION_PANEL_ALIGNED_LEFT_TITLE							= $_DB_Query_Kernel_Applications_Panel_Aligned_Left_Fetch_Array['application_panel_title'];
 
-echo ($_THIS_THEME_APPLICATION_PANEL_1);
-echo ($_KERNEL_APPLICATION_PANEL_ALIGNED_LEFT_TITLE);
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null && $_GLOBAL_MEMBER_ACCESS_LEVEL >= $_KERNEL_APPLICATION_PANEL_ALIGNED_LEFT_FILE_PERMISSION) {
 
-	include_once "./Applications/Panel/$_KERNEL_APPLICATION_PANEL_ALIGNED_LEFT_FILE_NAME.panel";
+		echo ($_THIS_THEME_APPLICATION_PANEL_1);
+		echo ($_KERNEL_APPLICATION_PANEL_ALIGNED_LEFT_TITLE);
 
-echo ($_THIS_THEME_APPLICATION_PANEL_2);
+			include_once "./Applications/Panel/$_KERNEL_APPLICATION_PANEL_ALIGNED_LEFT_FILE_NAME.panel";
+
+		echo ($_THIS_THEME_APPLICATION_PANEL_2);
+
+} else {
+
+if (!$_GLOBAL_COOKIE_MEMBER_USERNAME && $_KERNEL_APPLICATION_PANEL_ALIGNED_LEFT_FILE_PERMISSION <= 0) {
+
+		echo ($_THIS_THEME_APPLICATION_PANEL_1);
+		echo ($_KERNEL_APPLICATION_PANEL_ALIGNED_LEFT_TITLE);
+
+			include_once "./Applications/Panel/$_KERNEL_APPLICATION_PANEL_ALIGNED_LEFT_FILE_NAME.panel";
+
+		echo ($_THIS_THEME_APPLICATION_PANEL_2);
+
+} // [ + ] IF: Registered Member Account :: Credentials DO NOT Exist AND Appliction Panel Access Level Is: 0: Display :: Application :: Panel :: Aligned Left
+
+} // [ + ] IF: Registered Member Account :: Credentials Exist: Display :: Application :: Panel :: Aligned Left
 
 } // [ + ] WHILE: Retrieving :: Application Module :: Panel :: Entries :: Aligned Left :: From The Database Management System Server Database
 
@@ -5871,13 +5991,31 @@ $_KERNEL_APPLICATION_PANEL_ALIGNED_RIGHT_FILE_VERSION						= $_DB_Query_Kernel_A
 $_KERNEL_APPLICATION_PANEL_ALIGNED_RIGHT_ROW							= $_DB_Query_Kernel_Applications_Panel_Aligned_Right_Fetch_Array['application_panel_row'];
 $_KERNEL_APPLICATION_PANEL_ALIGNED_RIGHT_TITLE							= $_DB_Query_Kernel_Applications_Panel_Aligned_Right_Fetch_Array['application_panel_title'];
 
-echo ($_THIS_THEME_APPLICATION_PANEL_1);
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null && $_GLOBAL_MEMBER_ACCESS_LEVEL >= $_KERNEL_APPLICATION_PANEL_ALIGNED_RIGHT_FILE_PERMISSION) {
 
-echo ($_KERNEL_APPLICATION_PANEL_ALIGNED_RIGHT_TITLE);
+			echo ($_THIS_THEME_APPLICATION_PANEL_1);
 
-	include_once "./Applications/Panel/$_KERNEL_APPLICATION_PANEL_ALIGNED_RIGHT_FILE_NAME.panel";
+			echo ($_KERNEL_APPLICATION_PANEL_ALIGNED_RIGHT_TITLE);
 
-echo ($_THIS_THEME_APPLICATION_PANEL_2);
+				include_once "./Applications/Panel/$_KERNEL_APPLICATION_PANEL_ALIGNED_RIGHT_FILE_NAME.panel";
+
+			echo ($_THIS_THEME_APPLICATION_PANEL_2);
+
+} else {
+
+if (!$_GLOBAL_COOKIE_MEMBER_USERNAME && $_KERNEL_APPLICATION_PANEL_ALIGNED_RIGHT_FILE_PERMISSION <= 0) {
+
+			echo ($_THIS_THEME_APPLICATION_PANEL_1);
+
+			echo ($_KERNEL_APPLICATION_PANEL_ALIGNED_RIGHT_TITLE);
+
+				include_once "./Applications/Panel/$_KERNEL_APPLICATION_PANEL_ALIGNED_RIGHT_FILE_NAME.panel";
+
+			echo ($_THIS_THEME_APPLICATION_PANEL_2);
+
+} // [ + ] IF: Registered Member Account :: Credentials DO NOT Exist AND Appliction Panel Access Level Is: 0: Display :: Application :: Panel :: Aligned Right
+
+} // [ + ] IF: Registered Member Account :: Credentials Exist: Display :: Application :: Panel :: Aligned Right
 
 } // [ + ] WHILE: Retrieving :: Application Module :: Panel :: Entries :: Aligned Right :: From The Database Management System Server Database
 
