@@ -157,7 +157,7 @@ copy("./System/Kernel/Backup/Kernel_Installation.kernel","./$_INTERNAL_FILE_KERN
  ============================================================================================================
  +
  +
- + [ @ ] Integrity :: Kernel :: Check Current Kernel For File Size Integrity
+ + [ @ ] Integrity :: Applications :: Administration :: Check Current Administration Applications
  +
  +
  ============================================================================================================
@@ -235,7 +235,93 @@ unlink($_System_Application_Integrity_Find_File_Application_Administration);
 
 copy("./System/Security/Integrity/Backup/Applications/Administration/$_System_Application_Integrity_LIST_APPLICATIONS_ADMINISTRATION_FILE_NAME","./Applications/Administration/$_System_Application_Integrity_LIST_APPLICATIONS_ADMINISTRATION_FILE_NAME");
 
-} // [ + ] WHILE:
+} // [ + ] WHILE: Retrieving :: All :: Applications :: Administration :: From The Database Management System Server Database
 
 } // [ + ] IF: Integrity :: Application :: Administration :: Integrity DOES NOT MATCH File Integrity In The Database Management System Server Database
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Integrity :: Applications :: Member :: Check Current Member Applications
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Database Server Query :: Retrieve :: All :: Applcication Module Entries :: Member Applications
+ ============================================================================================================
+*/
+
+$_System_Application_Integrity_DB_Query_List_Applications_Member				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_applications");
+
+
+while ($_System_Application_Integrity_DB_Query_List_Applications_Member_Fetch_Array = $_System_Application_Integrity_DB_Query_List_Applications_Member->fetch_array(MYSQLI_BOTH)) {
+
+/*
+ ============================================================================================================
+ + Retrieve :: Database Management System Server Database Entries :: Applications :: Member
+ ============================================================================================================
+*/
+
+$_System_Application_Integrity_LIST_APPLICATIONS_MEMBER_ENTRY_ID				= $_System_Application_Integrity_DB_Query_List_Applications_Member_Fetch_Array['id'];
+$_System_Application_Integrity_LIST_APPLICATIONS_MEMBER_FILE_DATE_INSTALLATION			= $_System_Application_Integrity_DB_Query_List_Applications_Member_Fetch_Array['application_file_date_installation'];
+$_System_Application_Integrity_LIST_APPLICATIONS_MEMBER_FILE_INTEGRITY				= $_System_Application_Integrity_DB_Query_List_Applications_Member_Fetch_Array['application_file_integrity'];
+$_System_Application_Integrity_LIST_APPLICATIONS_MEMBER_FILE_NAME				= $_System_Application_Integrity_DB_Query_List_Applications_Member_Fetch_Array['application_file_name'];
+$_System_Application_Integrity_LIST_APPLICATIONS_MEMBER_FILE_VERSION				= $_System_Application_Integrity_DB_Query_List_Applications_Member_Fetch_Array['application_file_version'];
+
+/*
+ ============================================================================================================
+ + Retrieve :: Physical :: Files :: Application :: Member :: Integrity
+ ============================================================================================================
+*/
+
+$_System_Application_Integrity_Find_File_Application_Member				= "./Applications/Member/$_System_Application_Integrity_LIST_APPLICATIONS_MEMBER_FILE_NAME";
+$_System_Application_Integrity_Check_File_Application_Member				= hash_file('sha256', "./Applications/Member/$_System_Application_Integrity_LIST_APPLICATIONS_MEMBER_FILE_NAME");
+
+/*
+ ============================================================================================================
+ + IF: Integrity :: Application :: Member :: File Integrity DOES NOT MATCH File Integrity In The Database Entry
+ ============================================================================================================
+*/
+
+if ("$_System_Application_Integrity_LIST_APPLICATIONS_MEMBER_FILE_INTEGRITY" != "$_System_Application_Integrity_LIST_APPLICATIONS_MEMBER_FILE_INTEGRITY") {
+
+/*
+ ============================================================================================================
+ + Unlink :: Physical :: File :: Application :: Member
+ ============================================================================================================
+*/
+
+unlink($_System_Application_Integrity_Find_File_Application_Member);
+
+/*
+ ============================================================================================================
+ + Copy :: Zero File :: To :: Data Storage Medium Space
+ ============================================================================================================
+*/
+
+copy("./System/Plug-Ins/Secure-Delete/Default/Zero_5MB","$_System_Application_Integrity_Find_File_Application_Member");
+
+/*
+ ============================================================================================================
+ + Unlink :: Physical :: File :: Zero File
+ ============================================================================================================
+*/
+
+unlink($_System_Application_Integrity_Find_File_Application_Member);
+
+/*
+ ============================================================================================================
+ + Copy AND Flash :: File :: Kernel :: Installation Kernel File
+ ============================================================================================================
+*/
+
+copy("./System/Security/Integrity/Backup/Applications/Member/$_System_Application_Integrity_LIST_APPLICATIONS_MEMBER_FILE_NAME","./Applications/Member/$_System_Application_Integrity_LIST_APPLICATIONS_MEMBER_FILE_NAME");
+
+} // [ + ] WHILE: Retrieving :: All :: Applications :: Member :: From The Database Management System Server Database
+
+} // [ + ] IF: Integrity :: Application :: Member :: Integrity DOES NOT MATCH File Integrity In The Database Management System Server Database
 ?>
