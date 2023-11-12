@@ -431,7 +431,7 @@ System Rank #10, Male: $_Application_Module_Ranks_LIST_RANK_GENDER_MALE_4<BR><BR
 /*
  ============================================================================================================
  +
- + IF: Internal Application: Display :: SafeHTML
+ + IF: Internal Application: Display :: Safe-HTML
  +
  ============================================================================================================
 */
