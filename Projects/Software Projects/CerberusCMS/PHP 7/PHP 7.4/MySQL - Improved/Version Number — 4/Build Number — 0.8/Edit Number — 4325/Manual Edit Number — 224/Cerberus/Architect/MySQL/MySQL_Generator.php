@@ -1332,7 +1332,7 @@ settings_system_security_cache_server CHAR(1),
 settings_system_security_module_directory_sanitization VARCHAR(50),
 settings_system_security_module_status_sanitization VARCHAR(50),
 PRIMARY KEY (id)
-");
+);
 
 /* Install :: Default Statistics Data */
 
