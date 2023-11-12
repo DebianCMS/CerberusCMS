@@ -393,10 +393,11 @@ echo ("
 												&nbsp;With Altitude Above Sea-Level:&nbsp;<A ID=\"getLocationOutputAltitude\" TITLE=\":: Global-Positioning-System :: Coordinates :: Altitude ::\"></A>
 												&nbsp;<SPAN ID=\"OutputLocation\"></SPAN><BR><BR>
 
-											<B>Local Web Server :: Network :: Information</B><BR>
+											<B>Local Web Server :: Information</B><BR>
 												*&nbsp;Local Hyper-Text-Transfer-Protocol Host :: $_GLOBAL_LOCAL_SERVER_HTTP_HOST<BR>
 												*&nbsp;Local Server Gateway Interface :: $_GLOBAL_LOCAL_SERVER_GATEWAY_INTERFACE<BR>
 												*&nbsp;Local Server Address :: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_LOCAL_SERVER_ADDRESS\" TITLE=\":: Open & Display :: The :: Who-Is Information :: For :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_ADDRESS</A><BR>
+												*&nbsp;Local Server Address :: Connecting Port Number: $_GLOBAL_LOCAL_SERVER_PORT<BR>
 												*&nbsp;Local Server Software :: $_GLOBAL_LOCAL_SERVER_SOFTWARE<BR>
 												*&nbsp;Local Server Request Time :: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME<BR>
 												*&nbsp;Local Server Request Time ( Float ) :: $_GLOBAL_LOCAL_SERVER_REQUEST_TIME_FLOAT<BR>
@@ -417,28 +418,34 @@ echo ("
 												*&nbsp;Local Server :: Time :: In Hours: $_GLOBAL_LOCAL_SERVER_TIME_HOURS<BR>
 												*&nbsp;Local Server :: Time :: In Minutes: $_GLOBAL_LOCAL_SERVER_TIME_MINUTES<BR>
 												*&nbsp;Local Server :: Time :: In Seconds: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS<BR>
-												*&nbsp;Local Server :: Time :: In Microseconds: $_GLOBAL_LOCAL_SERVER_TIME_MICROSECONDS<BR><BR>
+												*&nbsp;Local Server :: Time :: In Microseconds: $_GLOBAL_LOCAL_SERVER_TIME_MICROSECONDS<BR>
+												*&nbsp;Local Server :: Time :: In Unix-Epoch: $_GLOBAL_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_TIMESTAMP_UNIX<BR><BR>
 
 												*&nbsp;Local Server :: Time :: In Microtime: $_GLOBAL_LOCAL_SERVER_TIME_MICROTIME<BR>
 												*&nbsp;Local Server :: Time :: In Unix Epoch Start Time: January, 1st of 1970<BR>
 												*&nbsp;Local Server :: Time :: In Unix Epoch: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
 
 												*&nbsp;Local Server :: Time :: In Unix Epoch :: Seconds: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR>
-												*&nbsp;Local Server :: Time :: In Unix Epoch :: Hours: $_GLOBAL_LOCAL_SERVER_TIME_UNIX_HOURS<BR>
 												*&nbsp;Local Server :: Time :: In Unix Epoch :: Minutes: $_GLOBAL_LOCAL_SERVER_TIME_UNIX_MINUTES<BR>
+												*&nbsp;Local Server :: Time :: In Unix Epoch :: Hours: $_GLOBAL_LOCAL_SERVER_TIME_UNIX_HOURS<BR>
 												*&nbsp;Local Server :: Time :: In Unix Epoch :: Days: $_GLOBAL_LOCAL_SERVER_TIME_UNIX_DAYS<BR>
 												*&nbsp;Local Server :: Time :: In Unix Epoch :: Months: $_GLOBAL_LOCAL_SERVER_TIME_UNIX_MONTHS<BR>
 												*&nbsp;Local Server :: Time :: In Unix Epoch :: Years: ~ $_GLOBAL_LOCAL_SERVER_TIME_UNIX_YEARS<BR><BR>
 
-												*&nbsp;Local Server :: Date-Time :: In Unix Epoch :: Year: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_YEARS<BR>
+												*&nbsp;Local Server :: Date-Time :: In Unix Epoch :: Years: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_YEARS<BR>
+												*&nbsp;Local Server :: Date-Time :: In Unix Epoch :: Months: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_MONTHS<BR>
+												*&nbsp;Local Server :: Date-Time :: In Unix Epoch :: Days: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_YEARS<BR>
 												*&nbsp;Local Server :: Date-Time :: In Unix Epoch :: Hours: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_HOURS<BR>
 												*&nbsp;Local Server :: Date-Time :: In Unix Epoch :: Minutes: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_MINUTES<BR>
 												*&nbsp;Local Server :: Date-Time :: In Unix Epoch :: Seconds: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_SECONDS<BR><BR>
 
 												<B>Server :: Remote</B><BR><BR>
 
+												<B>Gregorian Calendar</B><BR>
 												*&nbsp;Number of Seconds In 365 Days With 24 Hours Each Day: 60 Seconds * 60 Minutes * 24 Hours * 365 Days = 31,536,000<BR>
 												*&nbsp;Number of Hours In 365 Days With 24 Hours Each Day: 60 Seconds * 60 Minutes * 24 Hours = 86,400<BR><BR>
+
+												<B>Celestial</B><BR><BR>
 
 											<B>Web Server Technologies</B><HR>
 
