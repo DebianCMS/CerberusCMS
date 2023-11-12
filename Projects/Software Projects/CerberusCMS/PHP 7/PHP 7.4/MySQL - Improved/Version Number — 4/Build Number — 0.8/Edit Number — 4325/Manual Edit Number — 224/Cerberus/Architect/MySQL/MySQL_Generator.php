@@ -1040,7 +1040,7 @@ settings_system_security_module_status_sanitization
 '1',
 'Default',
 '1'
-)");
+);
 
 /* Shout Messages */
 
@@ -1370,7 +1370,7 @@ settings_system_security_module_status_sanitization
 '1',
 'Default',
 '1'
-)");
+);
 
 /* Install :: Default Statistics Data */
 
