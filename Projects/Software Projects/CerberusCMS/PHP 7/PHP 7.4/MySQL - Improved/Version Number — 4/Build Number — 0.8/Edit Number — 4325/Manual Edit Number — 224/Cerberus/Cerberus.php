@@ -4866,11 +4866,15 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 
 /*
  ============================================================================================================
- + Plug-In :: Camera :: Application Module Plug-In
+ + IF: Application :: Plug-In :: Camera :: Status :: Is: On, Include File: Camera Application Plug-In File
  ============================================================================================================
 */
 
-	include_once "./System/Plug-Ins/Text-Editor/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Text-Editor.$_INTERNAL_FILE_EXTENSION";
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_CAMERA >= "1")
+
+	include_once "./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Camera.$_INTERNAL_FILE_EXTENSION";
+
+} // [ + ] IF: System :: Application :: Plug-In :: Camera :: Status :: Is: On, Include :: File: Camera Application Plug-In File
 
 /*
  ============================================================================================================
@@ -4882,11 +4886,15 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 
 /*
  ============================================================================================================
- + Plug-In :: Microphone :: Application Module Plug-In
+ + IF: Application :: Plug-In :: Microphone :: Status :: Is: On, Include File: Microphone Application Plug-In File
  ============================================================================================================
 */
 
-	include_once "./System/Plug-Ins/Text-Editor/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_MICROPHONE/Text-Editor.$_INTERNAL_FILE_EXTENSION";
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_MICROPHONE >= "1")
+
+	include_once "./System/Plug-Ins/Microphone/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Microphone.$_INTERNAL_FILE_EXTENSION";
+
+} // [ + ] IF: System :: Application :: Plug-In :: Microphone :: Status :: Is: On, Include :: File: Microphone Application Plug-In File
 
 /*
  ============================================================================================================
@@ -4898,11 +4906,15 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 
 /*
  ============================================================================================================
- + Plug-In :: Text-Editor :: Application Module Plug-In
+ + IF: Application :: Plug-In :: Text-Editor :: Status :: Is: On, Include File: Text-Editor Application Plug-In File
  ============================================================================================================
 */
 
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_TEXT_EDITOR >= "1")
+
 	include_once "./System/Plug-Ins/Text-Editor/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_TEXT_EDITOR/Text-Editor.$_INTERNAL_FILE_EXTENSION";
+
+} // [ + ] IF: System :: Application :: Plug-In :: Text-Editor :: Status :: Is: On, Include :: File: Text-Editor Application Plug-In File
 
 /*
  ============================================================================================================
@@ -4914,11 +4926,15 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 
 /*
  ============================================================================================================
- + Plug-In :: Notifications :: Application Module Plug-In
+ + IF: Application :: Plug-In :: Notifications :: Status :: Is: On, Include File: Notifications Application Plug-In File
  ============================================================================================================
 */
 
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_NOTIFICATIONS >= "1")
+
 	include_once "./System/Plug-Ins/Notifications/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_NOTIFICATIONS/Notifications.$_INTERNAL_FILE_EXTENSION";
+
+} // [ + ] IF: System :: Application :: Plug-In :: Notifications :: Status :: Is: On, Include :: File: Notifications Application Plug-In File
 
 /*
  ============================================================================================================
