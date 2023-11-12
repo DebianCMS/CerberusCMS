@@ -120,31 +120,127 @@ $_Application_Module_Member_Statistics_LIST_INSTALLATION_DATE						= $_Applicati
  ============================================================================================================
 */
 
-if ($_GLOBAL_SYSTEM_GZIP_STATUS <= 0) {
+if ($_GLOBAL_SYSTEM_STATUS_GZIP <= 0) {
 
-	$_Application_Module_Member_Statistics_GZIP_STATUS		= "Off";
+	$_Application_Module_Member_Statistics_Status_GZIP		= "Off";
 
 } else { // [ + ] IF: G.N.U. ZIP Compression System Setting Is: Off
 
-	$_Application_Module_Member_Statistics_GZIP_STATUS		= "On";
+	$_Application_Module_Member_Statistics_Status_GZIP		= "On";
 
 } // [ + ] IF: G.N.U. ZIP Compression System Setting Is: On
 
 /*
  ============================================================================================================
- + Is The Safe-HTML Plugin On or Off ?
+ + Is The Camera Plug-In On or Off ?
  ============================================================================================================
 */
 
-if ($_GLOBAL_SYSTEM_SAFEHTML_STATUS <= 0) {
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_CAMERA <= 0) {
 
-	$_Application_Module_Member_Statistics_Safe_HTML_PLUGIN_STATUS	= "Off";
+	$_Application_Module_Member_Statistics_PlugIn_Status_Camera	= "Off";
 
-} else { // [ + ] IF: Safe-HTML Plugin System Setting Is: Off
+} else { // [ + ] IF: The Camera Plug-In System Setting Is: Off
 
-	$_Application_Module_Member_Statistics_Safe_HTML_PLUGIN_STATUS	= "On";
+	$_Application_Module_Member_Statistics_PlugIn_Status_SafeHTML	= "On";
 
-} // [ + ] IF: Safe-HTML Plugin System Setting Is: On
+} // [ + ] IF: The Camera Plug-In System Setting Is: On
+
+/*
+ ============================================================================================================
+ + Is The Location Plug-In On or Off ?
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_LOCATION <= 0) {
+
+	$_Application_Module_Member_Statistics_PlugIn_Status_Location	= "Off";
+
+} else { // [ + ] IF: The Location Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_Statistics_PlugIn_Status_Location	= "On";
+
+} // [ + ] IF: The Location Plug-In System Setting Is: On
+
+/*
+ ============================================================================================================
+ + Is The Microphone Plug-In On or Off ?
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_MICROPHONE <= 0) {
+
+	$_Application_Module_Member_Statistics_PlugIn_Status_Microphone	= "Off";
+
+} else { // [ + ] IF: The Microphone Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_Statistics_PlugIn_Status_Microphone	= "On";
+
+} // [ + ] IF: The Microphone Plug-In System Setting Is: On
+
+/*
+ ============================================================================================================
+ + Is The Microphone Plug-In On or Off ?
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_NOTIFICATIONS <= 0) {
+
+	$_Application_Module_Member_Statistics_PlugIn_Status_Notifications	= "Off";
+
+} else { // [ + ] IF: The Notifications Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_Statistics_PlugIn_Status_Notifications	= "On";
+
+} // [ + ] IF: The Notifications Plug-In System Setting Is: On
+
+/*
+ ============================================================================================================
+ + Is The Safe-HTML Plug-In On or Off ?
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_SAFEHTML <= 0) {
+
+	$_Application_Module_Member_Statistics_PlugIn_Status_SafeHTML	= "Off";
+
+} else { // [ + ] IF: The Safe-HTML Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_Statistics_PlugIn_Status_SafeHTML	= "On";
+
+} // [ + ] IF: The Safe-HTML Plug-In System Setting Is: On
+
+/*
+ ============================================================================================================
+ + Is The Secure-Delete Plug-In On or Off ?
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_SECURE_DELETE <= 0) {
+
+	$_Application_Module_Member_Statistics_PlugIn_Status_Secure_Delete	= "Off";
+
+} else { // [ + ] IF: The Secure-Delete Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_Statistics_PlugIn_Status_Secure_Delete	= "On";
+
+} // [ + ] IF: The Secure-Delete Plug-In System Setting Is: On
+
+/*
+ ============================================================================================================
+ + Is The Text-Editor Plug-In On or Off ?
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_TEXT_EDITOR <= 0) {
+
+	$_Application_Module_Member_Statistics_PlugIn_Status_Text_Editor	= "Off";
+
+} else { // [ + ] IF: The Text-Editor Plug-In System Setting Is: Off
+
+	$_Application_Module_Member_Statistics_PlugIn_Status_Text_Editor	= "On";
+
+} // [ + ] IF: The Text-Editor Plug-In System Setting Is: On
 
 /*
  ============================================================================================================
@@ -163,7 +259,7 @@ echo ("
 											<B>Settings :: System :: Current</B><HR>
 
 											<B>Settings :: System :: Web-Page Document :: Output Data :: Compression</B><BR>
-												*&nbsp;G.N.U. ZIP ( GZIP ) Data Compression: $_GLOBAL_SYSTEM_GZIP_STATUS_DISPLAY<BR><BR>
+												*&nbsp;G.N.U. ZIP ( GZIP ) Data Compression: $_GLOBAL_SYSTEM_STATUS_GZIP_DISPLAY<BR><BR>
 
 											<B>Settings :: System :: Graphical User Interface :: Theme</B><BR>
 												*&nbsp;System :: Theme :: File Format :: Audio: $_GLOBAL_SYSTEM_SOUND_EXTENSION<BR>
@@ -175,17 +271,33 @@ echo ("
 
 											<B>Settings :: System :: Plug-Ins :: Current</B><HR>
 
-											<B>Settings :: System :: Plug-Ins :: Location</B><BR>
-												*&nbsp;Plug-In :: Location :: Directory: $_GLOBAL_SYSTEM_PLUGIN_LOCATION_DIRECTORY<BR>
-												*&nbsp;Plug-In :: Location :: Status: $_GLOBAL_SYSTEM_PLUGIN_LOCATION_STATUS<BR><BR>
+											<B>Settings :: System :: Plug-Ins :: Camera</B><BR>
+												*&nbsp;Plug-In :: Camera :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA<BR>
+												*&nbsp;Plug-In :: Camera :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_CAMERA<BR><BR>
 
-											<B>Settings :: System :: Plug-Ins :: Safe-Hyper-Text-Markup-Language</B><BR>
-												*&nbsp;Plug-In :: Safe Hyper-Text-Markup-Language :: Directory: $_GLOBAL_SYSTEM_PLUGIN_SAFEHTML_DIRECTORY<BR>
-												*&nbsp;Plug-In :: Safe Hyper-Text-Markup-Language :: Status: $_GLOBAL_SYSTEM_PLUGIN_SAFEHTML_STATUS<BR><BR>
+											<B>Settings :: System :: Plug-Ins :: Location</B><BR>
+												*&nbsp;Plug-In :: Location :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_LOCATION<BR>
+												*&nbsp;Plug-In :: Location :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_LOCATION<BR><BR>
+
+											<B>Settings :: System :: Plug-Ins :: Microphone</B><BR>
+												*&nbsp;Plug-In :: Microphone :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_MICROPHONE<BR>
+												*&nbsp;Plug-In :: Microphone :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_MICROPHONE<BR><BR>
+
+											<B>Settings :: System :: Plug-Ins :: Notifications</B><BR>
+												*&nbsp;Plug-In :: Notifications :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_NOTIFICATIONS<BR>
+												*&nbsp;Plug-In :: Notifications :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_NOTIFICATIONS<BR><BR>
+
+											<B>Settings :: System :: Plug-Ins :: Safe-HTML</B><BR>
+												*&nbsp;Plug-In :: Safe-HTML :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SAFEHTML<BR>
+												*&nbsp;Plug-In :: Safe-HTML :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_SAFEHTML<BR><BR>
+
+											<B>Settings :: System :: Plug-Ins :: Secure-Delete</B><BR>
+												*&nbsp;Plug-In :: Secure-Delete :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE<BR>
+												*&nbsp;Plug-In :: Secure-Delete :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_SECURE_DELETE<BR><BR>
 
 											<B>Settings :: System :: Plug-Ins :: Text-Editor</B><BR>
-												*&nbsp;Plug-In :: Text-Editor ( BB ) Code Plug-In :: Directory: $_GLOBAL_SYSTEM_PLUGIN_TEXT_EDITOR_DIRECTORY<BR>
-												*&nbsp;Plug-In :: Text-Editor ( BB ) Code Plug-In :: Status: $_GLOBAL_SYSTEM_PLUGIN_TEXT_EDITOR_STATUS<BR><BR>
+												*&nbsp;Plug-In :: Text-Editor :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_TEXT_EDITOR<BR>
+												*&nbsp;Plug-In :: Text-Editor :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_TEXT_EDITOR<BR><BR>
 
 											<B>Settings :: System :: Plug-Ins :: Terminal and Console</B><BR><BR>
 
