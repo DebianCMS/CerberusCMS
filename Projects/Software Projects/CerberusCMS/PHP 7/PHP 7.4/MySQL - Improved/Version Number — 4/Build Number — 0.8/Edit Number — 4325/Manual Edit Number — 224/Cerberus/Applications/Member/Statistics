@@ -269,23 +269,29 @@ echo ("
 											<B>Settings :: System :: Language</B><BR>
 												*&nbsp;System :: Language: $_GLOBAL_SYSTEM_LANGUAGE_DIRECTORY<BR><BR>
 
-											<B>Settings :: System :: Plug-Ins :: Current</B><HR>
+											<B>Settings :: System :: Plug-Ins :: Current</B><HR><BR>
+
+											<B>Settings :: System :: Plug-Ins :: Hardware Devices
+											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
 											<B>Settings :: System :: Plug-Ins :: Camera</B><BR>
 												*&nbsp;Plug-In :: Camera :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA<BR>
 												*&nbsp;Plug-In :: Camera :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_CAMERA<BR><BR>
 
-											<B>Settings :: System :: Plug-Ins :: Location</B><BR>
-												*&nbsp;Plug-In :: Location :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_LOCATION<BR>
-												*&nbsp;Plug-In :: Location :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_LOCATION<BR><BR>
-
 											<B>Settings :: System :: Plug-Ins :: Microphone</B><BR>
 												*&nbsp;Plug-In :: Microphone :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_MICROPHONE<BR>
 												*&nbsp;Plug-In :: Microphone :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_MICROPHONE<BR><BR>
 
+											<B>Settings :: System :: Plug-Ins :: Location</B><BR>
+												*&nbsp;Plug-In :: Location :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_LOCATION<BR>
+												*&nbsp;Plug-In :: Location :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_LOCATION<BR><BR>
+
 											<B>Settings :: System :: Plug-Ins :: Notifications</B><BR>
 												*&nbsp;Plug-In :: Notifications :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_NOTIFICATIONS<BR>
 												*&nbsp;Plug-In :: Notifications :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_NOTIFICATIONS<BR><BR>
+
+											<B>Settings :: System :: Plug-Ins :: Data Handling and Data Sanitization
+											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
 											<B>Settings :: System :: Plug-Ins :: Safe-HTML</B><BR>
 												*&nbsp;Plug-In :: Safe-HTML :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SAFEHTML<BR>
@@ -299,7 +305,8 @@ echo ("
 												*&nbsp;Plug-In :: Text-Editor :: Directory: $_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_TEXT_EDITOR<BR>
 												*&nbsp;Plug-In :: Text-Editor :: Status: $_GLOBAL_SYSTEM_PLUGIN_STATUS_TEXT_EDITOR<BR><BR>
 
-											<B>Settings :: System :: Plug-Ins :: Terminal and Console</B><BR><BR>
+											<B>Settings :: System :: Plug-Ins :: Terminal and Console
+											</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 
 											<B>System :: Settings :: Plug-Ins :: Graphical</B><BR>
 												*&nbsp;Plug-In :: Smileys and Emojis :: Directory: $_GLOBAL_SYSTEM_SMILEYS_DIRECTORY<BR><BR>
