@@ -443,7 +443,7 @@ $_GLOBAL_SYSTEM_COOKIE_TIME								= $_DB_Query_Kernel_Select_System_Settings_Fe
  ============================================================================================================
 */
 
-$_GLOBAL_SYSTEM_GZIP_STATUS								= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_status_embedded_compression_gzip'];
+$_GLOBAL_SYSTEM_STATUS_GZIP								= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_status_embedded_compression_gzip'];
 
 /*
  ============================================================================================================
@@ -475,7 +475,7 @@ $_GLOBAL_SYSTEM_SMILEYS_DIRECTORY							= $_DB_Query_Kernel_Select_System_Settin
  ============================================================================================================
 */
 
-$_GLOBAL_SYSTEM_OFFLINE_STATUS								= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_status_offline_mode'];
+$_GLOBAL_SYSTEM_STATUS_OFFILINE_MODE							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_status_offline_mode'];
 
 /*
  ============================================================================================================
@@ -784,6 +784,7 @@ $_GLOBAL_MEMBER_STATUS_ACCOUNT_ACTIVE							= $_DB_Query_Kernel_Select_Member_Cr
 */
 
 $_GLOBAL_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_TIMESTAMP					= $_DB_Query_Kernel_Select_Member_Credentials_Fetch_Array['member_status_account_last_active_timestamp'];
+$_GLOBAL_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_TIMESTAMP_UNIX				= $_DB_Query_Kernel_Select_Member_Credentials_Fetch_Array['member_status_account_last_active_unix'];
 $_GLOBAL_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_YEAR						= $_DB_Query_Kernel_Select_Member_Credentials_Fetch_Array['member_status_account_last_active_years'];
 $_GLOBAL_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_MONTH					= $_DB_Query_Kernel_Select_Member_Credentials_Fetch_Array['member_status_account_last_active_months'];
 $_GLOBAL_MEMBER_STATUS_ACCOUNT_LAST_ACTIVE_MONTH_DAY					= $_DB_Query_Kernel_Select_Member_Credentials_Fetch_Array['member_status_account_last_active_days'];
@@ -4870,7 +4871,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
  ============================================================================================================
 */
 
-if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_CAMERA >= "1")
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_CAMERA >= "1") {
 
 	include_once "./System/Plug-Ins/Camera/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Camera.$_INTERNAL_FILE_EXTENSION";
 
@@ -4890,7 +4891,7 @@ if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_CAMERA >= "1")
  ============================================================================================================
 */
 
-if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_MICROPHONE >= "1")
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_MICROPHONE >= "1") {
 
 	include_once "./System/Plug-Ins/Microphone/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_MICROPHONE/Microphone.$_INTERNAL_FILE_EXTENSION";
 
@@ -4910,7 +4911,7 @@ if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_MICROPHONE >= "1")
  ============================================================================================================
 */
 
-if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_TEXT_EDITOR >= "1")
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_TEXT_EDITOR >= "1") {
 
 	include_once "./System/Plug-Ins/Text-Editor/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_TEXT_EDITOR/Text-Editor.$_INTERNAL_FILE_EXTENSION";
 
@@ -4930,7 +4931,7 @@ if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_TEXT_EDITOR >= "1")
  ============================================================================================================
 */
 
-if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_NOTIFICATIONS >= "1")
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_NOTIFICATIONS >= "1") {
 
 	include_once "./System/Plug-Ins/Notifications/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_NOTIFICATIONS/Notifications.$_INTERNAL_FILE_EXTENSION";
 
@@ -4962,7 +4963,7 @@ if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_NOTIFICATIONS >= "1")
  ============================================================================================================
 */
 
-if ($_GLOBAL_SYSTEM_OFFLINE_STATUS >= 1) {
+if ($_GLOBAL_SYSTEM_STATUS_OFFILINE_MODE >= 1) {
 
 if ($_GLOBAL_MEMBER_ACCESS_LEVEL >= 2) {
 
@@ -5034,15 +5035,15 @@ header("Expires: 0");
  ============================================================================================================
 */
 
-if ($_GLOBAL_SYSTEM_GZIP_STATUS >= 1) {
+if ($_GLOBAL_SYSTEM_STATUS_GZIP >= 1) {
 
 	ob_start("ob_gzhandler");
 
-	$_GLOBAL_SYSTEM_GZIP_STATUS_DISPLAY						= "GZIP :: Compression: ON";
+	$_GLOBAL_SYSTEM_STATUS_GZIP_DISPLAY						= "GZIP :: Compression: ON";
 
 } else {
 
-	$_GLOBAL_SYSTEM_GZIP_STATUS_DISPLAY						= "GZIP :: Compression: OFF";
+	$_GLOBAL_SYSTEM_STATUS_GZIP_DISPLAY						= "GZIP :: Compression: OFF";
 
 } // [ + ] IF: GZIP Compression Is On: Set Display G.N.U. ZIP Compression Status Variable
 
