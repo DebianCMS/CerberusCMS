@@ -4135,9 +4135,9 @@ unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/Log.txt");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/index.php");
 
-copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/index.php");
-copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/Log.txt");
-copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/index.php");
+copy("./System/Plug-Ins/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/index.php");
+copy("./System/Plug-Ins/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/Log.txt");
+copy("./System/Plug-Ins/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/index.php");
 
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/Interaction/Log.txt");
@@ -4152,8 +4152,8 @@ unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/Log/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/MySQL_Generator.php");
 
-copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/index.php");
-copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/MySQL_Generator.php");
+copy("./System/Plug-Ins/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/index.php");
+copy("./System/Plug-Ins/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/MySQL_Generator.php");
 
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/MySQL/MySQL_Generator.php");
@@ -4168,9 +4168,9 @@ unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/Installation_ToolKit.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/index.php");
 
-copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/index.php");
-copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/Installation_ToolKit.php");
-copy("./System/Plug-In/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/index.php");
+copy("./System/Plug-Ins/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/index.php");
+copy("./System/Plug-Ins/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/Installation_ToolKit.php");
+copy("./System/Plug-Ins/Secure-Delete/Default/Zero_5MB", "./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/index.php");
 
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/index.php");
 unlink("./$_INTERNAL_FILE_ARCHITECT_DIRECTORY/ToolKit/Installation_ToolKit.php");
@@ -4232,14 +4232,14 @@ The only thing left for you to do now is for you to manually configure this inst
 Read through the Portable Document Format Documentation File or watch the Educational Videos to see how to further secure this installation.
 -------------------------------------------------------
 Internet Protocol Address
-* Local Server Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
-* Remote Server Internet Protocol Address ( Who Installed This ): $_GLOBAL_REMOTE_SERVER_ADDRESS
+* Server :: Local :: Internet Protocol Address: $_GLOBAL_LOCAL_SERVER_ADDRESS
+* Server :: Remote :: Internet Protocol Address ( Who Installed This ): $_GLOBAL_REMOTE_SERVER_ADDRESS
 
 Software Information :: Local Server
-* Local Server Software Information: $_GLOBAL_LOCAL_SERVER_SOFTWARE
+* Server :: Local :: Software Information: $_GLOBAL_LOCAL_SERVER_SOFTWARE
 
 Timestamps
-* Local Server Electronic Mail Message Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP
+* Server :: Local :: Electronic Mail Message Timestamp: $_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP
 ------------------------------------------------------
 Have a nice day !
 

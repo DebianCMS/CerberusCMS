@@ -368,21 +368,12 @@ $_DB_Query_Kernel_Select_System_Settings_Fetch_Array					= $_DB_Query_Kernel_Sel
 
 /*
  ============================================================================================================
- + Global :: System :: S.Q.L. Settings: Plug-Ins :: Location
- ============================================================================================================
-*/
-
-$_GLOBAL_SYSTEM_PLUGIN_LOCATION_DIRECTORY						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_location'];
-$_GLOBAL_SYSTEM_PLUGIN_LOCATION_STATUS							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_location'];
-
-/*
- ============================================================================================================
  + Global :: System :: S.Q.L. Settings: Plug-Ins :: Camera
  ============================================================================================================
 */
 
-$_GLOBAL_SYSTEM_PLUGIN_CAMERA_DIRECTORY							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_camera'];
-$_GLOBAL_SYSTEM_PLUGIN_CAMERA_STATUS							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_camera'];
+$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_camera'];
+$_GLOBAL_SYSTEM_PLUGIN_STATUS_CAMERA							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_camera'];
 
 /*
  ============================================================================================================
@@ -390,8 +381,8 @@ $_GLOBAL_SYSTEM_PLUGIN_CAMERA_STATUS							= $_DB_Query_Kernel_Select_System_Set
  ============================================================================================================
 */
 
-$_GLOBAL_SYSTEM_PLUGIN_LOCATION_DIRECTORY						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_location'];
-$_GLOBAL_SYSTEM_PLUGIN_LOCATION_STATUS							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_location'];
+$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_LOCATION						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_location'];
+$_GLOBAL_SYSTEM_PLUGIN_STATUS_LOCATION							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_location'];
 
 /*
  ============================================================================================================
@@ -399,8 +390,8 @@ $_GLOBAL_SYSTEM_PLUGIN_LOCATION_STATUS							= $_DB_Query_Kernel_Select_System_S
  ============================================================================================================
 */
 
-$_GLOBAL_SYSTEM_PLUGIN_MICROPHONE_DIRECTORY						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_microphone'];
-$_GLOBAL_SYSTEM_PLUGIN_MICROPHONE_STATUS						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_microphone'];
+$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_MICROPHONE						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_microphone'];
+$_GLOBAL_SYSTEM_PLUGIN_STATUS_MICROPHONE						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_microphone'];
 
 /*
  ============================================================================================================
@@ -408,17 +399,8 @@ $_GLOBAL_SYSTEM_PLUGIN_MICROPHONE_STATUS						= $_DB_Query_Kernel_Select_System_
  ============================================================================================================
 */
 
-$_GLOBAL_SYSTEM_PLUGIN_NOTIFICATIONS_DIRECTORY						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_notifications'];
-$_GLOBAL_SYSTEM_PLUGIN_NOTIFICATIONS_STATUS						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_notifications'];
-
-/*
- ============================================================================================================
- + Global :: System :: S.Q.L. Settings: Plug-Ins :: Secure-Delete
- ============================================================================================================
-*/
-
-$_GLOBAL_SYSTEM_PLUGIN_SECUREDELETE_DIRECTORY						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_secure_delete'];
-$_GLOBAL_SYSTEM_PLUGIN_SECUREDELETE_STATUS						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_secure_delete'];
+$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_NOTIFICATIONS						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_notifications'];
+$_GLOBAL_SYSTEM_PLUGIN_STATUS_NOTIFICATIONS						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_notifications'];
 
 /*
  ============================================================================================================
@@ -426,8 +408,17 @@ $_GLOBAL_SYSTEM_PLUGIN_SECUREDELETE_STATUS						= $_DB_Query_Kernel_Select_Syste
  ============================================================================================================
 */
 
-$_GLOBAL_SYSTEM_PLUGIN_SAFEHTML_DIRECTORY						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_safeHTML'];
-$_GLOBAL_SYSTEM_PLUGIN_SAFEHTML_STATUS							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_safeHTML'];
+$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SAFEHTML						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_safeHTML'];
+$_GLOBAL_SYSTEM_PLUGIN_STATUS_SAFEHTML							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_safeHTML'];
+
+/*
+ ============================================================================================================
+ + Global :: System :: S.Q.L. Settings: Plug-Ins :: Secure-Delete
+ ============================================================================================================
+*/
+
+$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_secure_delete'];
+$_GLOBAL_SYSTEM_PLUGIN_STATUS_SECURE_DELETE						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_secure_delete'];
 
 /*
  ============================================================================================================
@@ -435,8 +426,8 @@ $_GLOBAL_SYSTEM_PLUGIN_SAFEHTML_STATUS							= $_DB_Query_Kernel_Select_System_S
  ============================================================================================================
 */
 
-$_GLOBAL_SYSTEM_PLUGIN_TEXT_EDITOR_DIRECTORY						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_text_editor'];
-$_GLOBAL_SYSTEM_PLUGIN_TEXT_EDITOR_STATUS						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_text_editor'];
+$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_TEXT_EDITOR						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_text_editor'];
+$_GLOBAL_SYSTEM_PLUGIN_STATUS_TEXT_EDITOR						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_text_editor'];
 
 /*
  ============================================================================================================
@@ -1076,7 +1067,7 @@ $_GLOBAL_LOCAL_SERVER_TIME_HOURS_MINUTES_SECONDS					= date("g-i-s");
 
 /*
  ============================================================================================================
- + Global :: Local Server :: Variables :: Date :: Time :: MicroTime
+ + Global :: Local Server :: Variables :: Date :: Time :: MicroTime and Unix-Epoch Time
  ============================================================================================================
 */
 
@@ -1382,7 +1373,7 @@ $_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_INTEGRITY								= "./System/Services/Integ
 
 if (file_exists($_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_INTEGRITY)) {
 
-	//include_once "$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_INTEGRITY";
+	include_once "$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_INTEGRITY";
 
 } else {
 
@@ -2837,9 +2828,9 @@ if (strlen($_GLOBAL_COOKIE_MEMBER_ELECTRONIC_MAIL_ADDRESS) >= "100") {
  ============================================================================================================
 */
 
-if ($_GLOBAL_SYSTEM_PLUGIN_LOCATION_STATUS >= 1) {
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_LOCATION >= 1) {
 
-	include_once "./System/Plug-Ins/Location/$_GLOBAL_SYSTEM_PLUGIN_LOCATION_DIRECTORY/Location.$_INTERNAL_FILE_EXTENSION";
+	include_once "./System/Plug-Ins/Location/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_LOCATION/Location.$_INTERNAL_FILE_EXTENSION";
 
 } else {
 
@@ -2861,9 +2852,9 @@ if ($_GLOBAL_SYSTEM_PLUGIN_LOCATION_STATUS >= 1) {
  ===========================================================================================================
 */
 
-if ($_GLOBAL_SYSTEM_PLUGIN_SAFEHTML_STATUS >= 1) {
+if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_SAFEHTML >= 1) {
 
-	include_once "./System/Plug-Ins/Safe-HTML/$_GLOBAL_SYSTEM_PLUGIN_SAFEHTML_DIRECTORY/Safe-HTML.$_INTERNAL_FILE_EXTENSION";
+	include_once "./System/Plug-Ins/Safe-HTML/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SAFEHTML/Safe-HTML.$_INTERNAL_FILE_EXTENSION";
 
 } else {
 
@@ -4868,6 +4859,38 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 /*
  ============================================================================================================
  +
+ + Plug-In :: Camera
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Plug-In :: Camera :: Application Module Plug-In
+ ============================================================================================================
+*/
+
+	include_once "./System/Plug-Ins/Text-Editor/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Text-Editor.$_INTERNAL_FILE_EXTENSION";
+
+/*
+ ============================================================================================================
+ +
+ + Plug-In :: Microphone
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Plug-In :: Microphone :: Application Module Plug-In
+ ============================================================================================================
+*/
+
+	include_once "./System/Plug-Ins/Text-Editor/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_MICROPHONE/Text-Editor.$_INTERNAL_FILE_EXTENSION";
+
+/*
+ ============================================================================================================
+ +
  + Plug-In :: Text-Editor
  +
  ============================================================================================================
@@ -4879,7 +4902,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
  ============================================================================================================
 */
 
-	include_once "./System/Plug-Ins/Text-Editor/$_GLOBAL_SYSTEM_PLUGIN_TEXT_EDITOR_DIRECTORY/Text-Editor.$_INTERNAL_FILE_EXTENSION";
+	include_once "./System/Plug-Ins/Text-Editor/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_TEXT_EDITOR/Text-Editor.$_INTERNAL_FILE_EXTENSION";
 
 /*
  ============================================================================================================
@@ -4895,7 +4918,7 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
  ============================================================================================================
 */
 
-	include_once "./System/Plug-Ins/Notifications/Default/Notifications.$_INTERNAL_FILE_EXTENSION";
+	include_once "./System/Plug-Ins/Notifications/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_NOTIFICATIONS/Notifications.$_INTERNAL_FILE_EXTENSION";
 
 /*
  ============================================================================================================
