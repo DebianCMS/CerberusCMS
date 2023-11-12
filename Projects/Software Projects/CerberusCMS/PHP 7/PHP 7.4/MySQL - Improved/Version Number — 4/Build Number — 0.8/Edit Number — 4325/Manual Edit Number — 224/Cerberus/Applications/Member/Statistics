@@ -434,7 +434,7 @@ echo ("
 
 												*&nbsp;Local Server :: Date-Time :: In Unix Epoch :: Years: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_YEARS<BR>
 												*&nbsp;Local Server :: Date-Time :: In Unix Epoch :: Months: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_MONTHS<BR>
-												*&nbsp;Local Server :: Date-Time :: In Unix Epoch :: Days: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_YEARS<BR>
+												*&nbsp;Local Server :: Date-Time :: In Unix Epoch :: Days: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_DAYS<BR>
 												*&nbsp;Local Server :: Date-Time :: In Unix Epoch :: Hours: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_HOURS<BR>
 												*&nbsp;Local Server :: Date-Time :: In Unix Epoch :: Minutes: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_MINUTES<BR>
 												*&nbsp;Local Server :: Date-Time :: In Unix Epoch :: Seconds: $_GLOBAL_LOCAL_SERVER_DATE_TIME_UNIX_SECONDS<BR><BR>
