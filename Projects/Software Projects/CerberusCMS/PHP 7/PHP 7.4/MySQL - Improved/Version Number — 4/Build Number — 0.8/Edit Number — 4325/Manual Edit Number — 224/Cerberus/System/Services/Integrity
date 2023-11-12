@@ -133,7 +133,7 @@ unlink($_INTERNAL_FILE_KERNEL);
  ============================================================================================================
 */
 
-copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_SECUREDELETE_DIRECTORY/Zero_5MB","$_INTERNAL_FILE_KERNEL");
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_5MB","./$_INTERNAL_FILE_KERNEL");
 
 /*
  ============================================================================================================
@@ -230,7 +230,7 @@ unlink($_System_Application_Integrity_Find_File_Application_Administration);
  ============================================================================================================
 */
 
-copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_SECUREDELETE_DIRECTORY/Zero_5MB","$_System_Application_Integrity_Find_File_Application_Administration");
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_5MB","$_System_Application_Integrity_Find_File_Application_Administration");
 
 /*
  ============================================================================================================
@@ -329,7 +329,7 @@ unlink($_System_Application_Integrity_Find_File_Application_Member);
  ============================================================================================================
 */
 
-copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_SECUREDELETE_DIRECTORY/Zero_5MB","$_System_Application_Integrity_Find_File_Application_Member");
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_5MB","$_System_Application_Integrity_Find_File_Application_Member");
 
 /*
  ============================================================================================================
@@ -427,7 +427,7 @@ unlink($_System_Application_Integrity_Find_File_Application_Panel);
  ============================================================================================================
 */
 
-copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_SECUREDELETE_DIRECTORY/Zero_5MB","$_System_Application_Integrity_Find_File_Application_Panel");
+copy("./System/Plug-Ins/Secure-Delete/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE/Zero_5MB","$_System_Application_Integrity_Find_File_Application_Panel");
 
 /*
  ============================================================================================================
