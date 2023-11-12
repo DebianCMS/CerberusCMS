@@ -52,7 +52,7 @@
 -+---()-----()-----()()----()()()--()--()--()()----()--------------------------------------------------------
 -+----------()()---()------()()----()--()--()------()-----------------------/-\------------------------------
 -+----------()-()--()()()--()--()--()--()--()()()--()()()-------------------|4|------------------------------
--+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Version~Number~\~/~~~~~~~~Build~Number:~4.08.250
+-+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Version~Number~\~/~~~~~~~~Build~Number:~4.08.251
 -+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Edit~Number~:~250~~~~
 -============================================================================================================
 */
@@ -374,6 +374,51 @@ $_DB_Query_Kernel_Select_System_Settings_Fetch_Array					= $_DB_Query_Kernel_Sel
 
 $_GLOBAL_SYSTEM_PLUGIN_LOCATION_DIRECTORY						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_location'];
 $_GLOBAL_SYSTEM_PLUGIN_LOCATION_STATUS							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_location'];
+
+/*
+ ============================================================================================================
+ + Global :: System :: S.Q.L. Settings: Plug-Ins :: Camera
+ ============================================================================================================
+*/
+
+$_GLOBAL_SYSTEM_PLUGIN_CAMERA_DIRECTORY							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_camera'];
+$_GLOBAL_SYSTEM_PLUGIN_CAMERA_STATUS							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_camera'];
+
+/*
+ ============================================================================================================
+ + Global :: System :: S.Q.L. Settings: Plug-Ins :: Location
+ ============================================================================================================
+*/
+
+$_GLOBAL_SYSTEM_PLUGIN_LOCATION_DIRECTORY						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_location'];
+$_GLOBAL_SYSTEM_PLUGIN_LOCATION_STATUS							= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_location'];
+
+/*
+ ============================================================================================================
+ + Global :: System :: S.Q.L. Settings: Plug-Ins :: Microphone
+ ============================================================================================================
+*/
+
+$_GLOBAL_SYSTEM_PLUGIN_MICROPHONE_DIRECTORY						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_microphone'];
+$_GLOBAL_SYSTEM_PLUGIN_MICROPHONE_STATUS						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_microphone'];
+
+/*
+ ============================================================================================================
+ + Global :: System :: S.Q.L. Settings: Plug-Ins :: Notifications
+ ============================================================================================================
+*/
+
+$_GLOBAL_SYSTEM_PLUGIN_NOTIFICATIONS_DIRECTORY						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_notifications'];
+$_GLOBAL_SYSTEM_PLUGIN_NOTIFICATIONS_STATUS						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_notifications'];
+
+/*
+ ============================================================================================================
+ + Global :: System :: S.Q.L. Settings: Plug-Ins :: Secure-Delete
+ ============================================================================================================
+*/
+
+$_GLOBAL_SYSTEM_PLUGIN_SECUREDELETE_DIRECTORY						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_directory_secure_delete'];
+$_GLOBAL_SYSTEM_PLUGIN_SECUREDELETE_STATUS						= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_plugin_status_secure_delete'];
 
 /*
  ============================================================================================================
