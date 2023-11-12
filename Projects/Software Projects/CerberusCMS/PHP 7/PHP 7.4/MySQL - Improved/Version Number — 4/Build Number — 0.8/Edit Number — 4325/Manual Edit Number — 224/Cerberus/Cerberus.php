@@ -4892,7 +4892,7 @@ if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_CAMERA >= "1")
 
 if ($_GLOBAL_SYSTEM_PLUGIN_STATUS_MICROPHONE >= "1")
 
-	include_once "./System/Plug-Ins/Microphone/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_CAMERA/Microphone.$_INTERNAL_FILE_EXTENSION";
+	include_once "./System/Plug-Ins/Microphone/$_GLOBAL_SYSTEM_PLUGIN_DIRECTORY_MICROPHONE/Microphone.$_INTERNAL_FILE_EXTENSION";
 
 } // [ + ] IF: System :: Application :: Plug-In :: Microphone :: Status :: Is: On, Include :: File: Microphone Application Plug-In File
 
