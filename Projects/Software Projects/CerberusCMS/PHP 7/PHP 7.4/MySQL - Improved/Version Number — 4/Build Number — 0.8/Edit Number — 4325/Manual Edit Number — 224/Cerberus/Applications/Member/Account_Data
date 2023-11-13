@@ -807,7 +807,7 @@ if (!$_Application_Module_Member_Account_Data_POST_UPLOAD_GALLERY_DOCUMENT_SELEC
 echo ("
 												<B>Gallery :: Document :: Selection :: File :: Upload<HR WIDTH=\"50%\" ALIGN=\"LEFT\">
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Account_Data&amp;Display&#61;Gallery&amp;Type&#61;Document&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\" ENCTYPE=\"multipart/form-data\">
-												[ Maximum Audio File Upload Size: $_Application_Module_Member_Account_Data_MAXIMUM_UPLOAD_SIZE_FILE_DOCUMENT KB ]</B><BR>
+												[ Maximum Document File Upload Size: $_Application_Module_Member_Account_Data_MAXIMUM_UPLOAD_SIZE_FILE_DOCUMENT KB ]</B><BR>
 												Allowed File Extensions :: Document :: DOC, DOCX, PDF, PPT, TXT<BR>
 													<INPUT TYPE=\"file\" NAME=\"AMM_Account_Data_Upload_File_Gallery_Document_Selection_Multiple[]\" MAXLENGTH=\"150\" MULTIPLE><BR>
 													<INPUT TYPE=\"hidden\" NAME=\"AMM_Account_Data_Upload_Gallery_Document_Selection_Directory_Temporary\" VALUE=\"1\">
