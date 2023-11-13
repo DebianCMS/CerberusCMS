@@ -2898,7 +2898,7 @@ if ($_Application_Module_Messenger_DB_Query_UPDATE_MESSENGER_P2P_CLEAR_TEXT) {
 } else {
 
 $_Application_Module_Member_Messenger_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE				= "
-<IMG SRC=\"../../../../../../../Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Image/Profile/$_GLOBAL_MEMBER_IMAGE_PROFILE\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"MemberProfile\" ALT=\":: $_GLOBAL_COOKIE_MEMBER_USERNAME ::\"></IMG>&nbsp;&nbsp;<A HREF=\"?$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_GLOBAL_COOKIE_MEMBER_USERNAME\" TITLE\":: Open & Display :: The Application Module :: Profile :: For :: Registered Member Account: $_GLOBAL_COOKIE_MEMBER_USERNAME\" TARGET=\"_NEW\">$_GLOBAL_COOKIE_MEMBER_USERNAME</A> Wrote:
+<IMG SRC=\"../../../../../../../$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"MemberProfile\" ALT=\":: $_GLOBAL_COOKIE_MEMBER_USERNAME ::\"></IMG>&nbsp;&nbsp;<A HREF=\"?$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_GLOBAL_COOKIE_MEMBER_USERNAME\" TITLE\":: Open & Display :: The Application Module :: Profile :: For :: Registered Member Account: $_GLOBAL_COOKIE_MEMBER_USERNAME\" TARGET=\"_NEW\">$_GLOBAL_COOKIE_MEMBER_USERNAME</A> Wrote:
 <HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 <BIG><B>&quot;</B></BIG> <I>$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE</I> <BIG><B>&quot;</B></BIG><BR><BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"50%\">
