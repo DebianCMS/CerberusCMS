@@ -1490,7 +1490,7 @@ if (file_exists("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Applicatio
 */
 
 echo ("
-												<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;SelectedClearTextFile&#61;$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Instantly Reload This Visible Clear-Text File Messenger Room ::\">Visible Clear-Text File Messenger Room</A>: <I><A HREF=\"./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display This Visible Clear-Text Messenger Log ::\" TARGET=\"_NEW\">$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME</A></I><BR>
+												<A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;SelectedClearTextFile&#61;$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Instantly Reload This Visible Clear-Text File Messenger Room ::\">Visible Clear-Text File Messenger Room</A>: <I><A HREF=\"./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME - Log.html?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display This Visible Clear-Text Messenger Log ::\" TARGET=\"_NEW\">$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME</A></I><BR>
 												<OBJECT DATA=\"./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_FILEINCLUSION_RANDOM_STRING_GENERATION\" WIDTH=\"100%\" HEIGHT=\"300\"></OBJECT><BR><BR>
 ");
 
@@ -2116,17 +2116,18 @@ if ($_GET["Send"] == "ClearTextFileMessage") {
 
 echo ("* Writing Visible Clear-Text Messenger File Message: <I>$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE</I><BR>");
 
-echo ("* To Visible Clear-Text Messenger File Name: ./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN/$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN.html<BR>");
+echo ("* To Visible Clear-Text Messenger File Name: ./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN/$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN - Log.html<BR>");
 
+$_Application_Module_Member_Messenger_FIND_VISIBILE_CLEAR_TEXT_MESSENGER_MESSAGES_FILE_LOG					= fopen("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN/$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN - Log.html", "a");
 $_Application_Module_Member_Messenger_FIND_VISIBILE_CLEAR_TEXT_MESSENGER_MESSAGES_FILE						= fopen("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN/$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN.html", "a");
 
 /*
  ============================================================================================================
- + IF: Write Message To Clear-Text File Messenger Room Name Messenger File
+ + IF: Write Message To Clear-Text File Messenger Room Name Messenger Log File
  ============================================================================================================
 */
 
-if (fwrite($_Application_Module_Member_Messenger_FIND_VISIBILE_CLEAR_TEXT_MESSENGER_MESSAGES_FILE, "
+if (fwrite($_Application_Module_Member_Messenger_FIND_VISIBILE_CLEAR_TEXT_MESSENGER_MESSAGES_FILE_LOG, "
 						<HR>
 					<A HREF=\"../../../../../../$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY\" TARGET=\"_NEW\" TITLE=\":: Open & Display :: This Registered Member Account :: Profile Image :: \"><IMG SRC=\"../../../../../../$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"MessengerImageMemberProfile\"></A>
 						&nbsp;
@@ -2152,6 +2153,25 @@ if (fwrite($_Application_Module_Member_Messenger_FIND_VISIBILE_CLEAR_TEXT_MESSEN
 
 echo ("* Done...<BR>");
 
+/*
+ ============================================================================================================
+ + IF: Write Message To Clear-Text File Messenger Room Name Messenger Log File
+ ============================================================================================================
+*/
+
+fwrite($_Application_Module_Member_Messenger_FIND_VISIBILE_CLEAR_TEXT_MESSENGER_MESSAGES_FILE, "
+						<HR>
+					<A HREF=\"../../../../../../$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY\" TARGET=\"_NEW\" TITLE=\":: Open & Display :: This Registered Member Account :: Profile Image :: \"><IMG SRC=\"../../../../../../$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"MessengerImageMemberProfile\"></A>
+						&nbsp;
+						<B><I><A HREF=\"../../../../../../$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_GLOBAL_COOKIE_MEMBER_USERNAME\" TITLE=\":: Open & Display :: This Registered Member Account :: Profile ::\" TARGET=\"_NEW\">$_GLOBAL_COOKIE_MEMBER_USERNAME</A> Wrote This Message:</B></I><BR>
+							<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+							<BIG>&ldquo;</BIG><I>$_Application_Module_Member_Messenger_POST_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_MESSAGE</I><BIG>&rdquo;</BIG><BR>
+							<HR ALIGN=\"LEFT\" WIDTH=\"20%\"><BR>
+						<BR><BR>
+");
+
+echo ("* Done...<BR>");
+
 echo ("* Automatically Redirecting To Visible Clear-Text File Messenger Room: $_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN<BR>");
 
 	header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&SelectedClearTextFile=$_Application_Module_Member_Messenger_POST_SELECT_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_HIDDEN&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
@@ -2162,7 +2182,7 @@ echo ("* Error: Unable To Write To Clear-Text File Messenger Room File.<BR>");
 
 /*
  ============================================================================================================
- + Close Clear-Text File Messenger Room Name Messages File
+ + Close File :: Clear-Text File Messenger Room Name Messages File
  ============================================================================================================
 */
 
@@ -2202,6 +2222,7 @@ $_Application_Module_Member_Messenger_DB_Query_SELECT_ERASE_CLEAR_TEXT_FILE_MESS
 if ($_Application_Module_Member_Messenger_DB_Query_SELECT_ERASE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_NUMBER_OF_ROWS >= 1) {
 
 $_Application_Module_Member_Messenger_ERASE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_FILE						= fopen("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html", "a") or die("Messenger: Unable To Write To The Visible Clear-Text Messenger Room: $_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html");
+$_Application_Module_Member_Messenger_ERASE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_FILE_LOG						= fopen("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME - Log.html", "a") or die("Messenger: Unable To Write To The Visible Clear-Text Messenger Room: $_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME - Log.html");
 
 /*
  ============================================================================================================
@@ -2210,6 +2231,7 @@ $_Application_Module_Member_Messenger_ERASE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_FI
 */
 
 unlink("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html");
+unlink("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME - Log.html");
 
 /*
  ============================================================================================================
@@ -2218,6 +2240,7 @@ unlink("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_
 */
 
 copy("./Temporary/Messenger/Setup/Files/Default.html", "./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html");
+copy("./Temporary/Messenger/Setup/Files/Default.html", "./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME - Log.html");
 
 /*
  ============================================================================================================
@@ -2254,6 +2277,7 @@ $_Application_Module_Member_Messenger_ERASE_WRITE_CLEAR_TEXT_FILE_MESSENGER_FILE
 */
 
 fwrite($_Application_Module_Member_Messenger_ERASE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_FILE, $_Application_Module_Member_Messenger_ERASE_WRITE_CLEAR_TEXT_FILE_MESSENGER_FILE_DATA);
+fwrite($_Application_Module_Member_Messenger_ERASE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_FILE_LOG, $_Application_Module_Member_Messenger_ERASE_WRITE_CLEAR_TEXT_FILE_MESSENGER_FILE_DATA);
 
 						echo ("*&nbsp;Done<BR>");
 
