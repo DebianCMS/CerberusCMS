@@ -697,22 +697,6 @@ $_Application_Module_Member_Messenger_Encrypted_Text_File_Messenger_Encryption_T
 
 /*
  ============================================================================================================
- + Variables :: Automatic Data Replacement Statements :: No Profile Image Set
- ============================================================================================================
-*/
-
-if (file_exists("$_Application_Module_Member_Messenger_POST_MESSAGE_MEMBER_IMAGE_PROFILE")) {
-
-$_Application_Module_Member_Messenger_POST_MESSAGE_MEMBER_IMAGE_PROFILE_DISPLAY									= "../../../../../../Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Image/Profile/$_GLOBAL_MEMBER_IMAGE_PROFILE";
-
-} else {
-
-$_Application_Module_Member_Messenger_POST_MESSAGE_MEMBER_IMAGE_PROFILE_DISPLAY									= "../../../../../../Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Image/Icon/No_Image.png";
-
-} // [ + ] IF: File DOES NOT Exist: Registered Member Account :: Image :: Profile :: Picture, SET Default Image
-
-/*
- ============================================================================================================
  +
  + Internal Application :: Display :: Messenger Options
  +
@@ -2138,7 +2122,7 @@ $_Application_Module_Member_Messenger_FIND_VISIBILE_CLEAR_TEXT_MESSENGER_MESSAGE
 
 if (fwrite($_Application_Module_Member_Messenger_FIND_VISIBILE_CLEAR_TEXT_MESSENGER_MESSAGES_FILE, "
 						<HR>
-					<A HREF=\"$_Application_Module_Member_Messenger_POST_MESSAGE_MEMBER_IMAGE_PROFILE_DISPLAY\" TARGET=\"_NEW\" TITLE=\":: Open & Display :: This Registered Member Account :: Profile Image :: \"><IMG SRC=\"$_Application_Module_Member_Messenger_POST_MESSAGE_MEMBER_IMAGE_PROFILE_DISPLAY\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"MessengerImageMemberProfile\"></A>
+					<A HREF=\"../../../../../../../$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY\" TARGET=\"_NEW\" TITLE=\":: Open & Display :: This Registered Member Account :: Profile Image :: \"><IMG SRC=\"../../../../../../../$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"MessengerImageMemberProfile\"></A>
 						&nbsp;
 						<B><I><A HREF=\"../../../../../../$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_GLOBAL_COOKIE_MEMBER_USERNAME\" TITLE=\":: Open & Display :: This Registered Member Account :: Profile ::\" TARGET=\"_NEW\">$_GLOBAL_COOKIE_MEMBER_USERNAME</A> Wrote This Message:</B></I><BR>
 							<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
@@ -2185,7 +2169,7 @@ fclose($_Application_Module_Member_Messenger_FIND_VISIBILE_CLEAR_TEXT_MESSENGER_
 /*
  ============================================================================================================
  +
- + Internal Application :: Post Message :: Clear-Text File Message Data
+ + Internal Application :: Post Message :: Clear-Text File :: Message Data
  +
  ============================================================================================================
 */
@@ -2247,7 +2231,7 @@ $_Application_Module_Member_Messenger_ERASE_WRITE_CLEAR_TEXT_FILE_MESSENGER_FILE
 <HTML>
 	<HEAD>
 		<TITLE>Messenger :: Log </TITLE>
-			<LINK REL=\"stylesheet\" HREF=\"../../../../../../Theme/Global/Style_Sheet/Style.css\" TYPE=\"text/css\">
+			<LINK REL=\"stylesheet\" HREF=\"../../../../../../../Theme/Global/Style_Sheet/Style.css\" TYPE=\"text/css\">
 	</HEAD>
 
 	<BODY>
@@ -2898,7 +2882,7 @@ if ($_Application_Module_Messenger_DB_Query_UPDATE_MESSENGER_P2P_CLEAR_TEXT) {
 } else {
 
 $_Application_Module_Member_Messenger_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE				= "
-<IMG SRC=\"../../../../../../../$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"MemberProfile\" ALT=\":: $_GLOBAL_COOKIE_MEMBER_USERNAME ::\"></IMG>&nbsp;&nbsp;<A HREF=\"?$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_GLOBAL_COOKIE_MEMBER_USERNAME\" TITLE\":: Open & Display :: The Application Module :: Profile :: For :: Registered Member Account: $_GLOBAL_COOKIE_MEMBER_USERNAME\" TARGET=\"_NEW\">$_GLOBAL_COOKIE_MEMBER_USERNAME</A> Wrote:
+<IMG SRC=\"../../../../../../../$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"MemberProfile\" ALT=\":: $_GLOBAL_COOKIE_MEMBER_USERNAME ::\"></IMG>&nbsp;&nbsp;<A HREF=\"?$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_GLOBAL_COOKIE_MEMBER_USERNAME\" TITLE\":: Open & Display :: The Application Module :: Profile :: For :: Registered Member Account: $_GLOBAL_COOKIE_MEMBER_USERNAME\" TARGET=\"_NEW\">$_GLOBAL_COOKIE_MEMBER_USERNAME</A> Wrote:
 <HR ALIGN=\"LEFT\" WIDTH=\"50%\">
 <BIG><B>&quot;</B></BIG> <I>$_Application_Module_Member_Messenger_POST_P2P_CLEAR_TEXT_FILE_MESSENGER_ROOM_MESSAGE</I> <BIG><B>&quot;</B></BIG><BR><BR>
 <HR ALIGN=\"LEFT\" WIDTH=\"50%\">
