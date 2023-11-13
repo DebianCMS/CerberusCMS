@@ -2317,7 +2317,7 @@ $_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT_INITIALIZE->query("INSERT INTO {$
 
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Kernel File Details... Wait.<BR>");
 
-$_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT_INITIALIZE->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_kernel(kernel_file_date_installation,kernel_file_integrity,kernel_file_name,kernel_file_version)VALUES('$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','$_ARCHITECT_INTEGRITY_FILES_FIND_KERNEL_FILE','$_INTERNAL_FILE_KERNEL','4.08.250')");
+$_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT_INITIALIZE->query("INSERT INTO {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_kernel(kernel_file_date_installation,kernel_file_integrity,kernel_file_name,kernel_file_version)VALUES('$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','$_ARCHITECT_INTEGRITY_FILES_FIND_KERNEL_FILE','$_INTERNAL_FILE_KERNEL','4.08.251')");
 
 	echo ("[ Done ]<BR><BR>");
 
@@ -3334,12 +3334,14 @@ member_username
 	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Gallery<BR>");
 	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Live<BR>");
 	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Movies<BR>");
+	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Profile<BR>");
 	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Streams<BR>");
 
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video");
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Gallery");
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Live");
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Movies");
+	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Profile");
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Streams");
 
 	echo ("[ Done ]<BR><BR>");
@@ -3399,6 +3401,7 @@ copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_A
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Gallery/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Live/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Movies/index.php");
+copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Profile/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Streams/index.php");
 
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/index.php");
@@ -3532,12 +3535,14 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Gallery<BR>");
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Live<BR>");
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Movies<BR>");
+	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Profile<BR>");
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Streams<BR>");
 
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Gallery");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Live");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Movies");
+	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Profile");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Streams");
 
 	echo ("[ Done ]<BR><BR>");
@@ -3606,6 +3611,7 @@ copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_N
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Gallery/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Live/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Movies/index.php");
+copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Profile/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Streams/index.php");
 
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/index.php");
