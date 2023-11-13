@@ -858,7 +858,7 @@ copy("./Temporary/Messenger/Setup/index.php","./Temporary/Messenger/Text-File/Cl
 
 						echo ("*&nbsp;Creating Visible Clear-Text File Messenger Room File: <I>$_Application_Module_Member_Messenger_POST_GENERATE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_POST_GENERATE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html</I>...<BR>");
 
-$_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_FILE_NAME						= fopen("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_GENERATE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_POST_GENERATE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html", "w") or die("Unable To Create The Visible Clear-Text File Messenger Room: $_Application_Module_Member_Messenger_POST_GENERATE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html");
+$_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_FILE_NAME						= fopen("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_GENERATE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_POST_GENERATE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html", "w") or die("Messenger: Unable To Create The Visible Clear-Text File Messenger Room: $_Application_Module_Member_Messenger_POST_GENERATE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html");
 
 						echo ("*&nbsp;Done<BR>");
 
@@ -879,8 +879,14 @@ $_Application_Module_Member_Messenger_GENERATE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER
 						echo ("*&nbsp;Writing Default Data To Visible Clear-Text File Messenger Room...<BR>");
 
 $_Application_Module_Member_Messenger_GENERATE_WRITE_VISIBLE_CLEAR_TEXT_MESSENGER_FILE_DATA						= "
-															<LINK REL=\"stylesheet\" HREF=\"../../../../../../Theme/Global/Style_Sheet/Style.css\" TYPE=\"text/css\">
-															<BODY ONLOAD=\"window.scrollTo(0,document.body.scrollHeight);\">
+<HTML>
+	<HEAD>
+		<LINK REL=\"stylesheet\" HREF=\"../../../../../../Theme/Global/Style_Sheet/Style.css\" TYPE=\"text/css\">
+	</HEAD>
+
+	<BODY>
+		<BODY ONLOAD=\"window.scrollTo(0,document.body.scrollHeight);\">
+	</BODY>
 ";
 
 /*
@@ -1576,7 +1582,7 @@ echo ("
 
 echo ("
 
-													<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;Erase&#61;$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\">
+													<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Messenger&amp;EraseMessengerRoom&#61;$_Application_Module_Member_Messenger_SQL_LIST_MESSENGER_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\">
 														* <I>Erase This Visible Clear-Text File Messenger Room</I><BR>
 														<I>Maintenance Password</I>:<BR>
 														[ Maximum Length: 100 Alpha-Numeric Characters ]<BR>
@@ -2122,7 +2128,7 @@ $_Application_Module_Member_Messenger_FIND_VISIBILE_CLEAR_TEXT_MESSENGER_MESSAGE
 
 if (fwrite($_Application_Module_Member_Messenger_FIND_VISIBILE_CLEAR_TEXT_MESSENGER_MESSAGES_FILE, "
 						<HR>
-					<A HREF=\"../../../../../../../$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY\" TARGET=\"_NEW\" TITLE=\":: Open & Display :: This Registered Member Account :: Profile Image :: \"><IMG SRC=\"../../../../../../../$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"MessengerImageMemberProfile\"></A>
+					<A HREF=\"../../../../../../$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY\" TARGET=\"_NEW\" TITLE=\":: Open & Display :: This Registered Member Account :: Profile Image :: \"><IMG SRC=\"../../../../../../$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"MessengerImageMemberProfile\"></A>
 						&nbsp;
 						<B><I><A HREF=\"../../../../../../$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_GLOBAL_COOKIE_MEMBER_USERNAME\" TITLE=\":: Open & Display :: This Registered Member Account :: Profile ::\" TARGET=\"_NEW\">$_GLOBAL_COOKIE_MEMBER_USERNAME</A> Wrote This Message:</B></I><BR>
 							<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
@@ -2174,7 +2180,7 @@ fclose($_Application_Module_Member_Messenger_FIND_VISIBILE_CLEAR_TEXT_MESSENGER_
  ============================================================================================================
 */
 
-if ($_GET["Erase"] == "$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME") {
+if ($_GET["EraseMessengerRoom"] == "$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME") {
 
 if ($_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_PASSWORD) {
 
@@ -2195,7 +2201,7 @@ $_Application_Module_Member_Messenger_DB_Query_SELECT_ERASE_CLEAR_TEXT_FILE_MESS
 
 if ($_Application_Module_Member_Messenger_DB_Query_SELECT_ERASE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_NUMBER_OF_ROWS >= 1) {
 
-$_Application_Module_Member_Messenger_ERASE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_FILE						= fopen("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html", "a") or die("Unable To Write To The Visible Clear-Text Messenger Room: $_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html");
+$_Application_Module_Member_Messenger_ERASE_FIND_VISIBLE_CLEAR_TEXT_MESSENGER_FILE						= fopen("./Temporary/Messenger/Text-File/Clear-Text/Visible/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME/$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html", "a") or die("Messenger: Unable To Write To The Visible Clear-Text Messenger Room: $_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME.html");
 
 /*
  ============================================================================================================
@@ -2231,11 +2237,12 @@ $_Application_Module_Member_Messenger_ERASE_WRITE_CLEAR_TEXT_FILE_MESSENGER_FILE
 <HTML>
 	<HEAD>
 		<TITLE>Messenger :: Log </TITLE>
-			<LINK REL=\"stylesheet\" HREF=\"../../../../../../../Theme/Global/Style_Sheet/Style.css\" TYPE=\"text/css\">
+			<LINK REL=\"stylesheet\" HREF=\"../../../../../../Theme/Global/Style_Sheet/Style.css\" TYPE=\"text/css\">
 	</HEAD>
 
 	<BODY>
 		<BODY ONLOAD=\"window.scrollTo(0,document.body.scrollHeight);\">
+			<LINK REL=\"stylesheet\" HREF=\"../../../../../../Theme/Global/Style_Sheet/Style.css\" TYPE=\"text/css\">
 	</BODY>
 </HTML>
 ";
@@ -2262,7 +2269,7 @@ fclose($_Application_Module_Member_Messenger_ERASE_FIND_VISIBLE_CLEAR_TEXT_MESSE
 
 } else {
 
-	//header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&SelectedClearTextFile=$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
+	header("Location: ./$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER=Messenger&SelectedClearTextFile=$_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
 
 echo ("* Error: Incorrect Password: $_Application_Module_Member_Messenger_POST_ERASE_VISIBLE_CLEAR_TEXT_FILE_MESSENGER_ROOM_NAME_PASSWORD_HASHED<BR>");
 
@@ -2721,7 +2728,16 @@ $_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_
  ============================================================================================================
 */
 
-if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME, "<LINK REL=\"stylesheet\" HREF=\"../../../../../../../Theme/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_SETTINGS_THEME_DIRECTORY/Style_Sheet/Style.css\" TYPE=\"text/css\"><BODY ONLOAD=\"window.scrollTo(0,document.body.scrollHeight);\">")) {
+if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_REMOTE_FILE_NAME, "
+<HTML>
+	<HEAD>
+		<LINK REL=\"stylesheet\" HREF=\"../../../../../../../Theme/$_Application_Module_Member_Messenger_P2P_Messenger_ClearText_File_LIST_MEMBER_SETTINGS_THEME_DIRECTORY/Style_Sheet/Style.css\" TYPE=\"text/css\">
+	</HEAD>
+
+	<BODY>
+		<BODY ONLOAD=\"window.scrollTo(0,document.body.scrollHeight);\">
+	</BODY>
+")) {
 
 echo ("[ Done ]<BR><BR>");
 
@@ -2796,7 +2812,16 @@ $_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_
  ============================================================================================================
 */
 
-if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME, "<LINK REL=\"stylesheet\" HREF=\"../../../../../../../Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Style_Sheet/Style.css\" TYPE=\"text/css\"><BODY ONLOAD=\"window.scrollTo(0,document.body.scrollHeight);\">")) {
+if (fwrite($_Application_Module_Member_Messenger_GENERATE_FIND_CLEAR_TEXT_MESSENGER_MEMBER_LOCAL_FILE_NAME, "
+<HTML>
+	<HEAD>
+		<LINK REL=\"stylesheet\" HREF=\"../../../../../../../Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Style_Sheet/Style.css\" TYPE=\"text/css\">
+	</HEAD>
+
+	<BODY>
+		<BODY ONLOAD=\"window.scrollTo(0,document.body.scrollHeight);\">
+	</BODY>
+")) {
 
 echo ("[ Done ]<BR><BR>");
 
