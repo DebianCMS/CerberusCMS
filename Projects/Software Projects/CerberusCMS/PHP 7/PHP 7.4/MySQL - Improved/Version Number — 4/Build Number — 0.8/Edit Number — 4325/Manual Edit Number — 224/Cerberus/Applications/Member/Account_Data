@@ -2051,7 +2051,7 @@ if ($_Application_Module_Member_Account_Data_POST_CREATE_DIRECTORY_GALLERY_VIDEO
  ============================================================================================================
 */
 
-if (mkdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Video/Gallery$_Application_Module_Member_Account_Data_POST_CREATE_DIRECTORY_GALLERY_VIDEO")) {
+if (mkdir("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Video/Gallery/$_Application_Module_Member_Account_Data_POST_CREATE_DIRECTORY_GALLERY_VIDEO")) {
 
 											echo ("Kernel Message: Directory Created Successfully: $_Application_Module_Member_Account_Data_POST_CREATE_DIRECTORY_GALLERY_VIDEO<BR>");
 
