@@ -202,6 +202,16 @@ $_Application_Module_Member_Account_Data_DELETE_OPEN_DIRECTORY_MEMBER_GALLERY_VI
 
 /*
  ============================================================================================================
+ + Find and Open :: Registered Member Account :: Private Directory :: Delete :: Gallery :: Video
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Account_Data_DELETE_FIND_DIRECTORY_MEMBER_GALLERY_VIDEO_PROFILE_IMAGE_SELECTION = "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Video/Gallery/Profile";
+$_Application_Module_Member_Account_Data_DELETE_OPEN_DIRECTORY_MEMBER_GALLERY_VIDEO_PROFILE_IMAGE_SELECTION = opendir($_Application_Module_Member_Account_Data_DELETE_FIND_DIRECTORY_MEMBER_GALLERY_VIDEO_PROFILE_IMAGE_SELECTION);
+
+
+/*
+ ============================================================================================================
  +
  + Application Variables :: Restrictions and Control :: Data
  +
@@ -2085,7 +2095,7 @@ echo ("
  ============================================================================================================
 */
 
-while (($_Application_Module_Member_Account_Data_DELETE_READ_DIRECTORY_MEMBER_GALLERY_VIDEO_SELECTION = readdir($_Application_Module_Member_Account_Data_DELETE_OPEN_DIRECTORY_MEMBER_GALLERY_VIDEO_SELECTION))) {
+while (($_Application_Module_Member_Account_Data_DELETE_READ_DIRECTORY_MEMBER_GALLERY_VIDEO_PROFILE_IMAGE_SELECTION = readdir($_Application_Module_Member_Account_Data_DELETE_OPEN_DIRECTORY_MEMBER_GALLERY_VIDEO_PROFILE_IMAGE_SELECTION))) {
 
 /*
  ============================================================================================================
@@ -2093,13 +2103,13 @@ while (($_Application_Module_Member_Account_Data_DELETE_READ_DIRECTORY_MEMBER_GA
  ============================================================================================================
 */
 
-if ($_Application_Module_Member_Account_Data_DELETE_READ_DIRECTORY_MEMBER_GALLERY_VIDEO_SELECTION == "." || $_Application_Module_Member_Account_Data_DELETE_READ_DIRECTORY_MEMBER_GALLERY_VIDEO_SELECTION == ".." || $_Application_Module_Member_Account_Data_DELETE_READ_DIRECTORY_MEMBER_GALLERY_VIDEO_SELECTION == "index.php") {
+if ($_Application_Module_Member_Account_Data_DELETE_READ_DIRECTORY_MEMBER_GALLERY_VIDEO_PROFILE_IMAGE_SELECTION == "." || $_Application_Module_Member_Account_Data_DELETE_READ_DIRECTORY_MEMBER_GALLERY_VIDEO_PROFILE_IMAGE_SELECTION == ".." || $_Application_Module_Member_Account_Data_DELETE_READ_DIRECTORY_MEMBER_GALLERY_VIDEO_PROFILE_IMAGE_SELECTION == "index.php") {
 /**
  * Do Nothing
 **/
 } else {
 
-														echo ("<OPTION VALUE=\"$_Application_Module_Member_Account_Data_DELETE_READ_DIRECTORY_MEMBER_GALLERY_VIDEO_SELECTION\">$_Application_Module_Member_Account_Data_DELETE_READ_DIRECTORY_MEMBER_GALLERY_VIDEO_SELECTION</OPTION>");
+														echo ("<OPTION VALUE=\"$_Application_Module_Member_Account_Data_DELETE_READ_DIRECTORY_MEMBER_GALLERY_VIDEO_PROFILE_IMAGE_SELECTION\">$_Application_Module_Member_Account_Data_DELETE_READ_DIRECTORY_MEMBER_GALLERY_VIDEO_PROFILE_IMAGE_SELECTION</OPTION>");
 
 } // [ + ] IF: Specified :: Directory :: Registered Member Account :: Directory :: Video Directory AND Files ARE NOT Specified Registered Member Account :: Directory :: Video Directory AND Files
 
@@ -2111,7 +2121,7 @@ if ($_Application_Module_Member_Account_Data_DELETE_READ_DIRECTORY_MEMBER_GALLER
  ============================================================================================================
 */
 
-closedir($_Application_Module_Member_Account_Data_DELETE_OPEN_DIRECTORY_MEMBER_GALLERY_VIDEO_SELECTION);
+closedir($_Application_Module_Member_Account_Data_DELETE_OPEN_DIRECTORY_MEMBER_GALLERY_VIDEO_PROFILE_IMAGE_SELECTION);
 
 echo ("
 													</SELECT><BR>
