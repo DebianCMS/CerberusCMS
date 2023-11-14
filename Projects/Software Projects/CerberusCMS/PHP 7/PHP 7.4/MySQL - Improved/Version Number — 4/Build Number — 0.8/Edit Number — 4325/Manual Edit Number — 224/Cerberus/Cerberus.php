@@ -877,6 +877,14 @@ $_GLOBAL_MEMBER_NUMBER_OF_POSTS								= $_DB_Query_Kernel_Select_Member_Credent
 */
 
 $_GLOBAL_MEMBER_IMAGE_PROFILE								= $_DB_Query_Kernel_Select_Member_Credentials_Fetch_Array['member_image_picture'];
+	
+/*
+ ============================================================================================================
+ + Global :: Member Account :: Settings :: Variables :: Member Account Personal Video Profile Image
+ ============================================================================================================
+*/
+	
+$_GLOBAL_MEMBER_IMAGE_VIDEO_PROFILE							= $_DB_Query_Kernel_Select_Member_Credentials_Fetch_Array['member_image_video'];
 
 /*
  ============================================================================================================
