@@ -276,9 +276,30 @@ echo ("
 
 														<HR>System :: Services :: Settings :: Modules<HR>
 
-															Services :: Module :: Status :: COmmander<BR>
+															Services :: Module :: Status :: Commander<BR>
 															[ Current: $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SERVICES_MODULE_STATUS_COMMANDER ]<BR>
 																<SELECT NAME=\"AMA_Settings_Update_Status_Services_Module_Commander\">
+																	<OPTION VALUE=\"1\">1: On</OPTION>
+																	<OPTION VALUE=\"0\">0: Off</OPTION>
+																</SELECT><BR><BR>
+
+															Services :: Module :: Status :: Integrity<BR>
+															[ Current: $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SERVICES_MODULE_STATUS_INTEGRITY ]<BR>
+																<SELECT NAME=\"AMA_Settings_Update_Status_Services_Module_Integrity\">
+																	<OPTION VALUE=\"1\">1: On</OPTION>
+																	<OPTION VALUE=\"0\">0: Off</OPTION>
+																</SELECT><BR><BR>
+
+															Services :: Module :: Status :: Loops<BR>
+															[ Current: $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SERVICES_MODULE_STATUS_LOOPS ]<BR>
+																<SELECT NAME=\"AMA_Settings_Update_Status_Services_Module_Loops\">
+																	<OPTION VALUE=\"1\">1: On</OPTION>
+																	<OPTION VALUE=\"0\">0: Off</OPTION>
+																</SELECT><BR><BR>
+
+															Services :: Module :: Status :: Services<BR>
+															[ Current: $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_SERVICES_MODULE_STATUS_SERVICES ]<BR>
+																<SELECT NAME=\"AMA_Settings_Update_Status_Services_Module_Services\">
 																	<OPTION VALUE=\"1\">1: On</OPTION>
 																	<OPTION VALUE=\"0\">0: Off</OPTION>
 																</SELECT><BR><BR>
