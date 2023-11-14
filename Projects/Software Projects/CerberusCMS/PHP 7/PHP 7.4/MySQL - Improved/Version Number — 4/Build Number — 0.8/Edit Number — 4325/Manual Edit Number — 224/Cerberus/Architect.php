@@ -1578,6 +1578,7 @@ member_experience_amount VARCHAR(12),
 member_gender CHAR(1),
 member_image_avatar VARCHAR(100),
 member_image_picture VARCHAR(100),
+member_image_video VARCHAR(100),
 member_ip_address VARCHAR(50),
 member_ip_address_authorized VARCHAR(50),
 member_ip_address_authorized_multifactor VARCHAR(50),
@@ -2357,6 +2358,7 @@ member_experience_amount,
 member_gender,
 member_image_avatar,
 member_image_picture,
+member_image_video,
 member_ip_address,
 member_ip_address_authorized,
 member_ip_address_authorized_multifactor,
@@ -2501,6 +2503,7 @@ member_username
 '2',
 'Default.png',
 'No_Image.png',
+'No_Image.mp4',
 '$_GLOBAL_REMOTE_SERVER_ADDRESS',
 '000.000.000.000',
 '000.000.000.000',
@@ -2653,6 +2656,7 @@ member_experience_amount,
 member_gender,
 member_image_avatar,
 member_image_picture,
+member_image_video,
 member_ip_address,
 member_ip_address_authorized,
 member_ip_address_authorized_multifactor,
@@ -2797,6 +2801,7 @@ member_username
 '2',
 'Default.png',
 'Profile.png',
+'No_Image.mp4',
 '$_GLOBAL_LOCAL_SERVER_ADDRESS',
 '000.000.000.000',
 '000.000.000.000',
@@ -2953,6 +2958,7 @@ member_experience_amount,
 member_gender,
 member_image_avatar,
 member_image_picture,
+member_image_video,
 member_ip_address,
 member_ip_address_authorized,
 member_ip_address_authorized_multifactor,
@@ -3097,6 +3103,7 @@ member_username
 '2',
 'Default.png',
 'No_Image.png',
+'No_Image.mp4',
 '$_GLOBAL_LOCAL_SERVER_ADDRESS',
 '000.000.000.000',
 '000.000.000.000',
@@ -3334,14 +3341,12 @@ member_username
 	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Gallery<BR>");
 	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Live<BR>");
 	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Movies<BR>");
-	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Profile<BR>");
 	echo ("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Streams<BR>");
 
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video");
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Gallery");
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Live");
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Movies");
-	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Profile");
 	mkdir("./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Streams");
 
 	echo ("[ Done ]<BR><BR>");
@@ -3401,7 +3406,6 @@ copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_A
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Gallery/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Live/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Movies/index.php");
-copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Profile/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Streams/index.php");
 
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/index.php");
@@ -3535,14 +3539,12 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Gallery<BR>");
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Live<BR>");
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Movies<BR>");
-	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Profile<BR>");
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Streams<BR>");
 
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Gallery");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Live");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Movies");
-	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Profile");
 	mkdir("./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Streams");
 
 	echo ("[ Done ]<BR><BR>");
@@ -3611,7 +3613,6 @@ copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_N
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Gallery/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Live/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Movies/index.php");
-copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Profile/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Streams/index.php");
 
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/index.php");
