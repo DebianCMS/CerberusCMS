@@ -1132,8 +1132,9 @@ closedir($_Application_Module_Member_Update_Account_OPEN_DIRECTORY_MEMBER_IMAGE_
 echo ("
 														</SELECT><BR><BR>
 
-														* Account Images :: Profile Image:<BR>
+														* Account Images :: Video Profile Image:<BR>
 															[ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Account_Data&amp;Display&#61;Gallery&amp;Type&#61;Video&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Upload New Video Profile Image ::\" TARGET=\"_NEW\">Upload New Video Profile Image</A> ]<BR>															<SELECT NAME=\"AMM_Update_Account_Member_Profile_Picture_Video\" VALUE=\"$_GLOBAL_MEMBER_IMAGE_PROFILE_VIDEO\" MAXLENGTH=\"100\">
+															<SELECT NAME=\"AMM_Update_Account_Member_Profile_Picture_Video\" VALUE=\"$_GLOBAL_MEMBER_IMAGE_PROFILE\" MAXLENGTH=\"100\">
 ");
 
 /*
