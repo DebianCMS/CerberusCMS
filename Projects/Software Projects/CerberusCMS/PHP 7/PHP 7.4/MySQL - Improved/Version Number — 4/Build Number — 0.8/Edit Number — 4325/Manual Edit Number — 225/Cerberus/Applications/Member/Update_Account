@@ -1133,8 +1133,8 @@ echo ("
 														</SELECT><BR><BR>
 
 														* Account Images :: Video Profile Image:<BR>
-															[ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Account_Data&amp;Display&#61;Gallery&amp;Type&#61;Video&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Upload New Video Profile Image ::\" TARGET=\"_NEW\">Upload New Video Profile Image</A> ]<BR>															<SELECT NAME=\"AMM_Update_Account_Member_Profile_Picture_Video\" VALUE=\"$_GLOBAL_MEMBER_IMAGE_PROFILE_VIDEO\" MAXLENGTH=\"100\">
-															<SELECT NAME=\"AMM_Update_Account_Member_Profile_Picture_Video\" VALUE=\"$_GLOBAL_MEMBER_IMAGE_PROFILE\" MAXLENGTH=\"100\">
+															[ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Account_Data&amp;Display&#61;Gallery&amp;Type&#61;Video&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Upload New Video Profile Image ::\" TARGET=\"_NEW\">Upload New Video Profile Image</A> ]<BR>
+															<SELECT NAME=\"AMM_Update_Account_Member_Profile_Picture_Video\" MAXLENGTH=\"100\">
 ");
 
 /*
@@ -1458,6 +1458,7 @@ member_address_mail='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMB
 member_gender='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_GENDER',
 member_image_avatar='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_PROFILE_AVATAR',
 member_image_picture='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_PROFILE_PICTURE',
+member_image_video='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_PROFILE_PICTURE_VIDEO',
 member_contact_emergency_1='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_CONTACT_EMERGENCY_1',
 member_contact_emergency_2='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_CONTACT_EMERGENCY_2',
 member_contact_emergency_3='$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_CONTACT_EMERGENCY_3',
