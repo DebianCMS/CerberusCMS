@@ -3830,7 +3830,7 @@ $_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME						= $_FILES
 $_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_LOCATION						= "./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME";
 $_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION						= pathinfo($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_LOCATION,PATHINFO_EXTENSION);
 $_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION						= strtolower($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION);
-$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_VALID_EXTENSIONS					= array("jpg","jpeg","png","pdf","docx","txt","mp3","mp4","webm");
+$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_VALID_EXTENSIONS					= array("aac","flac","ogg","mp3","wav","doc","docx","pdf","ppt","txt","jpg","jpeg","png","mov","mp4","webm");
 
 /*
  ============================================================================================================
@@ -3842,39 +3842,147 @@ if (in_array(strtolower($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_
 
 /*
  ============================================================================================================
+ +
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Audio
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: AAC
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "aac") {
+
+$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<AUDIO CONTROLS><SOURCE SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TYPE=\"AUDIO/MPEG\">&nbsp;&nbsp;";
+
+} // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: AAC
+
+/*
+ ============================================================================================================
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: FLAC
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "flac") {
+
+$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<AUDIO CONTROLS><SOURCE SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TYPE=\"AUDIO/MPEG\">&nbsp;&nbsp;";
+
+} // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: FLAC
+
+/*
+ ============================================================================================================
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: OGG
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "ogg") {
+
+$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<AUDIO CONTROLS><SOURCE SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TYPE=\"AUDIO/MPEG\">&nbsp;&nbsp;";
+
+} // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: OGG
+
+/*
+ ============================================================================================================
  + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: MP3
  ============================================================================================================
 */
 
 if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "mp3") {
 
-$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<AUDIO CONTROLS><SOURCE SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TYPE=\"AUDIO/MPEG\">";
+$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<AUDIO CONTROLS><SOURCE SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TYPE=\"AUDIO/MPEG\">&nbsp;&nbsp;";
 
 } // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: MP3
 
 /*
  ============================================================================================================
- + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: MP4
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: WAV
  ============================================================================================================
 */
 
-if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "mp4") {
+if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "wav") {
 
-$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<VIDEO ID=\"StreamVideo\" WIDTH=\"125\" HEIGHT=\"125\" CONTROLS=\"CONTROLS\" TYPE=\"VIDEO/MP4\" AUTOSTART=\"FALSE\" PRELOAD=\"NONE\"><SOURCE SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\"></VIDEO>";
+$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<AUDIO CONTROLS><SOURCE SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TYPE=\"AUDIO/MPEG\">&nbsp;&nbsp;";
 
-} // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: MP4
+} // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: WAV
 
 /*
  ============================================================================================================
- + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: WEBM
+ +
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Document
+ +
  ============================================================================================================
 */
 
-if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "webm") {
+/*
+ ============================================================================================================
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: DOC
+ ============================================================================================================
+*/
 
-$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<VIDEO ID=\"StreamVideo\" WIDTH=\"125\" HEIGHT=\"125\" CONTROLS=\"CONTROLS\" TYPE=\"VIDEO/MP4\" AUTOSTART=\"FALSE\" PRELOAD=\"NONE\"><SOURCE SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\"></VIDEO>";
+if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "doc") {
 
-} // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: WEBM
+$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<A HREF=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: This Stream :: Media :: File :: Document-Format :: $_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME\">$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME</A>&nbsp;&nbsp;";
+
+} // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: DOC
+
+/*
+ ============================================================================================================
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: DOCX
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "docx") {
+
+$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<A HREF=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: This Stream :: Media :: File :: Document-New-Format :: $_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME\">$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME</A>&nbsp;&nbsp;";
+
+} // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: DOCX
+
+/*
+ ============================================================================================================
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: PDF
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "pdf") {
+
+$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<A HREF=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: This Stream :: Media :: File :: Portable-Document-Format :: $_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME\">$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME</A>&nbsp;&nbsp;";
+
+} // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: PDF
+
+/*
+ ============================================================================================================
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: PPT
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "ppt") {
+
+$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<A HREF=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: This Stream :: Media :: File :: Power-Point-Presentation :: $_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME\">$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME</A>&nbsp;&nbsp;";
+
+} // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: PPT
+
+/*
+ ============================================================================================================
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: TXT
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "txt") {
+
+$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<A HREF=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: This Stream :: Media :: File :: Text :: $_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME\">$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME</A>&nbsp;&nbsp;";
+
+} // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: TXT
+
+/*
+ ============================================================================================================
+ +
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Image
+ +
+ ============================================================================================================
+*/
 
 /*
  ============================================================================================================
@@ -3885,7 +3993,7 @@ $_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<VIDEO ID=\
 if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "jpg") {
 
 $_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA		= "<A HREF=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: This Stream Image File :: $_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME ::\">
-				<IMG SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"StreamImageMessage\"></IMG></A>";
+				<IMG SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"StreamImageMessage\"></IMG></A>&nbsp;&nbsp;";
 
 } // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: JPG
 
@@ -3898,7 +4006,7 @@ $_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA		= "<A HREF=\"
 if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "jpeg") {
 
 $_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA		= "<A HREF=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: This Stream Image File :: $_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME ::\">
-				<IMG SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"StreamImageMessage\"></IMG></A>";
+				<IMG SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"StreamImageMessage\"></IMG></A>&nbsp;&nbsp;";
 
 } // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: JPEG
 
@@ -3911,9 +4019,53 @@ $_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA		= "<A HREF=\"
 if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "png") {
 
 $_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA		= "<A HREF=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: This Stream Image File :: $_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME ::\">
-				<IMG SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"StreamImageMessage\"></IMG></A>";
+				<IMG SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" WIDTH=\"75\" HEIGHT=\"75\" CLASS=\"StreamImageMessage\"></IMG></A>&nbsp;&nbsp;";
 
 } // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: PNG
+
+/*
+ ============================================================================================================
+ +
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Video
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: MOV
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "mov") {
+
+$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<VIDEO ID=\"StreamVideo\" WIDTH=\"125\" HEIGHT=\"125\" CONTROLS=\"CONTROLS\" TYPE=\"VIDEO/MP4\" AUTOSTART=\"FALSE\" PRELOAD=\"NONE\"><SOURCE SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\"></VIDEO>&nbsp;&nbsp;";
+
+} // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: MOV
+
+/*
+ ============================================================================================================
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: MP4
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "mp4") {
+
+$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<VIDEO ID=\"StreamVideo\" WIDTH=\"125\" HEIGHT=\"125\" CONTROLS=\"CONTROLS\" TYPE=\"VIDEO/MP4\" AUTOSTART=\"FALSE\" PRELOAD=\"NONE\"><SOURCE SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\"></VIDEO>&nbsp;&nbsp;";
+
+} // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: MP4
+
+/*
+ ============================================================================================================
+ + IF: Files Uploaded :: In Array :: Allowed File Extensions :: Is: WEBM
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_EXTENSION == "webm") {
+
+$_Application_Module_Member_Profile_STREAMS_MESSAGE_PREPARED_DATA = "<VIDEO ID=\"StreamVideo\" WIDTH=\"125\" HEIGHT=\"125\" CONTROLS=\"CONTROLS\" TYPE=\"VIDEO/MP4\" AUTOSTART=\"FALSE\" PRELOAD=\"NONE\"><SOURCE SRC=\"./$_Application_Module_Member_Profile_FIND_DIRECTORY_MEMBER_STREAMS_WALL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_YEAR_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_FULL/$_GLOBAL_LOCAL_SERVER_DATE_NUMERICAL_MONTH_DAY_FULL/$_GLOBAL_LOCAL_SERVER_DATE_TIME_NUMERICAL_FULL/$_Application_Module_Member_Profile_STREAMS_GENERATOR_RANDOM_NUMBERS.$_Application_Module_Member_Profile_STREAMS_POST_UPLOAD_FILE_NAME?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\"></VIDEO>&nbsp;&nbsp;";
+
+} // [ + ] IF: Registered Member Account :: Stream :: Media :: File Extension :: Is: WEBM
 
 /*
  ============================================================================================================
