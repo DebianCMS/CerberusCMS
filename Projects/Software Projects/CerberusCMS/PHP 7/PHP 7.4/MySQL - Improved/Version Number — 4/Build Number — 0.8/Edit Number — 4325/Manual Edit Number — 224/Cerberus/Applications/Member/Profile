@@ -111,6 +111,7 @@ $_Application_Module_Member_Profile_LIST_MEMBER_ACCOUNT_SETTINGS_PRIVACY_VISIBIL
 
 $_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_AVATAR							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_image_avatar'];
 $_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_PICTURE							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_image_picture'];
+$_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_VIDEO							= $_Application_Module_Member_Profile_DB_Query_SELECT_ALL_MEMBER_ACCOUNT_ENTRIES_Fetch_Array['member_image_video'];
 
 /*
  ============================================================================================================
@@ -677,6 +678,32 @@ if (!file_exists($_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPL
 
 /*
  ============================================================================================================
+ + IF: Registered Member Account :: Video Profile Image Is Empty, Replace With Default Theme Image
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_VIDEO_DISPLAY					= "./Member/$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME/Files/Video/Profile/$_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_VIDEO";
+
+if ($_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_VIDEO == "") {
+
+	$_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_VIDEO_DISPLAY	 			= "./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Video/Icon/No_Image.mp4";
+
+} // [ + ] IF: Registered Member Account :: Image :: Video Profile Image Is Empty
+
+/*
+ ============================================================================================================
+ + IF: Registered Member Account :: Video Profile Image Does Not Exist, Replace With Default Theme Image
+ ============================================================================================================
+*/
+
+if (!file_exists($_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_VIDEO_DISPLAY)) {
+
+	$_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_VIDEO_DISPLAY 				= "./Theme/$_GLOBAL_MEMBER_THEME_DIRECTORY/Video/Icon/No_Image.mp4";
+
+} // [ + ] IF: Registered Member Account :: Image :: Video Profile Image Does Not Exist
+
+/*
+ ============================================================================================================
  + IF: Registered Member Account :: UserName :: Is: Services
  ============================================================================================================
 */
@@ -922,7 +949,7 @@ echo ("
 												<HR>
 													<A HREF=\"$_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display This Registered Member Account Image ::\"><IMG SRC=\"$_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST :: $_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY ::\" ALT=\":: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST :: $_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY ::\" CLASS=\"MemberProfile\" WIDTH=\"120\" HEIGHT=\"120\"></A>
 													&nbsp;&nbsp;&nbsp;
-													<VIDEO ID=\"StreamVideo\" WIDTH=\"125\" HEIGHT=\"125\" CONTROLS=\"CONTROLS\" TYPE=\"VIDEO/MP4\" AUTOSTART=\"FALSE\" PRELOAD=\"NONE\"><SOURCE SRC=\"$_GLOBAL_MEMBER_IMAGE_VIDEO_PROFILE\"></VIDEO><BR><BR>
+													<VIDEO ID=\"StreamVideo\" WIDTH=\"125\" HEIGHT=\"125\" CONTROLS=\"CONTROLS\" TYPE=\"VIDEO/MP4\" AUTOSTART=\"FALSE\" PRELOAD=\"NONE\"><SOURCE SRC=\"$_Application_Module_Member_Profile_LIST_MEMBER_IMAGE_VIDEO_DISPLAY\"></VIDEO><BR><BR>
 													
 													$_Application_Module_Member_Profile_LIST_MEMBER_PROFILE_ABOUT
 												<HR>
