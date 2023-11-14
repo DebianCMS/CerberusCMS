@@ -15,9 +15,9 @@
  +    ()    () - -
  +  ()  () ()()()()
  +  ------
- +  Services-Level Application Module
+ + Index Application
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => System => Services => Services
+ + - This File, Location	 : Root Directory => System => Kernel => Version => 4.08.251 => index.php
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -48,10 +48,44 @@
  +
  +
  +
- + [ ^ ] Services
+ + [ ^ ] Directory Master Index
  +
  +
  +
  ============================================================================================================
 */
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Directory Master Index :: Variables
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Directory Master Index :: Variables :: Directory Listing Denial File
+ ============================================================================================================
+*/
+
+$_DIRECTORY_FILE_DENIAL					= "../../../System/Default/Messages/Directory_Denial.php";
+
+/*
+ ============================================================================================================
+ + Directory Listing Denial: IF Directory Denial File Exists, Include It
+ ============================================================================================================
+*/
+
+if (file_exists("$_DIRECTORY_FILE_DENIAL")) {
+
+	include_once "$_DIRECTORY_FILE_DENIAL";
+
+} else {
+
+	echo ("Kernel Message: Missing Path: $_DIRECTORY_FILE_DENIAL");
+
+} // [ + ] IF: File Exists: Directory Denial Index File: Redirect To Master Directory Index Listing Denial File
 ?>
