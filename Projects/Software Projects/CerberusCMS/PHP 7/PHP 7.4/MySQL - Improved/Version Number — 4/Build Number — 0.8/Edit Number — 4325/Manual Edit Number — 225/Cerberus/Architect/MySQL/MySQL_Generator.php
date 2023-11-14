@@ -998,6 +998,10 @@ settings_system_security_device_multifactor_ip CHAR(1),
 settings_system_security_cache_server CHAR(1),
 settings_system_security_module_directory_sanitization VARCHAR(50),
 settings_system_security_module_status_sanitization VARCHAR(50),
+settings_system_services_module_status_commander VARCHAR(50),
+settings_system_services_module_status_integrity VARCHAR(50),
+settings_system_services_module_status_loops VARCHAR(50),
+settings_system_services_module_status_services VARCHAR(50),
 PRIMARY KEY (id)
 );
 
@@ -1288,7 +1292,11 @@ settings_system_security_account_restrict_web_browser,
 settings_system_security_device_multifactor_ip,
 settings_system_security_cache_server,
 settings_system_security_module_directory_sanitization,
-settings_system_security_module_status_sanitization
+settings_system_security_module_status_sanitization,
+settings_system_services_module_status_commander,
+settings_system_services_module_status_integrity,
+settings_system_services_module_status_loops,
+settings_system_services_module_status_services
 )VALUES(
 '86400',
 '0',
@@ -1332,6 +1340,10 @@ settings_system_security_module_status_sanitization
 '0',
 '1',
 'Default',
+'1',
+'1',
+'1',
+'1',
 '1'
 );
 
