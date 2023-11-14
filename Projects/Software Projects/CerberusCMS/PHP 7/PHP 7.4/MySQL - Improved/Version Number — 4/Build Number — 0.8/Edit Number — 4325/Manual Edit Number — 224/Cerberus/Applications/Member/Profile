@@ -920,7 +920,10 @@ echo ("
 												&#8212; <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Profile&amp;Name&#61;$_Application_Module_Member_Profile_LIST_MEMBER_USERNAME&amp;Display&#61;Friends&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Friends List :: For The Registered Member Account :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST ::\">Friends</A>
 												&nbsp;]</CENTER>
 												<HR>
-													<A HREF=\"$_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display This Registered Member Account Image ::\"><IMG SRC=\"$_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST :: $_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY ::\" ALT=\":: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST :: $_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY ::\" CLASS=\"MemberProfile\" WIDTH=\"120\" HEIGHT=\"120\"></A><BR><BR>
+													<A HREF=\"$_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display This Registered Member Account Image ::\"><IMG SRC=\"$_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_IMAGE_RANDOM_STRING_GENERATION\" TITLE=\":: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST :: $_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY ::\" ALT=\":: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_FIRST :: $_Application_Module_Member_Profile_LIST_MEMBER_NAME_LAST :: $_Application_Module_Member_Profile_IMAGE_PROFILE_PICTURE_DISPLAY ::\" CLASS=\"MemberProfile\" WIDTH=\"120\" HEIGHT=\"120\"></A>
+													&nbsp;&nbsp;&nbsp;
+													<VIDEO ID=\"StreamVideo\" WIDTH=\"125\" HEIGHT=\"125\" CONTROLS=\"CONTROLS\" TYPE=\"VIDEO/MP4\" AUTOSTART=\"FALSE\" PRELOAD=\"NONE\"><SOURCE SRC=\"$_GLOBAL_MEMBER_IMAGE_VIDEO_PROFILE\"></VIDEO><BR><BR>
+													
 													$_Application_Module_Member_Profile_LIST_MEMBER_PROFILE_ABOUT
 												<HR>
 													Forum and Comment Signature:<BR>
@@ -3753,7 +3756,7 @@ fwrite($_Application_Module_Member_Profile_OPEN_DIRECTORY_MEMBER_FILE_TIMESTAMP_
 	<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 			<B>Server :: Local</B><BR>
 			* Stream :: Timestamp :: Message :: Server :: Local :: Standard: $_GLOBAL_LOCAL_SERVER_DATE_STANDARD<BR>
-			* Stream :: Timestamp :: Message :: Server :: Local :: Unix Epoch: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The :: Unix-Epoch Time Reader ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_TIME_UNIX</A><BR><BR>
+			* Stream :: Timestamp :: Message :: Server :: Local :: Unix-Epoch: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_TIMESTAMP_UNIX_EPOCH\" TITLE=\":: Open & Display :: The :: Unix-Epoch Time Reader ::\" TARGET=\"_NEW\">$_GLOBAL_LOCAL_SERVER_TIME_UNIX</A><BR><BR>
 
 			<B>Server :: Remote</B><BR>
 			* Stream :: Timestamp :: Message :: Server :: Remote :: Device-Reported: <BR><BR>
