@@ -607,6 +607,25 @@ $_GLOBAL_SECURITY_RANDOM_NUMBER_GENERATOR_URL_DIGITS_MERSENNE_TWISTER			= mt_ran
 /*
  ============================================================================================================
  +
+ + Global :: System :: Services :: Variables :: System-Wide
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Global :: System :: Security :: Settings :: Security Module :: Master Sanitization
+ ============================================================================================================
+*/
+
+$_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_COMMANDER				= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_services_module_status_commander'];
+$_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_INTEGRITY				= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_services_module_status_integrity'];
+$_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_LOOPS					= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_services_module_status_loops'];
+$_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_SERVICES					= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_services_module_status_services'];
+
+/*
+ ============================================================================================================
+ +
  +
  +
  + [ @ ] Global :: Cookie :: Variables
