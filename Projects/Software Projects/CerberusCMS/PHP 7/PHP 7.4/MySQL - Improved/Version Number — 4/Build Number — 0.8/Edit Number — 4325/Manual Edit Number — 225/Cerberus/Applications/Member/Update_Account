@@ -617,6 +617,7 @@ $_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_SETTINGS_E
 
 $_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_PROFILE_AVATAR				= $_POST['AMM_Update_Account_Member_Profile_Avatar'];
 $_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_PROFILE_PICTURE				= $_POST['AMM_Update_Account_Member_Profile_Picture'];
+$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_PROFILE_PICTURE_VIDEO			= $_POST['AMM_Update_Account_Member_Profile_Picture_Video'];
 
 /*
  ============================================================================================================
@@ -751,6 +752,18 @@ if ($_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_PROFIL
 	$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_PROFILE_PICTURE = "No_Image.png";
 
 } // [ + ] IF: Registered Member Account :: Update Account :: Input Form :: Image :: Profile Image :: Posted Empty
+
+/*
+ ============================================================================================================
+ + IF: Registered Member Account :: Update Account :: Input Form :: Image :: Video Profile Image :: Posted Empty
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_PROFILE_PICTURE_VIDEO == "") {
+
+	$_Application_Module_Member_Update_Account_POST_UPDATE_MEMBER_ACCOUNT_PROFILE_PICTURE = "No_Image.mp4";
+
+} // [ + ] IF: Registered Member Account :: Update Account :: Input Form :: Image :: Video Profile Image :: Posted Empty
 
 /*
  ============================================================================================================
@@ -1118,6 +1131,57 @@ closedir($_Application_Module_Member_Update_Account_OPEN_DIRECTORY_MEMBER_IMAGE_
 
 echo ("
 														</SELECT><BR><BR>
+
+														* Account Images :: Profile Image:<BR>
+															[ <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Account_Data&amp;Display&#61;Gallery&amp;Type&#61;Video&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Upload New Video Profile Image ::\" TARGET=\"_NEW\">Upload New Video Profile Image</A> ]<BR>															<SELECT NAME=\"AMM_Update_Account_Member_Profile_Picture_Video\" VALUE=\"$_GLOBAL_MEMBER_IMAGE_PROFILE_VIDEO\" MAXLENGTH=\"100\">
+");
+
+/*
+ ============================================================================================================
+ + Read :: Directory :: Registered Member Account :: Directory :: For Updating Video Profile Image
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Read :: Registered Member Account :: Directory Variables :: Video Profile Image
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Update_Account_Image_Video_FIND_MEMBER_DIRECTORY					= "./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Video/Profile/";
+$_Application_Module_Member_Update_Account_Image_Video_OPEN_MEMBER_DIRECTORY					= opendir($_Application_Module_Member_Update_Account_Image_Video_FIND_MEMBER_DIRECTORY);
+
+/*
+ ============================================================================================================
+ + Read :: Registered Member Account :: Directory :: For Updating Video Profile Image
+ ============================================================================================================
+*/
+
+while (($_Application_Module_Member_Update_Account_Image_Video_READ_MEMBER_DIRECTORY = readdir($_Application_Module_Member_Update_Account_Image_Video_OPEN_MEMBER_DIRECTORY))) {
+
+if ($_Application_Module_Member_Update_Account_Image_Video_READ_MEMBER_DIRECTORY == "." || $_Application_Module_Member_Update_Account_Image_Video_READ_MEMBER_DIRECTORY == ".." || $_Application_Module_Member_Update_Account_Image_Video_READ_MEMBER_DIRECTORY == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+															echo ("<OPTION VALUE=\"$_Application_Module_Member_Update_Account_Image_Video_READ_MEMBER_DIRECTORY\">$_Application_Module_Member_Update_Account_Image_Video_READ_MEMBER_DIRECTORY</OPTION>");
+
+} // [ + ] IF: Specified Member Account Video Profile Image Directory AND Files ARE NOT Specified Member Account Video Profile Image Directory AND Files
+
+} // [ + ] WHILE: Reading Specified Member Account Directory: Video Profile Images
+
+/*
+ ============================================================================================================
+ + Close :: Directory :: Registered Member Account :: Directory :: For Updating Video Profile Image
+ ============================================================================================================
+*/
+
+closedir($_Application_Module_Member_Update_Account_Image_Video_OPEN_MEMBER_DIRECTORY);
+
+echo ("
+														</SELECT><BR><BR>
+
 
 													Account Settings<HR><BR>
 
