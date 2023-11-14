@@ -1390,11 +1390,19 @@ if (file_exists($_GLOBAL_SYSTEM_SECURITY_MODULE_FILE_MASTER_SANITIZATION)) {
  ============================================================================================================
 */
 
+/*
+ ============================================================================================================
+ + IF: Internal :: Services :: Module :: Status: Commander :: Is: On
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_COMMANDER >= "1") {
+
 $_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_COMMANDER								= "./System/Services/Commander";
 
 /*
  ============================================================================================================
- + Internal :: Services :: Module :: File: Commander :: Exists, Include It
+ + IF: Internal :: Services :: Module :: File: Commander :: Exists, Include It
  ============================================================================================================
 */
 
@@ -1408,6 +1416,8 @@ if (file_exists($_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_COMMANDER)) {
 
 } // [ + ] IF: Include: Global :: System :: Services :: Module :: File: Commander :: Exists, Include It
 
+} // [ + ] IF: Include: Global :: System :: Services :: Module :: Status: Commander :: Is: On
+
 /*
  ============================================================================================================
  +
@@ -1418,11 +1428,19 @@ if (file_exists($_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_COMMANDER)) {
  ============================================================================================================
 */
 
+/*
+ ============================================================================================================
+ + IF: Internal :: Services :: Module :: Status: Integrity :: Is: On
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_INTEGRITY >= "1") {
+
 $_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_INTEGRITY								= "./System/Services/Integrity";
 
 /*
  ============================================================================================================
- + Internal :: Services :: Module :: File: Integrity :: Exists, Include It
+ + IF: Internal :: Services :: Module :: File: Integrity :: Exists, Include It
  ============================================================================================================
 */
 
@@ -1436,6 +1454,8 @@ if (file_exists($_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_INTEGRITY)) {
 
 } // [ + ] IF: Include: Global :: System :: Services :: Module :: File: Integrity :: Exists, Include It
 
+} // [ + ] IF: Include: Global :: System :: Services :: Module :: Status: Integrity :: Is: On
+
 /*
  ============================================================================================================
  +
@@ -1446,11 +1466,19 @@ if (file_exists($_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_INTEGRITY)) {
  ============================================================================================================
 */
 
-$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_LOOPS								= "./System/Services/Loops";
+/*
+ ============================================================================================================
+ + IF: Internal :: Services :: Module :: Status: Loops :: Is: On
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_LOOPS >= "1") {
+
+$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_LOOPS							= "./System/Services/Loops";
 
 /*
  ============================================================================================================
- + Internal :: Services :: Module :: File: Loops :: Exists, Include It
+ + IF: Internal :: Services :: Module :: File: Loops :: Exists, Include It
  ============================================================================================================
 */
 
@@ -1463,6 +1491,46 @@ if (file_exists($_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_LOOPS)) {
 	echo ("Kernel: Message: Error :: Missing :: System :: Services :: Module :: File: Loops");
 
 } // [ + ] IF: Include: Global :: System :: Services :: Module :: File: Loops :: Exists, Include It
+
+} // [ + ] IF: Include: Global :: System :: Services :: Module :: Status: Loops :: Is: On
+
+/*
+ ============================================================================================================
+ +
+ +
+ + Internal :: Services :: Module :: Services
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + IF: Internal :: Services :: Module :: Status: Services :: Is: On
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_SERVICES >= "1") {
+
+$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_SERVICES							= "./System/Services/Services";
+
+/*
+ ============================================================================================================
+ + IF: Internal :: Services :: Module :: File: Services :: Exists, Include It
+ ============================================================================================================
+*/
+
+if (file_exists($_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_SERVICES)) {
+
+	include_once "$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_SERVICES";
+
+} else {
+
+	echo ("Kernel: Message: Error :: Missing :: System :: Services :: Module :: File: Services");
+
+} // [ + ] IF: Include: Global :: System :: Services :: Module :: File: Services :: Exists, Include It
+
+} // [ + ] IF: Include: Global :: System :: Services :: Module :: Status: Services :: Is: On
 
 /*
  ============================================================================================================
