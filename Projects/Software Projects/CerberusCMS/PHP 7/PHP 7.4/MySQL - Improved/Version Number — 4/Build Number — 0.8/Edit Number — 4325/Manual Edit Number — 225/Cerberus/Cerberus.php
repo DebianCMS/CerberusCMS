@@ -3973,9 +3973,28 @@ $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_UserName		
 $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_Electronic_Mail_Address			= $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Fetch_Array['member_electronic_mail_address'];
 $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_Password					= $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Fetch_Array['member_password'];
 $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_Status_Account_Locked			= $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Fetch_Array['member_status_account_locked'];
+$DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_Status_Account_Active			= $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Fetch_Array['member_status_account_active'];
 $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_Attempt_Authentication			= $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Fetch_Array['member_attempt_authentication'];
 $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_Device_Authentication_MultiFactor_IP	= $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Fetch_Array['member_ip_address_authorized_multifactor'];
 
+/*
+ ============================================================================================================
+ + IF: Registered Member Account :: Status :: Account: Inactive
+ ============================================================================================================
+*/
+
+if ($DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_Status_Account_Active >= "1") {
+
+/*
+ ============================================================================================================
+ + Dabatase Server Check: Registered Member Account Entry Is: Currently Active
+ ============================================================================================================
+*/
+
+	header("Location: ?$_INTERNAL_APPLICATION_MODULE_MEMBER=Login&Message=AccountActive&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
+	exit;
+
+} else { //  ELSE: Registered Member Account :: Status :: Account: IS NOT Active, Proceed With Authentication
 
 /*
  ============================================================================================================
@@ -4465,6 +4484,8 @@ if ($DB_Query_Kernel_Member_Account_Update_Attempt_Authentication) {
 	exit;
 
 } // [ + ] IF: Registered Member Account :: Device :: Authentication :: Authorized :: Internet Protocol Address IS NOT Current Internet Protocol Address
+
+} // [ + ] IF: Registered Member Account :: Status :: Account: Active OR Inactive
 
 } // [ + ] IF: Registered Member Account Status Is: Locked, Redirect To Member Account Locked Status Message
 
@@ -5904,6 +5925,91 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null &
 */
 
 // [ C ] $_DB_Query_Kernel_Select_Applications_Administration->free_result();
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Application Modules :: Moderator-Level
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + Directory :: Applications :: Moderation
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Find and Open :: Directory :: Applications :: Moderation
+ ============================================================================================================
+*/
+
+$_FIND_DIRECTORY_APPLICATIONS_MODERATION			= "./Applications/Moderator";
+$_READ_DIRECTORY_APPLICATIONS_MODERATION			= opendir($_FIND_DIRECTORY_APPLICATIONS_MODERATION);
+
+/*
+ ============================================================================================================
+ + WHILE: Reading :: Directory :: Applications :: Moderation
+ ============================================================================================================
+*/
+
+while (($_READ_DIRECTORY_APPLICATIONS_MODERATION = readdir($_READ_DIRECTORY_APPLICATIONS_MODERATION))) {
+
+/*
+ ============================================================================================================
+ + IF: Stop :: Exploit :: Local-File-Inclusion and Remote-File-Inclusion
+ ============================================================================================================
+*/
+
+if ($_READ_DIRECTORY_APPLICATIONS_MODERATION == "." || $_READ_DIRECTORY_APPLICATIONS_MODERATION == ".." || $_READ_DIRECTORY_APPLICATIONS_MODERATION == "index.php") {
+/**
+ * Do Nothing
+**/
+} else {
+
+/*
+ ============================================================================================================
+ + IF: Internal Application :: $_INTERNAL_APPLICATION_MODULE_MODERATOR :: Is: Application Module :: Moderation
+ ============================================================================================================
+*/
+
+if ($_GET[$_INTERNAL_APPLICATION_MODULE_MODERATOR] == "$_READ_DIRECTORY_APPLICATIONS_MODERATION") {
+
+/*
+ ============================================================================================================
+ + IF: Registered Member Account :: Access Level :: Is: >= 2
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null && $_GLOBAL_MEMBER_ACCESS_LEVEL >= 2) {
+
+										include_once "$_FIND_DIRECTORY_APPLICATIONS_MODERATION/$_READ_DIRECTORY_APPLICATIONS_MODERATION";
+
+} else {
+
+	echo ($_Message_Kernel_APPLICATION_MODERATION_APPLICATION_ACCESS_RESTRICTED_MODERATION);
+
+} // [ + ] IF: Registered Member Account :: Cookies :: Credentials :: Exist, are Valid and Registered Member Account Access-Level Is: Moderation, >= 2
+
+} // [ + ] IF: Internal Application: $_INTERNAL_APPLICATION_MODULE_MODERATOR :: Is: Activated
+
+} // [ + ] IF: Directory :: Applications :: Moderation IS Anything ELSE Except The Directory :: Applications :: Moderation
+
+} // [ + ] WHILE: Reading :: Directory :: Applications :: Moderation
+
+/*
+ ============================================================================================================
+ + Close :: Directory :: Applications :: Administration
+ ============================================================================================================
+*/
+
+closedir($_READ_DIRECTORY_APPLICATIONS_MODERATION);
 
 /*
  ============================================================================================================
