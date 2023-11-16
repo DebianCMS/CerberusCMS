@@ -199,7 +199,7 @@ echo ("
 														System :: Plug-Ins<HR>
 															Plug-In :: Directory :: Camera<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Directory_Camera\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_CAMERA\" MAXLENGTH=\"50\"><BR>
-															Plug-In :: Status :: Camera:<BR>
+															Plug-In :: Status :: Camera<BR>
 															[ Current: $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_STATUS_CAMERA ]<BR>
 																<SELECT NAME=\"AMA_Settings_Update_Status_Camera\">
 																	<OPTION VALUE=\"1\">1: On</OPTION>
@@ -208,7 +208,7 @@ echo ("
 
 															Plug-In :: Directory :: Location<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Directory_Location\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_LOCATION\" MAXLENGTH=\"50\"><BR>
-															Plug-In :: Status :: Location:<BR>
+															Plug-In :: Status :: Location<BR>
 															[ Current: $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_STATUS_LOCATION ]<BR>
 																<SELECT NAME=\"AMA_Settings_Update_Status_Location\">
 																	<OPTION VALUE=\"1\">1: On</OPTION>
@@ -217,7 +217,7 @@ echo ("
 
 															Plug-In :: Directory :: Microphone<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Directory_Microphone\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_MICROPHONE\" MAXLENGTH=\"50\"><BR>
-															Plug-In :: Status :: Microphone:<BR>
+															Plug-In :: Status :: Microphone<BR>
 															[ Current: $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_STATUS_MICROPHONE ]<BR>
 																<SELECT NAME=\"AMA_Settings_Update_Status_Microphone\">
 																	<OPTION VALUE=\"1\">1: On</OPTION>
@@ -226,7 +226,7 @@ echo ("
 
 															Plug-In :: Directory :: Notifications<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Directory_Notifications\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_NOTIFICATIONS\" MAXLENGTH=\"50\"><BR>
-															Plug-In :: Status :: Notifications:<BR>
+															Plug-In :: Status :: Notifications<BR>
 															[ Current: $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_STATUS_NOTIFICATIONS ]<BR>
 																<SELECT NAME=\"AMA_Settings_Update_Status_Notifications\">
 																	<OPTION VALUE=\"1\">1: On</OPTION>
@@ -235,7 +235,7 @@ echo ("
 
 															Plug-In :: Directory :: Safe-Hyper-Text-Markup-Language<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Directory_SafeHTML\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_SAFEHTML\" MAXLENGTH=\"50\"><BR>
-															Plug-In :: Status :: Safe-Hyper-Text-Markup-Language:<BR>
+															Plug-In :: Status :: Safe-Hyper-Text-Markup-Language<BR>
 															[ Current: $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_STATUS_SAFEHTML ]<BR>
 																<SELECT NAME=\"AMA_Settings_Update_Status_SafeHTML\">
 																	<OPTION VALUE=\"1\">1: On</OPTION>
@@ -244,7 +244,7 @@ echo ("
 
 															Plug-In :: Directory :: Secure-Delete<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Directory_Secure_Delete\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_SECURE_DELETE\" MAXLENGTH=\"50\"><BR>
-															Plug-In :: Status :: Secure-Delete:<BR>
+															Plug-In :: Status :: Secure-Delete<BR>
 															[ Current: $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_STATUS_SECURE_DELETE ]<BR>
 																<SELECT NAME=\"AMA_Settings_Update_Status_Secure_Delete\">
 																	<OPTION VALUE=\"1\">1: On</OPTION>
@@ -253,7 +253,7 @@ echo ("
 
 															Plug-In :: Directory :: Text-Editor<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Directory_Text_Editor\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_DIRECTORY_TEXT_EDITOR\" MAXLENGTH=\"50\"><BR>
-															Plug-In :: Status :: Text-Editor:<BR>
+															Plug-In :: Status :: Text-Editor<BR>
 															[ Current: $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_PLUGIN_STATUS_TEXT_EDITOR ]<BR>
 																<SELECT NAME=\"AMA_Settings_Update_Status_Text_Editor\">
 																	<OPTION VALUE=\"1\">1: On</OPTION>
@@ -350,8 +350,8 @@ echo ("
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Time_Cookie\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_TIME_COOKIES\" MAXLENGTH=\"10\"><BR><BR>
 
 														<HR>System :: Hyper-Text-Markup-Language :: Output :: Data Compression<HR>
-															Setting :: Status :: G.N.U. ZIP Data Compression:<BR>
-															This Setting Could Potentially Break Your Instance Depending On The P.H.P. Parser Settings<BR>
+															Setting :: Status :: G.N.U. ZIP Data Compression<BR>
+															This Setting Could Potentially Break This Running Instance Depending On The P.H.P. Parser and Zend Engine Settings<BR>
 															[ Current: $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_EMBEDDED_COMPRESSION_GZIP ]<BR>
 																<SELECT NAME=\"AMA_Settings_Update_Status_GZIP\">
 																	<OPTION VALUE=\"0\">0: Off</OPTION>
@@ -359,17 +359,17 @@ echo ("
 																</SELECT><BR><BR>
 
 														<HR>System :: File Extensions<HR>
-															System-Wide :: File Extension :: Audio:<BR>
+															System-Wide :: File Extension :: Audio<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Sound_Extension\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_FILE_EXTENSION_AUDIO\" MAXLENGTH=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_FILE_EXTENSION_AUDIO\"><BR><BR>
-															System-Wide :: File Extension :: Image:<BR>
+															System-Wide :: File Extension :: Image<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Image_Extension\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_FILE_EXTENSION_IMAGE\" MAXLENGTH=\"3\"><BR><BR>
 
 														<HR>System :: Languages<HR>
-															Default Language Directory:<BR>
+															Default Language Directory<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Directory_Language\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_DIRECTORY_LANGUAGE\" MAXLENGTH=\"50\"><BR><BR>
 
 														<HR>System :: Settings :: Website<HR>
-															OFFLINE Mode :: Status:<BR>
+															OFFLINE Mode :: Status<BR>
 															[ Current: $_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_STATUS_OFFLINE_MODE ]<BR>
 																<SELECT NAME=\"AMA_Settings_Update_Status_Offline_Mode\">
 																	<OPTION VALUE=\"0\">0: Off</OPTION>
@@ -418,7 +418,7 @@ echo ("
 																</SELECT><BR><BR>
 
 														<HR>System :: Settings :: File Upload and Download System<HR>
-															Upload Size Limitations :: Public :: File Categories:<BR>
+															Upload Size Limitations :: Public :: File Categories<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Upload_Size_Public_File_Categories\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_UPLOAD_SIZE_PUBLIC_FILE_CATEGORIES\" MAXLENGTH=\"15\"><BR><BR>
 
 															Upload Size Limitations :: Public :: Messenger :: Audio<BR>
