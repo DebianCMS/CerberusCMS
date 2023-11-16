@@ -198,45 +198,36 @@ echo ("
 											</FORM><BR>
 
 											Additional Options<HR>
-											Member Account :: Authentication :: Connection Options :: Insecure :: Clear-Text<BR>
+											Member Account :: Authentication :: Connection Options :: Insecure :: Clear-Text<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 											* <A HREF=\"$_ACCESS_URL_CLEARTEXT/$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Hyper-Text-Transfer-Protocol-Insecure Over Clear-Text Insecure Connection ::\">Insecure Login :: Clear-Text</A><BR><BR>
 
-											Member Account :: Authentication :: Connection Options :: Secure :: Secure Socket Layer<BR>
+											Member Account :: Authentication :: Connection Options :: Secure :: Secure Socket Layer<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 											* <A HREF=\"$_ACCESS_URL_SECURE_SSL/$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Hyper-Text-Transfer-Protocol-Secure Over Secure Socket Layer Encrypted Connection :: StandardSSL ::\">Secure Login :: SSL :: Standard</A><BR>
 											* <A HREF=\"$_ACCESS_URL_SECURE_SSL_CUSTOM/$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Hyper-Text-Transfer-Protocol-Secure Over Secure Socket Layer Encrypted Connection :: CustomSSL ::\">Secure Login :: SSL :: CustomSSL</A><BR>
 											* <A HREF=\"$_ACCESS_URL_SECURE_SSL_OPENSSL/$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Hyper-Text-Transfer-Protocol-Secure Over Secure Socket Layer Encrypted Connection :: OpenSSL ::\">Secure Login :: SSL :: OpenSSL</A><BR><BR>
 
-											Member Account :: Authentication :: Connection Options :: Secure :: Transport Layer Security<BR>
-											* <A HREF=\"$_ACCESS_URL_SECURE_TLS/$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Hyper-Text-Transfer-Protocol-Secure Over Transport Layer Security Encrypted Connection ::\">Secure Login :: TLS</A><BR><BR>
+											Member Account :: Authentication :: Connection Options :: Secure :: Transport Layer Security<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+											* <A HREF=\"$_ACCESS_URL_SECURE_TLS/$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Hyper-Text-Transfer-Protocol-Secure Over Transport Layer Security Encrypted Connection ::\">Secure Login :: TLS :: Standard</A><BR>
+											* <A HREF=\"$_ACCESS_URL_SECURE_TLS_CUSTOM/$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Hyper-Text-Transfer-Protocol-Secure Over Transport Layer Security Encrypted Connection ::\">Secure Login :: TLS :: Custom</A><BR><BR>
 
-											Member Account :: Authentication :: Connection Options :: Secure :: Other<BR>
+											Member Account :: Authentication :: Connection Options :: Secure :: Other<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 											* <A HREF=\"$_ACCESS_URL_SECURE/$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Hyper-Text-Transfer-Protocol-Secure Over Secure Encrypted Connection ::\">Secure Login :: Other</A><BR><BR>
 
-											Member Account :: Authentication :: Authorization Options<BR>
+											Member Account :: Authentication :: Other Options<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
+											* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;Authorization&#61;Kill_Account_Current&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Initiate The Kill Currently Authenticated Registered Member Account Options ::\">Registered Member Account :: Authenticated :: Kill Current Authentication</A><BR>
+											* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;Authorization&#61;Kill_Account_Ghost&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Initiate The Kill Ghost Authenticated Registered Member Account Options ::\">Registered Member Account :: Authenticated :: Kill Ghost</A><BR><BR>
+
+											Member Account :: Authentication :: Authorization Options<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 											* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;Authorization&#61;IP_Address&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Initiate The Internet Protocol Address Authorization Process ::\">Internet Protocol Address :: Authorization Request</A><BR>
 											* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;Authorization&#61;IP_Token&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Authenticate With Internet Protocol Address Authorization Token ::\">Internet Protocol Address :: Authorization Token</A><BR><BR>
 
-											Member Account :: Credentials :: Credential Options<BR>
+											Member Account :: Credentials :: Credential Options<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 											* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Reset_Password&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Reset Your Member Account Password Or Other Member Account Credentials ::\">Reset Password</A><BR>
 											* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Account_Recovery&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Initiate The Member Account Recovery Options ::\">Account Recovery</A></CENTER><BR><BR>
 
-											Member Account :: Registration :: Registration Options<BR>
+											Member Account :: Registration :: Registration Options<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 											* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Register&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Initiate The Member Account Registration Process With $_GLOBAL_SYSTEM_SITE_TITLE ::\">Register</A><BR><BR>
 ");
-
-/*
- ============================================================================================================
- +
- + IF: Registered Member Account :: Status :: Account: Active
- +
- ============================================================================================================
-*/
-
-if ($_GET["Message"] == "AccountActive") {
-
-											echo ($_Application_Module_Member_Message_Login_ERROR_ACCOUNT_ACTIVE);
-
-} // [ + ] IF: Internal Application: Display Message: Registered Member Account :: Status: Active
 
 /*
  ============================================================================================================
@@ -248,9 +239,9 @@ if ($_GET["Message"] == "AccountActive") {
 
 if ($_GET["Message"] == "No_Member") {
 
-											echo ($_Application_Module_Member_Message_Login_ERROR_ACCOUNT_DOES_NOT_EXIST);
+											echo ($_Application_Module_Member_Message_Login_ERROR);
 
-} // [ + ] IF: Internal Application: Display Message: Registered Member Account :: DOES NOT Exist
+} // [ + ] IF: Internal Application: Display Message: No Existing Member Account Is Activated
 
 } // [ + ] IF: Registered Member Account :: Cookies :: Credentials :: ARE Set
 
@@ -266,7 +257,7 @@ if ($_GET["Message"] == "AccountLocked") {
 
 											echo ($_Application_Module_Member_Message_Login_ACCOUNT_LOCKED);
 
-} // [ + ] IF: Internal Application: Display Message: Registered Member Account :: Is: Locked
+} // [ + ] IF: Internal Application: Display Message: Registered Member Account :: Is Locked
 
 /*
  ============================================================================================================
