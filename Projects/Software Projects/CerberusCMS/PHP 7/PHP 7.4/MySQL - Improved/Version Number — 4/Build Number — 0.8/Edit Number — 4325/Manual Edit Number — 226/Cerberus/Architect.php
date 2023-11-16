@@ -1883,6 +1883,21 @@ command_type CHAR(1),
 PRIMARY KEY (id)
 ");
 
+/* Tasks */
+
+$_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT_INITIALIZE->query("CREATE TABLE \"$_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_TABLES_CONNECT_NAME_DATABASE_TABLE_PREFIX\"_services_tasks (
+id MEDIUMINT NOT NULL AUTO_INCREMENT,
+task_author VARCHAR(50),
+task_data TEXT,
+task_date_year VARCHAR(2),
+task_date_month VARCHAR(2),
+task_date_day VARCHAR(2),
+task_time_hour VARCHAR(2),
+task_time_minute VARCHAR(2),
+task_time_second VARCHAR(2),
+PRIMARY KEY (id)
+");
+
 /* Settings */
 
 $_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT_INITIALIZE->query("CREATE TABLE \"$_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_TABLES_CONNECT_NAME_DATABASE_TABLE_PREFIX\"_settings (
@@ -1965,21 +1980,6 @@ system_message_author VARCHAR(50),
 system_message_data TEXT,
 system_message_member VARCHAR(50),
 system_message_timestamp VARCHAR(100),
-PRIMARY KEY (id)
-");
-
-/* Tasks */
-
-$_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT_INITIALIZE->query("CREATE TABLE \"$_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_TABLES_CONNECT_NAME_DATABASE_TABLE_PREFIX\"_tasks (
-id MEDIUMINT NOT NULL AUTO_INCREMENT,
-tasks_author VARCHAR(50),
-tasks_data TEXT,
-tasks_date_year VARCHAR(2),
-tasks_date_month VARCHAR(2),
-tasks_date_day VARCHAR(2),
-tasks_time_hour VARCHAR(2),
-tasks_time_minute VARCHAR(2),
-tasks_time_second VARCHAR(2),
 PRIMARY KEY (id)
 ");
 
