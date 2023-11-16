@@ -17,7 +17,7 @@
  +  ------
  + Index Application
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => System => Kernel => Version => 4.08.251 => index.php
+ + - This File, Location	 : Root Directory => System => Kernel => Version => 4.08.253 => index.php
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
