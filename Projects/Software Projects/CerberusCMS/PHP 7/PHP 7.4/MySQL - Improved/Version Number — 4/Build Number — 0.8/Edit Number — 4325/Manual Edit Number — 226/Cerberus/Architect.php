@@ -1,4 +1,4 @@
-﻿﻿<?php
+﻿<?php
 /*
  ============================================================================================================
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -3382,13 +3382,13 @@ member_username
 copy("./Member/Setup/Indexes/Files/Files.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/index.php");
 copy("./Member/Setup/Indexes/Files/Archive/Archive.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Archive/index.php");
 copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/index.php");
-copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Gallery/index.php");
-copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Gallery/Backup/index.php");
-copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Live/index.php");
-copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Music/index.php");
-copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Push-To-Talk/index.php");
-copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Recordings/index.php");
-copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Streams/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Gallery/Gallery.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Gallery/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Gallery/Backup/Backup.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Gallery/Backup/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Live/Live.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Live/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Music/Music.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Music/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Push-To-Talk/Push-To-Talk.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Push-To-Talk/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Recordings/Recordings.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Recordings/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Streams/Streams.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Audio/Streams/index.php");
 
 // Document
 
@@ -3399,7 +3399,7 @@ copy("./Member/Setup/Indexes/Files/Document/Document.php","./Member/$_ARCHITECT_
 
 copy("./Member/Setup/Indexes/Files/Document/Electronic_Mail/Electronic_Mail.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Electronic_Mail/index.php");
 copy("./Member/Setup/Indexes/Files/Document/Gallery/Gallery.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Gallery/index.php");
-copy("./Member/Setup/Indexes/Files/Document/Gallery/Gallery.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Gallery/Backup/index.php");
+copy("./Member/Setup/Indexes/Files/Document/Gallery/Backup/Backup.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/Gallery/Backup/index.php");
 copy("./Member/Setup/Indexes/Files/Document/GPS/GPS.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/GPS/index.php");
 copy("./Member/Setup/Indexes/Files/Document/GPS/Coordinates/Coordinates.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/GPS/Coordinates/index.php");
 copy("./Member/Setup/Indexes/Files/Document/GPS/GLO/GLO.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Document/GPS/GLO/index.php");
@@ -3418,7 +3418,7 @@ copy("./Member/Setup/Indexes/Files/Document/Streams/Wall/Wall.php","./Member/$_A
 
 copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Image/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Image/Gallery/index.php");
-copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Image/Gallery/Backup/index.php");
+copy("./Member/Setup/Indexes/Files/Image/Gallery/Backup/Backup.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Image/Gallery/Backup/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Image/Profile/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Image/Streams/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Profile/Profile.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Image/Profile/index.php");
@@ -3427,7 +3427,7 @@ copy("./Member/Setup/Indexes/Files/Image/Profile/Profile.php","./Member/$_ARCHIT
 
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Gallery/index.php");
-copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Gallery/Backup/index.php");
+copy("./Member/Setup/Indexes/Files/Video/Gallery/Backup/Backup.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Gallery/Backup/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Live/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Movies/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_ARCHITECT_POST_ADMINISTRATOR_ACCOUNT_USERNAME/Files/Video/Profile/index.php");
@@ -3478,7 +3478,7 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Currently Making:<BR>");
 
 /*
- + Make Directory: Root Administrator UserName
+ + Make Directory: Root Administrator' UserName
 */
 
 	echo ("./Member/$_PROJECT_STRING_NAME_SHORT<BR>");
@@ -3588,7 +3588,7 @@ copy("./System/Default/Friend/Friend.$_INTERNAL_FILE_EXTENSION","./Member/Master
 	echo ("<FONT COLOR=\"#CD0000\">[&nbsp;*&nbsp;]</FONT> Installing Specified Administrator Account Personal Web Page... Wait.<BR>");
 
 /*
- + Make Directory: Root Administrator Hyper-Text-Markup-Language Web-Page Index File
+ + Make Directory: Root Administrator' Hyper-Text-Markup-Language Web-Page Index File
 */
 
 copy("./System/Default/Register/Register.html","./Member/$_PROJECT_STRING_NAME_SHORT/index.html");
@@ -3602,13 +3602,13 @@ copy("./System/Default/Register/Register.html","./Member/$_PROJECT_STRING_NAME_S
 copy("./Member/Setup/Indexes/Files/Files.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/index.php");
 copy("./Member/Setup/Indexes/Files/Archive/Archive.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Archive/index.php");
 copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/index.php");
-copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Gallery/index.php");
-copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Gallery/Backup/index.php");
-copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Live/index.php");
-copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Music/index.php");
-copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Push-To-Talk/index.php");
-copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Recordings/index.php");
-copy("./Member/Setup/Indexes/Files/Audio/Audio.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Streams/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Gallery/Gallery.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Gallery/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Gallery/Backup/Backup.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Gallery/Backup/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Live/Live.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Live/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Music/Music.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Music/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Push-To-Talk/Push-To-Talk.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Push-To-Talk/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Recordings/Recordings.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Recordings/index.php");
+copy("./Member/Setup/Indexes/Files/Audio/Streams/Streams.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Audio/Streams/index.php");
 
 // Document
 
@@ -3618,9 +3618,8 @@ copy("./Member/Setup/Files/Document/Activity_Logging/Activity_Log.php","./Member
 copy("./Member/Setup/Indexes/Files/Document/Document.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/index.php");
 
 copy("./Member/Setup/Indexes/Files/Document/Electronic_Mail/Electronic_Mail.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Electronic_Mail/index.php");
-
 copy("./Member/Setup/Indexes/Files/Document/Gallery/Gallery.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Gallery/index.php");
-copy("./Member/Setup/Indexes/Files/Document/Gallery/Gallery.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Gallery/Backup/index.php");
+copy("./Member/Setup/Indexes/Files/Document/Gallery/Backup/Backup.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Gallery/Backup/index.php");
 copy("./Member/Setup/Indexes/Files/Document/GPS/GPS.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/GPS/index.php");
 copy("./Member/Setup/Indexes/Files/Document/GPS/Coordinates/Coordinates.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/GPS/Coordinates/index.php");
 copy("./Member/Setup/Indexes/Files/Document/GPS/GLO/GLO.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/GPS/GLO/index.php");
@@ -3628,7 +3627,7 @@ copy("./Member/Setup/Indexes/Files/Document/GPS/Region/Region.php","./Member/$_P
 
 copy("./Member/Setup/Indexes/Files/Document/Friends/Friends.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Friends/index.php");
 
-copy("./Member/Setup/Indexes/Files/Document/Messenger/Messenger.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Messenger/index.php");
+copy("./Member/Setup/Indexes/Files/Document/Messenger/Messenger.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Messenger/Messenger.php");
 copy("./Member/Setup/Indexes/Files/Document/Messenger/Clear-Text/Clear-Text.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Messenger/Clear-Text/index.php");
 copy("./Member/Setup/Indexes/Files/Document/Messenger/Encrypted/Encrypted.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Document/Messenger/Encrypted/index.php");
 
@@ -3639,7 +3638,7 @@ copy("./Member/Setup/Indexes/Files/Document/Streams/Wall/Wall.php","./Member/$_P
 
 copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Gallery/index.php");
-copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Gallery/Backup/index.php");
+copy("./Member/Setup/Indexes/Files/Image/Gallery/Backup/Backup.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Gallery/Backup/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Profile/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Image.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Streams/index.php");
 copy("./Member/Setup/Indexes/Files/Image/Profile/Profile.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Profile/index.php");
@@ -3648,7 +3647,7 @@ copy("./Member/Setup/Indexes/Files/Image/Profile/Profile.php","./Member/$_PROJEC
 
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Gallery/index.php");
-copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Gallery/Backup/index.php");
+copy("./Member/Setup/Indexes/Files/Video/Gallery/Backup/Backup.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Gallery/Backup/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Live/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Movies/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/Profile/index.php");
@@ -3657,7 +3656,7 @@ copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_N
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Video/index.php");
 
 /*
- + Copy Project Root Account Profile Image To Organized Directory Structure
+ + Copy Project Root Administrator' Profile Image To Organized Directory Structure
 */
 
 copy("./Theme/$_INTERNAL_FILE_ARCHITECT_INSTALL_THEME_DIRECTORY_NAME/Image/Icon_Root/Profile.png","./Member/$_PROJECT_STRING_NAME_SHORT/Files/Image/Profile/Profile.png");
