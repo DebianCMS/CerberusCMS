@@ -564,6 +564,7 @@ $_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_SSL									= $_POST['Architect_URL_Sec
 $_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_SSL_CUSTOM								= $_POST['Architect_URL_Secure_SSL_Custom'];
 $_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_SSL_OPENSSL								= $_POST['Architect_URL_Secure_SSL_OpenSSL'];
 $_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_TLS									= $_POST['Architect_URL_Secure_TLS'];
+$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_TLS_CUSTOM								= $_POST['Architect_URL_Secure_TLS_Custom'];
 $_ARCHITECT_INSTALL_FORM_POST_URL_CLEARTEXT									= $_POST['Architect_URL_ClearText'];
 
 /*
@@ -887,9 +888,13 @@ echo ("
 		Example: OPENSSL.WEBSERVERURL.COM<BR>
 			<INPUT TYPE=\"TEXT\" NAME=\"Architect_URL_Secure_SSL_OpenSSL\"><BR><BR>
 
-		* <I>Encrypted :: Transport Layer Security :: TLS :: Uniform Resource Location With Path-To-Kernel Directory</I>:<BR>
+		* <I>Encrypted :: Transport Layer Security :: TLS :: Standard :: Uniform Resource Location With Path-To-Kernel Directory</I>:<BR>
 		Example: TLS.WEBSERVERURL.COM<BR>
 			<INPUT TYPE=\"TEXT\" NAME=\"Architect_URL_Secure_TLS\"><BR><BR>
+
+		* <I>Encrypted :: Transport Layer Security :: TLS :: Custom :: Uniform Resource Location With Path-To-Kernel Directory</I>:<BR>
+		Example: TLS.WEBSERVERURL.COM<BR>
+			<INPUT TYPE=\"TEXT\" NAME=\"Architect_URL_Secure_TLS_Custom\"><BR><BR>
 
 		* <I>Non-Encrypted :: Clear-Text :: Uniform Resource Location With Path-To-Kernel Directory</I>:<BR>
 		Example: http://www.WEBSERVERURL.COM<BR>
@@ -1201,6 +1206,7 @@ $_SYSTEM_CONFIGURATION_ACCESS_FILE_DATA								= "<?php
 \$_ACCESS_URL_SECURE_SSL_CUSTOM								= \"$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_SSL_CUSTOM\";
 \$_ACCESS_URL_SECURE_SSL_OPENSSL							= \"$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_SSL_OPENSSL\";
 \$_ACCESS_URL_SECURE_TLS								= \"$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_TLS\";
+\$_ACCESS_URL_SECURE_TLS_CUSTOM								= \"$_ARCHITECT_INSTALL_FORM_POST_URL_SECURE_TLS_CUSTOM\";
 \$_ACCESS_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ADMINISTRATOR					= \"$_ARCHITECT_INSTALL_FORM_POST_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ADMINISTRATOR\";
 \$_ACCESS_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ROOT						= \"$_ARCHITECT_INSTALL_FORM_POST_ELECTRONIC_MAIL_ADDRESS_SYSTEM_ROOT\";
 \$_ACCESS_ELECTRONIC_MAIL_ADDRESS_SYSTEM_SERVICES					= \"$_ARCHITECT_INSTALL_FORM_POST_ELECTRONIC_MAIL_ADDRESS_SYSTEM_SERVICES\";
