@@ -951,6 +951,21 @@ command_type CHAR(1),
 PRIMARY KEY (id)
 );
 
+/* Services Tasks */
+
+CREATE TABLE {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_services_tasks (
+id MEDIUMINT NOT NULL AUTO_INCREMENT,
+task_author VARCHAR(50),
+task_data TEXT,
+task_date_year VARCHAR(2),
+task_date_month VARCHAR(2),
+task_date_day VARCHAR(2),
+task_time_hour VARCHAR(2),
+task_time_minute VARCHAR(2),
+task_time_second VARCHAR(2),
+PRIMARY KEY (id)
+);
+
 /* Settings */
 
 CREATE TABLE {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_settings (

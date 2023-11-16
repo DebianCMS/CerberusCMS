@@ -1,4 +1,4 @@
-﻿<?php
+﻿﻿<?php
 /*
  ============================================================================================================
  + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1883,7 +1883,7 @@ command_type CHAR(1),
 PRIMARY KEY (id)
 ");
 
-/* Tasks */
+/* Services Tasks */
 
 $_ARCHITECT_INSTALLATION_DATA_DATABASE_CONNECT_INITIALIZE->query("CREATE TABLE \"$_ARCHITECT_INSTALL_FORM_POST_INSTALL_DATABASE_SERVER_DATABASE_TABLES_CONNECT_NAME_DATABASE_TABLE_PREFIX\"_services_tasks (
 id MEDIUMINT NOT NULL AUTO_INCREMENT,
