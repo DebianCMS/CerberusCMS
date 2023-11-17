@@ -87,9 +87,9 @@ $_Application_Module_Member_Login_POST_AUTHORIZATION_USERNAME					= $_POST['AMM_
  ============================================================================================================
 */
 
-$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT	= $_POST['IAM_Login_Electronic_Mail_Address_Kill_Current'];
-$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT		= $_POST['IAM_Login_Password_Kill_Current'];
-$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT		= $_POST['IAM_Login_UserName_Kill_Current'];
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT	= $_POST['AMM_Login_Electronic_Mail_Address_Kill_Current'];
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT		= $_POST['AMM_Login_Password_Kill_Current'];
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT		= $_POST['AMM_Login_UserName_Kill_Current'];
 
 /*
  ============================================================================================================
@@ -595,7 +595,7 @@ if (!$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRES
 
 echo ("
 											Registered Member Account :: Authentication :: Authenticated :: Kill :: Account :: Current<HR>
-											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_INTERNAL&#61;Login&amp;Authenticated&#61;Kill_Account_Current&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;Authenticated&#61;Kill_Account_Current&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
 													<I>Member' Account Electronic Mail Address</I>:<BR>
 														<INPUT TYPE=\"text\" NAME=\"IAM_Login_Electronic_Mail_Address_Kill_Current\" MAXLENGTH=\"50\"><BR>
 													<I>Member' Account UserName</I>:<BR>
@@ -609,12 +609,16 @@ echo ("
 
 } else {
 
-$_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHENTICATED_KILL_ACCOUNT_CURRENT				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_electronic_mail_address='$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT' AND member_username='$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT'");
+echo ("Info Posted...<BR>");
+
+$_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHENTICATED_KILL_ACCOUNT_CURRENT				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_electronic_mail_address='$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT' AND member_username='$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT'");
 
 $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHENTICATED_KILL_ACCOUNT_CURRENT_Fetch_Array		= $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHENTICATED_KILL_ACCOUNT_CURRENT->fetch_array(MYSQLI_BOTH);
 $_Application_Module_Login_LIST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_KILL_CURRENT				= $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHENTICATED_KILL_ACCOUNT_CURRENT_Fetch_Array['member_electronic_mail_address'];
 $_Application_Module_Login_LIST_AUTHENTICATED_USERNAME_KILL_CURRENT						= $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHENTICATED_KILL_ACCOUNT_CURRENT_Fetch_Array['member_username'];
 $_Application_Module_Login_LIST_AUTHENTICATED_PASSWORD_KILL_CURRENT						= $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHENTICATED_KILL_ACCOUNT_CURRENT_Fetch_Array['member_password'];
+
+echo ("$_Application_Module_Login_LIST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_KILL_CURRENT -- $_Application_Module_Login_LIST_AUTHENTICATED_USERNAME_KILL_CURRENT -- $_Application_Module_Login_LIST_AUTHENTICATED_PASSWORD_KILL_CURRENT<BR><BR>");
 
 /*
  ============================================================================================================
@@ -625,6 +629,8 @@ $_Application_Module_Login_LIST_AUTHENTICATED_PASSWORD_KILL_CURRENT						= $_App
 if (password_verify($_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT, $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_Password)) {
 
 $_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHENTICATED_KILL_ACCOUNT_CURRENT				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_status_account_active='0',member_security_setting_flag_force_logout='1' WHERE member_electronic_mail_address='$_Application_Module_Login_LIST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_KILL_CURRENT' AND member_username='$_Application_Module_Login_LIST_AUTHENTICATED_USERNAME_KILL_CURRENT'");
+
+echo ("* Message: Password has been verified.. Setting Flag..<BR>");
 
 if ($_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHENTICATED_KILL_ACCOUNT_CURRENT) {
 
