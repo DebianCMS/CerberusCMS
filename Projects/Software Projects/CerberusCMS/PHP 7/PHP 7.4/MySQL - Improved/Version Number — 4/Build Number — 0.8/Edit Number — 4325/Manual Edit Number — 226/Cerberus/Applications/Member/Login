@@ -530,7 +530,7 @@ echo ("
 */
 
 $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHORIZATION_TOKEN				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_ip_address_authorization_token='$_Application_Module_Member_Login_POST_AUTHORIZATION_INTERNET_PROTOCOL_ADDRESS_TOKEN'");
-$_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHORIZATION_TOKEN				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_ip_address_authorized='$_GLOBAL_REMOTE_SERVER_ADDRESS',member_ip_address_authorized_multifactor='$_GLOBAL_REMOTE_SERVER_ADDRESS',member_account_device_mac_address_authorized='$_GLOBAL_REMOTE_DEVICE_MAC_ADDRESS',member_account_device_web_browser_authorized='$_GLOBAL_REMOTE_SERVER_HTTP_USER_AGENT_DISPLAY' WHERE member_ip_address_authorization_token='$_Application_Module_Member_Login_POST_AUTHORIZATION_INTERNET_PROTOCOL_ADDRESS_TOKEN'");
+$_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHORIZATION_TOKEN				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_ip_address_authorized='$_GLOBAL_REMOTE_SERVER_ADDRESS',member_ip_address_authorized_multifactor='$_GLOBAL_REMOTE_SERVER_ADDRESS',member_account_device_mac_address_authorized='$_GLOBAL_REMOTE_DEVICE_MAC_ADDRESS',member_account_device_web_browser_authorized='$_GLOBAL_REMOTE_SERVER_HTTP_USER_AGENT_DISPLAY',member_security_setting_flag_force_logout='1' WHERE member_ip_address_authorization_token='$_Application_Module_Member_Login_POST_AUTHORIZATION_INTERNET_PROTOCOL_ADDRESS_TOKEN'");
 $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHORIZATION_TOKEN_NUMBER_OF_ROWS		= $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHORIZATION_TOKEN->num_rows;
 
 /*
@@ -668,19 +668,66 @@ echo ($_Application_Module_Member_Message_Login_ACCOUNT_AUTHENTICATED_KILL_ACCOU
 
 if ($_GET["Authenticated"] == "Kill_Account_Ghost") {
 
+/*
+ ============================================================================================================
+ + IF: Internal Application :: Authenticated :: Kill :: Current Ghost Account :: Input Form Variable HAS NOT Executed, Display Input Form
+ ============================================================================================================
+*/
+
+if (!$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST) {
+
 echo ("
 											Registered Member Account :: Authentication :: Authenticated :: Kill :: Account :: Ghost<HR>
-											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_INTERNAL&#61;Login&amp;Authenticated&#61;Kill_Account_Ghost&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;Authenticated&#61;Kill_Account_Ghost&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
 													<I>Member' Account Electronic Mail Address</I>:<BR>
-														<INPUT TYPE=\"text\" NAME=\"IAM_Login_Electronic_Mail_Address_Kill_Current\" MAXLENGTH=\"50\"><BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Login_Electronic_Mail_Address_Kill_Ghost\" MAXLENGTH=\"50\"><BR>
 													<I>Member' Account UserName</I>:<BR>
-														<INPUT TYPE=\"text\" NAME=\"IAM_Login_UserName_Kill_Current\" MAXLENGTH=\"50\"><BR>
+														<INPUT TYPE=\"text\" NAME=\"AMM_Login_UserName_Kill_Ghost\" MAXLENGTH=\"50\"><BR>
 													<I>Member' Account Password</I>:<BR>
-														<INPUT TYPE=\"password\" NAME=\"IAM_Login_Password_Kill_Current\" MAXLENGTH=\"250\"><BR>
+														<INPUT TYPE=\"password\" NAME=\"AMM_Login_Password_Kill_Ghost\" MAXLENGTH=\"250\"><BR>
 													<INPUT TYPE=\"submit\" VALUE=\"Login\">
 												<HR>
 											</FORM><BR>
 ");
+
+} else {
+
+$_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHENTICATED_KILL_ACCOUNT_GHOST				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_electronic_mail_address='$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST' AND member_username='$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST'");
+
+$_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHENTICATED_KILL_ACCOUNT_GHOST_Fetch_Array	= $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHENTICATED_KILL_ACCOUNT_GHOST->fetch_array(MYSQLI_BOTH);
+$_Application_Module_Login_LIST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_KILL_GHOST				= $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHENTICATED_KILL_ACCOUNT_GHOST_Fetch_Array['member_electronic_mail_address'];
+$_Application_Module_Login_LIST_AUTHENTICATED_USERNAME_KILL_GHOST								= $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHENTICATED_KILL_ACCOUNT_GHOST_Fetch_Array['member_username'];
+$_Application_Module_Login_LIST_AUTHENTICATED_PASSWORD_KILL_GHOST								= $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHENTICATED_KILL_ACCOUNT_GHOST_Fetch_Array['member_password'];
+
+/*
+ ============================================================================================================
+ + IF: Password Verify: Input :: Password VERSUS Registered Member Account :: Password
+ ============================================================================================================
+*/
+
+if (password_verify($_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST, $_Application_Module_Login_LIST_AUTHENTICATED_PASSWORD_KILL_GHOST)) {
+
+$_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHENTICATED_KILL_ACCOUNT_GHOST				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_status_account_active='0',member_security_setting_flag_force_logout='1' WHERE member_electronic_mail_address='$_Application_Module_Login_LIST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_KILL_GHOST' AND member_username='$_Application_Module_Login_LIST_AUTHENTICATED_USERNAME_KILL_GHOST'");
+
+/*
+ ============================================================================================================
+ + IF: Database Server Query :: Update :: Registered Member Account :: Active Status AND Force Logout Flag :: Variable HAS Executed
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHENTICATED_KILL_ACCOUNT_GHOST) {
+
+echo ($_Application_Module_Member_Message_Login_ACCOUNT_AUTHENTICATED_KILL_ACCOUNT_GHOST_SUCCESSFUL);
+
+} else {
+
+echo ($_Application_Module_Member_Message_Login_ACCOUNT_AUTHENTICATED_KILL_ACCOUNT_GHOST_ERROR);
+
+} // [ + ] IF: Internal Application :: Authenticated :: Account :: Kill Account Ghost :: SQL Query :: Variable :: HAS Executed
+
+} // [ + ] IF: Password Verify: Input :: Password VERSUS Registered Member Account :: Password
+
+} // [ + ] IF: Internal Application :: Authenticated :: Kill :: Current Ghost Account :: Input Form Variables :: HAVE OR HAVE NOT Executed
 
 } // [ + ] IF: Internal Application :: Authenticated :: Kill :: Ghost Account :: Is: Activated
 ?>
