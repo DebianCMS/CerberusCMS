@@ -218,7 +218,7 @@ echo ("
 
 											Member Account :: Authentication :: Connection Options :: Secure :: Transport Layer Security<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 											* <A HREF=\"$_ACCESS_URL_SECURE_TLS/$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Hyper-Text-Transfer-Protocol-Secure Over Transport Layer Security Encrypted Connection ::\">Secure Login :: TLS :: Standard</A><BR>
-											* <A HREF=\"$_ACCESS_URL_SECURE_TLS_CUSTOM/$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Hyper-Text-Transfer-Protocol-Secure Over Transport Layer Security Encrypted Connection ::\">Secure Login :: TLS :: Custom</A><BR><BR>
+											* <A HREF=\"$_ACCESS_URL_SECURE_TLS_CUSTOM/$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Hyper-Text-Transfer-Protocol-Secure Over Transport Layer Security Encrypted Connection :: Custom ::\">Secure Login :: TLS :: Custom</A><BR><BR>
 
 											Member Account :: Authentication :: Connection Options :: Secure :: Other<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 											* <A HREF=\"$_ACCESS_URL_SECURE/$_INTERNAL_FILE_KERNEL?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Hyper-Text-Transfer-Protocol-Secure Over Secure Encrypted Connection ::\">Secure Login :: Other</A><BR><BR>
@@ -324,7 +324,7 @@ if ($_GET["Authorization"] == "IP_Address") {
 if (!$_Application_Module_Member_Login_POST_AUTHORIZATION_ELECTRONIC_MAIL_ADDRESS) {
 
 echo ("
-											Member Account Authentication :: Internet Protocol Address Authorization<HR>
+											Registered Member Account :: Authentication :: Internet Protocol Address Authorization<HR>
 											The Internet Protocol Address That You Are Attempting To Authenticate From Is Not Authorized<BR>
 											Would you like to authorize this Internet Protocol Address ?
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;Authorization&#61;IP_Address&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
@@ -486,7 +486,7 @@ if ($_GET["Authorization"] == "IP_Token") {
 if (!$_Application_Module_Member_Login_POST_AUTHORIZATION_INTERNET_PROTOCOL_ADDRESS_TOKEN) {
 
 echo ("
-											Member Account Authentication :: Internet Protocol Address Authorization Token<HR>
+											Registered Member Account :: Authentication :: Internet Protocol Address Authorization Token<HR>
 											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Login&amp;Authorization&#61;IP_Token&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
 											Do You Have A Valid Internet Protocol Address Authorization Token ?<BR>
 											Your current Internet Protocol Address is: <A HREF=\"$_SYSTEM_SERVER_NETWORKING_RESOLVER_WHOIS/$_GLOBAL_REMOTE_SERVER_ADDRESS\" TITLE=\":: Open & Display The Who-Is Information For This Internet Protocol Address ::\" TARGET=\"_NEW\">$_GLOBAL_REMOTE_SERVER_ADDRESS</A><BR>
@@ -542,6 +542,26 @@ if ($_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHORIZATION_TOKEN) {
 
 /*
  ============================================================================================================
+ + Kill: Database Server Query: Update Registered Member Account Internet Protocol Address Authorization Token
+ ============================================================================================================
+*/
+
+// [ C ] $_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHORIZATION_TOKEN->free_result();
+
+/*
+ ============================================================================================================
+ + Kill: Database Server Query: Check For Valid Registered Member Account Internet Protocol Address Authorization Token
+ ============================================================================================================
+*/
+
+// [ C ] $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHORIZATION_TOKEN->free_result();
+
+} // [ + ] IF: Registered Member Account :: Authorization Token :: Input Form Variables Have Executed
+
+} // [ + ] IF: Internal Application: Authorization :: IS :: Internet Protocol Address Token
+
+/*
+ ============================================================================================================
  +
  + IF: Internal Application :: Authenticated :: Kill :: Current Authenticated Account
  +
@@ -550,10 +570,11 @@ if ($_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHORIZATION_TOKEN) {
 
 if ($_GET["Authenticated"] == "Kill_Account_Current") {
 
-if (!$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT || !$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT || !$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT) {
+if (!$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT) {
 
 echo ("
-											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_INTERNAL&#61;Login&amp;Authenticated&#61;Kill_Account_Current$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+											Registered Member Account :: Authentication :: Authenticated :: Kill :: Account :: Current<HR>
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_INTERNAL&#61;Login&amp;Authenticated&#61;Kill_Account_Current&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
 													<I>Member' Account Electronic Mail Address</I>:<BR>
 														<INPUT TYPE=\"text\" NAME=\"IAM_Login_Electronic_Mail_Address_Kill_Current\" MAXLENGTH=\"50\"><BR>
 													<I>Member' Account UserName</I>:<BR>
@@ -598,25 +619,19 @@ if ($_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHENTICATED_KILL_ACCOUNT
 
 if ($_GET["Authenticated"] == "Kill_Account_Ghost") {
 
+echo ("
+											Registered Member Account :: Authentication :: Authenticated :: Kill :: Account :: Ghost<HR>
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_INTERNAL&#61;Login&amp;Authenticated&#61;Kill_Account_Ghost&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"post\">
+													<I>Member' Account Electronic Mail Address</I>:<BR>
+														<INPUT TYPE=\"text\" NAME=\"IAM_Login_Electronic_Mail_Address_Kill_Current\" MAXLENGTH=\"50\"><BR>
+													<I>Member' Account UserName</I>:<BR>
+														<INPUT TYPE=\"text\" NAME=\"IAM_Login_UserName_Kill_Current\" MAXLENGTH=\"50\"><BR>
+													<I>Member' Account Password</I>:<BR>
+														<INPUT TYPE=\"password\" NAME=\"IAM_Login_Password_Kill_Current\" MAXLENGTH=\"250\"><BR>
+													<INPUT TYPE=\"submit\" VALUE=\"Login\">
+												<HR>
+											</FORM><BR>
+");
+
 } // [ + ] IF: Internal Application :: Authenticated :: Kill :: Ghost Account :: Is: Activated
-
-/*
- ============================================================================================================
- + Kill: Database Server Query: Update Registered Member Account Internet Protocol Address Authorization Token
- ============================================================================================================
-*/
-
-// [ C ] $_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHORIZATION_TOKEN->free_result();
-
-/*
- ============================================================================================================
- + Kill: Database Server Query: Check For Valid Registered Member Account Internet Protocol Address Authorization Token
- ============================================================================================================
-*/
-
-// [ C ] $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHORIZATION_TOKEN->free_result();
-
-} // [ + ] IF: Registered Member Account :: Authorization Token :: Input Form Variables Have Executed
-
-} // [ + ] IF: Internal Application: Authorization :: IS :: Internet Protocol Address Token
 ?>
