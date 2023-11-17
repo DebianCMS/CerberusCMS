@@ -162,6 +162,14 @@ $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR						= $
 $_Kernel_Authenticate_Member_Account_POST_PASSWORD_CLEAR							= $_POST['IAM_Login_Password'];
 $_Kernel_Authenticate_Member_Account_POST_USERNAME_CLEAR							= $_POST['IAM_Login_UserName'];
 
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT			= $_POST['IAM_Login_Electronic_Mail_Address_Kill_Current'];
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT				= $_POST['IAM_Login_Password_Kill_Current'];
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT				= $_POST['IAM_Login_UserName_Kill_Current'];
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST			= $_POST['IAM_Login_Electronic_Mail_Address_Kill_Ghost'];
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST					= $_POST['IAM_Login_Password_Kill_Ghost'];
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST					= $_POST['IAM_Login_UserName_Kill_Ghost'];
+
 /*
  ============================================================================================================
  +
@@ -234,6 +242,137 @@ $_Kernel_Authenticate_Member_Account_POST_USERNAME_CLEAR							= str_replace("|"
 $_Kernel_Authenticate_Member_Account_POST_USERNAME_CLEAR							= str_replace(" ", "", $_Kernel_Authenticate_Member_Account_POST_USERNAME_CLEAR);
 
 $_Kernel_Authenticate_Member_Account_POST_PASSWORD								= str_replace("`", "", $_Kernel_Authenticate_Member_Account_POST_PASSWORD);
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("`", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("<", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace(">", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("\"", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("&", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("'", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("~", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("$", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("=", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("{", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("}", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("(", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace(")", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("#", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("%", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("*", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("+", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace(",", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("-", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace(".", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("/", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace(":", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("\;", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("?", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("[", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("]", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("^", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("_", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace("|", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT					= str_replace(" ", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("`", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("@", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("<", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace(">", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("\"", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("&", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("'", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("~", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("$", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("=", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("{", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("}", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("(", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace(")", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("#", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("%", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("*", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("+", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace(",", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("-", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace(".", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("/", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace(":", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("\;", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("?", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("[", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("]", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("^", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("_", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace("|", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT								= str_replace(" ", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT								= str_replace("`", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("`", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("<", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace(">", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("\"", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("&", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("'", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("~", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("$", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("=", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("{", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("}", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("(", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace(")", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("#", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("%", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("*", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("+", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace(",", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("-", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace(".", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("/", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace(":", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("\;", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("?", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("[", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("]", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("^", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("_", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace("|", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST					= str_replace(" ", "", $_Kernel_Authenticate_Member_Account_POST_ELECTRONIC_MAIL_ADDRESS_CLEAR);
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("`", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("@", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("<", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace(">", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("\"", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("&", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("'", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("~", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("$", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("=", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("{", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("}", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("(", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace(")", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("#", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("%", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("*", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("+", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace(",", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("-", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace(".", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("/", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace(":", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("\;", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("?", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("[", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("]", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("^", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("_", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace("|", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST								= str_replace(" ", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST								= str_replace("`", "", $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT);
+
 
 /*
  ============================================================================================================
