@@ -93,6 +93,16 @@ $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT
 
 /*
  ============================================================================================================
+ + Application Module :: Member :: Login :: Variables :: POST :: Authenticated :: Kill Current Ghost Account
+ ============================================================================================================
+*/
+
+$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST	= $_POST['AMM_Login_Electronic_Mail_Address_Kill_Ghost'];
+$_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_GHOST			= $_POST['AMM_Login_Password_Kill_Ghost'];
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST			= $_POST['AMM_Login_UserName_Kill_Ghost'];
+
+/*
+ ============================================================================================================
  + Application Module :: Member :: Login :: Variables :: POST :: String Conversion :: String To LowerCase :: All
  ============================================================================================================
 */
@@ -100,7 +110,7 @@ $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT
 $_Application_Module_Member_Login_POST_AUTHORIZATION_ELECTRONIC_MAIL_ADDRESS			= strtolower($_Application_Module_Member_Login_POST_AUTHORIZATION_ELECTRONIC_MAIL_ADDRESS);
 
 $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT	= strtolower($_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT);
-$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT		= strtolower($_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_KILL_CURRENT);
+$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT		= strtolower($_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT);
 
 $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST	= strtolower($_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_GHOST);
 $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_GHOST			= strtolower($_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_KILL_GHOST);
@@ -609,7 +619,7 @@ echo ("
 
 } else {
 
-echo ("Info Posted...<BR>");
+echo ("Info Posted... $_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT -- $_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT -- $_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT<BR>");
 
 $_Application_Module_Login_DB_Query_SELECT_MEMBER_AUTHENTICATED_KILL_ACCOUNT_CURRENT				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("SELECT * FROM {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members WHERE member_electronic_mail_address='$_Application_Module_Member_Login_POST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_CLEAR_KILL_CURRENT' AND member_username='$_Application_Module_Member_Login_POST_AUTHENTICATED_USERNAME_CLEAR_KILL_CURRENT'");
 
@@ -626,11 +636,17 @@ echo ("$_Application_Module_Login_LIST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_KIL
  ============================================================================================================
 */
 
-if (password_verify($_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT, $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_Password)) {
+if (password_verify($_Application_Module_Member_Login_POST_AUTHENTICATED_PASSWORD_CLEAR_KILL_CURRENT, $_Application_Module_Login_LIST_AUTHENTICATED_PASSWORD_KILL_CURRENT)) {
 
 $_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHENTICATED_KILL_ACCOUNT_CURRENT				= $_GLOBAL_DATABASE_MANAGEMENT_SYSTEM_SERVER_DATABASE_CONNECTION->query("UPDATE {$_ACCESS_DATABASE_SERVER_DATABASE_TABLE_PREFIX}_members SET member_status_account_active='0',member_security_setting_flag_force_logout='1' WHERE member_electronic_mail_address='$_Application_Module_Login_LIST_AUTHENTICATED_ELECTRONIC_MAIL_ADDRESS_KILL_CURRENT' AND member_username='$_Application_Module_Login_LIST_AUTHENTICATED_USERNAME_KILL_CURRENT'");
 
 echo ("* Message: Password has been verified.. Setting Flag..<BR>");
+
+/*
+ ============================================================================================================
+ + IF: Database Server Query :: Update :: Registered Member Account :: Status AND Force Logout Flag :: Variable HAS Executed
+ ============================================================================================================
+*/
 
 if ($_Application_Module_Login_DB_Query_UPDATE_MEMBER_AUTHENTICATED_KILL_ACCOUNT_CURRENT) {
 
