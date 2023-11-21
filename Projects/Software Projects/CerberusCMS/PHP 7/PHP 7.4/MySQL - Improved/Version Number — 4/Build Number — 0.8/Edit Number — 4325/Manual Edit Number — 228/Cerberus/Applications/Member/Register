@@ -351,7 +351,7 @@ if (file_exists("./Member/Master_List/Electronic_Mail_Addresses/$_Application_Mo
  ============================================================================================================
 */
 
-$_Application_Module_Member_Register_POST_REGISTRAR_ELECTRONIC_MAIL_MESSAGE_SUBJECT					= "Thanks For Requesting Member Account Registration With :: $_GLOBAL_SYSTEM_SITE_TITLE","Account Registration";
+$_Application_Module_Member_Register_POST_REGISTRAR_ELECTRONIC_MAIL_MESSAGE_SUBJECT					= "Thanks For Requesting Member Account Registration With :: $_GLOBAL_SYSTEM_SITE_TITLE";
 $_Application_Module_Member_Register_POST_REGISTRAR_ELECTRONIC_MAIL_MESSAGE_MESSAGE					= "
 Dear $_Application_Module_Member_Register_POST_REGISTRAR_FIRST_NAME :: $_Application_Module_Member_Register_POST_REGISTRAR_LAST_NAME
 [ $_Application_Module_Member_Register_POST_REGISTRAR_ELECTRONIC_MAIL_ADDRESS ],
@@ -861,7 +861,7 @@ copy("./Member/Setup/Indexes/Files/Image/Profile/Profile.php","./Member/$_Applic
 
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Video/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Video/Gallery/index.php");
-copy("./Member/Setup/Indexes/Files/Video/Gallery/Backup/Backup.php","./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Video/Gallery/Backup/index.php");;
+copy("./Member/Setup/Indexes/Files/Video/Gallery/Backup/Backup.php","./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Video/Gallery/Backup/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Video/Live/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Video.php","./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Video/Movies/index.php");
 copy("./Member/Setup/Indexes/Files/Video/Profile/Profile.php","./Member/$_Application_Module_Member_Register_POST_REGISTRAR_USERNAME/Files/Video/Profile/index.php");
