@@ -559,6 +559,9 @@ echo ("
 												*&nbsp;Local Server :: Time :: In Seconds: $_GLOBAL_LOCAL_SERVER_TIME_SECONDS<BR>
 												*&nbsp;Local Server :: Time :: In Microseconds: $_GLOBAL_LOCAL_SERVER_TIME_MICROSECONDS<BR>
 												*&nbsp;Local Server :: Time :: In Unix-Epoch: $_GLOBAL_LOCAL_SERVER_TIME_UNIX<BR><BR>
+												
+												<B>Server :: Local :: Time :: Swatch Internet Time</B><BR>
+												*&nbsp;Local Server :: TIme :: In <A HREF=\"https://en.wikipedia.org/wiki/Swatch_Internet_Time\" TITLE=\":: Open & Display :: The Official Wikipedia Article Entry :: For :: Swatch Internet Time ::\" TARGET=\"_NEW\">Swatch Internet Time: $_GLOBAL_LOCAL_SERVER_TIME_SWATCH_INTERNET</A><BR><BR>
 
 												<B>Unix-Epoch :: Time :: Built-In</B><HR ALIGN=\"LEFT\" WIDTH=\"20%\">
 												<B>Time</B>
