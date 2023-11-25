@@ -386,7 +386,7 @@ echo ("
 
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;System&amp;Display&#61;Time&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: Statistics ::\">System :: Settings :: Date and Time</A><BR>
 * <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;System&amp;Display&#61;Settings&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: System :: Settings ::\">System :: Settings</A><BR>
-* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;System&amp;Display&#61;Settings&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: System :: Settings :: Statistics ::\">System :: Settings :: Plug-Ins</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;System&amp;Display&#61;Settings&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The Internal Application :: System :: Settings :: Statistics ::\">System :: Settings :: Plug-Ins</A><BR><BR>
 
 <B>System :: Information</B>
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
