@@ -12,12 +12,12 @@
  + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
  +				 : correct display of this programming code and its indentation.
  + ----------------------------------------------------------------------------------------------------------
- +    () --- () () () () -- ()
- +  ()  () () () () -- () ()()()
+ +    ()    () - -
+ +  ()  () ()()()()
  +  ------
- + Plug-In Application Module
+ +  Services-Level Application Module
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => System => Plug-Ins => Time => Default => Time
+ + - This File, Location	 : Root Directory => System => Services => Tasks
  + - This File, Version		 : 0.7.1
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -48,11 +48,10 @@
  +
  +
  +
- + [ ^ ] Cerberus :: Plug-In :: Time
+ + [ ^ ] Tasks
  +
  +
  +
  ============================================================================================================
 */
-
 ?>
