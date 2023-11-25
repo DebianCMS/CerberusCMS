@@ -639,6 +639,7 @@ $_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_COMMANDER				= $_DB_Query_Kernel_
 $_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_INTEGRITY				= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_services_module_status_integrity'];
 $_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_LOOPS					= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_services_module_status_loops'];
 $_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_SERVICES					= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_services_module_status_services'];
+$_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_TASKS					= $_DB_Query_Kernel_Select_System_Settings_Fetch_Array['settings_system_services_module_status_tasks'];
 
 /*
  ============================================================================================================
@@ -1616,6 +1617,44 @@ if (file_exists($_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_SERVICES)) {
 } // [ + ] IF: Include: Global :: System :: Services :: Module :: File: Services :: Exists, Include It
 
 } // [ + ] IF: Include: Global :: System :: Services :: Module :: Status: Services :: Is: On
+
+/*
+ ============================================================================================================
+ +
+ +
+ + Internal :: Services :: Module :: Tasks
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + IF: Internal :: Services :: Module :: Status: Tasks :: Is: On
+ ============================================================================================================
+*/
+
+if ($_GLOBAL_SETTING_SYSTEM_SERVICES_MODULE_STATUS_TASKS >= "1") {
+
+$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_TASKS								= "./System/Services/Tasks";
+
+/*
+ ============================================================================================================
+ + IF: Internal :: Services :: Module :: File: Tasks :: Exists, Include It
+ ============================================================================================================
+*/
+
+if (file_exists($_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_TASKS)) {
+
+	include_once "$_GLOBAL_SYSTEM_SERVICES_MODULE_FILE_TASKS";
+
+} else {
+
+	echo ("Kernel: Message: Error :: Missing :: System :: Services :: Module :: File: Tasks");
+
+} // [ + ] IF: Include: Global :: System :: Services :: Module :: File: Tasks :: Exists, Include It
+
+} // [ + ] IF: Include: Global :: System :: Services :: Module :: Status: Tasks :: Is: On
 
 /*
  ============================================================================================================
@@ -4068,10 +4107,10 @@ $DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_Device_Aut
  ============================================================================================================
 */
 	
-if ($DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_Status_Account_Active >= "1") {
-	
+if ($DB_Query_Kernel_Authenticate_Check_Member_Account_Credentials_Member_Status_Account_Active > "0") {
+
 	header("Location: ?$_INTERNAL_APPLICATION_MODULE_MEMBER=Login&Message=AccountActive&$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION");
-	exit;
+	exit;	
 
 } else {
 

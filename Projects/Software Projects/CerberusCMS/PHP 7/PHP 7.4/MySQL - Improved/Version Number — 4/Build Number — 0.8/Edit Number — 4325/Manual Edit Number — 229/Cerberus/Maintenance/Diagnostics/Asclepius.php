@@ -59,13 +59,51 @@
  ============================================================================================================
  +
  +
- + Diagnostics Application :: Error Handling Systems 
+ + [ @ ] Error Reporting System
  +
  +
  ============================================================================================================
 */
 
-error_reporting("E_WARNING ^ E_NOTICE");
+/*
+ ============================================================================================================
+ +
+ + Error Reporting System :: Error Reporting: Off: All
+ +
+ ============================================================================================================
+*/
+
+//error_reporting(0);
+
+/*
+ ============================================================================================================
+ +
+ + Error Reporting System :: Error Reporting: Off: Warning AND Notice
+ +
+ ============================================================================================================
+*/
+
+// [ C ] error_reporting("E_WARNING ^ E_NOTICE");
+
+/*
+ ============================================================================================================
+ +
+ + Error Reporting System :: Error Reporting: On: Error, Warning, Parse AND Notice
+ +
+ ============================================================================================================
+*/
+
+// [ C ] error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+
+/*
+ ============================================================================================================
+ +
+ + Error Reporting System :: Error Reporting: On: All
+ +
+ ============================================================================================================
+*/
+
+error_reporting(-1);
 
 /*
  ============================================================================================================
@@ -86,6 +124,7 @@ error_reporting("E_WARNING ^ E_NOTICE");
 */
 
 include_once "../../System/Configuration/Global_Configuration.php";
+include_once "../../System/Configuration/Global_Server_Configuration.php";
 
 /*
  ============================================================================================================
@@ -190,7 +229,10 @@ echo ("
 * <A HREF=\"?InternalApplication&#61;Cookie_Testing&amp;Test&#61;Create_Cookie\">Create Cookie</A><BR>
 * <A HREF=\"?InternalApplication&#61;Cookie_Testing&amp;Test&#61;Delete_Cookie\">Delete Cookie</A><BR><BR>
 
-If this Web Server will not set cookies try adding the following settings string to the .htaccess file within the public_html directory of your web server: <I>php_flag output_buffering on</I><BR><BR>
+IF: This web server will not issue cookies to the connecting web browser try adding the following settings strings to the .htaccess file within the public_html directory of this web server:<BR>
+* <I>php_flag output_buffering on</I><BR>
+* <I>php_flag output_buffering true</I><BR>
+* <I>php_flag output_buffering 1</I><BR><BR>
 ");
 
 /*

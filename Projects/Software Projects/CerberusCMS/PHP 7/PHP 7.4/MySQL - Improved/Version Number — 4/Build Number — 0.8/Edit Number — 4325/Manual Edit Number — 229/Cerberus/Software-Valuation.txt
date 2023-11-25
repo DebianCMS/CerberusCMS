@@ -72,6 +72,9 @@
 * Economy: 2/10
 * Functional and Useful Programming Code: 10/10
 
+Unix Name: CerberusCMS: $100,000
+Unix Name: Cerberus: $250,000
+Software Project Name: Cerberus Content Management System: $100,000
 125,000 Lines @ $000.50 per line: $75,000
 125,000 Lines @ $001.00 per line: $125,000
 125,000 Lines @ $005.00 per line: $625,000

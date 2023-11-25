@@ -1021,11 +1021,12 @@ settings_system_security_account_restrict_web_browser CHAR(1),
 settings_system_security_device_multifactor_ip CHAR(1),
 settings_system_security_cache_server CHAR(1),
 settings_system_security_module_directory_sanitization VARCHAR(50),
-settings_system_security_module_status_sanitization VARCHAR(50),
-settings_system_services_module_status_commander VARCHAR(50),
-settings_system_services_module_status_integrity VARCHAR(50),
-settings_system_services_module_status_loops VARCHAR(50),
-settings_system_services_module_status_services VARCHAR(50),
+settings_system_security_module_status_sanitization CHAR(1),
+settings_system_services_module_status_commander CHAR(1),
+settings_system_services_module_status_integrity CHAR(1),
+settings_system_services_module_status_loops CHAR(1),
+settings_system_services_module_status_services CHAR(1),
+settings_system_services_module_status_tasks CHAR(1),
 PRIMARY KEY (id)
 );
 
@@ -1118,7 +1119,7 @@ INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_applicati
 INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_application_links(application_link_name,application_link_row,application_link_url,application_link_timestamp_installation)VALUES('Register','027','?Application_Member&#61;Register','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP');
 INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_application_links(application_link_name,application_link_row,application_link_url,application_link_timestamp_installation)VALUES('RSS Feed','028','./RSS.php?','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP');
 INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_application_links(application_link_name,application_link_row,application_link_url,application_link_timestamp_installation)VALUES('Search','029','?Application_Member&#61;Search','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP');
-INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_application_links(application_link_name,application_link_row,application_link_url,application_link_timestamp_installation)VALUES('Statistics','030','?Application_Member&#61;Statistics','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP');
+INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_application_links(application_link_name,application_link_row,application_link_url,application_link_timestamp_installation)VALUES('System','030','?Application_Member&#61;System','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP');
 INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_application_links(application_link_name,application_link_row,application_link_url,application_link_timestamp_installation)VALUES('Submit News','031','?Application_Member&#61;Submit_News','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP');
 INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_application_links(application_link_name,application_link_row,application_link_url,application_link_timestamp_installation)VALUES('Upload File','032','?Application_Member&#61;Upload','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP');
 INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_application_links(application_link_name,application_link_row,application_link_url,application_link_timestamp_installation)VALUES('VoIP Phone','033','?Application_Member&#61;VoIP','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP');
@@ -1164,7 +1165,7 @@ INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_applicati
 INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_applications(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation,application_file_version)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_037','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_036','Register','0','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','0.7.1');
 INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_applications(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation,application_file_version)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_038','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_037','Reset_Password','0','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','0.7.1');
 INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_applications(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation,application_file_version)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_039','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_038','Search','0','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','0.7.1');
-INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_applications(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation,application_file_version)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_040','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_039','Statistics','0','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','0.7.1');
+INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_applications(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation,application_file_version)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_040','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_039','System','0','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','0.7.1');
 INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_applications(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation,application_file_version)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_041','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_040','Submit_News','1','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','0.7.1');
 INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_applications(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation,application_file_version)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_042','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_041','System_Message','0','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','0.7.1');
 INSERT INTO {$_MySQL_Generator_POST_ACCESS_DATABASE_TABLE_NAME_PREFIX}_applications(application_file_integrity,application_file_integrity_installation,application_file_name,application_file_permission,application_file_permission_camera,application_file_permission_microphone,application_file_permission_location_gps,application_file_permission_location_glo,application_file_permission_location_internet_protocol_address,application_file_status,application_file_timestamp_installation,application_file_version)VALUES('$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_043','$_ARCHITECT_INTEGRITY_FILES_FIND_APPLICATION_MEMBER_FILE_042','Theme','0','1','1','1','1','1','1','$_GLOBAL_LOCAL_SERVER_DATE_TIMESTAMP','0.7.1');
@@ -1323,7 +1324,8 @@ settings_system_security_module_status_sanitization,
 settings_system_services_module_status_commander,
 settings_system_services_module_status_integrity,
 settings_system_services_module_status_loops,
-settings_system_services_module_status_services
+settings_system_services_module_status_services,
+settings_system_services_module_status_tasks
 )VALUES(
 '86400',
 '0',
@@ -1370,6 +1372,7 @@ settings_system_services_module_status_services
 '0',
 '1',
 'Default',
+'1',
 '1',
 '1',
 '1',
