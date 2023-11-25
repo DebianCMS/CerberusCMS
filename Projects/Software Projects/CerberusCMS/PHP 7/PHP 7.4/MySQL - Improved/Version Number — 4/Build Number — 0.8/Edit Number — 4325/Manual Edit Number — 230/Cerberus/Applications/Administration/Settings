@@ -437,7 +437,7 @@ echo ("
 																	<OPTION VALUE=\"0\">0: Off</OPTION>
 																	<OPTION VALUE=\"1\">1: On</OPTION>
 																</SELECT><BR>
-													Options Note: <I>This Option can be changed to force Offline Mode. Offline Mode can be used to force all Visitors and Registered Member Accounts without Administration-Level Privileges to go into Offline Mode so that Administration can perform maintainence on the Web Server.</I><BR><BR>
+													Options Note: <I>This Option can be changed to force Offline Mode. Offline Mode can be used to force all Visitors and Registered Member Accounts without Administration-Level Privileges to go into Offline Mode so that Administration can perform maintenance on the Web Server.</I><BR><BR>
 
 															Website :: Title :: Shown In Web Browser<BR>
 																<INPUT TYPE=\"text\" NAME=\"AMA_Settings_Update_Site_Title\" VALUE=\"$_Application_Module_Administration_Settings_LIST_SETTING_SYSTEM_WEBSITE_TITLE\" MAXLENGTH=\"250\"><BR>
