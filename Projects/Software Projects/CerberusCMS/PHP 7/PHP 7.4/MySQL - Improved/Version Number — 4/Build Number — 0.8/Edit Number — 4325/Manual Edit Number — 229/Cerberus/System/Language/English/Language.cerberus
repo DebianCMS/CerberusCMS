@@ -1868,7 +1868,7 @@ $_Application_Module_Member_Message_Search_RESULTS_NEWS_NONE								= "<CENTER>C
  ============================================================================================================
  +
  +
- + [ @ ] Statistics
+ + [ @ ] System
  +
  +
  ============================================================================================================
@@ -1880,7 +1880,7 @@ $_Application_Module_Member_Message_Search_RESULTS_NEWS_NONE								= "<CENTER>C
  ============================================================================================================
 */
 
-$_Application_Module_Member_Message_Statistics_Header									= "<CENTER>[ <B><A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Application_List&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Application Module :: Application List ::\">Root</A> => <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Statistics&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Root => :: Open & Display The Application Module :: Statistics\">Statistics</A> => <A HREF=\"./Applications/Member/Statistics?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code For The Application Module :: Statistics ::\">Source</A></B> ]</CENTER><HR><BR>";
+$_Application_Module_Member_Message_System_Header									= "<CENTER>[ <B><A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Application_List&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Application Module :: Application List ::\">Root</A> => <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;System&amp;Display&#61;Options&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Root => :: Open & Display The Application Module :: System\">System</A> => <A HREF=\"./Applications/Member/System?$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display The Source Code For The Application Module :: System ::\">Source</A></B> ]</CENTER><HR><BR>";
 
 /*
  ============================================================================================================
