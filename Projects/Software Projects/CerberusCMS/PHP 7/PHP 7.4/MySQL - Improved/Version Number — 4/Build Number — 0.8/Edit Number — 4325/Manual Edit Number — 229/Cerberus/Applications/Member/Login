@@ -272,7 +272,7 @@ echo ("
 
 											Member Account :: Registration :: Registration Options<HR ALIGN=\"LEFT\" WIDTH=\"25%\">
 											* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Register&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Initiate The Member Account Registration Process With $_GLOBAL_SYSTEM_SITE_TITLE ::\">Register</A><BR>
-											Note: <I>Would you like to Register an Account on this system ? Use these options to Register an Account. The Registration Process requires Registrar Status first and then Account Activation before acquiring a Registered Member Account.<BR><BR>
+											Note: <I>Would you like to Register an Account on this system ? Use these options to Register an Account. The Registration Process requires Registrar Status first and then Account Activation before acquiring a Registered Member Account.</I><BR><BR>
 											
 											Application Module Note: <I>This Web Application does not use <A HREF=\"https://www.PHP.net/manual/en/book.session.php\" TITLE=\":: Open & Display :: The Official Pre-Hyper-Text-Post-Processor Entry :: For :: Session Programming ::\" TARGET=\"_NEW\">Session Programming</A>. Instead, it uses three unique Cookies for its Authentication System. The Cookies are impossible to clone and tamper whereas all Sessions in Session Programming across all Programming Languages can be cloned and hijacked due to several inherent Security Flaws. If the authentication cookie data issued by this system is ever changed on the device it was issued to the account automatically de-authenticates and is forced to logout.</I><BR><BR>
 ");
