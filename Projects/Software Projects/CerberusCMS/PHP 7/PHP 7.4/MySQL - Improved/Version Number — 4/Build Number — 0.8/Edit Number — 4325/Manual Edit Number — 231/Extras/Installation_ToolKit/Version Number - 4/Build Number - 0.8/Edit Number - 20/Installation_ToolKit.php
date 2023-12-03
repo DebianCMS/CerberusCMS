@@ -155,17 +155,17 @@ echo ("
 	
 if ($_GET["Application"] == "Unpack") {
 
-$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE			= $_POST['Installation_ToolKit_Zip_Archive_Unpack_File'];
+$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE					= $_POST['Installation_ToolKit_Zip_Archive_Unpack_File'];
 $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION		= $_POST['Installation_ToolKit_Zip_Archive_Unpack_File_Location'];
-$_Installation_ToolKit_ZIP_Archive_Initialize				= new ZipArchive;
-$_Installation_ToolKit_ZIP_Archive_Unpack				= $_Installation_ToolKit_ZIP_Archive_Initialize->open('$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK');
+$_Installation_ToolKit_ZIP_Archive_Initialize						= new ZipArchive;
+$_Installation_ToolKit_ZIP_Archive_Unpack							= $_Installation_ToolKit_ZIP_Archive_Initialize->open('$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK');
 
 if ($_Installation_ToolKit_ZIP_Archive_Unpack === TRUE) {
 
 $_Installation_ToolKit_ZIP_Archive_Initialize->extractTo('$_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION');
 $_Installation_ToolKit_ZIP_Archive_Initialize->close();
 
-echo ("ToolKit Message: The File: $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE Was Unpacked To Location: $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION");
+echo ("ToolKit Message: The File: $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE Was Unpacked To The Location: $_Installation_ToolKit_POST_ZIP_ARCHIVE_UNPACK_FILE_LOCATION");
 
 } else {
 
@@ -192,7 +192,7 @@ if (!$_Installation_ToolKit_POST_TERMINAL_COMMANDS) {
 echo ("
 			<FORM ACTION=\"?Application&#61;Terminal\" METHOD=\"POST\">
 				Please Visit: <A HREF=\"$_PROJECT_SERVER_URL_GITHUB_SECURE\">$_PROJECT_DEVELOPER_STRING_NAME_EXTENDED' - $_PROJECT_STRING_NAME_EXTENDED Archive Packages - Official GITHub Repository</A> for the most recent Archived $_PROJECT_STRING_NAME_UNIX compressed package<BR>
-				<TEXTAREA ROWS=\"15\" COLS=\"75\" NAME=\"Installation_ToolKit_Terminal_Commands\">Execute Terminal Commands On This Operating System From This Pre-Hyper-Text-Post-Processor Script E.G.: 'wget -O $_PROJECT_STRING_NAME_SHORT.zip https://GitHub.com/$_PROJECT_SERVER_URL_PARTIAL/<File_Name_Here.zip>'</TEXTAREA><BR>
+				<TEXTAREA ROWS=\"15\" COLS=\"75\" NAME=\"Installation_ToolKit_Terminal_Commands\">Execute Terminal Commands On This Operating System From This Pre-Hyper-Text-Post-Processor Script E.G.: 'wget -O $_PROJECT_STRING_NAME_SHORT.zip https://GITHub.com/$_PROJECT_SERVER_URL_PARTIAL/<File_Name_Here.zip>'</TEXTAREA><BR>
 				<INPUT TYPE=\"SUBMIT\" VALUE=\"Execute Terminal Command\">
 			</FORM>
 ");
