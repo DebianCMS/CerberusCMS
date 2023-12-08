@@ -68,9 +68,9 @@ if ($_GET["Display"] == "Options") {
 echo ("
 Backpacking Gear :: All-In-One
 <HR ALIGN=\"LEFT\" WIDTH=\"20%\">
-* <A HREF=\"$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Type&#&61;General\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking Gear :: General ::\">Backpacking Gear :: General</A><BR>
-* <A HREF=\"$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Type&#&61;General\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking Gear :: General ::\">Backpacking Gear :: Beach</A><BR>
-* <A HREF=\"$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Type&#&61;General\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking Gear :: General ::\">Backpacking Gear :: Mountain</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Type&#61;General\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking Gear :: General ::\">Backpacking Gear :: General</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Type&#61;Beach\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking Gear :: General ::\">Backpacking Gear :: Beach</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Type&#61;Mountain\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking Gear :: General ::\">Backpacking Gear :: Mountain</A><BR>
 ");
 
 } // [ + ] IF: Internal Application: Display :: Is: Options
