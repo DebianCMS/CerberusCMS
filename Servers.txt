@@ -2,6 +2,7 @@ Demonstration and Development Server:
 
 CURRENT DEVELOPMENT SERVERS
 https://cerberustestserver5.000webhostapp.com
+https://cerberustestserver7.000webhostapp.com
 
 OLD DEVELOPMENT SERVER
 Demonstration
