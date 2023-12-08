@@ -63,5 +63,15 @@
 
 											echo ($_Application_Module_Member_Mesage_Travel_Header);
 											
-echo ("");
+if ($_GET["Display"] == "Options") {
+
+
+											
+echo ("
+Backpacking :: Go Bag :: Gear :: General :: Lightweight
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<OBJECT DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Recommendations_Personal_Gear_Travel_Backpacking.txt\" HEIGHT=\"200\" WIDTH=\"500\"></OBJECT>
+");
+
+}
 ?>
