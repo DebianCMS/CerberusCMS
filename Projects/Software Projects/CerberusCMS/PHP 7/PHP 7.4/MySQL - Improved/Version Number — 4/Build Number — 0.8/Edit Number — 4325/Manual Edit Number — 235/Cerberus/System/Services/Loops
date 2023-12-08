@@ -109,11 +109,11 @@ if ($_GLOBAL_COOKIE_MEMBER_USERNAME && $_GLOBAL_COOKIE_MEMBER_PASSWORD != null) 
 
 if (!file_exists("./Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Image/Profile/$_GLOBAL_MEMBER_IMAGE_PROFILE")) {
 
-$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY					= "Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Icon/No_Image.$_GLOBAL_SYSTEM_IMAGE_EXTENSION";
+$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY						= "Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Icon/No_Image.$_GLOBAL_SYSTEM_IMAGE_EXTENSION";
 
 } else {
 
-$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY					= "Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Image/Profile/$_GLOBAL_MEMBER_IMAGE_PROFILE";
+$_GLOBAL_MEMBER_IMAGE_PROFILE_DISPLAY						= "Member/$_GLOBAL_COOKIE_MEMBER_USERNAME/Files/Image/Profile/$_GLOBAL_MEMBER_IMAGE_PROFILE";
 
 } // [ + ] IF: Registered Member Account :: Settings :: Image :: Profile Image: IS NOT SET: Set Default Image
 
@@ -134,4 +134,85 @@ $_GLOBAL_MEMBER_IMAGE_VIDEO_PROFILE_DISPLAY					= "Member/$_GLOBAL_COOKIE_MEMBER
 } // [ + ] IF: Registered Member Account :: Settings :: Image :: Video Profile Image: IS NOT SET: Set Default Video Profile Image
 
 } // [ + ] IF: Registered Member Account :: Credentials :: Exist AND ARE Valid
+
+/*
+ ============================================================================================================
+ +
+ +
+ + [ @ ] Loops :: Registered Member Account :: Upload :: Gallery :: Image : Resize Image
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ + Function: Resize Image
+ +
+ ============================================================================================================
+*/
+
+function resize_image_upload($_Application_Module_Services_Loops_Resize_Image_Upload_File, $_Application_Module_Services_Loops_Resize_Image_Upload_File_Width, $_Application_Module_Services_Loops_Resize_Image_Upload_File_Height, $_Application_Module_Services_Loops_Resize_Image_Upload_File_Crop=FALSE) {
+
+list($_Application_Module_Services_Loops_Resize_Image_Upload_File_Width_Current, $_Application_Module_Services_Loops_Resize_Image_Upload_File_Height_Current)					= getimagesize($_Application_Module_Services_Loops_Resize_Image_Upload_File);
+$_Application_Module_Services_Loops_Resize_Image_Upload_File_Rotate																												= $_Application_Module_Services_Loops_Resize_Image_Upload_File_Width_Current / $_Application_Module_Services_Loops_Resize_Image_Upload_File_Height_Current;
+
+/*
+ ============================================================================================================
+ + IF:
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Services_Loops_Resize_Image_Upload_File_Crop) {
+
+/*
+ ============================================================================================================
+ + IF:
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Services_Loops_Resize_Image_Upload_File_Width > $_Application_Module_Services_Loops_Resize_Image_Upload_File_Height) {
+
+$_Application_Module_Services_Loops_Resize_Image_Upload_File_Width_Current																										= ceil($_Application_Module_Services_Loops_Resize_Image_Upload_File_Width_Current-($_Application_Module_Services_Loops_Resize_Image_Upload_File_Width*abs($_Application_Module_Services_Loops_Resize_Image_Upload_File_Rotate-$_Application_Module_Services_Loops_Resize_Image_Upload_File_Width/$_Application_Module_Services_Loops_Resize_Image_Upload_File_Height)));
+
+} else {
+
+$_Application_Module_Services_Loops_Resize_Image_Upload_File_Height_Current																										= ceil($_Application_Module_Services_Loops_Resize_Image_Upload_File_Height_Current-($_Application_Module_Services_Loops_Resize_Image_Upload_File_Height_Current*abs($_Application_Module_Services_Loops_Resize_Image_Upload_File_Rotate-$_Application_Module_Services_Loops_Resize_Image_Upload_File_Width/$_Application_Module_Services_Loops_Resize_Image_Upload_File_Height)));
+
+} // [ + ] IF:
+
+$_Application_Module_Services_Loops_Resize_Image_Upload_File_Width_New																											= $_Application_Module_Services_Loops_Resize_Image_Upload_File_Width;
+$_Application_Module_Services_Loops_Resize_Image_Upload_File_Height_New																											= $_Application_Module_Services_Loops_Resize_Image_Upload_File_Height;
+
+} else {
+
+/*
+ ============================================================================================================
+ + IF:
+ ============================================================================================================
+*/
+
+if ($_Application_Module_Services_Loops_Resize_Image_Upload_File_Width/$_Application_Module_Services_Loops_Resize_Image_Upload_File_Height > $_Application_Module_Services_Loops_Resize_Image_Upload_File_Rotate) {
+
+$_Application_Module_Services_Loops_Resize_Image_Upload_File_Width_New																											= $_Application_Module_Services_Loops_Resize_Image_Upload_File_Height*$_Application_Module_Services_Loops_Resize_Image_Upload_File_Rotate;
+$_Application_Module_Services_Loops_Resize_Image_Upload_File_Height_New																											= $_Application_Module_Services_Loops_Resize_Image_Upload_File_Height;
+
+} else {
+
+$_Application_Module_Services_Loops_Resize_Image_Upload_File_Height_New																											= $_Application_Module_Services_Loops_Resize_Image_Upload_File_Width/$_Application_Module_Services_Loops_Resize_Image_Upload_File_Rotate;
+$_Application_Module_Services_Loops_Resize_Image_Upload_File_Width_New																											= $_Application_Module_Services_Loops_Resize_Image_Upload_File_Width;
+
+} // [ + ] IF:
+
+} // [ + ] IF:
+
+$_Application_Module_Services_Loops_Resize_Image_Upload_File_Source																												= imagecreatefromjpeg($_Application_Module_Services_Loops_Resize_Image_Upload_File);
+$_Application_Module_Services_Loops_Resize_Image_Upload_File_Destination																										= imagecreatetruecolor($_Application_Module_Services_Loops_Resize_Image_Upload_File_Width_New, $_Application_Module_Services_Loops_Resize_Image_Upload_File_Height_New);
+
+imagecopyresampled($_Application_Module_Services_Loops_Resize_Image_Upload_File_Destination, $_Application_Module_Services_Loops_Resize_Image_Upload_File_Source, 0, 0, 0, 0, $_Application_Module_Services_Loops_Resize_Image_Upload_File_Width_New, $_Application_Module_Services_Loops_Resize_Image_Upload_File_Height_New, $_Application_Module_Services_Loops_Resize_Image_Upload_File_Width, $_Application_Module_Services_Loops_Resize_Image_Upload_File_Height);
+
+return $_Application_Module_Services_Loops_Resize_Image_Upload_File_Destination;
+
+} // [ + ] IF:
 ?>
